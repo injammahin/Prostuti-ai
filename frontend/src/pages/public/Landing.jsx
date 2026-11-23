@@ -22,6 +22,7 @@ import { Icon } from "@/components/icon"
 import Illustration from "@/components/Illustration"
 import { exams, notices } from "@/lib/data"
 import { useApp } from "@/lib/app-context"
+import { useNoticesVersion } from "@/lib/notices-store"
 
 const faqs = [
   ["Is Prostuti official or linked to BPSC?", "No. We are an independent preparation platform. Every notice links to its official source, and you should always apply only through the official portal."],
@@ -38,6 +39,7 @@ const steps = [
 ]
 
 export default function Landing() {
+  const noticesVersion = useNoticesVersion()
   const { loginGuest, user, isGuest } = useApp()
   const nav = useNavigate()
   const guest = () => {

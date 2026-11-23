@@ -1,0 +1,2846 @@
+[
+ {
+  "ref": "int_001",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘ কবে প্রতিষ্ঠিত হয়?",
+  "options": [
+   "২৬ জুন ১৯৪৫",
+   "২৪ অক্টোবর ১৯৪৫",
+   "১০ জানুয়ারি ১৯২০",
+   "১০ ডিসেম্বর ১৯৪৮"
+  ],
+  "answer": 1,
+  "explanation": "২৬ জুন ১৯৪৫ সানফ্রান্সিসকোতে সনদ স্বাক্ষরিত হয় এবং ২৪ অক্টোবর ১৯৪৫ তা কার্যকর হয়; দিনটি জাতিসংঘ দিবস।"
+ },
+ {
+  "ref": "int_002",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘ সনদ কোথায় স্বাক্ষরিত হয়?",
+  "options": [
+   "ইয়াল্টা",
+   "নিউইয়র্ক",
+   "জেনেভা",
+   "সানফ্রান্সিসকো"
+  ],
+  "answer": 3,
+  "explanation": "১৯৪৫ সালের সানফ্রান্সিসকো সম্মেলনে ৫০টি দেশ সনদে স্বাক্ষর করে; পোল্যান্ড পরে স্বাক্ষর করে প্রতিষ্ঠাতা সদস্য হয়।"
+ },
+ {
+  "ref": "int_003",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘের প্রতিষ্ঠাকালীন সদস্য দেশ কতটি?",
+  "options": [
+   "৫১টি",
+   "৫০টি",
+   "১৯৩টি",
+   "৪৫টি"
+  ],
+  "answer": 0,
+  "explanation": "জাতিসংঘের প্রতিষ্ঠাতা সদস্য ৫১টি দেশ; বর্তমানে সদস্য সংখ্যা ১৯৩।"
+ },
+ {
+  "ref": "int_004",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘের বর্তমান সদস্য দেশ কতটি?",
+  "options": [
+   "১৯৫টি",
+   "১৯২টি",
+   "১৯৩টি",
+   "২০০টি"
+  ],
+  "answer": 2,
+  "explanation": "২০১১ সালে দক্ষিণ সুদান ১৯৩তম সদস্য হিসেবে যোগ দেয়।"
+ },
+ {
+  "ref": "int_005",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘের সর্বশেষ সদস্য দেশ কোনটি?",
+  "options": [
+   "পূর্ব তিমুর",
+   "মন্টিনিগ্রো",
+   "দক্ষিণ সুদান",
+   "কসোভো"
+  ],
+  "answer": 2,
+  "explanation": "৯ জুলাই ২০১১ স্বাধীনতা লাভের পর ১৪ জুলাই ২০১১ দক্ষিণ সুদান জাতিসংঘের সদস্য হয়।"
+ },
+ {
+  "ref": "int_006",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘে স্থায়ী পর্যবেক্ষক রাষ্ট্রের মর্যাদা রয়েছে কোন দুটির?",
+  "options": [
+   "ভ্যাটিকান (হলি সি) ও ফিলিস্তিন",
+   "তাইওয়ান ও কসোভো",
+   "সুইজারল্যান্ড ও ভ্যাটিকান",
+   "ফিলিস্তিন ও পশ্চিম সাহারা"
+  ],
+  "answer": 0,
+  "explanation": "হলি সি ও ফিলিস্তিন জাতিসংঘের অ-সদস্য পর্যবেক্ষক রাষ্ট্র; তারা ভোট দিতে পারে না।"
+ },
+ {
+  "ref": "int_007",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘের প্রধান অঙ্গসংস্থা কয়টি?",
+  "options": [
+   "১৫টি",
+   "৫টি",
+   "৭টি",
+   "৬টি"
+  ],
+  "answer": 3,
+  "explanation": "সাধারণ পরিষদ, নিরাপত্তা পরিষদ, অর্থনৈতিক ও সামাজিক পরিষদ, অছি পরিষদ, আন্তর্জাতিক বিচার আদালত ও সচিবালয়।"
+ },
+ {
+  "ref": "int_008",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘের কোন অঙ্গসংস্থা ১৯৯৪ সাল থেকে কার্যক্রম স্থগিত রেখেছে?",
+  "options": [
+   "অর্থনৈতিক ও সামাজিক পরিষদ",
+   "অছি পরিষদ",
+   "নিরাপত্তা পরিষদ",
+   "সচিবালয়"
+  ],
+  "answer": 1,
+  "explanation": "সর্বশেষ অছি অঞ্চল পালাউ ১৯৯৪ সালে স্বাধীন হওয়ায় অছি পরিষদের কার্যক্রম স্থগিত।"
+ },
+ {
+  "ref": "int_009",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘ নিরাপত্তা পরিষদের সদস্য সংখ্যা কত?",
+  "options": [
+   "১৫টি",
+   "৫টি",
+   "১০টি",
+   "৫৪টি"
+  ],
+  "answer": 0,
+  "explanation": "৫টি স্থায়ী ও ১০টি অস্থায়ী (২ বছর মেয়াদি) মিলিয়ে ১৫টি সদস্য।"
+ },
+ {
+  "ref": "int_010",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "নিরাপত্তা পরিষদের স্থায়ী সদস্য নয় কোনটি?",
+  "options": [
+   "চীন",
+   "জার্মানি",
+   "ফ্রান্স",
+   "রাশিয়া"
+  ],
+  "answer": 1,
+  "explanation": "স্থায়ী পাঁচ সদস্য: যুক্তরাষ্ট্র, যুক্তরাজ্য, ফ্রান্স, রাশিয়া ও চীন; এদের ভেটো ক্ষমতা আছে।"
+ },
+ {
+  "ref": "int_011",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "নিরাপত্তা পরিষদের অস্থায়ী সদস্যদের মেয়াদ কত বছর?",
+  "options": [
+   "৩ বছর",
+   "১ বছর",
+   "২ বছর",
+   "৫ বছর"
+  ],
+  "answer": 2,
+  "explanation": "সাধারণ পরিষদ প্রতি বছর ৫টি করে অস্থায়ী সদস্য ২ বছরের জন্য নির্বাচন করে।"
+ },
+ {
+  "ref": "int_012",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘের অর্থনৈতিক ও সামাজিক পরিষদের (ECOSOC) সদস্য সংখ্যা কত?",
+  "options": [
+   "১৯৩টি",
+   "১৫টি",
+   "৫০টি",
+   "৫৪টি"
+  ],
+  "answer": 3,
+  "explanation": "ECOSOC এর সদস্য ৫৪টি দেশ, যারা ৩ বছরের জন্য নির্বাচিত হয়।"
+ },
+ {
+  "ref": "int_013",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "আন্তর্জাতিক বিচার আদালত (ICJ) কোথায় অবস্থিত?",
+  "options": [
+   "জেনেভা, সুইজারল্যান্ড",
+   "দ্য হেগ, নেদারল্যান্ডস",
+   "নিউইয়র্ক, যুক্তরাষ্ট্র",
+   "ভিয়েনা, অস্ট্রিয়া"
+  ],
+  "answer": 1,
+  "explanation": "ICJ জাতিসংঘের একমাত্র প্রধান অঙ্গ যা নিউইয়র্কের বাইরে—হেগের পিস প্যালেসে অবস্থিত।"
+ },
+ {
+  "ref": "int_014",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আন্তর্জাতিক বিচার আদালতের বিচারক সংখ্যা ও মেয়াদ কত?",
+  "options": [
+   "১২ জন, ৯ বছর",
+   "৯ জন, ১৫ বছর",
+   "১৫ জন, ৫ বছর",
+   "১৫ জন, ৯ বছর"
+  ],
+  "answer": 3,
+  "explanation": "সাধারণ পরিষদ ও নিরাপত্তা পরিষদ যৌথভাবে ৯ বছরের জন্য ১৫ জন বিচারক নির্বাচন করে।"
+ },
+ {
+  "ref": "int_015",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘের দাপ্তরিক ভাষা কয়টি?",
+  "options": [
+   "৬টি",
+   "৫টি",
+   "৪টি",
+   "৭টি"
+  ],
+  "answer": 0,
+  "explanation": "ইংরেজি, ফরাসি, রুশ, চীনা, স্প্যানিশ ও আরবি; আরবি যুক্ত হয় ১৯৭৩ সালে।"
+ },
+ {
+  "ref": "int_016",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘের প্রথম মহাসচিব কে ছিলেন?",
+  "options": [
+   "উ থান্ট",
+   "দাগ হ্যামারশোল্ড",
+   "ট্রিগভে লি",
+   "কুর্ট ওয়াল্ডহেইম"
+  ],
+  "answer": 2,
+  "explanation": "নরওয়ের ট্রিগভে লি ১৯৪৬ থেকে ১৯৫২ সাল পর্যন্ত প্রথম মহাসচিব ছিলেন।"
+ },
+ {
+  "ref": "int_017",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "দায়িত্ব পালনকালে বিমান দুর্ঘটনায় নিহত জাতিসংঘ মহাসচিব কে?",
+  "options": [
+   "উ থান্ট",
+   "ট্রিগভে লি",
+   "দাগ হ্যামারশোল্ড",
+   "কফি আনান"
+  ],
+  "answer": 2,
+  "explanation": "১৯৬১ সালে কঙ্গো সংকট সমাধানে যাওয়ার পথে বিমান দুর্ঘটনায় দাগ হ্যামারশোল্ড নিহত হন; তাঁকে মরণোত্তর নোবেল শান্তি পুরস্কার দেওয়া হয়।"
+ },
+ {
+  "ref": "int_018",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "এশিয়া থেকে প্রথম জাতিসংঘ মহাসচিব কে?",
+  "options": [
+   "উ থান্ট",
+   "বান কি মুন",
+   "কফি আনান",
+   "জাভিয়ের পেরেজ দ্য কুয়েলার"
+  ],
+  "answer": 0,
+  "explanation": "মিয়ানমারের উ থান্ট ১৯৬১ থেকে ১৯৭১ সাল পর্যন্ত মহাসচিব ছিলেন।"
+ },
+ {
+  "ref": "int_019",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "\"United Nations\" নামটি প্রথম কে প্রস্তাব করেন?",
+  "options": [
+   "উড্রো উইলসন",
+   "উইনস্টন চার্চিল",
+   "জোসেফ স্ট্যালিন",
+   "ফ্র্যাঙ্কলিন ডি. রুজভেল্ট"
+  ],
+  "answer": 3,
+  "explanation": "মার্কিন প্রেসিডেন্ট রুজভেল্ট ১৯৪২ সালের \"জাতিসংঘ ঘোষণায়\" নামটি প্রথম ব্যবহার করেন।"
+ },
+ {
+  "ref": "int_020",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘের পূর্বসূরি সংস্থা \"লীগ অব নেশনস\" কত সালে প্রতিষ্ঠিত হয়?",
+  "options": [
+   "১৯১৯",
+   "১৯২০",
+   "১৯৪৫",
+   "১৯৩৯"
+  ],
+  "answer": 1,
+  "explanation": "প্রথম বিশ্বযুদ্ধের পর ১৯২০ সালে জেনেভায় লীগ অব নেশনস প্রতিষ্ঠিত হয়; দ্বিতীয় বিশ্বযুদ্ধ ঠেকাতে ব্যর্থ হয়ে ১৯৪৬ সালে বিলুপ্ত হয়।"
+ },
+ {
+  "ref": "int_021",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "মানবাধিকারের সর্বজনীন ঘোষণা কবে গৃহীত হয়?",
+  "options": [
+   "১০ ডিসেম্বর ১৯৪৮",
+   "২৪ অক্টোবর ১৯৪৫",
+   "১০ ডিসেম্বর ১৯৪৫",
+   "৪ জুলাই ১৯৪৬"
+  ],
+  "answer": 0,
+  "explanation": "জাতিসংঘ সাধারণ পরিষদে ১০ ডিসেম্বর ১৯৪৮ ঘোষণাটি গৃহীত হয়; দিনটি বিশ্ব মানবাধিকার দিবস।"
+ },
+ {
+  "ref": "int_022",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "জাতিসংঘ",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘ সদর দপ্তরের জমি কে দান করেন?",
+  "options": [
+   "হেনরি ফোর্ড",
+   "জন ডি. রকফেলার জুনিয়র",
+   "অ্যান্ড্রু কার্নেগি",
+   "ফ্র্যাঙ্কলিন রুজভেল্ট"
+  ],
+  "answer": 1,
+  "explanation": "নিউইয়র্কের ম্যানহাটনে সদর দপ্তরের জমি কিনতে জন ডি. রকফেলার জুনিয়র ৮৫ লাখ ডলার দান করেন।"
+ },
+ {
+  "ref": "int_023",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "খাদ্য ও কৃষি সংস্থার (FAO) সদর দপ্তর কোথায়?",
+  "options": [
+   "প্যারিস",
+   "জেনেভা",
+   "রোম",
+   "নিউইয়র্ক"
+  ],
+  "answer": 2,
+  "explanation": "FAO, IFAD ও বিশ্ব খাদ্য কর্মসূচি (WFP)—তিনটির সদর দপ্তরই ইতালির রোমে।"
+ },
+ {
+  "ref": "int_024",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বিশ্ব স্বাস্থ্য সংস্থার (WHO) সদর দপ্তর কোথায়?",
+  "options": [
+   "ভিয়েনা",
+   "নিউইয়র্ক",
+   "রোম",
+   "জেনেভা"
+  ],
+  "answer": 3,
+  "explanation": "WHO ১৯৪৮ সালে প্রতিষ্ঠিত; প্রতিষ্ঠার দিন ৭ এপ্রিল বিশ্ব স্বাস্থ্য দিবস হিসেবে পালিত হয়।"
+ },
+ {
+  "ref": "int_025",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ইউনেস্কোর সদর দপ্তর কোথায়?",
+  "options": [
+   "লন্ডন",
+   "প্যারিস",
+   "জেনেভা",
+   "রোম"
+  ],
+  "answer": 1,
+  "explanation": "জাতিসংঘের শিক্ষা, বিজ্ঞান ও সংস্কৃতি বিষয়ক সংস্থা ইউনেস্কোর সদর দপ্তর ফ্রান্সের প্যারিসে।"
+ },
+ {
+  "ref": "int_026",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ইউনিসেফের সদর দপ্তর কোথায়?",
+  "options": [
+   "নাইরোবি",
+   "জেনেভা",
+   "প্যারিস",
+   "নিউইয়র্ক"
+  ],
+  "answer": 3,
+  "explanation": "শিশুদের কল্যাণে কাজ করা ইউনিসেফ ১৯৪৬ সালে প্রতিষ্ঠিত; সদর দপ্তর নিউইয়র্কে।"
+ },
+ {
+  "ref": "int_027",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘ শরণার্থী বিষয়ক হাইকমিশনারের কার্যালয় (UNHCR) কোথায়?",
+  "options": [
+   "জেনেভা",
+   "নিউইয়র্ক",
+   "ভিয়েনা",
+   "হেগ"
+  ],
+  "answer": 0,
+  "explanation": "UNHCR জেনেভায় অবস্থিত; সংস্থাটি দুবার (১৯৫৪ ও ১৯৮১) নোবেল শান্তি পুরস্কার পেয়েছে।"
+ },
+ {
+  "ref": "int_028",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "আন্তর্জাতিক মুদ্রা তহবিলের (IMF) সদর দপ্তর কোথায়?",
+  "options": [
+   "জেনেভা",
+   "নিউইয়র্ক",
+   "ওয়াশিংটন ডিসি",
+   "লন্ডন"
+  ],
+  "answer": 2,
+  "explanation": "IMF ও বিশ্বব্যাংক দুটিরই সদর দপ্তর যুক্তরাষ্ট্রের ওয়াশিংটন ডিসিতে।"
+ },
+ {
+  "ref": "int_029",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বিশ্ব বাণিজ্য সংস্থার (WTO) সদর দপ্তর কোথায়?",
+  "options": [
+   "ব্রাসেলস",
+   "ওয়াশিংটন ডিসি",
+   "জেনেভা",
+   "নিউইয়র্ক"
+  ],
+  "answer": 2,
+  "explanation": "১৯৯৫ সালে GATT এর স্থলাভিষিক্ত হয়ে প্রতিষ্ঠিত WTO এর সদর দপ্তর জেনেভায়।"
+ },
+ {
+  "ref": "int_030",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আন্তর্জাতিক পরমাণু শক্তি সংস্থার (IAEA) সদর দপ্তর কোথায়?",
+  "options": [
+   "ভিয়েনা",
+   "জেনেভা",
+   "প্যারিস",
+   "হেগ"
+  ],
+  "answer": 0,
+  "explanation": "IAEA, UNIDO ও ওপেক—তিনটির সদর দপ্তরই অস্ট্রিয়ার ভিয়েনায়।"
+ },
+ {
+  "ref": "int_031",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আন্তর্জাতিক বেসামরিক বিমান চলাচল সংস্থার (ICAO) সদর দপ্তর কোথায়?",
+  "options": [
+   "শিকাগো",
+   "জেনেভা",
+   "লন্ডন",
+   "মন্ট্রিল"
+  ],
+  "answer": 3,
+  "explanation": "ICAO এর সদর দপ্তর কানাডার মন্ট্রিলে।"
+ },
+ {
+  "ref": "int_032",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আন্তর্জাতিক সমুদ্র সংস্থার (IMO) সদর দপ্তর কোথায়?",
+  "options": [
+   "হামবুর্গ",
+   "লন্ডন",
+   "রটারড্যাম",
+   "জেনেভা"
+  ],
+  "answer": 1,
+  "explanation": "জাতিসংঘের এই বিশেষায়িত সংস্থার সদর দপ্তর যুক্তরাজ্যের লন্ডনে, যা যুক্তরাজ্যে অবস্থিত একমাত্র জাতিসংঘ সংস্থা।"
+ },
+ {
+  "ref": "int_033",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "সর্বজনীন ডাক ইউনিয়নের (UPU) সদর দপ্তর কোথায়?",
+  "options": [
+   "বার্ন",
+   "জেনেভা",
+   "জুরিখ",
+   "ভিয়েনা"
+  ],
+  "answer": 0,
+  "explanation": "১৮৭৪ সালে প্রতিষ্ঠিত UPU এর সদর দপ্তর সুইজারল্যান্ডের রাজধানী বার্নে।"
+ },
+ {
+  "ref": "int_034",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আন্তর্জাতিক টেলিযোগাযোগ ইউনিয়নের (ITU) সদর দপ্তর কোথায়?",
+  "options": [
+   "বার্ন",
+   "জেনেভা",
+   "প্যারিস",
+   "নিউইয়র্ক"
+  ],
+  "answer": 1,
+  "explanation": "১৮৬৫ সালে প্রতিষ্ঠিত ITU জাতিসংঘের প্রাচীনতম বিশেষায়িত সংস্থা; সদর দপ্তর জেনেভায়।"
+ },
+ {
+  "ref": "int_035",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "এশীয় উন্নয়ন ব্যাংকের (ADB) সদর দপ্তর কোথায়?",
+  "options": [
+   "ব্যাংকক",
+   "টোকিও",
+   "ম্যানিলা",
+   "সিঙ্গাপুর"
+  ],
+  "answer": 2,
+  "explanation": "১৯৬৬ সালে প্রতিষ্ঠিত ADB এর সদর দপ্তর ফিলিপাইনের ম্যানিলায়।"
+ },
+ {
+  "ref": "int_036",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ইসলামী উন্নয়ন ব্যাংকের (IsDB) সদর দপ্তর কোথায়?",
+  "options": [
+   "কায়রো",
+   "রিয়াদ",
+   "দুবাই",
+   "জেদ্দা"
+  ],
+  "answer": 3,
+  "explanation": "ওআইসির অঙ্গ প্রতিষ্ঠান ইসলামী উন্নয়ন ব্যাংকের সদর দপ্তর সৌদি আরবের জেদ্দায়।"
+ },
+ {
+  "ref": "int_037",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "এশিয়ান ইনফ্রাস্ট্রাকচার ইনভেস্টমেন্ট ব্যাংকের (AIIB) সদর দপ্তর কোথায়?",
+  "options": [
+   "সাংহাই",
+   "বেইজিং",
+   "ম্যানিলা",
+   "হংকং"
+  ],
+  "answer": 1,
+  "explanation": "চীনের উদ্যোগে ২০১৬ সালে কার্যক্রম শুরু করা AIIB এর সদর দপ্তর বেইজিংয়ে; ব্রিকসের নিউ ডেভেলপমেন্ট ব্যাংকের সদর দপ্তর সাংহাইয়ে।"
+ },
+ {
+  "ref": "int_038",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ইন্টারপোলের সদর দপ্তর কোথায়?",
+  "options": [
+   "লন্ডন, যুক্তরাজ্য",
+   "প্যারিস, ফ্রান্স",
+   "জেনেভা, সুইজারল্যান্ড",
+   "লিওঁ, ফ্রান্স"
+  ],
+  "answer": 3,
+  "explanation": "আন্তর্জাতিক পুলিশ সংস্থা ইন্টারপোলের সদর দপ্তর ফ্রান্সের লিওঁ শহরে।"
+ },
+ {
+  "ref": "int_039",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "অ্যামনেস্টি ইন্টারন্যাশনালের সদর দপ্তর কোথায়?",
+  "options": [
+   "লন্ডন",
+   "জেনেভা",
+   "নিউইয়র্ক",
+   "ব্রাসেলস"
+  ],
+  "answer": 0,
+  "explanation": "১৯৬১ সালে প্রতিষ্ঠিত মানবাধিকার সংগঠনটির সদর দপ্তর লন্ডনে; সংস্থাটি ১৯৭৭ সালে নোবেল শান্তি পুরস্কার পায়।"
+ },
+ {
+  "ref": "int_040",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আন্তর্জাতিক রেডক্রস কমিটির (ICRC) সদর দপ্তর কোথায়?",
+  "options": [
+   "ব্রাসেলস",
+   "প্যারিস",
+   "জেনেভা",
+   "লন্ডন"
+  ],
+  "answer": 2,
+  "explanation": "হেনরি ডুনান্টের উদ্যোগে ১৮৬৩ সালে প্রতিষ্ঠিত ICRC এর সদর দপ্তর জেনেভায়; সংস্থাটি তিনবার নোবেল শান্তি পুরস্কার পেয়েছে।"
+ },
+ {
+  "ref": "int_041",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ট্রান্সপারেন্সি ইন্টারন্যাশনালের সদর দপ্তর কোথায়?",
+  "options": [
+   "প্যারিস",
+   "লন্ডন",
+   "বার্লিন",
+   "আমস্টারডাম"
+  ],
+  "answer": 2,
+  "explanation": "দুর্নীতিবিরোধী সংস্থাটি ১৯৯৩ সালে বার্লিনে প্রতিষ্ঠিত হয় এবং প্রতি বছর দুর্নীতির ধারণা সূচক প্রকাশ করে।"
+ },
+ {
+  "ref": "int_042",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ফিফার সদর দপ্তর কোথায়?",
+  "options": [
+   "জুরিখ",
+   "প্যারিস",
+   "লুজান",
+   "লন্ডন"
+  ],
+  "answer": 0,
+  "explanation": "ফুটবলের বিশ্ব নিয়ন্ত্রক সংস্থা ফিফার সদর দপ্তর সুইজারল্যান্ডের জুরিখে; আন্তর্জাতিক অলিম্পিক কমিটির সদর দপ্তর লুজানে।"
+ },
+ {
+  "ref": "int_043",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আন্তর্জাতিক ক্রিকেট কাউন্সিলের (ICC) সদর দপ্তর কোথায়?",
+  "options": [
+   "মেলবোর্ন",
+   "লন্ডন",
+   "মুম্বাই",
+   "দুবাই"
+  ],
+  "answer": 3,
+  "explanation": "২০০৫ সালে ICC লন্ডনের লর্ডস থেকে সদর দপ্তর দুবাইয়ে সরিয়ে নেয়।"
+ },
+ {
+  "ref": "int_044",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "আন্তর্জাতিক অপরাধ আদালত (ICC) কোথায় অবস্থিত?",
+  "options": [
+   "জেনেভা",
+   "দ্য হেগ",
+   "নিউইয়র্ক",
+   "স্ট্রাসবুর্গ"
+  ],
+  "answer": 1,
+  "explanation": "রোম সংবিধির ভিত্তিতে ২০০২ সালে কার্যকর হওয়া আন্তর্জাতিক অপরাধ আদালত নেদারল্যান্ডসের হেগে অবস্থিত; এটি জাতিসংঘের অঙ্গ নয়।"
+ },
+ {
+  "ref": "int_045",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ন্যাটো (NATO) কত সালে প্রতিষ্ঠিত হয়?",
+  "options": [
+   "১৯৪৯",
+   "১৯৪৫",
+   "১৯৫৫",
+   "১৯৯১"
+  ],
+  "answer": 0,
+  "explanation": "৪ এপ্রিল ১৯৪৯ ওয়াশিংটনে ১২টি দেশ উত্তর আটলান্টিক চুক্তি স্বাক্ষরের মাধ্যমে ন্যাটো প্রতিষ্ঠা করে।"
+ },
+ {
+  "ref": "int_046",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ন্যাটোর সদর দপ্তর কোথায়?",
+  "options": [
+   "ওয়াশিংটন ডিসি",
+   "ব্রাসেলস",
+   "লন্ডন",
+   "প্যারিস"
+  ],
+  "answer": 1,
+  "explanation": "ন্যাটোর সদর দপ্তর বেলজিয়ামের ব্রাসেলসে।"
+ },
+ {
+  "ref": "int_047",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ন্যাটোর সর্বশেষ সদস্য দেশ কোনটি?",
+  "options": [
+   "ইউক্রেন",
+   "ফিনল্যান্ড",
+   "সুইডেন",
+   "উত্তর মেসিডোনিয়া"
+  ],
+  "answer": 2,
+  "explanation": "ফিনল্যান্ড ২০২৩ সালে এবং সুইডেন মার্চ ২০২৪ সালে ৩২তম সদস্য হিসেবে ন্যাটোতে যোগ দেয়।"
+ },
+ {
+  "ref": "int_048",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ওয়ারশ চুক্তি (Warsaw Pact) কোন জোটের পাল্টা হিসেবে গঠিত হয়?",
+  "options": [
+   "ইইউ",
+   "সিয়াটো",
+   "আসিয়ান",
+   "ন্যাটো"
+  ],
+  "answer": 3,
+  "explanation": "১৯৫৫ সালে সোভিয়েত ইউনিয়নের নেতৃত্বে পূর্ব ইউরোপের দেশগুলো ন্যাটোর পাল্টা ওয়ারশ চুক্তি সংস্থা গঠন করে; ১৯৯১ সালে তা বিলুপ্ত হয়।"
+ },
+ {
+  "ref": "int_049",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ইউরোপীয় ইউনিয়নের সদর দপ্তর কোথায়?",
+  "options": [
+   "স্ট্রাসবুর্গ",
+   "ব্রাসেলস",
+   "লুক্সেমবার্গ",
+   "ফ্রাঙ্কফুর্ট"
+  ],
+  "answer": 1,
+  "explanation": "ইউরোপীয় কমিশন ও কাউন্সিল ব্রাসেলসে; ইউরোপীয় পার্লামেন্টের আনুষ্ঠানিক আসন স্ট্রাসবুর্গে এবং ইউরোপীয় কেন্দ্রীয় ব্যাংক ফ্রাঙ্কফুর্টে।"
+ },
+ {
+  "ref": "int_050",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন চুক্তির মাধ্যমে ইউরোপীয় ইউনিয়ন গঠিত হয়?",
+  "options": [
+   "শেনজেন চুক্তি",
+   "রোম চুক্তি",
+   "লিসবন চুক্তি",
+   "ম্যাস্ট্রিক্ট চুক্তি"
+  ],
+  "answer": 3,
+  "explanation": "১৯৯২ সালে স্বাক্ষরিত ও ১৯৯৩ সালে কার্যকর ম্যাস্ট্রিক্ট চুক্তির মাধ্যমে ইউরোপীয় ইউনিয়ন আনুষ্ঠানিক রূপ পায়।"
+ },
+ {
+  "ref": "int_051",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "যুক্তরাজ্য আনুষ্ঠানিকভাবে কবে ইউরোপীয় ইউনিয়ন ত্যাগ করে (ব্রেক্সিট)?",
+  "options": [
+   "৩১ জানুয়ারি ২০২০",
+   "২৩ জুন ২০১৬",
+   "১ জানুয়ারি ২০২১",
+   "২৯ মার্চ ২০১৯"
+  ],
+  "answer": 0,
+  "explanation": "২০১৬ সালের গণভোটের পর ৩১ জানুয়ারি ২০২০ যুক্তরাজ্য ইইউ ত্যাগ করে; এরপর ইইউর সদস্য সংখ্যা দাঁড়ায় ২৭।"
+ },
+ {
+  "ref": "int_052",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ইউরো মুদ্রা কত সালে চালু হয় (হিসাবি মুদ্রা হিসেবে)?",
+  "options": [
+   "১৯৯৩",
+   "২০০২",
+   "১৯৯৯",
+   "২০০১"
+  ],
+  "answer": 2,
+  "explanation": "১ জানুয়ারি ১৯৯৯ ইউরো হিসাবি মুদ্রা হিসেবে এবং ১ জানুয়ারি ২০০২ থেকে নোট ও কয়েন হিসেবে চালু হয়।"
+ },
+ {
+  "ref": "int_053",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "আসিয়ান (ASEAN) কোথায় প্রতিষ্ঠিত হয়?",
+  "options": [
+   "কুয়ালালামপুর",
+   "জাকার্তা",
+   "ব্যাংকক",
+   "ম্যানিলা"
+  ],
+  "answer": 2,
+  "explanation": "৮ আগস্ট ১৯৬৭ ব্যাংকক ঘোষণার মাধ্যমে ৫টি দেশ আসিয়ান প্রতিষ্ঠা করে; সচিবালয় জাকার্তায়।"
+ },
+ {
+  "ref": "int_054",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আসিয়ানের ১১তম সদস্য হিসেবে কোন দেশ যোগ দেয়?",
+  "options": [
+   "পূর্ব তিমুর",
+   "পাপুয়া নিউগিনি",
+   "বাংলাদেশ",
+   "শ্রীলঙ্কা"
+  ],
+  "answer": 0,
+  "explanation": "২০২৫ সালের অক্টোবরে কুয়ালালামপুর শীর্ষ সম্মেলনে পূর্ব তিমুর (তিমুর-লেস্তে) আসিয়ানের ১১তম সদস্য হয়।"
+ },
+ {
+  "ref": "int_055",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "সার্কের সদস্য দেশ কতটি?",
+  "options": [
+   "১০টি",
+   "৭টি",
+   "৯টি",
+   "৮টি"
+  ],
+  "answer": 3,
+  "explanation": "প্রতিষ্ঠাতা ৭টি দেশের সাথে ২০০৭ সালে আফগানিস্তান যোগ দিয়ে সদস্য সংখ্যা ৮ হয়।"
+ },
+ {
+  "ref": "int_056",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সার্কের অষ্টম সদস্য দেশ কোনটি?",
+  "options": [
+   "মিয়ানমার",
+   "আফগানিস্তান",
+   "মালদ্বীপ",
+   "ভুটান"
+  ],
+  "answer": 1,
+  "explanation": "২০০৭ সালে নয়াদিল্লিতে অনুষ্ঠিত ১৪তম শীর্ষ সম্মেলনে আফগানিস্তান সার্কের অষ্টম সদস্য হয়।"
+ },
+ {
+  "ref": "int_057",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ওআইসি (OIC) এর সদর দপ্তর কোথায়?",
+  "options": [
+   "জেদ্দা",
+   "রিয়াদ",
+   "মক্কা",
+   "কায়রো"
+  ],
+  "answer": 0,
+  "explanation": "১৯৬৯ সালে মরক্কোর রাবাতে প্রতিষ্ঠিত ওআইসির সদর দপ্তর জেদ্দায়; সদস্য ৫৭টি দেশ।"
+ },
+ {
+  "ref": "int_058",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আরব লীগের সদর দপ্তর কোথায়?",
+  "options": [
+   "রিয়াদ",
+   "কায়রো",
+   "দামেস্ক",
+   "বাগদাদ"
+  ],
+  "answer": 1,
+  "explanation": "১৯৪৫ সালে প্রতিষ্ঠিত আরব লীগের সদর দপ্তর মিশরের কায়রোতে।"
+ },
+ {
+  "ref": "int_059",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আফ্রিকান ইউনিয়নের সদর দপ্তর কোথায়?",
+  "options": [
+   "কায়রো",
+   "নাইরোবি",
+   "আদ্দিস আবাবা",
+   "লাগোস"
+  ],
+  "answer": 2,
+  "explanation": "২০০২ সালে অর্গানাইজেশন অব আফ্রিকান ইউনিটির (OAU) স্থলাভিষিক্ত আফ্রিকান ইউনিয়নের সদর দপ্তর ইথিওপিয়ার আদ্দিস আবাবায়।"
+ },
+ {
+  "ref": "int_060",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "জি-৭ (G7) এর সদস্য নয় কোন দেশ?",
+  "options": [
+   "ইতালি",
+   "জাপান",
+   "কানাডা",
+   "রাশিয়া"
+  ],
+  "answer": 3,
+  "explanation": "জি-৭: যুক্তরাষ্ট্র, যুক্তরাজ্য, ফ্রান্স, জার্মানি, ইতালি, জাপান ও কানাডা। ক্রিমিয়া দখলের পর ২০১৪ সালে রাশিয়াকে জি-৮ থেকে বাদ দেওয়া হয়।"
+ },
+ {
+  "ref": "int_061",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জি-২০ তে ২০২৩ সালে কোন জোট স্থায়ী সদস্যপদ পায়?",
+  "options": [
+   "আসিয়ান",
+   "আফ্রিকান ইউনিয়ন",
+   "আরব লীগ",
+   "ওআইসি"
+  ],
+  "answer": 1,
+  "explanation": "২০২৩ সালের নয়াদিল্লি শীর্ষ সম্মেলনে আফ্রিকান ইউনিয়ন জি-২০ এর স্থায়ী সদস্য হয়।"
+ },
+ {
+  "ref": "int_062",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "\"BRIC\" শব্দটি প্রথম কে ব্যবহার করেন?",
+  "options": [
+   "অমর্ত্য সেন",
+   "জোসেফ স্টিগলিৎজ",
+   "পল ক্রুগম্যান",
+   "জিম ও'নিল"
+  ],
+  "answer": 3,
+  "explanation": "২০০১ সালে গোল্ডম্যান স্যাক্সের অর্থনীতিবিদ জিম ও'নিল ব্রাজিল, রাশিয়া, ভারত ও চীনের উদীয়মান অর্থনীতি বোঝাতে BRIC শব্দটি ব্যবহার করেন।"
+ },
+ {
+  "ref": "int_063",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোয়াড (QUAD) জোটের সদস্য নয় কোন দেশ?",
+  "options": [
+   "চীন",
+   "যুক্তরাষ্ট্র",
+   "ভারত",
+   "অস্ট্রেলিয়া"
+  ],
+  "answer": 0,
+  "explanation": "কোয়াডের চার সদস্য: যুক্তরাষ্ট্র, ভারত, জাপান ও অস্ট্রেলিয়া।"
+ },
+ {
+  "ref": "int_064",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "অকাস (AUKUS) নিরাপত্তা চুক্তির সদস্য কোন দেশগুলো?",
+  "options": [
+   "অস্ট্রেলিয়া, ইউক্রেন ও যুক্তরাষ্ট্র",
+   "অস্ট্রিয়া, যুক্তরাজ্য ও যুক্তরাষ্ট্র",
+   "অস্ট্রেলিয়া, যুক্তরাজ্য ও যুক্তরাষ্ট্র",
+   "অস্ট্রেলিয়া, যুক্তরাজ্য ও কানাডা"
+  ],
+  "answer": 2,
+  "explanation": "২০২১ সালে গঠিত AUKUS এর আওতায় অস্ট্রেলিয়াকে পারমাণবিক শক্তিচালিত সাবমেরিন দেওয়া হচ্ছে।"
+ },
+ {
+  "ref": "int_065",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ওপেক (OPEC) কোথায় প্রতিষ্ঠিত হয়?",
+  "options": [
+   "রিয়াদ",
+   "ভিয়েনা",
+   "বাগদাদ",
+   "তেহরান"
+  ],
+  "answer": 2,
+  "explanation": "১৯৬০ সালে বাগদাদ সম্মেলনে ইরান, ইরাক, কুয়েত, সৌদি আরব ও ভেনেজুয়েলা ওপেক প্রতিষ্ঠা করে; সদর দপ্তর ভিয়েনায়।"
+ },
+ {
+  "ref": "int_066",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জোটনিরপেক্ষ আন্দোলনের (ন্যাম) প্রথম শীর্ষ সম্মেলন কোথায় অনুষ্ঠিত হয়?",
+  "options": [
+   "বেলগ্রেড",
+   "বান্দুং",
+   "কায়রো",
+   "নয়াদিল্লি"
+  ],
+  "answer": 0,
+  "explanation": "১৯৬১ সালে যুগোস্লাভিয়ার বেলগ্রেডে প্রথম শীর্ষ সম্মেলন হয়; এর ভিত্তি ছিল ১৯৫৫ সালের বান্দুং সম্মেলন।"
+ },
+ {
+  "ref": "int_067",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কমনওয়েলথের সদর দপ্তর কোথায়?",
+  "options": [
+   "নয়াদিল্লি",
+   "অটোয়া",
+   "ক্যানবেরা",
+   "লন্ডন"
+  ],
+  "answer": 3,
+  "explanation": "কমনওয়েলথ সচিবালয় লন্ডনের মার্লবরো হাউসে অবস্থিত; সদস্য সংখ্যা ৫৬।"
+ },
+ {
+  "ref": "int_068",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আঞ্চলিক ও আন্তর্জাতিক জোট",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "সাংহাই সহযোগিতা সংস্থা (SCO) কত সালে প্রতিষ্ঠিত হয়?",
+  "options": [
+   "১৯৯৬",
+   "২০০১",
+   "২০০৫",
+   "২০১১"
+  ],
+  "answer": 1,
+  "explanation": "১৯৯৬ সালের \"সাংহাই ফাইভ\" থেকে উজবেকিস্তান যুক্ত হয়ে ২০০১ সালে SCO প্রতিষ্ঠিত হয়।"
+ },
+ {
+  "ref": "int_069",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "প্রথম বিশ্বযুদ্ধ কত সালে শুরু হয়?",
+  "options": [
+   "১৯১৪",
+   "১৯১৮",
+   "১৯০৫",
+   "১৯৩৯"
+  ],
+  "answer": 0,
+  "explanation": "১৯১৪ থেকে ১৯১৮ সাল পর্যন্ত প্রথম বিশ্বযুদ্ধ চলে।"
+ },
+ {
+  "ref": "int_070",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "প্রথম বিশ্বযুদ্ধের তাৎক্ষণিক কারণ কী ছিল?",
+  "options": [
+   "জার্মানির পোল্যান্ড আক্রমণ",
+   "অস্ট্রিয়ার যুবরাজ ফ্রানৎস ফার্দিনান্দের হত্যা",
+   "পার্ল হারবার আক্রমণ",
+   "রুশ বিপ্লব"
+  ],
+  "answer": 1,
+  "explanation": "২৮ জুন ১৯১৪ সারাজেভোতে অস্ট্রো-হাঙ্গেরির যুবরাজ ফ্রানৎস ফার্দিনান্দ নিহত হলে যুদ্ধ শুরু হয়।"
+ },
+ {
+  "ref": "int_071",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "প্রথম বিশ্বযুদ্ধের পর জার্মানির সাথে কোন চুক্তি স্বাক্ষরিত হয়?",
+  "options": [
+   "প্যারিস চুক্তি",
+   "ওয়েস্টফালিয়া চুক্তি",
+   "ভার্সাই চুক্তি",
+   "ইয়াল্টা চুক্তি"
+  ],
+  "answer": 2,
+  "explanation": "১৯১৯ সালের ভার্সাই চুক্তিতে জার্মানির ওপর কঠোর শর্ত আরোপ করা হয়, যা পরে দ্বিতীয় বিশ্বযুদ্ধের অন্যতম কারণ হয়।"
+ },
+ {
+  "ref": "int_072",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "দ্বিতীয় বিশ্বযুদ্ধ কীভাবে শুরু হয়?",
+  "options": [
+   "সোভিয়েত ইউনিয়নের ফিনল্যান্ড আক্রমণের মাধ্যমে",
+   "জাপানের পার্ল হারবার আক্রমণের মাধ্যমে",
+   "ইতালির ইথিওপিয়া আক্রমণের মাধ্যমে",
+   "জার্মানির পোল্যান্ড আক্রমণের মাধ্যমে"
+  ],
+  "answer": 3,
+  "explanation": "১ সেপ্টেম্বর ১৯৩৯ জার্মানি পোল্যান্ড আক্রমণ করলে ব্রিটেন ও ফ্রান্স যুদ্ধ ঘোষণা করে।"
+ },
+ {
+  "ref": "int_073",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জাপান কবে পার্ল হারবার আক্রমণ করে?",
+  "options": [
+   "১ সেপ্টেম্বর ১৯৩৯",
+   "৭ ডিসেম্বর ১৯৪১",
+   "৬ আগস্ট ১৯৪৫",
+   "৮ মে ১৯৪৫"
+  ],
+  "answer": 1,
+  "explanation": "হাওয়াইয়ের পার্ল হারবারে মার্কিন নৌঘাঁটিতে জাপানের আক্রমণের পর যুক্তরাষ্ট্র দ্বিতীয় বিশ্বযুদ্ধে যোগ দেয়।"
+ },
+ {
+  "ref": "int_074",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "হিরোশিমায় পারমাণবিক বোমা নিক্ষেপ করা হয় কবে?",
+  "options": [
+   "৭ ডিসেম্বর ১৯৪১",
+   "৯ আগস্ট ১৯৪৫",
+   "১৫ আগস্ট ১৯৪৫",
+   "৬ আগস্ট ১৯৪৫"
+  ],
+  "answer": 3,
+  "explanation": "৬ আগস্ট হিরোশিমায় \"লিটল বয়\" এবং ৯ আগস্ট নাগাসাকিতে \"ফ্যাট ম্যান\" বোমা ফেলা হয়।"
+ },
+ {
+  "ref": "int_075",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "নাগাসাকিতে নিক্ষিপ্ত পারমাণবিক বোমার নাম কী ছিল?",
+  "options": [
+   "ফ্যাট ম্যান",
+   "লিটল বয়",
+   "ট্রিনিটি",
+   "জার বোম্বা"
+  ],
+  "answer": 0,
+  "explanation": "হিরোশিমার বোমার নাম লিটল বয় এবং নাগাসাকির বোমার নাম ফ্যাট ম্যান।"
+ },
+ {
+  "ref": "int_076",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বার্লিন প্রাচীরের পতন ঘটে কবে?",
+  "options": [
+   "২৬ ডিসেম্বর ১৯৯১",
+   "৩ অক্টোবর ১৯৯০",
+   "৯ নভেম্বর ১৯৮৯",
+   "১৩ আগস্ট ১৯৬১"
+  ],
+  "answer": 2,
+  "explanation": "১৯৬১ সালে নির্মিত প্রাচীরটি ৯ নভেম্বর ১৯৮৯ ভেঙে ফেলা হয়; ৩ অক্টোবর ১৯৯০ দুই জার্মানি একীভূত হয়।"
+ },
+ {
+  "ref": "int_077",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সোভিয়েত ইউনিয়ন ভেঙে কয়টি স্বাধীন রাষ্ট্রের জন্ম হয়?",
+  "options": [
+   "১৬টি",
+   "১২টি",
+   "১৫টি",
+   "১০টি"
+  ],
+  "answer": 2,
+  "explanation": "২৬ ডিসেম্বর ১৯৯১ সোভিয়েত ইউনিয়ন আনুষ্ঠানিকভাবে বিলুপ্ত হয়ে ১৫টি স্বাধীন রাষ্ট্রে বিভক্ত হয়।"
+ },
+ {
+  "ref": "int_078",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কিউবান মিসাইল সংকট কত সালে ঘটে?",
+  "options": [
+   "১৯৬২",
+   "১৯৫৯",
+   "১৯৬১",
+   "১৯৭৩"
+  ],
+  "answer": 0,
+  "explanation": "১৯৬২ সালের অক্টোবরে কিউবায় সোভিয়েত ক্ষেপণাস্ত্র স্থাপনকে কেন্দ্র করে যুক্তরাষ্ট্র ও সোভিয়েত ইউনিয়ন পারমাণবিক যুদ্ধের দ্বারপ্রান্তে পৌঁছায়।"
+ },
+ {
+  "ref": "int_079",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ফরাসি বিপ্লব কত সালে শুরু হয়?",
+  "options": [
+   "১৯১৭",
+   "১৭৭৬",
+   "১৮৪৮",
+   "১৭৮৯"
+  ],
+  "answer": 3,
+  "explanation": "১৪ জুলাই ১৭৮৯ বাস্তিল দুর্গের পতনের মাধ্যমে ফরাসি বিপ্লব শুরু হয়; এর মূলমন্ত্র ছিল সাম্য, মৈত্রী ও স্বাধীনতা।"
+ },
+ {
+  "ref": "int_080",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "যুক্তরাষ্ট্র কবে স্বাধীনতা ঘোষণা করে?",
+  "options": [
+   "১৪ জুলাই ১৭৮৯",
+   "৪ জুলাই ১৭৭৬",
+   "৪ জুলাই ১৭৮৩",
+   "২২ ফেব্রুয়ারি ১৭৩২"
+  ],
+  "answer": 1,
+  "explanation": "৪ জুলাই ১৭৭৬ ফিলাডেলফিয়ায় স্বাধীনতার ঘোষণাপত্র গৃহীত হয়; এর প্রধান রচয়িতা টমাস জেফারসন।"
+ },
+ {
+  "ref": "int_081",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "রুশ বলশেভিক বিপ্লবের নেতৃত্ব দেন কে?",
+  "options": [
+   "ভ্লাদিমির লেনিন",
+   "জোসেফ স্ট্যালিন",
+   "লিও ট্রটস্কি",
+   "কার্ল মার্ক্স"
+  ],
+  "answer": 0,
+  "explanation": "১৯১৭ সালের অক্টোবর বিপ্লবে লেনিনের নেতৃত্বে বলশেভিকরা ক্ষমতা দখল করে।"
+ },
+ {
+  "ref": "int_082",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "গণপ্রজাতন্ত্রী চীন কবে প্রতিষ্ঠিত হয়?",
+  "options": [
+   "১০ অক্টোবর ১৯১১",
+   "১ অক্টোবর ১৯৪৯",
+   "১ জুলাই ১৯২১",
+   "১৫ আগস্ট ১৯৪৭"
+  ],
+  "answer": 1,
+  "explanation": "মাও সে তুং ১ অক্টোবর ১৯৪৯ বেইজিংয়ের তিয়েনআনমেন স্কয়ারে গণপ্রজাতন্ত্রী চীন প্রতিষ্ঠার ঘোষণা দেন।"
+ },
+ {
+  "ref": "int_083",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোরীয় যুদ্ধ কোন সময়ে সংঘটিত হয়?",
+  "options": [
+   "১৯৫৫-১৯৭৫",
+   "১৯৪৫-১৯৪৮",
+   "১৯৫০-১৯৫৩",
+   "১৯৬৫-১৯৭৩"
+  ],
+  "answer": 2,
+  "explanation": "১৯৫৩ সালের যুদ্ধবিরতি চুক্তিতে যুদ্ধ থামে, কিন্তু কোনো শান্তিচুক্তি না হওয়ায় দুই কোরিয়া কারিগরিভাবে এখনো যুদ্ধাবস্থায়।"
+ },
+ {
+  "ref": "int_084",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ভিয়েতনাম যুদ্ধ কবে শেষ হয়?",
+  "options": [
+   "১৯৮০",
+   "১৯৭৩",
+   "১৯৬৮",
+   "১৯৭৫"
+  ],
+  "answer": 3,
+  "explanation": "৩০ এপ্রিল ১৯৭৫ সায়গনের পতনের মাধ্যমে যুদ্ধ শেষ হয় এবং ১৯৭৬ সালে ভিয়েতনাম একীভূত হয়।"
+ },
+ {
+  "ref": "int_085",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "দক্ষিণ আফ্রিকায় বর্ণবাদের অবসানের পর প্রথম কৃষ্ণাঙ্গ প্রেসিডেন্ট কে?",
+  "options": [
+   "ডেসমন্ড টুটু",
+   "নেলসন ম্যান্ডেলা",
+   "থাবো এমবেকি",
+   "জ্যাকব জুমা"
+  ],
+  "answer": 1,
+  "explanation": "২৭ বছর কারাবন্দি থাকার পর মুক্ত হয়ে ম্যান্ডেলা ১৯৯৪ সালে প্রেসিডেন্ট হন।"
+ },
+ {
+  "ref": "int_086",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আরব বসন্ত কোন দেশ থেকে শুরু হয়?",
+  "options": [
+   "সিরিয়া",
+   "মিশর",
+   "লিবিয়া",
+   "তিউনিসিয়া"
+  ],
+  "answer": 3,
+  "explanation": "২০১০ সালের ডিসেম্বরে তিউনিসিয়ার ফল বিক্রেতা মোহাম্মদ বুআজিজির আত্মাহুতির পর আরব বিশ্বে গণআন্দোলন ছড়িয়ে পড়ে।"
+ },
+ {
+  "ref": "int_087",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ম্যাগনা কার্টা কত সালে স্বাক্ষরিত হয়?",
+  "options": [
+   "১২১৫",
+   "১৬৮৮",
+   "১৭৮৯",
+   "১০৬৬"
+  ],
+  "answer": 0,
+  "explanation": "১২১৫ সালে ইংল্যান্ডের রাজা জন ব্যারনদের চাপে ম্যাগনা কার্টায় স্বাক্ষর করেন; এটি রাজার ক্ষমতা সীমিত করার প্রথম দলিল হিসেবে বিবেচিত।"
+ },
+ {
+  "ref": "int_088",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "রাশিয়া কবে ইউক্রেনে পূর্ণমাত্রার সামরিক আগ্রাসন শুরু করে?",
+  "options": [
+   "৭ অক্টোবর ২০২৩",
+   "১৮ মার্চ ২০১৪",
+   "২৪ ফেব্রুয়ারি ২০২২",
+   "১ জানুয়ারি ২০২২"
+  ],
+  "answer": 2,
+  "explanation": "২০১৪ সালে ক্রিমিয়া দখলের পর ২৪ ফেব্রুয়ারি ২০২২ রাশিয়া ইউক্রেনে পূর্ণমাত্রার আক্রমণ শুরু করে।"
+ },
+ {
+  "ref": "int_089",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "বিশ্ব ইতিহাস ও যুদ্ধ",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "স্নায়ুযুদ্ধকালে পূর্ব ও পশ্চিম ইউরোপের বিভাজন বোঝাতে \"লৌহ যবনিকা\" (Iron Curtain) শব্দবন্ধটি কে জনপ্রিয় করেন?",
+  "options": [
+   "জোসেফ স্ট্যালিন",
+   "হ্যারি ট্রুম্যান",
+   "উইনস্টন চার্চিল",
+   "জন এফ. কেনেডি"
+  ],
+  "answer": 2,
+  "explanation": "১৯৪৬ সালে যুক্তরাষ্ট্রের ফুলটনে দেওয়া ভাষণে চার্চিল শব্দবন্ধটি ব্যবহার করেন।"
+ },
+ {
+  "ref": "int_090",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আধুনিক জাতিরাষ্ট্র ব্যবস্থার ভিত্তি হিসেবে বিবেচিত চুক্তি কোনটি?",
+  "options": [
+   "ওয়েস্টফালিয়া চুক্তি, ১৬৪৮",
+   "ভার্সাই চুক্তি, ১৯১৯",
+   "ভিয়েনা কংগ্রেস, ১৮১৫",
+   "জাতিসংঘ সনদ, ১৯৪৫"
+  ],
+  "answer": 0,
+  "explanation": "ওয়েস্টফালিয়া চুক্তি ত্রিশ বছরের যুদ্ধের অবসান ঘটিয়ে রাষ্ট্রীয় সার্বভৌমত্বের নীতি প্রতিষ্ঠা করে।"
+ },
+ {
+  "ref": "int_091",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "পারমাণবিক অস্ত্র বিস্তার রোধ চুক্তি (NPT) কত সালে স্বাক্ষরিত হয়?",
+  "options": [
+   "১৯৭০",
+   "১৯৯৬",
+   "১৯৬৩",
+   "১৯৬৮"
+  ],
+  "answer": 3,
+  "explanation": "NPT ১৯৬৮ সালে স্বাক্ষরের জন্য উন্মুক্ত হয় এবং ১৯৭০ সালে কার্যকর হয়।"
+ },
+ {
+  "ref": "int_092",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "সর্বাত্মক পারমাণবিক পরীক্ষা নিষিদ্ধকরণ চুক্তি (CTBT) কত সালে গৃহীত হয়?",
+  "options": [
+   "১৯৬৮",
+   "১৯৯৬",
+   "১৯৮৭",
+   "২০০০"
+  ],
+  "answer": 1,
+  "explanation": "১৯৯৬ সালে জাতিসংঘ সাধারণ পরিষদে CTBT গৃহীত হয়, তবে প্রয়োজনীয় সব দেশের অনুসমর্থন না পাওয়ায় এখনো কার্যকর হয়নি।"
+ },
+ {
+  "ref": "int_093",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "যুদ্ধবন্দি ও বেসামরিক নাগরিকদের সুরক্ষা সংক্রান্ত চারটি জেনেভা কনভেনশন কত সালে গৃহীত হয়?",
+  "options": [
+   "১৯৪৯",
+   "১৮৬৪",
+   "১৯৪৫",
+   "১৯৭৭"
+  ],
+  "answer": 0,
+  "explanation": "১৯৪৯ সালের চারটি জেনেভা কনভেনশন আধুনিক আন্তর্জাতিক মানবিক আইনের মূল ভিত্তি।"
+ },
+ {
+  "ref": "int_094",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘ সমুদ্র আইন কনভেনশন (UNCLOS) কত সালে গৃহীত হয়?",
+  "options": [
+   "১৯৭২",
+   "১৯৮২",
+   "১৯৯৪",
+   "১৯৫৮"
+  ],
+  "answer": 1,
+  "explanation": "১৯৮২ সালে গৃহীত UNCLOS ১৯৯৪ সালে কার্যকর হয়; এতে ১২ নটিক্যাল মাইল রাজনৈতিক সমুদ্রসীমা ও ২০০ নটিক্যাল মাইল অর্থনৈতিক অঞ্চল নির্ধারিত।"
+ },
+ {
+  "ref": "int_095",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ক্যাম্প ডেভিড চুক্তি কোন দুটি দেশের মধ্যে স্বাক্ষরিত হয়?",
+  "options": [
+   "জর্ডান ও ইসরায়েল",
+   "ইসরায়েল ও ফিলিস্তিন",
+   "মিশর ও ইসরায়েল",
+   "মিশর ও সিরিয়া"
+  ],
+  "answer": 2,
+  "explanation": "১৯৭৮ সালে মার্কিন প্রেসিডেন্ট জিমি কার্টারের মধ্যস্থতায় মিশরের আনোয়ার সাদাত ও ইসরায়েলের মেনাখেম বেগিন চুক্তি স্বাক্ষর করেন।"
+ },
+ {
+  "ref": "int_096",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "অসলো চুক্তি কাদের মধ্যে স্বাক্ষরিত হয়?",
+  "options": [
+   "ইসরায়েল ও জর্ডান",
+   "মিশর ও ইসরায়েল",
+   "নরওয়ে ও সুইডেন",
+   "ইসরায়েল ও পিএলও"
+  ],
+  "answer": 3,
+  "explanation": "১৯৯৩ সালে ইসরায়েল ও ফিলিস্তিন মুক্তি সংস্থা (পিএলও) পরস্পরকে স্বীকৃতি দেয়; ইয়াসির আরাফাত, আইজাক রবিন ও শিমন পেরেস ১৯৯৪ সালে নোবেল পান।"
+ },
+ {
+  "ref": "int_097",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ভারত ও পাকিস্তানের মধ্যে সিমলা চুক্তি কত সালে স্বাক্ষরিত হয়?",
+  "options": [
+   "১৯৬৬",
+   "১৯৭২",
+   "১৯৬০",
+   "১৯৯৯"
+  ],
+  "answer": 1,
+  "explanation": "১৯৭১ সালের যুদ্ধের পর ১৯৭২ সালে ইন্দিরা গান্ধী ও জুলফিকার আলী ভুট্টো সিমলা চুক্তি স্বাক্ষর করেন।"
+ },
+ {
+  "ref": "int_098",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ভারত-পাকিস্তান সিন্ধু পানি চুক্তি কত সালে স্বাক্ষরিত হয়?",
+  "options": [
+   "১৯৬৬",
+   "১৯৭২",
+   "১৯৪৮",
+   "১৯৬০"
+  ],
+  "answer": 3,
+  "explanation": "বিশ্বব্যাংকের মধ্যস্থতায় ১৯৬০ সালে করাচিতে চুক্তিটি স্বাক্ষরিত হয়।"
+ },
+ {
+  "ref": "int_099",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ভারত ও চীনের মধ্যে \"পঞ্চশীল\" নীতি কত সালে ঘোষিত হয়?",
+  "options": [
+   "১৯৫৪",
+   "১৯৬২",
+   "১৯৪৯",
+   "১৯৫৫"
+  ],
+  "answer": 0,
+  "explanation": "১৯৫৪ সালে নেহরু ও চৌ এন লাইয়ের মধ্যে শান্তিপূর্ণ সহাবস্থানের পাঁচ নীতি ঘোষিত হয়।"
+ },
+ {
+  "ref": "int_100",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ইউরোপের দেশগুলোর মধ্যে সীমান্ত নিয়ন্ত্রণ তুলে দেওয়া চুক্তি কোনটি?",
+  "options": [
+   "লিসবন চুক্তি",
+   "ম্যাস্ট্রিক্ট চুক্তি",
+   "শেনজেন চুক্তি",
+   "রোম চুক্তি"
+  ],
+  "answer": 2,
+  "explanation": "১৯৮৫ সালে লুক্সেমবার্গের শেনজেন গ্রামে স্বাক্ষরিত চুক্তির আওতায় সদস্য দেশগুলোর মধ্যে পাসপোর্টমুক্ত চলাচল সম্ভব।"
+ },
+ {
+  "ref": "int_101",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "২০২০ সালে সংযুক্ত আরব আমিরাত ও বাহরাইনের সাথে ইসরায়েলের সম্পর্ক স্বাভাবিকীকরণ চুক্তির নাম কী?",
+  "options": [
+   "ক্যাম্প ডেভিড চুক্তি",
+   "অসলো চুক্তি",
+   "আব্রাহাম চুক্তি",
+   "ডেটন চুক্তি"
+  ],
+  "answer": 2,
+  "explanation": "যুক্তরাষ্ট্রের মধ্যস্থতায় স্বাক্ষরিত আব্রাহাম চুক্তিতে পরে মরক্কো ও সুদানও যুক্ত হয়।"
+ },
+ {
+  "ref": "int_102",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বসনিয়া যুদ্ধের অবসান ঘটায় কোন চুক্তি?",
+  "options": [
+   "ডেটন চুক্তি",
+   "অসলো চুক্তি",
+   "গুড ফ্রাইডে চুক্তি",
+   "মিনস্ক চুক্তি"
+  ],
+  "answer": 0,
+  "explanation": "১৯৯৫ সালে যুক্তরাষ্ট্রের ওহাইওর ডেটনে আলোচনার মাধ্যমে চুক্তিটি সম্পাদিত হয়।"
+ },
+ {
+  "ref": "int_103",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "উত্তর আয়ারল্যান্ডে শান্তি প্রতিষ্ঠার চুক্তি কোনটি?",
+  "options": [
+   "বেলফাস্ট-লন্ডন চুক্তি",
+   "ডেটন চুক্তি",
+   "ম্যাস্ট্রিক্ট চুক্তি",
+   "গুড ফ্রাইডে চুক্তি"
+  ],
+  "answer": 3,
+  "explanation": "১৯৯৮ সালে স্বাক্ষরিত গুড ফ্রাইডে (বেলফাস্ট) চুক্তি উত্তর আয়ারল্যান্ডের দীর্ঘ সহিংসতার অবসান ঘটায়।"
+ },
+ {
+  "ref": "int_104",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আন্তর্জাতিক চুক্তি ও সম্মেলন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আটলান্টিক সনদে কোন দুই নেতা স্বাক্ষর করেন?",
+  "options": [
+   "স্ট্যালিন ও চার্চিল",
+   "রুজভেল্ট ও চার্চিল",
+   "ট্রুম্যান ও অ্যাটলি",
+   "রুজভেল্ট ও স্ট্যালিন"
+  ],
+  "answer": 1,
+  "explanation": "১৯৪১ সালে আটলান্টিক মহাসাগরে যুদ্ধজাহাজে বৈঠক করে রুজভেল্ট ও চার্চিল যুদ্ধোত্তর বিশ্বের লক্ষ্য ঘোষণা করেন, যা জাতিসংঘ গঠনের ভিত্তি।"
+ },
+ {
+  "ref": "int_105",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "মিয়ানমারের রাজধানী কোনটি?",
+  "options": [
+   "নেপিডো",
+   "ইয়াঙ্গুন",
+   "মান্দালয়",
+   "সিত্তে"
+  ],
+  "answer": 0,
+  "explanation": "২০০৫ সালে মিয়ানমার ইয়াঙ্গুন থেকে রাজধানী নেপিডোতে সরিয়ে নেয়।"
+ },
+ {
+  "ref": "int_106",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "শ্রীলঙ্কার প্রশাসনিক রাজধানী কোনটি?",
+  "options": [
+   "কলম্বো",
+   "শ্রী জয়াবর্ধনেপুরা কোট্টে",
+   "ক্যান্ডি",
+   "জাফনা"
+  ],
+  "answer": 1,
+  "explanation": "শ্রী জয়াবর্ধনেপুরা কোট্টে আইনগত ও সংসদীয় রাজধানী; কলম্বো বাণিজ্যিক রাজধানী।"
+ },
+ {
+  "ref": "int_107",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "অস্ট্রেলিয়ার রাজধানী কোনটি?",
+  "options": [
+   "মেলবোর্ন",
+   "সিডনি",
+   "ক্যানবেরা",
+   "পার্থ"
+  ],
+  "answer": 2,
+  "explanation": "সিডনি ও মেলবোর্নের প্রতিদ্বন্দ্বিতা এড়াতে পরিকল্পিত শহর ক্যানবেরাকে রাজধানী করা হয়।"
+ },
+ {
+  "ref": "int_108",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কানাডার রাজধানী কোনটি?",
+  "options": [
+   "ভ্যানকুভার",
+   "টরন্টো",
+   "মন্ট্রিল",
+   "অটোয়া"
+  ],
+  "answer": 3,
+  "explanation": "অন্টারিও প্রদেশের অটোয়া কানাডার রাজধানী।"
+ },
+ {
+  "ref": "int_109",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ব্রাজিলের রাজধানী কোনটি?",
+  "options": [
+   "রিও ডি জেনিরো",
+   "ব্রাসিলিয়া",
+   "সাও পাওলো",
+   "সালভাদর"
+  ],
+  "answer": 1,
+  "explanation": "১৯৬০ সালে রিও ডি জেনিরো থেকে পরিকল্পিত শহর ব্রাসিলিয়ায় রাজধানী স্থানান্তর করা হয়।"
+ },
+ {
+  "ref": "int_110",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "তুরস্কের রাজধানী কোনটি?",
+  "options": [
+   "আন্তালিয়া",
+   "ইস্তাম্বুল",
+   "ইজমির",
+   "আঙ্কারা"
+  ],
+  "answer": 3,
+  "explanation": "১৯২৩ সালে কামাল আতাতুর্ক আঙ্কারাকে রাজধানী করেন; ইস্তাম্বুল বৃহত্তম শহর।"
+ },
+ {
+  "ref": "int_111",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "নাইজেরিয়ার রাজধানী কোনটি?",
+  "options": [
+   "আবুজা",
+   "লাগোস",
+   "কানো",
+   "ইবাদান"
+  ],
+  "answer": 0,
+  "explanation": "১৯৯১ সালে লাগোস থেকে আবুজায় রাজধানী স্থানান্তর করা হয়।"
+ },
+ {
+  "ref": "int_112",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কাজাখস্তানের রাজধানী কোনটি?",
+  "options": [
+   "তাশখন্দ",
+   "আলমাতি",
+   "আস্তানা",
+   "বিশকেক"
+  ],
+  "answer": 2,
+  "explanation": "১৯৯৭ সালে আলমাতি থেকে আস্তানায় রাজধানী সরানো হয়।"
+ },
+ {
+  "ref": "int_113",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ভুটানের মুদ্রার নাম কী?",
+  "options": [
+   "কিয়াত",
+   "রুপি",
+   "গুলট্রাম",
+   "রুফিয়া"
+  ],
+  "answer": 2,
+  "explanation": "ভুটানের মুদ্রা গুলট্রাম, মিয়ানমারের কিয়াত এবং মালদ্বীপের রুফিয়া।"
+ },
+ {
+  "ref": "int_114",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "মালয়েশিয়ার মুদ্রার নাম কী?",
+  "options": [
+   "রিঙ্গিত",
+   "বাথ",
+   "রুপিয়াহ",
+   "ডং"
+  ],
+  "answer": 0,
+  "explanation": "মালয়েশিয়ার রিঙ্গিত, থাইল্যান্ডের বাথ, ইন্দোনেশিয়ার রুপিয়াহ ও ভিয়েতনামের ডং।"
+ },
+ {
+  "ref": "int_115",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "দক্ষিণ আফ্রিকার মুদ্রার নাম কী?",
+  "options": [
+   "সেডি",
+   "নাইরা",
+   "শিলিং",
+   "র‍্যান্ড"
+  ],
+  "answer": 3,
+  "explanation": "দক্ষিণ আফ্রিকার র‍্যান্ড, নাইজেরিয়ার নাইরা, কেনিয়ার শিলিং এবং ঘানার সেডি।"
+ },
+ {
+  "ref": "int_116",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ব্রাজিলের মুদ্রার নাম কী?",
+  "options": [
+   "পেসো",
+   "রিয়াল",
+   "সোল",
+   "বলিভার"
+  ],
+  "answer": 1,
+  "explanation": "ব্রাজিলের মুদ্রা রিয়াল; আর্জেন্টিনার পেসো, পেরুর সোল এবং ভেনেজুয়েলার বলিভার।"
+ },
+ {
+  "ref": "int_117",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "বিশ্বের সবচেয়ে বেশি বিনিময় মূল্যের মুদ্রা কোনটি?",
+  "options": [
+   "কুয়েতি দিনার",
+   "ব্রিটিশ পাউন্ড",
+   "মার্কিন ডলার",
+   "ইউরো"
+  ],
+  "answer": 0,
+  "explanation": "এক কুয়েতি দিনারের মূল্য তিন মার্কিন ডলারেরও বেশি, যা বিশ্বের মুদ্রাগুলোর মধ্যে সর্বোচ্চ।"
+ },
+ {
+  "ref": "int_118",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "পোল্যান্ডের মুদ্রার নাম কী?",
+  "options": [
+   "ক্রোনা",
+   "জ্লোটি",
+   "ফোরিন্ট",
+   "ইউরো"
+  ],
+  "answer": 1,
+  "explanation": "পোল্যান্ড ইইউ সদস্য হলেও নিজস্ব মুদ্রা জ্লোটি ব্যবহার করে; হাঙ্গেরির মুদ্রা ফোরিন্ট।"
+ },
+ {
+  "ref": "int_119",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ইসরায়েলের মুদ্রার নাম কী?",
+  "options": [
+   "লিরা",
+   "দিনার",
+   "শেকেল",
+   "রিয়াল"
+  ],
+  "answer": 2,
+  "explanation": "ইসরায়েলের মুদ্রা নতুন শেকেল।"
+ },
+ {
+  "ref": "int_120",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "\"সূর্যোদয়ের দেশ\" জাপানের রাজধানী কোনটি?",
+  "options": [
+   "হিরোশিমা",
+   "কিয়োটো",
+   "ওসাকা",
+   "টোকিও"
+  ],
+  "answer": 3,
+  "explanation": "১৮৬৮ সালে কিয়োটো থেকে টোকিওতে (পূর্বনাম এদো) রাজধানী স্থানান্তর করা হয়।"
+ },
+ {
+  "ref": "int_121",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "দেশ, রাজধানী ও মুদ্রা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন দেশটি স্থলবেষ্টিত (Landlocked)?",
+  "options": [
+   "শ্রীলঙ্কা",
+   "নেপাল",
+   "মিয়ানমার",
+   "থাইল্যান্ড"
+  ],
+  "answer": 1,
+  "explanation": "নেপাল ও ভুটানের কোনো সমুদ্র উপকূল নেই; তারা বন্দর সুবিধার জন্য প্রতিবেশীদের ওপর নির্ভরশীল।"
+ },
+ {
+  "ref": "int_122",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আইনসভা ও রাষ্ট্রব্যবস্থা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "যুক্তরাষ্ট্রের আইনসভার নাম কী?",
+  "options": [
+   "ডুমা",
+   "পার্লামেন্ট",
+   "ডায়েট",
+   "কংগ্রেস"
+  ],
+  "answer": 3,
+  "explanation": "মার্কিন কংগ্রেস দুই কক্ষবিশিষ্ট: সিনেট ও প্রতিনিধি পরিষদ।"
+ },
+ {
+  "ref": "int_123",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আইনসভা ও রাষ্ট্রব্যবস্থা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "জাপানের আইনসভার নাম কী?",
+  "options": [
+   "ডায়েট",
+   "নেসেট",
+   "মজলিস",
+   "বুন্দেসটাগ"
+  ],
+  "answer": 0,
+  "explanation": "জাপানের আইনসভা ডায়েট দুই কক্ষবিশিষ্ট।"
+ },
+ {
+  "ref": "int_124",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আইনসভা ও রাষ্ট্রব্যবস্থা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ইসরায়েলের আইনসভার নাম কী?",
+  "options": [
+   "ডুমা",
+   "মজলিস",
+   "নেসেট",
+   "কর্টেস"
+  ],
+  "answer": 2,
+  "explanation": "ইসরায়েলের এককক্ষবিশিষ্ট আইনসভা নেসেটের সদস্য সংখ্যা ১২০।"
+ },
+ {
+  "ref": "int_125",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আইনসভা ও রাষ্ট্রব্যবস্থা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "রাশিয়ার আইনসভার নিম্নকক্ষের নাম কী?",
+  "options": [
+   "স্টরটিং",
+   "নেসেট",
+   "ডুমা",
+   "ডায়েট"
+  ],
+  "answer": 2,
+  "explanation": "রাশিয়ার আইনসভা ফেডারেল অ্যাসেম্বলি; নিম্নকক্ষ রাষ্ট্রীয় ডুমা ও উচ্চকক্ষ ফেডারেশন কাউন্সিল।"
+ },
+ {
+  "ref": "int_126",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আইনসভা ও রাষ্ট্রব্যবস্থা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জার্মানির আইনসভার নিম্নকক্ষের নাম কী?",
+  "options": [
+   "বুন্দেসটাগ",
+   "বুন্দেসরাট",
+   "রিকসডাগ",
+   "স্টরটিং"
+  ],
+  "answer": 0,
+  "explanation": "জার্মানির নিম্নকক্ষ বুন্দেসটাগ এবং রাজ্যগুলোর প্রতিনিধিত্বকারী কক্ষ বুন্দেসরাট।"
+ },
+ {
+  "ref": "int_127",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আইনসভা ও রাষ্ট্রব্যবস্থা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "নরওয়ের আইনসভার নাম কী?",
+  "options": [
+   "আলথিং",
+   "ফোকেটিং",
+   "রিকসডাগ",
+   "স্টরটিং"
+  ],
+  "answer": 3,
+  "explanation": "নরওয়ের স্টরটিং, ডেনমার্কের ফোকেটিং, সুইডেনের রিকসডাগ এবং আইসল্যান্ডের আলথিং (বিশ্বের প্রাচীনতম সংসদগুলোর একটি)।"
+ },
+ {
+  "ref": "int_128",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আইনসভা ও রাষ্ট্রব্যবস্থা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ইরানের আইনসভার নাম কী?",
+  "options": [
+   "শুরা",
+   "মজলিস",
+   "নেসেট",
+   "লয়া জিরগা"
+  ],
+  "answer": 1,
+  "explanation": "ইরানের আইনসভা ইসলামি পরামর্শ পরিষদ বা মজলিস নামে পরিচিত।"
+ },
+ {
+  "ref": "int_129",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আইনসভা ও রাষ্ট্রব্যবস্থা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "যুক্তরাজ্যের আইনসভার উচ্চকক্ষের নাম কী?",
+  "options": [
+   "হাউস অব লর্ডস",
+   "হাউস অব কমন্স",
+   "সিনেট",
+   "প্রিভি কাউন্সিল"
+  ],
+  "answer": 0,
+  "explanation": "ব্রিটিশ পার্লামেন্টের উচ্চকক্ষ হাউস অব লর্ডস এবং নিম্নকক্ষ হাউস অব কমন্স।"
+ },
+ {
+  "ref": "int_130",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আইনসভা ও রাষ্ট্রব্যবস্থা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "যুক্তরাজ্যকে কেন \"অলিখিত সংবিধানের দেশ\" বলা হয়?",
+  "options": [
+   "কোনো আইন নেই",
+   "একক লিখিত সংবিধান দলিল নেই",
+   "রাজা সব আইন তৈরি করেন",
+   "সংবিধান গোপন রাখা হয়"
+  ],
+  "answer": 1,
+  "explanation": "যুক্তরাজ্যের সংবিধান একক দলিলে নয়; বিভিন্ন আইন, প্রথা ও আদালতের রায়ের সমন্বয়ে গঠিত।"
+ },
+ {
+  "ref": "int_131",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আইনসভা ও রাষ্ট্রব্যবস্থা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বিশ্বের প্রথম লিখিত সংবিধান কোন দেশের?",
+  "options": [
+   "ফ্রান্স",
+   "যুক্তরাজ্য",
+   "যুক্তরাষ্ট্র",
+   "ভারত"
+  ],
+  "answer": 2,
+  "explanation": "১৭৮৭ সালে প্রণীত ও ১৭৮৯ সালে কার্যকর মার্কিন সংবিধান বিশ্বের প্রাচীনতম লিখিত জাতীয় সংবিধান।"
+ },
+ {
+  "ref": "int_132",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "আইনসভা ও রাষ্ট্রব্যবস্থা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "বিশ্বের দীর্ঘতম লিখিত সংবিধান কোন দেশের?",
+  "options": [
+   "পাকিস্তান",
+   "যুক্তরাষ্ট্র",
+   "ব্রাজিল",
+   "ভারত"
+  ],
+  "answer": 3,
+  "explanation": "ভারতের সংবিধান বিশ্বের দীর্ঘতম লিখিত সংবিধান; এটি ১৯৫০ সালের ২৬ জানুয়ারি কার্যকর হয়।"
+ },
+ {
+  "ref": "int_133",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "পুরস্কার ও ক্রীড়া",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "নোবেল পুরস্কার প্রথম কত সালে দেওয়া হয়?",
+  "options": [
+   "১৮৯৬",
+   "১৯০১",
+   "১৯০৫",
+   "১৯৬৯"
+  ],
+  "answer": 1,
+  "explanation": "আলফ্রেড নোবেলের উইল অনুযায়ী ১৯০১ সাল থেকে নোবেল পুরস্কার দেওয়া হচ্ছে।"
+ },
+ {
+  "ref": "int_134",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "পুরস্কার ও ক্রীড়া",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "নোবেল শান্তি পুরস্কার কোথা থেকে দেওয়া হয়?",
+  "options": [
+   "কোপেনহেগেন, ডেনমার্ক",
+   "স্টকহোম, সুইডেন",
+   "জেনেভা, সুইজারল্যান্ড",
+   "অসলো, নরওয়ে"
+  ],
+  "answer": 3,
+  "explanation": "শান্তি পুরস্কার নরওয়ের অসলো থেকে এবং অন্য সব নোবেল পুরস্কার সুইডেনের স্টকহোম থেকে দেওয়া হয়।"
+ },
+ {
+  "ref": "int_135",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "পুরস্কার ও ক্রীড়া",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "অর্থনীতিতে নোবেল পুরস্কার প্রথম কত সালে দেওয়া হয়?",
+  "options": [
+   "১৯৬৯",
+   "১৯০১",
+   "১৯৬৮",
+   "১৯৭৫"
+  ],
+  "answer": 0,
+  "explanation": "সুইডেনের কেন্দ্রীয় ব্যাংক ১৯৬৮ সালে পুরস্কারটি প্রবর্তন করে এবং ১৯৬৯ সালে প্রথম দেওয়া হয়।"
+ },
+ {
+  "ref": "int_136",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "পুরস্কার ও ক্রীড়া",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "অমর্ত্য সেন কোন বিষয়ে নোবেল পুরস্কার পান?",
+  "options": [
+   "সাহিত্য",
+   "শান্তি",
+   "অর্থনীতি",
+   "পদার্থবিজ্ঞান"
+  ],
+  "answer": 2,
+  "explanation": "কল্যাণ অর্থনীতি ও দুর্ভিক্ষ বিষয়ক গবেষণার জন্য তিনি ১৯৯৮ সালে অর্থনীতিতে নোবেল পান।"
+ },
+ {
+  "ref": "int_137",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "পুরস্কার ও ক্রীড়া",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "সবচেয়ে কম বয়সে নোবেল পুরস্কার বিজয়ী কে?",
+  "options": [
+   "গ্রেটা থুনবার্গ",
+   "কৈলাস সত্যার্থী",
+   "মালালা ইউসুফজাই",
+   "নাদিয়া মুরাদ"
+  ],
+  "answer": 2,
+  "explanation": "মেয়েদের শিক্ষার অধিকারের পক্ষে কাজের জন্য মালালা ২০১৪ সালে মাত্র ১৭ বছর বয়সে শান্তিতে নোবেল পান।"
+ },
+ {
+  "ref": "int_138",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "পুরস্কার ও ক্রীড়া",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "\"এশিয়ার নোবেল\" হিসেবে পরিচিত পুরস্কার কোনটি?",
+  "options": [
+   "র‍্যামন ম্যাগসাইসাই পুরস্কার",
+   "বুকার পুরস্কার",
+   "পুলিৎজার পুরস্কার",
+   "ফুকুওকা পুরস্কার"
+  ],
+  "answer": 0,
+  "explanation": "ফিলিপাইনের প্রয়াত প্রেসিডেন্টের নামে প্রবর্তিত এ পুরস্কার এশিয়ায় জনসেবা ও নেতৃত্বে অবদানের জন্য দেওয়া হয়।"
+ },
+ {
+  "ref": "int_139",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "পুরস্কার ও ক্রীড়া",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সাংবাদিকতায় সর্বোচ্চ সম্মানজনক পুরস্কার হিসেবে পরিচিত কোনটি?",
+  "options": [
+   "গ্র্যামি",
+   "বুকার পুরস্কার",
+   "অস্কার",
+   "পুলিৎজার পুরস্কার"
+  ],
+  "answer": 3,
+  "explanation": "যুক্তরাষ্ট্রের কলাম্বিয়া বিশ্ববিদ্যালয় সাংবাদিকতা, সাহিত্য ও সংগীতে পুলিৎজার পুরস্কার দেয়।"
+ },
+ {
+  "ref": "int_140",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "পুরস্কার ও ক্রীড়া",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "২০২৮ সালের গ্রীষ্মকালীন অলিম্পিক কোথায় অনুষ্ঠিত হবে?",
+  "options": [
+   "ব্রিসবেন",
+   "লস অ্যাঞ্জেলেস",
+   "প্যারিস",
+   "টোকিও"
+  ],
+  "answer": 1,
+  "explanation": "২০২৪ সালে প্যারিস, ২০২৮ সালে লস অ্যাঞ্জেলেস এবং ২০৩২ সালে অস্ট্রেলিয়ার ব্রিসবেনে অলিম্পিক।"
+ },
+ {
+  "ref": "int_141",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "পুরস্কার ও ক্রীড়া",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "২০২২ সালের ফিফা বিশ্বকাপ কোন দেশ জয় করে?",
+  "options": [
+   "আর্জেন্টিনা",
+   "ফ্রান্স",
+   "ব্রাজিল",
+   "জার্মানি"
+  ],
+  "answer": 0,
+  "explanation": "কাতারে অনুষ্ঠিত ফাইনালে আর্জেন্টিনা টাইব্রেকারে ফ্রান্সকে হারিয়ে তৃতীয়বার বিশ্বকাপ জেতে।"
+ },
+ {
+  "ref": "int_142",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "পুরস্কার ও ক্রীড়া",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "২০২৬ সালের ফিফা বিশ্বকাপের আয়োজক দেশ কোনগুলো?",
+  "options": [
+   "সৌদি আরব",
+   "যুক্তরাষ্ট্র, কানাডা ও মেক্সিকো",
+   "স্পেন, পর্তুগাল ও মরক্কো",
+   "কাতার"
+  ],
+  "answer": 1,
+  "explanation": "প্রথমবারের মতো ৪৮ দল নিয়ে তিন দেশের যৌথ আয়োজনে বিশ্বকাপ অনুষ্ঠিত হয়।"
+ },
+ {
+  "ref": "int_143",
+  "exam": "bcs-general",
+  "subject": "International Affairs",
+  "topic": "পুরস্কার ও ক্রীড়া",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "অলিম্পিক পতাকায় কয়টি বলয় আছে?",
+  "options": [
+   "৬টি",
+   "৪টি",
+   "৫টি",
+   "৭টি"
+  ],
+  "answer": 2,
+  "explanation": "পাঁচটি পরস্পরযুক্ত বলয় পাঁচটি মহাদেশের ঐক্যের প্রতীক।"
+ },
+ {
+  "ref": "int_144",
+  "exam": "bangladesh-bank",
+  "subject": "International Affairs",
+  "topic": "International Finance & Trade",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Which two institutions were created at the Bretton Woods Conference of 1944?",
+  "options": [
+   "BIS and OECD",
+   "WTO and UNCTAD",
+   "ADB and IDB",
+   "IMF and IBRD (World Bank)"
+  ],
+  "answer": 3,
+  "explanation": "Delegates of 44 nations met at Bretton Woods, New Hampshire, in July 1944 and created the IMF and the International Bank for Reconstruction and Development."
+ },
+ {
+  "ref": "int_145",
+  "exam": "bangladesh-bank",
+  "subject": "International Affairs",
+  "topic": "International Finance & Trade",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Which currencies make up the IMF's Special Drawing Rights (SDR) basket?",
+  "options": [
+   "US dollar, euro, Swiss franc, yen and pound",
+   "US dollar, euro, Chinese yuan, Japanese yen and pound sterling",
+   "US dollar, euro, yuan, rupee and pound",
+   "US dollar, euro, gold, yen and pound"
+  ],
+  "answer": 1,
+  "explanation": "The Chinese renminbi joined the basket in 2016, alongside the dollar, euro, yen and pound sterling."
+ },
+ {
+  "ref": "int_146",
+  "exam": "bangladesh-bank",
+  "subject": "International Affairs",
+  "topic": "International Finance & Trade",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Which member of the World Bank Group lends to the private sector in developing countries?",
+  "options": [
+   "ICSID",
+   "IDA",
+   "MIGA",
+   "IFC"
+  ],
+  "answer": 3,
+  "explanation": "The International Finance Corporation invests in private businesses. MIGA provides political-risk guarantees and ICSID settles investment disputes."
+ },
+ {
+  "ref": "int_147",
+  "exam": "bangladesh-bank",
+  "subject": "International Affairs",
+  "topic": "International Finance & Trade",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "The Bank for International Settlements (BIS), known as the \"central bank of central banks\", is located in:",
+  "options": [
+   "Basel, Switzerland",
+   "Geneva, Switzerland",
+   "Frankfurt, Germany",
+   "London, UK"
+  ],
+  "answer": 0,
+  "explanation": "The BIS, founded in 1930, hosts the Basel Committee that issues the Basel capital accords for banks."
+ },
+ {
+  "ref": "int_148",
+  "exam": "bangladesh-bank",
+  "subject": "International Affairs",
+  "topic": "International Finance & Trade",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "The World Trade Organization replaced which agreement in 1995?",
+  "options": [
+   "UNCTAD",
+   "NAFTA",
+   "GATT",
+   "OECD"
+  ],
+  "answer": 2,
+  "explanation": "The General Agreement on Tariffs and Trade (1947) was succeeded by the WTO on 1 January 1995 after the Uruguay Round."
+ },
+ {
+  "ref": "int_149",
+  "exam": "bangladesh-bank",
+  "subject": "International Affairs",
+  "topic": "International Finance & Trade",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "The Financial Action Task Force (FATF) mainly sets international standards for:",
+  "options": [
+   "Regulating oil prices",
+   "Fixing exchange rates",
+   "Combating money laundering and terrorist financing",
+   "Setting trade tariffs"
+  ],
+  "answer": 2,
+  "explanation": "The FATF was set up by the G7 in 1989 and is based in Paris. It maintains \"grey\" and \"black\" lists of high-risk jurisdictions."
+ },
+ {
+  "ref": "int_150",
+  "exam": "bangladesh-bank",
+  "subject": "International Affairs",
+  "topic": "International Finance & Trade",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "The Asian Clearing Union (ACU), of which Bangladesh is a member, is headquartered in:",
+  "options": [
+   "Tehran",
+   "Dhaka",
+   "Mumbai",
+   "Kathmandu"
+  ],
+  "answer": 0,
+  "explanation": "The ACU was established in 1974 to settle payments among the central banks of member countries; its secretariat is in Tehran."
+ },
+ {
+  "ref": "int_151",
+  "exam": "bangladesh-bank",
+  "subject": "International Affairs",
+  "topic": "International Finance & Trade",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "Under the Basel III framework, the minimum Common Equity Tier 1 (CET1) capital ratio, before buffers, is:",
+  "options": [
+   "10.5%",
+   "8%",
+   "2%",
+   "4.5%"
+  ],
+  "answer": 3,
+  "explanation": "Basel III requires CET1 of 4.5% of risk-weighted assets, plus a 2.5% capital conservation buffer, bringing the effective requirement to 7%."
+ },
+ {
+  "ref": "int_152",
+  "exam": "bangladesh-bank",
+  "subject": "International Affairs",
+  "topic": "International Finance & Trade",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "The headquarters of SWIFT is located in:",
+  "options": [
+   "Geneva, Switzerland",
+   "La Hulpe, Belgium",
+   "New York, USA",
+   "London, UK"
+  ],
+  "answer": 1,
+  "explanation": "The Society for Worldwide Interbank Financial Telecommunication, founded in 1973, is based in La Hulpe near Brussels."
+ },
+ {
+  "ref": "int_153",
+  "exam": "combined-bank",
+  "subject": "International Affairs",
+  "topic": "Global Organisations",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Where is the headquarters of the United Nations?",
+  "options": [
+   "New York",
+   "Geneva",
+   "Paris",
+   "Vienna"
+  ],
+  "answer": 0,
+  "explanation": "The UN headquarters stands in Manhattan, New York; Geneva hosts its second-largest office."
+ },
+ {
+  "ref": "int_154",
+  "exam": "combined-bank",
+  "subject": "International Affairs",
+  "topic": "Global Organisations",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "How many permanent members does the UN Security Council have?",
+  "options": [
+   "10",
+   "5",
+   "15",
+   "7"
+  ],
+  "answer": 1,
+  "explanation": "The five permanent members are the USA, the UK, France, Russia and China, each holding a veto."
+ },
+ {
+  "ref": "int_155",
+  "exam": "combined-bank",
+  "subject": "International Affairs",
+  "topic": "Global Organisations",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Which UN agency is headquartered in Nairobi, Kenya?",
+  "options": [
+   "UNICEF",
+   "UNDP",
+   "UNEP",
+   "UNHCR"
+  ],
+  "answer": 2,
+  "explanation": "The UN Environment Programme and UN-Habitat are both based in Nairobi."
+ },
+ {
+  "ref": "int_156",
+  "exam": "combined-bank",
+  "subject": "International Affairs",
+  "topic": "Global Organisations",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Which country is NOT a founding member of ASEAN?",
+  "options": [
+   "Philippines",
+   "Indonesia",
+   "Thailand",
+   "Vietnam"
+  ],
+  "answer": 3,
+  "explanation": "The five founders in 1967 were Indonesia, Malaysia, the Philippines, Singapore and Thailand. Vietnam joined in 1995."
+ },
+ {
+  "ref": "int_157",
+  "exam": "combined-bank",
+  "subject": "International Affairs",
+  "topic": "Global Organisations",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "Which organisation publishes the annual Human Development Index (HDI)?",
+  "options": [
+   "World Bank",
+   "UNDP",
+   "IMF",
+   "WHO"
+  ],
+  "answer": 1,
+  "explanation": "The United Nations Development Programme publishes the Human Development Report, which includes the HDI."
+ },
+ {
+  "ref": "int_158",
+  "exam": "combined-bank",
+  "subject": "International Affairs",
+  "topic": "Global Organisations",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "The International Day of Peace is observed on:",
+  "options": [
+   "8 March",
+   "24 October",
+   "10 December",
+   "21 September"
+  ],
+  "answer": 3,
+  "explanation": "The UN General Assembly declared 21 September as the International Day of Peace."
+ }
+]

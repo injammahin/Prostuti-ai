@@ -1,4 +1,6 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, Suspense } from "react"
+import AnnouncementBar from "@/components/AnnouncementBar"
+import { PageLoader } from "@/components/Loaders"
 import { Link, NavLink, Outlet, useLocation } from "react-router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faArrowRight } from "@fortawesome/free-solid-svg-icons"
@@ -47,6 +49,7 @@ export default function PublicLayout() {
 
   return (
     <div className="flex min-h-dvh flex-col bg-white dark:bg-background">
+      <AnnouncementBar />
       <header
         className={cn(
           "pt-safe sticky top-0 z-40 transition-all duration-300",
@@ -130,7 +133,9 @@ export default function PublicLayout() {
 
       <main className="flex-1">
         <div key={pathname} className="rise">
-          <Outlet />
+          <Suspense fallback={<PageLoader className="mx-auto max-w-6xl px-4 py-8" />}>
+            <Outlet />
+          </Suspense>
         </div>
       </main>
 

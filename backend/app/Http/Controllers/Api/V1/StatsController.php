@@ -7,6 +7,7 @@ use App\Models\Exam;
 use App\Models\Mistake;
 use App\Models\PracticeSession;
 use App\Models\SessionAnswer;
+use App\Models\Setting;
 use App\Models\User;
 use Carbon\CarbonImmutable;
 use Illuminate\Http\JsonResponse;
@@ -15,7 +16,7 @@ use Illuminate\Support\Collection;
 
 class StatsController extends Controller
 {
-    /** Questions a student aims to answer per day. */
+    /** Questions a student aims to answer per day, unless the admin sets another goal. */
     private const DAILY_GOAL = 20;
 
     /** Answers needed before we estimate an exam score. */
@@ -48,10 +49,10 @@ class StatsController extends Controller
         $countsByDay = $answers->countBy('day');
 
         return response()->json([
-            'exam' => $exam?->only(['slug', 'name']),
+            'exam' => $exam?->only(['slug', 'name', 'name_bn']),
             'today' => [
                 'answered' => (int) ($countsByDay[$today->toDateString()] ?? 0),
-                'goal' => self::DAILY_GOAL,
+                'goal' => (int) (Setting::get('daily_goal') ?: self::DAILY_GOAL),
             ],
             'streak' => $this->streak($countsByDay, $today),
             'totals' => $this->totals($answers, $today),
@@ -163,6 +164,7 @@ class StatsController extends Controller
         return $exam->subjects->map(fn ($subject): array => [
             'slug' => $subject->slug,
             'name' => $subject->name,
+            'name_bn' => $subject->name_bn,
             'image' => $subject->image,
             'marks' => $subject->pivot->marks,
             'answered' => $bySubject->get($subject->id, collect())->count(),
@@ -184,7 +186,7 @@ class StatsController extends Controller
             ->filter(fn ($a): bool => $a->topic !== null && $subjects->has($a->subject_id))
             ->groupBy(fn ($a): string => $a->subject_id.'|'.$a->topic)
             ->map(fn (Collection $group): array => [
-                'subject' => $subjects[$group->first()->subject_id]->only(['slug', 'name']),
+                'subject' => $subjects[$group->first()->subject_id]->only(['slug', 'name', 'name_bn']),
                 'topic' => $group->first()->topic,
                 'attempts' => $group->count(),
                 'accuracy' => $this->accuracy($group),
@@ -234,7 +236,7 @@ class StatsController extends Controller
     private function recentSessions(User $user): array
     {
         return PracticeSession::query()
-            ->with('subject:id,name')
+            ->with('subject:id,name,name_bn,slug')
             ->where('user_id', $user->id)
             ->whereNotNull('finished_at')
             ->where('total', '>', 0)
@@ -247,6 +249,8 @@ class StatsController extends Controller
                 'id' => $session->id,
                 'mode' => $session->mode,
                 'subject' => $session->subject?->name,
+                'subject_slug' => $session->subject?->slug,
+                'subject_bn' => $session->subject?->name_bn,
                 'total' => $session->total,
                 'correct' => $session->correct,
                 'wrong' => $session->wrong,
@@ -264,7 +268,7 @@ class StatsController extends Controller
     private function unfinishedSessions(User $user): array
     {
         return PracticeSession::query()
-            ->with('subject:id,name')
+            ->with('subject:id,name,name_bn,slug')
             ->where('user_id', $user->id)
             ->whereNull('finished_at')
             ->where('created_at', '>=', now()->subDays(7))
@@ -279,6 +283,8 @@ class StatsController extends Controller
                 'id' => $session->id,
                 'mode' => $session->mode,
                 'subject' => $session->subject?->name,
+                'subject_slug' => $session->subject?->slug,
+                'subject_bn' => $session->subject?->name_bn,
                 'total' => $session->total,
                 'answered' => $session->correct + $session->wrong,
                 'percent' => (int) round(($session->correct + $session->wrong) / $session->total * 100),

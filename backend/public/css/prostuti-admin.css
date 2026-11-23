@@ -1,0 +1,373 @@
+/*
+ * Prostuti Admin — premium theme on top of Filament.
+ * Plain (unlayered) CSS, so it wins over Filament's layered Tailwind styles without !important.
+ */
+
+:root {
+  --pa-navy-900: #08142b;
+  --pa-navy-800: #0c1d3d;
+  --pa-navy-700: #12295a;
+  --pa-brand: #1b63a8;
+  --pa-brand-2: #2f7ed8;
+  --pa-sky: #7cc4ff;
+  --pa-bg: #f3f6fb;
+  --pa-card: #ffffff;
+  --pa-line: rgb(15 23 42 / 0.07);
+  --pa-text-soft: #64748b;
+  --pa-shadow: 0 1px 2px rgb(15 23 42 / 0.04), 0 10px 30px -14px rgb(15 35 80 / 0.16);
+  --pa-shadow-lift: 0 2px 4px rgb(15 23 42 / 0.05), 0 22px 44px -18px rgb(15 35 80 / 0.28);
+  --pa-radius: 18px;
+}
+
+/* ---------- Canvas ---------- */
+.fi-body {
+  background:
+    radial-gradient(1200px 520px at 85% -120px, rgb(47 126 216 / 0.09), transparent 60%),
+    radial-gradient(900px 420px at -10% 10%, rgb(124 196 255 / 0.08), transparent 55%),
+    var(--pa-bg);
+  font-feature-settings: "ss01", "cv11";
+}
+.dark .fi-body {
+  background:
+    radial-gradient(1200px 520px at 85% -120px, rgb(47 126 216 / 0.14), transparent 60%),
+    #070f1f;
+}
+
+/* ---------- Sidebar ---------- */
+.fi-main-sidebar,
+.fi-sidebar {
+  background:
+    radial-gradient(420px 260px at 0% 0%, rgb(47 126 216 / 0.28), transparent 70%),
+    radial-gradient(360px 300px at 100% 100%, rgb(124 196 255 / 0.10), transparent 70%),
+    linear-gradient(180deg, var(--pa-navy-800), var(--pa-navy-900));
+  border-inline-end: 1px solid rgb(255 255 255 / 0.06);
+  box-shadow: 8px 0 30px -18px rgb(8 20 43 / 0.55);
+}
+.fi-sidebar-header {
+  background: transparent;
+  border-bottom: 1px solid rgb(255 255 255 / 0.06);
+  box-shadow: none;
+}
+.fi-sidebar-header .fi-logo,
+.fi-sidebar-header .fi-logo * {
+  color: #fff;
+}
+.fi-sidebar-nav {
+  padding-top: 1.1rem;
+}
+.fi-sidebar-group-label {
+  color: rgb(148 163 184 / 0.75);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.fi-sidebar-group-btn .fi-icon,
+.fi-sidebar-group-collapse-btn,
+.fi-sidebar-group-btn svg {
+  color: rgb(148 163 184 / 0.6);
+}
+.fi-sidebar-item-btn {
+  border-radius: 12px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.fi-sidebar-item-label {
+  color: rgb(226 232 240 / 0.78);
+  font-weight: 500;
+}
+.fi-sidebar-item-icon {
+  color: rgb(148 163 184 / 0.75);
+}
+.fi-sidebar-item-btn:hover {
+  background: rgb(255 255 255 / 0.06);
+}
+.fi-sidebar-item-btn:hover .fi-sidebar-item-label {
+  color: #fff;
+}
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn {
+  position: relative;
+  background: linear-gradient(90deg, rgb(47 126 216 / 0.34), rgb(47 126 216 / 0.08));
+  box-shadow: inset 0 0 0 1px rgb(124 196 255 / 0.16), 0 8px 20px -12px rgb(47 126 216 / 0.8);
+}
+.fi-sidebar-item.fi-active > .fi-sidebar-item-btn::before {
+  content: "";
+  position: absolute;
+  inset-block: 9px;
+  inset-inline-start: -10px;
+  width: 4px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--pa-sky), var(--pa-brand-2));
+  box-shadow: 0 0 12px rgb(124 196 255 / 0.8);
+}
+.fi-sidebar-item.fi-active .fi-sidebar-item-label {
+  color: #fff;
+  font-weight: 600;
+}
+.fi-sidebar-item.fi-active .fi-sidebar-item-icon {
+  color: var(--pa-sky);
+}
+.fi-sidebar-item-grouped-border-part,
+.fi-sidebar-item-grouped-border-part-not-first,
+.fi-sidebar-item-grouped-border-part-not-last {
+  background-color: rgb(148 163 184 / 0.22);
+}
+.fi-sidebar-item.fi-active .fi-sidebar-item-grouped-border-part {
+  background-color: var(--pa-sky);
+}
+.fi-sidebar-item-badge-ctn .fi-badge {
+  background: rgb(124 196 255 / 0.16);
+  color: #cfe8ff;
+  box-shadow: none;
+}
+.fi-sidebar-footer {
+  border-top: 1px solid rgb(255 255 255 / 0.06);
+}
+
+/* ---------- Top bar ---------- */
+.fi-topbar,
+.fi-topbar-ctn > nav {
+  background: rgb(255 255 255 / 0.72);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-bottom: 1px solid var(--pa-line);
+  box-shadow: none;
+}
+.dark .fi-topbar,
+.dark .fi-topbar-ctn > nav {
+  background: rgb(7 15 31 / 0.72);
+  border-bottom-color: rgb(255 255 255 / 0.06);
+}
+.fi-global-search-field .fi-input-wrp,
+.fi-global-search-field {
+  border-radius: 999px;
+}
+
+/* ---------- Page header ---------- */
+.fi-header-heading {
+  font-weight: 750;
+  letter-spacing: -0.025em;
+}
+.fi-header-subheading {
+  color: var(--pa-text-soft);
+}
+
+/* ---------- Cards: sections, tables, widgets ---------- */
+.fi-section,
+.fi-ta-ctn,
+.fi-wi-stats-overview-stat,
+.fi-wi-chart .fi-section,
+.fi-wi-widget .fi-section {
+  border-radius: var(--pa-radius);
+  border: 1px solid var(--pa-line);
+  box-shadow: var(--pa-shadow);
+  background: var(--pa-card);
+}
+.dark .fi-section,
+.dark .fi-ta-ctn,
+.dark .fi-wi-stats-overview-stat {
+  background: rgb(15 25 45 / 0.85);
+  border-color: rgb(255 255 255 / 0.06);
+}
+.fi-section-header-heading {
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+.fi-section-header-description {
+  color: var(--pa-text-soft);
+}
+
+/* Stat tiles */
+.fi-wi-stats-overview-stat {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.fi-wi-stats-overview-stat:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--pa-shadow-lift);
+}
+.fi-wi-stats-overview-stat::after {
+  content: "";
+  position: absolute;
+  inset-block-start: -40px;
+  inset-inline-end: -40px;
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgb(47 126 216 / 0.10), transparent 70%);
+  pointer-events: none;
+}
+.fi-wi-stats-overview-stat-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--pa-text-soft);
+  letter-spacing: 0.01em;
+}
+.fi-wi-stats-overview-stat-value {
+  font-size: 2rem;
+  font-weight: 750;
+  letter-spacing: -0.03em;
+}
+
+/* Tables */
+.fi-ta-header,
+.fi-ta-header-ctn {
+  border-bottom: 1px solid var(--pa-line);
+}
+.fi-ta-row {
+  transition: background-color 0.15s ease;
+}
+.fi-ta-row:hover {
+  background: rgb(47 126 216 / 0.035);
+}
+.fi-ta-search-field .fi-input-wrp {
+  border-radius: 999px;
+}
+
+/* Inputs */
+.fi-input-wrp {
+  border-radius: 12px;
+  transition: box-shadow 0.2s ease;
+}
+.fi-input-wrp:focus-within {
+  box-shadow: 0 0 0 4px rgb(47 126 216 / 0.14);
+}
+
+/* Buttons */
+.fi-btn {
+  border-radius: 12px;
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+.fi-btn.fi-color-primary:not(.fi-outlined):not(.fi-link) {
+  background-image: linear-gradient(135deg, var(--pa-brand-2), var(--pa-brand));
+  box-shadow: 0 8px 18px -10px rgb(27 99 168 / 0.9), inset 0 1px 0 rgb(255 255 255 / 0.18);
+}
+.fi-btn.fi-color-primary:not(.fi-outlined):not(.fi-link):hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+/* Badges: softer */
+.fi-badge {
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Tabs */
+.fi-tabs {
+  border-radius: 14px;
+}
+
+/* =====================================================================
+ * Dashboard widgets (welcome banner, question bank, status)
+ * ===================================================================== */
+.pa-hero {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: 1.75rem;
+  grid-template-columns: 1fr;
+  padding: 1.75rem;
+  border-radius: 22px;
+  color: #fff;
+  background:
+    radial-gradient(520px 260px at 92% -10%, rgb(124 196 255 / 0.35), transparent 70%),
+    radial-gradient(420px 260px at 0% 110%, rgb(47 126 216 / 0.45), transparent 70%),
+    linear-gradient(135deg, #0f2a55 0%, #12356b 45%, #1b63a8 100%);
+  box-shadow: 0 24px 50px -26px rgb(15 42 85 / 0.75), inset 0 1px 0 rgb(255 255 255 / 0.12);
+}
+@media (min-width: 1100px) {
+  .pa-hero { grid-template-columns: 1.35fr 1fr; align-items: center; padding: 2.1rem 2.25rem; }
+}
+.pa-hero-glow {
+  position: absolute;
+  inset: auto -80px -120px auto;
+  width: 320px;
+  height: 320px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgb(255 255 255 / 0.14), transparent 65%);
+  pointer-events: none;
+}
+.pa-hero-main { position: relative; }
+.pa-hero-date { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; color: rgb(219 234 254 / 0.8); }
+.pa-hero-title { margin-top: 0.35rem; font-size: 1.75rem; font-weight: 750; letter-spacing: -0.03em; line-height: 1.15; }
+.pa-hero-sub { margin-top: 0.4rem; font-size: 0.92rem; color: rgb(219 234 254 / 0.82); }
+.pa-hero-actions { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.35rem; }
+.pa-hero-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #eaf3ff;
+  background: rgb(255 255 255 / 0.10);
+  border: 1px solid rgb(255 255 255 / 0.16);
+  backdrop-filter: blur(6px);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.pa-hero-action:hover { background: rgb(255 255 255 / 0.18); transform: translateY(-1px); }
+.pa-hero-action.is-primary { color: #0f2a55; background: #fff; border-color: #fff; box-shadow: 0 10px 22px -12px rgb(0 0 0 / 0.45); }
+.pa-hero-action.is-primary:hover { background: #f1f7ff; }
+.pa-hero-action-icon { width: 1.05rem; height: 1.05rem; }
+.pa-hero-facts { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; }
+.pa-hero-fact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.95rem 1.05rem;
+  border-radius: 16px;
+  background: rgb(255 255 255 / 0.09);
+  border: 1px solid rgb(255 255 255 / 0.13);
+}
+.pa-hero-fact-value { font-size: 1.6rem; font-weight: 750; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.pa-hero-fact-label { font-size: 0.76rem; color: rgb(219 234 254 / 0.78); }
+
+.pa-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #1b63a8;
+  background: rgb(27 99 168 / 0.09);
+}
+.pa-chip.is-warning { color: #b45309; background: rgb(245 158 11 / 0.14); }
+.pa-chip + .pa-chip { margin-inline-start: 0.35rem; }
+
+.pa-bars { display: flex; flex-direction: column; gap: 0.35rem; }
+.pa-bar-row {
+  display: grid;
+  grid-template-columns: minmax(0, 11rem) 1fr auto;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.4rem 0.5rem;
+  margin-inline: -0.5rem;
+  border-radius: 10px;
+  transition: background 0.15s ease;
+}
+.pa-bar-row:hover { background: rgb(47 126 216 / 0.05); }
+.pa-bar-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.85rem; font-weight: 500; }
+.pa-bar-track { height: 8px; border-radius: 999px; background: rgb(148 163 184 / 0.18); overflow: hidden; }
+.pa-bar-fill { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #2f7ed8, #1b63a8); }
+.pa-bar-fill.is-done { background: linear-gradient(90deg, #34d399, #059669); }
+.pa-bar-fill.is-low { background: linear-gradient(90deg, #fbbf24, #f59e0b); }
+.pa-bar-value { min-width: 3.5rem; text-align: end; font-size: 0.85rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.pa-bar-waiting { margin-inline-start: 0.25rem; font-size: 0.72rem; font-weight: 600; color: #b45309; }
+
+.pa-status { display: flex; flex-direction: column; }
+.pa-status-row { display: flex; align-items: center; gap: 0.8rem; padding: 0.7rem 0; border-bottom: 1px solid var(--pa-line); }
+.pa-status-row:last-child { border-bottom: 0; }
+.pa-dot { width: 0.6rem; height: 0.6rem; flex-shrink: 0; border-radius: 999px; }
+.pa-dot.is-ok { background: #10b981; box-shadow: 0 0 0 4px rgb(16 185 129 / 0.15); }
+.pa-dot.is-warn { background: #f59e0b; box-shadow: 0 0 0 4px rgb(245 158 11 / 0.15); }
+.pa-dot.is-error { background: #ef4444; box-shadow: 0 0 0 4px rgb(239 68 68 / 0.15); }
+.pa-dot.is-off { background: #94a3b8; box-shadow: 0 0 0 4px rgb(148 163 184 / 0.18); }
+.pa-status-text { display: flex; min-width: 0; flex: 1; flex-direction: column; }
+.pa-status-label { font-size: 0.87rem; font-weight: 600; }
+.pa-status-detail { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.78rem; color: var(--pa-text-soft); }
+.pa-status-link { font-size: 0.8rem; font-weight: 600; color: #1b63a8; }
+.pa-status-link:hover { text-decoration: underline; }

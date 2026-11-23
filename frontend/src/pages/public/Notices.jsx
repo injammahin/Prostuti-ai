@@ -8,6 +8,7 @@ import { NoticeCard, PageHeader, Segmented, EmptyState } from "@/components/shar
 import { notices, exams, noticeTypes } from "@/lib/data"
 import { useApp } from "@/lib/app-context"
 import { cn } from "@/lib/utils"
+import { useNoticesVersion } from "@/lib/notices-store"
 
 const typeFilters = [
   { value: "all", label: "All" },
@@ -20,6 +21,7 @@ const typeFilters = [
 ]
 
 export default function Notices({ inApp = false }) {
+  const noticesVersion = useNoticesVersion()
   const { followed, user } = useApp()
   const [type, setType] = useState("all")
   const [exam, setExam] = useState("all")
@@ -35,7 +37,7 @@ export default function Notices({ inApp = false }) {
           (!mine || followed.includes(n.exam)) &&
           (!q || (n.title + n.org + n.summary).toLowerCase().includes(q.toLowerCase()))
       ),
-    [type, exam, mine, q, followed]
+    [type, exam, mine, q, followed, noticesVersion]
   )
 
   const body = (

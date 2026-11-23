@@ -1,0 +1,3350 @@
+[
+ {
+  "ref": "ict_001",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কম্পিউটারের জনক বলা হয় কাকে?",
+  "options": [
+   "জন ভন নিউম্যান",
+   "অ্যালান টুরিং",
+   "চার্লস ব্যাবেজ",
+   "হাওয়ার্ড আইকেন"
+  ],
+  "answer": 2,
+  "explanation": "চার্লস ব্যাবেজ ডিফারেন্স ইঞ্জিন ও অ্যানালিটিক্যাল ইঞ্জিনের নকশা করেন, যা আধুনিক কম্পিউটারের মূল ধারণা; তাই তাঁকে কম্পিউটারের জনক বলা হয়।"
+ },
+ {
+  "ref": "ict_002",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বিশ্বের প্রথম কম্পিউটার প্রোগ্রামার কে?",
+  "options": [
+   "অ্যাডা লাভলেস",
+   "চার্লস ব্যাবেজ",
+   "গ্রেস হপার",
+   "বিল গেটস"
+  ],
+  "answer": 0,
+  "explanation": "অ্যাডা লাভলেস ব্যাবেজের অ্যানালিটিক্যাল ইঞ্জিনের জন্য প্রথম অ্যালগরিদম লেখেন; তাঁর নামে Ada প্রোগ্রামিং ভাষার নামকরণ হয়।"
+ },
+ {
+  "ref": "ict_003",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "প্রাচীনতম গণনাযন্ত্র কোনটি?",
+  "options": [
+   "ENIAC",
+   "প্যাসকেলিন",
+   "ডিফারেন্স ইঞ্জিন",
+   "অ্যাবাকাস"
+  ],
+  "answer": 3,
+  "explanation": "অ্যাবাকাস হাজার হাজার বছর আগে চীন ও মেসোপটেমিয়ায় ব্যবহৃত পুঁতির গণনাযন্ত্র।"
+ },
+ {
+  "ref": "ict_004",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "প্রথম যান্ত্রিক ক্যালকুলেটর (প্যাসকেলিন) কে উদ্ভাবন করেন?",
+  "options": [
+   "চার্লস ব্যাবেজ",
+   "ব্লেইজ প্যাসকেল",
+   "লাইবনিজ",
+   "জন নেপিয়ার"
+  ],
+  "answer": 1,
+  "explanation": "১৬৪২ সালে ফরাসি গণিতবিদ ব্লেইজ প্যাসকেল যোগ-বিয়োগ করতে সক্ষম যান্ত্রিক ক্যালকুলেটর তৈরি করেন।"
+ },
+ {
+  "ref": "ict_005",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "প্রথম সাধারণ উদ্দেশ্যের ইলেকট্রনিক ডিজিটাল কম্পিউটার কোনটি?",
+  "options": [
+   "UNIVAC",
+   "ENIAC",
+   "Mark-I",
+   "IBM 1620"
+  ],
+  "answer": 1,
+  "explanation": "১৯৪৬ সালে যুক্তরাষ্ট্রে তৈরি ENIAC-এ প্রায় ১৮,০০০ ভ্যাকুয়াম টিউব ব্যবহৃত হয়েছিল।"
+ },
+ {
+  "ref": "ict_006",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "প্রথম প্রজন্মের কম্পিউটারে কোন প্রযুক্তি ব্যবহৃত হতো?",
+  "options": [
+   "মাইক্রোপ্রসেসর",
+   "ট্রানজিস্টর",
+   "ইন্টিগ্রেটেড সার্কিট",
+   "ভ্যাকুয়াম টিউব"
+  ],
+  "answer": 3,
+  "explanation": "প্রজন্ম অনুযায়ী প্রযুক্তি: ১ম ভ্যাকুয়াম টিউব, ২য় ট্রানজিস্টর, ৩য় IC, ৪র্থ মাইক্রোপ্রসেসর (VLSI), ৫ম কৃত্রিম বুদ্ধিমত্তা।"
+ },
+ {
+  "ref": "ict_007",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "দ্বিতীয় প্রজন্মের কম্পিউটারে কোন প্রযুক্তি ব্যবহৃত হয়?",
+  "options": [
+   "ট্রানজিস্টর",
+   "ভ্যাকুয়াম টিউব",
+   "ইন্টিগ্রেটেড সার্কিট",
+   "কৃত্রিম বুদ্ধিমত্তা"
+  ],
+  "answer": 0,
+  "explanation": "ট্রানজিস্টর ভ্যাকুয়াম টিউবের তুলনায় ছোট, কম তাপ উৎপন্ন করে ও বেশি নির্ভরযোগ্য।"
+ },
+ {
+  "ref": "ict_008",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "চতুর্থ প্রজন্মের কম্পিউটারের মূল বৈশিষ্ট্য কী?",
+  "options": [
+   "ট্রানজিস্টর",
+   "ভ্যাকুয়াম টিউব",
+   "মাইক্রোপ্রসেসর (VLSI)",
+   "পাঞ্চকার্ড"
+  ],
+  "answer": 2,
+  "explanation": "চতুর্থ প্রজন্মে একটি চিপে হাজার হাজার ট্রানজিস্টর বসানো (VLSI) মাইক্রোপ্রসেসর ব্যবহৃত হয়; এ থেকেই পার্সোনাল কম্পিউটারের যাত্রা।"
+ },
+ {
+  "ref": "ict_009",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বিশ্বের প্রথম মাইক্রোপ্রসেসর কোনটি?",
+  "options": [
+   "Pentium",
+   "Intel 8086",
+   "Motorola 6800",
+   "Intel 4004"
+  ],
+  "answer": 3,
+  "explanation": "১৯৭১ সালে ইন্টেল ৪-বিটের Intel 4004 মাইক্রোপ্রসেসর বাজারে আনে।"
+ },
+ {
+  "ref": "ict_010",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ট্রানজিস্টর কত সালে উদ্ভাবিত হয়?",
+  "options": [
+   "১৯৩৯",
+   "১৯৫৮",
+   "১৯৪৭",
+   "১৯৭১"
+  ],
+  "answer": 2,
+  "explanation": "১৯৪৭ সালে বেল ল্যাবসে জন বারডিন, ওয়াল্টার ব্র্যাটেইন ও উইলিয়াম শকলি ট্রানজিস্টর উদ্ভাবন করেন।"
+ },
+ {
+  "ref": "ict_011",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ইন্টিগ্রেটেড সার্কিট (IC) কে উদ্ভাবন করেন?",
+  "options": [
+   "চার্লস ব্যাবেজ",
+   "জ্যাক কিলবি",
+   "টিম বার্নার্স-লি",
+   "ডেনিস রিচি"
+  ],
+  "answer": 1,
+  "explanation": "১৯৫৮ সালে টেক্সাস ইন্সট্রুমেন্টসের জ্যাক কিলবি IC উদ্ভাবন করেন; প্রায় একই সময়ে রবার্ট নয়েসও স্বতন্ত্রভাবে তা তৈরি করেন।"
+ },
+ {
+  "ref": "ict_012",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশে প্রথম কম্পিউটার কোনটি?",
+  "options": [
+   "IBM 1620",
+   "IBM 360",
+   "ENIAC",
+   "UNIVAC-1"
+  ],
+  "answer": 0,
+  "explanation": "১৯৬৪ সালে ঢাকার পরমাণু শক্তি কেন্দ্রে IBM 1620 মেইনফ্রেম কম্পিউটার স্থাপিত হয়।"
+ },
+ {
+  "ref": "ict_013",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কৃত্রিম বুদ্ধিমত্তা যাচাইয়ের \"টুরিং টেস্ট\" কে প্রস্তাব করেন?",
+  "options": [
+   "মারভিন মিনস্কি",
+   "জন ম্যাকার্থি",
+   "অ্যালান টুরিং",
+   "জন ভন নিউম্যান"
+  ],
+  "answer": 2,
+  "explanation": "১৯৫০ সালে অ্যালান টুরিং যন্ত্র মানুষের মতো চিন্তা করতে পারে কি না যাচাইয়ের পরীক্ষা প্রস্তাব করেন।"
+ },
+ {
+  "ref": "ict_014",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "\"Artificial Intelligence\" শব্দটি প্রথম কে ব্যবহার করেন?",
+  "options": [
+   "জন ম্যাকার্থি",
+   "অ্যালান টুরিং",
+   "চার্লস ব্যাবেজ",
+   "জিওফ্রে হিন্টন"
+  ],
+  "answer": 0,
+  "explanation": "১৯৫৬ সালের ডার্টমাউথ সম্মেলনে জন ম্যাকার্থি \"Artificial Intelligence\" শব্দটি প্রবর্তন করেন।"
+ },
+ {
+  "ref": "ict_015",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "কম্পিউটারের ইতিহাস ও প্রজন্ম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "পাঞ্চকার্ড ব্যবহার করে আদমশুমারির তথ্য প্রক্রিয়াকরণ যন্ত্র তৈরি করেন কে?",
+  "options": [
+   "ব্লেইজ প্যাসকেল",
+   "জোসেফ জ্যাকার্ড",
+   "হাওয়ার্ড আইকেন",
+   "হারম্যান হলেরিথ"
+  ],
+  "answer": 3,
+  "explanation": "১৮৯০ সালের মার্কিন আদমশুমারিতে হলেরিথের ট্যাবুলেটিং মেশিন ব্যবহৃত হয়; তাঁর প্রতিষ্ঠান পরে IBM-এর অংশ হয়।"
+ },
+ {
+  "ref": "ict_016",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কম্পিউটারের \"মস্তিষ্ক\" বলা হয় কোনটিকে?",
+  "options": [
+   "র‍্যাম",
+   "সিপিইউ",
+   "হার্ডডিস্ক",
+   "মনিটর"
+  ],
+  "answer": 1,
+  "explanation": "CPU (Central Processing Unit) সব নির্দেশনা প্রক্রিয়া ও নিয়ন্ত্রণ করে, তাই একে কম্পিউটারের মস্তিষ্ক বলা হয়।"
+ },
+ {
+  "ref": "ict_017",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "সিপিইউ-এর অংশ নয় কোনটি?",
+  "options": [
+   "ALU",
+   "র‍্যাম",
+   "কন্ট্রোল ইউনিট",
+   "রেজিস্টার"
+  ],
+  "answer": 1,
+  "explanation": "CPU-এর তিনটি অংশ: গাণিতিক ও যুক্তি অংশ (ALU), নিয়ন্ত্রণ অংশ (CU) এবং রেজিস্টার। RAM প্রধান মেমোরি, CPU-এর অংশ নয়।"
+ },
+ {
+  "ref": "ict_018",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বিদ্যুৎ চলে গেলে কোন মেমোরির তথ্য মুছে যায়?",
+  "options": [
+   "ফ্ল্যাশ ড্রাইভ",
+   "রম",
+   "হার্ডডিস্ক",
+   "র‍্যাম"
+  ],
+  "answer": 3,
+  "explanation": "RAM অস্থায়ী (volatile) মেমোরি; বিদ্যুৎ বন্ধ হলে এর তথ্য মুছে যায়। ROM স্থায়ী মেমোরি।"
+ },
+ {
+  "ref": "ict_019",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কম্পিউটার চালুর নির্দেশনা (BIOS) সাধারণত কোথায় থাকে?",
+  "options": [
+   "রম",
+   "র‍্যাম",
+   "ক্যাশ মেমোরি",
+   "হার্ডডিস্ক"
+  ],
+  "answer": 0,
+  "explanation": "BIOS স্থায়ী রম (বর্তমানে ফ্ল্যাশ রম) চিপে থাকে, যা কম্পিউটার চালু হলে POST চালায় ও অপারেটিং সিস্টেম লোড করে।"
+ },
+ {
+  "ref": "ict_020",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "নিচের কোন মেমোরি সবচেয়ে দ্রুতগতির?",
+  "options": [
+   "র‍্যাম",
+   "ক্যাশ মেমোরি",
+   "রেজিস্টার",
+   "হার্ডডিস্ক"
+  ],
+  "answer": 2,
+  "explanation": "মেমোরির গতি অনুযায়ী ক্রম: রেজিস্টার > ক্যাশ > র‍্যাম > সেকেন্ডারি স্টোরেজ। রেজিস্টার CPU-এর ভেতরেই থাকে।"
+ },
+ {
+  "ref": "ict_021",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সিপিইউ ও র‍্যামের মধ্যে গতির পার্থক্য কমাতে কোন মেমোরি ব্যবহৃত হয়?",
+  "options": [
+   "ফ্ল্যাশ মেমোরি",
+   "ভার্চুয়াল মেমোরি",
+   "রম",
+   "ক্যাশ মেমোরি"
+  ],
+  "answer": 3,
+  "explanation": "ক্যাশ মেমোরি বারবার ব্যবহৃত তথ্য দ্রুত সরবরাহ করে CPU-কে অপেক্ষা থেকে বাঁচায়।"
+ },
+ {
+  "ref": "ict_022",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১ বাইট সমান কত বিট?",
+  "options": [
+   "১৬ বিট",
+   "৪ বিট",
+   "৮ বিট",
+   "১০ বিট"
+  ],
+  "answer": 2,
+  "explanation": "৮ বিটে ১ বাইট এবং ৪ বিটে ১ নিবল।"
+ },
+ {
+  "ref": "ict_023",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১ কিলোবাইট (KB) সমান কত বাইট?",
+  "options": [
+   "১০০০ বাইট",
+   "১০২৪ বাইট",
+   "১০০ বাইট",
+   "৫১২ বাইট"
+  ],
+  "answer": 1,
+  "explanation": "বাইনারি পদ্ধতিতে ১ KB = ২¹⁰ = ১০২৪ বাইট।"
+ },
+ {
+  "ref": "ict_024",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি সবচেয়ে বড় মেমোরি একক?",
+  "options": [
+   "পেটাবাইট",
+   "টেরাবাইট",
+   "গিগাবাইট",
+   "মেগাবাইট"
+  ],
+  "answer": 0,
+  "explanation": "ক্রম: KB < MB < GB < TB < PB < EB < ZB < YB; প্রতিটি আগেরটির ১০২৪ গুণ।"
+ },
+ {
+  "ref": "ict_025",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি ইনপুট ডিভাইস?",
+  "options": [
+   "প্লটার",
+   "প্রিন্টার",
+   "স্ক্যানার",
+   "স্পিকার"
+  ],
+  "answer": 2,
+  "explanation": "স্ক্যানার ছবি বা লেখাকে ডিজিটাল তথ্যে রূপান্তর করে কম্পিউটারে পাঠায়; বাকিগুলো আউটপুট ডিভাইস।"
+ },
+ {
+  "ref": "ict_026",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি আউটপুট ডিভাইস?",
+  "options": [
+   "প্লটার",
+   "কি-বোর্ড",
+   "মাউস",
+   "জয়স্টিক"
+  ],
+  "answer": 0,
+  "explanation": "প্লটার বড় আকারের নকশা ও মানচিত্র আঁকার আউটপুট ডিভাইস।"
+ },
+ {
+  "ref": "ict_027",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি ইনপুট ও আউটপুট উভয় ডিভাইস?",
+  "options": [
+   "স্ক্যানার",
+   "মাউস",
+   "প্রিন্টার",
+   "টাচস্ক্রিন"
+  ],
+  "answer": 3,
+  "explanation": "টাচস্ক্রিন স্পর্শের মাধ্যমে ইনপুট নেয় এবং পর্দায় আউটপুট দেখায়। মডেমও উভয়মুখী ডিভাইস।"
+ },
+ {
+  "ref": "ict_028",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ব্যাংকে চেকের নিচের বিশেষ কালিতে ছাপা নম্বর পড়ার জন্য কোন যন্ত্র ব্যবহৃত হয়?",
+  "options": [
+   "OMR",
+   "MICR",
+   "OCR",
+   "বারকোড রিডার"
+  ],
+  "answer": 1,
+  "explanation": "MICR (Magnetic Ink Character Recognition) চৌম্বক কালিতে ছাপা চেক নম্বর, ব্যাংক ও শাখা কোড দ্রুত ও নির্ভুলভাবে পড়ে।"
+ },
+ {
+  "ref": "ict_029",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বহুনির্বাচনী পরীক্ষার উত্তরপত্র মূল্যায়নে কোন যন্ত্র ব্যবহৃত হয়?",
+  "options": [
+   "MICR",
+   "OMR",
+   "OCR",
+   "প্লটার"
+  ],
+  "answer": 1,
+  "explanation": "OMR (Optical Mark Reader) উত্তরপত্রে পেনসিল বা কলমের দাগ শনাক্ত করে।"
+ },
+ {
+  "ref": "ict_030",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ছাপা লেখাকে সম্পাদনাযোগ্য টেক্সটে রূপান্তরের প্রযুক্তি কোনটি?",
+  "options": [
+   "BCR",
+   "OMR",
+   "MICR",
+   "OCR"
+  ],
+  "answer": 3,
+  "explanation": "OCR (Optical Character Recognition) স্ক্যান করা ছবির অক্ষর শনাক্ত করে সম্পাদনাযোগ্য লেখায় রূপান্তর করে।"
+ },
+ {
+  "ref": "ict_031",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "মাদারবোর্ডের কোন অংশ ঘড়ি ও BIOS সেটিংস সংরক্ষণে বিদ্যুৎ সরবরাহ করে?",
+  "options": [
+   "CMOS ব্যাটারি",
+   "SMPS",
+   "হিটসিংক",
+   "চিপসেট"
+  ],
+  "answer": 0,
+  "explanation": "ছোট CMOS ব্যাটারি কম্পিউটার বন্ধ থাকলেও তারিখ-সময় ও BIOS সেটিংস ধরে রাখে।"
+ },
+ {
+  "ref": "ict_032",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "HDD-এর তুলনায় SSD-এর প্রধান সুবিধা কী?",
+  "options": [
+   "চৌম্বক ডিস্ক ব্যবহার করে",
+   "দাম কম",
+   "দ্রুত গতি ও চলমান অংশ নেই",
+   "বেশি শব্দ করে"
+  ],
+  "answer": 2,
+  "explanation": "SSD ফ্ল্যাশ মেমোরি ব্যবহার করে, কোনো ঘূর্ণায়মান অংশ নেই; তাই দ্রুত, নিঃশব্দ ও টেকসই।"
+ },
+ {
+  "ref": "ict_033",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কম্পিউটারের গতি সাধারণত কোন এককে প্রকাশ করা হয়?",
+  "options": [
+   "ডিপিআই (DPI)",
+   "গিগাবাইট (GB)",
+   "বিট প্রতি সেকেন্ড (bps)",
+   "গিগাহার্টজ (GHz)"
+  ],
+  "answer": 3,
+  "explanation": "প্রসেসরের ক্লক স্পিড হার্টজে মাপা হয়; ১ GHz মানে সেকেন্ডে ১০০ কোটি চক্র।"
+ },
+ {
+  "ref": "ict_034",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "প্রিন্টারের ছাপার মান কোন এককে প্রকাশ করা হয়?",
+  "options": [
+   "RPM",
+   "PPM",
+   "DPI",
+   "bps"
+  ],
+  "answer": 2,
+  "explanation": "DPI (Dots Per Inch) দিয়ে ছাপার স্পষ্টতা এবং PPM (Pages Per Minute) দিয়ে গতি বোঝায়।"
+ },
+ {
+  "ref": "ict_035",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "মনিটরের ছবি কোন ক্ষুদ্রতম একক দিয়ে গঠিত?",
+  "options": [
+   "বিট",
+   "পিক্সেল",
+   "ডট",
+   "বাইট"
+  ],
+  "answer": 1,
+  "explanation": "Picture Element বা পিক্সেল হলো পর্দার ক্ষুদ্রতম আলোক বিন্দু।"
+ },
+ {
+  "ref": "ict_036",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "হার্ডওয়্যার ও মেমোরি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "কম্পিউটারে র‍্যাম কম পড়লে হার্ডডিস্কের অংশকে মেমোরি হিসেবে ব্যবহার করার পদ্ধতিকে কী বলে?",
+  "options": [
+   "ভার্চুয়াল মেমোরি",
+   "ক্যাশ মেমোরি",
+   "ফ্ল্যাশ মেমোরি",
+   "বাফার"
+  ],
+  "answer": 0,
+  "explanation": "অপারেটিং সিস্টেম হার্ডডিস্কের একটি অংশ (পেজ ফাইল/সোয়াপ) ব্যবহার করে ভার্চুয়াল মেমোরি তৈরি করে।"
+ },
+ {
+  "ref": "ict_037",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সফটওয়্যার ও অপারেটিং সিস্টেম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি অপারেটিং সিস্টেম?",
+  "options": [
+   "ফটোশপ",
+   "এমএস ওয়ার্ড",
+   "লিনাক্স",
+   "গুগল ক্রোম"
+  ],
+  "answer": 2,
+  "explanation": "লিনাক্স অপারেটিং সিস্টেম; বাকিগুলো অ্যাপ্লিকেশন সফটওয়্যার।"
+ },
+ {
+  "ref": "ict_038",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সফটওয়্যার ও অপারেটিং সিস্টেম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "লিনাক্স অপারেটিং সিস্টেমের উদ্ভাবক কে?",
+  "options": [
+   "লিনাস টোরভাল্ডস",
+   "বিল গেটস",
+   "স্টিভ জবস",
+   "ডেনিস রিচি"
+  ],
+  "answer": 0,
+  "explanation": "১৯৯১ সালে ফিনল্যান্ডের ছাত্র লিনাস টোরভাল্ডস লিনাক্স কার্নেল তৈরি করেন; এটি ওপেন সোর্স।"
+ },
+ {
+  "ref": "ict_039",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সফটওয়্যার ও অপারেটিং সিস্টেম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "অ্যান্ড্রয়েড কোন অপারেটিং সিস্টেমের কার্নেলের ওপর ভিত্তি করে তৈরি?",
+  "options": [
+   "ম্যাক ওএস",
+   "উইন্ডোজ",
+   "ইউনিক্স",
+   "লিনাক্স"
+  ],
+  "answer": 3,
+  "explanation": "গুগলের অ্যান্ড্রয়েড লিনাক্স কার্নেলের ওপর তৈরি একটি ওপেন সোর্স মোবাইল অপারেটিং সিস্টেম।"
+ },
+ {
+  "ref": "ict_040",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সফটওয়্যার ও অপারেটিং সিস্টেম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি ওপেন সোর্স সফটওয়্যার?",
+  "options": [
+   "উইন্ডোজ ১১",
+   "লিনাক্স",
+   "এমএস অফিস",
+   "অ্যাডোবি ফটোশপ"
+  ],
+  "answer": 1,
+  "explanation": "ওপেন সোর্স সফটওয়্যারের সোর্স কোড উন্মুক্ত থাকে এবং যে কেউ ব্যবহার ও পরিবর্তন করতে পারে।"
+ },
+ {
+  "ref": "ict_041",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সফটওয়্যার ও অপারেটিং সিস্টেম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "অ্যান্টিভাইরাস কোন ধরনের সফটওয়্যার?",
+  "options": [
+   "অপারেটিং সিস্টেম",
+   "ইউটিলিটি সফটওয়্যার",
+   "প্রোগ্রামিং ভাষা",
+   "ফার্মওয়্যার"
+  ],
+  "answer": 1,
+  "explanation": "অ্যান্টিভাইরাস, ডিস্ক ক্লিনার, ব্যাকআপ টুল ইত্যাদি কম্পিউটার রক্ষণাবেক্ষণের ইউটিলিটি সফটওয়্যার।"
+ },
+ {
+  "ref": "ict_042",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সফটওয়্যার ও অপারেটিং সিস্টেম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "হার্ডওয়্যারে স্থায়ীভাবে লেখা সফটওয়্যারকে কী বলে?",
+  "options": [
+   "ম্যালওয়্যার",
+   "ফ্রিওয়্যার",
+   "শেয়ারওয়্যার",
+   "ফার্মওয়্যার"
+  ],
+  "answer": 3,
+  "explanation": "ফার্মওয়্যার রম বা ফ্ল্যাশ চিপে সংরক্ষিত থাকে, যেমন BIOS বা রাউটারের সফটওয়্যার।"
+ },
+ {
+  "ref": "ict_043",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সফটওয়্যার ও অপারেটিং সিস্টেম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বিনামূল্যে ব্যবহার করা যায় কিন্তু সোর্স কোড উন্মুক্ত নয়—এমন সফটওয়্যারকে কী বলে?",
+  "options": [
+   "ফ্রিওয়্যার",
+   "ওপেন সোর্স",
+   "শেয়ারওয়্যার",
+   "ফার্মওয়্যার"
+  ],
+  "answer": 0,
+  "explanation": "ফ্রিওয়্যার বিনামূল্যে পাওয়া গেলেও কোড পরিবর্তনের অধিকার থাকে না। শেয়ারওয়্যার নির্দিষ্ট সময় পরীক্ষামূলকভাবে ব্যবহার করা যায়।"
+ },
+ {
+  "ref": "ict_044",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সফটওয়্যার ও অপারেটিং সিস্টেম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কম্পিউটার চালু করার প্রক্রিয়াকে কী বলে?",
+  "options": [
+   "কম্পাইলিং",
+   "ফরম্যাটিং",
+   "বুটিং",
+   "ডিবাগিং"
+  ],
+  "answer": 2,
+  "explanation": "বুটিং প্রক্রিয়ায় BIOS হার্ডওয়্যার পরীক্ষা (POST) করে অপারেটিং সিস্টেম মেমোরিতে লোড করে।"
+ },
+ {
+  "ref": "ict_045",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সফটওয়্যার ও অপারেটিং সিস্টেম",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "অপারেটিং সিস্টেমের যে অংশ হার্ডওয়্যার ও সফটওয়্যারের মধ্যে সরাসরি সংযোগ রক্ষা করে তাকে কী বলে?",
+  "options": [
+   "ড্রাইভার",
+   "শেল",
+   "কম্পাইলার",
+   "কার্নেল"
+  ],
+  "answer": 3,
+  "explanation": "কার্নেল অপারেটিং সিস্টেমের কেন্দ্রীয় অংশ, যা মেমোরি, প্রসেস ও ডিভাইস নিয়ন্ত্রণ করে; শেল ব্যবহারকারীর কমান্ড গ্রহণ করে।"
+ },
+ {
+  "ref": "ict_046",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সফটওয়্যার ও অপারেটিং সিস্টেম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "প্রোগ্রামের ভুল খুঁজে বের করে সংশোধন করাকে কী বলে?",
+  "options": [
+   "বুটিং",
+   "কম্পাইলিং",
+   "ডিবাগিং",
+   "এনক্রিপশন"
+  ],
+  "answer": 2,
+  "explanation": "প্রোগ্রামের ত্রুটিকে বাগ এবং তা দূর করার প্রক্রিয়াকে ডিবাগিং বলে।"
+ },
+ {
+  "ref": "ict_047",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সফটওয়্যার ও অপারেটিং সিস্টেম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "পুরো প্রোগ্রাম একবারে মেশিন ভাষায় অনুবাদ করে কোনটি?",
+  "options": [
+   "ইন্টারপ্রেটার",
+   "কম্পাইলার",
+   "অ্যাসেম্বলার",
+   "লোডার"
+  ],
+  "answer": 1,
+  "explanation": "কম্পাইলার সম্পূর্ণ সোর্স কোড একবারে অনুবাদ করে; ইন্টারপ্রেটার এক লাইন করে অনুবাদ ও কার্যকর করে।"
+ },
+ {
+  "ref": "ict_048",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সফটওয়্যার ও অপারেটিং সিস্টেম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "অ্যাসেম্বলি ভাষাকে মেশিন ভাষায় অনুবাদ করে কোনটি?",
+  "options": [
+   "অ্যাসেম্বলার",
+   "কম্পাইলার",
+   "ইন্টারপ্রেটার",
+   "লিংকার"
+  ],
+  "answer": 0,
+  "explanation": "অ্যাসেম্বলার নেমোনিক কোড (যেমন ADD, MOV) কে মেশিন ভাষায় রূপান্তর করে।"
+ },
+ {
+  "ref": "ict_049",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বাইনারি সংখ্যা পদ্ধতির ভিত্তি কত?",
+  "options": [
+   "১০",
+   "৮",
+   "২",
+   "১৬"
+  ],
+  "answer": 2,
+  "explanation": "বাইনারিতে শুধু ০ ও ১ ব্যবহৃত হয়, তাই ভিত্তি ২। অক্টাল ৮, দশমিক ১০ ও হেক্সাডেসিমাল ১৬ ভিত্তিক।"
+ },
+ {
+  "ref": "ict_050",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "দশমিক ২৫ এর বাইনারি রূপ কোনটি?",
+  "options": [
+   "১১০০১",
+   "১১০১০",
+   "১০১০১",
+   "১১০১১"
+  ],
+  "answer": 0,
+  "explanation": "২৫ = ১৬ + ৮ + ১ = ২⁴ + ২³ + ২⁰, তাই বাইনারিতে ১১০০১।"
+ },
+ {
+  "ref": "ict_051",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বাইনারি ১০১০ এর দশমিক মান কত?",
+  "options": [
+   "৫",
+   "১২",
+   "৮",
+   "১০"
+  ],
+  "answer": 3,
+  "explanation": "১০১০ = ১×৮ + ০×৪ + ১×২ + ০×১ = ১০।"
+ },
+ {
+  "ref": "ict_052",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "দশমিক ২৫৫ এর হেক্সাডেসিমাল রূপ কোনটি?",
+  "options": [
+   "EF",
+   "FF",
+   "FE",
+   "100"
+  ],
+  "answer": 1,
+  "explanation": "২৫৫ = ১৫ × ১৬ + ১৫; হেক্সাডেসিমালে ১৫ = F, তাই FF।"
+ },
+ {
+  "ref": "ict_053",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "হেক্সাডেসিমাল সংখ্যা A এর দশমিক মান কত?",
+  "options": [
+   "১১",
+   "১০",
+   "১২",
+   "১৫"
+  ],
+  "answer": 1,
+  "explanation": "হেক্সাডেসিমালে A=১০, B=১১, C=১২, D=১৩, E=১৪, F=১৫।"
+ },
+ {
+  "ref": "ict_054",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "দশমিক ৮ এর অক্টাল রূপ কোনটি?",
+  "options": [
+   "১১",
+   "৮",
+   "১০০০",
+   "১০"
+  ],
+  "answer": 3,
+  "explanation": "অক্টাল ভিত্তি ৮; ৮ = ১ × ৮¹ + ০, তাই অক্টালে ১০।"
+ },
+ {
+  "ref": "ict_055",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাইনারি যোগ: ১০১১ + ১১০১ = ?",
+  "options": [
+   "১১০০০",
+   "১০১১০",
+   "১১১১০",
+   "১০০১০"
+  ],
+  "answer": 0,
+  "explanation": "১০১১ = ১১ এবং ১১০১ = ১৩; যোগফল ২৪ = ১৬ + ৮ = বাইনারিতে ১১০০০।"
+ },
+ {
+  "ref": "ict_056",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "বাইনারি ১১১১১১১১ এর দশমিক মান কত?",
+  "options": [
+   "১২৭",
+   "২৫৬",
+   "২৫৫",
+   "৫১১"
+  ],
+  "answer": 2,
+  "explanation": "৮টি ১ মানে ২⁸ − ১ = ২৫৫। এটি ১ বাইটে সংরক্ষণযোগ্য সর্বোচ্চ অঋণাত্মক মান।"
+ },
+ {
+  "ref": "ict_057",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন দুটি গেটকে সর্বজনীন (Universal) গেট বলা হয়?",
+  "options": [
+   "NOT ও AND",
+   "AND ও OR",
+   "XOR ও XNOR",
+   "NAND ও NOR"
+  ],
+  "answer": 3,
+  "explanation": "শুধু NAND বা শুধু NOR গেট দিয়ে অন্য সব লজিক গেট তৈরি করা যায়, তাই এদের সর্বজনীন গেট বলে।"
+ },
+ {
+  "ref": "ict_058",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "AND গেটের আউটপুট কখন ১ হয়?",
+  "options": [
+   "সব ইনপুট ০ হলে",
+   "যেকোনো একটি ইনপুট ১ হলে",
+   "সব ইনপুট ১ হলে",
+   "ইনপুটগুলো ভিন্ন হলে"
+  ],
+  "answer": 2,
+  "explanation": "AND গেট গুণের মতো কাজ করে; সব ইনপুট ১ হলেই কেবল আউটপুট ১।"
+ },
+ {
+  "ref": "ict_059",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "XOR গেটের আউটপুট কখন ১ হয়?",
+  "options": [
+   "ইনপুট দুটি সমান হলে",
+   "ইনপুট দুটি ভিন্ন হলে",
+   "সব ইনপুট ১ হলে",
+   "সব ইনপুট ০ হলে"
+  ],
+  "answer": 1,
+  "explanation": "XOR (Exclusive OR) গেটে ইনপুট ভিন্ন (০,১ বা ১,০) হলে আউটপুট ১, সমান হলে ০।"
+ },
+ {
+  "ref": "ict_060",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বুলিয়ান বীজগণিতে A + A এর মান কত?",
+  "options": [
+   "A",
+   "২A",
+   "১",
+   "০"
+  ],
+  "answer": 0,
+  "explanation": "বুলিয়ান বীজগণিতে + মানে OR; A OR A = A (Idempotent সূত্র)।"
+ },
+ {
+  "ref": "ict_061",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বুলিয়ান বীজগণিতে A · A' (A AND NOT A) এর মান কত?",
+  "options": [
+   "A",
+   "১",
+   "০",
+   "A'"
+  ],
+  "answer": 2,
+  "explanation": "কোনো চলক ও তার বিপরীত একসাথে সত্য হতে পারে না, তাই A·A' = ০ (Complement সূত্র)।"
+ },
+ {
+  "ref": "ict_062",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ডি-মরগানের সূত্র অনুযায়ী (A + B)' = ?",
+  "options": [
+   "A' · B'",
+   "A' + B'",
+   "A · B",
+   "(A · B)'"
+  ],
+  "answer": 0,
+  "explanation": "ডি-মরগানের সূত্র: (A + B)' = A'·B' এবং (A·B)' = A' + B'।"
+ },
+ {
+  "ref": "ict_063",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ASCII কোডে কতটি ভিন্ন অক্ষর প্রকাশ করা যায়?",
+  "options": [
+   "৬৪টি",
+   "২৫৬টি",
+   "৬৫,৫৩৬টি",
+   "১২৮টি"
+  ],
+  "answer": 3,
+  "explanation": "প্রমিত ASCII ৭-বিট কোড, তাই ২⁷ = ১২৮টি অক্ষর প্রকাশ করা যায়।"
+ },
+ {
+  "ref": "ict_064",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ASCII কোডে বড় হাতের 'A' এর মান কত?",
+  "options": [
+   "৯৭",
+   "৬৫",
+   "৪৮",
+   "৩২"
+  ],
+  "answer": 1,
+  "explanation": "ASCII-তে 'A' = ৬৫, 'a' = ৯৭ এবং '0' = ৪৮।"
+ },
+ {
+  "ref": "ict_065",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সংখ্যা পদ্ধতি ও ডিজিটাল লজিক",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাসহ বিশ্বের প্রায় সব ভাষার বর্ণ প্রকাশে কোন কোডিং ব্যবস্থা ব্যবহৃত হয়?",
+  "options": [
+   "ASCII",
+   "ইউনিকোড",
+   "BCD",
+   "EBCDIC"
+  ],
+  "answer": 1,
+  "explanation": "ইউনিকোড বিশ্বের প্রায় সব লিপির জন্য স্বতন্ত্র কোড নির্ধারণ করে; বাংলা লিপিও এর অন্তর্ভুক্ত।"
+ },
+ {
+  "ref": "ict_066",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "World Wide Web (WWW) এর উদ্ভাবক কে?",
+  "options": [
+   "মার্ক জাকারবার্গ",
+   "ভিন্টন সার্ফ",
+   "বিল গেটস",
+   "টিম বার্নার্স-লি"
+  ],
+  "answer": 3,
+  "explanation": "১৯৮৯ সালে সুইজারল্যান্ডের CERN-এ কর্মরত টিম বার্নার্স-লি WWW উদ্ভাবন করেন।"
+ },
+ {
+  "ref": "ict_067",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ইন্টারনেটের জনক বলা হয় কাকে?",
+  "options": [
+   "ভিন্টন সার্ফ",
+   "টিম বার্নার্স-লি",
+   "চার্লস ব্যাবেজ",
+   "রে টমলিনসন"
+  ],
+  "answer": 0,
+  "explanation": "ভিন্টন সার্ফ ও রবার্ট কান TCP/IP প্রোটোকল তৈরি করেন, যা ইন্টারনেটের ভিত্তি; তাই তাঁদের ইন্টারনেটের জনক বলা হয়।"
+ },
+ {
+  "ref": "ict_068",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ইন্টারনেটের পূর্বসূরি নেটওয়ার্ক কোনটি?",
+  "options": [
+   "NSFNET",
+   "ETHERNET",
+   "ARPANET",
+   "USENET"
+  ],
+  "answer": 2,
+  "explanation": "১৯৬৯ সালে মার্কিন প্রতিরক্ষা দপ্তরের ARPANET প্রকল্প থেকে ইন্টারনেটের যাত্রা শুরু।"
+ },
+ {
+  "ref": "ict_069",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ই-মেইলের উদ্ভাবক কে?",
+  "options": [
+   "স্টিভ জবস",
+   "টিম বার্নার্স-লি",
+   "ভিন্টন সার্ফ",
+   "রে টমলিনসন"
+  ],
+  "answer": 3,
+  "explanation": "১৯৭১ সালে রে টমলিনসন ARPANET-এ প্রথম ই-মেইল পাঠান এবং ঠিকানায় @ চিহ্নের ব্যবহার শুরু করেন।"
+ },
+ {
+  "ref": "ict_070",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ডোমেইন নেমকে IP ঠিকানায় রূপান্তর করে কোনটি?",
+  "options": [
+   "FTP",
+   "DHCP",
+   "DNS",
+   "SMTP"
+  ],
+  "answer": 2,
+  "explanation": "DNS (Domain Name System) ইন্টারনেটের \"ফোনবুক\"—যেমন example.com কে তার IP ঠিকানায় অনুবাদ করে।"
+ },
+ {
+  "ref": "ict_071",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ই-মেইল পাঠাতে কোন প্রোটোকল ব্যবহৃত হয়?",
+  "options": [
+   "POP3",
+   "SMTP",
+   "IMAP",
+   "FTP"
+  ],
+  "answer": 1,
+  "explanation": "SMTP দিয়ে ই-মেইল পাঠানো হয়; POP3 ও IMAP দিয়ে সার্ভার থেকে ই-মেইল গ্রহণ করা হয়।"
+ },
+ {
+  "ref": "ict_072",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ফাইল আদান-প্রদানের জন্য কোন প্রোটোকল ব্যবহৃত হয়?",
+  "options": [
+   "FTP",
+   "HTTP",
+   "SMTP",
+   "DNS"
+  ],
+  "answer": 0,
+  "explanation": "FTP (File Transfer Protocol) নেটওয়ার্কে ফাইল আপলোড ও ডাউনলোডে ব্যবহৃত হয়; ডিফল্ট পোর্ট ২১।"
+ },
+ {
+  "ref": "ict_073",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "HTTP প্রোটোকলের ডিফল্ট পোর্ট নম্বর কত?",
+  "options": [
+   "২১",
+   "৪৪৩",
+   "৮০",
+   "২৫"
+  ],
+  "answer": 2,
+  "explanation": "HTTP-এর পোর্ট ৮০, HTTPS ৪৪৩, FTP ২১, SSH ২২, SMTP ২৫ এবং DNS ৫৩।"
+ },
+ {
+  "ref": "ict_074",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "OSI মডেলে কয়টি স্তর আছে?",
+  "options": [
+   "৭টি",
+   "৪টি",
+   "৫টি",
+   "৬টি"
+  ],
+  "answer": 0,
+  "explanation": "OSI মডেলের ৭টি স্তর: ফিজিক্যাল, ডেটা লিংক, নেটওয়ার্ক, ট্রান্সপোর্ট, সেশন, প্রেজেন্টেশন ও অ্যাপ্লিকেশন।"
+ },
+ {
+  "ref": "ict_075",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "রাউটার OSI মডেলের কোন স্তরে কাজ করে?",
+  "options": [
+   "অ্যাপ্লিকেশন স্তর",
+   "ডেটা লিংক স্তর",
+   "ফিজিক্যাল স্তর",
+   "নেটওয়ার্ক স্তর"
+  ],
+  "answer": 3,
+  "explanation": "রাউটার IP ঠিকানা দেখে নেটওয়ার্ক স্তরে প্যাকেটের পথ নির্ধারণ করে। সুইচ ডেটা লিংক এবং হাব ফিজিক্যাল স্তরে কাজ করে।"
+ },
+ {
+  "ref": "ict_076",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "IPv4 ঠিকানা কত বিটের?",
+  "options": [
+   "৬৪ বিট",
+   "৩২ বিট",
+   "১২৮ বিট",
+   "৪৮ বিট"
+  ],
+  "answer": 1,
+  "explanation": "IPv4 ৩২ বিট (প্রায় ৪৩০ কোটি ঠিকানা) এবং IPv6 ১২৮ বিটের।"
+ },
+ {
+  "ref": "ict_077",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "IPv6 ঠিকানা কত বিটের?",
+  "options": [
+   "৩২ বিট",
+   "১২৮ বিট",
+   "৬৪ বিট",
+   "২৫৬ বিট"
+  ],
+  "answer": 1,
+  "explanation": "IPv4 ঠিকানা ফুরিয়ে আসায় ১২৮ বিটের IPv6 চালু হয়, যাতে কার্যত অসীম সংখ্যক ঠিকানা সম্ভব।"
+ },
+ {
+  "ref": "ict_078",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "MAC ঠিকানা কত বিটের?",
+  "options": [
+   "১২৮ বিট",
+   "৩২ বিট",
+   "৬৪ বিট",
+   "৪৮ বিট"
+  ],
+  "answer": 3,
+  "explanation": "MAC ঠিকানা নেটওয়ার্ক কার্ডের ৪৮ বিটের স্থায়ী হার্ডওয়্যার ঠিকানা, সাধারণত ১২টি হেক্সাডেসিমাল অঙ্কে লেখা হয়।"
+ },
+ {
+  "ref": "ict_079",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন টপোলজিতে সব কম্পিউটার একটি কেন্দ্রীয় হাব বা সুইচের সাথে যুক্ত থাকে?",
+  "options": [
+   "স্টার",
+   "বাস",
+   "রিং",
+   "মেশ"
+  ],
+  "answer": 0,
+  "explanation": "স্টার টপোলজিতে কেন্দ্রীয় ডিভাইস নষ্ট হলে পুরো নেটওয়ার্ক অচল হয়, তবে একটি কম্পিউটার নষ্ট হলে অন্যগুলো চলে।"
+ },
+ {
+  "ref": "ict_080",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন টপোলজিতে প্রতিটি কম্পিউটার অন্য সবগুলোর সাথে সরাসরি যুক্ত থাকে?",
+  "options": [
+   "বাস",
+   "স্টার",
+   "মেশ",
+   "ট্রি"
+  ],
+  "answer": 2,
+  "explanation": "মেশ টপোলজি সবচেয়ে নির্ভরযোগ্য, কারণ একটি সংযোগ বিচ্ছিন্ন হলেও বিকল্প পথ থাকে; তবে খরচ সবচেয়ে বেশি।"
+ },
+ {
+  "ref": "ict_081",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি ভবন বা ক্যাম্পাসের মধ্যে সীমিত নেটওয়ার্ককে কী বলে?",
+  "options": [
+   "PAN",
+   "WAN",
+   "MAN",
+   "LAN"
+  ],
+  "answer": 3,
+  "explanation": "LAN (Local Area Network) অল্প এলাকার নেটওয়ার্ক; শহরজুড়ে MAN, দেশ-মহাদেশজুড়ে WAN এবং ব্যক্তিগত ডিভাইসের নেটওয়ার্ক PAN।"
+ },
+ {
+  "ref": "ict_082",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বিশ্বের বৃহত্তম WAN কোনটি?",
+  "options": [
+   "এক্সট্রানেট",
+   "ইন্ট্রানেট",
+   "ইন্টারনেট",
+   "ইথারনেট"
+  ],
+  "answer": 2,
+  "explanation": "ইন্টারনেট বিশ্বজুড়ে কোটি কোটি নেটওয়ার্কের সমন্বয়ে গঠিত সবচেয়ে বড় ওয়াইড এরিয়া নেটওয়ার্ক।"
+ },
+ {
+  "ref": "ict_083",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "মডেমের কাজ কী?",
+  "options": [
+   "ছবি প্রিন্ট করা",
+   "ডিজিটাল ও অ্যানালগ সংকেতের রূপান্তর",
+   "তথ্য সংরক্ষণ",
+   "ভাইরাস দূর করা"
+  ],
+  "answer": 1,
+  "explanation": "Modem = Modulator + Demodulator; এটি ডিজিটাল সংকেতকে অ্যানালগে এবং অ্যানালগকে ডিজিটালে রূপান্তর করে।"
+ },
+ {
+  "ref": "ict_084",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সবচেয়ে দ্রুতগতির ডেটা ট্রান্সমিশন মাধ্যম কোনটি?",
+  "options": [
+   "অপটিক্যাল ফাইবার",
+   "কো-অ্যাক্সিয়াল ক্যাবল",
+   "টুইস্টেড পেয়ার ক্যাবল",
+   "রেডিও ওয়েভ"
+  ],
+  "answer": 0,
+  "explanation": "অপটিক্যাল ফাইবার আলোর পূর্ণ অভ্যন্তরীণ প্রতিফলন ব্যবহার করে অত্যন্ত উচ্চগতিতে ও কম ক্ষতিতে তথ্য পাঠায়।"
+ },
+ {
+  "ref": "ict_085",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "Wi-Fi এর প্রমিত মান (standard) কোনটি?",
+  "options": [
+   "IEEE 802.15",
+   "IEEE 802.3",
+   "IEEE 802.11",
+   "IEEE 802.16"
+  ],
+  "answer": 2,
+  "explanation": "Wi-Fi হলো IEEE 802.11, ইথারনেট 802.3, ব্লুটুথ 802.15.1 এবং WiMAX 802.16।"
+ },
+ {
+  "ref": "ict_086",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ব্লুটুথ কোন ধরনের নেটওয়ার্ক তৈরি করে?",
+  "options": [
+   "PAN",
+   "LAN",
+   "MAN",
+   "WAN"
+  ],
+  "answer": 0,
+  "explanation": "ব্লুটুথ সাধারণত প্রায় ১০ মিটার পরিসরে ব্যক্তিগত ডিভাইসের মধ্যে Personal Area Network তৈরি করে।"
+ },
+ {
+  "ref": "ict_087",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ব্যান্ডউইথ সাধারণত কোন এককে মাপা হয়?",
+  "options": [
+   "পিক্সেল",
+   "বাইট",
+   "হার্টজ শুধু",
+   "bps (বিট প্রতি সেকেন্ড)"
+  ],
+  "answer": 3,
+  "explanation": "ডেটা স্থানান্তরের হার bps, Kbps, Mbps, Gbps এককে প্রকাশ করা হয়।"
+ },
+ {
+  "ref": "ict_088",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "নেটওয়ার্কে ডিভাইসগুলোকে স্বয়ংক্রিয়ভাবে IP ঠিকানা দেয় কোন প্রোটোকল?",
+  "options": [
+   "DNS",
+   "DHCP",
+   "ARP",
+   "HTTP"
+  ],
+  "answer": 1,
+  "explanation": "DHCP (Dynamic Host Configuration Protocol) সার্ভার নেটওয়ার্কে যুক্ত হওয়া প্রতিটি ডিভাইসকে স্বয়ংক্রিয়ভাবে IP ঠিকানা দেয়।"
+ },
+ {
+  "ref": "ict_089",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ওয়েবপেজ তৈরির মূল মার্কআপ ভাষা কোনটি?",
+  "options": [
+   "SQL",
+   "HTML",
+   "C++",
+   "Python"
+  ],
+  "answer": 1,
+  "explanation": "HTML (HyperText Markup Language) ওয়েবপেজের কাঠামো তৈরি করে; এটি প্রোগ্রামিং ভাষা নয়, মার্কআপ ভাষা।"
+ },
+ {
+  "ref": "ict_090",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "নেটওয়ার্ক ও ইন্টারনেট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "URL এর পূর্ণরূপ কী?",
+  "options": [
+   "United Resource Locator",
+   "Universal Resource Link",
+   "UniformRef Locator",
+   "Uniform Resource Locator"
+  ],
+  "answer": 3,
+  "explanation": "URL হলো ইন্টারনেটে কোনো রিসোর্সের সম্পূর্ণ ঠিকানা, যেমন https://www.example.com/page।"
+ },
+ {
+  "ref": "ict_091",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "ডেটাবেজ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "DBMS এর পূর্ণরূপ কী?",
+  "options": [
+   "Database Management System",
+   "Data Backup Management System",
+   "Digital Base Management Software",
+   "Database Monitoring Service"
+  ],
+  "answer": 0,
+  "explanation": "DBMS ডেটা সংরক্ষণ, পরিবর্তন ও পুনরুদ্ধারের সফটওয়্যার; যেমন MySQL, Oracle, PostgreSQL।"
+ },
+ {
+  "ref": "ict_092",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "ডেটাবেজ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "টেবিলের প্রতিটি রেকর্ডকে অনন্যভাবে শনাক্ত করে কোনটি?",
+  "options": [
+   "কম্পোজিট কি",
+   "ফরেন কি",
+   "প্রাইমারি কি",
+   "ইনডেক্স"
+  ],
+  "answer": 2,
+  "explanation": "প্রাইমারি কি-এর মান অনন্য এবং শূন্য (NULL) হতে পারে না।"
+ },
+ {
+  "ref": "ict_093",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "ডেটাবেজ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি টেবিলের সাথে অন্য টেবিলের সম্পর্ক তৈরিতে কোন কি ব্যবহৃত হয়?",
+  "options": [
+   "ক্যান্ডিডেট কি",
+   "প্রাইমারি কি",
+   "সুপার কি",
+   "ফরেন কি"
+  ],
+  "answer": 3,
+  "explanation": "ফরেন কি অন্য টেবিলের প্রাইমারি কি-কে নির্দেশ করে দুটি টেবিলের মধ্যে সম্পর্ক স্থাপন করে।"
+ },
+ {
+  "ref": "ict_094",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "ডেটাবেজ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "রিলেশনাল ডেটাবেজ মডেলের প্রবর্তক কে?",
+  "options": [
+   "ল্যারি এলিসন",
+   "চার্লস ব্যাবেজ",
+   "ই. এফ. কড",
+   "ডেনিস রিচি"
+  ],
+  "answer": 2,
+  "explanation": "১৯৭০ সালে IBM-এর গবেষক এডগার এফ. কড রিলেশনাল মডেল প্রস্তাব করেন।"
+ },
+ {
+  "ref": "ict_095",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "ডেটাবেজ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ডেটাবেজ থেকে তথ্য খোঁজার SQL কমান্ড কোনটি?",
+  "options": [
+   "INSERT",
+   "SELECT",
+   "UPDATE",
+   "CREATE"
+  ],
+  "answer": 1,
+  "explanation": "SELECT দিয়ে তথ্য পড়া হয়; INSERT নতুন রেকর্ড যোগ, UPDATE পরিবর্তন এবং DELETE মুছে ফেলে।"
+ },
+ {
+  "ref": "ict_096",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "ডেটাবেজ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি DDL (Data Definition Language) কমান্ড?",
+  "options": [
+   "CREATE",
+   "SELECT",
+   "INSERT",
+   "UPDATE"
+  ],
+  "answer": 0,
+  "explanation": "DDL টেবিলের কাঠামো নির্ধারণ করে: CREATE, ALTER, DROP। INSERT, UPDATE, DELETE হলো DML কমান্ড।"
+ },
+ {
+  "ref": "ict_097",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "ডেটাবেজ",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ডেটাবেজ ট্রানজেকশনের ACID বৈশিষ্ট্যে \"A\" দিয়ে কী বোঝায়?",
+  "options": [
+   "Availability",
+   "Accuracy",
+   "Atomicity",
+   "Authentication"
+  ],
+  "answer": 2,
+  "explanation": "ACID = Atomicity, Consistency, Isolation, Durability। Atomicity মানে ট্রানজেকশনের সব ধাপ হয় পুরোপুরি সম্পন্ন হবে, নয়তো কোনোটিই নয়।"
+ },
+ {
+  "ref": "ict_098",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "ডেটাবেজ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ডেটাবেজে অপ্রয়োজনীয় পুনরাবৃত্তি কমানোর প্রক্রিয়াকে কী বলে?",
+  "options": [
+   "নরমালাইজেশন",
+   "ইনডেক্সিং",
+   "এনক্রিপশন",
+   "ব্যাকআপ"
+  ],
+  "answer": 0,
+  "explanation": "নরমালাইজেশন টেবিলকে ভেঙে ডেটার পুনরাবৃত্তি ও অসংগতি কমায় (1NF, 2NF, 3NF ইত্যাদি)।"
+ },
+ {
+  "ref": "ict_099",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "প্রোগ্রামিং ভাষা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কম্পিউটার সরাসরি কোন ভাষা বোঝে?",
+  "options": [
+   "মার্কআপ ভাষা",
+   "অ্যাসেম্বলি ভাষা",
+   "উচ্চস্তরের ভাষা",
+   "মেশিন ভাষা"
+  ],
+  "answer": 3,
+  "explanation": "মেশিন ভাষা শুধু ০ ও ১ দিয়ে লেখা; অন্য সব ভাষাকে অনুবাদক প্রোগ্রাম দিয়ে মেশিন ভাষায় রূপান্তর করতে হয়।"
+ },
+ {
+  "ref": "ict_100",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "প্রোগ্রামিং ভাষা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "প্রথম উচ্চস্তরের প্রোগ্রামিং ভাষা কোনটি?",
+  "options": [
+   "COBOL",
+   "FORTRAN",
+   "C",
+   "BASIC"
+  ],
+  "answer": 1,
+  "explanation": "১৯৫৭ সালে IBM-এর জন ব্যাকাসের নেতৃত্বে বৈজ্ঞানিক হিসাবের জন্য FORTRAN তৈরি হয়।"
+ },
+ {
+  "ref": "ict_101",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "প্রোগ্রামিং ভাষা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ব্যবসায়িক কাজের জন্য বিশেষভাবে তৈরি প্রোগ্রামিং ভাষা কোনটি?",
+  "options": [
+   "FORTRAN",
+   "COBOL",
+   "LISP",
+   "Prolog"
+  ],
+  "answer": 1,
+  "explanation": "COBOL (Common Business Oriented Language) ব্যাংক ও ব্যবসায়িক হিসাবে ব্যাপকভাবে ব্যবহৃত হয়েছে।"
+ },
+ {
+  "ref": "ict_102",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "প্রোগ্রামিং ভাষা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "C প্রোগ্রামিং ভাষার উদ্ভাবক কে?",
+  "options": [
+   "গুইডো ভ্যান রসাম",
+   "বিয়ার্নে স্ট্রাউস্ট্রুপ",
+   "জেমস গসলিং",
+   "ডেনিস রিচি"
+  ],
+  "answer": 3,
+  "explanation": "১৯৭২ সালে বেল ল্যাবসে ডেনিস রিচি C ভাষা তৈরি করেন; ইউনিক্স অপারেটিং সিস্টেম এ ভাষায় লেখা।"
+ },
+ {
+  "ref": "ict_103",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "প্রোগ্রামিং ভাষা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "Java প্রোগ্রামিং ভাষার উদ্ভাবক কে?",
+  "options": [
+   "জেমস গসলিং",
+   "ডেনিস রিচি",
+   "বিল গেটস",
+   "লিনাস টোরভাল্ডস"
+  ],
+  "answer": 0,
+  "explanation": "১৯৯৫ সালে সান মাইক্রোসিস্টেমসের জেমস গসলিং Java তৈরি করেন; \"Write once, run anywhere\" এর মূলনীতি।"
+ },
+ {
+  "ref": "ict_104",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "প্রোগ্রামিং ভাষা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "Python প্রোগ্রামিং ভাষার উদ্ভাবক কে?",
+  "options": [
+   "বিয়ার্নে স্ট্রাউস্ট্রুপ",
+   "জেমস গসলিং",
+   "গুইডো ভ্যান রসাম",
+   "ব্রেন্ডান আইক"
+  ],
+  "answer": 2,
+  "explanation": "১৯৯১ সালে নেদারল্যান্ডসের গুইডো ভ্যান রসাম Python প্রকাশ করেন।"
+ },
+ {
+  "ref": "ict_105",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "প্রোগ্রামিং ভাষা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "C++ ভাষার উদ্ভাবক কে?",
+  "options": [
+   "নিকলাউস উইর্থ",
+   "ডেনিস রিচি",
+   "জেমস গসলিং",
+   "বিয়ার্নে স্ট্রাউস্ট্রুপ"
+  ],
+  "answer": 3,
+  "explanation": "বিয়ার্নে স্ট্রাউস্ট্রুপ C ভাষায় অবজেক্ট-ওরিয়েন্টেড বৈশিষ্ট্য যোগ করে C++ তৈরি করেন।"
+ },
+ {
+  "ref": "ict_106",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "প্রোগ্রামিং ভাষা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কৃত্রিম বুদ্ধিমত্তার কাজে প্রাচীনকাল থেকে ব্যবহৃত ভাষা কোনটি?",
+  "options": [
+   "HTML ও CSS",
+   "COBOL ও FORTRAN",
+   "LISP ও Prolog",
+   "BASIC ও Pascal"
+  ],
+  "answer": 2,
+  "explanation": "LISP (১৯৫৮) ও Prolog (১৯৭২) কৃত্রিম বুদ্ধিমত্তা গবেষণায় ব্যাপক ব্যবহৃত হয়েছে।"
+ },
+ {
+  "ref": "ict_107",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "প্রোগ্রামিং ভাষা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিংয়ে একটি ক্লাস অন্য ক্লাসের বৈশিষ্ট্য গ্রহণ করাকে কী বলে?",
+  "options": [
+   "এনক্যাপসুলেশন",
+   "ইনহেরিট্যান্স",
+   "পলিমরফিজম",
+   "অ্যাবস্ট্রাকশন"
+  ],
+  "answer": 1,
+  "explanation": "ইনহেরিট্যান্সে চাইল্ড ক্লাস প্যারেন্ট ক্লাসের বৈশিষ্ট্য ও মেথড উত্তরাধিকারসূত্রে পায়।"
+ },
+ {
+  "ref": "ict_108",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "প্রোগ্রামিং ভাষা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সমস্যা সমাধানের ধাপগুলোর চিত্ররূপকে কী বলে?",
+  "options": [
+   "ফ্লোচার্ট",
+   "অ্যালগরিদম",
+   "সিউডোকোড",
+   "প্রোগ্রাম"
+  ],
+  "answer": 0,
+  "explanation": "অ্যালগরিদম ধাপগুলোর লিখিত রূপ এবং ফ্লোচার্ট সেগুলোর প্রতীকী চিত্ররূপ।"
+ },
+ {
+  "ref": "ict_109",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সাইবার নিরাপত্তা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ভুয়া ওয়েবসাইট বা ই-মেইলের মাধ্যমে পাসওয়ার্ড ও ব্যাংক তথ্য হাতিয়ে নেওয়াকে কী বলে?",
+  "options": [
+   "স্প্যামিং",
+   "হ্যাকিং",
+   "ফিশিং",
+   "স্পুফিং"
+  ],
+  "answer": 2,
+  "explanation": "ফিশিংয়ে প্রতারকেরা বিশ্বস্ত প্রতিষ্ঠানের ছদ্মবেশে ব্যবহারকারীর গোপন তথ্য সংগ্রহ করে।"
+ },
+ {
+  "ref": "ict_110",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সাইবার নিরাপত্তা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ফাইল এনক্রিপ্ট করে মুক্তিপণ দাবি করে কোন ম্যালওয়্যার?",
+  "options": [
+   "র‍্যানসমওয়্যার",
+   "স্পাইওয়্যার",
+   "অ্যাডওয়্যার",
+   "ওয়ার্ম"
+  ],
+  "answer": 0,
+  "explanation": "র‍্যানসমওয়্যার ব্যবহারকারীর ফাইল লক করে মুক্তিপণ (সাধারণত ক্রিপ্টোকারেন্সিতে) দাবি করে; ২০১৭ সালের WannaCry এর বিখ্যাত উদাহরণ।"
+ },
+ {
+  "ref": "ict_111",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সাইবার নিরাপত্তা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "নিজে নিজে অনুলিপি তৈরি করে নেটওয়ার্কে ছড়ায় এবং কোনো হোস্ট ফাইলের প্রয়োজন হয় না—এমন ম্যালওয়্যার কোনটি?",
+  "options": [
+   "স্পাইওয়্যার",
+   "ভাইরাস",
+   "ট্রোজান হর্স",
+   "ওয়ার্ম"
+  ],
+  "answer": 3,
+  "explanation": "ভাইরাস ছড়াতে হোস্ট প্রোগ্রাম লাগে, কিন্তু ওয়ার্ম স্বতন্ত্রভাবে নেটওয়ার্কে ছড়িয়ে পড়ে।"
+ },
+ {
+  "ref": "ict_112",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সাইবার নিরাপত্তা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "উপকারী সফটওয়্যারের ছদ্মবেশে থাকা ক্ষতিকর প্রোগ্রামকে কী বলে?",
+  "options": [
+   "ওয়ার্ম",
+   "ট্রোজান হর্স",
+   "ফায়ারওয়াল",
+   "কুকি"
+  ],
+  "answer": 1,
+  "explanation": "গ্রিক পুরাণের কাঠের ঘোড়ার নামে নামকরণ; ট্রোজান বৈধ সফটওয়্যারের মতো দেখালেও গোপনে ক্ষতি করে।"
+ },
+ {
+  "ref": "ict_113",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সাইবার নিরাপত্তা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কি-বোর্ডে টাইপ করা প্রতিটি কি গোপনে রেকর্ড করে কোন ক্ষতিকর প্রোগ্রাম?",
+  "options": [
+   "অ্যাডওয়্যার",
+   "কি-লগার",
+   "ফায়ারওয়াল",
+   "ব্রাউজার"
+  ],
+  "answer": 1,
+  "explanation": "কি-লগার পাসওয়ার্ড ও কার্ড নম্বরসহ সব টাইপ করা তথ্য চুরি করতে পারে।"
+ },
+ {
+  "ref": "ict_114",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সাইবার নিরাপত্তা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "অননুমোদিত প্রবেশ ঠেকাতে নেটওয়ার্কে কোন নিরাপত্তা ব্যবস্থা ব্যবহৃত হয়?",
+  "options": [
+   "হাব",
+   "মডেম",
+   "রিপিটার",
+   "ফায়ারওয়াল"
+  ],
+  "answer": 3,
+  "explanation": "ফায়ারওয়াল নির্দিষ্ট নিয়ম অনুযায়ী আগত ও বহির্গামী নেটওয়ার্ক ট্রাফিক পর্যবেক্ষণ ও নিয়ন্ত্রণ করে।"
+ },
+ {
+  "ref": "ict_115",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সাইবার নিরাপত্তা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "পার্সোনাল কম্পিউটারের প্রথম ভাইরাস হিসেবে পরিচিত কোনটি?",
+  "options": [
+   "ব্রেইন",
+   "ক্রিপার",
+   "মেলিসা",
+   "আই লাভ ইউ"
+  ],
+  "answer": 0,
+  "explanation": "১৯৮৬ সালে পাকিস্তানের দুই ভাই \"ব্রেইন\" ভাইরাস তৈরি করেন, যা IBM PC-তে ছড়ানো প্রথম ভাইরাস।"
+ },
+ {
+  "ref": "ict_116",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সাইবার নিরাপত্তা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "মানুষ নাকি বট—তা যাচাইয়ে ওয়েবসাইটে কোন পরীক্ষা ব্যবহৃত হয়?",
+  "options": [
+   "SSL",
+   "OTP",
+   "CAPTCHA",
+   "VPN"
+  ],
+  "answer": 2,
+  "explanation": "CAPTCHA বিকৃত লেখা বা ছবি চিনতে দিয়ে স্বয়ংক্রিয় বট ঠেকায়।"
+ },
+ {
+  "ref": "ict_117",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সাইবার নিরাপত্তা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "দুই ধাপে পরিচয় যাচাইয়ের পদ্ধতিকে কী বলে?",
+  "options": [
+   "ব্যাকআপ",
+   "এনক্রিপশন",
+   "ফায়ারওয়াল",
+   "টু-ফ্যাক্টর অথেনটিকেশন"
+  ],
+  "answer": 3,
+  "explanation": "পাসওয়ার্ডের পাশাপাশি OTP বা বায়োমেট্রিকের মতো দ্বিতীয় প্রমাণ চাওয়ায় হিসাব অনেক বেশি নিরাপদ হয়।"
+ },
+ {
+  "ref": "ict_118",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সাইবার নিরাপত্তা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একই চাবি দিয়ে এনক্রিপশন ও ডিক্রিপশন করা হয় কোন পদ্ধতিতে?",
+  "options": [
+   "হ্যাশিং",
+   "অ্যাসিমেট্রিক এনক্রিপশন (যেমন RSA)",
+   "সিমেট্রিক এনক্রিপশন (যেমন AES)",
+   "ডিজিটাল স্বাক্ষর"
+  ],
+  "answer": 2,
+  "explanation": "সিমেট্রিক পদ্ধতিতে একটি গোপন চাবি দুই পক্ষই ব্যবহার করে; অ্যাসিমেট্রিকে পাবলিক ও প্রাইভেট দুটি আলাদা চাবি থাকে।"
+ },
+ {
+  "ref": "ict_119",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সাইবার নিরাপত্তা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "লক্ষ লক্ষ অনুরোধ পাঠিয়ে কোনো সার্ভার অচল করে দেওয়ার আক্রমণকে কী বলে?",
+  "options": [
+   "ফিশিং",
+   "DDoS আক্রমণ",
+   "SQL ইনজেকশন",
+   "স্নিফিং"
+  ],
+  "answer": 1,
+  "explanation": "Distributed Denial of Service আক্রমণে বহু সংক্রমিত কম্পিউটার (বটনেট) একসাথে অনুরোধ পাঠিয়ে সার্ভারকে অকেজো করে।"
+ },
+ {
+  "ref": "ict_120",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সাইবার নিরাপত্তা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ওয়েবসাইটের ইনপুট ঘরে ক্ষতিকর ডেটাবেজ কোড ঢুকিয়ে তথ্য চুরির আক্রমণকে কী বলে?",
+  "options": [
+   "SQL ইনজেকশন",
+   "ক্রস-সাইট স্ক্রিপটিং",
+   "ফিশিং",
+   "ব্রুট ফোর্স"
+  ],
+  "answer": 0,
+  "explanation": "যাচাই ছাড়া ইনপুট সরাসরি SQL কোয়েরিতে বসালে আক্রমণকারী ডেটাবেজের তথ্য পড়তে বা মুছতে পারে।"
+ },
+ {
+  "ref": "ict_121",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "সাইবার নিরাপত্তা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ওয়েবসাইটের ঠিকানায় \"https\" এবং তালার চিহ্ন কী নির্দেশ করে?",
+  "options": [
+   "সাইটটি বিনামূল্যে",
+   "সাইটটি সরকারি",
+   "তথ্য এনক্রিপ্ট করে আদান-প্রদান হচ্ছে",
+   "সাইটে বিজ্ঞাপন নেই"
+  ],
+  "answer": 2,
+  "explanation": "HTTPS SSL/TLS ব্যবহার করে ব্রাউজার ও সার্ভারের মধ্যকার তথ্য এনক্রিপ্ট করে; তবে এটি সাইটের সততার নিশ্চয়তা দেয় না।"
+ },
+ {
+  "ref": "ict_122",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কপি করার শর্টকাট কি কোনটি?",
+  "options": [
+   "Ctrl + C",
+   "Ctrl + V",
+   "Ctrl + X",
+   "Ctrl + P"
+  ],
+  "answer": 0,
+  "explanation": "Ctrl+C কপি, Ctrl+X কাট এবং Ctrl+V পেস্ট।"
+ },
+ {
+  "ref": "ict_123",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "সর্বশেষ কাজ বাতিল (Undo) করার শর্টকাট কোনটি?",
+  "options": [
+   "Ctrl + A",
+   "Ctrl + Y",
+   "Ctrl + U",
+   "Ctrl + Z"
+  ],
+  "answer": 3,
+  "explanation": "Ctrl+Z আনডু এবং Ctrl+Y রিডু।"
+ },
+ {
+  "ref": "ict_124",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "সম্পূর্ণ ডকুমেন্ট সিলেক্ট করার শর্টকাট কোনটি?",
+  "options": [
+   "Ctrl + S",
+   "Ctrl + A",
+   "Ctrl + E",
+   "Ctrl + D"
+  ],
+  "answer": 1,
+  "explanation": "Ctrl+A (Select All) সম্পূর্ণ লেখা বা সব ফাইল নির্বাচন করে।"
+ },
+ {
+  "ref": "ict_125",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "এমএস ওয়ার্ডে বানান ও ব্যাকরণ যাচাইয়ের ফাংশন কি কোনটি?",
+  "options": [
+   "F5",
+   "F7",
+   "F2",
+   "F12"
+  ],
+  "answer": 1,
+  "explanation": "ওয়ার্ডে F7 বানান যাচাই, F12 Save As এবং পাওয়ারপয়েন্টে F5 স্লাইড শো শুরু করে।"
+ },
+ {
+  "ref": "ict_126",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "পাওয়ারপয়েন্টে শুরু থেকে স্লাইড শো চালুর কি কোনটি?",
+  "options": [
+   "F10",
+   "F7",
+   "F1",
+   "F5"
+  ],
+  "answer": 3,
+  "explanation": "F5 প্রথম স্লাইড থেকে এবং Shift+F5 বর্তমান স্লাইড থেকে স্লাইড শো শুরু করে।"
+ },
+ {
+  "ref": "ict_127",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "এমএস ওয়ার্ডে লেখা মাঝখানে সাজানোর (Center Align) শর্টকাট কোনটি?",
+  "options": [
+   "Ctrl + E",
+   "Ctrl + C",
+   "Ctrl + M",
+   "Ctrl + J"
+  ],
+  "answer": 0,
+  "explanation": "Ctrl+E মাঝখানে, Ctrl+L বামে, Ctrl+R ডানে এবং Ctrl+J দুই পাশে সমান (Justify) করে।"
+ },
+ {
+  "ref": "ict_128",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "খোলা উইন্ডো বা প্রোগ্রাম বন্ধ করার শর্টকাট কোনটি?",
+  "options": [
+   "Shift + F4",
+   "Ctrl + F4",
+   "Alt + F4",
+   "Alt + Tab"
+  ],
+  "answer": 2,
+  "explanation": "Alt+F4 সক্রিয় প্রোগ্রাম বন্ধ করে; Alt+Tab খোলা প্রোগ্রামগুলোর মধ্যে স্থানান্তর করে।"
+ },
+ {
+  "ref": "ict_129",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একই চিঠি অনেক ব্যক্তির ঠিকানায় স্বয়ংক্রিয়ভাবে তৈরি করতে ওয়ার্ডের কোন সুবিধা ব্যবহৃত হয়?",
+  "options": [
+   "ওয়ার্ড আর্ট",
+   "ট্র্যাক চেঞ্জ",
+   "থিসরাস",
+   "মেইল মার্জ"
+  ],
+  "answer": 3,
+  "explanation": "মেইল মার্জ একটি চিঠির টেমপ্লেটের সাথে ঠিকানার তালিকা যুক্ত করে প্রত্যেকের জন্য আলাদা চিঠি তৈরি করে।"
+ },
+ {
+  "ref": "ict_130",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "এক্সেলে সূত্র (formula) কোন চিহ্ন দিয়ে শুরু করতে হয়?",
+  "options": [
+   "#",
+   "+",
+   "=",
+   "@"
+  ],
+  "answer": 2,
+  "explanation": "এক্সেলে সূত্র লিখতে প্রথমে সমান (=) চিহ্ন দিতে হয়, যেমন =SUM(A1:A10)।"
+ },
+ {
+  "ref": "ict_131",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "এক্সেলে কয়েকটি সেলের যোগফল বের করার ফাংশন কোনটি?",
+  "options": [
+   "COUNT",
+   "SUM",
+   "AVERAGE",
+   "MAX"
+  ],
+  "answer": 1,
+  "explanation": "SUM যোগফল, AVERAGE গড়, MAX সর্বোচ্চ, MIN সর্বনিম্ন এবং COUNT সংখ্যাযুক্ত সেল গণনা করে।"
+ },
+ {
+  "ref": "ict_132",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "এক্সেলে সূত্র কপি করলেও সেলের ঠিকানা অপরিবর্তিত রাখতে কোনটি ব্যবহার করা হয়?",
+  "options": [
+   "$A$1 (অ্যাবসলিউট রেফারেন্স)",
+   "A1 (রিলেটিভ রেফারেন্স)",
+   "#A1",
+   "@A1"
+  ],
+  "answer": 0,
+  "explanation": "$ চিহ্ন দিয়ে কলাম ও সারি স্থির করা যায়; কপি করলেও $A$1 সবসময় A1 সেলকেই নির্দেশ করে।"
+ },
+ {
+  "ref": "ict_133",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "এক্সেলে =ROUND(২.৫৬৭, ২) এর ফলাফল কত?",
+  "options": [
+   "২.৬",
+   "২.৫৬",
+   "২.৫৭",
+   "৩"
+  ],
+  "answer": 2,
+  "explanation": "ROUND ফাংশন দ্বিতীয় আর্গুমেন্টে উল্লিখিত দশমিক স্থান পর্যন্ত নিকটতম মানে পূর্ণ করে; ২.৫৬৭ → ২.৫৭।"
+ },
+ {
+  "ref": "ict_134",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "এক্সেলে একটি টেবিলের প্রথম কলামে মান খুঁজে একই সারির অন্য কলামের মান দেখাতে কোন ফাংশন ব্যবহৃত হয়?",
+  "options": [
+   "VLOOKUP",
+   "COUNTIF",
+   "CONCAT",
+   "TRIM"
+  ],
+  "answer": 0,
+  "explanation": "VLOOKUP (Vertical Lookup) উল্লম্বভাবে মান খুঁজে নির্দিষ্ট কলামের সংশ্লিষ্ট তথ্য ফেরত দেয়।"
+ },
+ {
+  "ref": "ict_135",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "এক্সেলের আধুনিক সংস্করণে একটি ওয়ার্কশিটে সর্বোচ্চ কতটি সারি থাকে?",
+  "options": [
+   "১০,০০,০০০টি",
+   "৬৫,৫৩৬টি",
+   "১৬,৩৮৪টি",
+   "১০,৪৮,৫৭৬টি"
+  ],
+  "answer": 3,
+  "explanation": "এক্সেল ২০০৭ থেকে প্রতি শিটে ১০,৪৮,৫৭৬টি সারি ও ১৬,৩৮৪টি কলাম (শেষ কলাম XFD) থাকে।"
+ },
+ {
+  "ref": "ict_136",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "অফিস অ্যাপ্লিকেশন ও শর্টকাট",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "এমএস ওয়ার্ড ফাইলের ডিফল্ট এক্সটেনশন কোনটি?",
+  "options": [
+   ".xlsx",
+   ".docx",
+   ".pptx",
+   ".txt"
+  ],
+  "answer": 1,
+  "explanation": "ওয়ার্ড .docx, এক্সেল .xlsx এবং পাওয়ারপয়েন্ট .pptx এক্সটেনশন ব্যবহার করে।"
+ },
+ {
+  "ref": "ict_137",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "আধুনিক ও উদীয়মান প্রযুক্তি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "IoT এর পূর্ণরূপ কী?",
+  "options": [
+   "Internet of Technology",
+   "Internet of Things",
+   "Integration of Tools",
+   "Input Output Terminal"
+  ],
+  "answer": 1,
+  "explanation": "IoT-তে দৈনন্দিন যন্ত্র (ফ্রিজ, বাতি, সেন্সর) ইন্টারনেটের মাধ্যমে তথ্য আদান-প্রদান করে।"
+ },
+ {
+  "ref": "ict_138",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "আধুনিক ও উদীয়মান প্রযুক্তি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বিটকয়েন কোন প্রযুক্তির ওপর ভিত্তি করে তৈরি?",
+  "options": [
+   "বায়োমেট্রিক্স",
+   "ক্লাউড কম্পিউটিং",
+   "ভার্চুয়াল রিয়েলিটি",
+   "ব্লকচেইন"
+  ],
+  "answer": 3,
+  "explanation": "ব্লকচেইন একটি বিকেন্দ্রীভূত, অপরিবর্তনযোগ্য ডিজিটাল খতিয়ান; ২০০৯ সালে \"সাতোশি নাকামোতো\" ছদ্মনামে বিটকয়েন চালু হয়।"
+ },
+ {
+  "ref": "ict_139",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "আধুনিক ও উদীয়মান প্রযুক্তি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "মেশিন লার্নিং কোন প্রযুক্তির একটি শাখা?",
+  "options": [
+   "কৃত্রিম বুদ্ধিমত্তা",
+   "রোবটিক্স",
+   "ন্যানোটেকনোলজি",
+   "বায়োইনফরমেটিক্স"
+  ],
+  "answer": 0,
+  "explanation": "মেশিন লার্নিংয়ে কম্পিউটার স্পষ্ট প্রোগ্রাম ছাড়াই ডেটা থেকে শিখে সিদ্ধান্ত নিতে পারে।"
+ },
+ {
+  "ref": "ict_140",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "আধুনিক ও উদীয়মান প্রযুক্তি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাস্তব দৃশ্যের ওপর কম্পিউটার-নির্মিত তথ্য বা ছবি যুক্ত করার প্রযুক্তিকে কী বলে?",
+  "options": [
+   "ক্লাউড কম্পিউটিং",
+   "ভার্চুয়াল রিয়েলিটি (VR)",
+   "অগমেন্টেড রিয়েলিটি (AR)",
+   "রিমোট সেন্সিং"
+  ],
+  "answer": 2,
+  "explanation": "AR বাস্তব জগতের সাথে ডিজিটাল উপাদান মেশায়; VR ব্যবহারকারীকে সম্পূর্ণ কৃত্রিম পরিবেশে নিয়ে যায়।"
+ },
+ {
+  "ref": "ict_141",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "আধুনিক ও উদীয়মান প্রযুক্তি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১৯৯৭ সালে কোন কম্পিউটার দাবার বিশ্বচ্যাম্পিয়ন গ্যারি কাসপারভকে হারায়?",
+  "options": [
+   "ইলিয়াক",
+   "আলফাগো",
+   "ওয়াটসন",
+   "ডিপ ব্লু"
+  ],
+  "answer": 3,
+  "explanation": "IBM-এর ডিপ ব্লু ১৯৯৭ সালে কাসপারভকে ম্যাচে পরাজিত করে। ২০১৬ সালে গুগলের আলফাগো গো খেলায় লি সেডলকে হারায়।"
+ },
+ {
+  "ref": "ict_142",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "আধুনিক ও উদীয়মান প্রযুক্তি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "চ্যাটজিপিটি (ChatGPT) কোন প্রতিষ্ঠান তৈরি করেছে?",
+  "options": [
+   "Microsoft",
+   "Google",
+   "OpenAI",
+   "Meta"
+  ],
+  "answer": 2,
+  "explanation": "২০২২ সালের নভেম্বরে OpenAI চ্যাটজিপিটি উন্মুক্ত করে, যা বড় ভাষা মডেলের (LLM) ওপর ভিত্তি করে তৈরি।"
+ },
+ {
+  "ref": "ict_143",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "আধুনিক ও উদীয়মান প্রযুক্তি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "আঙুলের ছাপ, চোখের মণি বা মুখমণ্ডল দিয়ে পরিচয় শনাক্তকরণ প্রযুক্তিকে কী বলে?",
+  "options": [
+   "বায়োইনফরমেটিক্স",
+   "বায়োমেট্রিক্স",
+   "জেনেটিক ইঞ্জিনিয়ারিং",
+   "ন্যানোটেকনোলজি"
+  ],
+  "answer": 1,
+  "explanation": "বায়োমেট্রিক্স মানুষের শারীরিক বা আচরণগত অনন্য বৈশিষ্ট্য ব্যবহার করে পরিচয় নিশ্চিত করে; সিম নিবন্ধনেও এটি ব্যবহৃত হয়।"
+ },
+ {
+  "ref": "ict_144",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "আধুনিক ও উদীয়মান প্রযুক্তি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ইন্টারনেটের মাধ্যমে সার্ভার, স্টোরেজ ও সফটওয়্যার ভাড়া নিয়ে ব্যবহারের পদ্ধতিকে কী বলে?",
+  "options": [
+   "ক্লাউড কম্পিউটিং",
+   "গ্রিড কম্পিউটিং",
+   "এজ কম্পিউটিং",
+   "কোয়ান্টাম কম্পিউটিং"
+  ],
+  "answer": 0,
+  "explanation": "ক্লাউড কম্পিউটিংয়ে ব্যবহারকারী প্রয়োজনমতো রিসোর্স ভাড়া নেন এবং যতটুকু ব্যবহার ততটুকু মূল্য দেন।"
+ },
+ {
+  "ref": "ict_145",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "আধুনিক ও উদীয়মান প্রযুক্তি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ক্লাউড সেবার কোন মডেলে ভার্চুয়াল সার্ভার, নেটওয়ার্ক ও স্টোরেজের মতো অবকাঠামো ভাড়া দেওয়া হয়?",
+  "options": [
+   "PaaS",
+   "SaaS",
+   "IaaS",
+   "DaaS"
+  ],
+  "answer": 2,
+  "explanation": "IaaS (Infrastructure as a Service) অবকাঠামো, PaaS ডেভেলপমেন্ট প্ল্যাটফর্ম এবং SaaS সম্পূর্ণ সফটওয়্যার সেবা দেয়।"
+ },
+ {
+  "ref": "ict_146",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "আধুনিক ও উদীয়মান প্রযুক্তি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোয়ান্টাম কম্পিউটারের তথ্যের মৌলিক একককে কী বলে?",
+  "options": [
+   "কিউবিট",
+   "বিট",
+   "বাইট",
+   "নিবল"
+  ],
+  "answer": 0,
+  "explanation": "কিউবিট একই সাথে ০ ও ১ উভয় অবস্থায় (সুপারপজিশন) থাকতে পারে, ফলে কিছু হিসাব অত্যন্ত দ্রুত করা যায়।"
+ },
+ {
+  "ref": "ict_147",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "আধুনিক ও উদীয়মান প্রযুক্তি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ন্যানোটেকনোলজিতে ১ ন্যানোমিটার সমান কত মিটার?",
+  "options": [
+   "১০⁻³ মিটার",
+   "১০⁻⁶ মিটার",
+   "১০⁻¹² মিটার",
+   "১০⁻⁹ মিটার"
+  ],
+  "answer": 3,
+  "explanation": "১ ন্যানোমিটার = ১০⁻⁹ মিটার, অর্থাৎ এক মিটারের একশো কোটি ভাগের এক ভাগ।"
+ },
+ {
+  "ref": "ict_148",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "বাংলাদেশে আইসিটি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশ প্রথম কোন সাবমেরিন ক্যাবলের সাথে যুক্ত হয়?",
+  "options": [
+   "SEA-ME-WE 5",
+   "SEA-ME-WE 4",
+   "SEA-ME-WE 6",
+   "FLAG"
+  ],
+  "answer": 1,
+  "explanation": "২০০৬ সালে কক্সবাজারের ল্যান্ডিং স্টেশনের মাধ্যমে বাংলাদেশ SEA-ME-WE 4 সাবমেরিন ক্যাবলে যুক্ত হয়।"
+ },
+ {
+  "ref": "ict_149",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "বাংলাদেশে আইসিটি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশের দ্বিতীয় সাবমেরিন ক্যাবলের (SEA-ME-WE 5) ল্যান্ডিং স্টেশন কোথায়?",
+  "options": [
+   "কক্সবাজার",
+   "কুয়াকাটা",
+   "চট্টগ্রাম",
+   "মোংলা"
+  ],
+  "answer": 1,
+  "explanation": "২০১৭ সালে পটুয়াখালীর কুয়াকাটায় SEA-ME-WE 5 এর ল্যান্ডিং স্টেশন চালু হয়।"
+ },
+ {
+  "ref": "ict_150",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "বাংলাদেশে আইসিটি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশের প্রথম যোগাযোগ কৃত্রিম উপগ্রহ কত সালে উৎক্ষেপণ করা হয়?",
+  "options": [
+   "২০১৫",
+   "২০১৬",
+   "২০২০",
+   "২০১৮"
+  ],
+  "answer": 3,
+  "explanation": "১২ মে ২০১৮ যুক্তরাষ্ট্রের কেনেডি স্পেস সেন্টার থেকে স্পেসএক্সের ফ্যালকন-৯ রকেটে বাংলাদেশের প্রথম যোগাযোগ উপগ্রহ উৎক্ষেপণ করা হয়।"
+ },
+ {
+  "ref": "ict_151",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "বাংলাদেশে আইসিটি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশের প্রথম যোগাযোগ উপগ্রহ কোন প্রতিষ্ঠানের রকেটে উৎক্ষেপিত হয়?",
+  "options": [
+   "স্পেসএক্স",
+   "নাসা",
+   "ইসরো",
+   "আরিয়ানস্পেস"
+  ],
+  "answer": 0,
+  "explanation": "স্পেসএক্সের ফ্যালকন-৯ ব্লক-৫ রকেটে উপগ্রহটি উৎক্ষেপণ করা হয়; এর নির্মাতা ফ্রান্সের থ্যালেস অ্যালেনিয়া স্পেস।"
+ },
+ {
+  "ref": "ict_152",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "বাংলাদেশে আইসিটি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশে বাণিজ্যিকভাবে ফোর-জি (4G) সেবা কত সালে চালু হয়?",
+  "options": [
+   "২০১৫",
+   "২০১২",
+   "২০১৮",
+   "২০২১"
+  ],
+  "answer": 2,
+  "explanation": "১৯ ফেব্রুয়ারি ২০১৮ বাংলাদেশে বাণিজ্যিক 4G সেবা চালু হয়। থ্রি-জি চালু হয়েছিল ২০১২ সালে।"
+ },
+ {
+  "ref": "ict_153",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "বাংলাদেশে আইসিটি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশের দেশভিত্তিক টপ লেভেল ডোমেইন কোনটি?",
+  "options": [
+   ".bl",
+   ".bn",
+   ".bg",
+   ".bd"
+  ],
+  "answer": 3,
+  "explanation": ".bd বাংলাদেশের কান্ট্রি কোড টপ লেভেল ডোমেইন (ccTLD), যা BTCL পরিচালনা করে।"
+ },
+ {
+  "ref": "ict_154",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "বাংলাদেশে আইসিটি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশে তথ্য ও যোগাযোগ প্রযুক্তি আইন কত সালে প্রণীত হয়?",
+  "options": [
+   "২০১৩",
+   "২০০১",
+   "২০০৬",
+   "২০১৮"
+  ],
+  "answer": 2,
+  "explanation": "ইলেকট্রনিক স্বাক্ষর, ই-রেকর্ড ও সাইবার অপরাধ সংক্রান্ত তথ্য ও যোগাযোগ প্রযুক্তি আইন ২০০৬ সালে প্রণীত হয়।"
+ },
+ {
+  "ref": "ict_155",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "বাংলাদেশে আইসিটি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "জনপ্রিয় বাংলা কি-বোর্ড সফটওয়্যার \"অভ্র\" এর বৈশিষ্ট্য কী?",
+  "options": [
+   "শুধু অর্থের বিনিময়ে পাওয়া যায়",
+   "বিনামূল্যের ও ওপেন সোর্স",
+   "শুধু মোবাইলে চলে",
+   "ইংরেজি লেখার সফটওয়্যার"
+  ],
+  "answer": 1,
+  "explanation": "মেহদী হাসান খানের তৈরি অভ্র কি-বোর্ড ইউনিকোডভিত্তিক, বিনামূল্যের ও ওপেন সোর্স; ফোনেটিক পদ্ধতিতে বাংলা লেখা যায়।"
+ },
+ {
+  "ref": "ict_156",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "বাংলাদেশে আইসিটি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশে টেলিযোগাযোগ খাত নিয়ন্ত্রণকারী সংস্থা কোনটি?",
+  "options": [
+   "বিটিআরসি",
+   "বিটিসিএল",
+   "টেলিটক",
+   "বিসিসি"
+  ],
+  "answer": 0,
+  "explanation": "বাংলাদেশ টেলিযোগাযোগ নিয়ন্ত্রণ কমিশন (BTRC) ২০০১ সালের আইনে গঠিত হয়ে ২০০২ সাল থেকে কাজ শুরু করে।"
+ },
+ {
+  "ref": "ict_157",
+  "exam": "bcs-general",
+  "subject": "Computer & ICT",
+  "topic": "বাংলাদেশে আইসিটি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশের একমাত্র রাষ্ট্রায়ত্ত মোবাইল অপারেটর কোনটি?",
+  "options": [
+   "রবি",
+   "গ্রামীণফোন",
+   "টেলিটক",
+   "বাংলালিংক"
+  ],
+  "answer": 2,
+  "explanation": "টেলিটক বাংলাদেশ লিমিটেড সরকারি মালিকানাধীন মোবাইল অপারেটর।"
+ },
+ {
+  "ref": "ict_158",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Banking Technology",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "What does ATM stand for?",
+  "options": [
+   "Automated Teller Machine",
+   "Automatic Transfer Machine",
+   "Any Time Money",
+   "Account Transaction Module"
+  ],
+  "answer": 0,
+  "explanation": "An Automated Teller Machine lets customers withdraw cash and check balances without a bank teller."
+ },
+ {
+  "ref": "ict_159",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Banking Technology",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Which technology reads the magnetic-ink numbers printed at the bottom of a cheque?",
+  "options": [
+   "RFID",
+   "OCR",
+   "OMR",
+   "MICR"
+  ],
+  "answer": 3,
+  "explanation": "Magnetic Ink Character Recognition reads the cheque number, bank code and account details quickly and is very hard to forge."
+ },
+ {
+  "ref": "ict_160",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Banking Technology",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "RTGS in banking stands for:",
+  "options": [
+   "Rapid Transfer Gateway System",
+   "Real Time Gross Settlement",
+   "Real Time General Service",
+   "Remote Transaction Gateway Settlement"
+  ],
+  "answer": 1,
+  "explanation": "In RTGS each high-value payment is settled individually and immediately in the central bank's books, rather than in batches."
+ },
+ {
+  "ref": "ict_161",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Banking Technology",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "In February 2016, cyber criminals stole about US$81 million from Bangladesh Bank's account at the Federal Reserve Bank of New York by abusing which messaging system?",
+  "options": [
+   "RTGS",
+   "SWIFT",
+   "BEFTN",
+   "NPSB"
+  ],
+  "answer": 1,
+  "explanation": "The attackers sent fraudulent SWIFT payment orders, and most of the stolen money was routed to accounts in the Philippines."
+ },
+ {
+  "ref": "ict_162",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Banking Technology",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "What is the main purpose of KYC in banking?",
+  "options": [
+   "Printing bank statements",
+   "Calculating loan interest",
+   "Encrypting ATM PINs",
+   "Verifying the identity of customers"
+  ],
+  "answer": 3,
+  "explanation": "Know Your Customer checks verify identity and assess risk, helping to prevent money laundering and fraud."
+ },
+ {
+  "ref": "ict_163",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Banking Technology",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "A system in which all branches of a bank share one central database so a customer can bank at any branch is called:",
+  "options": [
+   "Core Banking System",
+   "Branch Banking System",
+   "Offline Banking",
+   "Ledger Banking"
+  ],
+  "answer": 0,
+  "explanation": "CBS (Centralised Online Real-time Exchange) connects all branches to a central server, enabling \"anywhere banking\"."
+ },
+ {
+  "ref": "ict_164",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Banking Technology",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "How many characters long is a SWIFT/BIC code?",
+  "options": [
+   "10 or 12",
+   "6 or 9",
+   "8 or 11",
+   "Always 16"
+  ],
+  "answer": 2,
+  "explanation": "A BIC has 4 letters for the bank, 2 for the country, 2 for the location and an optional 3 for the branch."
+ },
+ {
+  "ref": "ict_165",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Banking Technology",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "The chip standard used on modern debit and credit cards to reduce card cloning is:",
+  "options": [
+   "USB",
+   "NFC",
+   "QR",
+   "EMV"
+  ],
+  "answer": 3,
+  "explanation": "EMV (Europay, Mastercard, Visa) chips generate dynamic data for every transaction, making cloned magnetic-stripe data useless."
+ },
+ {
+  "ref": "ict_166",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Banking Technology",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "What does OTP stand for in online banking?",
+  "options": [
+   "Own Transaction PIN",
+   "Online Transfer Protocol",
+   "One Time Password",
+   "Open Token Payment"
+  ],
+  "answer": 2,
+  "explanation": "An OTP is valid for a single login or transaction, adding a second layer of security."
+ },
+ {
+  "ref": "ict_167",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Banking Technology",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "Which security standard must organisations follow when they store, process or transmit card-holder data?",
+  "options": [
+   "ISO 9001",
+   "PCI DSS",
+   "IEEE 802.11",
+   "HTML5"
+  ],
+  "answer": 1,
+  "explanation": "The Payment Card Industry Data Security Standard sets requirements for protecting card data."
+ },
+ {
+  "ref": "ict_168",
+  "exam": "combined-bank",
+  "subject": "Computer & ICT",
+  "topic": "Networking & Internet",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Which device connects different networks and forwards packets based on IP addresses?",
+  "options": [
+   "Router",
+   "Hub",
+   "Repeater",
+   "Modem"
+  ],
+  "answer": 0,
+  "explanation": "A router works at the network layer and chooses the best path for each packet between networks."
+ },
+ {
+  "ref": "ict_169",
+  "exam": "combined-bank",
+  "subject": "Computer & ICT",
+  "topic": "Networking & Internet",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Which protocol is used to receive e-mail while keeping messages synchronised on the server?",
+  "options": [
+   "POP3",
+   "SMTP",
+   "IMAP",
+   "FTP"
+  ],
+  "answer": 2,
+  "explanation": "IMAP keeps mail on the server and syncs it across devices, while POP3 usually downloads and removes it."
+ },
+ {
+  "ref": "ict_170",
+  "exam": "combined-bank",
+  "subject": "Computer & ICT",
+  "topic": "Networking & Internet",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "What is the default port number of SSH?",
+  "options": [
+   "22",
+   "21",
+   "23",
+   "25"
+  ],
+  "answer": 0,
+  "explanation": "SSH uses port 22. FTP uses 21, Telnet 23 and SMTP 25."
+ },
+ {
+  "ref": "ict_171",
+  "exam": "combined-bank",
+  "subject": "Computer & ICT",
+  "topic": "Networking & Internet",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Which network topology connects all devices to a single backbone cable?",
+  "options": [
+   "Mesh",
+   "Star",
+   "Ring",
+   "Bus"
+  ],
+  "answer": 3,
+  "explanation": "In a bus topology every device shares one cable, so a break in the backbone brings down the network."
+ },
+ {
+  "ref": "ict_172",
+  "exam": "combined-bank",
+  "subject": "Computer & ICT",
+  "topic": "Networking & Internet",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "How many layers does the TCP/IP model have?",
+  "options": [
+   "5",
+   "4",
+   "7",
+   "3"
+  ],
+  "answer": 1,
+  "explanation": "The TCP/IP model has Application, Transport, Internet and Network Access layers, compared with 7 in the OSI model."
+ },
+ {
+  "ref": "ict_173",
+  "exam": "combined-bank",
+  "subject": "Computer & ICT",
+  "topic": "Networking & Internet",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "A private network that uses internet technology but is accessible only inside an organisation is called:",
+  "options": [
+   "Extranet",
+   "Intranet",
+   "Internet",
+   "Ethernet"
+  ],
+  "answer": 1,
+  "explanation": "An intranet serves employees only. An extranet extends limited access to partners or customers."
+ },
+ {
+  "ref": "ict_174",
+  "exam": "combined-bank",
+  "subject": "Computer & ICT",
+  "topic": "Networking & Internet",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "A VPN is mainly used to:",
+  "options": [
+   "Compress files",
+   "Increase screen resolution",
+   "Speed up printing",
+   "Create a secure encrypted connection over a public network"
+  ],
+  "answer": 3,
+  "explanation": "A Virtual Private Network encrypts traffic between a device and a remote network, protecting data on public Wi-Fi."
+ },
+ {
+  "ref": "ict_175",
+  "exam": "combined-bank",
+  "subject": "Computer & ICT",
+  "topic": "Hardware & Software",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Which of the following is volatile memory?",
+  "options": [
+   "RAM",
+   "ROM",
+   "Hard disk",
+   "Flash drive"
+  ],
+  "answer": 0,
+  "explanation": "RAM loses its contents when power is switched off; the others keep data permanently."
+ },
+ {
+  "ref": "ict_176",
+  "exam": "combined-bank",
+  "subject": "Computer & ICT",
+  "topic": "Hardware & Software",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Which component performs arithmetic and logical operations?",
+  "options": [
+   "Cache",
+   "Control Unit",
+   "ALU",
+   "Hard disk"
+  ],
+  "answer": 2,
+  "explanation": "The Arithmetic Logic Unit inside the CPU carries out calculations and comparisons."
+ },
+ {
+  "ref": "ict_177",
+  "exam": "combined-bank",
+  "subject": "Computer & ICT",
+  "topic": "Hardware & Software",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Which program translates an entire high-level program into machine code at once?",
+  "options": [
+   "Loader",
+   "Interpreter",
+   "Assembler",
+   "Compiler"
+  ],
+  "answer": 3,
+  "explanation": "A compiler translates the whole program before execution. An interpreter translates and runs it line by line."
+ },
+ {
+  "ref": "ict_178",
+  "exam": "combined-bank",
+  "subject": "Computer & ICT",
+  "topic": "Hardware & Software",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Which keyboard shortcut opens the Task Manager directly in Windows?",
+  "options": [
+   "Alt + F4",
+   "Ctrl + Alt + T",
+   "Ctrl + Shift + Esc",
+   "Windows + D"
+  ],
+  "answer": 2,
+  "explanation": "Ctrl+Shift+Esc opens Task Manager directly. Windows+D shows the desktop and Alt+F4 closes the active window."
+ },
+ {
+  "ref": "ict_179",
+  "exam": "combined-bank",
+  "subject": "Computer & ICT",
+  "topic": "Hardware & Software",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "What is the binary equivalent of the decimal number 45?",
+  "options": [
+   "110101",
+   "101101",
+   "101011",
+   "100111"
+  ],
+  "answer": 1,
+  "explanation": "45 = 32 + 8 + 4 + 1 = 2⁵ + 2³ + 2² + 2⁰, which is 101101 in binary."
+ },
+ {
+  "ref": "ict_180",
+  "exam": "combined-bank",
+  "subject": "Computer & ICT",
+  "topic": "Hardware & Software",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "In MS Excel, which function counts cells that meet a given condition?",
+  "options": [
+   "COUNTIF",
+   "COUNT",
+   "SUMIF",
+   "IF"
+  ],
+  "answer": 0,
+  "explanation": "COUNTIF(range, criteria) counts the cells that match a condition, for example =COUNTIF(A1:A10, \">50\")."
+ },
+ {
+  "ref": "ict_181",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Database & Security",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Which SQL command removes all rows from a table but keeps its structure?",
+  "options": [
+   "ALTER",
+   "DROP",
+   "TRUNCATE",
+   "SELECT"
+  ],
+  "answer": 2,
+  "explanation": "TRUNCATE empties a table quickly, while DROP deletes the table along with its structure."
+ },
+ {
+  "ref": "ict_182",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Database & Security",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "A field in one table that refers to the primary key of another table is called a:",
+  "options": [
+   "Foreign key",
+   "Candidate key",
+   "Super key",
+   "Unique key"
+  ],
+  "answer": 0,
+  "explanation": "A foreign key enforces referential integrity between two related tables."
+ },
+ {
+  "ref": "ict_183",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Database & Security",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Which property of a transaction guarantees that committed data survives a system crash?",
+  "options": [
+   "Consistency",
+   "Atomicity",
+   "Isolation",
+   "Durability"
+  ],
+  "answer": 3,
+  "explanation": "Durability ensures that once a transaction is committed, its changes are permanently recorded."
+ },
+ {
+  "ref": "ict_184",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Database & Security",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "Which hashing algorithm is used in the Bitcoin blockchain?",
+  "options": [
+   "MD5",
+   "SHA-256",
+   "AES-128",
+   "RSA-2048"
+  ],
+  "answer": 1,
+  "explanation": "Bitcoin uses SHA-256 for proof-of-work mining and for linking blocks. AES and RSA are encryption algorithms, not hashes."
+ },
+ {
+  "ref": "ict_185",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Database & Security",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Malware that secretly gathers user information without consent is called:",
+  "options": [
+   "Firmware",
+   "Spyware",
+   "Freeware",
+   "Shareware"
+  ],
+  "answer": 1,
+  "explanation": "Spyware monitors activity and steals data such as browsing habits or credentials."
+ },
+ {
+  "ref": "ict_186",
+  "exam": "bangladesh-bank",
+  "subject": "Computer & ICT",
+  "topic": "Database & Security",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "In public-key cryptography, which key is used to encrypt a message so that only the intended recipient can read it?",
+  "options": [
+   "A shared session key only",
+   "Recipient's private key",
+   "Sender's private key",
+   "Recipient's public key"
+  ],
+  "answer": 3,
+  "explanation": "Anyone can encrypt with the recipient's public key, but only the recipient's private key can decrypt the message."
+ }
+]

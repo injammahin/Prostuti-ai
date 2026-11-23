@@ -30,53 +30,38 @@ import { catalogApi, statsApi } from "@/lib/api";
 import { useApi } from "@/lib/use-api";
 import { useApp } from "@/lib/app-context";
 import { cn } from "@/lib/utils";
-import { Icon } from "@/components/icon";
+import { SubjectIcon, SubjectTile, subjectAccent } from "@/components/SubjectIcon";
 
-/** A calm accent colour per subject for the icon tile, link and progress line. */
-const ACCENTS = {
-  bangla: { tile: "bg-rose-50 text-rose-600", text: "text-rose-600", bar: "bg-rose-500" },
-  english: { tile: "bg-sky-50 text-sky-600", text: "text-sky-600", bar: "bg-sky-500" },
-  math: { tile: "bg-violet-50 text-violet-600", text: "text-violet-600", bar: "bg-violet-500" },
-  "bd-affairs": { tile: "bg-emerald-50 text-emerald-600", text: "text-emerald-600", bar: "bg-emerald-500" },
-  "intl-affairs": { tile: "bg-blue-50 text-blue-600", text: "text-blue-600", bar: "bg-blue-500" },
-  ict: { tile: "bg-indigo-50 text-indigo-600", text: "text-indigo-600", bar: "bg-indigo-500" },
-  science: { tile: "bg-teal-50 text-teal-600", text: "text-teal-600", bar: "bg-teal-500" },
-  mental: { tile: "bg-amber-50 text-amber-600", text: "text-amber-600", bar: "bg-amber-500" },
-  banking: { tile: "bg-cyan-50 text-cyan-700", text: "text-cyan-700", bar: "bg-cyan-600" },
-  geography: { tile: "bg-lime-50 text-lime-700", text: "text-lime-700", bar: "bg-lime-600" },
-  ethics: { tile: "bg-fuchsia-50 text-fuchsia-600", text: "text-fuchsia-600", bar: "bg-fuchsia-500" },
-  default: { tile: "bg-secondary text-primary", text: "text-primary", bar: "bg-primary" },
-};
 
 const modes = [
   {
     id: "drill",
     icon: faBullseye,
-    title: "Practice one subject",
-    text: "Choose a subject below",
+    title: ["Practice one subject", "একটি বিষয় অনুশীলন"],
+    text: ["Choose a subject below", "নিচ থেকে বিষয় বাছাই করুন"],
     tone: "primary",
   },
   {
     id: "past",
     icon: faFileLines,
-    title: "Old exam questions",
-    text: "Questions from past years",
+    title: ["Old exam questions", "বিগত সালের প্রশ্ন"],
+    text: ["Questions from past years", "আগের পরীক্ষার প্রশ্ন"],
     tone: "info",
     to: "/app/practice/session?mode=past",
   },
   {
     id: "test",
     icon: faStopwatch,
-    title: "Take a full test",
-    text: "Like the real exam, with a timer",
+    title: ["Take a full test", "পূর্ণ পরীক্ষা দিন"],
+    text: ["Like the real exam, with a timer", "আসল পরীক্ষার মতো, সময়সহ"],
     tone: "chart5",
     to: "/app/test",
   },
   {
     id: "wrong",
     icon: faRotate,
-    title: "Fix my mistakes",
-    text: "Try wrong answers again",
+    title: ["Fix my mistakes", "ভুলগুলো ঠিক করুন"],
+    text: ["Try wrong answers again", "ভুল প্রশ্নগুলো আবার চেষ্টা করুন"],
     tone: "warning",
     to: "/app/notebook",
   },
@@ -84,7 +69,8 @@ const modes = [
 
 export default function Practice() {
   const nav = useNavigate();
-  const { mainExam, isGuest } = useApp();
+  const { mainExam, isGuest, bn, L, num } = useApp();
+  const examName = (e) => (e ? L(e.name, e.name_bn || e.name) : "");
   const { data: catalog, loading } = useApi(() => catalogApi.get(), []);
   const { data: stats } = useApi(() => statsApi.get(mainExam), [mainExam], { enabled: !isGuest });
   const exams = catalog?.exams ?? [];
@@ -119,8 +105,8 @@ export default function Practice() {
   return (
     <>
       <PageHeader
-        title="Practice questions"
-        subtitle="Pick a subject, answer questions and learn the right answers."
+        title={L("Practice questions", "প্রশ্ন অনুশীলন")}
+        subtitle={L("Pick a subject, answer questions and learn the right answers.", "বিষয় বাছাই করুন, প্রশ্নের উত্তর দিন এবং সঠিক উত্তর শিখুন।")}
         className="mb-4"
       />
 
@@ -135,7 +121,7 @@ export default function Practice() {
               : "border bg-card text-muted-foreground hover:bg-muted",
           )}
         >
-          All exams
+          {L("All exams", "সব পরীক্ষা")}
         </button>
         {exams.map((e) => (
           <button
@@ -148,7 +134,7 @@ export default function Practice() {
                 : "border bg-card text-muted-foreground hover:bg-muted",
             )}
           >
-            {e.name}
+            {examName(e)}
           </button>
         ))}
       </div>
@@ -160,22 +146,24 @@ export default function Practice() {
             <div className="min-w-0 flex-1">
               <p className="text-xs font-semibold tracking-wide text-white/70 uppercase">
                 {currentExamObj
-                  ? `Suggested for you · ${currentExamObj.name}`
-                  : "Suggested for you"}
+                  ? `${L("Suggested for you", "আপনার জন্য প্রস্তাবিত")} · ${examName(currentExamObj)}`
+                  : L("Suggested for you", "আপনার জন্য প্রস্তাবিত")}
               </p>
               <h2 className="mt-1 text-lg md:mt-1.5 md:text-2xl">
                 {targetExam === "combined-bank" ||
                 targetExam === "bangladesh-bank"
-                  ? "Math & Banking questions"
+                  ? L("Math & Banking questions", "গণিত ও ব্যাংকিং বিষয়ক প্রশ্ন")
                   : targetExam === "ntrca"
-                    ? "Bangla & English Grammar questions"
+                    ? L("Bangla & English Grammar questions", "বাংলা ও ইংরেজি ব্যাকরণের প্রশ্ন")
                     : targetExam === "primary-teacher"
-                      ? "Basic Math & Science questions"
-                      : "Bangladesh & World Affairs questions"}
+                      ? L("Basic Math & Science questions", "প্রাথমিক গণিত ও বিজ্ঞানের প্রশ্ন")
+                      : L("Bangladesh & World Affairs questions", "বাংলাদেশ ও আন্তর্জাতিক বিষয়াবলির প্রশ্ন")}
               </h2>
               <p className="mt-1 text-xs text-white/75 md:text-sm">
-                20 questions · about 15 minutes · the answer is explained after
-                each one
+                {L(
+                  "20 questions · about 15 minutes · the answer is explained after each one",
+                  "২০টি প্রশ্ন · প্রায় ১৫ মিনিট · প্রতিটির পর উত্তরের ব্যাখ্যা",
+                )}
               </p>
               <Button
                 asChild
@@ -184,15 +172,15 @@ export default function Practice() {
                 <Link
                   to={`/app/practice/session?mode=drill&exam=${targetExam !== "all" ? targetExam : "bcs-general"}`}
                 >
-                  <FontAwesomeIcon icon={faPlay} /> Start now
+                  <FontAwesomeIcon icon={faPlay} /> {L("Start now", "এখনই শুরু করুন")}
                 </Link>
               </Button>
             </div>
             <div className="hidden grid-cols-3 gap-3 md:grid lg:w-[26rem]">
               {[
-                [(stats?.totals.answered ?? 0).toLocaleString(), "Questions answered"],
-                [stats?.totals.accuracy != null ? `${stats.totals.accuracy}%` : "—", "Answers correct"],
-                [String(stats?.mistakes_due ?? 0), "Mistakes to retry"],
+                [num(stats?.totals.answered ?? 0), L("Questions answered", "উত্তর দেওয়া প্রশ্ন")],
+                [stats?.totals.accuracy != null ? `${num(stats.totals.accuracy)}%` : "—", L("Answers correct", "সঠিক উত্তর")],
+                [num(stats?.mistakes_due ?? 0), L("Mistakes to retry", "আবার চেষ্টার ভুল")],
               ].map(([v, l]) => (
                 <div
                   key={l}
@@ -211,7 +199,7 @@ export default function Practice() {
         {/* Modes */}
         <section className="order-3 md:order-2">
           <h2 className="mb-3 text-[1.05rem] font-semibold">
-            More ways to practise
+            {L("More ways to practise", "অনুশীলনের আরও উপায়")}
           </h2>
           <div className="stagger grid grid-cols-2 gap-2.5 md:gap-3 lg:grid-cols-4 lg:gap-4">
             {modes.map((m) => (
@@ -231,10 +219,10 @@ export default function Practice() {
                 </IconBox>
                 <span className="min-w-0 flex-1">
                   <span className="block text-[0.8rem] leading-tight font-semibold md:truncate md:text-sm">
-                    {m.title}
+                    {L(...m.title)}
                   </span>
                   <span className="hidden text-xs text-muted-foreground md:block md:truncate">
-                    {m.text}
+                    {L(...m.text)}
                   </span>
                 </span>
                 <FontAwesomeIcon
@@ -252,18 +240,18 @@ export default function Practice() {
             <div>
               <h2 className="text-[1.05rem] font-semibold">
                 {currentExamObj
-                  ? `Subjects for ${currentExamObj.name}`
-                  : "All subjects"}
+                  ? L(`Subjects for ${currentExamObj.name}`, `${examName(currentExamObj)}-এর বিষয়সমূহ`)
+                  : L("All subjects", "সব বিষয়")}
               </h2>
               <p className="text-xs text-muted-foreground">
-                Tap a subject to start · {list.length} subjects
+                {L(`Tap a subject to start · ${list.length} subjects`, `শুরু করতে বিষয়ে ট্যাপ করুন · ${num(list.length)}টি বিষয়`)}
               </p>
             </div>
             <Segmented
               options={[
-                { value: "all", label: "All" },
-                { value: "weak", label: "Weak subjects" },
-                { value: "strong", label: "Good subjects" },
+                { value: "all", label: L("All", "সব") },
+                { value: "weak", label: L("Weak subjects", "দুর্বল বিষয়") },
+                { value: "strong", label: L("Good subjects", "ভালো বিষয়") },
               ]}
               value={filter}
               onChange={setFilter}
@@ -276,7 +264,7 @@ export default function Practice() {
                 <div key={i} className="h-48 animate-pulse rounded-2xl bg-muted md:h-52" />
               ))}
             {list.map((s) => {
-              const accent = ACCENTS[s.id] || ACCENTS.default;
+              const accent = subjectAccent(s.id);
               const started = s.done > 0;
               const pct = s.total ? Math.round((s.done / s.total) * 100) : 0;
               return (
@@ -284,7 +272,7 @@ export default function Practice() {
                   key={s.id}
                   type="button"
                   onClick={() => setSubject(s)}
-                  aria-label={`Practice ${s.name}`}
+                  aria-label={L(`Practice ${s.name}`, `${s.nameBn || s.name} অনুশীলন`)}
                   className="group relative flex flex-col items-center overflow-hidden rounded-2xl border bg-card px-3 pt-6 pb-4 text-center shadow-[0_1px_2px_rgb(0_0_0/0.03)] transition-all duration-300 hover:-translate-y-0.5 hover:border-transparent hover:shadow-[0_12px_32px_-12px_rgb(15_40_80/0.25)] focus-visible:ring-[3px] focus-visible:ring-primary/30 focus-visible:outline-none md:px-4 md:pt-7 md:pb-5"
                 >
                   {started && s.accuracy !== null && (
@@ -293,9 +281,9 @@ export default function Practice() {
                         "absolute top-2.5 right-2.5 rounded-full px-2 py-0.5 text-[0.65rem] font-semibold tabular-nums",
                         s.accuracy >= 65 ? "bg-success/10 text-success" : "bg-warning/15 text-amber-700",
                       )}
-                      title="Your answers correct"
+                      title={L("Your answers correct", "আপনার সঠিক উত্তর")}
                     >
-                      {s.accuracy}%
+                      {num(s.accuracy)}%
                     </span>
                   )}
                   <span
@@ -304,16 +292,18 @@ export default function Practice() {
                       accent.tile,
                     )}
                   >
-                    <Icon name={s.icon} />
+                    <SubjectIcon slug={s.id} fallback={s.icon} className="size-7 md:size-8" />
                   </span>
                   <p className="mt-3.5 line-clamp-2 text-sm leading-snug font-semibold md:text-[0.95rem]">
-                    {s.name}
+                    {L(s.name, s.nameBn || s.name)}
                   </p>
-                  <p className="bn mt-0.5 line-clamp-1 text-[0.7rem] text-muted-foreground md:text-xs">
+                  <p className={cn("mt-0.5 line-clamp-1 text-[0.7rem] text-muted-foreground md:text-xs", bn && "hidden")}>
                     {s.nameBn}
                   </p>
                   <p className="mt-2 text-xs font-medium text-muted-foreground tabular-nums">
-                    {started ? `${s.done} of ${s.total} done` : `${s.total} questions`}
+                    {started
+                      ? L(`${s.done} of ${s.total} done`, `${num(s.total)}টির মধ্যে ${num(s.done)}টি সম্পন্ন`)
+                      : L(`${s.total} questions`, `${num(s.total)}টি প্রশ্ন`)}
                   </p>
                   <span
                     className={cn(
@@ -321,7 +311,7 @@ export default function Practice() {
                       accent.text,
                     )}
                   >
-                    {started ? "Continue" : "Practice now"}
+                    {started ? L("Continue", "চালিয়ে যান") : L("Practice now", "অনুশীলন করুন")}
                     <FontAwesomeIcon
                       icon={faArrowRight}
                       className="text-[0.65rem] transition-transform group-hover:translate-x-1"
@@ -348,19 +338,18 @@ export default function Practice() {
           {subject && (
             <>
               <DialogHeader className="flex-row items-center gap-3 space-y-0 border-b p-5 text-left">
-                <img
-                  src={subject.image}
-                  alt=""
-                  className="size-12 shrink-0 rounded-lg object-cover"
-                />
+                <SubjectTile slug={subject.id} fallback={subject.icon} />
                 <div className="min-w-0">
                   <DialogTitle className="text-base font-semibold">
-                    {subject.name}
+                    {L(subject.name, subject.nameBn || subject.name)}
                   </DialogTitle>
                   <DialogDescription className="text-xs">
                     {subject.accuracy === null
-                      ? `${subject.total} questions to practise`
-                      : `You get ${subject.accuracy}% correct · ${Math.max(0, subject.total - subject.done)} new questions waiting`}
+                      ? L(`${subject.total} questions to practise`, `অনুশীলনের জন্য ${num(subject.total)}টি প্রশ্ন`)
+                      : L(
+                          `You get ${subject.accuracy}% correct · ${Math.max(0, subject.total - subject.done)} new questions waiting`,
+                          `আপনার ${num(subject.accuracy)}% সঠিক · ${num(Math.max(0, subject.total - subject.done))}টি নতুন প্রশ্ন বাকি`,
+                        )}
                   </DialogDescription>
                 </div>
               </DialogHeader>
@@ -368,10 +357,10 @@ export default function Practice() {
               <div className="space-y-5 p-5">
                 <div>
                   <p className="mb-2 text-sm font-medium">
-                    How many questions?
+                    {L("How many questions?", "কয়টি প্রশ্ন?")}
                   </p>
-                  <div className="grid grid-cols-4 gap-2">
-                    {[10, 15, 20, 30].map((n) => (
+                  <div className="grid grid-cols-5 gap-2">
+                    {[10, 15, 20, 30, 50].map((n) => (
                       <button
                         key={n}
                         type="button"
@@ -384,19 +373,19 @@ export default function Practice() {
                             : "bg-card text-muted-foreground hover:border-primary/40 hover:text-foreground",
                         )}
                       >
-                        {n}
+                        {num(n)}
                       </button>
                     ))}
                   </div>
                 </div>
                 <div>
-                  <p className="mb-2 text-sm font-medium">How hard?</p>
+                  <p className="mb-2 text-sm font-medium">{L("How hard?", "কতটা কঠিন?")}</p>
                   <div className="grid grid-cols-2 gap-1 rounded-lg bg-muted p-1 sm:grid-cols-4">
                     {[
-                      ["mixed", "Mixed (best)"],
-                      ["easy", "Easy"],
-                      ["medium", "Medium"],
-                      ["hard", "Hard"],
+                      ["mixed", L("Mixed (best)", "মিশ্র (সেরা)")],
+                      ["easy", L("Easy", "সহজ")],
+                      ["medium", L("Medium", "মাঝারি")],
+                      ["hard", L("Hard", "কঠিন")],
                     ].map(([v, l]) => (
                       <button
                         key={v}
@@ -417,8 +406,10 @@ export default function Practice() {
                 </div>
                 <div className="flex items-center gap-2 rounded-lg bg-muted/60 px-3 py-2.5 text-xs text-muted-foreground">
                   <FontAwesomeIcon icon={faClock} />
-                  Takes about {Math.round(count * 0.75)} minutes. You'll see the
-                  right answer and why after each question.
+                  {L(
+                    `Takes about ${Math.round(count * 0.75)} minutes. You'll see the right answer and why after each question.`,
+                    `প্রায় ${num(Math.round(count * 0.75))} মিনিট লাগবে। প্রতিটি প্রশ্নের পর সঠিক উত্তর ও ব্যাখ্যা দেখতে পাবেন।`,
+                  )}
                 </div>
               </div>
 
@@ -428,7 +419,7 @@ export default function Practice() {
                   className="h-10 flex-1 sm:flex-none"
                   onClick={() => setSubject(null)}
                 >
-                  Cancel
+                  {L("Cancel", "বাতিল")}
                 </Button>
                 <Button
                   className="h-10 flex-1 sm:flex-none sm:px-6"
@@ -440,7 +431,7 @@ export default function Practice() {
                     )
                   }
                 >
-                  <FontAwesomeIcon icon={faPlay} /> Start practice
+                  <FontAwesomeIcon icon={faPlay} /> {L("Start practice", "অনুশীলন শুরু")}
                 </Button>
               </DialogFooter>
             </>

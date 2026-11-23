@@ -35,6 +35,7 @@ class QuestionResource extends JsonResource
             'subject' => $this->whenLoaded('subject', fn (): array => [
                 'slug' => $this->subject->slug,
                 'name' => $this->subject->name,
+                'name_bn' => $this->subject->name_bn,
             ]),
             'topic' => $this->topic,
             'difficulty' => $this->difficulty,

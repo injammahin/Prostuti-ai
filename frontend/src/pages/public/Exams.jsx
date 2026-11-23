@@ -8,8 +8,10 @@ import { Icon } from "@/components/icon"
 import { exams, examFamilies, notices } from "@/lib/data"
 import { useApp } from "@/lib/app-context"
 import { cn } from "@/lib/utils"
+import { useNoticesVersion } from "@/lib/notices-store"
 
 export default function Exams({ inApp = false }) {
+  const noticesVersion = useNoticesVersion()
   const { followed, toggleFollow, user } = useApp()
   const [family, setFamily] = useState("all")
   const list = exams.filter((e) => family === "all" || e.family === family)

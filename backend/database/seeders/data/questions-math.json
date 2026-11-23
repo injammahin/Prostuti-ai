@@ -1,0 +1,2864 @@
+[
+ {
+  "ref": "mth_001",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "শতকরা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "২০০ এর ১৫% কত?",
+  "options": [
+   "২০",
+   "১৫",
+   "৩০",
+   "৪৫"
+  ],
+  "answer": 2,
+  "explanation": "২০০ × ১৫/১০০ = ৩০।"
+ },
+ {
+  "ref": "mth_002",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "শতকরা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনো সংখ্যার ২০% = ৫০ হলে সংখ্যাটি কত?",
+  "options": [
+   "২৫০",
+   "১০০",
+   "২০০",
+   "৫০০"
+  ],
+  "answer": 0,
+  "explanation": "সংখ্যা = ৫০ × ১০০/২০ = ২৫০।"
+ },
+ {
+  "ref": "mth_003",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "শতকরা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "চিনির দাম ২০% বাড়লে খরচ অপরিবর্তিত রাখতে চিনির ব্যবহার শতকরা কত কমাতে হবে?",
+  "options": [
+   "১৫%",
+   "২০%",
+   "২৫%",
+   "১৬ ২/৩%"
+  ],
+  "answer": 3,
+  "explanation": "ব্যবহার কমাতে হবে = বৃদ্ধি/(১০০ + বৃদ্ধি) × ১০০ = ২০/১২০ × ১০০ = ১৬ ২/৩%।"
+ },
+ {
+  "ref": "mth_004",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "শতকরা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "চালের দাম ২৫% কমলে খরচ অপরিবর্তিত রাখতে চালের ব্যবহার শতকরা কত বাড়ানো যাবে?",
+  "options": [
+   "২৫%",
+   "৩৩ ১/৩%",
+   "২০%",
+   "৫০%"
+  ],
+  "answer": 1,
+  "explanation": "ব্যবহার বাড়ানো যাবে = হ্রাস/(১০০ − হ্রাস) × ১০০ = ২৫/৭৫ × ১০০ = ৩৩ ১/৩%।"
+ },
+ {
+  "ref": "mth_005",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "শতকরা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ক এর বেতন খ এর বেতনের চেয়ে ২০% বেশি হলে খ এর বেতন ক এর চেয়ে শতকরা কত কম?",
+  "options": [
+   "২০%",
+   "১৬ ২/৩%",
+   "২৫%",
+   "১৮%"
+  ],
+  "answer": 1,
+  "explanation": "খ = ১০০ হলে ক = ১২০; খ কম ২০, যা ক এর ২০/১২০ × ১০০ = ১৬ ২/৩%।"
+ },
+ {
+  "ref": "mth_006",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "শতকরা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনো সংখ্যা প্রথমে ১০% বাড়িয়ে পরে ১০% কমালে মোট পরিবর্তন কত?",
+  "options": [
+   "২% হ্রাস",
+   "কোনো পরিবর্তন নেই",
+   "১% বৃদ্ধি",
+   "১% হ্রাস"
+  ],
+  "answer": 3,
+  "explanation": "১০০ → ১১০ → ১১০ এর ৯০% = ৯৯; অর্থাৎ ১% হ্রাস।"
+ },
+ {
+  "ref": "mth_007",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "শতকরা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি পরীক্ষায় পাস নম্বর ৪০%। একজন পরীক্ষার্থী ১৭৮ নম্বর পেয়ে ২২ নম্বরের জন্য ফেল করল। পরীক্ষার পূর্ণ নম্বর কত?",
+  "options": [
+   "৫০০",
+   "৪০০",
+   "৪৫০",
+   "৬০০"
+  ],
+  "answer": 0,
+  "explanation": "পাস নম্বর = ১৭৮ + ২২ = ২০০; এটি পূর্ণ নম্বরের ৪০%, তাই পূর্ণ নম্বর = ২০০ × ১০০/৪০ = ৫০০।"
+ },
+ {
+  "ref": "mth_008",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "শতকরা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "০.২৫ কে শতকরায় প্রকাশ করলে কত হয়?",
+  "options": [
+   "০.২৫%",
+   "২.৫%",
+   "২৫%",
+   "২৫০%"
+  ],
+  "answer": 2,
+  "explanation": "০.২৫ × ১০০ = ২৫%।"
+ },
+ {
+  "ref": "mth_009",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "শতকরা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি শহরের জনসংখ্যা প্রতি বছর ১০% বাড়ে। বর্তমান জনসংখ্যা ১০,০০০ হলে ২ বছর পর জনসংখ্যা কত হবে?",
+  "options": [
+   "১২,২০০",
+   "১২,০০০",
+   "১১,০০০",
+   "১২,১০০"
+  ],
+  "answer": 3,
+  "explanation": "১০,০০০ × ১.১ × ১.১ = ১২,১০০।"
+ },
+ {
+  "ref": "mth_010",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "লাভ-ক্ষতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৮০ টাকায় কেনা একটি জিনিস ১০০ টাকায় বিক্রি করলে শতকরা লাভ কত?",
+  "options": [
+   "৩০%",
+   "২০%",
+   "২৫%",
+   "১৫%"
+  ],
+  "answer": 2,
+  "explanation": "লাভ ২০ টাকা; শতকরা লাভ = ২০/৮০ × ১০০ = ২৫%। মনে রাখুন, লাভ সবসময় ক্রয়মূল্যের ওপর হিসাব হয়।"
+ },
+ {
+  "ref": "mth_011",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "লাভ-ক্ষতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১০% ক্ষতিতে একটি জিনিস ৪৫০ টাকায় বিক্রি হলে এর ক্রয়মূল্য কত?",
+  "options": [
+   "৪৯৫ টাকা",
+   "৫০০ টাকা",
+   "৪০৫ টাকা",
+   "৫৫০ টাকা"
+  ],
+  "answer": 1,
+  "explanation": "বিক্রয়মূল্য ক্রয়মূল্যের ৯০%; ক্রয়মূল্য = ৪৫০ × ১০০/৯০ = ৫০০ টাকা।"
+ },
+ {
+  "ref": "mth_012",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "লাভ-ক্ষতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১২টি কলমের ক্রয়মূল্য ১০টি কলমের বিক্রয়মূল্যের সমান হলে শতকরা লাভ কত?",
+  "options": [
+   "২০%",
+   "১০%",
+   "১৬ ২/৩%",
+   "২৫%"
+  ],
+  "answer": 0,
+  "explanation": "প্রতিটির ক্রয়মূল্য ১ টাকা ধরলে ১০টির বিক্রয়মূল্য ১২ টাকা; প্রতিটি ১.২ টাকা, লাভ ২০%।"
+ },
+ {
+  "ref": "mth_013",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "লাভ-ক্ষতি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "দুটি জিনিস একই দামে বিক্রি করা হলো—একটিতে ২০% লাভ ও অন্যটিতে ২০% ক্ষতি। মোট লাভ বা ক্ষতি কত?",
+  "options": [
+   "৪% লাভ",
+   "লাভ-ক্ষতি নেই",
+   "৪% ক্ষতি",
+   "২% ক্ষতি"
+  ],
+  "answer": 2,
+  "explanation": "একই বিক্রয়মূল্যে সমান হারে লাভ ও ক্ষতি হলে সবসময় ক্ষতি হয় = (x/১০)² % = (২০/১০)² = ৪%।"
+ },
+ {
+  "ref": "mth_014",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "লাভ-ক্ষতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি পণ্যের তালিকামূল্য ৫০০ টাকা। ১০% ছাড়ে বিক্রি করলে বিক্রয়মূল্য কত?",
+  "options": [
+   "৪৫০ টাকা",
+   "৪৯০ টাকা",
+   "৫৫০ টাকা",
+   "৪০০ টাকা"
+  ],
+  "answer": 0,
+  "explanation": "ছাড় = ৫০০ এর ১০% = ৫০ টাকা; বিক্রয়মূল্য = ৫০০ − ৫০ = ৪৫০ টাকা।"
+ },
+ {
+  "ref": "mth_015",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "লাভ-ক্ষতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একজন দোকানদার ক্রয়মূল্যের ওপর ২৫% বেশি দাম লিখে ১০% ছাড় দিলেন। তার শতকরা লাভ কত?",
+  "options": [
+   "১৩.৫%",
+   "১৫%",
+   "১০%",
+   "১২.৫%"
+  ],
+  "answer": 3,
+  "explanation": "ক্রয়মূল্য ১০০ হলে লিখিত মূল্য ১২৫; ১০% ছাড়ে বিক্রয়মূল্য ১১২.৫; লাভ ১২.৫%।"
+ },
+ {
+  "ref": "mth_016",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "লাভ-ক্ষতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি ঘড়ি ২০% লাভে বিক্রি করলে ৬০০ টাকা পাওয়া যায়। ৩০% লাভ করতে হলে কত টাকায় বিক্রি করতে হবে?",
+  "options": [
+   "৬৬০ টাকা",
+   "৬৫০ টাকা",
+   "৭০০ টাকা",
+   "৬৩০ টাকা"
+  ],
+  "answer": 1,
+  "explanation": "ক্রয়মূল্য = ৬০০ × ১০০/১২০ = ৫০০ টাকা; ৩০% লাভে বিক্রয়মূল্য = ৫০০ × ১.৩ = ৬৫০ টাকা।"
+ },
+ {
+  "ref": "mth_017",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "লাভ-ক্ষতি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "পরপর ২০% ও ১০% ছাড় একটিমাত্র ছাড়ের সমান হলে সেটি কত?",
+  "options": [
+   "৩০%",
+   "২৮%",
+   "২৫%",
+   "৩২%"
+  ],
+  "answer": 1,
+  "explanation": "১০০ → ৮০ → ৮০ এর ৯০% = ৭২; মোট ছাড় ২৮%। সূত্র: a + b − ab/১০০ = ২০ + ১০ − ২ = ২৮।"
+ },
+ {
+  "ref": "mth_018",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সরল ও চক্রবৃদ্ধি মুনাফা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৫,০০০ টাকার ৮% হার সরল মুনাফায় ৩ বছরের মুনাফা কত?",
+  "options": [
+   "৮০০ টাকা",
+   "১,০০০ টাকা",
+   "১,৫০০ টাকা",
+   "১,২০০ টাকা"
+  ],
+  "answer": 3,
+  "explanation": "মুনাফা = আসল × হার × সময় / ১০০ = ৫০০০ × ৮ × ৩ / ১০০ = ১,২০০ টাকা।"
+ },
+ {
+  "ref": "mth_019",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সরল ও চক্রবৃদ্ধি মুনাফা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১০% সরল মুনাফায় কত বছরে আসল দ্বিগুণ হবে?",
+  "options": [
+   "১০ বছর",
+   "৫ বছর",
+   "৮ বছর",
+   "২০ বছর"
+  ],
+  "answer": 0,
+  "explanation": "দ্বিগুণ হতে মুনাফা = আসলের সমান; ১০০ = ১০০ × ১০ × n/১০০ → n = ১০ বছর।"
+ },
+ {
+  "ref": "mth_020",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সরল ও চক্রবৃদ্ধি মুনাফা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৫,০০০ টাকার ১০% হারে ২ বছরের চক্রবৃদ্ধি মূলধন কত?",
+  "options": [
+   "৬,১০০ টাকা",
+   "৬,০০০ টাকা",
+   "৬,০৫০ টাকা",
+   "৫,৫০০ টাকা"
+  ],
+  "answer": 2,
+  "explanation": "চক্রবৃদ্ধি মূলধন = ৫০০০ × (১.১)² = ৫০০০ × ১.২১ = ৬,০৫০ টাকা।"
+ },
+ {
+  "ref": "mth_021",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সরল ও চক্রবৃদ্ধি মুনাফা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনো আসল ৫ বছরে সরল মুনাফায় আসলের ২/৫ অংশ হলে মুনাফার হার কত?",
+  "options": [
+   "৪%",
+   "১০%",
+   "৫%",
+   "৮%"
+  ],
+  "answer": 3,
+  "explanation": "২/৫ × আসল = আসল × r × ৫/১০০ → r = ৪০/৫ = ৮%।"
+ },
+ {
+  "ref": "mth_022",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সরল ও চক্রবৃদ্ধি মুনাফা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "১০,০০০ টাকার ১০% হারে ২ বছরের চক্রবৃদ্ধি মুনাফা ও সরল মুনাফার পার্থক্য কত?",
+  "options": [
+   "৫০ টাকা",
+   "২০০ টাকা",
+   "১০০ টাকা",
+   "২১০ টাকা"
+  ],
+  "answer": 2,
+  "explanation": "চক্রবৃদ্ধি মুনাফা ২,১০০ টাকা ও সরল মুনাফা ২,০০০ টাকা; পার্থক্য ১০০ টাকা। সূত্র: P(r/১০০)² = ১০,০০০ × ০.০১ = ১০০।"
+ },
+ {
+  "ref": "mth_023",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সরল ও চক্রবৃদ্ধি মুনাফা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কত টাকা ৬% সরল মুনাফায় ৪ বছরে ৪৮০ টাকা মুনাফা দেবে?",
+  "options": [
+   "১,৫০০ টাকা",
+   "২,০০০ টাকা",
+   "২,৪০০ টাকা",
+   "১,৮০০ টাকা"
+  ],
+  "answer": 1,
+  "explanation": "আসল = মুনাফা × ১০০ / (হার × সময়) = ৪৮০ × ১০০ / ২৪ = ২,০০০ টাকা।"
+ },
+ {
+  "ref": "mth_024",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "অনুপাত ও সমানুপাত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "a : b = ২ : ৩ এবং b : c = ৪ : ৫ হলে a : b : c = ?",
+  "options": [
+   "৮ : ১২ : ১৫",
+   "২ : ৩ : ৫",
+   "৮ : ১২ : ১০",
+   "৪ : ৬ : ৫"
+  ],
+  "answer": 0,
+  "explanation": "b এর মান সমান করতে প্রথমটিকে ৪ ও দ্বিতীয়টিকে ৩ দিয়ে গুণ: ৮ : ১২ এবং ১২ : ১৫; তাই ৮ : ১২ : ১৫।"
+ },
+ {
+  "ref": "mth_025",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "অনুপাত ও সমানুপাত",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১২০ টাকা ৩ : ৫ অনুপাতে ভাগ করলে বড় অংশ কত?",
+  "options": [
+   "৬০ টাকা",
+   "৪৫ টাকা",
+   "৭৫ টাকা",
+   "৮০ টাকা"
+  ],
+  "answer": 2,
+  "explanation": "মোট ভাগ ৮; বড় অংশ = ১২০ × ৫/৮ = ৭৫ টাকা।"
+ },
+ {
+  "ref": "mth_026",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "অনুপাত ও সমানুপাত",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "২ : ৩ এর ব্যস্ত অনুপাত কোনটি?",
+  "options": [
+   "৩ : ২",
+   "৪ : ৯",
+   "২ : ৩",
+   "৯ : ৪"
+  ],
+  "answer": 0,
+  "explanation": "অনুপাতের পদ দুটি উল্টে দিলে ব্যস্ত অনুপাত পাওয়া যায়।"
+ },
+ {
+  "ref": "mth_027",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "অনুপাত ও সমানুপাত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "দুটি সংখ্যার অনুপাত ৩ : ৪ এবং তাদের ল.সা.গু ৮৪। ছোট সংখ্যাটি কত?",
+  "options": [
+   "১৮",
+   "২৮",
+   "১২",
+   "২১"
+  ],
+  "answer": 3,
+  "explanation": "সংখ্যা দুটি ৩k ও ৪k; ল.সা.গু = ১২k = ৮৪ → k = ৭। ছোট সংখ্যা ৩ × ৭ = ২১।"
+ },
+ {
+  "ref": "mth_028",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "অনুপাত ও সমানুপাত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৩, ৬ ও ৯ এর চতুর্থ সমানুপাতী কত?",
+  "options": [
+   "১২",
+   "১৮",
+   "১৫",
+   "২৭"
+  ],
+  "answer": 1,
+  "explanation": "৩ : ৬ = ৯ : x → x = ৬ × ৯ / ৩ = ১৮।"
+ },
+ {
+  "ref": "mth_029",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "অনুপাত ও সমানুপাত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৪ ও ১৬ এর মধ্য সমানুপাতী কত?",
+  "options": [
+   "১০",
+   "৮",
+   "১২",
+   "৬৪"
+  ],
+  "answer": 1,
+  "explanation": "মধ্য সমানুপাতী = √(৪ × ১৬) = √৬৪ = ৮।"
+ },
+ {
+  "ref": "mth_030",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "অনুপাত ও সমানুপাত",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "৪০ লিটার দুধ ও পানির মিশ্রণে অনুপাত ৩ : ১। কত লিটার পানি মেশালে অনুপাত ১ : ১ হবে?",
+  "options": [
+   "৩০ লিটার",
+   "১০ লিটার",
+   "১৫ লিটার",
+   "২০ লিটার"
+  ],
+  "answer": 3,
+  "explanation": "দুধ ৩০ লিটার ও পানি ১০ লিটার; দুধের সমান পানি (৩০ লিটার) করতে আরও ২০ লিটার পানি লাগবে।"
+ },
+ {
+  "ref": "mth_031",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "গড়",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১ থেকে ৯৯ পর্যন্ত বিজোড় সংখ্যাগুলোর গড় কত?",
+  "options": [
+   "৫০",
+   "৪৯",
+   "৪৯.৫",
+   "৫১"
+  ],
+  "answer": 0,
+  "explanation": "সমান ব্যবধানের ধারার গড় = (প্রথম পদ + শেষ পদ)/২ = (১ + ৯৯)/২ = ৫০।"
+ },
+ {
+  "ref": "mth_032",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "গড়",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৫টি সংখ্যার গড় ২০। একটি সংখ্যা বাদ দিলে বাকিগুলোর গড় ১৮ হয়। বাদ দেওয়া সংখ্যাটি কত?",
+  "options": [
+   "২২",
+   "২০",
+   "২৮",
+   "৩০"
+  ],
+  "answer": 2,
+  "explanation": "মোট = ৫ × ২০ = ১০০; বাকি ৪টির মোট = ৪ × ১৮ = ৭২; বাদ দেওয়া সংখ্যা = ১০০ − ৭২ = ২৮।"
+ },
+ {
+  "ref": "mth_033",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "গড়",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একজন ব্যাটসম্যানের ১০ ইনিংসের গড় রান ৪০। ১১তম ইনিংসে কত রান করলে গড় ৪২ হবে?",
+  "options": [
+   "৮২",
+   "৪২",
+   "৫২",
+   "৬২"
+  ],
+  "answer": 3,
+  "explanation": "১১ ইনিংসে মোট লাগবে ৪৬২; আগের মোট ৪০০; তাই ১১তম ইনিংসে ৬২ রান।"
+ },
+ {
+  "ref": "mth_034",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "গড়",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "প্রথম ১০টি স্বাভাবিক সংখ্যার গড় কত?",
+  "options": [
+   "৬",
+   "৫",
+   "৫.৫",
+   "১০"
+  ],
+  "answer": 2,
+  "explanation": "যোগফল ৫৫; গড় = ৫৫/১০ = ৫.৫।"
+ },
+ {
+  "ref": "mth_035",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "গড়",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি ক্লাসে ৩০ জন ছাত্রের গড় বয়স ১৫ বছর। শিক্ষকের বয়স যোগ করলে গড় ১ বছর বাড়ে। শিক্ষকের বয়স কত?",
+  "options": [
+   "৪৫ বছর",
+   "৪৬ বছর",
+   "৩১ বছর",
+   "১৬ বছর"
+  ],
+  "answer": 1,
+  "explanation": "৩১ জনের গড় ১৬; মোট ৪৯৬। ছাত্রদের মোট ৪৫০; শিক্ষকের বয়স ৪৯৬ − ৪৫০ = ৪৬ বছর।"
+ },
+ {
+  "ref": "mth_036",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "ল.সা.গু ও গ.সা.গু",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১২, ১৮ ও ২৪ এর ল.সা.গু কত?",
+  "options": [
+   "৭২",
+   "৩৬",
+   "১৪৪",
+   "৪৮"
+  ],
+  "answer": 0,
+  "explanation": "১২ = ২²×৩, ১৮ = ২×৩², ২৪ = ২³×৩; ল.সা.গু = ২³ × ৩² = ৭২।"
+ },
+ {
+  "ref": "mth_037",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "ল.সা.গু ও গ.সা.গু",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১৮ ও ২৪ এর গ.সা.গু কত?",
+  "options": [
+   "৩",
+   "১২",
+   "৬",
+   "৭২"
+  ],
+  "answer": 2,
+  "explanation": "১৮ = ২×৩², ২৪ = ২³×৩; সাধারণ উৎপাদক ২ × ৩ = ৬।"
+ },
+ {
+  "ref": "mth_038",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "ল.সা.গু ও গ.সা.গু",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "দুটি সংখ্যার গুণফল ৩৮৪ এবং গ.সা.গু ৮। তাদের ল.সা.গু কত?",
+  "options": [
+   "৪৮",
+   "৩৮৪",
+   "৯৬",
+   "২৪"
+  ],
+  "answer": 0,
+  "explanation": "গুণফল = ল.সা.গু × গ.সা.গু; ল.সা.গু = ৩৮৪ / ৮ = ৪৮।"
+ },
+ {
+  "ref": "mth_039",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "ল.সা.গু ও গ.সা.গু",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন ক্ষুদ্রতম সংখ্যাকে ১২, ১৫ ও ২০ দ্বারা ভাগ করলে প্রতিবার ৫ অবশিষ্ট থাকে?",
+  "options": [
+   "১২৫",
+   "৬০",
+   "৫৫",
+   "৬৫"
+  ],
+  "answer": 3,
+  "explanation": "১২, ১৫ ও ২০ এর ল.সা.গু ৬০; প্রতিবার ৫ অবশিষ্ট থাকতে সংখ্যাটি ৬০ + ৫ = ৬৫।"
+ },
+ {
+  "ref": "mth_040",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "ল.সা.গু ও গ.সা.গু",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "তিনটি ঘণ্টা যথাক্রমে ১০, ১৫ ও ২০ মিনিট পরপর বাজে। একসাথে বাজার কত মিনিট পর আবার একসাথে বাজবে?",
+  "options": [
+   "৪৫ মিনিট",
+   "৬০ মিনিট",
+   "৩০ মিনিট",
+   "১২০ মিনিট"
+  ],
+  "answer": 1,
+  "explanation": "১০, ১৫ ও ২০ এর ল.সা.গু = ৬০; তাই ৬০ মিনিট পর।"
+ },
+ {
+  "ref": "mth_041",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "ল.সা.গু ও গ.সা.গু",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "দুটি সংখ্যার গ.সা.গু ১২ এবং ল.সা.গু ১৪৪। একটি সংখ্যা ৩৬ হলে অপরটি কত?",
+  "options": [
+   "৭২",
+   "৪৮",
+   "২৪",
+   "৬০"
+  ],
+  "answer": 1,
+  "explanation": "অপর সংখ্যা = (ল.সা.গু × গ.সা.গু)/প্রথম সংখ্যা = ১৪৪ × ১২ / ৩৬ = ৪৮।"
+ },
+ {
+  "ref": "mth_042",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সময় ও কাজ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ক একটি কাজ ১০ দিনে এবং খ ১৫ দিনে করতে পারে। দুজনে একসাথে কাজটি কত দিনে করবে?",
+  "options": [
+   "৮ দিন",
+   "৫ দিন",
+   "১২.৫ দিন",
+   "৬ দিন"
+  ],
+  "answer": 3,
+  "explanation": "একদিনে করে ১/১০ + ১/১৫ = ৫/৩০ = ১/৬ অংশ; তাই ৬ দিন।"
+ },
+ {
+  "ref": "mth_043",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সময় ও কাজ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ক ও খ একসাথে একটি কাজ ১২ দিনে করে। ক একা ২০ দিনে করতে পারলে খ একা কত দিনে করবে?",
+  "options": [
+   "৩০ দিন",
+   "২৪ দিন",
+   "৩২ দিন",
+   "৮ দিন"
+  ],
+  "answer": 0,
+  "explanation": "খ একদিনে করে ১/১২ − ১/২০ = ৫/৬০ − ৩/৬০ = ২/৬০ = ১/৩০; তাই ৩০ দিন।"
+ },
+ {
+  "ref": "mth_044",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সময় ও কাজ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি নল ৪ ঘণ্টায় একটি চৌবাচ্চা পূর্ণ করে এবং অন্য একটি নল ৬ ঘণ্টায় খালি করে। দুটি নল একসাথে খুলে দিলে কত ঘণ্টায় চৌবাচ্চা পূর্ণ হবে?",
+  "options": [
+   "২.৪ ঘণ্টা",
+   "১০ ঘণ্টা",
+   "১২ ঘণ্টা",
+   "২৪ ঘণ্টা"
+  ],
+  "answer": 2,
+  "explanation": "প্রতি ঘণ্টায় নিট পূর্ণ হয় ১/৪ − ১/৬ = ১/১২ অংশ; তাই ১২ ঘণ্টা।"
+ },
+ {
+  "ref": "mth_045",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সময় ও কাজ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১০ জন লোক একটি কাজ ১৫ দিনে করে। কাজটি ১০ দিনে শেষ করতে কতজন লোক লাগবে?",
+  "options": [
+   "১৮ জন",
+   "২০ জন",
+   "১২ জন",
+   "১৫ জন"
+  ],
+  "answer": 3,
+  "explanation": "মোট কাজ = ১০ × ১৫ = ১৫০ জনদিন; ১০ দিনে লাগবে ১৫০/১০ = ১৫ জন।"
+ },
+ {
+  "ref": "mth_046",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সময় ও কাজ",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ক একটি কাজ ১২ দিনে ও খ ১৮ দিনে করে। তারা একসাথে ৪ দিন কাজ করার পর ক চলে গেল। বাকি কাজ খ কত দিনে শেষ করবে?",
+  "options": [
+   "১০ দিন",
+   "৬ দিন",
+   "৮ দিন",
+   "১২ দিন"
+  ],
+  "answer": 2,
+  "explanation": "একসাথে প্রতিদিন ১/১২ + ১/১৮ = ৫/৩৬; ৪ দিনে ২০/৩৬ = ৫/৯ অংশ। বাকি ৪/৯ অংশ খ করবে ৪/৯ × ১৮ = ৮ দিনে।"
+ },
+ {
+  "ref": "mth_047",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সময়, দূরত্ব ও গতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ঘণ্টায় ৭২ কিমি বেগ সমান প্রতি সেকেন্ডে কত মিটার?",
+  "options": [
+   "১৮ মিটার",
+   "২০ মিটার",
+   "২৫ মিটার",
+   "৭.২ মিটার"
+  ],
+  "answer": 1,
+  "explanation": "কিমি/ঘণ্টাকে মি/সে করতে ৫/১৮ দিয়ে গুণ: ৭২ × ৫/১৮ = ২০ মি/সে।"
+ },
+ {
+  "ref": "mth_048",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সময়, দূরত্ব ও গতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "২০০ মিটার লম্বা একটি ট্রেন ঘণ্টায় ৩৬ কিমি বেগে চলে। একটি খুঁটি অতিক্রম করতে কত সেকেন্ড লাগবে?",
+  "options": [
+   "২০ সেকেন্ড",
+   "১০ সেকেন্ড",
+   "৩৬ সেকেন্ড",
+   "১৫ সেকেন্ড"
+  ],
+  "answer": 0,
+  "explanation": "৩৬ কিমি/ঘণ্টা = ১০ মি/সে; খুঁটি পেরোতে ট্রেনকে নিজের দৈর্ঘ্য অতিক্রম করতে হয়: ২০০/১০ = ২০ সেকেন্ড।"
+ },
+ {
+  "ref": "mth_049",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সময়, দূরত্ব ও গতি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "১৫০ মিটার লম্বা একটি ট্রেন ২৫০ মিটার লম্বা একটি প্ল্যাটফর্ম ২০ সেকেন্ডে অতিক্রম করে। ট্রেনের বেগ ঘণ্টায় কত কিমি?",
+  "options": [
+   "৬০ কিমি",
+   "৫৪ কিমি",
+   "৭২ কিমি",
+   "৩৬ কিমি"
+  ],
+  "answer": 2,
+  "explanation": "মোট দূরত্ব ১৫০ + ২৫০ = ৪০০ মি; বেগ = ৪০০/২০ = ২০ মি/সে = ২০ × ১৮/৫ = ৭২ কিমি/ঘণ্টা।"
+ },
+ {
+  "ref": "mth_050",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সময়, দূরত্ব ও গতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি নৌকা স্রোতের অনুকূলে ঘণ্টায় ১২ কিমি ও প্রতিকূলে ঘণ্টায় ৮ কিমি যায়। স্রোতের বেগ কত?",
+  "options": [
+   "ঘণ্টায় ২ কিমি",
+   "ঘণ্টায় ৪ কিমি",
+   "ঘণ্টায় ১০ কিমি",
+   "ঘণ্টায় ৩ কিমি"
+  ],
+  "answer": 0,
+  "explanation": "স্রোতের বেগ = (অনুকূল − প্রতিকূল)/২ = (১২ − ৮)/২ = ২ কিমি/ঘণ্টা; নৌকার বেগ (১২ + ৮)/২ = ১০ কিমি/ঘণ্টা।"
+ },
+ {
+  "ref": "mth_051",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সময়, দূরত্ব ও গতি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একজন লোক ঘণ্টায় ৪০ কিমি বেগে কোনো স্থানে গিয়ে ঘণ্টায় ৬০ কিমি বেগে ফিরে এলেন। পুরো যাত্রায় তার গড় বেগ কত?",
+  "options": [
+   "ঘণ্টায় ৪৫ কিমি",
+   "ঘণ্টায় ৫০ কিমি",
+   "ঘণ্টায় ৫২ কিমি",
+   "ঘণ্টায় ৪৮ কিমি"
+  ],
+  "answer": 3,
+  "explanation": "একই দূরত্বে যাওয়া-আসায় গড় বেগ = ২xy/(x + y) = ২ × ৪০ × ৬০ / ১০০ = ৪৮ কিমি/ঘণ্টা; সাধারণ গড় ৫০ নয়।"
+ },
+ {
+  "ref": "mth_052",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সময়, দূরত্ব ও গতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ঘণ্টায় ৫০ কিমি বেগে ২০০ কিমি যেতে কত সময় লাগবে?",
+  "options": [
+   "৫ ঘণ্টা",
+   "৪ ঘণ্টা",
+   "৩ ঘণ্টা",
+   "২.৫ ঘণ্টা"
+  ],
+  "answer": 1,
+  "explanation": "সময় = দূরত্ব/বেগ = ২০০/৫০ = ৪ ঘণ্টা।"
+ },
+ {
+  "ref": "mth_053",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সময়, দূরত্ব ও গতি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "দুটি ট্রেন বিপরীত দিক থেকে ঘণ্টায় ৫০ কিমি ও ৪০ কিমি বেগে একে অপরের দিকে আসছে। তাদের মধ্যে দূরত্ব ২৭০ কিমি হলে কত ঘণ্টা পর মিলিত হবে?",
+  "options": [
+   "২৭ ঘণ্টা",
+   "৩ ঘণ্টা",
+   "৫.৪ ঘণ্টা",
+   "৬.৭৫ ঘণ্টা"
+  ],
+  "answer": 1,
+  "explanation": "বিপরীতমুখী হলে আপেক্ষিক বেগ যোগ হয়: ৫০ + ৪০ = ৯০ কিমি/ঘণ্টা; সময় = ২৭০/৯০ = ৩ ঘণ্টা।"
+ },
+ {
+  "ref": "mth_054",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বয়স সংক্রান্ত সমস্যা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৫ বছর আগে পিতার বয়স পুত্রের বয়সের ৭ গুণ ছিল। ৫ বছর পরে পিতার বয়স পুত্রের বয়সের ৩ গুণ হবে। পিতার বর্তমান বয়স কত?",
+  "options": [
+   "৩০ বছর",
+   "৩৫ বছর",
+   "৪৫ বছর",
+   "৪০ বছর"
+  ],
+  "answer": 3,
+  "explanation": "৫ বছর আগে পুত্র x, পিতা ৭x। ১০ বছর পরে: ৭x + ১০ = ৩(x + ১০) → x = ৫। পিতার বর্তমান বয়স ৩৫ + ৫ = ৪০ বছর।"
+ },
+ {
+  "ref": "mth_055",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বয়স সংক্রান্ত সমস্যা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "মা ও মেয়ের বয়সের যোগফল ৫০ বছর। মায়ের বয়স মেয়ের ৪ গুণ হলে মেয়ের বয়স কত?",
+  "options": [
+   "১০ বছর",
+   "১২ বছর",
+   "৮ বছর",
+   "১৫ বছর"
+  ],
+  "answer": 0,
+  "explanation": "মেয়ে x হলে x + ৪x = ৫০ → x = ১০ বছর।"
+ },
+ {
+  "ref": "mth_056",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বয়স সংক্রান্ত সমস্যা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "দুই ভাইয়ের বয়সের অনুপাত ৩ : ৫ এবং যোগফল ৬৪ বছর। বড় ভাইয়ের বয়স কত?",
+  "options": [
+   "৩২ বছর",
+   "২৪ বছর",
+   "৪০ বছর",
+   "৪৫ বছর"
+  ],
+  "answer": 2,
+  "explanation": "বড় ভাইয়ের বয়স = ৬৪ × ৫/৮ = ৪০ বছর।"
+ },
+ {
+  "ref": "mth_057",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বয়স সংক্রান্ত সমস্যা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "বর্তমানে পিতা ও পুত্রের বয়সের অনুপাত ৭ : ২। ১০ বছর পর অনুপাত হবে ৯ : ৪। পুত্রের বর্তমান বয়স কত?",
+  "options": [
+   "১২ বছর",
+   "৮ বছর",
+   "৬ বছর",
+   "১০ বছর"
+  ],
+  "answer": 3,
+  "explanation": "বয়স ৭x ও ২x: (৭x + ১০)/(২x + ১০) = ৯/৪ → ২৮x + ৪০ = ১৮x + ৯০ → x = ৫। পুত্রের বয়স ২x = ১০ বছর (যাচাই: ১০ বছর পর ৪৫ : ২০ = ৯ : ৪)।"
+ },
+ {
+  "ref": "mth_058",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সংখ্যা পদ্ধতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১ থেকে ৫০ পর্যন্ত মৌলিক সংখ্যা কয়টি?",
+  "options": [
+   "১৬টি",
+   "১৪টি",
+   "১৫টি",
+   "১৩টি"
+  ],
+  "answer": 2,
+  "explanation": "২, ৩, ৫, ৭, ১১, ১৩, ১৭, ১৯, ২৩, ২৯, ৩১, ৩৭, ৪১, ৪৩, ৪৭—মোট ১৫টি।"
+ },
+ {
+  "ref": "mth_059",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সংখ্যা পদ্ধতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "একমাত্র জোড় মৌলিক সংখ্যা কোনটি?",
+  "options": [
+   "৪",
+   "২",
+   "০",
+   "৬"
+  ],
+  "answer": 1,
+  "explanation": "২ ছাড়া অন্য সব জোড় সংখ্যা ২ দ্বারা বিভাজ্য, তাই মৌলিক নয়।"
+ },
+ {
+  "ref": "mth_060",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সংখ্যা পদ্ধতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন সংখ্যাটি ৯ দ্বারা বিভাজ্য?",
+  "options": [
+   "৪৫১৮",
+   "৪৫১৭",
+   "৪৫২৮",
+   "৪৫০৮"
+  ],
+  "answer": 0,
+  "explanation": "অঙ্কগুলোর যোগফল ৯ দ্বারা বিভাজ্য হলে সংখ্যাটি ৯ দ্বারা বিভাজ্য: ৪ + ৫ + ১ + ৮ = ১৮।"
+ },
+ {
+  "ref": "mth_061",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সংখ্যা পদ্ধতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "০.৪৫৪৫... (পৌনঃপুনিক) কে ভগ্নাংশে প্রকাশ করলে কত হয়?",
+  "options": [
+   "৯/২০",
+   "৪৫/১০০",
+   "৫/১১",
+   "৪/৯"
+  ],
+  "answer": 2,
+  "explanation": "০.৪৫ পৌনঃপুনিক = ৪৫/৯৯ = ৫/১১।"
+ },
+ {
+  "ref": "mth_062",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সংখ্যা পদ্ধতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১ থেকে ৫০ পর্যন্ত সংখ্যাগুলোর যোগফল কত?",
+  "options": [
+   "১২৭৫",
+   "১২৫০",
+   "২৫৫০",
+   "১৩২৫"
+  ],
+  "answer": 0,
+  "explanation": "যোগফল = n(n + ১)/২ = ৫০ × ৫১ / ২ = ১২৭৫।"
+ },
+ {
+  "ref": "mth_063",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সংখ্যা পদ্ধতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "প্রথম ১০টি বিজোড় সংখ্যার যোগফল কত?",
+  "options": [
+   "৯০",
+   "৫৫",
+   "১১০",
+   "১০০"
+  ],
+  "answer": 3,
+  "explanation": "প্রথম n টি বিজোড় সংখ্যার যোগফল n²; ১০² = ১০০।"
+ },
+ {
+  "ref": "mth_064",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সংখ্যা পদ্ধতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৭⁴ এর একক স্থানীয় অঙ্ক কত?",
+  "options": [
+   "৭",
+   "১",
+   "৯",
+   "৩"
+  ],
+  "answer": 1,
+  "explanation": "৭ এর ঘাতের একক অঙ্ক ৭, ৯, ৩, ১ এভাবে পুনরাবৃত্ত হয়; ৭⁴ = ২৪০১, একক অঙ্ক ১।"
+ },
+ {
+  "ref": "mth_065",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সংখ্যা পদ্ধতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "২¹⁰ এর মান কত?",
+  "options": [
+   "১০০০",
+   "১০২৪",
+   "৫১২",
+   "২০৪৮"
+  ],
+  "answer": 1,
+  "explanation": "২¹⁰ = ১০২৪; কম্পিউটারে ১ কিলোবাইট = ১০২৪ বাইট এখান থেকেই।"
+ },
+ {
+  "ref": "mth_066",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সংখ্যা পদ্ধতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১ ÷ ০.২৫ = ?",
+  "options": [
+   "০.০৪",
+   "০.৪",
+   "২৫",
+   "৪"
+  ],
+  "answer": 3,
+  "explanation": "০.২৫ = ১/৪; ১ ÷ ১/৪ = ৪।"
+ },
+ {
+  "ref": "mth_067",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সংখ্যা পদ্ধতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "০.১ × ০.০১ = ?",
+  "options": [
+   "০.০০১",
+   "০.০১",
+   "০.০০০১",
+   "০.১১"
+  ],
+  "answer": 0,
+  "explanation": "দশমিকের পরে মোট ১ + ২ = ৩ ঘর: ০.০০১।"
+ },
+ {
+  "ref": "mth_068",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সংখ্যা পদ্ধতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "√০.০০৮১ = ?",
+  "options": [
+   "০.০০৯",
+   "০.৯",
+   "০.০৯",
+   "০.৮১"
+  ],
+  "answer": 2,
+  "explanation": "০.০০৮১ = ৮১/১০০০০; বর্গমূল = ৯/১০০ = ০.০৯।"
+ },
+ {
+  "ref": "mth_069",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সংখ্যা পদ্ধতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১ থেকে ১০০ পর্যন্ত কয়টি সংখ্যা ৩ দ্বারা বিভাজ্য?",
+  "options": [
+   "৩২টি",
+   "৩৪টি",
+   "৩০টি",
+   "৩৩টি"
+  ],
+  "answer": 3,
+  "explanation": "১০০ ÷ ৩ = ৩৩.৩৩…; তাই ৩, ৬, … ৯৯ পর্যন্ত ৩৩টি।"
+ },
+ {
+  "ref": "mth_070",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সংখ্যা পদ্ধতি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি অমূলদ সংখ্যা?",
+  "options": [
+   "২২/৭",
+   "০.৫",
+   "√২",
+   "√৯"
+  ],
+  "answer": 2,
+  "explanation": "√২ কে দুটি পূর্ণসংখ্যার অনুপাতে প্রকাশ করা যায় না। ২২/৭ মূলদ, এটি π এর আসন্ন মান মাত্র; √৯ = ৩।"
+ },
+ {
+  "ref": "mth_071",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বীজগণিত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "a + b = ৭ এবং ab = ১২ হলে a² + b² এর মান কত?",
+  "options": [
+   "৩৭",
+   "২৫",
+   "৪৯",
+   "৬১"
+  ],
+  "answer": 1,
+  "explanation": "a² + b² = (a + b)² − ২ab = ৪৯ − ২৪ = ২৫।"
+ },
+ {
+  "ref": "mth_072",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বীজগণিত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "a − b = ৩ এবং ab = ১০ হলে a² + b² এর মান কত?",
+  "options": [
+   "২৯",
+   "১৯",
+   "৯",
+   "৩৯"
+  ],
+  "answer": 0,
+  "explanation": "a² + b² = (a − b)² + ২ab = ৯ + ২০ = ২৯।"
+ },
+ {
+  "ref": "mth_073",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বীজগণিত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "x + ১/x = ৩ হলে x² + ১/x² এর মান কত?",
+  "options": [
+   "১১",
+   "৯",
+   "৭",
+   "৫"
+  ],
+  "answer": 2,
+  "explanation": "x² + ১/x² = (x + ১/x)² − ২ = ৯ − ২ = ৭।"
+ },
+ {
+  "ref": "mth_074",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বীজগণিত",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "x + ১/x = ৩ হলে x³ + ১/x³ এর মান কত?",
+  "options": [
+   "১৮",
+   "২৭",
+   "২৪",
+   "৩৬"
+  ],
+  "answer": 0,
+  "explanation": "x³ + ১/x³ = (x + ১/x)³ − ৩(x + ১/x) = ২৭ − ৯ = ১৮।"
+ },
+ {
+  "ref": "mth_075",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বীজগণিত",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "(a + b)² − (a − b)² = ?",
+  "options": [
+   "০",
+   "২ab",
+   "২(a² + b²)",
+   "৪ab"
+  ],
+  "answer": 3,
+  "explanation": "(a² + ২ab + b²) − (a² − ২ab + b²) = ৪ab।"
+ },
+ {
+  "ref": "mth_076",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বীজগণিত",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "x² − ৫x + ৬ = ০ সমীকরণের মূলদ্বয় কী কী?",
+  "options": [
+   "−২ ও −৩",
+   "২ ও ৩",
+   "১ ও ৬",
+   "−১ ও ৬"
+  ],
+  "answer": 1,
+  "explanation": "x² − ৫x + ৬ = (x − ২)(x − ৩) = ০; তাই x = ২ বা ৩।"
+ },
+ {
+  "ref": "mth_077",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বীজগণিত",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "২x + ৫ = ১৭ হলে x = ?",
+  "options": [
+   "১১",
+   "৬",
+   "৫",
+   "৭"
+  ],
+  "answer": 1,
+  "explanation": "২x = ১৭ − ৫ = ১২ → x = ৬।"
+ },
+ {
+  "ref": "mth_078",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বীজগণিত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "x² − y² এর উৎপাদক কোনটি?",
+  "options": [
+   "x(x − y²)",
+   "(x − y)²",
+   "(x + y)²",
+   "(x + y)(x − y)"
+  ],
+  "answer": 3,
+  "explanation": "দুটি বর্গের অন্তর = যোগফল × অন্তর।"
+ },
+ {
+  "ref": "mth_079",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বীজগণিত",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "a³ + b³ এর উৎপাদকে বিশ্লেষিত রূপ কোনটি?",
+  "options": [
+   "(a + b)(a² − ab + b²)",
+   "(a + b)(a² + ab + b²)",
+   "(a − b)(a² + ab + b²)",
+   "(a + b)³"
+  ],
+  "answer": 0,
+  "explanation": "a³ + b³ = (a + b)(a² − ab + b²) এবং a³ − b³ = (a − b)(a² + ab + b²)।"
+ },
+ {
+  "ref": "mth_080",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বীজগণিত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "দুটি ক্রমিক স্বাভাবিক সংখ্যার বর্গের অন্তর ২৫ হলে বড় সংখ্যাটি কত?",
+  "options": [
+   "১৪",
+   "১২",
+   "১৩",
+   "১১"
+  ],
+  "answer": 2,
+  "explanation": "(n + ১)² − n² = ২n + ১ = ২৫ → n = ১২; বড় সংখ্যা ১৩।"
+ },
+ {
+  "ref": "mth_081",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "বীজগণিত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "x = ২ হলে x³ − ৩x² + ৩x − ১ এর মান কত?",
+  "options": [
+   "২",
+   "০",
+   "৮",
+   "১"
+  ],
+  "answer": 3,
+  "explanation": "রাশিটি (x − ১)³; x = ২ বসালে (২ − ১)³ = ১।"
+ },
+ {
+  "ref": "mth_082",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সূচক ও লগারিদম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "২ˣ = ৩২ হলে x = ?",
+  "options": [
+   "৬",
+   "৪",
+   "৫",
+   "১৬"
+  ],
+  "answer": 2,
+  "explanation": "৩২ = ২⁵, তাই x = ৫।"
+ },
+ {
+  "ref": "mth_083",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সূচক ও লগারিদম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৩ˣ⁺¹ = ৮১ হলে x = ?",
+  "options": [
+   "৪",
+   "৩",
+   "২",
+   "২৭"
+  ],
+  "answer": 1,
+  "explanation": "৮১ = ৩⁴; x + ১ = ৪ → x = ৩।"
+ },
+ {
+  "ref": "mth_084",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সূচক ও লগারিদম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "a⁰ (a ≠ ০) এর মান কত?",
+  "options": [
+   "১",
+   "০",
+   "a",
+   "অসংজ্ঞায়িত"
+  ],
+  "answer": 0,
+  "explanation": "শূন্য ছাড়া যেকোনো সংখ্যার শূন্য ঘাত ১।"
+ },
+ {
+  "ref": "mth_085",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সূচক ও লগারিদম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৪ˣ = ৮ হলে x = ?",
+  "options": [
+   "২/৩",
+   "২",
+   "৩/২",
+   "৪"
+  ],
+  "answer": 2,
+  "explanation": "৪ˣ = ২²ˣ এবং ৮ = ২³; ২x = ৩ → x = ৩/২।"
+ },
+ {
+  "ref": "mth_086",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সূচক ও লগারিদম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "log₂ ৮ এর মান কত?",
+  "options": [
+   "৩",
+   "৪",
+   "২",
+   "৮"
+  ],
+  "answer": 0,
+  "explanation": "২³ = ৮, তাই log₂ ৮ = ৩।"
+ },
+ {
+  "ref": "mth_087",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সূচক ও লগারিদম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "log₁₀ ১০০০ এর মান কত?",
+  "options": [
+   "১০০",
+   "২",
+   "৪",
+   "৩"
+  ],
+  "answer": 3,
+  "explanation": "১০³ = ১০০০, তাই মান ৩।"
+ },
+ {
+  "ref": "mth_088",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সূচক ও লগারিদম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "যেকোনো ভিত্তিতে log ১ এর মান কত?",
+  "options": [
+   "১",
+   "০",
+   "১০",
+   "অসংজ্ঞায়িত"
+  ],
+  "answer": 1,
+  "explanation": "a⁰ = ১, তাই যেকোনো বৈধ ভিত্তিতে log ১ = ০।"
+ },
+ {
+  "ref": "mth_089",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সূচক ও লগারিদম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "log₂ ৬৪ এর মান কত?",
+  "options": [
+   "৮",
+   "৬",
+   "৫",
+   "৩২"
+  ],
+  "answer": 1,
+  "explanation": "২⁶ = ৬৪, তাই মান ৬।"
+ },
+ {
+  "ref": "mth_090",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সূচক ও লগারিদম",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "log ২ + log ৫ এর মান কত (ভিত্তি ১০)?",
+  "options": [
+   "১০",
+   "০",
+   "৭",
+   "১"
+  ],
+  "answer": 3,
+  "explanation": "log a + log b = log(ab); log ১০ = ১।"
+ },
+ {
+  "ref": "mth_091",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সূচক ও লগারিদম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "(২⁵ × ২³) ÷ ২⁶ = ?",
+  "options": [
+   "৪",
+   "৮",
+   "২",
+   "১৬"
+  ],
+  "answer": 0,
+  "explanation": "ঘাতের নিয়মে ২⁵⁺³⁻⁶ = ২² = ৪।"
+ },
+ {
+  "ref": "mth_092",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সূচক ও লগারিদম",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "√(৫ × √(৫ × √৫ ...)) অসীম পর্যন্ত চললে এর মান কত?",
+  "options": [
+   "২৫",
+   "√৫",
+   "৫",
+   "১০"
+  ],
+  "answer": 2,
+  "explanation": "মান x হলে x = √(৫x) → x² = ৫x → x = ৫।"
+ },
+ {
+  "ref": "mth_093",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৩, ৭, ১১, ১৫, … ধারাটির ২০তম পদ কত?",
+  "options": [
+   "৮০",
+   "৮৩",
+   "৭৫",
+   "৭৯"
+  ],
+  "answer": 3,
+  "explanation": "সমান্তর ধারার n-তম পদ = a + (n − ১)d = ৩ + ১৯ × ৪ = ৭৯।"
+ },
+ {
+  "ref": "mth_094",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "২ + ৪ + ৬ + … + ১০০ = ?",
+  "options": [
+   "৫০৫০",
+   "২৫০০",
+   "২৫৫০",
+   "২৪৫০"
+  ],
+  "answer": 2,
+  "explanation": "পদসংখ্যা ৫০; যোগফল = ৫০/২ × (২ + ১০০) = ২৫ × ১০২ = ২৫৫০।"
+ },
+ {
+  "ref": "mth_095",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "২, ৬, ১৮, … গুণোত্তর ধারার ৫ম পদ কত?",
+  "options": [
+   "৫৪",
+   "১৬২",
+   "৪৮৬",
+   "১০৮"
+  ],
+  "answer": 1,
+  "explanation": "সাধারণ অনুপাত ৩; ৫ম পদ = ২ × ৩⁴ = ১৬২।"
+ },
+ {
+  "ref": "mth_096",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "ধারা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "১ + ১/২ + ১/৪ + ১/৮ + … অসীম গুণোত্তর ধারার যোগফল কত?",
+  "options": [
+   "২",
+   "১.৫",
+   "১",
+   "অসীম"
+  ],
+  "answer": 0,
+  "explanation": "অসীম গুণোত্তর ধারার যোগফল = a/(১ − r) = ১/(১ − ১/২) = ২।"
+ },
+ {
+  "ref": "mth_097",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৫ + ১০ + ১৫ + … + ৫০ = ?",
+  "options": [
+   "৩০০",
+   "২৫০",
+   "২৭৫",
+   "৫৫০"
+  ],
+  "answer": 2,
+  "explanation": "১০টি পদ; যোগফল = ১০/২ × (৫ + ৫০) = ৫ × ৫৫ = ২৭৫।"
+ },
+ {
+  "ref": "mth_098",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "জ্যামিতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ত্রিভুজের তিন কোণের সমষ্টি কত?",
+  "options": [
+   "১৮০°",
+   "৩৬০°",
+   "৯০°",
+   "২৭০°"
+  ],
+  "answer": 0,
+  "explanation": "যেকোনো ত্রিভুজের অন্তঃস্থ তিন কোণের সমষ্টি দুই সমকোণ বা ১৮০°।"
+ },
+ {
+  "ref": "mth_099",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "জ্যামিতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "চতুর্ভুজের চার কোণের সমষ্টি কত?",
+  "options": [
+   "২৭০°",
+   "১৮০°",
+   "৫৪০°",
+   "৩৬০°"
+  ],
+  "answer": 3,
+  "explanation": "চতুর্ভুজকে কর্ণ দিয়ে দুটি ত্রিভুজে ভাগ করা যায়: ২ × ১৮০° = ৩৬০°।"
+ },
+ {
+  "ref": "mth_100",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "জ্যামিতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "পঞ্চভুজের অন্তঃস্থ কোণগুলোর সমষ্টি কত?",
+  "options": [
+   "৩৬০°",
+   "৫৪০°",
+   "৭২০°",
+   "৪৫০°"
+  ],
+  "answer": 1,
+  "explanation": "n বাহুর বহুভুজের অন্তঃস্থ কোণের সমষ্টি = (n − ২) × ১৮০° = ৩ × ১৮০° = ৫৪০°।"
+ },
+ {
+  "ref": "mth_101",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "জ্যামিতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সুষম ষড়ভুজের প্রতিটি অন্তঃস্থ কোণ কত ডিগ্রি?",
+  "options": [
+   "১০৮°",
+   "১২০°",
+   "১৩৫°",
+   "৬০°"
+  ],
+  "answer": 1,
+  "explanation": "প্রতিটি বহিঃস্থ কোণ ৩৬০°/৬ = ৬০°; অন্তঃস্থ কোণ = ১৮০° − ৬০° = ১২০°।"
+ },
+ {
+  "ref": "mth_102",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "জ্যামিতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৩৫° কোণের পূরক কোণ কত?",
+  "options": [
+   "৩৫°",
+   "১৪৫°",
+   "৬৫°",
+   "৫৫°"
+  ],
+  "answer": 3,
+  "explanation": "পূরক কোণের সমষ্টি ৯০°: ৯০° − ৩৫° = ৫৫°।"
+ },
+ {
+  "ref": "mth_103",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "জ্যামিতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১১০° কোণের সম্পূরক কোণ কত?",
+  "options": [
+   "৭০°",
+   "২৫০°",
+   "২০°",
+   "৯০°"
+  ],
+  "answer": 0,
+  "explanation": "সম্পূরক কোণের সমষ্টি ১৮০°: ১৮০° − ১১০° = ৭০°।"
+ },
+ {
+  "ref": "mth_104",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "জ্যামিতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি ত্রিভুজের কোণগুলোর অনুপাত ২ : ৩ : ৪ হলে বৃহত্তম কোণটি কত?",
+  "options": [
+   "৯০°",
+   "৬০°",
+   "৮০°",
+   "১০০°"
+  ],
+  "answer": 2,
+  "explanation": "মোট ৯ ভাগ = ১৮০°, এক ভাগ ২০°; বৃহত্তম কোণ ৪ × ২০° = ৮০°।"
+ },
+ {
+  "ref": "mth_105",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "জ্যামিতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি সমদ্বিবাহু ত্রিভুজের শীর্ষকোণ ৪০° হলে ভূমিসংলগ্ন প্রতিটি কোণ কত?",
+  "options": [
+   "৬০°",
+   "৮০°",
+   "৫০°",
+   "৭০°"
+  ],
+  "answer": 3,
+  "explanation": "ভূমিসংলগ্ন কোণ দুটি সমান: (১৮০° − ৪০°)/২ = ৭০°।"
+ },
+ {
+  "ref": "mth_106",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "জ্যামিতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "অর্ধবৃত্তস্থ কোণ কত ডিগ্রি?",
+  "options": [
+   "৪৫°",
+   "১৮০°",
+   "৯০°",
+   "৬০°"
+  ],
+  "answer": 2,
+  "explanation": "অর্ধবৃত্তে অন্তর্লিখিত কোণ সর্বদা সমকোণ (৯০°)।"
+ },
+ {
+  "ref": "mth_107",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "জ্যামিতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি সমকোণী ত্রিভুজের সমকোণ সংলগ্ন বাহুদ্বয় ৬ সেমি ও ৮ সেমি হলে অতিভুজ কত?",
+  "options": [
+   "১৪ সেমি",
+   "১০ সেমি",
+   "১২ সেমি",
+   "৯ সেমি"
+  ],
+  "answer": 1,
+  "explanation": "পিথাগোরাসের উপপাদ্য: √(৬² + ৮²) = √১০০ = ১০ সেমি।"
+ },
+ {
+  "ref": "mth_108",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "জ্যামিতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "অষ্টভুজের কর্ণ কয়টি?",
+  "options": [
+   "২০টি",
+   "১৬টি",
+   "২৪টি",
+   "২৮টি"
+  ],
+  "answer": 0,
+  "explanation": "কর্ণের সংখ্যা = n(n − ৩)/২ = ৮ × ৫ / ২ = ২০।"
+ },
+ {
+  "ref": "mth_109",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "জ্যামিতি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ত্রিভুজের যেকোনো দুই বাহুর সমষ্টি তৃতীয় বাহুর চেয়ে কেমন?",
+  "options": [
+   "সমান",
+   "ক্ষুদ্রতর",
+   "বৃহত্তর",
+   "নির্ণয় করা যায় না"
+  ],
+  "answer": 2,
+  "explanation": "এটি ত্রিভুজের অসমতা; যেমন ২, ৩, ৬ সেমি দিয়ে ত্রিভুজ আঁকা যায় না কারণ ২ + ৩ < ৬।"
+ },
+ {
+  "ref": "mth_110",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "জ্যামিতি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন বাহুগুলো দিয়ে ত্রিভুজ গঠন সম্ভব নয়?",
+  "options": [
+   "৩ সেমি, ৪ সেমি, ৮ সেমি",
+   "৩ সেমি, ৪ সেমি, ৫ সেমি",
+   "৫ সেমি, ৫ সেমি, ৫ সেমি",
+   "৬ সেমি, ৭ সেমি, ১০ সেমি"
+  ],
+  "answer": 0,
+  "explanation": "৩ + ৪ = ৭, যা ৮ এর চেয়ে ছোট; তাই এ তিন বাহুতে ত্রিভুজ হয় না।"
+ },
+ {
+  "ref": "mth_111",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৭ সেমি ব্যাসার্ধের বৃত্তের ক্ষেত্রফল কত (π = ২২/৭)?",
+  "options": [
+   "৩০৮ বর্গসেমি",
+   "৪৪ বর্গসেমি",
+   "৪৯ বর্গসেমি",
+   "১৫৪ বর্গসেমি"
+  ],
+  "answer": 3,
+  "explanation": "ক্ষেত্রফল = πr² = ২২/৭ × ৪৯ = ১৫৪ বর্গসেমি।"
+ },
+ {
+  "ref": "mth_112",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৭ সেমি ব্যাসার্ধের বৃত্তের পরিধি কত (π = ২২/৭)?",
+  "options": [
+   "২২ সেমি",
+   "৪৪ সেমি",
+   "১৫৪ সেমি",
+   "৮৮ সেমি"
+  ],
+  "answer": 1,
+  "explanation": "পরিধি = ২πr = ২ × ২২/৭ × ৭ = ৪৪ সেমি।"
+ },
+ {
+  "ref": "mth_113",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বৃত্তের ব্যাসার্ধ দ্বিগুণ করলে ক্ষেত্রফল কত গুণ হবে?",
+  "options": [
+   "২ গুণ",
+   "৪ গুণ",
+   "৮ গুণ",
+   "৩ গুণ"
+  ],
+  "answer": 1,
+  "explanation": "ক্ষেত্রফল r² এর সমানুপাতিক; (২r)² = ৪r²।"
+ },
+ {
+  "ref": "mth_114",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১২ মিটার দৈর্ঘ্য ও ৫ মিটার প্রস্থের আয়তক্ষেত্রের কর্ণ কত?",
+  "options": [
+   "১৫ মিটার",
+   "১৭ মিটার",
+   "৬০ মিটার",
+   "১৩ মিটার"
+  ],
+  "answer": 3,
+  "explanation": "কর্ণ = √(১২² + ৫²) = √১৬৯ = ১৩ মিটার।"
+ },
+ {
+  "ref": "mth_115",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি বর্গের কর্ণ ১০ সেমি হলে এর ক্ষেত্রফল কত?",
+  "options": [
+   "৫০ বর্গসেমি",
+   "১০০ বর্গসেমি",
+   "২৫ বর্গসেমি",
+   "৪০ বর্গসেমি"
+  ],
+  "answer": 0,
+  "explanation": "বর্গের ক্ষেত্রফল = কর্ণ²/২ = ১০০/২ = ৫০ বর্গসেমি।"
+ },
+ {
+  "ref": "mth_116",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৬ সেমি বাহুবিশিষ্ট সমবাহু ত্রিভুজের ক্ষেত্রফল কত?",
+  "options": [
+   "৩৬ বর্গসেমি",
+   "১৮ বর্গসেমি",
+   "৯√৩ বর্গসেমি",
+   "১২√৩ বর্গসেমি"
+  ],
+  "answer": 2,
+  "explanation": "ক্ষেত্রফল = (√৩/৪) × a² = (√৩/৪) × ৩৬ = ৯√৩ বর্গসেমি।"
+ },
+ {
+  "ref": "mth_117",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৩ সেমি বাহুবিশিষ্ট ঘনকের আয়তন কত?",
+  "options": [
+   "১৮ ঘনসেমি",
+   "৯ ঘনসেমি",
+   "৫৪ ঘনসেমি",
+   "২৭ ঘনসেমি"
+  ],
+  "answer": 3,
+  "explanation": "ঘনকের আয়তন = a³ = ৩³ = ২৭ ঘনসেমি।"
+ },
+ {
+  "ref": "mth_118",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৩ সেমি বাহুবিশিষ্ট ঘনকের সমগ্রতলের ক্ষেত্রফল কত?",
+  "options": [
+   "৩৬ বর্গসেমি",
+   "২৭ বর্গসেমি",
+   "৫৪ বর্গসেমি",
+   "৯ বর্গসেমি"
+  ],
+  "answer": 2,
+  "explanation": "ঘনকের ৬টি তল: ৬a² = ৬ × ৯ = ৫৪ বর্গসেমি।"
+ },
+ {
+  "ref": "mth_119",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি রম্বসের কর্ণদ্বয় ১০ সেমি ও ২৪ সেমি। এর একটি বাহুর দৈর্ঘ্য কত?",
+  "options": [
+   "১৭ সেমি",
+   "১৩ সেমি",
+   "১২ সেমি",
+   "২৬ সেমি"
+  ],
+  "answer": 1,
+  "explanation": "রম্বসের কর্ণ পরস্পরকে লম্বভাবে সমদ্বিখণ্ডিত করে: বাহু = √(৫² + ১২²) = √১৬৯ = ১৩ সেমি।"
+ },
+ {
+  "ref": "mth_120",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি রম্বসের কর্ণদ্বয় ১০ সেমি ও ২৪ সেমি হলে এর ক্ষেত্রফল কত?",
+  "options": [
+   "১২০ বর্গসেমি",
+   "২৪০ বর্গসেমি",
+   "৬০ বর্গসেমি",
+   "১৬৯ বর্গসেমি"
+  ],
+  "answer": 0,
+  "explanation": "রম্বসের ক্ষেত্রফল = কর্ণদ্বয়ের গুণফলের অর্ধেক = ১০ × ২৪ / ২ = ১২০ বর্গসেমি।"
+ },
+ {
+  "ref": "mth_121",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "৭ সেমি ব্যাসার্ধ ও ১০ সেমি উচ্চতাবিশিষ্ট সিলিন্ডারের আয়তন কত (π = ২২/৭)?",
+  "options": [
+   "৪৪০ ঘনসেমি",
+   "৭৭০ ঘনসেমি",
+   "১৫৪০ ঘনসেমি",
+   "৩০৮০ ঘনসেমি"
+  ],
+  "answer": 2,
+  "explanation": "আয়তন = πr²h = ২২/৭ × ৪৯ × ১০ = ১৫৪০ ঘনসেমি।"
+ },
+ {
+  "ref": "mth_122",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "গোলকের আয়তনের সূত্র কোনটি?",
+  "options": [
+   "৪/৩ πr³",
+   "৪πr²",
+   "πr²h",
+   "১/৩ πr²h"
+  ],
+  "answer": 0,
+  "explanation": "গোলকের আয়তন ৪/৩ πr³ এবং পৃষ্ঠতলের ক্ষেত্রফল ৪πr²; কোণকের আয়তন ১/৩ πr²h।"
+ },
+ {
+  "ref": "mth_123",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১ হেক্টর সমান কত বর্গমিটার?",
+  "options": [
+   "৪,০৪৭ বর্গমিটার",
+   "১,০০০ বর্গমিটার",
+   "১,০০,০০০ বর্গমিটার",
+   "১০,০০০ বর্গমিটার"
+  ],
+  "answer": 3,
+  "explanation": "১ হেক্টর = ১০০ মি × ১০০ মি = ১০,০০০ বর্গমিটার; প্রায় ২.৪৭ একর।"
+ },
+ {
+  "ref": "mth_124",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিমিতি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১ মাইল প্রায় কত কিলোমিটার?",
+  "options": [
+   "১.৫ কিমি",
+   "১.৬১ কিমি",
+   "২ কিমি",
+   "১.১ কিমি"
+  ],
+  "answer": 1,
+  "explanation": "১ মাইল ≈ ১.৬০৯ কিমি এবং ১ কিমি ≈ ০.৬২ মাইল।"
+ },
+ {
+  "ref": "mth_125",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সেট, সম্ভাবনা ও বিন্যাস-সমাবেশ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৩টি উপাদানবিশিষ্ট একটি সেটের উপসেট কয়টি?",
+  "options": [
+   "৬টি",
+   "৮টি",
+   "৯টি",
+   "৩টি"
+  ],
+  "answer": 1,
+  "explanation": "n উপাদানের সেটের উপসেট সংখ্যা ২ⁿ = ২³ = ৮ (ফাঁকা সেট ও সেটটি নিজেসহ)।"
+ },
+ {
+  "ref": "mth_126",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সেট, সম্ভাবনা ও বিন্যাস-সমাবেশ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "A = {১, ২, ৩} এবং B = {২, ৩, ৪} হলে A ∩ B = ?",
+  "options": [
+   "{১}",
+   "{১, ২, ৩, ৪}",
+   "{১, ৪}",
+   "{২, ৩}"
+  ],
+  "answer": 3,
+  "explanation": "ছেদ সেটে উভয় সেটের সাধারণ উপাদান থাকে: ২ ও ৩।"
+ },
+ {
+  "ref": "mth_127",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সেট, সম্ভাবনা ও বিন্যাস-সমাবেশ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি শ্রেণির ৫০ জনের মধ্যে ৩০ জন ফুটবল ও ২৫ জন ক্রিকেট খেলে; ১০ জন দুটোই খেলে। কতজন কোনোটিই খেলে না?",
+  "options": [
+   "৫ জন",
+   "১০ জন",
+   "০ জন",
+   "১৫ জন"
+  ],
+  "answer": 0,
+  "explanation": "অন্তত একটি খেলে ৩০ + ২৫ − ১০ = ৪৫ জন; কোনোটিই খেলে না ৫০ − ৪৫ = ৫ জন।"
+ },
+ {
+  "ref": "mth_128",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সেট, সম্ভাবনা ও বিন্যাস-সমাবেশ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি মুদ্রা নিক্ষেপে \"হেড\" পাওয়ার সম্ভাবনা কত?",
+  "options": [
+   "১/৪",
+   "১",
+   "১/২",
+   "০"
+  ],
+  "answer": 2,
+  "explanation": "দুটি সমসম্ভব ফলাফলের একটি অনুকূল, তাই সম্ভাবনা ১/২।"
+ },
+ {
+  "ref": "mth_129",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সেট, সম্ভাবনা ও বিন্যাস-সমাবেশ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি ছক্কা নিক্ষেপে মৌলিক সংখ্যা ওঠার সম্ভাবনা কত?",
+  "options": [
+   "১/৬",
+   "১/৩",
+   "২/৩",
+   "১/২"
+  ],
+  "answer": 3,
+  "explanation": "মৌলিক সংখ্যা ২, ৩, ৫—৬টির মধ্যে ৩টি; সম্ভাবনা ৩/৬ = ১/২।"
+ },
+ {
+  "ref": "mth_130",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সেট, সম্ভাবনা ও বিন্যাস-সমাবেশ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "দুটি মুদ্রা একসাথে নিক্ষেপ করলে অন্তত একটি হেড পাওয়ার সম্ভাবনা কত?",
+  "options": [
+   "১/৪",
+   "১/২",
+   "৩/৪",
+   "১"
+  ],
+  "answer": 2,
+  "explanation": "মোট ফলাফল HH, HT, TH, TT; কোনো হেড নেই কেবল TT তে। সম্ভাবনা ১ − ১/৪ = ৩/৪।"
+ },
+ {
+  "ref": "mth_131",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সেট, সম্ভাবনা ও বিন্যাস-সমাবেশ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "দুটি ছক্কা একসাথে নিক্ষেপ করলে যোগফল ৭ হওয়ার সম্ভাবনা কত?",
+  "options": [
+   "১/১২",
+   "১/৬",
+   "৭/৩৬",
+   "১/৩৬"
+  ],
+  "answer": 1,
+  "explanation": "যোগফল ৭ হয় ৬ ভাবে: (১,৬),(২,৫),(৩,৪),(৪,৩),(৫,২),(৬,১); সম্ভাবনা ৬/৩৬ = ১/৬।"
+ },
+ {
+  "ref": "mth_132",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সেট, সম্ভাবনা ও বিন্যাস-সমাবেশ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৫২টি তাসের প্যাকেট থেকে একটি তাস টানলে সেটি টেক্কা (Ace) হওয়ার সম্ভাবনা কত?",
+  "options": [
+   "১/১৩",
+   "১/৫২",
+   "৪/১৩",
+   "১/৪"
+  ],
+  "answer": 0,
+  "explanation": "প্যাকেটে ৪টি টেক্কা; সম্ভাবনা ৪/৫২ = ১/১৩।"
+ },
+ {
+  "ref": "mth_133",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সেট, সম্ভাবনা ও বিন্যাস-সমাবেশ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "০! (শূন্য ফ্যাক্টরিয়াল) এর মান কত?",
+  "options": [
+   "অসংজ্ঞায়িত",
+   "০",
+   "১",
+   "১০"
+  ],
+  "answer": 2,
+  "explanation": "সংজ্ঞা অনুযায়ী ০! = ১।"
+ },
+ {
+  "ref": "mth_134",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সেট, সম্ভাবনা ও বিন্যাস-সমাবেশ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "⁵C₂ এর মান কত?",
+  "options": [
+   "১০",
+   "২০",
+   "৫",
+   "১৫"
+  ],
+  "answer": 0,
+  "explanation": "⁵C₂ = ৫!/(২! × ৩!) = (৫ × ৪)/২ = ১০।"
+ },
+ {
+  "ref": "mth_135",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সেট, সম্ভাবনা ও বিন্যাস-সমাবেশ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "⁶P₂ এর মান কত?",
+  "options": [
+   "৩৬",
+   "১৫",
+   "১২",
+   "৩০"
+  ],
+  "answer": 3,
+  "explanation": "⁶P₂ = ৬!/৪! = ৬ × ৫ = ৩০।"
+ },
+ {
+  "ref": "mth_136",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সেট, সম্ভাবনা ও বিন্যাস-সমাবেশ",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "\"BANGLA\" শব্দের বর্ণগুলো কত রকমে সাজানো যায়?",
+  "options": [
+   "৭২০",
+   "৩৬০",
+   "১২০",
+   "১৮০"
+  ],
+  "answer": 1,
+  "explanation": "৬টি বর্ণের মধ্যে A দুবার আছে; বিন্যাস = ৬!/২! = ৭২০/২ = ৩৬০।"
+ },
+ {
+  "ref": "mth_137",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "সেট, সম্ভাবনা ও বিন্যাস-সমাবেশ",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "৬ জন ছাত্রের মধ্য থেকে ৩ জনের একটি কমিটি কত উপায়ে গঠন করা যায়?",
+  "options": [
+   "১২০",
+   "২০",
+   "১৮",
+   "৩৬"
+  ],
+  "answer": 1,
+  "explanation": "কমিটিতে ক্রম গুরুত্বপূর্ণ নয়, তাই সমাবেশ: ⁶C₃ = ৬ × ৫ × ৪ / ৬ = ২০।"
+ },
+ {
+  "ref": "mth_138",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিসংখ্যান",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "২, ৪, ৬, ৮, ১০ সংখ্যাগুলোর গাণিতিক গড় কত?",
+  "options": [
+   "৩০",
+   "৫",
+   "৮",
+   "৬"
+  ],
+  "answer": 3,
+  "explanation": "যোগফল ৩০; গড় = ৩০/৫ = ৬।"
+ },
+ {
+  "ref": "mth_139",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিসংখ্যান",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৩, ৭, ৫, ৯, ১ সংখ্যাগুলোর মধ্যমা কত?",
+  "options": [
+   "৫",
+   "৭",
+   "৩",
+   "৯"
+  ],
+  "answer": 0,
+  "explanation": "ক্রমানুসারে সাজালে ১, ৩, ৫, ৭, ৯; মাঝের পদ ৫।"
+ },
+ {
+  "ref": "mth_140",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিসংখ্যান",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "২, ৩, ৩, ৫, ৭, ৩ উপাত্তের প্রচুরক কত?",
+  "options": [
+   "২",
+   "৫",
+   "৩",
+   "৭"
+  ],
+  "answer": 2,
+  "explanation": "সবচেয়ে বেশিবার (৩ বার) আসা মান ৩ হলো প্রচুরক।"
+ },
+ {
+  "ref": "mth_141",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিসংখ্যান",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৪, ৯, ২, ১৫ উপাত্তের পরিসর কত?",
+  "options": [
+   "৬",
+   "১১",
+   "১৫",
+   "১৩"
+  ],
+  "answer": 3,
+  "explanation": "পরিসর = সর্বোচ্চ − সর্বনিম্ন = ১৫ − ২ = ১৩।"
+ },
+ {
+  "ref": "mth_142",
+  "exam": "bcs-general",
+  "subject": "Mathematics & Reasoning",
+  "topic": "পরিসংখ্যান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "২, ৪, ৬, ৮ উপাত্তের মধ্যমা কত?",
+  "options": [
+   "৬",
+   "৪",
+   "৫",
+   "২০"
+  ],
+  "answer": 2,
+  "explanation": "জোড়সংখ্যক পদে মাঝের দুই পদের গড়: (৪ + ৬)/২ = ৫।"
+ },
+ {
+  "ref": "mth_143",
+  "exam": "bangladesh-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Arithmetic",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "If 30% of a number is 120, what is 50% of the same number?",
+  "options": [
+   "240",
+   "200",
+   "180",
+   "160"
+  ],
+  "answer": 1,
+  "explanation": "The number is 120 × 100/30 = 400, and 50% of 400 is 200."
+ },
+ {
+  "ref": "mth_144",
+  "exam": "bangladesh-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Arithmetic",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "A shopkeeper marks goods 25% above cost price and allows a 10% discount. What is his profit percentage?",
+  "options": [
+   "12.5%",
+   "15%",
+   "10%",
+   "13.5%"
+  ],
+  "answer": 0,
+  "explanation": "Cost 100, marked 125, selling 125 × 0.9 = 112.5, so the profit is 12.5%."
+ },
+ {
+  "ref": "mth_145",
+  "exam": "bangladesh-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Arithmetic",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "What is the simple interest on Tk 8,000 at 5% per annum for 3 years?",
+  "options": [
+   "Tk 1,500",
+   "Tk 1,000",
+   "Tk 1,200",
+   "Tk 800"
+  ],
+  "answer": 2,
+  "explanation": "SI = 8000 × 5 × 3 / 100 = Tk 1,200."
+ },
+ {
+  "ref": "mth_146",
+  "exam": "bangladesh-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Arithmetic",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "What is the compound interest on Tk 20,000 at 10% per annum for 2 years, compounded annually?",
+  "options": [
+   "Tk 4,200",
+   "Tk 4,000",
+   "Tk 4,400",
+   "Tk 2,100"
+  ],
+  "answer": 0,
+  "explanation": "Amount = 20000 × 1.21 = 24,200, so the interest is Tk 4,200."
+ },
+ {
+  "ref": "mth_147",
+  "exam": "bangladesh-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Arithmetic",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "A sum doubles itself in 8 years at simple interest. What is the rate of interest?",
+  "options": [
+   "15%",
+   "10%",
+   "8%",
+   "12.5%"
+  ],
+  "answer": 3,
+  "explanation": "Interest equals the principal: 100 = 100 × r × 8 / 100, so r = 12.5%."
+ },
+ {
+  "ref": "mth_148",
+  "exam": "bangladesh-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Arithmetic",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "Successive discounts of 20% and 10% are equivalent to a single discount of:",
+  "options": [
+   "30%",
+   "28%",
+   "25%",
+   "32%"
+  ],
+  "answer": 1,
+  "explanation": "100 → 80 → 72, so the single equivalent discount is 28%."
+ },
+ {
+  "ref": "mth_149",
+  "exam": "bangladesh-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Arithmetic",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "If the price of petrol rises by 25%, by what percentage must consumption fall to keep spending unchanged?",
+  "options": [
+   "25%",
+   "20%",
+   "16.67%",
+   "30%"
+  ],
+  "answer": 1,
+  "explanation": "Reduction = 25/125 × 100 = 20%."
+ },
+ {
+  "ref": "mth_150",
+  "exam": "bangladesh-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Arithmetic",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "What is the average of the first 20 natural numbers?",
+  "options": [
+   "20",
+   "10",
+   "11",
+   "10.5"
+  ],
+  "answer": 3,
+  "explanation": "The sum is 20 × 21 / 2 = 210, so the average is 210 / 20 = 10.5."
+ },
+ {
+  "ref": "mth_151",
+  "exam": "bangladesh-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Arithmetic",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "If x : y = 3 : 4, what is (5x − y) : (5x + y)?",
+  "options": [
+   "11 : 19",
+   "1 : 1",
+   "19 : 11",
+   "3 : 4"
+  ],
+  "answer": 0,
+  "explanation": "Put x = 3 and y = 4: (15 − 4) : (15 + 4) = 11 : 19."
+ },
+ {
+  "ref": "mth_152",
+  "exam": "combined-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Quantitative Aptitude",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "A train 240 m long runs at 54 km/h. How long will it take to pass a signal post?",
+  "options": [
+   "20 seconds",
+   "12 seconds",
+   "16 seconds",
+   "24 seconds"
+  ],
+  "answer": 2,
+  "explanation": "54 km/h = 15 m/s, so the time is 240 / 15 = 16 seconds."
+ },
+ {
+  "ref": "mth_153",
+  "exam": "combined-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Quantitative Aptitude",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "A can finish a job in 8 days and B in 12 days. How many days will they take working together?",
+  "options": [
+   "4 days",
+   "5 days",
+   "10 days",
+   "4.8 days"
+  ],
+  "answer": 3,
+  "explanation": "Together they do 1/8 + 1/12 = 5/24 of the job per day, so they need 24/5 = 4.8 days."
+ },
+ {
+  "ref": "mth_154",
+  "exam": "combined-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Quantitative Aptitude",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "What is the probability of drawing a king from a standard deck of 52 cards?",
+  "options": [
+   "1/4",
+   "1/52",
+   "1/13",
+   "4/13"
+  ],
+  "answer": 2,
+  "explanation": "There are 4 kings in 52 cards, so the probability is 4/52 = 1/13."
+ },
+ {
+  "ref": "mth_155",
+  "exam": "combined-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Quantitative Aptitude",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "The ratio of the ages of A and B is 3 : 5 and their sum is 64. What is B's age?",
+  "options": [
+   "24",
+   "40",
+   "32",
+   "35"
+  ],
+  "answer": 1,
+  "explanation": "B's share is 64 × 5/8 = 40."
+ },
+ {
+  "ref": "mth_156",
+  "exam": "combined-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Quantitative Aptitude",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "A 40-litre mixture contains milk and water in the ratio 3 : 1. How much water must be added to make the ratio 1 : 1?",
+  "options": [
+   "20 litres",
+   "10 litres",
+   "15 litres",
+   "30 litres"
+  ],
+  "answer": 0,
+  "explanation": "Milk is 30 L and water 10 L. Water must equal milk (30 L), so 20 L must be added."
+ },
+ {
+  "ref": "mth_157",
+  "exam": "combined-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Quantitative Aptitude",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "The population of a town is 10,000 and grows at 10% a year. What will it be after 2 years?",
+  "options": [
+   "11,000",
+   "12,000",
+   "12,100",
+   "12,200"
+  ],
+  "answer": 2,
+  "explanation": "10,000 × 1.1 × 1.1 = 12,100."
+ },
+ {
+  "ref": "mth_158",
+  "exam": "combined-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Quantitative Aptitude",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "How many ways can a committee of 3 be chosen from 5 men and 4 women so that it has exactly 2 women?",
+  "options": [
+   "30",
+   "20",
+   "60",
+   "84"
+  ],
+  "answer": 0,
+  "explanation": "Choose 2 of the 4 women (6 ways) and 1 of the 5 men (5 ways): 6 × 5 = 30."
+ },
+ {
+  "ref": "mth_159",
+  "exam": "combined-bank",
+  "subject": "Mathematics & Reasoning",
+  "topic": "Quantitative Aptitude",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "What is the least number that must be added to 1,000 to make it exactly divisible by 45?",
+  "options": [
+   "45",
+   "10",
+   "55",
+   "35"
+  ],
+  "answer": 3,
+  "explanation": "1000 = 45 × 22 + 10, so add 45 − 10 = 35 to reach 1035 = 45 × 23."
+ }
+]

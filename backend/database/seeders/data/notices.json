@@ -1,0 +1,126 @@
+[
+ {
+  "slug": "50th-bcs-written-schedule",
+  "title": "50th BCS written exam schedule published",
+  "org": "BPSC",
+  "exam": "bcs-general",
+  "type": "schedule",
+  "published": "2026-11-15",
+  "applyFrom": null,
+  "applyUntil": null,
+  "examDate": "2026-12-08",
+  "verifiedAt": "2026-11-20",
+  "summary": "The written exam for candidates who passed the 50th BCS preliminary starts on 8 December. Compulsory general papers will be held first, followed by cadre-specific technical papers.",
+  "url": "https://bpsc.gov.bd",
+  "changes": [
+   {
+    "field": "Exam date",
+    "old": "1 Dec 2026",
+    "new": "8 Dec 2026",
+    "at": "2026-11-20"
+   }
+  ],
+  "isNew": true
+ },
+ {
+  "slug": "50th-bcs-written-admit",
+  "title": "50th BCS written: admit card download open",
+  "org": "BPSC",
+  "exam": "bcs-general",
+  "type": "admit",
+  "published": "2026-11-20",
+  "applyFrom": null,
+  "applyUntil": null,
+  "examDate": "2026-12-08",
+  "verifiedAt": "2026-11-21",
+  "summary": "Admit cards for the 50th BCS written examination can be downloaded from the Teletalk BPSC portal using user ID and password.",
+  "url": "https://bpsc.teletalk.com.bd",
+  "changes": [],
+  "isNew": true
+ },
+ {
+  "slug": "bangladesh-bank-ad-2026",
+  "title": "Bangladesh Bank Assistant Director (General) recruitment circular",
+  "org": "Bangladesh Bank",
+  "exam": "bangladesh-bank",
+  "type": "circular",
+  "published": "2026-11-10",
+  "applyFrom": "2026-11-12",
+  "applyUntil": "2026-12-05",
+  "examDate": null,
+  "verifiedAt": "2026-11-19",
+  "summary": "Bangladesh Bank has invited online applications for the post of Assistant Director (General). Four-year Bachelor or Master degree holders with at least two first divisions/classes may apply.",
+  "url": "https://erecruitment.bb.org.bd",
+  "changes": [],
+  "isNew": true
+ },
+ {
+  "slug": "combined-bank-senior-officer-2026",
+  "title": "Combined 9 Banks Senior Officer: Preliminary exam date announced",
+  "org": "BSCS",
+  "exam": "combined-bank",
+  "type": "schedule",
+  "published": "2026-11-14",
+  "applyFrom": null,
+  "applyUntil": null,
+  "examDate": "2026-12-19",
+  "verifiedAt": "2026-11-18",
+  "summary": "Bankers Selection Committee Secretariat announced the 100-mark preliminary MCQ test for Combined Senior Officer posts across Dhaka centers.",
+  "url": "https://erecruitment.bb.org.bd",
+  "changes": [],
+  "isNew": true
+ },
+ {
+  "slug": "ntrca-19th-registration",
+  "title": "19th NTRCA Teacher Registration examination circular",
+  "org": "NTRCA",
+  "exam": "ntrca",
+  "type": "circular",
+  "published": "2026-11-08",
+  "applyFrom": "2026-11-15",
+  "applyUntil": "2026-12-10",
+  "examDate": "2027-01-15",
+  "verifiedAt": "2026-11-16",
+  "summary": "Applications invited for School, School-2 and College level registration certificates under the 19th Teacher Registration test.",
+  "url": "https://ntrca.teletalk.com.bd",
+  "changes": [
+   {
+    "field": "Apply until",
+    "old": "30 Nov 2026",
+    "new": "10 Dec 2026",
+    "at": "2026-11-12"
+   }
+  ],
+  "isNew": true
+ },
+ {
+  "slug": "primary-teacher-result-phase3",
+  "title": "Primary Assistant Teacher 3rd phase written MCQ result published",
+  "org": "DPE",
+  "exam": "primary-teacher",
+  "type": "result",
+  "published": "2026-11-12",
+  "applyFrom": null,
+  "applyUntil": null,
+  "examDate": null,
+  "verifiedAt": "2026-11-12",
+  "summary": "Results of the third-phase MCQ examination published by the Directorate of Primary Education. Viva voce dates will be declared soon.",
+  "url": "https://dpe.gov.bd",
+  "changes": []
+ },
+ {
+  "slug": "combined-bank-officer-cash",
+  "title": "Combined 8 Banks Officer (Cash): 1,511 vacancies circular",
+  "org": "BSCS",
+  "exam": "combined-bank",
+  "type": "circular",
+  "published": "2026-11-02",
+  "applyFrom": "2026-11-05",
+  "applyUntil": "2026-12-02",
+  "examDate": null,
+  "verifiedAt": "2026-11-04",
+  "summary": "Bankers Selection Committee invites applications for 1,511 Officer (Cash) posts in Sonali, Janata, Agrani, Rupali and other banks.",
+  "url": "https://erecruitment.bb.org.bd",
+  "changes": []
+ }
+]

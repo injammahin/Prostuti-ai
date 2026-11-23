@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\QuestionResource;
 use App\Models\Question;
+use App\Models\Setting;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Cache;
 
@@ -18,14 +19,15 @@ class DailyQuizController extends Controller
     public function show(): JsonResponse
     {
         $today = now(config('app.student_timezone'))->toDateString();
+        $size = (int) (Setting::get('daily_quiz_size') ?: self::QUESTION_COUNT);
 
-        $questionIds = Cache::remember("daily-quiz:{$today}", now()->addDay(), function () use ($today): array {
+        $questionIds = Cache::remember("daily-quiz:{$today}:{$size}", now()->addDay(), function () use ($today, $size): array {
             $ids = Question::query()->live()->orderBy('id')->pluck('id')->all();
             mt_srand(crc32($today));
             shuffle($ids);
             mt_srand();
 
-            return array_slice($ids, 0, self::QUESTION_COUNT);
+            return array_slice($ids, 0, $size);
         });
 
         $questions = Question::query()

@@ -1,0 +1,4862 @@
+[
+ {
+  "ref": "mnt_001",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কলম : লেখক :: তুলি : ?",
+  "options": [
+   "ভাস্কর",
+   "চিত্রশিল্পী",
+   "কবি",
+   "গায়ক"
+  ],
+  "answer": 1,
+  "explanation": "লেখক যেমন কলম দিয়ে কাজ করেন, চিত্রশিল্পী তেমনি তুলি দিয়ে কাজ করেন (হাতিয়ার : ব্যবহারকারী)।"
+ },
+ {
+  "ref": "mnt_002",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ডাক্তার : হাসপাতাল :: শিক্ষক : ?",
+  "options": [
+   "কারখানা",
+   "আদালত",
+   "ব্যাংক",
+   "বিদ্যালয়"
+  ],
+  "answer": 3,
+  "explanation": "পেশাজীবী : কর্মস্থল সম্পর্ক। ডাক্তারের কর্মস্থল হাসপাতাল, শিক্ষকের বিদ্যালয়।"
+ },
+ {
+  "ref": "mnt_003",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "পাখি : বাসা :: মৌমাছি : ?",
+  "options": [
+   "মৌচাক",
+   "গর্ত",
+   "খোঁয়াড়",
+   "আস্তাবল"
+  ],
+  "answer": 0,
+  "explanation": "প্রাণী : আবাস সম্পর্ক। পাখির আবাস বাসা, মৌমাছির মৌচাক।"
+ },
+ {
+  "ref": "mnt_004",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "চোখ : দেখা :: কান : ?",
+  "options": [
+   "খাওয়া",
+   "বলা",
+   "শোনা",
+   "হাঁটা"
+  ],
+  "answer": 2,
+  "explanation": "অঙ্গ : কাজ সম্পর্ক। চোখের কাজ দেখা, কানের কাজ শোনা।"
+ },
+ {
+  "ref": "mnt_005",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ঢাকা : বাংলাদেশ :: কাঠমান্ডু : ?",
+  "options": [
+   "শ্রীলঙ্কা",
+   "ভুটান",
+   "নেপাল",
+   "মালদ্বীপ"
+  ],
+  "answer": 2,
+  "explanation": "রাজধানী : দেশ সম্পর্ক। কাঠমান্ডু নেপালের রাজধানী।"
+ },
+ {
+  "ref": "mnt_006",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "থার্মোমিটার : তাপমাত্রা :: ব্যারোমিটার : ?",
+  "options": [
+   "বায়ুচাপ",
+   "আর্দ্রতা",
+   "বায়ুর গতি",
+   "বৃষ্টিপাত"
+  ],
+  "answer": 0,
+  "explanation": "যন্ত্র : যা পরিমাপ করে। ব্যারোমিটার বায়ুচাপ মাপে।"
+ },
+ {
+  "ref": "mnt_007",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ক্ষুধা : খাদ্য :: তৃষ্ণা : ?",
+  "options": [
+   "আলো",
+   "ঘুম",
+   "বিশ্রাম",
+   "পানি"
+  ],
+  "answer": 3,
+  "explanation": "অভাব : যা দিয়ে মেটে। ক্ষুধা মেটে খাদ্যে, তৃষ্ণা মেটে পানিতে।"
+ },
+ {
+  "ref": "mnt_008",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "দর্জি : সুঁই :: কাঠমিস্ত্রি : ?",
+  "options": [
+   "কাঁচি",
+   "করাত",
+   "কোদাল",
+   "কাস্তে"
+  ],
+  "answer": 1,
+  "explanation": "পেশাজীবী : প্রধান হাতিয়ার। দর্জির সুঁই, কাঠমিস্ত্রির করাত।"
+ },
+ {
+  "ref": "mnt_009",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "মিটার : দৈর্ঘ্য :: কিলোগ্রাম : ?",
+  "options": [
+   "ভর",
+   "সময়",
+   "তাপমাত্রা",
+   "আয়তন"
+  ],
+  "answer": 0,
+  "explanation": "একক : রাশি সম্পর্ক। কিলোগ্রাম ভরের একক।"
+ },
+ {
+  "ref": "mnt_010",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ঘড়ি : সময় :: ক্যালেন্ডার : ?",
+  "options": [
+   "দূরত্ব",
+   "তারিখ",
+   "ওজন",
+   "গতি"
+  ],
+  "answer": 1,
+  "explanation": "ঘড়ি সময় দেখায়, ক্যালেন্ডার তারিখ দেখায়।"
+ },
+ {
+  "ref": "mnt_011",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ক্রিকেট : ব্যাট :: টেনিস : ?",
+  "options": [
+   "গ্লাভস",
+   "স্টিক",
+   "র‍্যাকেট",
+   "জাল"
+  ],
+  "answer": 2,
+  "explanation": "খেলা : খেলার সরঞ্জাম। টেনিসে র‍্যাকেট ব্যবহৃত হয়।"
+ },
+ {
+  "ref": "mnt_012",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কৃষক : লাঙল :: জেলে : ?",
+  "options": [
+   "ঝুড়ি",
+   "নৌকা",
+   "বৈঠা",
+   "জাল"
+  ],
+  "answer": 3,
+  "explanation": "পেশাজীবী : প্রধান হাতিয়ার। জেলের প্রধান হাতিয়ার জাল।"
+ },
+ {
+  "ref": "mnt_013",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "উত্তর : দক্ষিণ :: পূর্ব : ?",
+  "options": [
+   "উত্তর",
+   "পশ্চিম",
+   "ঈশান",
+   "নৈঋত"
+  ],
+  "answer": 1,
+  "explanation": "বিপরীত দিক সম্পর্ক। পূর্বের বিপরীত পশ্চিম।"
+ },
+ {
+  "ref": "mnt_014",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আয়তন : ঘনমিটার :: ক্ষেত্রফল : ?",
+  "options": [
+   "হেক্টোমিটার",
+   "মিটার",
+   "লিটার",
+   "বর্গমিটার"
+  ],
+  "answer": 3,
+  "explanation": "রাশি : SI একক। ক্ষেত্রফলের একক বর্গমিটার।"
+ },
+ {
+  "ref": "mnt_015",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৪ : ১৬ :: ৭ : ?",
+  "options": [
+   "৪৯",
+   "২৮",
+   "৫৬",
+   "৩৫"
+  ],
+  "answer": 0,
+  "explanation": "প্রথম সংখ্যার বর্গ দ্বিতীয় সংখ্যা: ৪² = ১৬, তাই ৭² = ৪৯।"
+ },
+ {
+  "ref": "mnt_016",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "২ : ৮ :: ৩ : ?",
+  "options": [
+   "১২",
+   "৯",
+   "২৭",
+   "২৪"
+  ],
+  "answer": 2,
+  "explanation": "প্রথম সংখ্যার ঘন দ্বিতীয় সংখ্যা: ২³ = ৮, তাই ৩³ = ২৭।"
+ },
+ {
+  "ref": "mnt_017",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৩ : ১০ :: ৫ : ?",
+  "options": [
+   "১৫",
+   "২৫",
+   "২৬",
+   "৩০"
+  ],
+  "answer": 2,
+  "explanation": "নিয়ম n² + ১: ৩² + ১ = ১০, তাই ৫² + ১ = ২৬।"
+ },
+ {
+  "ref": "mnt_018",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৯ : ৮০ :: ৮ : ?",
+  "options": [
+   "৬৩",
+   "৬৪",
+   "৭২",
+   "৫৬"
+  ],
+  "answer": 0,
+  "explanation": "নিয়ম n² − ১: ৯² − ১ = ৮০, তাই ৮² − ১ = ৬৩।"
+ },
+ {
+  "ref": "mnt_019",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১২ : ১৪৪ :: ১৫ : ?",
+  "options": [
+   "২৫৫",
+   "১৮০",
+   "২১০",
+   "২২৫"
+  ],
+  "answer": 3,
+  "explanation": "১২² = ১৪৪, তাই ১৫² = ২২৫।"
+ },
+ {
+  "ref": "mnt_020",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৫ : ১২৫ :: ৬ : ?",
+  "options": [
+   "৩৬",
+   "২১৬",
+   "১৮০",
+   "২২৫"
+  ],
+  "answer": 1,
+  "explanation": "৫³ = ১২৫, তাই ৬³ = ২১৬।"
+ },
+ {
+  "ref": "mnt_021",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ACE : BDF :: GIK : ?",
+  "options": [
+   "HJL",
+   "HIJ",
+   "IKM",
+   "GHI"
+  ],
+  "answer": 0,
+  "explanation": "প্রতিটি বর্ণ এক ধাপ এগিয়েছে: A→B, C→D, E→F। তাই G→H, I→J, K→L।"
+ },
+ {
+  "ref": "mnt_022",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "চিনি : মিষ্টি :: নিম : ?",
+  "options": [
+   "টক",
+   "তেতো",
+   "ঝাল",
+   "নোনতা"
+  ],
+  "answer": 1,
+  "explanation": "বস্তু : স্বাদ সম্পর্ক। নিমের স্বাদ তেতো।"
+ },
+ {
+  "ref": "mnt_023",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সাদৃশ্য (Analogy)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "সিংহ : গর্জন :: কুকুর : ?",
+  "options": [
+   "বৃংহণ",
+   "হ্রেষা",
+   "ঘেউ ঘেউ",
+   "কা কা"
+  ],
+  "answer": 2,
+  "explanation": "প্রাণী : ডাক। কুকুর ঘেউ ঘেউ করে। হ্রেষা ঘোড়ার ডাক, বৃংহণ হাতির ডাক।"
+ },
+ {
+  "ref": "mnt_024",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি বেমানান? লিচু, আম, কাঁঠাল, আলু",
+  "options": [
+   "লিচু",
+   "আম",
+   "কাঁঠাল",
+   "আলু"
+  ],
+  "answer": 3,
+  "explanation": "আম, কাঁঠাল ও লিচু ফল; আলু সবজি।"
+ },
+ {
+  "ref": "mnt_025",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন সংখ্যাটি বেমানান? ৫, ৯, ১১, ৩",
+  "options": [
+   "৫",
+   "৯",
+   "১১",
+   "৩"
+  ],
+  "answer": 1,
+  "explanation": "৩, ৫, ১১ মৌলিক সংখ্যা; ৯ = ৩ × ৩, তাই মৌলিক নয়।"
+ },
+ {
+  "ref": "mnt_026",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন সংখ্যাটি বেমানান? ১২৫, ২৭, ৬৪, ১০০",
+  "options": [
+   "১২৫",
+   "২৭",
+   "৬৪",
+   "১০০"
+  ],
+  "answer": 3,
+  "explanation": "২৭ = ৩³, ৬৪ = ৪³, ১২৫ = ৫³ পূর্ণ ঘন সংখ্যা; ১০০ পূর্ণ ঘন নয়।"
+ },
+ {
+  "ref": "mnt_027",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন সংখ্যাটি বেমানান? ৪৮, ২৫, ৩৬, ৬৪",
+  "options": [
+   "৪৮",
+   "২৫",
+   "৩৬",
+   "৬৪"
+  ],
+  "answer": 0,
+  "explanation": "২৫, ৩৬, ৬৪ পূর্ণ বর্গ সংখ্যা; ৪৮ পূর্ণ বর্গ নয়।"
+ },
+ {
+  "ref": "mnt_028",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন সংখ্যাটি বেমানান? ৪৯, ২১, ৭৫, ৬৩",
+  "options": [
+   "৪৯",
+   "২১",
+   "৭৫",
+   "৬৩"
+  ],
+  "answer": 2,
+  "explanation": "২১, ৪৯, ৬৩ সংখ্যাগুলো ৭ দ্বারা বিভাজ্য; ৭৫ বিভাজ্য নয়।"
+ },
+ {
+  "ref": "mnt_029",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন সংখ্যাটি বেমানান? ৪৫, ২৫, ৫৪, ৬০",
+  "options": [
+   "৪৫",
+   "২৫",
+   "৫৪",
+   "৬০"
+  ],
+  "answer": 2,
+  "explanation": "২৫, ৪৫, ৬০ সংখ্যাগুলো ৫ দ্বারা বিভাজ্য; ৫৪ নয়।"
+ },
+ {
+  "ref": "mnt_030",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি বেমানান? বৃত্ত, ত্রিভুজ, বর্গ, আয়ত",
+  "options": [
+   "বৃত্ত",
+   "ত্রিভুজ",
+   "বর্গ",
+   "আয়ত"
+  ],
+  "answer": 0,
+  "explanation": "ত্রিভুজ, বর্গ ও আয়ত সরলরেখা দ্বারা গঠিত বহুভুজ; বৃত্ত বক্ররেখা দিয়ে গঠিত।"
+ },
+ {
+  "ref": "mnt_031",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি বেমানান? শনি, মঙ্গল, বৃহস্পতি, চাঁদ",
+  "options": [
+   "শনি",
+   "মঙ্গল",
+   "বৃহস্পতি",
+   "চাঁদ"
+  ],
+  "answer": 3,
+  "explanation": "মঙ্গল, বৃহস্পতি ও শনি গ্রহ; চাঁদ পৃথিবীর উপগ্রহ।"
+ },
+ {
+  "ref": "mnt_032",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি বেমানান? হাঙর, তিমি, রুই, ইলিশ",
+  "options": [
+   "হাঙর",
+   "তিমি",
+   "রুই",
+   "ইলিশ"
+  ],
+  "answer": 1,
+  "explanation": "হাঙর, রুই ও ইলিশ মাছ; তিমি পানিতে বাস করলেও স্তন্যপায়ী প্রাণী।"
+ },
+ {
+  "ref": "mnt_033",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি বেমানান? বাদুড়, কাক, চিল, শালিক",
+  "options": [
+   "বাদুড়",
+   "কাক",
+   "চিল",
+   "শালিক"
+  ],
+  "answer": 0,
+  "explanation": "কাক, চিল ও শালিক পাখি; বাদুড় উড়তে পারলেও স্তন্যপায়ী প্রাণী।"
+ },
+ {
+  "ref": "mnt_034",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি বেমানান? ইঞ্চি, কিলোগ্রাম, ফুট, গজ",
+  "options": [
+   "ইঞ্চি",
+   "কিলোগ্রাম",
+   "ফুট",
+   "গজ"
+  ],
+  "answer": 1,
+  "explanation": "ইঞ্চি, ফুট ও গজ দৈর্ঘ্যের একক; কিলোগ্রাম ভরের একক।"
+ },
+ {
+  "ref": "mnt_035",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি বেমানান? আদা, আলু, টমেটো, পেঁয়াজ",
+  "options": [
+   "আদা",
+   "আলু",
+   "টমেটো",
+   "পেঁয়াজ"
+  ],
+  "answer": 2,
+  "explanation": "আলু, আদা ও পেঁয়াজ মাটির নিচের রূপান্তরিত কাণ্ড; টমেটো ফল।"
+ },
+ {
+  "ref": "mnt_036",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি বেমানান? তামা, সোনা, রুপা, পিতল",
+  "options": [
+   "তামা",
+   "সোনা",
+   "রুপা",
+   "পিতল"
+  ],
+  "answer": 3,
+  "explanation": "সোনা, রুপা ও তামা মৌলিক ধাতু; পিতল তামা ও দস্তার সংকর ধাতু।"
+ },
+ {
+  "ref": "mnt_037",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি বেমানান? টোকিও, সিডনি, প্যারিস, লন্ডন",
+  "options": [
+   "টোকিও",
+   "সিডনি",
+   "প্যারিস",
+   "লন্ডন"
+  ],
+  "answer": 1,
+  "explanation": "টোকিও, প্যারিস ও লন্ডন রাজধানী; সিডনি অস্ট্রেলিয়ার বড় শহর হলেও রাজধানী নয় (রাজধানী ক্যানবেরা)।"
+ },
+ {
+  "ref": "mnt_038",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি বেমানান? খাট, চেয়ার, টেবিল, কলম",
+  "options": [
+   "খাট",
+   "চেয়ার",
+   "টেবিল",
+   "কলম"
+  ],
+  "answer": 3,
+  "explanation": "চেয়ার, টেবিল ও খাট আসবাবপত্র; কলম লেখার উপকরণ।"
+ },
+ {
+  "ref": "mnt_039",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি বেমানান? স্টেথোস্কোপ, হাতুড়ি, করাত, বাটাল",
+  "options": [
+   "স্টেথোস্কোপ",
+   "হাতুড়ি",
+   "করাত",
+   "বাটাল"
+  ],
+  "answer": 0,
+  "explanation": "হাতুড়ি, করাত ও বাটাল কাঠমিস্ত্রির যন্ত্র; স্টেথোস্কোপ চিকিৎসকের যন্ত্র।"
+ },
+ {
+  "ref": "mnt_040",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি বেমানান? ভুটান, নেপাল, থাইল্যান্ড, মালদ্বীপ",
+  "options": [
+   "ভুটান",
+   "নেপাল",
+   "থাইল্যান্ড",
+   "মালদ্বীপ"
+  ],
+  "answer": 2,
+  "explanation": "নেপাল, ভুটান ও মালদ্বীপ সার্কভুক্ত দেশ; থাইল্যান্ড সার্কের সদস্য নয়।"
+ },
+ {
+  "ref": "mnt_041",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন বর্ণটি বেমানান? E, A, M, O",
+  "options": [
+   "E",
+   "A",
+   "M",
+   "O"
+  ],
+  "answer": 2,
+  "explanation": "A, E, O স্বরবর্ণ (vowel); M ব্যঞ্জনবর্ণ।"
+ },
+ {
+  "ref": "mnt_042",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "বেমানান নির্ণয় (Odd One Out)",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন সংখ্যাটি বেমানান? ১২১, ১৪৪, ১৬৯, ১৮০",
+  "options": [
+   "১৮০",
+   "১২১",
+   "১৪৪",
+   "১৬৯"
+  ],
+  "answer": 0,
+  "explanation": "১২১ = ১১², ১৪৪ = ১২², ১৬৯ = ১৩² পূর্ণবর্গ; ১৮০ পূর্ণবর্গ নয়।"
+ },
+ {
+  "ref": "mnt_043",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ১, ৪, ৯, ১৬, ২৫, ?",
+  "options": [
+   "৪৯",
+   "৩০",
+   "৩৫",
+   "৩৬"
+  ],
+  "answer": 3,
+  "explanation": "ধারাটি ক্রমিক স্বাভাবিক সংখ্যার বর্গ: ১², ২², ৩², ৪², ৫², তাই পরের পদ ৬² = ৩৬।"
+ },
+ {
+  "ref": "mnt_044",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ২, ৫, ১০, ১৭, ২৬, ?",
+  "options": [
+   "৩৫",
+   "৩৭",
+   "৩৬",
+   "৪০"
+  ],
+  "answer": 1,
+  "explanation": "প্রতিটি পদ n² + ১: ১+১, ৪+১, ৯+১, ১৬+১, ২৫+১; পরের পদ ৩৬ + ১ = ৩৭।"
+ },
+ {
+  "ref": "mnt_045",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ৩, ৬, ১২, ২৪, ?",
+  "options": [
+   "৪৮",
+   "৩৬",
+   "৩০",
+   "৭২"
+  ],
+  "answer": 0,
+  "explanation": "প্রতিটি পদ আগের পদের দ্বিগুণ: ২৪ × ২ = ৪৮।"
+ },
+ {
+  "ref": "mnt_046",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ১, ১, ২, ৩, ৫, ৮, ?",
+  "options": [
+   "১১",
+   "১৩",
+   "১২",
+   "১৫"
+  ],
+  "answer": 1,
+  "explanation": "এটি ফিবোনাচি ধারা; প্রতিটি পদ আগের দুই পদের যোগফল: ৫ + ৮ = ১৩।"
+ },
+ {
+  "ref": "mnt_047",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ২, ৩, ৫, ৭, ১১, ?",
+  "options": [
+   "১৫",
+   "১২",
+   "১৩",
+   "১৭"
+  ],
+  "answer": 2,
+  "explanation": "ধারাটি ক্রমিক মৌলিক সংখ্যা; ১১-এর পরের মৌলিক সংখ্যা ১৩।"
+ },
+ {
+  "ref": "mnt_048",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ১, ৮, ২৭, ৬৪, ?",
+  "options": [
+   "২১৬",
+   "১০০",
+   "৮১",
+   "১২৫"
+  ],
+  "answer": 3,
+  "explanation": "ধারাটি ক্রমিক সংখ্যার ঘন: ১³, ২³, ৩³, ৪³; পরের পদ ৫³ = ১২৫।"
+ },
+ {
+  "ref": "mnt_049",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ৫, ১১, ২৩, ৪৭, ?",
+  "options": [
+   "৯৪",
+   "৯৫",
+   "৯৩",
+   "৮৯"
+  ],
+  "answer": 1,
+  "explanation": "প্রতিটি পদ = আগের পদ × ২ + ১: ৪৭ × ২ + ১ = ৯৫।"
+ },
+ {
+  "ref": "mnt_050",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ১০০, ৯৫, ৮৫, ৭০, ?",
+  "options": [
+   "৬০",
+   "৫৫",
+   "৪৫",
+   "৫০"
+  ],
+  "answer": 3,
+  "explanation": "পার্থক্য ৫, ১০, ১৫, ২০ করে কমছে: ৭০ − ২০ = ৫০।"
+ },
+ {
+  "ref": "mnt_051",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ৭, ১০, ৮, ১১, ৯, ?",
+  "options": [
+   "১২",
+   "১০",
+   "৭",
+   "১৩"
+  ],
+  "answer": 0,
+  "explanation": "পর্যায়ক্রমে +৩ ও −২: ৭+৩=১০, ১০−২=৮, ৮+৩=১১, ১১−২=৯, ৯+৩=১২।"
+ },
+ {
+  "ref": "mnt_052",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ১, ২, ৬, ২৪, ১২০, ?",
+  "options": [
+   "২৪০",
+   "৬০০",
+   "৭২০",
+   "৫০৪"
+  ],
+  "answer": 2,
+  "explanation": "ধারাটি ক্রমগুণিত (factorial): পদগুলো যথাক্রমে ×২, ×৩, ×৪, ×৫; পরের পদ ১২০ × ৬ = ৭২০।"
+ },
+ {
+  "ref": "mnt_053",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ৪, ৯, ২৫, ৪৯, ?",
+  "options": [
+   "৬৪",
+   "৮১",
+   "১২১",
+   "১০০"
+  ],
+  "answer": 2,
+  "explanation": "ক্রমিক মৌলিক সংখ্যার বর্গ: ২², ৩², ৫², ৭²; পরের মৌলিক ১১, তাই ১১² = ১২১।"
+ },
+ {
+  "ref": "mnt_054",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ১, ৩, ৬, ১০, ১৫, ?",
+  "options": [
+   "২১",
+   "২০",
+   "১৮",
+   "২৫"
+  ],
+  "answer": 0,
+  "explanation": "পার্থক্য ২, ৩, ৪, ৫ করে বাড়ছে; পরের পার্থক্য ৬: ১৫ + ৬ = ২১ (ত্রিভুজ সংখ্যা)।"
+ },
+ {
+  "ref": "mnt_055",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ৬৪, ৩২, ১৬, ৮, ?",
+  "options": [
+   "০",
+   "২",
+   "৬",
+   "৪"
+  ],
+  "answer": 3,
+  "explanation": "প্রতিটি পদ আগের পদের অর্ধেক: ৮ ÷ ২ = ৪।"
+ },
+ {
+  "ref": "mnt_056",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ৩, ৯, ২৭, ৮১, ?",
+  "options": [
+   "১৬২",
+   "২৪৩",
+   "২১৬",
+   "৩২৪"
+  ],
+  "answer": 1,
+  "explanation": "প্রতিটি পদ আগের পদের ৩ গুণ: ৮১ × ৩ = ২৪৩।"
+ },
+ {
+  "ref": "mnt_057",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ০, ৩, ৮, ১৫, ২৪, ?",
+  "options": [
+   "৩৫",
+   "৩৩",
+   "৩৬",
+   "৩০"
+  ],
+  "answer": 0,
+  "explanation": "প্রতিটি পদ n² − ১: ১−১, ৪−১, ৯−১, ১৬−১, ২৫−১; পরের পদ ৩৬ − ১ = ৩৫।"
+ },
+ {
+  "ref": "mnt_058",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ১১, ১৩, ১৭, ১৯, ২৩, ?",
+  "options": [
+   "২৫",
+   "২৯",
+   "২৭",
+   "৩১"
+  ],
+  "answer": 1,
+  "explanation": "ক্রমিক মৌলিক সংখ্যা; ২৩-এর পরের মৌলিক সংখ্যা ২৯।"
+ },
+ {
+  "ref": "mnt_059",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ১, ৫, ১৪, ৩০, ৫৫, ?",
+  "options": [
+   "৮১",
+   "৮৫",
+   "৯১",
+   "৯০"
+  ],
+  "answer": 2,
+  "explanation": "পার্থক্যগুলো ৪, ৯, ১৬, ২৫ (পূর্ণবর্গ); পরের পার্থক্য ৩৬: ৫৫ + ৩৬ = ৯১।"
+ },
+ {
+  "ref": "mnt_060",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ৩, ৭, ১৫, ৩১, ৬৩, ?",
+  "options": [
+   "৯৫",
+   "১২৬",
+   "১২৫",
+   "১২৭"
+  ],
+  "answer": 3,
+  "explanation": "প্রতিটি পদ = আগের পদ × ২ + ১; ৬৩ × ২ + ১ = ১২৭ (প্রতিটি পদ ২ⁿ − ১)।"
+ },
+ {
+  "ref": "mnt_061",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ৮, ২৪, ১২, ৩৬, ১৮, ?",
+  "options": [
+   "৯",
+   "৫৪",
+   "৩৬",
+   "৭২"
+  ],
+  "answer": 1,
+  "explanation": "পর্যায়ক্রমে ×৩ ও ÷২: ৮×৩=২৪, ÷২=১২, ×৩=৩৬, ÷২=১৮, ×৩=৫৪।"
+ },
+ {
+  "ref": "mnt_062",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ১, ৪, ২৭, ২৫৬, ?",
+  "options": [
+   "১২৫০",
+   "৬২৫",
+   "১০২৪",
+   "৩১২৫"
+  ],
+  "answer": 3,
+  "explanation": "প্রতিটি পদ nⁿ: ১¹, ২², ৩³, ৪⁴; পরের পদ ৫⁵ = ৩১২৫।"
+ },
+ {
+  "ref": "mnt_063",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ১২০, ৯৯, ৮০, ৬৩, ?",
+  "options": [
+   "৪৮",
+   "৫০",
+   "৪৯",
+   "৪৬"
+  ],
+  "answer": 0,
+  "explanation": "পদগুলো ১১²−১, ১০²−১, ৯²−১, ৮²−১; পরের পদ ৭² − ১ = ৪৮।"
+ },
+ {
+  "ref": "mnt_064",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারায় কোন সংখ্যাটি ভুল? ৩, ৭, ১৫, ৩১, ৬৫, ১২৭",
+  "options": [
+   "৩১",
+   "৭",
+   "৬৫",
+   "১২৭"
+  ],
+  "answer": 2,
+  "explanation": "নিয়ম: আগের পদ × ২ + ১। ৩১ × ২ + ১ = ৬৩ হওয়া উচিত, ৬৫ নয়।"
+ },
+ {
+  "ref": "mnt_065",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ২, ৪, ১২, ৪৮, ?",
+  "options": [
+   "৯৬",
+   "১৯২",
+   "২৪০",
+   "১৪৪"
+  ],
+  "answer": 2,
+  "explanation": "গুণক বাড়ছে: ×২, ×৩, ×৪; পরের গুণক ৫: ৪৮ × ৫ = ২৪০।"
+ },
+ {
+  "ref": "mnt_066",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ১, ২, ৪, ৭, ১১, ?",
+  "options": [
+   "১৬",
+   "১৫",
+   "১৪",
+   "১৮"
+  ],
+  "answer": 0,
+  "explanation": "পার্থক্য ১, ২, ৩, ৪; পরের পার্থক্য ৫: ১১ + ৫ = ১৬।"
+ },
+ {
+  "ref": "mnt_067",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ১৯৮, ১৯৪, ১৮৬, ১৭০, ?",
+  "options": [
+   "১৩০",
+   "১৫৪",
+   "১৪২",
+   "১৩৮"
+  ],
+  "answer": 3,
+  "explanation": "পার্থক্য ৪, ৮, ১৬ করে দ্বিগুণ হচ্ছে; পরের পার্থক্য ৩২: ১৭০ − ৩২ = ১৩৮।"
+ },
+ {
+  "ref": "mnt_068",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ৫, ১০, ১৩, ২৬, ২৯, ?",
+  "options": [
+   "৩২",
+   "৫৮",
+   "৫২",
+   "৬০"
+  ],
+  "answer": 1,
+  "explanation": "পর্যায়ক্রমে ×২ ও +৩: ৫×২=১০, +৩=১৩, ×২=২৬, +৩=২৯, ×২=৫৮।"
+ },
+ {
+  "ref": "mnt_069",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সংখ্যা ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী সংখ্যা কত? ৬, ১১, ২১, ৩৬, ৫৬, ?",
+  "options": [
+   "৮১",
+   "৭৬",
+   "৮৬",
+   "৭১"
+  ],
+  "answer": 0,
+  "explanation": "পার্থক্য ৫, ১০, ১৫, ২০; পরের পার্থক্য ২৫: ৫৬ + ২৫ = ৮১।"
+ },
+ {
+  "ref": "mnt_070",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অক্ষর ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী বর্ণ কোনটি? A, C, E, G, ?",
+  "options": [
+   "H",
+   "I",
+   "J",
+   "K"
+  ],
+  "answer": 1,
+  "explanation": "প্রতিবার একটি করে বর্ণ বাদ দিয়ে (+২) এগোচ্ছে: G + ২ = I।"
+ },
+ {
+  "ref": "mnt_071",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অক্ষর ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী বর্ণ কোনটি? Z, X, V, T, ?",
+  "options": [
+   "Q",
+   "S",
+   "R",
+   "P"
+  ],
+  "answer": 2,
+  "explanation": "উল্টো দিকে প্রতিবার ২ ধাপ পিছিয়ে যাচ্ছে: T − ২ = R।"
+ },
+ {
+  "ref": "mnt_072",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অক্ষর ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী বর্ণ কোনটি? A, B, D, G, K, ?",
+  "options": [
+   "N",
+   "O",
+   "Q",
+   "P"
+  ],
+  "answer": 3,
+  "explanation": "ব্যবধান +১, +২, +৩, +৪; পরের ব্যবধান +৫: K (১১) + ৫ = P (১৬)।"
+ },
+ {
+  "ref": "mnt_073",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অক্ষর ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী পদ কোনটি? AZ, BY, CX, ?",
+  "options": [
+   "DV",
+   "DW",
+   "EW",
+   "DX"
+  ],
+  "answer": 1,
+  "explanation": "প্রথম বর্ণ সামনে (A→B→C→D) এবং দ্বিতীয় বর্ণ পেছনে (Z→Y→X→W) যাচ্ছে।"
+ },
+ {
+  "ref": "mnt_074",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অক্ষর ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী বর্ণ কোনটি? B, E, H, K, ?",
+  "options": [
+   "L",
+   "M",
+   "O",
+   "N"
+  ],
+  "answer": 3,
+  "explanation": "প্রতিবার ৩ ধাপ এগোচ্ছে: K (১১) + ৩ = N (১৪)।"
+ },
+ {
+  "ref": "mnt_075",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অক্ষর ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী পদ কোনটি? AB, DE, GH, ?",
+  "options": [
+   "JK",
+   "IJ",
+   "KL",
+   "HI"
+  ],
+  "answer": 0,
+  "explanation": "প্রতিটি জোড়ার পর একটি বর্ণ বাদ: AB (C বাদ) DE (F বাদ) GH (I বাদ) JK।"
+ },
+ {
+  "ref": "mnt_076",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অক্ষর ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী বর্ণ কোনটি? Z, W, T, Q, ?",
+  "options": [
+   "O",
+   "M",
+   "N",
+   "P"
+  ],
+  "answer": 2,
+  "explanation": "প্রতিবার ৩ ধাপ পিছিয়ে যাচ্ছে: Q (১৭) − ৩ = N (১৪)।"
+ },
+ {
+  "ref": "mnt_077",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অক্ষর ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী পদ কোনটি? ACE, FHJ, KMO, ?",
+  "options": [
+   "OQS",
+   "PQR",
+   "PRT",
+   "QSU"
+  ],
+  "answer": 2,
+  "explanation": "প্রতিটি পদের ভেতরে +২ ব্যবধান, আর প্রতিটি পদ আগের শেষ বর্ণের পরের বর্ণ থেকে শুরু: O-এর পর P, তাই PRT।"
+ },
+ {
+  "ref": "mnt_078",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অক্ষর ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী পদ কোনটি? A1, C3, E5, ?",
+  "options": [
+   "G7",
+   "F6",
+   "G6",
+   "H8"
+  ],
+  "answer": 0,
+  "explanation": "বর্ণ ২ ধাপ এবং সংখ্যা ২ করে বাড়ছে; সংখ্যাটি বর্ণের অবস্থান নির্দেশ করে: G = ৭।"
+ },
+ {
+  "ref": "mnt_079",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অক্ষর ধারা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী বর্ণ কোনটি? J, F, M, A, M, J, J, ?",
+  "options": [
+   "J",
+   "S",
+   "O",
+   "A"
+  ],
+  "answer": 3,
+  "explanation": "বর্ণগুলো ইংরেজি মাসের আদ্যক্ষর: January … July; পরের মাস August, তাই A।"
+ },
+ {
+  "ref": "mnt_080",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অক্ষর ধারা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী বর্ণ কোনটি? M, T, W, T, F, ?",
+  "options": [
+   "M",
+   "S",
+   "T",
+   "W"
+  ],
+  "answer": 1,
+  "explanation": "বর্ণগুলো সপ্তাহের দিনের আদ্যক্ষর: Monday … Friday; পরের দিন Saturday, তাই S।"
+ },
+ {
+  "ref": "mnt_081",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অক্ষর ধারা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী পদ কোনটি? BDF, CEG, DFH, ?",
+  "options": [
+   "EGI",
+   "EFG",
+   "FHJ",
+   "EGH"
+  ],
+  "answer": 0,
+  "explanation": "প্রতিটি পদের প্রতিটি বর্ণ এক ধাপ করে এগোচ্ছে: D→E, F→G, H→I।"
+ },
+ {
+  "ref": "mnt_082",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অক্ষর ধারা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারাটির পরবর্তী বর্ণ কোনটি? A, D, I, P, ?",
+  "options": [
+   "W",
+   "Y",
+   "X",
+   "Z"
+  ],
+  "answer": 1,
+  "explanation": "বর্ণগুলোর অবস্থান ১, ৪, ৯, ১৬ (পূর্ণবর্গ); পরের অবস্থান ২৫ = Y।"
+ },
+ {
+  "ref": "mnt_083",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনো সংকেতে CAT কে DBU লেখা হলে DOG কে কী লেখা হবে?",
+  "options": [
+   "DPH",
+   "EPG",
+   "EPH",
+   "FPH"
+  ],
+  "answer": 2,
+  "explanation": "প্রতিটি বর্ণ এক ধাপ এগিয়েছে: D→E, O→P, G→H।"
+ },
+ {
+  "ref": "mnt_084",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনো সংকেতে BOOK কে CPPL লেখা হলে PEN কে কী লেখা হবে?",
+  "options": [
+   "QFN",
+   "QEO",
+   "OFO",
+   "QFO"
+  ],
+  "answer": 3,
+  "explanation": "প্রতিটি বর্ণ +১: P→Q, E→F, N→O।"
+ },
+ {
+  "ref": "mnt_085",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনো সংকেতে APPLE কে ELPPA লেখা হলে MANGO কে কী লেখা হবে?",
+  "options": [
+   "OGANM",
+   "OGNAM",
+   "MGNAO",
+   "ONGAM"
+  ],
+  "answer": 1,
+  "explanation": "শব্দটিকে উল্টো ক্রমে লেখা হয়েছে; MANGO উল্টালে OGNAM।"
+ },
+ {
+  "ref": "mnt_086",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "A = ১, B = ২, C = ৩ … হলে BAD শব্দের বর্ণমানের যোগফল কত?",
+  "options": [
+   "৯",
+   "৬",
+   "৮",
+   "৭"
+  ],
+  "answer": 3,
+  "explanation": "B = ২, A = ১, D = ৪; যোগফল ২ + ১ + ৪ = ৭।"
+ },
+ {
+  "ref": "mnt_087",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনো সংকেতে GOLD কে HPME লেখা হলে SILVER কে কী লেখা হবে?",
+  "options": [
+   "TJMWFS",
+   "TJMWES",
+   "TIMWFS",
+   "RHKUDQ"
+  ],
+  "answer": 0,
+  "explanation": "প্রতিটি বর্ণ +১: S→T, I→J, L→M, V→W, E→F, R→S।"
+ },
+ {
+  "ref": "mnt_088",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনো সংকেতে MOTHER কে NPUIFS লেখা হলে FATHER কে কী লেখা হবে?",
+  "options": [
+   "GAUIFS",
+   "GBUJFS",
+   "GBUIFS",
+   "EZSGDQ"
+  ],
+  "answer": 2,
+  "explanation": "প্রতিটি বর্ণ +১: F→G, A→B, T→U, H→I, E→F, R→S।"
+ },
+ {
+  "ref": "mnt_089",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনো সংকেতে ZEBRA কে ২৬৫২১৮১ লেখা হলে COBRA কে কী লেখা হবে?",
+  "options": [
+   "৩১৫২১৭১",
+   "৩১৪২১৮১",
+   "৩১৫২১৮১",
+   "২১৫২১৮১"
+  ],
+  "answer": 2,
+  "explanation": "প্রতিটি বর্ণের বর্ণমালায় অবস্থান পাশাপাশি লেখা হয়েছে: C=৩, O=১৫, B=২, R=১৮, A=১ → ৩১৫২১৮১।"
+ },
+ {
+  "ref": "mnt_090",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "প্রতিটি বর্ণকে বর্ণমালার বিপরীত বর্ণ দিয়ে লেখা হলে (A↔Z, B↔Y …) GOOD কে কী লেখা হবে?",
+  "options": [
+   "TLLW",
+   "TLLV",
+   "SLLW",
+   "TKKW"
+  ],
+  "answer": 0,
+  "explanation": "বিপরীত বর্ণের অবস্থান = ২৭ − অবস্থান। G(৭)→T(২০), O(১৫)→L(১২), D(৪)→W(২৩)।"
+ },
+ {
+  "ref": "mnt_091",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "যদি ২ * ৩ = ১৩ এবং ৩ * ৪ = ২৫ হয়, তবে ৪ * ৫ = ?",
+  "options": [
+   "৮১",
+   "২০",
+   "৪০",
+   "৪১"
+  ],
+  "answer": 3,
+  "explanation": "নিয়ম a² + b²: ২² + ৩² = ১৩, ৩² + ৪² = ২৫; তাই ৪² + ৫² = ১৬ + ২৫ = ৪১।"
+ },
+ {
+  "ref": "mnt_092",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "যদি ৫ ◊ ৩ = ২৮ এবং ৯ ◊ ১ = ৮১০ হয়, তবে ৮ ◊ ৬ = ?",
+  "options": [
+   "১৪২",
+   "২১৪",
+   "৪৮১৪",
+   "২৪৮"
+  ],
+  "answer": 1,
+  "explanation": "প্রথমে বিয়োগফল, পরে যোগফল পাশাপাশি লেখা হয়: ৫−৩=২, ৫+৩=৮ → ২৮। তাই ৮−৬=২, ৮+৬=১৪ → ২১৪।"
+ },
+ {
+  "ref": "mnt_093",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "যদি ১ = ৫, ২ = ২৫, ৩ = ৩২৫, ৪ = ৪৩২৫ হয়, তবে ৫ = ?",
+  "options": [
+   "১",
+   "৫৪৩২৫",
+   "৫",
+   "২৫"
+  ],
+  "answer": 0,
+  "explanation": "প্রশ্নের প্রথম তথ্যেই বলা আছে ১ = ৫। তাই উল্টোভাবে ৫ = ১। এটি মনোযোগ যাচাইয়ের একটি কৌশলী প্রশ্ন।"
+ },
+ {
+  "ref": "mnt_094",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "A = ১, B = ২ … Z = ২৬ হলে, RED = ২৭ হলে GREEN = ?",
+  "options": [
+   "৪৮",
+   "৪৯",
+   "৫০",
+   "৪৫"
+  ],
+  "answer": 1,
+  "explanation": "G(৭) + R(১৮) + E(৫) + E(৫) + N(১৪) = ৪৯।"
+ },
+ {
+  "ref": "mnt_095",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনো সংকেতে COLD কে DPME লেখা হলে HEAT কে কী লেখা হবে?",
+  "options": [
+   "GDZS",
+   "IFBT",
+   "IFBU",
+   "IEBU"
+  ],
+  "answer": 2,
+  "explanation": "প্রতিটি বর্ণ +১: H→I, E→F, A→B, T→U।"
+ },
+ {
+  "ref": "mnt_096",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "A = ২, B = ৪, C = ৬ … হলে BAD এর মান (যোগফল) কত?",
+  "options": [
+   "১৬",
+   "৭",
+   "১২",
+   "১৪"
+  ],
+  "answer": 3,
+  "explanation": "প্রতিটি বর্ণের মান অবস্থানের দ্বিগুণ: B=৪, A=২, D=৮; যোগফল ১৪।"
+ },
+ {
+  "ref": "mnt_097",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনো সংকেতে SUN কে TVO লেখা হলে MOON কে কী লেখা হবে?",
+  "options": [
+   "NPPN",
+   "NPPO",
+   "NOOP",
+   "LNNM"
+  ],
+  "answer": 1,
+  "explanation": "প্রতিটি বর্ণ +১: M→N, O→P, O→P, N→O।"
+ },
+ {
+  "ref": "mnt_098",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "কোডিং-ডিকোডিং",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "যদি '+' অর্থ '÷', '−' অর্থ '×', '×' অর্থ '+' এবং '÷' অর্থ '−' হয়, তবে ১৬ + ৪ − ৩ × ৫ ÷ ২ = ?",
+  "options": [
+   "২১",
+   "১৭",
+   "১৩",
+   "১৫"
+  ],
+  "answer": 3,
+  "explanation": "চিহ্ন বদলে পাই ১৬ ÷ ৪ × ৩ + ৫ − ২ = ৪ × ৩ + ৫ − ২ = ১২ + ৫ − ২ = ১৫।"
+ },
+ {
+  "ref": "mnt_099",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "রক্তের সম্পর্ক",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "রাজু সীমার বাবার একমাত্র ছেলে। রাজু সীমার কী হয়?",
+  "options": [
+   "ভাই",
+   "বাবা",
+   "চাচা",
+   "মামা"
+  ],
+  "answer": 0,
+  "explanation": "সীমার বাবার একমাত্র ছেলে মানে সীমার ভাই।"
+ },
+ {
+  "ref": "mnt_100",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "রক্তের সম্পর্ক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি ছেলের ছবির দিকে ইঙ্গিত করে এক ব্যক্তি বললেন, \"ওর মা আমার মায়ের একমাত্র মেয়ে।\" ছেলেটি ঐ ব্যক্তির কী হয়?",
+  "options": [
+   "ভাই",
+   "ছেলে",
+   "ভাগ্নে",
+   "ভাতিজা"
+  ],
+  "answer": 2,
+  "explanation": "বক্তার মায়ের একমাত্র মেয়ে হলো বক্তার বোন। বোনের ছেলে বক্তার ভাগ্নে।"
+ },
+ {
+  "ref": "mnt_101",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "রক্তের সম্পর্ক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "রফিক একটি ছেলেকে দেখিয়ে বলল, \"সে আমার বাবার একমাত্র ছেলের ছেলে।\" ছেলেটি রফিকের কী হয়?",
+  "options": [
+   "ভাতিজা",
+   "ভাই",
+   "ছেলে",
+   "নাতি"
+  ],
+  "answer": 2,
+  "explanation": "রফিকের বাবার একমাত্র ছেলে রফিক নিজেই; তাই \"রফিকের ছেলে\"।"
+ },
+ {
+  "ref": "mnt_102",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "রক্তের সম্পর্ক",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "রিনার মা হলেন তপুর বোন। তপু (পুরুষ) রিনার কী হয়?",
+  "options": [
+   "মামা",
+   "চাচা",
+   "খালু",
+   "ফুফা"
+  ],
+  "answer": 0,
+  "explanation": "মায়ের ভাই হলেন মামা।"
+ },
+ {
+  "ref": "mnt_103",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "রক্তের সম্পর্ক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সুমন একটি মেয়েকে দেখিয়ে বলল, \"সে আমার দাদার একমাত্র ছেলের মেয়ে।\" মেয়েটি সুমনের কী হয়?",
+  "options": [
+   "মেয়ে",
+   "ভাতিজি",
+   "চাচাতো বোন",
+   "বোন"
+  ],
+  "answer": 3,
+  "explanation": "দাদার একমাত্র ছেলে সুমনের বাবা; বাবার মেয়ে সুমনের বোন।"
+ },
+ {
+  "ref": "mnt_104",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "রক্তের সম্পর্ক",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বাবার বোনের স্বামী সম্পর্কে কী হন?",
+  "options": [
+   "খালু",
+   "ফুফা",
+   "মামা",
+   "চাচা"
+  ],
+  "answer": 1,
+  "explanation": "বাবার বোন ফুফু; ফুফুর স্বামী ফুফা। মায়ের বোনের স্বামী খালু।"
+ },
+ {
+  "ref": "mnt_105",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "রক্তের সম্পর্ক",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "মামার ছেলে সম্পর্কে কী হয়?",
+  "options": [
+   "মামাতো ভাই",
+   "চাচাতো ভাই",
+   "খালাতো ভাই",
+   "ফুফাতো ভাই"
+  ],
+  "answer": 0,
+  "explanation": "মামার ছেলে মামাতো ভাই, চাচার ছেলে চাচাতো ভাই।"
+ },
+ {
+  "ref": "mnt_106",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "রক্তের সম্পর্ক",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "A হলো B এর বোন। C হলো B এর মা। D হলো C এর বাবা। A, D এর কী হয়?",
+  "options": [
+   "মেয়ে",
+   "নাতনি",
+   "ভাতিজি",
+   "নাতি"
+  ],
+  "answer": 1,
+  "explanation": "A ও B ভাইবোন এবং C তাদের মা। D হলো C এর বাবা, অর্থাৎ A এর নানা। তাই A হলো D এর নাতনি।"
+ },
+ {
+  "ref": "mnt_107",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "রক্তের সম্পর্ক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "P হলো Q এর ভাই। R হলো Q এর মা। S হলো R এর বাবা। S, P এর কী হন?",
+  "options": [
+   "বাবা",
+   "দাদা",
+   "নানা",
+   "মামা"
+  ],
+  "answer": 2,
+  "explanation": "R হলো P ও Q এর মা; মায়ের বাবা হলেন নানা।"
+ },
+ {
+  "ref": "mnt_108",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "রক্তের সম্পর্ক",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "এক মহিলা বললেন, \"উনি আমার একমাত্র ভাইয়ের একমাত্র বোনের মা।\" উনি মহিলার কী হন?",
+  "options": [
+   "শাশুড়ি",
+   "দাদি",
+   "খালা",
+   "মা"
+  ],
+  "answer": 3,
+  "explanation": "মহিলার একমাত্র ভাইয়ের একমাত্র বোন মহিলা নিজেই; তাই উনি মহিলার মা।"
+ },
+ {
+  "ref": "mnt_109",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "রক্তের সম্পর্ক",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "স্ত্রীর ভাই সম্পর্কে কী হন?",
+  "options": [
+   "ভায়রা",
+   "শ্যালক",
+   "দেবর",
+   "ভাশুর"
+  ],
+  "answer": 1,
+  "explanation": "স্ত্রীর ভাই শ্যালক; স্বামীর ছোট ভাই দেবর এবং বড় ভাই ভাশুর।"
+ },
+ {
+  "ref": "mnt_110",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "রক্তের সম্পর্ক",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "স্বামীর বোন সম্পর্কে কী হন?",
+  "options": [
+   "ভাবি",
+   "শ্যালিকা",
+   "জা",
+   "ননদ"
+  ],
+  "answer": 3,
+  "explanation": "স্বামীর বোনকে ননদ বলে; স্ত্রীর বোন শ্যালিকা।"
+ },
+ {
+  "ref": "mnt_111",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "রক্তের সম্পর্ক",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি পরিবারে প্রতিটি ছেলের যতজন ভাই ততজন বোন, কিন্তু প্রতিটি মেয়ের বোনের সংখ্যা ভাইয়ের সংখ্যার অর্ধেক। পরিবারে মোট কতজন সন্তান?",
+  "options": [
+   "৭ জন",
+   "৫ জন",
+   "৬ জন",
+   "৯ জন"
+  ],
+  "answer": 0,
+  "explanation": "ছেলে b, মেয়ে g হলে: b − ১ = g এবং g − ১ = b/২। সমাধান করলে b = ৪, g = ৩; মোট ৭ জন।"
+ },
+ {
+  "ref": "mnt_112",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "দিক নির্ণয়",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "এক ব্যক্তি উত্তরমুখী হয়ে দাঁড়িয়ে প্রথমে ডানে, পরে আবার ডানে ঘুরলেন। এখন তার মুখ কোন দিকে?",
+  "options": [
+   "পশ্চিম",
+   "পূর্ব",
+   "দক্ষিণ",
+   "উত্তর"
+  ],
+  "answer": 2,
+  "explanation": "উত্তর থেকে ডানে ঘুরলে পূর্ব, পূর্ব থেকে আবার ডানে ঘুরলে দক্ষিণ।"
+ },
+ {
+  "ref": "mnt_113",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "দিক নির্ণয়",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "সকালবেলা সূর্যের দিকে পিঠ দিয়ে দাঁড়ালে আপনার মুখ কোন দিকে থাকবে?",
+  "options": [
+   "উত্তর",
+   "পূর্ব",
+   "পশ্চিম",
+   "দক্ষিণ"
+  ],
+  "answer": 2,
+  "explanation": "সকালে সূর্য পূর্ব দিকে থাকে; পূর্ব দিকে পিঠ দিলে মুখ পশ্চিম দিকে।"
+ },
+ {
+  "ref": "mnt_114",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "দিক নির্ণয়",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বিকেলবেলা একটি খুঁটির ছায়া কোন দিকে পড়বে?",
+  "options": [
+   "পূর্ব",
+   "পশ্চিম",
+   "উত্তর",
+   "দক্ষিণ"
+  ],
+  "answer": 0,
+  "explanation": "বিকেলে সূর্য পশ্চিমে থাকে, তাই ছায়া পড়ে বিপরীত দিকে অর্থাৎ পূর্বে।"
+ },
+ {
+  "ref": "mnt_115",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "দিক নির্ণয়",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "এক ব্যক্তি ৩ কিমি উত্তরে গিয়ে ডানে ঘুরে ৪ কিমি গেলেন। শুরুর স্থান থেকে তার সরাসরি দূরত্ব কত?",
+  "options": [
+   "৬ কিমি",
+   "৭ কিমি",
+   "১ কিমি",
+   "৫ কিমি"
+  ],
+  "answer": 3,
+  "explanation": "পথ দুটি সমকোণ তৈরি করে; পিথাগোরাসের উপপাদ্য অনুযায়ী দূরত্ব √(৩² + ৪²) = √২৫ = ৫ কিমি।"
+ },
+ {
+  "ref": "mnt_116",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "দিক নির্ণয়",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "এক ব্যক্তি ১০ মিটার পূর্বে গিয়ে বামে ঘুরে ১০ মিটার গেলেন, তারপর আবার বামে ঘুরে ১০ মিটার গেলেন। শুরুর স্থান থেকে তিনি কোথায়?",
+  "options": [
+   "১০ মিটার দক্ষিণে",
+   "১০ মিটার উত্তরে",
+   "১০ মিটার পূর্বে",
+   "শুরুর স্থানেই"
+  ],
+  "answer": 1,
+  "explanation": "পূর্বে ১০ মি. → বামে মানে উত্তরে ১০ মি. → আবার বামে মানে পশ্চিমে ১০ মি.। পূর্ব-পশ্চিম কাটাকাটি হয়ে তিনি শুরুর স্থান থেকে ১০ মি. উত্তরে।"
+ },
+ {
+  "ref": "mnt_117",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "দিক নির্ণয়",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "এক ব্যক্তি ৫ কিমি দক্ষিণে গিয়ে বামে ঘুরে ৩ কিমি গেলেন, তারপর আবার বামে ঘুরে ৫ কিমি গেলেন। শুরুর স্থান থেকে তিনি কোথায়?",
+  "options": [
+   "৩ কিমি পূর্বে",
+   "৩ কিমি পশ্চিমে",
+   "৫ কিমি উত্তরে",
+   "৮ কিমি দক্ষিণে"
+  ],
+  "answer": 0,
+  "explanation": "দক্ষিণমুখী অবস্থায় বামে ঘুরলে পূর্ব; পূর্বমুখী অবস্থায় বামে ঘুরলে উত্তর। উত্তর-দক্ষিণ ৫ কিমি কাটাকাটি হয়, থাকে ৩ কিমি পূর্বে।"
+ },
+ {
+  "ref": "mnt_118",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "দিক নির্ণয়",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "দক্ষিণ-পূর্বমুখী হয়ে দাঁড়ানো ব্যক্তি ১৮০° ঘুরলে তার মুখ কোন দিকে থাকবে?",
+  "options": [
+   "উত্তর-পূর্ব",
+   "উত্তর-পশ্চিম",
+   "দক্ষিণ-পশ্চিম",
+   "পশ্চিম"
+  ],
+  "answer": 1,
+  "explanation": "১৮০° ঘুরলে ঠিক বিপরীত দিকে মুখ হয়; দক্ষিণ-পূর্বের বিপরীত উত্তর-পশ্চিম।"
+ },
+ {
+  "ref": "mnt_119",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "দিক নির্ণয়",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "এক ব্যক্তি পশ্চিমমুখী হয়ে দাঁড়িয়ে ঘড়ির কাঁটার দিকে ৪৫° এবং পরে ঘড়ির কাঁটার বিপরীতে ১৮০° ঘুরলেন। এখন তার মুখ কোন দিকে?",
+  "options": [
+   "উত্তর-পূর্ব",
+   "উত্তর-পশ্চিম",
+   "দক্ষিণ-পূর্ব",
+   "দক্ষিণ-পশ্চিম"
+  ],
+  "answer": 2,
+  "explanation": "পশ্চিম থেকে ঘড়ির কাঁটার দিকে ৪৫° ঘুরলে উত্তর-পশ্চিম; সেখান থেকে ১৮০° ঘুরলে বিপরীত দিক দক্ষিণ-পূর্ব।"
+ },
+ {
+  "ref": "mnt_120",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "দিক নির্ণয়",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "যদি দক্ষিণ-পূর্বকে উত্তর বলা হয়, উত্তর-পূর্বকে পশ্চিম বলা হয়, তবে পশ্চিমকে কী বলা হবে?",
+  "options": [
+   "পূর্ব",
+   "উত্তর-পশ্চিম",
+   "দক্ষিণ",
+   "দক্ষিণ-পূর্ব"
+  ],
+  "answer": 3,
+  "explanation": "সব দিক একই পরিমাণে (১৩৫° ঘড়ির কাঁটার বিপরীতে) ঘুরেছে। পশ্চিম (২৭০°) থেকে ১৩৫° বাদ দিলে ১৩৫° অর্থাৎ দক্ষিণ-পূর্ব।"
+ },
+ {
+  "ref": "mnt_121",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "দিক নির্ণয়",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আলী ৬ কিমি পশ্চিমে গিয়ে ৮ কিমি দক্ষিণে গেলেন। শুরুর স্থান থেকে তার সরাসরি দূরত্ব কত?",
+  "options": [
+   "১৪ কিমি",
+   "১০ কিমি",
+   "২ কিমি",
+   "১২ কিমি"
+  ],
+  "answer": 1,
+  "explanation": "সমকোণী ত্রিভুজের অতিভুজ: √(৬² + ৮²) = √১০০ = ১০ কিমি।"
+ },
+ {
+  "ref": "mnt_122",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "দিক নির্ণয়",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সকালবেলা দুজন বন্ধু মুখোমুখি দাঁড়িয়ে আছে। একজনের ছায়া ঠিক তার ডান দিকে পড়েছে। সে কোন দিকে মুখ করে আছে?",
+  "options": [
+   "পশ্চিম",
+   "উত্তর",
+   "পূর্ব",
+   "দক্ষিণ"
+  ],
+  "answer": 3,
+  "explanation": "সকালে সূর্য পূর্বে, তাই ছায়া পশ্চিমে পড়ে। ছায়া ডানে মানে তার ডান দিক পশ্চিম, অর্থাৎ সে দক্ষিণমুখী।"
+ },
+ {
+  "ref": "mnt_123",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ঘড়িতে ঠিক ৩টা বাজলে ঘণ্টা ও মিনিটের কাঁটার মধ্যবর্তী কোণ কত?",
+  "options": [
+   "৯০°",
+   "৬০°",
+   "১২০°",
+   "৭৫°"
+  ],
+  "answer": 0,
+  "explanation": "প্রতি ঘণ্টার ঘর ৩০°; ৩টায় কাঁটা দুটির মধ্যে ৩ × ৩০° = ৯০°।"
+ },
+ {
+  "ref": "mnt_124",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ঘড়িতে ৩টা ৩০ মিনিটে কাঁটা দুটির মধ্যবর্তী কোণ কত?",
+  "options": [
+   "৬০°",
+   "৯০°",
+   "৭৫°",
+   "১০৫°"
+  ],
+  "answer": 2,
+  "explanation": "সূত্র |৩০H − ৫.৫M| = |৯০ − ১৬৫| = ৭৫°।"
+ },
+ {
+  "ref": "mnt_125",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ঘড়িতে ৪টা ২০ মিনিটে কাঁটা দুটির মধ্যবর্তী কোণ কত?",
+  "options": [
+   "২০°",
+   "০°",
+   "১০°",
+   "৫°"
+  ],
+  "answer": 2,
+  "explanation": "|৩০ × ৪ − ৫.৫ × ২০| = |১২০ − ১১০| = ১০°।"
+ },
+ {
+  "ref": "mnt_126",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ঘড়িতে ২টা ২০ মিনিটে কাঁটা দুটির মধ্যবর্তী কোণ কত?",
+  "options": [
+   "৫০°",
+   "৪০°",
+   "৬০°",
+   "৭০°"
+  ],
+  "answer": 0,
+  "explanation": "|৩০ × ২ − ৫.৫ × ২০| = |৬০ − ১১০| = ৫০°।"
+ },
+ {
+  "ref": "mnt_127",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "ঘড়িতে ৯টা ১৫ মিনিটে কাঁটা দুটির মধ্যবর্তী ক্ষুদ্রতর কোণ কত?",
+  "options": [
+   "১৬৭.৫°",
+   "১৮০°",
+   "১৮৭.৫°",
+   "১৭২.৫°"
+  ],
+  "answer": 3,
+  "explanation": "|৩০ × ৯ − ৫.৫ × ১৫| = |২৭০ − ৮২.৫| = ১৮৭.৫°; ক্ষুদ্রতর কোণ ৩৬০ − ১৮৭.৫ = ১৭২.৫°।"
+ },
+ {
+  "ref": "mnt_128",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১২ ঘণ্টায় ঘড়ির কাঁটা দুটি কতবার মিলিত হয়?",
+  "options": [
+   "১২ বার",
+   "১১ বার",
+   "২২ বার",
+   "২৪ বার"
+  ],
+  "answer": 1,
+  "explanation": "মিনিটের কাঁটা ঘণ্টার কাঁটাকে ১২ ঘণ্টায় ১১ বার অতিক্রম করে; ১১টা থেকে ১টার মধ্যে কেবল ১২টায় একবার মেলে।"
+ },
+ {
+  "ref": "mnt_129",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একদিনে (২৪ ঘণ্টায়) ঘড়ির কাঁটা দুটি কতবার পরস্পর সমকোণে থাকে?",
+  "options": [
+   "৪৪ বার",
+   "৪৮ বার",
+   "২২ বার",
+   "২৪ বার"
+  ],
+  "answer": 0,
+  "explanation": "১২ ঘণ্টায় ২২ বার সমকোণ হয় (প্রতি ঘণ্টায় ২ বার, তবে দুইবার একটি করে কম); তাই ২৪ ঘণ্টায় ৪৪ বার।"
+ },
+ {
+  "ref": "mnt_130",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একদিনে ঘড়ির কাঁটা দুটি কতবার বিপরীত দিকে (১৮০°) অবস্থান করে?",
+  "options": [
+   "২৪ বার",
+   "২২ বার",
+   "৪৪ বার",
+   "১১ বার"
+  ],
+  "answer": 1,
+  "explanation": "১২ ঘণ্টায় ১১ বার কাঁটা দুটি বিপরীত দিকে থাকে; ২৪ ঘণ্টায় ২২ বার।"
+ },
+ {
+  "ref": "mnt_131",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "মিনিটের কাঁটা প্রতি মিনিটে কত ডিগ্রি ঘোরে?",
+  "options": [
+   "৩০°",
+   "০.৫°",
+   "৬°",
+   "১°"
+  ],
+  "answer": 2,
+  "explanation": "মিনিটের কাঁটা ৬০ মিনিটে ৩৬০° ঘোরে; ৩৬০ ÷ ৬০ = ৬°।"
+ },
+ {
+  "ref": "mnt_132",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ঘণ্টার কাঁটা প্রতি মিনিটে কত ডিগ্রি ঘোরে?",
+  "options": [
+   "৩০°",
+   "৬°",
+   "১°",
+   "০.৫°"
+  ],
+  "answer": 3,
+  "explanation": "ঘণ্টার কাঁটা ১২ ঘণ্টায় (৭২০ মিনিটে) ৩৬০° ঘোরে; প্রতি মিনিটে ০.৫°।"
+ },
+ {
+  "ref": "mnt_133",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আয়নায় একটি ঘড়িতে ৩টা ১৫ মিনিট দেখা যাচ্ছে। প্রকৃত সময় কত?",
+  "options": [
+   "৯টা ১৫ মিনিট",
+   "৮টা ৪৫ মিনিট",
+   "৯টা ৪৫ মিনিট",
+   "৮টা ১৫ মিনিট"
+  ],
+  "answer": 1,
+  "explanation": "আয়নার প্রতিবিম্বের প্রকৃত সময় = ১২:০০ − দেখা সময় = ১২:০০ − ৩:১৫ = ৮:৪৫।"
+ },
+ {
+  "ref": "mnt_134",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আয়নায় একটি ঘড়িতে ৭টা ২০ মিনিট দেখা যাচ্ছে। প্রকৃত সময় কত?",
+  "options": [
+   "৫টা ২০ মিনিট",
+   "৫টা ৪০ মিনিট",
+   "৪টা ২০ মিনিট",
+   "৪টা ৪০ মিনিট"
+  ],
+  "answer": 3,
+  "explanation": "১২:০০ − ৭:২০ = ৪:৪০।"
+ },
+ {
+  "ref": "mnt_135",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "২টা থেকে ৩টার মধ্যে কখন ঘড়ির কাঁটা দুটি মিলিত হবে?",
+  "options": [
+   "২টা ১০ ১০/১১ মিনিটে",
+   "২টা ১০ মিনিটে",
+   "২টা ১১ মিনিটে",
+   "২টা ১২ ৮/১১ মিনিটে"
+  ],
+  "answer": 0,
+  "explanation": "H টা থেকে কাঁটা মেলার সময় = ৬০H/১১ মিনিট পর; ৬০ × ২ ÷ ১১ = ১০ ১০/১১ মিনিট।"
+ },
+ {
+  "ref": "mnt_136",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি ঘড়ি প্রতি ঘণ্টায় যতটা বাজে ততবার ঘণ্টা বাজায়। ১২ ঘণ্টায় মোট কতবার ঘণ্টা বাজবে?",
+  "options": [
+   "৬৬ বার",
+   "১২ বার",
+   "৭৮ বার",
+   "১৪৪ বার"
+  ],
+  "answer": 2,
+  "explanation": "১ + ২ + ৩ + … + ১২ = ১২ × ১৩ ÷ ২ = ৭৮ বার।"
+ },
+ {
+  "ref": "mnt_137",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ঘড়ি",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি ঘড়িতে ৬টা বাজতে ৫ সেকেন্ড লাগে। ১২টা বাজতে কত সেকেন্ড লাগবে?",
+  "options": [
+   "১২ সেকেন্ড",
+   "১০ সেকেন্ড",
+   "১১ সেকেন্ড",
+   "১৩ সেকেন্ড"
+  ],
+  "answer": 2,
+  "explanation": "৬ বার বাজার মধ্যে ব্যবধান ৫টি, প্রতিটি ১ সেকেন্ড। ১২ বার বাজায় ব্যবধান ১১টি, তাই ১১ সেকেন্ড।"
+ },
+ {
+  "ref": "mnt_138",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ক্যালেন্ডার",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "অধিবর্ষে (লিপ ইয়ার) কয়টি বিজোড় দিন থাকে?",
+  "options": [
+   "২টি",
+   "১টি",
+   "০টি",
+   "৩টি"
+  ],
+  "answer": 0,
+  "explanation": "৩৬৬ দিন = ৫২ সপ্তাহ + ২ দিন; তাই অধিবর্ষে ২টি এবং সাধারণ বছরে ১টি বিজোড় দিন।"
+ },
+ {
+  "ref": "mnt_139",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ক্যালেন্ডার",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "নিচের কোনটি অধিবর্ষ?",
+  "options": [
+   "২০২৩",
+   "১৯০০",
+   "২১০০",
+   "২০০০"
+  ],
+  "answer": 3,
+  "explanation": "শতাব্দী বছর ৪০০ দ্বারা বিভাজ্য হলে অধিবর্ষ হয়। ২০০০ সাল ৪০০ দ্বারা বিভাজ্য, কিন্তু ১৯০০ ও ২১০০ নয়।"
+ },
+ {
+  "ref": "mnt_140",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ক্যালেন্ডার",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১ জানুয়ারি ২০২৫ ছিল বুধবার। ১ জানুয়ারি ২০২৬ কী বার?",
+  "options": [
+   "বুধবার",
+   "বৃহস্পতিবার",
+   "শুক্রবার",
+   "মঙ্গলবার"
+  ],
+  "answer": 1,
+  "explanation": "২০২৫ সাধারণ বছর, তাই ১টি বিজোড় দিন যোগ হয়: বুধবার + ১ = বৃহস্পতিবার।"
+ },
+ {
+  "ref": "mnt_141",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ক্যালেন্ডার",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১ জানুয়ারি ২০২৪ ছিল সোমবার। ১ জানুয়ারি ২০২৫ কী বার?",
+  "options": [
+   "বুধবার",
+   "মঙ্গলবার",
+   "বৃহস্পতিবার",
+   "সোমবার"
+  ],
+  "answer": 0,
+  "explanation": "২০২৪ অধিবর্ষ, তাই ২টি বিজোড় দিন: সোমবার + ২ = বুধবার।"
+ },
+ {
+  "ref": "mnt_142",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ক্যালেন্ডার",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "আজ সোমবার হলে ৬১ দিন পর কী বার হবে?",
+  "options": [
+   "রবিবার",
+   "শনিবার",
+   "শুক্রবার",
+   "বৃহস্পতিবার"
+  ],
+  "answer": 1,
+  "explanation": "৬১ ÷ ৭ = ৮ সপ্তাহ, ভাগশেষ ৫। সোমবার + ৫ দিন = শনিবার।"
+ },
+ {
+  "ref": "mnt_143",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ক্যালেন্ডার",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "২৬ মার্চ ১৯৭১ কী বার ছিল?",
+  "options": [
+   "শনিবার",
+   "বৃহস্পতিবার",
+   "শুক্রবার",
+   "বুধবার"
+  ],
+  "answer": 2,
+  "explanation": "১ জানুয়ারি ১৯৭১ ছিল শুক্রবার। ২৬ মার্চ বছরের ৮৫তম দিন; (৮৫ − ১) = ৮৪ দিন = ঠিক ১২ সপ্তাহ, তাই শুক্রবার।"
+ },
+ {
+  "ref": "mnt_144",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ক্যালেন্ডার",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "১৬ ডিসেম্বর ১৯৭১ কী বার ছিল?",
+  "options": [
+   "রবিবার",
+   "শুক্রবার",
+   "বুধবার",
+   "বৃহস্পতিবার"
+  ],
+  "answer": 3,
+  "explanation": "১ জানুয়ারি ১৯৭১ শুক্রবার। ১৬ ডিসেম্বর বছরের ৩৫০তম দিন; ৩৪৯ ÷ ৭ এর ভাগশেষ ৬। শুক্রবার + ৬ = বৃহস্পতিবার।"
+ },
+ {
+  "ref": "mnt_145",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ক্যালেন্ডার",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "২১ ফেব্রুয়ারি ১৯৫২ কী বার ছিল?",
+  "options": [
+   "শুক্রবার",
+   "বৃহস্পতিবার",
+   "বুধবার",
+   "শনিবার"
+  ],
+  "answer": 1,
+  "explanation": "১ জানুয়ারি ১৯৫২ মঙ্গলবার। ২১ ফেব্রুয়ারি বছরের ৫২তম দিন; ৫১ ÷ ৭ এর ভাগশেষ ২। মঙ্গলবার + ২ = বৃহস্পতিবার (৮ ফাল্গুন ১৩৫৮)।"
+ },
+ {
+  "ref": "mnt_146",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ক্যালেন্ডার",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১০০ বছরে কয়টি বিজোড় দিন থাকে?",
+  "options": [
+   "৩টি",
+   "১টি",
+   "২টি",
+   "৫টি"
+  ],
+  "answer": 3,
+  "explanation": "১০০ বছরে ২৪টি অধিবর্ষ ও ৭৬টি সাধারণ বছর: ২৪ × ২ + ৭৬ = ১২৪ বিজোড় দিন; ১২৪ ÷ ৭ এর ভাগশেষ ৫।"
+ },
+ {
+  "ref": "mnt_147",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ক্যালেন্ডার",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনো মাসের ৫ তারিখ মঙ্গলবার হলে ঐ মাসের ২৭ তারিখ কী বার?",
+  "options": [
+   "বুধবার",
+   "মঙ্গলবার",
+   "বৃহস্পতিবার",
+   "সোমবার"
+  ],
+  "answer": 0,
+  "explanation": "৫, ১২, ১৯, ২৬ তারিখ মঙ্গলবার; তাই ২৭ তারিখ বুধবার।"
+ },
+ {
+  "ref": "mnt_148",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ক্যালেন্ডার",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "২০২৩ সালের ক্যালেন্ডার হুবহু আবার কোন সালে ব্যবহার করা যাবে?",
+  "options": [
+   "২০৩৩",
+   "২০২৯",
+   "২০৩৪",
+   "২০৫১"
+  ],
+  "answer": 2,
+  "explanation": "২০২৩ সাধারণ বছর, রবিবার শুরু। বিজোড় দিন যোগ করে দেখা যায় ২০৩৪ সালও রবিবারে শুরু হওয়া সাধারণ বছর।"
+ },
+ {
+  "ref": "mnt_149",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ক্যালেন্ডার",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "অধিবর্ষে ১ জানুয়ারি থেকে ৩১ মার্চ পর্যন্ত (উভয় দিনসহ) মোট কত দিন?",
+  "options": [
+   "৯২ দিন",
+   "৯০ দিন",
+   "৯১ দিন",
+   "৮৯ দিন"
+  ],
+  "answer": 2,
+  "explanation": "জানুয়ারি ৩১ + ফেব্রুয়ারি ২৯ + মার্চ ৩১ = ৯১ দিন।"
+ },
+ {
+  "ref": "mnt_150",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "ক্যালেন্ডার",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১৫ আগস্ট ২০২৫ ছিল শুক্রবার। ১৫ আগস্ট ২০২৬ কী বার?",
+  "options": [
+   "শনিবার",
+   "রবিবার",
+   "শুক্রবার",
+   "বৃহস্পতিবার"
+  ],
+  "answer": 0,
+  "explanation": "মাঝখানে ৩৬৫ দিন (২০২৬ সালের ফেব্রুয়ারি ২৮ দিনের), অর্থাৎ ১ বিজোড় দিন: শুক্রবার + ১ = শনিবার।"
+ },
+ {
+  "ref": "mnt_151",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অবস্থান ও ক্রম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "এক সারিতে রহিম বাম দিক থেকে ৭ম এবং ডান দিক থেকে ১২তম। সারিতে মোট কতজন আছে?",
+  "options": [
+   "১৭ জন",
+   "১৯ জন",
+   "২০ জন",
+   "১৮ জন"
+  ],
+  "answer": 3,
+  "explanation": "মোট = বাম থেকে অবস্থান + ডান থেকে অবস্থান − ১ = ৭ + ১২ − ১ = ১৮।"
+ },
+ {
+  "ref": "mnt_152",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অবস্থান ও ক্রম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৪০ জনের একটি ক্লাসে রিনা ওপর থেকে ১৫তম। নিচ থেকে তার অবস্থান কত?",
+  "options": [
+   "২৫তম",
+   "২৬তম",
+   "২৪তম",
+   "২৭তম"
+  ],
+  "answer": 1,
+  "explanation": "নিচ থেকে অবস্থান = মোট − ওপর থেকে অবস্থান + ১ = ৪০ − ১৫ + ১ = ২৬।"
+ },
+ {
+  "ref": "mnt_153",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অবস্থান ও ক্রম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "A, B এর চেয়ে লম্বা; B, C এর চেয়ে লম্বা; D, A এর চেয়ে লম্বা। সবচেয়ে লম্বা কে?",
+  "options": [
+   "D",
+   "A",
+   "B",
+   "C"
+  ],
+  "answer": 0,
+  "explanation": "উচ্চতার ক্রম: D > A > B > C। তাই D সবচেয়ে লম্বা।"
+ },
+ {
+  "ref": "mnt_154",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অবস্থান ও ক্রম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "P, Q এর চেয়ে বড়; R, Q এর চেয়ে ছোট; S, P এর চেয়ে বড়; T, R এর চেয়ে ছোট। বয়সে মাঝামাঝি কে?",
+  "options": [
+   "P",
+   "Q",
+   "R",
+   "S"
+  ],
+  "answer": 1,
+  "explanation": "ক্রম: S > P > Q > R > T। পাঁচজনের মধ্যে তৃতীয় Q।"
+ },
+ {
+  "ref": "mnt_155",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অবস্থান ও ক্রম",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি লাইনে আসিফ সামনে থেকে ১০ম এবং বাবু সামনে থেকে ২৫তম। তাদের মাঝে কতজন আছে?",
+  "options": [
+   "১৩ জন",
+   "১৫ জন",
+   "১৪ জন",
+   "১৬ জন"
+  ],
+  "answer": 2,
+  "explanation": "মাঝে আছে ২৫ − ১০ − ১ = ১৪ জন।"
+ },
+ {
+  "ref": "mnt_156",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অবস্থান ও ক্রম",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "এক সারিতে X বাম থেকে ৮ম এবং Y ডান থেকে ১৩তম। তারা জায়গা বদল করলে X বাম থেকে ২০তম হয়। সারিতে মোট কতজন?",
+  "options": [
+   "২৮ জন",
+   "৩৩ জন",
+   "৩১ জন",
+   "৩২ জন"
+  ],
+  "answer": 3,
+  "explanation": "জায়গা বদলের পর X এর অবস্থান Y এর পুরোনো স্থান: বাম থেকে ২০তম এবং ডান থেকে ১৩তম। মোট = ২০ + ১৩ − ১ = ৩২।"
+ },
+ {
+  "ref": "mnt_157",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "অবস্থান ও ক্রম",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি পরীক্ষায় ৫০ জনের মধ্যে করিম ওপর থেকে ১৮তম। তার নিচে কতজন আছে?",
+  "options": [
+   "৩৩ জন",
+   "৩২ জন",
+   "৩১ জন",
+   "১৭ জন"
+  ],
+  "answer": 1,
+  "explanation": "তার নিচে থাকবে ৫০ − ১৮ = ৩২ জন।"
+ },
+ {
+  "ref": "mnt_158",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যুক্তি ও সিদ্ধান্ত",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বিবৃতি: সব বিড়াল প্রাণী। সব প্রাণী মরণশীল। কোন সিদ্ধান্তটি নিশ্চিতভাবে সত্য?",
+  "options": [
+   "কোনো বিড়াল মরণশীল নয়",
+   "সব মরণশীল বিড়াল",
+   "সব প্রাণী বিড়াল",
+   "সব বিড়াল মরণশীল"
+  ],
+  "answer": 3,
+  "explanation": "বিড়াল ⊂ প্রাণী ⊂ মরণশীল; তাই সব বিড়াল অবশ্যই মরণশীল। উল্টোটি নিশ্চিত নয়।"
+ },
+ {
+  "ref": "mnt_159",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যুক্তি ও সিদ্ধান্ত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বিবৃতি: কোনো মাছ পাখি নয়। সব পাখি উড়তে পারে। কোন সিদ্ধান্তটি নিশ্চিতভাবে সত্য?",
+  "options": [
+   "কোনো পাখি মাছ নয়",
+   "কোনো মাছ উড়তে পারে না",
+   "সব মাছ উড়তে পারে",
+   "কিছু মাছ পাখি"
+  ],
+  "answer": 0,
+  "explanation": "\"কোনো মাছ পাখি নয়\" উল্টে বললে \"কোনো পাখি মাছ নয়\"—এটি নিশ্চিত। মাছ উড়তে পারে কি না, তা বিবৃতি থেকে বলা যায় না।"
+ },
+ {
+  "ref": "mnt_160",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যুক্তি ও সিদ্ধান্ত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বিবৃতি: কিছু ছাত্র খেলোয়াড়। সব খেলোয়াড় সুস্থ। কোন সিদ্ধান্তটি নিশ্চিতভাবে সত্য?",
+  "options": [
+   "সব সুস্থ ব্যক্তি খেলোয়াড়",
+   "সব ছাত্র সুস্থ",
+   "কিছু ছাত্র সুস্থ",
+   "কোনো ছাত্র সুস্থ নয়"
+  ],
+  "answer": 2,
+  "explanation": "যে ছাত্ররা খেলোয়াড়, তারা অবশ্যই সুস্থ; তাই অন্তত কিছু ছাত্র সুস্থ।"
+ },
+ {
+  "ref": "mnt_161",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যুক্তি ও সিদ্ধান্ত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বিবৃতি: সব কলম বই। কোনো বই খাতা নয়। কোন সিদ্ধান্তটি নিশ্চিতভাবে সত্য?",
+  "options": [
+   "কিছু কলম খাতা",
+   "সব খাতা কলম",
+   "কোনো কলম খাতা নয়",
+   "সব বই কলম"
+  ],
+  "answer": 2,
+  "explanation": "কলম পুরোপুরি বই-এর ভেতরে, আর বই ও খাতার কোনো মিল নেই; তাই কোনো কলম খাতা হতে পারে না।"
+ },
+ {
+  "ref": "mnt_162",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যুক্তি ও সিদ্ধান্ত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বিবৃতি: যদি বৃষ্টি হয় তবে মাঠ ভিজবে। মাঠ ভেজেনি। সিদ্ধান্ত কোনটি?",
+  "options": [
+   "বৃষ্টি হয়নি",
+   "বৃষ্টি হয়েছে",
+   "নিশ্চিত করে কিছু বলা যায় না",
+   "মাঠ পরে ভিজবে"
+  ],
+  "answer": 0,
+  "explanation": "\"P হলে Q\" এবং \"Q নয়\" থেকে নিশ্চিতভাবে \"P নয়\" সিদ্ধান্তে আসা যায় (Modus Tollens)।"
+ },
+ {
+  "ref": "mnt_163",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যুক্তি ও সিদ্ধান্ত",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "বিবৃতি: যদি বৃষ্টি হয় তবে মাঠ ভিজবে। মাঠ ভিজেছে। সিদ্ধান্ত কোনটি?",
+  "options": [
+   "মাঠ শুকিয়ে যাবে",
+   "অবশ্যই বৃষ্টি হয়েছে",
+   "বৃষ্টি হয়নি",
+   "বৃষ্টি হয়েছে কি না নিশ্চিত বলা যায় না"
+  ],
+  "answer": 3,
+  "explanation": "মাঠ অন্য কারণেও ভিজতে পারে (যেমন পানি দেওয়া)। \"Q সত্য\" থেকে \"P সত্য\" ধরে নেওয়া একটি যৌক্তিক ভ্রান্তি।"
+ },
+ {
+  "ref": "mnt_164",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যুক্তি ও সিদ্ধান্ত",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "\"সব মানুষ সৎ\"—এই বাক্যের যৌক্তিক অস্বীকৃতি (negation) কোনটি?",
+  "options": [
+   "কোনো মানুষ সৎ নয়",
+   "কিছু মানুষ সৎ নয়",
+   "সব মানুষ অসৎ",
+   "কিছু মানুষ সৎ"
+  ],
+  "answer": 1,
+  "explanation": "\"সব A, B\" বাক্য মিথ্যা হতে কেবল একটি ব্যতিক্রমই যথেষ্ট; তাই এর অস্বীকৃতি \"কিছু A, B নয়\"।"
+ },
+ {
+  "ref": "mnt_165",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যুক্তি ও সিদ্ধান্ত",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "বিবৃতি: কিছু ডাক্তার লেখক। কোনো লেখক গায়ক নয়। কোন সিদ্ধান্তটি নিশ্চিতভাবে সত্য?",
+  "options": [
+   "কিছু ডাক্তার গায়ক নয়",
+   "কোনো ডাক্তার গায়ক নয়",
+   "সব ডাক্তার গায়ক",
+   "কিছু গায়ক লেখক"
+  ],
+  "answer": 0,
+  "explanation": "যে ডাক্তাররা লেখক, তারা গায়ক হতে পারেন না; তাই অন্তত কিছু ডাক্তার গায়ক নন।"
+ },
+ {
+  "ref": "mnt_166",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "১০ জন লোকের প্রত্যেকে প্রত্যেকের সাথে একবার করমর্দন করলে মোট কতবার করমর্দন হবে?",
+  "options": [
+   "৯০",
+   "৪৫",
+   "১০০",
+   "৫০"
+  ],
+  "answer": 1,
+  "explanation": "মোট করমর্দন = n(n − ১)/২ = ১০ × ৯ ÷ ২ = ৪৫।"
+ },
+ {
+  "ref": "mnt_167",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "নকআউট পদ্ধতির একটি টুর্নামেন্টে ১৬টি দল অংশ নিলে চ্যাম্পিয়ন নির্ধারণে মোট কয়টি খেলা হবে?",
+  "options": [
+   "৮টি",
+   "১৬টি",
+   "১৫টি",
+   "৩২টি"
+  ],
+  "answer": 2,
+  "explanation": "প্রতিটি খেলায় একটি দল বাদ পড়ে; চ্যাম্পিয়ন ছাড়া ১৫টি দল বাদ পড়তে ১৫টি খেলা লাগে।"
+ },
+ {
+  "ref": "mnt_168",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "লিগ পদ্ধতিতে ৮টি দলের প্রত্যেকে প্রত্যেকের সাথে একবার খেললে মোট কয়টি খেলা হবে?",
+  "options": [
+   "১৬টি",
+   "৫৬টি",
+   "৬৪টি",
+   "২৮টি"
+  ],
+  "answer": 3,
+  "explanation": "মোট খেলা = n(n − ১)/২ = ৮ × ৭ ÷ ২ = ২৮।"
+ },
+ {
+  "ref": "mnt_169",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি দাবার বোর্ডে (৮ × ৮) মোট কয়টি বর্গ আছে?",
+  "options": [
+   "৬৪টি",
+   "২০৪টি",
+   "১০০টি",
+   "১৯২টি"
+  ],
+  "answer": 1,
+  "explanation": "সব আকারের বর্গ গুনতে হবে: ১² + ২² + … + ৮² = ২০৪।"
+ },
+ {
+  "ref": "mnt_170",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি কাঠের গুঁড়িকে ৫ টুকরো করতে ১২ মিনিট লাগে। একই হারে ৯ টুকরো করতে কত মিনিট লাগবে?",
+  "options": [
+   "২৭ মিনিট",
+   "২১.৬ মিনিট",
+   "২০ মিনিট",
+   "২৪ মিনিট"
+  ],
+  "answer": 3,
+  "explanation": "৫ টুকরোয় ৪টি কাটা, প্রতি কাটায় ৩ মিনিট। ৯ টুকরোয় ৮টি কাটা: ৮ × ৩ = ২৪ মিনিট।"
+ },
+ {
+  "ref": "mnt_171",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি শামুক ১০ মিটার উঁচু দেয়ালে দিনে ৩ মিটার ওঠে এবং রাতে ২ মিটার নেমে যায়। দেয়ালের মাথায় উঠতে কত দিন লাগবে?",
+  "options": [
+   "৮ দিন",
+   "১০ দিন",
+   "৭ দিন",
+   "৯ দিন"
+  ],
+  "answer": 0,
+  "explanation": "প্রতি পূর্ণ দিনে নিট ১ মিটার ওঠে। ৭ দিন শেষে ৭ মিটারে থাকে; ৮ম দিনে ৩ মিটার উঠে ১০ মিটারে পৌঁছে যায়, আর নামে না।"
+ },
+ {
+  "ref": "mnt_172",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১০০ মিটার দীর্ঘ রাস্তার এক পাশে দুই প্রান্তসহ প্রতি ১০ মিটার পরপর গাছ লাগালে মোট কয়টি গাছ লাগবে?",
+  "options": [
+   "৯টি",
+   "১০টি",
+   "১১টি",
+   "১২টি"
+  ],
+  "answer": 2,
+  "explanation": "ব্যবধান ১০০ ÷ ১০ = ১০টি; দুই প্রান্তসহ গাছের সংখ্যা ব্যবধানের চেয়ে ১ বেশি, অর্থাৎ ১১টি।"
+ },
+ {
+  "ref": "mnt_173",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "১ থেকে ১০০ পর্যন্ত পৃষ্ঠা নম্বর লিখতে মোট কয়টি অঙ্ক লাগবে?",
+  "options": [
+   "২০০টি",
+   "১৯০টি",
+   "১৯২টি",
+   "১৮৯টি"
+  ],
+  "answer": 2,
+  "explanation": "১-৯: ৯টি, ১০-৯৯: ৯০ × ২ = ১৮০টি, ১০০: ৩টি; মোট ১৯২টি।"
+ },
+ {
+  "ref": "mnt_174",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১ থেকে ১০০ পর্যন্ত লিখলে ৫ অঙ্কটি কতবার লিখতে হবে?",
+  "options": [
+   "২০ বার",
+   "১০ বার",
+   "১৯ বার",
+   "১১ বার"
+  ],
+  "answer": 0,
+  "explanation": "একক স্থানে ৫ (৫, ১৫ … ৯৫) = ১০ বার, দশক স্থানে ৫ (৫০-৫৯) = ১০ বার; মোট ২০ বার।"
+ },
+ {
+  "ref": "mnt_175",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাবার বয়স ছেলের বয়সের ৩ গুণ। ১০ বছর পর বাবার বয়স ছেলের বয়সের ২ গুণ হবে। বাবার বর্তমান বয়স কত?",
+  "options": [
+   "৪৫ বছর",
+   "৪০ বছর",
+   "৩৬ বছর",
+   "৩০ বছর"
+  ],
+  "answer": 3,
+  "explanation": "ছেলের বয়স x হলে ৩x + ১০ = ২(x + ১০) → x = ১০। বাবার বয়স ৩০ বছর।"
+ },
+ {
+  "ref": "mnt_176",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি খামারে মুরগি ও গরু মিলিয়ে মাথা ৩০টি এবং পা ৭৪টি। গরু কয়টি?",
+  "options": [
+   "৮টি",
+   "৭টি",
+   "২৩টি",
+   "১০টি"
+  ],
+  "answer": 1,
+  "explanation": "সবাই মুরগি হলে পা হতো ৬০টি; বাড়তি ১৪টি পা। প্রতিটি গরুতে ২টি পা বেশি, তাই গরু ১৪ ÷ ২ = ৭টি।"
+ },
+ {
+  "ref": "mnt_177",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "৬টি বিড়াল ৬ মিনিটে ৬টি ইঁদুর ধরে। ১০০ মিনিটে ১০০টি ইঁদুর ধরতে কয়টি বিড়াল লাগবে?",
+  "options": [
+   "৬টি",
+   "১০০টি",
+   "৫০টি",
+   "১০টি"
+  ],
+  "answer": 0,
+  "explanation": "৬টি বিড়াল ৬ মিনিটে ৬টি, অর্থাৎ প্রতি মিনিটে ১টি ইঁদুর ধরে। ১০০ মিনিটে তারা ১০০টিই ধরবে।"
+ },
+ {
+  "ref": "mnt_178",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৫টি মেশিন ৫ মিনিটে ৫টি জিনিস তৈরি করে। ১০০টি মেশিন ১০০টি জিনিস তৈরি করতে কত মিনিট নেবে?",
+  "options": [
+   "১০০ মিনিট",
+   "৫ মিনিট",
+   "২০ মিনিট",
+   "১ মিনিট"
+  ],
+  "answer": 1,
+  "explanation": "প্রতিটি মেশিন ৫ মিনিটে ১টি জিনিস বানায়; ১০০টি মেশিন একসাথে ৫ মিনিটে ১০০টি বানাবে।"
+ },
+ {
+  "ref": "mnt_179",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি ব্যাট ও একটি বলের মোট দাম ১১০ টাকা। ব্যাটের দাম বলের চেয়ে ১০০ টাকা বেশি। বলের দাম কত?",
+  "options": [
+   "১৫ টাকা",
+   "১০ টাকা",
+   "৫ টাকা",
+   "২০ টাকা"
+  ],
+  "answer": 2,
+  "explanation": "বলের দাম x হলে x + (x + ১০০) = ১১০ → x = ৫। দ্রুত উত্তরে অনেকে ভুল করে ১০ টাকা বলেন।"
+ },
+ {
+  "ref": "mnt_180",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি পুকুরে শাপলা প্রতিদিন দ্বিগুণ হয় এবং ৪৮ দিনে পুরো পুকুর ঢেকে যায়। অর্ধেক পুকুর ঢাকতে কত দিন লেগেছিল?",
+  "options": [
+   "৩৬ দিন",
+   "২৪ দিন",
+   "৪৬ দিন",
+   "৪৭ দিন"
+  ],
+  "answer": 3,
+  "explanation": "প্রতিদিন দ্বিগুণ হয়, তাই পুরো ঢাকার ঠিক আগের দিন (৪৭তম দিনে) পুকুরের অর্ধেক ঢাকা ছিল।"
+ },
+ {
+  "ref": "mnt_181",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "এক ব্যক্তি বেতনের ১/৩ অংশ বাড়িভাড়ায় এবং ১/৪ অংশ খাবারে খরচ করেন। বাকি থাকে ৫,০০০ টাকা। তার বেতন কত?",
+  "options": [
+   "১০,০০০ টাকা",
+   "১২,০০০ টাকা",
+   "১৫,০০০ টাকা",
+   "২০,০০০ টাকা"
+  ],
+  "answer": 1,
+  "explanation": "খরচ ১/৩ + ১/৪ = ৭/১২; বাকি ৫/১২ = ৫,০০০ টাকা। তাই বেতন ৫,০০০ × ১২/৫ = ১২,০০০ টাকা।"
+ },
+ {
+  "ref": "mnt_182",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১৫ জন শ্রমিক একটি কাজ ১২ দিনে করে। ২০ জন শ্রমিক কাজটি কত দিনে করবে?",
+  "options": [
+   "৮ দিন",
+   "১০ দিন",
+   "১৬ দিন",
+   "৯ দিন"
+  ],
+  "answer": 3,
+  "explanation": "মোট কাজ = ১৫ × ১২ = ১৮০ শ্রমদিন; ২০ জনের লাগবে ১৮০ ÷ ২০ = ৯ দিন।"
+ },
+ {
+  "ref": "mnt_183",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "দোকানে ৩টি খালি বোতল ফেরত দিলে ১টি নতুন ভরা বোতল পাওয়া যায়। ৯টি ভরা বোতল কিনলে মোট কয়টি বোতল পান করা যাবে?",
+  "options": [
+   "১৩টি",
+   "১২টি",
+   "১১টি",
+   "১৪টি"
+  ],
+  "answer": 0,
+  "explanation": "৯টি পান → ৯ খালি দিয়ে ৩টি নতুন → ৩টি পান → ৩ খালি দিয়ে ১টি নতুন → ১টি পান। মোট ৯ + ৩ + ১ = ১৩টি।"
+ },
+ {
+  "ref": "mnt_184",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি দৌড় প্রতিযোগিতায় আপনি দ্বিতীয় স্থানের দৌড়বিদকে পেছনে ফেললেন। এখন আপনার অবস্থান কত?",
+  "options": [
+   "তৃতীয়",
+   "প্রথম",
+   "দ্বিতীয়",
+   "নির্ণয় করা যায় না"
+  ],
+  "answer": 2,
+  "explanation": "দ্বিতীয়জনকে পেছনে ফেললে আপনি তার জায়গা, অর্থাৎ দ্বিতীয় স্থান নেন; প্রথমজন তখনও সামনে।"
+ },
+ {
+  "ref": "mnt_185",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "এক কৃষকের ১৭টি ভেড়া ছিল। ৯টি ছাড়া বাকি সব মারা গেল। কয়টি ভেড়া বেঁচে আছে?",
+  "options": [
+   "১৭টি",
+   "৮টি",
+   "৯টি",
+   "০টি"
+  ],
+  "answer": 2,
+  "explanation": "\"৯টি ছাড়া বাকি সব মারা গেল\" মানে ৯টি বেঁচে আছে।"
+ },
+ {
+  "ref": "mnt_186",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি বেশি ভারী: ১ কেজি তুলা নাকি ১ কেজি লোহা?",
+  "options": [
+   "দুটির ওজন সমান",
+   "লোহা",
+   "তুলা",
+   "নির্ণয় করা যায় না"
+  ],
+  "answer": 0,
+  "explanation": "দুটিই ১ কেজি, তাই ওজন সমান; শুধু আয়তনে তুলা অনেক বড়।"
+ },
+ {
+  "ref": "mnt_187",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বছরের কয়টি মাসে ২৮ তারিখ আছে?",
+  "options": [
+   "১১টি",
+   "১টি",
+   "৪টি",
+   "১২টি"
+  ],
+  "answer": 3,
+  "explanation": "প্রতিটি মাসেই অন্তত ২৮ দিন আছে, তাই ১২টি মাসেই ২৮ তারিখ আছে।"
+ },
+ {
+  "ref": "mnt_188",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি ঘরের চার কোণে চারটি বিড়াল বসে আছে। প্রতিটি বিড়ালের সামনে তিনটি বিড়াল আছে। ঘরে মোট কয়টি বিড়াল?",
+  "options": [
+   "১২টি",
+   "৪টি",
+   "১৬টি",
+   "৭টি"
+  ],
+  "answer": 1,
+  "explanation": "চার কোণের প্রতিটি বিড়াল বাকি তিনটিকে দেখে; তাই মোট বিড়াল ৪টিই।"
+ },
+ {
+  "ref": "mnt_189",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৪, ০, ৭ অঙ্ক তিনটি একবার করে ব্যবহার করে গঠিত তিন অঙ্কের বৃহত্তম ও ক্ষুদ্রতম সংখ্যার পার্থক্য কত?",
+  "options": [
+   "৩৩৩",
+   "৩৫৩",
+   "৬৯৩",
+   "৩০৩"
+  ],
+  "answer": 0,
+  "explanation": "বৃহত্তম ৭৪০, ক্ষুদ্রতম ৪০৭ (০ দিয়ে শুরু করা যায় না); পার্থক্য ৭৪০ − ৪০৭ = ৩৩৩।"
+ },
+ {
+  "ref": "mnt_190",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "দুই অঙ্কের মোট কয়টি সংখ্যা আছে?",
+  "options": [
+   "৯৯টি",
+   "৯০টি",
+   "১০০টি",
+   "৮৯টি"
+  ],
+  "answer": 1,
+  "explanation": "১০ থেকে ৯৯ পর্যন্ত: ৯৯ − ১০ + ১ = ৯০টি।"
+ },
+ {
+  "ref": "mnt_191",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১ থেকে ১০০ পর্যন্ত কয়টি সংখ্যা ৭ দ্বারা বিভাজ্য?",
+  "options": [
+   "১৩টি",
+   "১৫টি",
+   "১৪টি",
+   "১২টি"
+  ],
+  "answer": 2,
+  "explanation": "১০০ ÷ ৭ = ১৪.২৮…; তাই ৭, ১৪, … ৯৮ পর্যন্ত ১৪টি সংখ্যা।"
+ },
+ {
+  "ref": "mnt_192",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "১ থেকে ১০ পর্যন্ত সবগুলো সংখ্যা দ্বারা বিভাজ্য ক্ষুদ্রতম সংখ্যা কোনটি?",
+  "options": [
+   "৩৬২৮৮০০",
+   "৫০৪০",
+   "১২৬০",
+   "২৫২০"
+  ],
+  "answer": 3,
+  "explanation": "১ থেকে ১০ এর ল.সা.গু. = ২³ × ৩² × ৫ × ৭ = ২৫২০।"
+ },
+ {
+  "ref": "mnt_193",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "৫ জনের প্রত্যেকে বাকি প্রত্যেককে একটি করে উপহার দিলে মোট কয়টি উপহার বিনিময় হবে?",
+  "options": [
+   "১০টি",
+   "২০টি",
+   "২৫টি",
+   "১৫টি"
+  ],
+  "answer": 1,
+  "explanation": "প্রত্যেকে ৪টি করে উপহার দেয়: ৫ × ৪ = ২০টি। (করমর্দনের মতো নয়, কারণ উপহার একমুখী।)"
+ },
+ {
+  "ref": "mnt_194",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "সমস্যা সমাধান",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "৪০০ এর অর্ধেকের এক-চতুর্থাংশ কত?",
+  "options": [
+   "৮০",
+   "১০০",
+   "২৫",
+   "৫০"
+  ],
+  "answer": 3,
+  "explanation": "৪০০ এর অর্ধেক ২০০; ২০০ এর এক-চতুর্থাংশ ৫০।"
+ },
+ {
+  "ref": "mnt_195",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "দুটি দাঁতওয়ালা চাকা (গিয়ার) পরস্পর যুক্ত। প্রথমটি ঘড়ির কাঁটার দিকে ঘুরলে দ্বিতীয়টি কোন দিকে ঘুরবে?",
+  "options": [
+   "ঘড়ির কাঁটার বিপরীত দিকে",
+   "ঘড়ির কাঁটার দিকে",
+   "ঘুরবে না",
+   "একবার এদিক একবার ওদিক"
+  ],
+  "answer": 0,
+  "explanation": "পরস্পর যুক্ত দুটি গিয়ার সবসময় বিপরীত দিকে ঘোরে।"
+ },
+ {
+  "ref": "mnt_196",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "তিনটি গিয়ার A, B, C পরপর যুক্ত (A–B–C)। A ঘড়ির কাঁটার দিকে ঘুরলে C কোন দিকে ঘুরবে?",
+  "options": [
+   "ঘুরবে না",
+   "ঘড়ির কাঁটার বিপরীত দিকে",
+   "ঘড়ির কাঁটার দিকে",
+   "নির্ণয় করা যায় না"
+  ],
+  "answer": 2,
+  "explanation": "A ঘড়ির দিকে হলে B বিপরীতে, আর C আবার ঘড়ির দিকে। বিজোড় অবস্থানের গিয়ারগুলো একই দিকে ঘোরে।"
+ },
+ {
+  "ref": "mnt_197",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "২০ দাঁতের একটি গিয়ার ৪০ দাঁতের একটি গিয়ারকে ঘোরায়। ছোট গিয়ারটি ১০ বার ঘুরলে বড়টি কতবার ঘুরবে?",
+  "options": [
+   "১০ বার",
+   "২০ বার",
+   "৫ বার",
+   "৪০ বার"
+  ],
+  "answer": 2,
+  "explanation": "দুটি গিয়ারে মোট অতিক্রান্ত দাঁত সমান: ২০ × ১০ = ৪০ × n → n = ৫।"
+ },
+ {
+  "ref": "mnt_198",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ঢেঁকি বা সি-স (seesaw) কোন শ্রেণির লিভার?",
+  "options": [
+   "প্রথম শ্রেণি",
+   "দ্বিতীয় শ্রেণি",
+   "তৃতীয় শ্রেণি",
+   "লিভার নয়"
+  ],
+  "answer": 0,
+  "explanation": "প্রথম শ্রেণির লিভারে ফালক্রাম বল ও ভারের মাঝে থাকে; যেমন সি-স, কাঁচি, ঢেঁকি।"
+ },
+ {
+  "ref": "mnt_199",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "এক চাকার ঠেলাগাড়ি (wheelbarrow) কোন শ্রেণির লিভার?",
+  "options": [
+   "লিভার নয়",
+   "প্রথম শ্রেণি",
+   "তৃতীয় শ্রেণি",
+   "দ্বিতীয় শ্রেণি"
+  ],
+  "answer": 3,
+  "explanation": "দ্বিতীয় শ্রেণির লিভারে ভার থাকে ফালক্রাম (চাকা) ও বলের মাঝে; যেমন ঠেলাগাড়ি, যাঁতি।"
+ },
+ {
+  "ref": "mnt_200",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "চিমটা (tweezers) কোন শ্রেণির লিভার?",
+  "options": [
+   "প্রথম শ্রেণি",
+   "তৃতীয় শ্রেণি",
+   "দ্বিতীয় শ্রেণি",
+   "লিভার নয়"
+  ],
+  "answer": 1,
+  "explanation": "তৃতীয় শ্রেণির লিভারে বল থাকে ফালক্রাম ও ভারের মাঝে; যেমন চিমটা, মানুষের বাহু।"
+ },
+ {
+  "ref": "mnt_201",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি স্থির কপিকল (fixed pulley) ব্যবহারের মূল সুবিধা কী?",
+  "options": [
+   "বলের দিক পরিবর্তন করা যায়",
+   "বল অর্ধেক লাগে",
+   "ভার দ্বিগুণ হয়",
+   "ঘর্ষণ শূন্য হয়"
+  ],
+  "answer": 0,
+  "explanation": "স্থির কপিকলের যান্ত্রিক সুবিধা ১; এটি বল কমায় না, শুধু নিচে টেনে ভার ওপরে তোলার সুবিধা দেয়।"
+ },
+ {
+  "ref": "mnt_202",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আদর্শ অবস্থায় একটি সচল কপিকল দিয়ে ১০০ নিউটন ভার তুলতে কত বল লাগবে?",
+  "options": [
+   "১০০ নিউটন",
+   "৫০ নিউটন",
+   "২০০ নিউটন",
+   "২৫ নিউটন"
+  ],
+  "answer": 1,
+  "explanation": "সচল কপিকলের যান্ত্রিক সুবিধা ২; তাই প্রয়োজনীয় বল ১০০ ÷ ২ = ৫০ নিউটন।"
+ },
+ {
+  "ref": "mnt_203",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি সি-স-এর এক পাশে ফালক্রাম থেকে ২ মিটার দূরে ৪০ কেজির শিশু বসে আছে। ভারসাম্য রাখতে ২০ কেজির শিশুকে অপর পাশে কত দূরে বসতে হবে?",
+  "options": [
+   "১ মিটার",
+   "২ মিটার",
+   "৪ মিটার",
+   "৮ মিটার"
+  ],
+  "answer": 2,
+  "explanation": "ভ্রামকের সমতা: ৪০ × ২ = ২০ × d → d = ৪ মিটার।"
+ },
+ {
+  "ref": "mnt_204",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "লম্বা হাতলের রেঞ্চ দিয়ে শক্ত নাট খোলা সহজ কেন?",
+  "options": [
+   "রেঞ্চ হালকা হয়",
+   "ঘর্ষণ বাড়ে",
+   "নাটের ওজন কমে",
+   "বলের ভ্রামক (টর্ক) বেশি হয়"
+  ],
+  "answer": 3,
+  "explanation": "টর্ক = বল × দূরত্ব; হাতল লম্বা হলে একই বলে বেশি টর্ক পাওয়া যায়।"
+ },
+ {
+  "ref": "mnt_205",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ধারালো ছুরি দিয়ে সহজে কাটা যায় কেন?",
+  "options": [
+   "ছুরির ওজন বেশি",
+   "অল্প ক্ষেত্রফলে চাপ বেশি পড়ে",
+   "ঘর্ষণ বেশি",
+   "ছুরি ঠান্ডা থাকে"
+  ],
+  "answer": 1,
+  "explanation": "চাপ = বল ÷ ক্ষেত্রফল; ধারালো প্রান্তের ক্ষেত্রফল খুব কম, তাই একই বলে চাপ অনেক বেশি।"
+ },
+ {
+  "ref": "mnt_206",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "পানিভর্তি ট্যাংকের কোন ছিদ্র দিয়ে পানি সবচেয়ে জোরে বের হবে?",
+  "options": [
+   "সবগুলো সমান",
+   "মাঝখানের ছিদ্র",
+   "ওপরের কাছের ছিদ্র",
+   "তলার কাছের ছিদ্র"
+  ],
+  "answer": 3,
+  "explanation": "তরলের চাপ গভীরতার সাথে বাড়ে; তলার কাছে চাপ সবচেয়ে বেশি, তাই পানি সবচেয়ে জোরে বের হয়।"
+ },
+ {
+  "ref": "mnt_207",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "দুটি চাকা বেল্ট দিয়ে যুক্ত। বেল্টটি ক্রস করে (X আকারে) লাগানো হলে চাকা দুটি কীভাবে ঘুরবে?",
+  "options": [
+   "বিপরীত দিকে",
+   "একই দিকে",
+   "ঘুরবে না",
+   "একটি দ্রুত, অন্যটি থেমে থাকবে"
+  ],
+  "answer": 0,
+  "explanation": "সোজা বেল্টে চাকা দুটি একই দিকে এবং ক্রস বেল্টে বিপরীত দিকে ঘোরে।"
+ },
+ {
+  "ref": "mnt_208",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি গ্লাসে পানির ওপর বরফ ভাসছে। বরফ পুরোপুরি গলে গেলে পানির উচ্চতার কী হবে?",
+  "options": [
+   "কমবে",
+   "বাড়বে",
+   "একই থাকবে",
+   "প্রথমে বাড়বে পরে কমবে"
+  ],
+  "answer": 2,
+  "explanation": "ভাসমান বরফ তার নিজের ভরের সমান পানি অপসারণ করে; গলে গিয়ে ঠিক ততটুকু পানিই হয়, তাই উচ্চতা অপরিবর্তিত থাকে।"
+ },
+ {
+  "ref": "mnt_209",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বায়ুশূন্য স্থানে একটি পালক ও একটি পাথর একই উচ্চতা থেকে ছাড়লে কোনটি আগে মাটিতে পড়বে?",
+  "options": [
+   "পালক",
+   "পাথর",
+   "একসাথে পড়বে",
+   "কোনোটিই পড়বে না"
+  ],
+  "answer": 2,
+  "explanation": "বায়ুর বাধা না থাকলে অভিকর্ষজ ত্বরণ সব বস্তুর জন্য সমান, তাই দুটি একসাথে পড়ে।"
+ },
+ {
+  "ref": "mnt_210",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "যান্ত্রিক দক্ষতা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোনটি সরল যন্ত্র নয়?",
+  "options": [
+   "বৈদ্যুতিক মোটর",
+   "লিভার",
+   "হেলানো তল",
+   "কপিকল"
+  ],
+  "answer": 0,
+  "explanation": "লিভার, হেলানো তল, কপিকল, চাকা ও অক্ষদণ্ড, স্ক্রু ও কীলক সরল যন্ত্র; বৈদ্যুতিক মোটর জটিল যন্ত্র।"
+ },
+ {
+  "ref": "mnt_211",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "স্থানিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি ঘনকের সব তলে রং করে সেটিকে ২৭টি সমান ছোট ঘনকে কাটা হলো। কয়টি ছোট ঘনকের ঠিক ৩টি তলে রং থাকবে?",
+  "options": [
+   "১টি",
+   "১২টি",
+   "৬টি",
+   "৮টি"
+  ],
+  "answer": 3,
+  "explanation": "কেবল কোণার ঘনকগুলোর ৩টি তল রঙিন; একটি ঘনকের ৮টি কোণ আছে।"
+ },
+ {
+  "ref": "mnt_212",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "স্থানিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি রঙিন ঘনক ২৭টি সমান ছোট ঘনকে কাটলে কয়টির ঠিক ২টি তলে রং থাকবে?",
+  "options": [
+   "৮টি",
+   "১২টি",
+   "৬টি",
+   "২৪টি"
+  ],
+  "answer": 1,
+  "explanation": "প্রতিটি ধারের মাঝের ঘনকের ২টি তল রঙিন; ১২টি ধারে ১টি করে, মোট ১২টি।"
+ },
+ {
+  "ref": "mnt_213",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "স্থানিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি রঙিন ঘনক ২৭টি সমান ছোট ঘনকে কাটলে কয়টির কোনো তলেই রং থাকবে না?",
+  "options": [
+   "১টি",
+   "০টি",
+   "৬টি",
+   "৮টি"
+  ],
+  "answer": 0,
+  "explanation": "একেবারে কেন্দ্রের (১ × ১ × ১) ঘনকটির কোনো তল বাইরে নেই, তাই রংহীন।"
+ },
+ {
+  "ref": "mnt_214",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "স্থানিক দক্ষতা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি রঙিন ঘনক ৬৪টি সমান ছোট ঘনকে (৪ × ৪ × ৪) কাটলে কয়টির কোনো তলেই রং থাকবে না?",
+  "options": [
+   "২৭টি",
+   "৮টি",
+   "১৬টি",
+   "৪টি"
+  ],
+  "answer": 1,
+  "explanation": "ভেতরের রংহীন অংশ (৪ − ২)³ = ২³ = ৮টি ঘনক।"
+ },
+ {
+  "ref": "mnt_215",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "স্থানিক দক্ষতা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি রঙিন ঘনক ৬৪টি সমান ছোট ঘনকে কাটলে কয়টির ঠিক ১টি তলে রং থাকবে?",
+  "options": [
+   "৩৬টি",
+   "১৬টি",
+   "২৪টি",
+   "৮টি"
+  ],
+  "answer": 2,
+  "explanation": "প্রতিটি তলের মাঝখানে (৪ − ২)² = ৪টি; ৬টি তলে ৬ × ৪ = ২৪টি।"
+ },
+ {
+  "ref": "mnt_216",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "স্থানিক দক্ষতা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি সাধারণ ছক্কার (লুডু) বিপরীত তলগুলোর যোগফল সবসময় কত?",
+  "options": [
+   "৯",
+   "৬",
+   "৮",
+   "৭"
+  ],
+  "answer": 3,
+  "explanation": "প্রমিত ছক্কায় ১-৬, ২-৫, ৩-৪ পরস্পর বিপরীত; প্রতিটি জোড়ার যোগফল ৭।"
+ },
+ {
+  "ref": "mnt_217",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "স্থানিক দক্ষতা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি ঘনকের কয়টি ধার (edge) আছে?",
+  "options": [
+   "৮টি",
+   "১২টি",
+   "৬টি",
+   "২৪টি"
+  ],
+  "answer": 1,
+  "explanation": "ঘনকের ৬টি তল, ১২টি ধার ও ৮টি শীর্ষবিন্দু; অয়লারের সূত্র: ৬ − ১২ + ৮ = ২।"
+ },
+ {
+  "ref": "mnt_218",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "স্থানিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি ষড়ভুজের কয়টি কর্ণ আছে?",
+  "options": [
+   "১৫টি",
+   "৬টি",
+   "১২টি",
+   "৯টি"
+  ],
+  "answer": 3,
+  "explanation": "n বাহুবিশিষ্ট বহুভুজের কর্ণ = n(n − ৩)/২ = ৬ × ৩ ÷ ২ = ৯টি।"
+ },
+ {
+  "ref": "mnt_219",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "স্থানিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "উল্লম্ব আয়নায় কোন ইংরেজি শব্দের প্রতিবিম্ব হুবহু একই দেখাবে?",
+  "options": [
+   "MOM",
+   "DAD",
+   "BOB",
+   "NUN"
+  ],
+  "answer": 0,
+  "explanation": "M ও O বর্ণ উল্লম্বভাবে প্রতিসম এবং MOM উল্টালেও MOM। D, B, N প্রতিসম নয়।"
+ },
+ {
+  "ref": "mnt_220",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "স্থানিক দক্ষতা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বর্গাকার ভূমিবিশিষ্ট একটি পিরামিডের কয়টি তল আছে?",
+  "options": [
+   "৬টি",
+   "৪টি",
+   "৫টি",
+   "৮টি"
+  ],
+  "answer": 2,
+  "explanation": "১টি বর্গাকার ভূমি এবং ৪টি ত্রিভুজাকার পার্শ্বতল; মোট ৫টি।"
+ },
+ {
+  "ref": "mnt_221",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "স্থানিক দক্ষতা",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি কাগজ দুই ভাঁজ করে (অর্ধেক, আবার অর্ধেক) মাঝখানে একটি ছিদ্র করা হলো। কাগজ খুললে কয়টি ছিদ্র পাওয়া যাবে?",
+  "options": [
+   "১টি",
+   "২টি",
+   "৪টি",
+   "৮টি"
+  ],
+  "answer": 2,
+  "explanation": "প্রতিটি ভাঁজে স্তর দ্বিগুণ হয়; দুই ভাঁজে ৪টি স্তর, তাই একটি ছিদ্রে ৪টি ছিদ্র হয়।"
+ },
+ {
+  "ref": "mnt_222",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "স্থানিক দক্ষতা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "একটি বৃত্তে ৬টি বিন্দু আছে। প্রতি দুটি বিন্দু যোগ করে মোট কয়টি সরলরেখা আঁকা যায়?",
+  "options": [
+   "১৫টি",
+   "১২টি",
+   "৩০টি",
+   "৬টি"
+  ],
+  "answer": 0,
+  "explanation": "যেকোনো তিনটি বিন্দু একরেখ নয় বলে রেখার সংখ্যা ⁶C₂ = ৬ × ৫ ÷ ২ = ১৫।"
+ },
+ {
+  "ref": "mnt_223",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "শব্দ ও বর্ণ বিন্যাস",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ইংরেজি অভিধানের ক্রম অনুযায়ী কোন শব্দটি প্রথমে আসবে?",
+  "options": [
+   "Abbey",
+   "Abase",
+   "Abate",
+   "Abandon"
+  ],
+  "answer": 3,
+  "explanation": "প্রথম তিন বর্ণ A-B-A একই হলে চতুর্থ বর্ণ তুলনা: n < s < t; আর Abbey-তে তৃতীয় বর্ণ b, যা a-এর পরে আসে।"
+ },
+ {
+  "ref": "mnt_224",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "শব্দ ও বর্ণ বিন্যাস",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন বর্ণসমষ্টি পুনর্বিন্যাস করলে একটি ফলের নাম পাওয়া যায়?",
+  "options": [
+   "TAREW",
+   "NAGOM",
+   "ESOUH",
+   "LBATE"
+  ],
+  "answer": 1,
+  "explanation": "NAGOM সাজালে MANGO (আম)। অন্যগুলো WATER, HOUSE, TABLE।"
+ },
+ {
+  "ref": "mnt_225",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "শব্দ ও বর্ণ বিন্যাস",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "EXAMINATION শব্দের বর্ণগুলো ব্যবহার করে কোন শব্দটি গঠন করা যাবে না?",
+  "options": [
+   "MOTHER",
+   "NATION",
+   "TAXI",
+   "MINE"
+  ],
+  "answer": 0,
+  "explanation": "EXAMINATION শব্দে H ও R নেই, তাই MOTHER গঠন করা যায় না।"
+ },
+ {
+  "ref": "mnt_226",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "শব্দ ও বর্ণ বিন্যাস",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "\"অনল\" শব্দের সমার্থক কোনটি?",
+  "options": [
+   "বাতাস",
+   "আগুন",
+   "পানি",
+   "মাটি"
+  ],
+  "answer": 1,
+  "explanation": "অনল, পাবক, বহ্নি, হুতাশন—সবই আগুনের প্রতিশব্দ। অনিল অর্থ বাতাস।"
+ },
+ {
+  "ref": "mnt_227",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "শব্দ ও বর্ণ বিন্যাস",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "\"অনিল\" শব্দের অর্থ কী?",
+  "options": [
+   "আকাশ",
+   "আগুন",
+   "বাতাস",
+   "পানি"
+  ],
+  "answer": 2,
+  "explanation": "অনিল অর্থ বাতাস বা বায়ু; এটি প্রায়ই \"অনল\" (আগুন) এর সাথে গুলিয়ে ফেলা হয়।"
+ },
+ {
+  "ref": "mnt_228",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "শব্দ ও বর্ণ বিন্যাস",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কোন শব্দটি অন্যগুলোর সমার্থক নয়?",
+  "options": [
+   "বারি",
+   "নীর",
+   "সলিল",
+   "অনিল"
+  ],
+  "answer": 3,
+  "explanation": "নীর, সলিল ও বারি পানির প্রতিশব্দ; অনিল অর্থ বাতাস।"
+ },
+ {
+  "ref": "mnt_229",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "শব্দ ও বর্ণ বিন্যাস",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ইংরেজি বর্ণমালার মাঝখানের বর্ণ দুটি কী কী?",
+  "options": [
+   "L ও M",
+   "M ও N",
+   "N ও O",
+   "K ও L"
+  ],
+  "answer": 1,
+  "explanation": "২৬টি বর্ণের মধ্যে ১৩তম M এবং ১৪তম N; এরাই মাঝখানের বর্ণ।"
+ },
+ {
+  "ref": "mnt_230",
+  "exam": "bcs-general",
+  "subject": "Mental & Analytical Ability",
+  "topic": "শব্দ ও বর্ণ বিন্যাস",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ইংরেজি বর্ণমালার ডান দিক থেকে ১০ম বর্ণ কোনটি?",
+  "options": [
+   "J",
+   "P",
+   "R",
+   "Q"
+  ],
+  "answer": 3,
+  "explanation": "ডান থেকে n-তম বর্ণ = বাম থেকে (২৭ − n)-তম। ২৭ − ১০ = ১৭তম বর্ণ Q।"
+ },
+ {
+  "ref": "mnt_231",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Analogy & Classification",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Cow : Calf :: Horse : ?",
+  "options": [
+   "Foal",
+   "Puppy",
+   "Kid",
+   "Cub"
+  ],
+  "answer": 0,
+  "explanation": "The young one of a cow is a calf; the young one of a horse is a foal. A kid is a young goat and a cub a young lion or bear."
+ },
+ {
+  "ref": "mnt_232",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Analogy & Classification",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Book : Author :: Statue : ?",
+  "options": [
+   "Architect",
+   "Painter",
+   "Sculptor",
+   "Poet"
+  ],
+  "answer": 2,
+  "explanation": "An author creates a book; a sculptor creates a statue."
+ },
+ {
+  "ref": "mnt_233",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Analogy & Classification",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Doctor : Patient :: Lawyer : ?",
+  "options": [
+   "Court",
+   "Judge",
+   "Client",
+   "Witness"
+  ],
+  "answer": 2,
+  "explanation": "A doctor serves a patient; a lawyer serves a client."
+ },
+ {
+  "ref": "mnt_234",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Analogy & Classification",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Pen : Write :: Knife : ?",
+  "options": [
+   "Cut",
+   "Cook",
+   "Sharpen",
+   "Eat"
+  ],
+  "answer": 0,
+  "explanation": "Tool : function. A pen is used to write and a knife to cut."
+ },
+ {
+  "ref": "mnt_235",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Analogy & Classification",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "7 : 50 :: 9 : ?",
+  "options": [
+   "72",
+   "81",
+   "80",
+   "82"
+  ],
+  "answer": 3,
+  "explanation": "The rule is n² + 1: 7² + 1 = 50, so 9² + 1 = 82."
+ },
+ {
+  "ref": "mnt_236",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Analogy & Classification",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Which one is the odd one out?",
+  "options": [
+   "Square",
+   "Cylinder",
+   "Rectangle",
+   "Rhombus"
+  ],
+  "answer": 1,
+  "explanation": "Square, rectangle and rhombus are 2-D shapes; a cylinder is a 3-D solid."
+ },
+ {
+  "ref": "mnt_237",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Analogy & Classification",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Which month is the odd one out?",
+  "options": [
+   "June",
+   "January",
+   "March",
+   "July"
+  ],
+  "answer": 0,
+  "explanation": "January, March and July have 31 days; June has 30."
+ },
+ {
+  "ref": "mnt_238",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Analogy & Classification",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Find the odd number: 3, 5, 11, 14, 17, 21",
+  "options": [
+   "21",
+   "14",
+   "17",
+   "3"
+  ],
+  "answer": 1,
+  "explanation": "All other numbers are odd; 14 is the only even number."
+ },
+ {
+  "ref": "mnt_239",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Analogy & Classification",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Which word does NOT belong with the others?",
+  "options": [
+   "Centimetre",
+   "Inch",
+   "Kilogram",
+   "Yard"
+  ],
+  "answer": 2,
+  "explanation": "Inch, centimetre and yard measure length; kilogram measures mass."
+ },
+ {
+  "ref": "mnt_240",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Series",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Find the next number: 2, 6, 18, 54, ?",
+  "options": [
+   "216",
+   "108",
+   "144",
+   "162"
+  ],
+  "answer": 3,
+  "explanation": "Each term is multiplied by 3: 54 × 3 = 162."
+ },
+ {
+  "ref": "mnt_241",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Series",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Find the next number: 1, 9, 25, 49, ?",
+  "options": [
+   "64",
+   "81",
+   "100",
+   "121"
+  ],
+  "answer": 1,
+  "explanation": "Squares of odd numbers: 1², 3², 5², 7², so next is 9² = 81."
+ },
+ {
+  "ref": "mnt_242",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Series",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Find the next letter: B, D, G, K, ?",
+  "options": [
+   "N",
+   "O",
+   "Q",
+   "P"
+  ],
+  "answer": 3,
+  "explanation": "The gaps grow by one: +2, +3, +4, so next is +5: K (11) + 5 = P (16)."
+ },
+ {
+  "ref": "mnt_243",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Series",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Find the missing number: 3, 12, 48, ?, 768",
+  "options": [
+   "192",
+   "144",
+   "96",
+   "384"
+  ],
+  "answer": 0,
+  "explanation": "Each term is multiplied by 4: 48 × 4 = 192, and 192 × 4 = 768 confirms it."
+ },
+ {
+  "ref": "mnt_244",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Series",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "Find the next number: 2, 3, 5, 9, 17, ?",
+  "options": [
+   "34",
+   "31",
+   "33",
+   "35"
+  ],
+  "answer": 2,
+  "explanation": "The differences double: 1, 2, 4, 8, so next is +16: 17 + 16 = 33."
+ },
+ {
+  "ref": "mnt_245",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Series",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "Find the next number: 1, 2, 9, 64, ?",
+  "options": [
+   "256",
+   "125",
+   "625",
+   "500"
+  ],
+  "answer": 2,
+  "explanation": "The terms are n^(n−1): 1⁰, 2¹, 3², 4³, so next is 5⁴ = 625."
+ },
+ {
+  "ref": "mnt_246",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Coding-Decoding",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "If FRIEND is coded as HUMJTK, how is CANDLE coded?",
+  "options": [
+   "EDRIRL",
+   "DCQHQK",
+   "ESJFME",
+   "EDRJRL"
+  ],
+  "answer": 0,
+  "explanation": "Shifts increase letter by letter: +2, +3, +4, +5, +6, +7. C+2=E, A+3=D, N+4=R, D+5=I, L+6=R, E+7=L → EDRIRL."
+ },
+ {
+  "ref": "mnt_247",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Coding-Decoding",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "If TEACHER is coded as VGCEJGT, how is STUDENT coded?",
+  "options": [
+   "UVWFGOV",
+   "UVWEGPV",
+   "TUVFGPV",
+   "UVWFGPV"
+  ],
+  "answer": 3,
+  "explanation": "Each letter moves forward by 2: S→U, T→V, U→W, D→F, E→G, N→P, T→V."
+ },
+ {
+  "ref": "mnt_248",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Coding-Decoding",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "In a code, 'pic vic nic' means 'winter is cold', 'to nic re' means 'summer is hot' and 're pic boo' means 'winter and summer'. What is the code for 'hot'?",
+  "options": [
+   "re",
+   "to",
+   "nic",
+   "boo"
+  ],
+  "answer": 1,
+  "explanation": "'nic' is common to the first two (= is). 'pic' is common to 1 and 3 (= winter), 're' to 2 and 3 (= summer). The remaining word in sentence 2, 'to', means hot."
+ },
+ {
+  "ref": "mnt_249",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Coding-Decoding",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "If A = 1, B = 2 … Z = 26 and SKY = 55, what is SEA?",
+  "options": [
+   "25",
+   "24",
+   "26",
+   "29"
+  ],
+  "answer": 0,
+  "explanation": "S (19) + E (5) + A (1) = 25. Check: S (19) + K (11) + Y (25) = 55."
+ },
+ {
+  "ref": "mnt_250",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Coding-Decoding",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "If '+' means '×', '×' means '−', '−' means '÷' and '÷' means '+', then 8 + 4 − 2 × 6 ÷ 3 = ?",
+  "options": [
+   "11",
+   "13",
+   "19",
+   "7"
+  ],
+  "answer": 1,
+  "explanation": "Replacing the symbols gives 8 × 4 ÷ 2 − 6 + 3 = 32 ÷ 2 − 6 + 3 = 16 − 6 + 3 = 13."
+ },
+ {
+  "ref": "mnt_251",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Seating & Ranking",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Five people A, B, C, D and E sit in a row facing north. C is in the middle, A is immediately left of C, D is immediately right of C and E is at the right end. Who sits at the left end?",
+  "options": [
+   "D",
+   "A",
+   "B",
+   "E"
+  ],
+  "answer": 2,
+  "explanation": "Positions from left: C = 3, A = 2, D = 4, E = 5. The only seat left is 1, which goes to B."
+ },
+ {
+  "ref": "mnt_252",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Seating & Ranking",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Five people A, B, C, D and E sit in a row facing north. C is in the middle, A is immediately left of C, D is immediately right of C and E is at the right end. Who sits between C and E?",
+  "options": [
+   "Nobody",
+   "A",
+   "B",
+   "D"
+  ],
+  "answer": 3,
+  "explanation": "The order from left is B, A, C, D, E, so D sits between C and E."
+ },
+ {
+  "ref": "mnt_253",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Seating & Ranking",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "In a class of 35 students, Ravi is 12th from the top. What is his rank from the bottom?",
+  "options": [
+   "23rd",
+   "24th",
+   "25th",
+   "22nd"
+  ],
+  "answer": 1,
+  "explanation": "Rank from bottom = total − rank from top + 1 = 35 − 12 + 1 = 24."
+ },
+ {
+  "ref": "mnt_254",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Seating & Ranking",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "A is taller than B but shorter than C. D is the tallest and E is the shortest. Who is in the middle by height?",
+  "options": [
+   "D",
+   "B",
+   "C",
+   "A"
+  ],
+  "answer": 3,
+  "explanation": "The order is D > C > A > B > E, so A is third, which is the middle of five."
+ },
+ {
+  "ref": "mnt_255",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Seating & Ranking",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "Eight friends sit around a circular table facing the centre. P sits opposite Q, and R is to the immediate right of P. Who sits opposite R?",
+  "options": [
+   "The person to the immediate right of Q",
+   "The person to the immediate left of Q",
+   "Q",
+   "P"
+  ],
+  "answer": 0,
+  "explanation": "Opposite seats are 4 places apart. If P is at seat 1 and R at seat 2 (to P's right), Q is at seat 5, and seat 6 opposite R is to Q's immediate right in the same direction."
+ },
+ {
+  "ref": "mnt_256",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Syllogism",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Statements: All roses are flowers. Some flowers are red.\nConclusions: I. Some roses are red. II. All flowers are roses.",
+  "options": [
+   "Only conclusion I follows",
+   "Only conclusion II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "answer": 3,
+  "explanation": "The red flowers may or may not include any roses, so I does not follow. Not all flowers need to be roses, so II does not follow either."
+ },
+ {
+  "ref": "mnt_257",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Syllogism",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Statements: All pens are books. All books are tables.\nConclusions: I. All pens are tables. II. Some tables are pens.",
+  "options": [
+   "Only conclusion I follows",
+   "Only conclusion II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "answer": 2,
+  "explanation": "Pens ⊂ books ⊂ tables, so all pens are tables (I). Because every pen is a table, some tables are pens (II). Both follow."
+ },
+ {
+  "ref": "mnt_258",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Syllogism",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Statements: No cat is a dog. All dogs are animals.\nConclusions: I. No cat is an animal. II. Some animals are dogs.",
+  "options": [
+   "Only conclusion I follows",
+   "Only conclusion II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "answer": 1,
+  "explanation": "Cats can still be animals, so I does not follow. Since all dogs are animals, some animals are dogs, so II follows."
+ },
+ {
+  "ref": "mnt_259",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Syllogism",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "Statements: Some boys are players. Some players are singers.\nConclusions: I. Some boys are singers. II. No boy is a singer.",
+  "options": [
+   "Only conclusion I follows",
+   "Only conclusion II follows",
+   "Either I or II follows",
+   "Neither I nor II follows"
+  ],
+  "answer": 2,
+  "explanation": "Neither conclusion is certain on its own. However, \"Some A are B\" and \"No A is B\" cover every possibility between them, so one of the two must be true: either I or II follows."
+ },
+ {
+  "ref": "mnt_260",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Syllogism",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Statements: All engineers are graduates. Rahim is a graduate.\nConclusions: I. Rahim is an engineer. II. Rahim is not an engineer.",
+  "options": [
+   "Only conclusion I follows",
+   "Only conclusion II follows",
+   "Either I or II follows",
+   "Neither I nor II follows"
+  ],
+  "answer": 2,
+  "explanation": "Being a graduate does not prove Rahim is an engineer, nor that he is not. But I and II are exact opposites about one person, so exactly one must be true: either I or II follows."
+ },
+ {
+  "ref": "mnt_261",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Data Sufficiency",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Is x > 0?\nStatement 1: x² = 9\nStatement 2: x³ = 27",
+  "options": [
+   "Statement 1 alone is sufficient",
+   "Statement 2 alone is sufficient",
+   "Both statements together are needed",
+   "Both statements together are not sufficient"
+  ],
+  "answer": 1,
+  "explanation": "Statement 1 allows x = 3 or −3, so it is not sufficient. Statement 2 gives only x = 3, so it alone answers the question."
+ },
+ {
+  "ref": "mnt_262",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Data Sufficiency",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "What is the value of x?\nStatement 1: 2x + 3 = 11\nStatement 2: x² = 16",
+  "options": [
+   "Statement 1 alone is sufficient",
+   "Statement 2 alone is sufficient",
+   "Both statements together are needed",
+   "Both statements together are not sufficient"
+  ],
+  "answer": 0,
+  "explanation": "Statement 1 gives x = 4 uniquely. Statement 2 allows x = 4 or −4. So Statement 1 alone is sufficient."
+ },
+ {
+  "ref": "mnt_263",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Data Sufficiency",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "What is A's age?\nStatement 1: A is 5 years older than B.\nStatement 2: B's age is twice C's age.",
+  "options": [
+   "Statement 1 alone is sufficient",
+   "Statement 2 alone is sufficient",
+   "Both statements together are needed",
+   "Both statements together are not sufficient"
+  ],
+  "answer": 3,
+  "explanation": "Neither statement gives any actual age, and together they still only link A, B and C. A's age cannot be found."
+ },
+ {
+  "ref": "mnt_264",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Data Sufficiency",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "What is the area of rectangle ABCD?\nStatement 1: Its perimeter is 20 cm.\nStatement 2: Its length is 6 cm.",
+  "options": [
+   "Statement 1 alone is sufficient",
+   "Statement 2 alone is sufficient",
+   "Both statements together are needed",
+   "Both statements together are not sufficient"
+  ],
+  "answer": 2,
+  "explanation": "Perimeter alone allows many shapes, and length alone gives no width. Together: 2(6 + w) = 20 gives w = 4, so area = 24 cm². Both are needed."
+ },
+ {
+  "ref": "mnt_265",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Puzzles & Relations",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "Pointing to a man, Neha says, \"His only brother is the father of my daughter's father.\" How is the man related to Neha?",
+  "options": [
+   "Her father",
+   "Her husband's uncle",
+   "Her grandfather",
+   "Her brother-in-law"
+  ],
+  "answer": 1,
+  "explanation": "Neha's daughter's father is Neha's husband, and his father is Neha's father-in-law. The man is the father-in-law's only brother, so he is the uncle of Neha's husband."
+ },
+ {
+  "ref": "mnt_266",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Puzzles & Relations",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "A man walks 5 km north, turns right and walks 3 km, then turns right and walks 5 km. Where is he from the starting point?",
+  "options": [
+   "5 km south",
+   "3 km west",
+   "13 km north",
+   "3 km east"
+  ],
+  "answer": 3,
+  "explanation": "North 5, then east 3, then south 5. North and south cancel, leaving him 3 km east."
+ },
+ {
+  "ref": "mnt_267",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Puzzles & Relations",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "What is the angle between the hands of a clock at 7:20?",
+  "options": [
+   "100°",
+   "90°",
+   "110°",
+   "80°"
+  ],
+  "answer": 0,
+  "explanation": "Use |30H − 5.5M| = |210 − 110| = 100°."
+ },
+ {
+  "ref": "mnt_268",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Puzzles & Relations",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "A clock shows 10:10. What time does its mirror image show?",
+  "options": [
+   "1:10",
+   "2:10",
+   "1:50",
+   "2:50"
+  ],
+  "answer": 2,
+  "explanation": "Mirror time = 12:00 − actual time = 12:00 − 10:10 = 1:50."
+ },
+ {
+  "ref": "mnt_269",
+  "exam": "bangladesh-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Puzzles & Relations",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "A bag has 10 red and 10 blue socks. In the dark, what is the minimum number of socks you must pick to be sure of a matching pair?",
+  "options": [
+   "11",
+   "2",
+   "3",
+   "20"
+  ],
+  "answer": 2,
+  "explanation": "With 2 colours, the first two picks could differ, but the third must match one of them (pigeonhole principle)."
+ },
+ {
+  "ref": "mnt_270",
+  "exam": "combined-bank",
+  "subject": "Mental & Analytical Ability",
+  "topic": "Puzzles & Relations",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "en",
+  "body": "A father is 4 times as old as his son. In 20 years he will be twice as old as his son. What is the father's present age?",
+  "options": [
+   "40 years",
+   "50 years",
+   "60 years",
+   "36 years"
+  ],
+  "answer": 0,
+  "explanation": "Let the son be x: 4x + 20 = 2(x + 20), so x = 10 and the father is 40."
+ }
+]

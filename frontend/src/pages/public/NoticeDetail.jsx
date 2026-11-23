@@ -24,13 +24,18 @@ import { downloadIcs } from "@/lib/ics"
 import { useApp } from "@/lib/app-context"
 import { cn } from "@/lib/utils"
 import NotFound from "@/pages/NotFound"
+import { useNoticesVersion } from "@/lib/notices-store"
+import { PageLoader } from "@/components/Loaders"
 
 export default function NoticeDetail({ inApp = false }) {
+  const noticesVersion = useNoticesVersion()
   const { slug } = useParams()
   const { followed, toggleFollow, user } = useApp()
   const [report, setReport] = useState(false)
   const [elig, setElig] = useState(false)
   const n = notices.find((x) => x.slug === slug)
+  // Before the latest notices arrive, a brand-new notice isn't in the list yet — wait instead of saying "not found".
+  if (!n && noticesVersion === 0) return <PageLoader className="mx-auto max-w-3xl px-4 py-8" />
   if (!n) return <NotFound />
   const exam = exams.find((e) => e.slug === n.exam)
   const following = followed.includes(n.exam)

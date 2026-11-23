@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { Suspense, useState } from "react"
 import { Link, NavLink, Outlet, useLocation, useNavigate } from "react-router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -26,6 +26,7 @@ import {
   faBarsStaggered,
   faLock,
 } from "@fortawesome/free-solid-svg-icons"
+import { toast } from "sonner"
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import {
   DropdownMenu,
@@ -41,7 +42,9 @@ import { Logo, Pill } from "@/components/shared"
 import { LangToggle } from "@/layouts/PublicLayout"
 import { useApp } from "@/lib/app-context"
 import { exams } from "@/lib/data"
-import { BACKEND_URL } from "@/lib/api"
+import { adminApi } from "@/lib/api"
+import AnnouncementBar from "@/components/AnnouncementBar"
+import { PageLoader } from "@/components/Loaders"
 import { cn } from "@/lib/utils"
 
 const groups = [
@@ -96,7 +99,7 @@ const titles = {
 }
 
 function SideLink({ item, t, collapsed, tooltip = true }) {
-  const { isGuest } = useApp()
+  const { isGuest, L } = useApp()
   if (isGuest && item.locked) {
     const locked = (
       <Link
@@ -114,12 +117,12 @@ function SideLink({ item, t, collapsed, tooltip = true }) {
     )
     if (!tooltip) return locked
     return (
-      <Tooltip delayDuration={300}>
+      <Tooltip delayDuration={collapsed ? 150 : 700} disableHoverableContent>
         <TooltipTrigger asChild>
           <div>{locked}</div>
         </TooltipTrigger>
         <TooltipContent side="right" sideOffset={10} className="rounded-lg px-3 py-1.5 text-xs">
-          Log in to use {t("n_" + item.key)}
+          {L(`Log in to use ${t("n_" + item.key)}`, `${t("n_" + item.key)} ব্যবহার করতে লগ ইন করুন`)}
         </TooltipContent>
       </Tooltip>
     )
@@ -140,7 +143,7 @@ function SideLink({ item, t, collapsed, tooltip = true }) {
         <FontAwesomeIcon icon={item.icon} className="text-[0.9rem]" />
       </span>
       <span className={cn("min-w-0 flex-1 truncate transition-opacity duration-200", collapsed && "opacity-0")}>{t("n_" + item.key)}</span>
-      {item.soon && <Pill className={cn("text-[0.6rem] transition-opacity duration-200", collapsed && "opacity-0")}>Soon</Pill>}
+      {item.soon && <Pill className={cn("text-[0.6rem] transition-opacity duration-200", collapsed && "opacity-0")}>{L("Soon", "শীঘ্রই")}</Pill>}
       {item.soon && <span className={cn("absolute top-2 left-8 size-1.5 rounded-full bg-warning transition-opacity", collapsed ? "opacity-100" : "opacity-0")} />}
     </NavLink>
   )
@@ -154,7 +157,7 @@ function SideLink({ item, t, collapsed, tooltip = true }) {
         {collapsed && (
           <span className="block font-semibold">
             {t("n_" + item.key)}
-            {item.soon && " · Soon"}
+            {item.soon && ` · ${L("Soon", "শীঘ্রই")}`}
           </span>
         )}
         <span className={cn("block", !collapsed && "font-medium")}>{t("h_" + item.key)}</span>
@@ -163,7 +166,7 @@ function SideLink({ item, t, collapsed, tooltip = true }) {
   )
 }
 function ExamSwitcher({ className }) {
-  const { mainExam, set, followed } = useApp()
+  const { mainExam, set, followed, L } = useApp()
   const current = exams.find((e) => e.slug === mainExam) || exams[0]
   const options = exams.filter((e) => followed.includes(e.slug) || e.tier === 1)
   return (
@@ -176,17 +179,17 @@ function ExamSwitcher({ className }) {
           <FontAwesomeIcon icon={faLayerGroup} className="text-xs" />
         </span>
         <span className="min-w-0 leading-tight">
-          <span className="block text-[0.65rem] font-medium text-muted-foreground">Preparing for</span>
-          <span className="block truncate text-sm font-semibold">{current.name}</span>
+          <span className="block text-[0.65rem] font-medium text-muted-foreground">{L("Preparing for", "প্রস্তুতি নিচ্ছেন")}</span>
+          <span className="block truncate text-sm font-semibold">{L(current.name, current.nameBn || current.name)}</span>
         </span>
         <FontAwesomeIcon icon={faChevronDown} className="text-[0.6rem] text-muted-foreground" />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="start" className="w-64 rounded-xl p-1.5">
-        <DropdownMenuLabel className="text-xs text-muted-foreground">Which exam are you preparing for?</DropdownMenuLabel>
+        <DropdownMenuLabel className="text-xs text-muted-foreground">{L("Which exam are you preparing for?", "কোন পরীক্ষার প্রস্তুতি নিচ্ছেন?")}</DropdownMenuLabel>
         {options.map((e) => (
           <DropdownMenuItem key={e.slug} onClick={() => set({ mainExam: e.slug })} disabled={e.comingSoon} className="rounded-lg py-2.5">
-            <span className="flex-1 font-medium">{e.name}</span>
-            {e.comingSoon && <span className="text-xs text-muted-foreground">Soon</span>}
+            <span className="flex-1 font-medium">{L(e.name, e.nameBn || e.name)}</span>
+            {e.comingSoon && <span className="text-xs text-muted-foreground">{L("Soon", "শীঘ্রই")}</span>}
             {e.slug === mainExam && <FontAwesomeIcon icon={faCheck} className="text-primary" />}
           </DropdownMenuItem>
         ))}
@@ -196,7 +199,7 @@ function ExamSwitcher({ className }) {
 }
 
 function UserMenu({ showName }) {
-  const { user, logout, t, isGuest } = useApp()
+  const { user, logout, t, isGuest, L } = useApp()
   const nav = useNavigate()
   const initials = isGuest ? "G" : (user?.name || "U").split(" ").map((s) => s[0]).slice(0, 2).join("")
   return (
@@ -208,20 +211,20 @@ function UserMenu({ showName }) {
         {showName && (
           <span className="hidden text-left leading-tight xl:block">
             <span className="block text-sm font-bold">{user?.name}</span>
-            <span className="text-xs text-muted-foreground">{isGuest ? "Guest mode" : "Free account"}</span>
+            <span className="text-xs text-muted-foreground">{isGuest ? L("Guest mode", "অতিথি মোড") : L("Free account", "ফ্রি অ্যাকাউন্ট")}</span>
           </span>
         )}
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-60 rounded-xl p-1.5">
         <DropdownMenuLabel>
           <p className="font-bold">{user?.name}</p>
-          <p className="text-xs font-normal text-muted-foreground">{isGuest ? "Exploring without an account" : user?.email}</p>
+          <p className="text-xs font-normal text-muted-foreground">{isGuest ? L("Exploring without an account", "অ্যাকাউন্ট ছাড়া ঘুরে দেখছেন") : user?.email}</p>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         {isGuest ? (
           <>
             <DropdownMenuItem className="rounded-lg py-2" onClick={() => nav("/signup")}>
-              <FontAwesomeIcon icon={faUserPlus} fixedWidth /> Create free account
+              <FontAwesomeIcon icon={faUserPlus} fixedWidth /> {L("Create free account", "ফ্রি অ্যাকাউন্ট খুলুন")}
             </DropdownMenuItem>
             <DropdownMenuItem className="rounded-lg py-2" onClick={() => nav("/login")}>
               <FontAwesomeIcon icon={faArrowRight} fixedWidth /> {t("login")}
@@ -233,8 +236,8 @@ function UserMenu({ showName }) {
               <FontAwesomeIcon icon={faGear} fixedWidth /> {t("settings")}
             </DropdownMenuItem>
             {user?.is_admin && (
-              <DropdownMenuItem className="rounded-lg py-2" onClick={() => window.open(`${BACKEND_URL}/admin`, "_blank")}>
-                <FontAwesomeIcon icon={faShieldHalved} fixedWidth /> Admin panel
+              <DropdownMenuItem className="rounded-lg py-2" onClick={() => adminApi.openPanel({ newTab: true }).catch((e) => toast.error(e.message))}>
+                <FontAwesomeIcon icon={faShieldHalved} fixedWidth /> {L("Admin panel", "অ্যাডমিন প্যানেল")}
               </DropdownMenuItem>
             )}
           </>
@@ -247,7 +250,7 @@ function UserMenu({ showName }) {
             nav("/")
           }}
         >
-          <FontAwesomeIcon icon={faRightFromBracket} fixedWidth /> {isGuest ? "Exit guest mode" : t("logout")}
+          <FontAwesomeIcon icon={faRightFromBracket} fixedWidth /> {isGuest ? L("Exit guest mode", "অতিথি মোড থেকে বের হন") : t("logout")}
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
@@ -256,6 +259,7 @@ function UserMenu({ showName }) {
 
 function SearchBox() {
   const nav = useNavigate()
+  const { L } = useApp()
   return (
     <form
       onSubmit={(e) => {
@@ -268,7 +272,7 @@ function SearchBox() {
       <FontAwesomeIcon icon={faMagnifyingGlass} className="absolute top-1/2 left-4 -translate-y-1/2 text-sm text-muted-foreground" />
       <input
         name="q"
-        placeholder="Search for an exam or notice…"
+        placeholder={L("Search for an exam or notice…", "পরীক্ষা বা নোটিশ খুঁজুন…")}
         className="card h-10 w-full rounded-full pr-4 pl-10 text-sm outline-none transition-shadow focus:ring-[3px] focus:ring-primary/15"
       />
     </form>
@@ -293,13 +297,13 @@ function NavGroups({ t, collapsed = false, tooltip = true, onNavigate }) {
   ))
 }
 export default function AppLayout() {
-  const { t, isGuest, set, sidebarCollapsed: collapsed } = useApp()
+  const { t, isGuest, set, sidebarCollapsed: collapsed, L, fmtDate } = useApp()
   const [drawer, setDrawer] = useState(false)
   const { pathname } = useLocation()
   const immersive = /\/app\/(practice\/session|test\/run)/.test(pathname)
   const moreActive = moreItems.some((s) => pathname.startsWith(s.to))
   const title = titles[pathname] ?? titles[Object.keys(titles).filter((k) => k !== "/app" && pathname.startsWith(k))[0]] ?? "dashboard"
-  const today = new Date().toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" })
+  const today = fmtDate(new Date(), { weekday: "long", day: "numeric", month: "long" })
 
   return (
     <div
@@ -345,6 +349,8 @@ export default function AppLayout() {
         </SheetContent>
       </Sheet>
 
+      {!immersive && <AnnouncementBar />}
+
       {/* Top bar */}
       {!immersive && (
         <header className="pt-safe sticky top-0 z-20 border-b border-transparent bg-background/95 backdrop-blur-md">
@@ -369,7 +375,7 @@ export default function AppLayout() {
                 </button>
               </TooltipTrigger>
               <TooltipContent side="bottom" className="rounded-lg px-3 py-1.5 text-xs font-semibold">
-                {collapsed ? "Show full menu" : "Make menu smaller"}
+                {collapsed ? L("Show full menu", "পূর্ণ মেনু দেখান") : L("Make menu smaller", "মেনু ছোট করুন")}
               </TooltipContent>
             </Tooltip>
             <div className="hidden min-w-0 lg:ml-1 lg:block">
@@ -401,16 +407,18 @@ export default function AppLayout() {
               <FontAwesomeIcon icon={faUserPlus} className="text-sm" />
             </span>
             <p className="min-w-0 flex-1 text-sm">
-              <b className="font-semibold">You're exploring as a guest.</b>{" "}
-              <span className="hidden text-muted-foreground sm:inline">Create a free account to save progress, bookmarks and alerts.</span>
+              <b className="font-semibold">{L("You're exploring as a guest.", "আপনি অতিথি হিসেবে ঘুরে দেখছেন।")}</b>{" "}
+              <span className="hidden text-muted-foreground sm:inline">{L("Create a free account to save progress, bookmarks and alerts.", "অগ্রগতি ও নোটিফিকেশন সংরক্ষণে ফ্রি অ্যাকাউন্ট খুলুন।")}</span>
             </p>
             <Link to="/signup" className="shrink-0 rounded-full bg-primary px-3.5 py-2 text-xs font-semibold text-primary-foreground">
-              Sign up free
+              {L("Sign up free", "ফ্রি সাইন আপ")}
             </Link>
           </div>
         )}
         <div key={pathname} className={immersive ? undefined : "rise"}>
-          <Outlet />
+          <Suspense fallback={<PageLoader />}>
+            <Outlet />
+          </Suspense>
         </div>
       </main>
 

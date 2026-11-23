@@ -58,7 +58,10 @@ class CatalogSeeder extends Seeder
             );
         }
 
-        foreach ($this->json('questions') as $question) {
+        $questionFiles = collect(glob(database_path('seeders/data/questions*.json')))
+            ->flatMap(fn (string $path): array => json_decode(file_get_contents($path), true, flags: JSON_THROW_ON_ERROR));
+
+        foreach ($questionFiles as $question) {
             $subject = $subjectsByName[$question['subject']] ?? null;
 
             if (! $subject) {

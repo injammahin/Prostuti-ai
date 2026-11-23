@@ -24,7 +24,7 @@ import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
 import { Ring } from "@/components/shared"
 import AskAiSheet from "@/components/AskAiSheet"
-import { dailyQuizApi } from "@/lib/api"
+import { dailyQuizApi, siteApi } from "@/lib/api"
 import { useApi } from "@/lib/use-api"
 import { useApp } from "@/lib/app-context"
 import { cn } from "@/lib/utils"
@@ -122,8 +122,10 @@ export default function DailyQuiz() {
   }
   const next = () => {
     if (i < qs.length - 1) return setI(i + 1)
-    setTook(Math.round((Date.now() - startedAt) / 1000))
+    const seconds = Math.round((Date.now() - startedAt) / 1000)
+    setTook(seconds)
     setStage("result")
+    siteApi.dailyQuizCompleted(score, qs.length, seconds)
     try {
       const best = Number(localStorage.getItem(`prostuti:daily:${dateKey()}`) || 0)
       localStorage.setItem(`prostuti:daily:${dateKey()}`, String(Math.max(best, score)))
@@ -132,7 +134,7 @@ export default function DailyQuiz() {
   }
 
   const share = (where) => {
-    const text = `I scored ${score}/${COUNT} on today's Prostuti daily quiz 🎯 Can you beat me? Free, no sign-up:`
+    const text = `I scored ${score}/${qs.length} on today's Prostuti daily quiz 🎯 Can you beat me? Free, no sign-up:`
     if (where === "wa") window.open(`https://wa.me/?text=${encodeURIComponent(`${text} ${shareUrl}`)}`, "_blank")
     if (where === "fb") window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, "_blank")
     if (where === "copy") {

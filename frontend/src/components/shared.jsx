@@ -12,7 +12,7 @@ import {
 import { cn } from "@/lib/utils"
 import BrandMark from "@/components/BrandMark"
 import { exams, noticeTypes } from "@/lib/data"
-import { fmtDate, keyDate, relDays, daysUntil } from "@/lib/format"
+import { fmtDate, keyDate, relDays, daysUntil, isBangla, localDigits } from "@/lib/format"
 
 export const tones = {
   primary: "bg-primary/10 text-primary",
@@ -226,6 +226,8 @@ export function NoticeTypePill({ type }) {
   return <Pill tone={t.tone}>{t.label}</Pill>
 }
 
+const CHIP_LABELS_BN = { Apply: "আবেদন", Exam: "পরীক্ষা", Pub: "প্রকাশ", Result: "ফল" }
+
 export function DateChip({ iso, label }) {
   const n = daysUntil(iso)
   const urgent = n !== null && n >= 0 && n <= 3
@@ -237,9 +239,9 @@ export function DateChip({ iso, label }) {
         urgent ? "bg-destructive/10 text-destructive" : "bg-secondary text-secondary-foreground"
       )}
     >
-      <span className="text-[0.6rem] font-bold tracking-wide uppercase opacity-80">{label}</span>
-      <span className="text-xl leading-tight font-extrabold">{d.getDate()}</span>
-      <span className="text-[0.65rem] font-semibold opacity-80">{d.toLocaleString("en", { month: "short" })}</span>
+      <span className="text-[0.6rem] font-bold tracking-wide uppercase opacity-80">{isBangla() ? CHIP_LABELS_BN[label] || label : label}</span>
+      <span className="text-xl leading-tight font-extrabold">{localDigits(d.getDate())}</span>
+      <span className="text-[0.65rem] font-semibold opacity-80">{d.toLocaleString(isBangla() ? "bn-BD" : "en", { month: "short" })}</span>
     </div>
   )
 }

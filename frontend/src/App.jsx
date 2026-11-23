@@ -1,6 +1,8 @@
-import { lazy, Suspense } from "react"
+import { lazy, Suspense, useEffect, useRef } from "react"
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router"
-import { BACKEND_URL } from "@/lib/api"
+import { BACKEND_URL, siteApi } from "@/lib/api"
+import { TopLoadingBar } from "@/components/Loaders"
+import { loadNotices } from "@/lib/notices-store"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { Toaster } from "@/components/ui/sonner"
 import { AppProvider, useApp } from "@/lib/app-context"
@@ -8,7 +10,18 @@ import PublicLayout from "@/layouts/PublicLayout"
 import AppLayout from "@/layouts/AppLayout"
 import SignupPrompt from "@/components/SignupPrompt"
 
-const p = (f) => lazy(f)
+// Pages load on demand; all of them are fetched in the background after the first paint,
+// so moving between menu items never waits for a download.
+const pageImporters = []
+const p = (f) => {
+  pageImporters.push(f)
+  return lazy(f)
+}
+function preloadAllPages() {
+  const run = () => pageImporters.forEach((load) => load().catch(() => {}))
+  if ("requestIdleCallback" in window) window.requestIdleCallback(run, { timeout: 3000 })
+  else setTimeout(run, 1500)
+}
 const Landing = p(() => import("@/pages/public/Landing"))
 const Notices = p(() => import("@/pages/public/Notices"))
 const DailyQuiz = p(() => import("@/pages/public/DailyQuiz"))
@@ -64,6 +77,20 @@ function RequireAuth({ children }) {
   return children
 }
 
+/** Sends one page view to the server each time the page changes (for the admin's visitor stats). */
+function PageTracker() {
+  const { pathname } = useLocation()
+  const lastPath = useRef(null)
+  useEffect(() => {
+    if (lastPath.current === pathname) return
+    const referrer = lastPath.current === null ? document.referrer : undefined
+    lastPath.current = pathname
+    const t = setTimeout(() => siteApi.trackPageView(pathname, referrer), 1200)
+    return () => clearTimeout(t)
+  }, [pathname])
+  return null
+}
+
 function AppRoutes() {
   return (
     <Suspense fallback={<Loader />}>
@@ -113,10 +140,16 @@ function AppRoutes() {
 }
 
 export default function App() {
+  useEffect(preloadAllPages, [])
+  useEffect(() => {
+    loadNotices()
+  }, [])
   return (
     <AppProvider>
       <TooltipProvider>
         <BrowserRouter>
+          <TopLoadingBar />
+          <PageTracker />
           <AppRoutes />
           <SignupPrompt />
         </BrowserRouter>

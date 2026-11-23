@@ -1,6 +1,8 @@
 import { createContext, useContext, useEffect, useMemo, useState, useCallback } from "react"
 import { dict } from "@/lib/i18n"
+import { setFormatLanguage } from "@/lib/format"
 import { authApi, tokenStore } from "@/lib/api"
+import { clearApiCache } from "@/lib/use-api"
 
 const AppContext = createContext(null)
 const KEY = "prostuti:v1"
@@ -73,7 +75,21 @@ export function AppProvider({ children }) {
     []
   )
 
+  setFormatLanguage(state.lang)
   const t = useCallback((k) => dict[state.lang]?.[k] ?? dict.en[k] ?? k, [state.lang])
+  const bn = state.lang === "bn"
+  /** Inline translation: L("Home", "হোম") picks the text for the current language. */
+  const L = useCallback((en, bnText) => (bn ? bnText ?? en : en), [bn])
+  /** Numbers in the current script: 1,780 → ১,৭৮০ in Bangla. */
+  const num = useCallback(
+    (value) => {
+      const text = typeof value === "number" ? value.toLocaleString("en-US") : String(value ?? "")
+      return bn ? text.replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[d]) : text
+    },
+    [bn]
+  )
+  /** Dates in the current language, e.g. "সোমবার, ২৩ নভেম্বর". */
+  const fmtDate = useCallback((date, options) => new Date(date).toLocaleDateString(bn ? "bn-BD" : "en-GB", options), [bn])
   const isGuest = !state.user || !!state.user.guest
 
   /** Returns true when the user has an account; otherwise opens the sign-up prompt. */
@@ -92,12 +108,17 @@ export function AppProvider({ children }) {
       isGuest,
       set,
       t,
+      bn,
+      L,
+      num,
+      fmtDate,
       signup,
       setSignup,
       requireAccount,
       toggleFollow: (id) => requireAccount("follow exams and get alerts") && toggleIn("followed", id),
       toggleBookmark: (id) => requireAccount("bookmark questions") && toggleIn("bookmarks", id),
       login: (user, token) => {
+        clearApiCache()
         tokenStore.set(token)
         set({ user, ...(user.main_exam ? { mainExam: user.main_exam } : {}) })
       },
@@ -105,10 +126,11 @@ export function AppProvider({ children }) {
       logout: () => {
         if (tokenStore.get()) authApi.logout().catch(() => {})
         tokenStore.set(null)
+        clearApiCache()
         set({ user: null })
       },
     }),
-    [state, isGuest, set, t, signup, requireAccount, toggleIn]
+    [state, isGuest, set, t, bn, L, num, fmtDate, signup, requireAccount, toggleIn]
   )
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>

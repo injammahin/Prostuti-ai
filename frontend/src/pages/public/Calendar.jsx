@@ -18,6 +18,7 @@ import { fmtDate, daysUntil } from "@/lib/format"
 import { downloadIcs } from "@/lib/ics"
 import { useApp } from "@/lib/app-context"
 import { cn } from "@/lib/utils"
+import { useNoticesVersion } from "@/lib/notices-store"
 
 const kinds = {
   applyFrom: { label: "Apply opens", dot: "bg-info", text: "text-info", soft: "bg-info/10", time: "T09:00:00" },
@@ -189,6 +190,7 @@ function MiniMonthView({ month, setMonth, cells, byDate, selected, setSelected, 
 }
 
 export default function Calendar({ inApp = false }) {
+  const noticesVersion = useNoticesVersion()
   const { followed, user, isGuest } = useApp()
   const [fixedNow] = useState(() => Date.now())
   const [view, setView] = useState("list")
@@ -207,7 +209,7 @@ export default function Calendar({ inApp = false }) {
       Object.keys(kinds).forEach((k) => n[k] && out.push({ date: n[k], kind: k, notice: n, exam, at: new Date(n[k] + kinds[k].time).getTime() }))
     })
     return out.sort((a, b) => a.at - b.at)
-  }, [family, mine, followed])
+  }, [family, mine, followed, noticesVersion])
 
   const upcoming = events.filter((e) => e.at > fixedNow)
   const next = upcoming[0] || events[0]

@@ -10,6 +10,7 @@ import { Icon } from "@/components/icon"
 import { exams, notices } from "@/lib/data"
 import { useApp } from "@/lib/app-context"
 import NotFound from "@/pages/NotFound"
+import { useNoticesVersion } from "@/lib/notices-store"
 
 const sampleTopics = {
   Bangla: ["ভাষা ও ব্যাকরণ", "প্রাচীন ও মধ্যযুগের সাহিত্য", "আধুনিক যুগের সাহিত্য"],
@@ -36,6 +37,7 @@ const pastPapersByExam = {
 }
 
 export default function ExamDetail({ inApp = false }) {
+  const noticesVersion = useNoticesVersion()
   const { slug } = useParams()
   const { followed, toggleFollow, user } = useApp()
   const [tab, setTab] = useState("format")

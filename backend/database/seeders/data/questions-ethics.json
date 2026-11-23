@@ -1,0 +1,1676 @@
+[
+ {
+  "ref": "eth_001",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "নৈতিকতার ধারণা",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "'Ethics' শব্দটি কোন ভাষার শব্দ থেকে এসেছে?",
+  "options": [
+   "ল্যাটিন",
+   "গ্রিক",
+   "ফরাসি",
+   "জার্মান"
+  ],
+  "answer": 1,
+  "explanation": "'Ethics' এসেছে গ্রিক শব্দ 'Ethos' থেকে, যার অর্থ চরিত্র, রীতি বা অভ্যাস।"
+ },
+ {
+  "ref": "eth_002",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "নৈতিকতার ধারণা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "'Morality' শব্দটি কোন ল্যাটিন শব্দ থেকে এসেছে?",
+  "options": [
+   "Ethos",
+   "Logos",
+   "Mores",
+   "Nomos"
+  ],
+  "answer": 2,
+  "explanation": "'Morality' এসেছে ল্যাটিন 'Mores' থেকে, যার অর্থ রীতিনীতি বা প্রথা। 'Ethos' গ্রিক শব্দ, যা থেকে 'Ethics' এসেছে।"
+ },
+ {
+  "ref": "eth_003",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "নৈতিকতার ধারণা",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "নীতিবিদ্যা (Ethics) কোন ধরনের বিজ্ঞান?",
+  "options": [
+   "প্রাকৃতিক বিজ্ঞান",
+   "বর্ণনামূলক বিজ্ঞান",
+   "পরীক্ষামূলক বিজ্ঞান",
+   "আদর্শনিষ্ঠ (Normative) বিজ্ঞান"
+  ],
+  "answer": 3,
+  "explanation": "নীতিবিদ্যা মানুষের আচরণ কেমন হওয়া উচিত তা আলোচনা করে, তাই একে আদর্শনিষ্ঠ বা Normative বিজ্ঞান বলা হয়।"
+ },
+ {
+  "ref": "eth_004",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "মূল্যবোধ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "মূল্যবোধ সম্পর্কে কোনটি সঠিক?",
+  "options": [
+   "মূল্যবোধ সমাজ ও সময়ভেদে পরিবর্তনশীল",
+   "মূল্যবোধ কখনো পরিবর্তন হয় না",
+   "মূল্যবোধ শুধু আইন দ্বারা তৈরি হয়",
+   "সংস্কৃতির সাথে মূল্যবোধের কোনো সম্পর্ক নেই"
+  ],
+  "answer": 0,
+  "explanation": "মূল্যবোধ আপেক্ষিক — সমাজ, সংস্কৃতি ও সময়ের সাথে এটি বদলাতে পারে।"
+ },
+ {
+  "ref": "eth_005",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "মূল্যবোধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আইন ও নৈতিকতার মধ্যে মূল পার্থক্য কোনটি?",
+  "options": [
+   "নৈতিকতা ভঙ্গ করলে আদালত শাস্তি দেয়",
+   "আইন ভঙ্গ করলে রাষ্ট্রীয় শাস্তি হয়, নৈতিকতা ভঙ্গের প্রতিক্রিয়া মূলত সামাজিক ও বিবেকগত",
+   "আইন ও নৈতিকতা সম্পূর্ণ একই জিনিস",
+   "আইন শুধু ব্যক্তিগত বিষয়, নৈতিকতা রাষ্ট্রীয় বিষয়"
+  ],
+  "answer": 1,
+  "explanation": "আইন রাষ্ট্র প্রণয়ন করে এবং ভঙ্গ করলে রাষ্ট্রীয় শাস্তি হয়। নৈতিকতা মানুষের অন্তরের বিষয়; এর লঙ্ঘনে সামাজিক নিন্দা বা বিবেকের দংশন হয়।"
+ },
+ {
+  "ref": "eth_006",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "মূল্যবোধ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বিবেক (Conscience) বলতে কী বোঝায়?",
+  "options": [
+   "রাষ্ট্রের তৈরি নিয়ম",
+   "শুধু ধর্মীয় অনুশাসন",
+   "ভালো-মন্দ বিচার করার মানুষের অন্তর্নিহিত নৈতিক বোধ",
+   "সামাজিক রীতিনীতি"
+  ],
+  "answer": 2,
+  "explanation": "বিবেক হলো মানুষের ভেতরের সেই নৈতিক বোধ, যা দিয়ে সে ভালো-মন্দ, ন্যায়-অন্যায় বিচার করে।"
+ },
+ {
+  "ref": "eth_007",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "মূল্যবোধ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "স্বজনপ্রীতি (Nepotism) বলতে বোঝায় —",
+  "options": [
+   "যোগ্যতার ভিত্তিতে নিয়োগ",
+   "আত্মীয়-স্বজনকে অন্যায়ভাবে সুবিধা দেওয়া",
+   "সবার প্রতি সমান আচরণ",
+   "জনগণকে তথ্য জানানো"
+  ],
+  "answer": 1,
+  "explanation": "স্বজনপ্রীতি হলো যোগ্যতা বিবেচনা না করে আত্মীয়-স্বজনকে চাকরি বা সুবিধা দেওয়া। এটি সুশাসনের পরিপন্থী।"
+ },
+ {
+  "ref": "eth_008",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "মূল্যবোধ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "স্বার্থের দ্বন্দ্ব (Conflict of Interest) বলতে বোঝায় —",
+  "options": [
+   "দুই দেশের মধ্যে যুদ্ধ",
+   "দুই রাজনৈতিক দলের বিরোধ",
+   "সরকারি দায়িত্ব পালনে ব্যক্তিগত স্বার্থ প্রভাব ফেলার পরিস্থিতি",
+   "কর্মচারীদের বেতন বৈষম্য"
+  ],
+  "answer": 2,
+  "explanation": "যখন কোনো কর্মকর্তার ব্যক্তিগত স্বার্থ তার নিরপেক্ষ সরকারি সিদ্ধান্তকে প্রভাবিত করতে পারে, তাকে স্বার্থের দ্বন্দ্ব বলে।"
+ },
+ {
+  "ref": "eth_009",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "মূল্যবোধ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "সরকারি কর্মচারীর নিরপেক্ষতা (Neutrality) বলতে বোঝায় —",
+  "options": [
+   "রাজনৈতিক প্রভাবমুক্ত থেকে সবার প্রতি সমান আচরণ করা",
+   "নিজ দলের লোকদের অগ্রাধিকার দেওয়া",
+   "কোনো সিদ্ধান্ত না নেওয়া",
+   "শুধু ঊর্ধ্বতনের কথা মানা"
+  ],
+  "answer": 0,
+  "explanation": "নিরপেক্ষতা মানে রাজনৈতিক বা ব্যক্তিগত পক্ষপাত ছাড়া আইন ও নিয়ম অনুযায়ী সবাইকে সমানভাবে সেবা দেওয়া।"
+ },
+ {
+  "ref": "eth_010",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "'Nicomachean Ethics' গ্রন্থের রচয়িতা কে?",
+  "options": [
+   "প্লেটো",
+   "সক্রেটিস",
+   "অ্যারিস্টটল",
+   "ইমানুয়েল কান্ট"
+  ],
+  "answer": 2,
+  "explanation": "'Nicomachean Ethics' অ্যারিস্টটলের লেখা নীতিশাস্ত্র বিষয়ক বিখ্যাত গ্রন্থ।"
+ },
+ {
+  "ref": "eth_011",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "'The Republic' গ্রন্থের রচয়িতা কে?",
+  "options": [
+   "প্লেটো",
+   "অ্যারিস্টটল",
+   "ম্যাকিয়াভেলি",
+   "রুশো"
+  ],
+  "answer": 0,
+  "explanation": "'The Republic' প্লেটোর লেখা। এতে তিনি ন্যায়বিচার ও আদর্শ রাষ্ট্রের ধারণা দিয়েছেন।"
+ },
+ {
+  "ref": "eth_012",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "'জ্ঞানই পুণ্য' (Virtue is knowledge) — উক্তিটি কার?",
+  "options": [
+   "প্লেটো",
+   "সক্রেটিস",
+   "অ্যারিস্টটল",
+   "কান্ট"
+  ],
+  "answer": 1,
+  "explanation": "সক্রেটিস বলতেন, জ্ঞানই পুণ্য — যে সত্যিকার অর্থে ভালো-মন্দ জানে, সে অন্যায় করে না।"
+ },
+ {
+  "ref": "eth_013",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "'মানুষ স্বভাবতই রাজনৈতিক জীব' — উক্তিটি কার?",
+  "options": [
+   "প্লেটো",
+   "হবস",
+   "লক",
+   "অ্যারিস্টটল"
+  ],
+  "answer": 3,
+  "explanation": "অ্যারিস্টটল তাঁর 'Politics' গ্রন্থে বলেছেন, মানুষ স্বভাবতই সামাজিক ও রাজনৈতিক জীব।"
+ },
+ {
+  "ref": "eth_014",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "'সর্বাধিক মানুষের সর্বাধিক সুখ' নীতির প্রবক্তা কে?",
+  "options": [
+   "জেরেমি বেন্থাম",
+   "ইমানুয়েল কান্ট",
+   "হেগেল",
+   "টমাস হবস"
+  ],
+  "answer": 0,
+  "explanation": "উপযোগবাদের (Utilitarianism) প্রবক্তা জেরেমি বেন্থাম বলেন, সেই কাজই ভালো যা সর্বাধিক মানুষের সর্বাধিক সুখ আনে।"
+ },
+ {
+  "ref": "eth_015",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "উপযোগবাদ (Utilitarianism)-এর অন্যতম প্রধান প্রবক্তা কে?",
+  "options": [
+   "জন লক",
+   "জন স্টুয়ার্ট মিল",
+   "প্লেটো",
+   "ইমানুয়েল কান্ট"
+  ],
+  "answer": 1,
+  "explanation": "জেরেমি বেন্থাম ও জন স্টুয়ার্ট মিল উপযোগবাদের প্রধান দুই প্রবক্তা।"
+ },
+ {
+  "ref": "eth_016",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "'নিঃশর্ত আদেশ' (Categorical Imperative) ধারণাটি কোন দার্শনিকের?",
+  "options": [
+   "বেন্থাম",
+   "জন স্টুয়ার্ট মিল",
+   "ইমানুয়েল কান্ট",
+   "ডেভিড হিউম"
+  ],
+  "answer": 2,
+  "explanation": "জার্মান দার্শনিক ইমানুয়েল কান্ট 'Categorical Imperative' ধারণা দেন — নৈতিক দায়িত্ব শর্তহীনভাবে পালন করতে হবে।"
+ },
+ {
+  "ref": "eth_017",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "কর্তব্যভিত্তিক নীতিতত্ত্ব (Deontology)-এর সাথে প্রধানত কোন দার্শনিকের নাম জড়িত?",
+  "options": [
+   "এপিকিউরাস",
+   "ইমানুয়েল কান্ট",
+   "জেরেমি বেন্থাম",
+   "ম্যাকিয়াভেলি"
+  ],
+  "answer": 1,
+  "explanation": "Deontology মতে ফলাফল নয়, কর্তব্যই নৈতিকতার মানদণ্ড। এর প্রধান প্রবক্তা ইমানুয়েল কান্ট।"
+ },
+ {
+  "ref": "eth_018",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সুখবাদ (Hedonism)-এর সাথে কোন প্রাচীন গ্রিক দার্শনিকের নাম সবচেয়ে বেশি জড়িত?",
+  "options": [
+   "এপিকিউরাস",
+   "জেনো",
+   "সক্রেটিস",
+   "পিথাগোরাস"
+  ],
+  "answer": 0,
+  "explanation": "এপিকিউরাস সুখকে জীবনের প্রধান লক্ষ্য মনে করতেন, তাই সুখবাদের সাথে তাঁর নাম জড়িত।"
+ },
+ {
+  "ref": "eth_019",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "স্টোয়িক (Stoic) দর্শনের প্রতিষ্ঠাতা কে?",
+  "options": [
+   "এপিকিউরাস",
+   "ডায়োজিনিস",
+   "থেলিস",
+   "সিটিয়ামের জেনো"
+  ],
+  "answer": 3,
+  "explanation": "স্টোয়িক দর্শনের প্রতিষ্ঠাতা সিটিয়ামের জেনো (Zeno of Citium)।"
+ },
+ {
+  "ref": "eth_020",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "অ্যারিস্টটলের 'মধ্যপন্থা নীতি' (Golden Mean) মূলত কীসের সাথে সম্পর্কিত?",
+  "options": [
+   "সদ্গুণ বা নৈতিক গুণ",
+   "রাষ্ট্রের উৎপত্তি",
+   "অর্থনীতি",
+   "গণিত"
+  ],
+  "answer": 0,
+  "explanation": "অ্যারিস্টটলের মতে সদ্গুণ হলো দুই চরম অবস্থার মাঝামাঝি পথ — যেমন সাহস হলো ভীরুতা ও হঠকারিতার মাঝামাঝি।"
+ },
+ {
+  "ref": "eth_021",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "প্লেটোর মতে প্রধান সদ্গুণ (Cardinal virtues) কয়টি?",
+  "options": [
+   "৩টি",
+   "৪টি",
+   "৫টি",
+   "৭টি"
+  ],
+  "answer": 1,
+  "explanation": "প্লেটোর মতে প্রধান সদ্গুণ ৪টি — প্রজ্ঞা, সাহস, মিতাচার ও ন্যায়পরায়ণতা।"
+ },
+ {
+  "ref": "eth_022",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "'Leviathan' গ্রন্থের রচয়িতা কে?",
+  "options": [
+   "জন লক",
+   "রুশো",
+   "টমাস হবস",
+   "হেগেল"
+  ],
+  "answer": 2,
+  "explanation": "'Leviathan' (১৬৫১) টমাস হবসের লেখা, যেখানে তিনি সামাজিক চুক্তি মতবাদ ব্যাখ্যা করেছেন।"
+ },
+ {
+  "ref": "eth_023",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "'Two Treatises of Government' গ্রন্থের রচয়িতা কে?",
+  "options": [
+   "টমাস হবস",
+   "জন লক",
+   "মন্টেস্কু",
+   "ম্যাকিয়াভেলি"
+  ],
+  "answer": 1,
+  "explanation": "'Two Treatises of Government' জন লকের লেখা; এতে তিনি জীবন, স্বাধীনতা ও সম্পত্তির অধিকারের কথা বলেছেন।"
+ },
+ {
+  "ref": "eth_024",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "'The Social Contract' গ্রন্থের রচয়িতা কে?",
+  "options": [
+   "জ্যাঁ জ্যাক রুশো",
+   "জন লক",
+   "টমাস হবস",
+   "ভলতেয়ার"
+  ],
+  "answer": 0,
+  "explanation": "'The Social Contract' রুশোর লেখা। এতে তিনি 'সাধারণ ইচ্ছা' (General Will)-এর ধারণা দেন।"
+ },
+ {
+  "ref": "eth_025",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "'মানুষ স্বাধীন হয়ে জন্মায়, কিন্তু সর্বত্র সে শৃঙ্খলিত' — উক্তিটি কার?",
+  "options": [
+   "ভলতেয়ার",
+   "জন লক",
+   "কার্ল মার্ক্স",
+   "রুশো"
+  ],
+  "answer": 3,
+  "explanation": "উক্তিটি রুশোর 'The Social Contract' গ্রন্থের শুরুর বিখ্যাত লাইন।"
+ },
+ {
+  "ref": "eth_026",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ক্ষমতার পৃথকীকরণ (Separation of Powers) নীতির প্রবক্তা কে?",
+  "options": [
+   "মন্টেস্কু",
+   "রুশো",
+   "হবস",
+   "অ্যারিস্টটল"
+  ],
+  "answer": 0,
+  "explanation": "ফরাসি দার্শনিক মন্টেস্কু তাঁর 'The Spirit of Laws' গ্রন্থে আইন, নির্বাহী ও বিচার বিভাগের ক্ষমতা আলাদা রাখার কথা বলেন।"
+ },
+ {
+  "ref": "eth_027",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "'The Prince' গ্রন্থের রচয়িতা কে?",
+  "options": [
+   "প্লেটো",
+   "নিকোলো ম্যাকিয়াভেলি",
+   "টমাস মুর",
+   "দান্তে"
+  ],
+  "answer": 1,
+  "explanation": "'The Prince' ইতালীয় চিন্তাবিদ নিকোলো ম্যাকিয়াভেলির লেখা রাষ্ট্র পরিচালনা বিষয়ক গ্রন্থ।"
+ },
+ {
+  "ref": "eth_028",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আদর্শ আমলাতন্ত্র (Ideal type bureaucracy) মডেলটি কে প্রদান করেন?",
+  "options": [
+   "কার্ল মার্ক্স",
+   "পিটার ড্রাকার",
+   "ম্যাক্স ওয়েবার",
+   "হেনরি ফেয়ল"
+  ],
+  "answer": 2,
+  "explanation": "জার্মান সমাজবিজ্ঞানী ম্যাক্স ওয়েবার আদর্শ আমলাতন্ত্রের মডেল দেন — নিয়মভিত্তিক, ক্রমোচ্চ ও যোগ্যতাভিত্তিক প্রশাসন।"
+ },
+ {
+  "ref": "eth_029",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "'Emotional Intelligence' ধারণাটি ব্যাপকভাবে জনপ্রিয় করেন কে?",
+  "options": [
+   "হাওয়ার্ড গার্ডনার",
+   "ড্যানিয়েল গোলম্যান",
+   "ম্যাক্স ওয়েবার",
+   "আব্রাহাম মাসলো"
+  ],
+  "answer": 1,
+  "explanation": "ড্যানিয়েল গোলম্যান ১৯৯৫ সালে 'Emotional Intelligence' বই লিখে ধারণাটিকে ব্যাপকভাবে জনপ্রিয় করেন।"
+ },
+ {
+  "ref": "eth_030",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "আইনের শাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "আইনের শাসন (Rule of Law) ধারণাটি কে জনপ্রিয় করেন?",
+  "options": [
+   "জন অস্টিন",
+   "এ. ভি. ডাইসি",
+   "হ্যারল্ড লাস্কি",
+   "বেন্থাম"
+  ],
+  "answer": 1,
+  "explanation": "ব্রিটিশ সংবিধান বিশেষজ্ঞ এ. ভি. ডাইসি আইনের শাসনের ধারণাকে ব্যাখ্যা ও জনপ্রিয় করেন।"
+ },
+ {
+  "ref": "eth_031",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "আইনের শাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "এ. ভি. ডাইসি বর্ণিত আইনের শাসনের মূলনীতি কয়টি?",
+  "options": [
+   "২টি",
+   "৩টি",
+   "৪টি",
+   "৫টি"
+  ],
+  "answer": 1,
+  "explanation": "ডাইসির মূলনীতি ৩টি — আইনের প্রাধান্য, আইনের দৃষ্টিতে সবাই সমান, এবং আদালতের রায়ের মাধ্যমে ব্যক্তির অধিকার সুরক্ষা।"
+ },
+ {
+  "ref": "eth_032",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "আইনের শাসন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "আইনের শাসনের মূল কথা কোনটি?",
+  "options": [
+   "শাসকের ইচ্ছাই আইন",
+   "ধনীদের জন্য আলাদা আইন",
+   "আইনের ঊর্ধ্বে কেউ নয়, সবাই আইনের অধীন",
+   "শুধু সরকারি কর্মচারীরা আইন মানবে"
+  ],
+  "answer": 2,
+  "explanation": "আইনের শাসন মানে রাষ্ট্রের প্রধান থেকে সাধারণ নাগরিক — সবাই আইনের অধীন, কেউ আইনের ঊর্ধ্বে নয়।"
+ },
+ {
+  "ref": "eth_033",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "'সুশাসন' (Good Governance) প্রত্যয়টি প্রথম জনপ্রিয় করে কোন প্রতিষ্ঠান?",
+  "options": [
+   "UNDP",
+   "আন্তর্জাতিক মুদ্রা তহবিল (IMF)",
+   "এশীয় উন্নয়ন ব্যাংক (ADB)",
+   "বিশ্বব্যাংক"
+  ],
+  "answer": 3,
+  "explanation": "বিশ্বব্যাংক ১৯৮৯ সালে সাব-সাহারান আফ্রিকা বিষয়ক প্রতিবেদনে সুশাসন প্রত্যয়টি ব্যবহার করে আলোচনায় আনে।"
+ },
+ {
+  "ref": "eth_034",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বিশ্বব্যাংক কত সালে প্রথম সুশাসন প্রত্যয়টি ব্যবহার করে?",
+  "options": [
+   "১৯৮৯",
+   "১৯৯২",
+   "১৯৯৭",
+   "২০০০"
+  ],
+  "answer": 0,
+  "explanation": "বিশ্বব্যাংক ১৯৮৯ সালে প্রথম সুশাসন প্রত্যয়টি ব্যবহার করে।"
+ },
+ {
+  "ref": "eth_035",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘের এসকাপ (UN ESCAP)-এর মতে সুশাসনের বৈশিষ্ট্য কয়টি?",
+  "options": [
+   "৬টি",
+   "৭টি",
+   "৮টি",
+   "৯টি"
+  ],
+  "answer": 2,
+  "explanation": "UN ESCAP সুশাসনের ৮টি বৈশিষ্ট্য উল্লেখ করেছে — অংশগ্রহণ, আইনের শাসন, স্বচ্ছতা, সংবেদনশীলতা, ঐকমত্য, ন্যায্যতা ও অন্তর্ভুক্তি, কার্যকারিতা ও দক্ষতা, এবং জবাবদিহিতা।"
+ },
+ {
+  "ref": "eth_036",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সুশাসন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "নিচের কোনটি সুশাসনের বৈশিষ্ট্য নয়?",
+  "options": [
+   "জবাবদিহিতা",
+   "স্বচ্ছতা",
+   "স্বজনপ্রীতি",
+   "আইনের শাসন"
+  ],
+  "answer": 2,
+  "explanation": "স্বজনপ্রীতি সুশাসনের পরিপন্থী। জবাবদিহিতা, স্বচ্ছতা ও আইনের শাসন সুশাসনের মূল বৈশিষ্ট্য।"
+ },
+ {
+  "ref": "eth_037",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সুশাসন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "সরকারি কাজের তথ্য জনগণের কাছে উন্মুক্ত ও সহজলভ্য রাখাকে কী বলে?",
+  "options": [
+   "স্বচ্ছতা",
+   "দলীয়করণ",
+   "কেন্দ্রীকরণ",
+   "গোপনীয়তা"
+  ],
+  "answer": 0,
+  "explanation": "সরকারি সিদ্ধান্ত ও কাজের তথ্য জনগণের জানার সুযোগ থাকাকে স্বচ্ছতা (Transparency) বলে।"
+ },
+ {
+  "ref": "eth_038",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সুশাসন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "দায়িত্বপ্রাপ্ত ব্যক্তি তার কাজের জন্য জবাব দিতে বাধ্য থাকাকে কী বলে?",
+  "options": [
+   "নিরপেক্ষতা",
+   "জবাবদিহিতা",
+   "বিকেন্দ্রীকরণ",
+   "দক্ষতা"
+  ],
+  "answer": 1,
+  "explanation": "কাজের জন্য উত্তর দিতে ও দায় নিতে বাধ্য থাকাকে জবাবদিহিতা (Accountability) বলে।"
+ },
+ {
+  "ref": "eth_039",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সুশাসন",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "বিশ্বব্যাংকের Worldwide Governance Indicators (WGI)-এ সুশাসন পরিমাপের মাত্রা কয়টি?",
+  "options": [
+   "৪টি",
+   "৫টি",
+   "৬টি",
+   "৮টি"
+  ],
+  "answer": 2,
+  "explanation": "WGI-এর ৬টি মাত্রা: মত প্রকাশ ও জবাবদিহিতা, রাজনৈতিক স্থিতিশীলতা, সরকারের কার্যকারিতা, নিয়ন্ত্রণের মান, আইনের শাসন এবং দুর্নীতি নিয়ন্ত্রণ।"
+ },
+ {
+  "ref": "eth_040",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "টেকসই উন্নয়ন অভীষ্টের (SDG) কোন লক্ষ্যটি শান্তি, ন্যায়বিচার ও শক্তিশালী প্রতিষ্ঠান সংক্রান্ত?",
+  "options": [
+   "লক্ষ্য ১০",
+   "লক্ষ্য ১৩",
+   "লক্ষ্য ১৭",
+   "লক্ষ্য ১৬"
+  ],
+  "answer": 3,
+  "explanation": "SDG ১৬-এর বিষয় শান্তি, ন্যায়বিচার ও শক্তিশালী প্রতিষ্ঠান (Peace, Justice and Strong Institutions)।"
+ },
+ {
+  "ref": "eth_041",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সুশাসন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ই-গভর্ন্যান্সের মূল উদ্দেশ্য কী?",
+  "options": [
+   "সরকারি অফিসে কর্মী কমানো",
+   "তথ্যপ্রযুক্তি ব্যবহার করে সরকারি সেবা দ্রুত, স্বচ্ছ ও সহজলভ্য করা",
+   "শুধু অনলাইনে বিজ্ঞাপন দেওয়া",
+   "কাগজের ব্যবহার বাড়ানো"
+  ],
+  "answer": 1,
+  "explanation": "ই-গভর্ন্যান্সে তথ্যপ্রযুক্তি ব্যবহার করে নাগরিক সেবা দ্রুত, স্বচ্ছ ও কম খরচে পৌঁছে দেওয়া হয়।"
+ },
+ {
+  "ref": "eth_042",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সুশাসন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "e-GP-এর পূর্ণরূপ কী?",
+  "options": [
+   "electronic Government Procurement",
+   "electronic General Policy",
+   "electronic Government Planning",
+   "electronic Governance Program"
+  ],
+  "answer": 0,
+  "explanation": "e-GP মানে electronic Government Procurement — অনলাইনে সরকারি কেনাকাটা, যা স্বচ্ছতা বাড়ায়।"
+ },
+ {
+  "ref": "eth_043",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সিটিজেন চার্টার (Citizen's Charter) প্রথম চালু হয় কোন দেশে?",
+  "options": [
+   "যুক্তরাষ্ট্র",
+   "ভারত",
+   "যুক্তরাজ্য",
+   "সুইডেন"
+  ],
+  "answer": 2,
+  "explanation": "১৯৯১ সালে যুক্তরাজ্যে প্রথম সিটিজেন চার্টার চালু হয়, যেখানে সেবার মান ও সময়সীমা জনগণকে জানানো হয়।"
+ },
+ {
+  "ref": "eth_044",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সুশাসন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "সিটিজেন চার্টারের মূল উদ্দেশ্য কী?",
+  "options": [
+   "নাগরিকদের কর বাড়ানো",
+   "সেবার ধরন, সময় ও খরচ জনগণকে জানিয়ে সেবাদানে স্বচ্ছতা আনা",
+   "কর্মচারীদের ছুটি নির্ধারণ",
+   "নির্বাচন পরিচালনা"
+  ],
+  "answer": 1,
+  "explanation": "সিটিজেন চার্টারে কোন সেবা কীভাবে, কত দিনে ও কত খরচে পাওয়া যাবে তা প্রকাশ করা হয়, যাতে সেবা স্বচ্ছ ও জবাবদিহিমূলক হয়।"
+ },
+ {
+  "ref": "eth_045",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "ন্যায়পাল",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ন্যায়পাল (Ombudsman) ধারণার উৎপত্তি কোন দেশে?",
+  "options": [
+   "সুইডেন",
+   "নরওয়ে",
+   "ডেনমার্ক",
+   "যুক্তরাজ্য"
+  ],
+  "answer": 0,
+  "explanation": "১৮০৯ সালে সুইডেনে প্রথম ন্যায়পাল পদ সৃষ্টি হয়।"
+ },
+ {
+  "ref": "eth_046",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "ন্যায়পাল",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশের সংবিধানের কোন অনুচ্ছেদে ন্যায়পালের বিধান রয়েছে?",
+  "options": [
+   "অনুচ্ছেদ ৭০",
+   "অনুচ্ছেদ ৭৭",
+   "অনুচ্ছেদ ৮৭",
+   "অনুচ্ছেদ ১২৭"
+  ],
+  "answer": 1,
+  "explanation": "সংবিধানের ৭৭ অনুচ্ছেদে সংসদ আইন দ্বারা ন্যায়পাল পদ প্রতিষ্ঠার বিধান করেছে।"
+ },
+ {
+  "ref": "eth_047",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "ন্যায়পাল",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশে ন্যায়পাল আইন প্রণীত হয় কত সালে?",
+  "options": [
+   "১৯৭২",
+   "১৯৯১",
+   "২০০৯",
+   "১৯৮০"
+  ],
+  "answer": 3,
+  "explanation": "বাংলাদেশে ন্যায়পাল আইন (Ombudsman Act) প্রণীত হয় ১৯৮০ সালে।"
+ },
+ {
+  "ref": "eth_048",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "শুদ্ধাচার",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতীয় শুদ্ধাচার কৌশল মন্ত্রিসভায় অনুমোদিত হয় কত সালে?",
+  "options": [
+   "২০১০",
+   "২০১৪",
+   "২০১২",
+   "২০১৬"
+  ],
+  "answer": 2,
+  "explanation": "জাতীয় শুদ্ধাচার কৌশল ২০১২ সালে মন্ত্রিসভায় অনুমোদিত হয়।"
+ },
+ {
+  "ref": "eth_049",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "শুদ্ধাচার",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতীয় শুদ্ধাচার কৌশলে মোট কয়টি প্রতিষ্ঠানকে চিহ্নিত করা হয়েছে?",
+  "options": [
+   "১০টি",
+   "১২টি",
+   "২০টি",
+   "১৬টি"
+  ],
+  "answer": 3,
+  "explanation": "জাতীয় শুদ্ধাচার কৌশলে ১৬টি প্রতিষ্ঠান চিহ্নিত করা হয়েছে — ১০টি রাষ্ট্রীয় ও ৬টি অরাষ্ট্রীয়।"
+ },
+ {
+  "ref": "eth_050",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "শুদ্ধাচার",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতীয় শুদ্ধাচার কৌশল অনুযায়ী 'শুদ্ধাচার' বলতে কী বোঝায়?",
+  "options": [
+   "নৈতিকতা ও সততা দ্বারা প্রভাবিত আচরণগত উৎকর্ষ",
+   "শুধু পরিষ্কার-পরিচ্ছন্নতা",
+   "ধর্মীয় আচার পালন",
+   "দ্রুত কাজ শেষ করা"
+  ],
+  "answer": 0,
+  "explanation": "শুদ্ধাচার বলতে সাধারণভাবে নৈতিকতা ও সততা দ্বারা প্রভাবিত আচরণগত উৎকর্ষ বোঝায়।"
+ },
+ {
+  "ref": "eth_051",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দুর্নীতি দমন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "দুর্নীতি দমন কমিশন আইন প্রণীত হয় কত সালে?",
+  "options": [
+   "২০০১",
+   "২০০৪",
+   "২০০৭",
+   "২০০৯"
+  ],
+  "answer": 1,
+  "explanation": "দুর্নীতি দমন কমিশন আইন ২০০৪ সালে প্রণীত হয় এবং এর অধীনে দুদক গঠিত হয়।"
+ },
+ {
+  "ref": "eth_052",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দুর্নীতি দমন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "দুর্নীতি দমন কমিশন কয়জন কমিশনার নিয়ে গঠিত?",
+  "options": [
+   "৩ জন",
+   "২ জন",
+   "৫ জন",
+   "৭ জন"
+  ],
+  "answer": 0,
+  "explanation": "দুদক ৩ জন কমিশনার নিয়ে গঠিত, যাঁদের একজন চেয়ারম্যান।"
+ },
+ {
+  "ref": "eth_053",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দুর্নীতি দমন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "দুর্নীতি দমন কমিশন গঠনের আগে বাংলাদেশে দুর্নীতি দমনের দায়িত্বে কোন প্রতিষ্ঠান ছিল?",
+  "options": [
+   "জাতীয় নিরাপত্তা গোয়েন্দা সংস্থা",
+   "পুলিশ ব্যুরো অব ইনভেস্টিগেশন",
+   "দুর্নীতি দমন ব্যুরো",
+   "মহাহিসাব নিরীক্ষকের কার্যালয়"
+  ],
+  "answer": 2,
+  "explanation": "দুদক গঠনের আগে দুর্নীতি দমন ব্যুরো এই দায়িত্ব পালন করত।"
+ },
+ {
+  "ref": "eth_054",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দুর্নীতি দমন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ট্রান্সপারেন্সি ইন্টারন্যাশনাল (TI)-এর সদর দপ্তর কোথায়?",
+  "options": [
+   "জেনেভা",
+   "লন্ডন",
+   "প্যারিস",
+   "বার্লিন"
+  ],
+  "answer": 3,
+  "explanation": "দুর্নীতিবিরোধী সংস্থা ট্রান্সপারেন্সি ইন্টারন্যাশনালের সদর দপ্তর জার্মানির বার্লিনে।"
+ },
+ {
+  "ref": "eth_055",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দুর্নীতি দমন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ট্রান্সপারেন্সি ইন্টারন্যাশনাল প্রতিষ্ঠিত হয় কত সালে?",
+  "options": [
+   "১৯৮৯",
+   "১৯৯৫",
+   "১৯৯৩",
+   "২০০০"
+  ],
+  "answer": 2,
+  "explanation": "ট্রান্সপারেন্সি ইন্টারন্যাশনাল ১৯৯৩ সালে প্রতিষ্ঠিত হয়।"
+ },
+ {
+  "ref": "eth_056",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দুর্নীতি দমন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "ট্রান্সপারেন্সি ইন্টারন্যাশনাল প্রতি বছর কোন সূচক প্রকাশ করে?",
+  "options": [
+   "মানব উন্নয়ন সূচক (HDI)",
+   "দুর্নীতির ধারণা সূচক (CPI)",
+   "বিশ্ব ক্ষুধা সূচক (GHI)",
+   "সুখী দেশের সূচক"
+  ],
+  "answer": 1,
+  "explanation": "TI প্রতি বছর দুর্নীতির ধারণা সূচক (Corruption Perceptions Index — CPI) প্রকাশ করে।"
+ },
+ {
+  "ref": "eth_057",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দুর্নীতি দমন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "ট্রান্সপারেন্সি ইন্টারন্যাশনালের সংজ্ঞা অনুযায়ী দুর্নীতি হলো —",
+  "options": [
+   "ব্যক্তিগত লাভের জন্য অর্পিত ক্ষমতার অপব্যবহার",
+   "শুধু ঘুষ নেওয়া",
+   "সরকারি নিয়ম না জানা",
+   "কাজে দেরি করা"
+  ],
+  "answer": 0,
+  "explanation": "TI-এর মতে দুর্নীতি হলো 'ব্যক্তিগত লাভের জন্য অর্পিত ক্ষমতার অপব্যবহার' (abuse of entrusted power for private gain)।"
+ },
+ {
+  "ref": "eth_058",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দুর্নীতি দমন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "আন্তর্জাতিক দুর্নীতিবিরোধী দিবস কবে পালিত হয়?",
+  "options": [
+   "১০ ডিসেম্বর",
+   "২৪ অক্টোবর",
+   "৯ ডিসেম্বর",
+   "১ মে"
+  ],
+  "answer": 2,
+  "explanation": "প্রতি বছর ৯ ডিসেম্বর আন্তর্জাতিক দুর্নীতিবিরোধী দিবস পালিত হয়। ১০ ডিসেম্বর হলো মানবাধিকার দিবস।"
+ },
+ {
+  "ref": "eth_059",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দুর্নীতি দমন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘ দুর্নীতিবিরোধী কনভেনশন (UNCAC) গৃহীত হয় কত সালে?",
+  "options": [
+   "২০০০",
+   "২০০৫",
+   "২০০৭",
+   "২০০৩"
+  ],
+  "answer": 3,
+  "explanation": "জাতিসংঘ সাধারণ পরিষদে UNCAC গৃহীত হয় ২০০৩ সালে।"
+ },
+ {
+  "ref": "eth_060",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দুর্নীতি দমন",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "জনস্বার্থ সংশ্লিষ্ট তথ্য প্রকাশ (সুরক্ষা প্রদান) আইন, অর্থাৎ হুইসেল ব্লোয়ার সুরক্ষা আইন, কত সালে প্রণীত হয়?",
+  "options": [
+   "২০০৯",
+   "২০১১",
+   "২০১৪",
+   "২০১৮"
+  ],
+  "answer": 1,
+  "explanation": "দুর্নীতির তথ্য প্রকাশকারীদের সুরক্ষা দিতে ২০১১ সালে এই আইন প্রণীত হয়।"
+ },
+ {
+  "ref": "eth_061",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দুর্নীতি দমন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সরকারি ক্রয় আইন (Public Procurement Act) কত সালে প্রণীত হয়?",
+  "options": [
+   "২০০৬",
+   "২০০৪",
+   "২০০৮",
+   "২০১১"
+  ],
+  "answer": 0,
+  "explanation": "সরকারি কেনাকাটায় স্বচ্ছতা ও জবাবদিহিতা নিশ্চিত করতে ২০০৬ সালে সরকারি ক্রয় আইন প্রণীত হয়।"
+ },
+ {
+  "ref": "eth_062",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "তথ্য অধিকার",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশে তথ্য অধিকার আইন প্রণীত হয় কত সালে?",
+  "options": [
+   "২০০৬",
+   "২০০৮",
+   "২০০৯",
+   "২০১১"
+  ],
+  "answer": 2,
+  "explanation": "তথ্য অধিকার আইন ২০০৯ সালে প্রণীত হয় এবং এর অধীনে তথ্য কমিশন গঠিত হয়।"
+ },
+ {
+  "ref": "eth_063",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "তথ্য অধিকার",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "তথ্য কমিশন কয়জন কমিশনার নিয়ে গঠিত?",
+  "options": [
+   "২ জন",
+   "৫ জন",
+   "৭ জন",
+   "৩ জন"
+  ],
+  "answer": 3,
+  "explanation": "তথ্য কমিশন একজন প্রধান তথ্য কমিশনার ও দুইজন তথ্য কমিশনার — মোট ৩ জন নিয়ে গঠিত; তাঁদের অন্তত একজন নারী হবেন।"
+ },
+ {
+  "ref": "eth_064",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "তথ্য অধিকার",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "তথ্য অধিকার আইন অনুযায়ী সাধারণভাবে অনুরোধকৃত তথ্য কত কার্যদিবসের মধ্যে সরবরাহ করতে হয়?",
+  "options": [
+   "১০ কার্যদিবস",
+   "২০ কার্যদিবস",
+   "১৫ কার্যদিবস",
+   "৩০ কার্যদিবস"
+  ],
+  "answer": 1,
+  "explanation": "সাধারণভাবে অনুরোধ পাওয়ার ২০ কার্যদিবসের মধ্যে তথ্য দিতে হয়।"
+ },
+ {
+  "ref": "eth_065",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "তথ্য অধিকার",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "তথ্য অধিকার আইন অনুযায়ী কোনো ব্যক্তির জীবন-মৃত্যু সংক্রান্ত তথ্য কত সময়ের মধ্যে দিতে হয়?",
+  "options": [
+   "২৪ ঘণ্টা",
+   "১২ ঘণ্টা",
+   "৩ দিন",
+   "৭ দিন"
+  ],
+  "answer": 0,
+  "explanation": "জীবন-মৃত্যু, গ্রেফতার বা কারাগার থেকে মুক্তি সংক্রান্ত তথ্য অনুরোধের ২৪ ঘণ্টার মধ্যে দিতে হয়।"
+ },
+ {
+  "ref": "eth_066",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "মানবাধিকার",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "বিশ্ব মানবাধিকার দিবস কবে?",
+  "options": [
+   "৯ ডিসেম্বর",
+   "১০ ডিসেম্বর",
+   "১৬ ডিসেম্বর",
+   "২৪ অক্টোবর"
+  ],
+  "answer": 1,
+  "explanation": "১৯৪৮ সালের ১০ ডিসেম্বর সর্বজনীন মানবাধিকার ঘোষণাপত্র গৃহীত হয়; তাই এই দিনে মানবাধিকার দিবস পালিত হয়।"
+ },
+ {
+  "ref": "eth_067",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "মানবাধিকার",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "জাতিসংঘের সর্বজনীন মানবাধিকার ঘোষণাপত্র (UDHR) গৃহীত হয় কত সালে?",
+  "options": [
+   "১৯৪৫",
+   "১৯৬৬",
+   "১৯৪৮",
+   "১৯৭৬"
+  ],
+  "answer": 2,
+  "explanation": "UDHR জাতিসংঘ সাধারণ পরিষদে গৃহীত হয় ১০ ডিসেম্বর ১৯৪৮ সালে।"
+ },
+ {
+  "ref": "eth_068",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "মানবাধিকার",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সর্বজনীন মানবাধিকার ঘোষণাপত্রে মোট কয়টি অনুচ্ছেদ আছে?",
+  "options": [
+   "২৫টি",
+   "৪০টি",
+   "৫০টি",
+   "৩০টি"
+  ],
+  "answer": 3,
+  "explanation": "সর্বজনীন মানবাধিকার ঘোষণাপত্রে মোট ৩০টি অনুচ্ছেদ রয়েছে।"
+ },
+ {
+  "ref": "eth_069",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "মানবাধিকার",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশে জাতীয় মানবাধিকার কমিশন আইন প্রণীত হয় কত সালে?",
+  "options": [
+   "২০০৯",
+   "২০০৭",
+   "২০১১",
+   "২০১৪"
+  ],
+  "answer": 0,
+  "explanation": "জাতীয় মানবাধিকার কমিশন আইন প্রণীত হয় ২০০৯ সালে।"
+ },
+ {
+  "ref": "eth_070",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "সংবিধানের কোন অনুচ্ছেদে বলা হয়েছে 'প্রজাতন্ত্রের সকল ক্ষমতার মালিক জনগণ'?",
+  "options": [
+   "অনুচ্ছেদ ৬",
+   "অনুচ্ছেদ ১১",
+   "অনুচ্ছেদ ২৭",
+   "অনুচ্ছেদ ৭"
+  ],
+  "answer": 3,
+  "explanation": "সংবিধানের ৭ অনুচ্ছেদে বলা হয়েছে প্রজাতন্ত্রের সকল ক্ষমতার মালিক জনগণ এবং সংবিধান প্রজাতন্ত্রের সর্বোচ্চ আইন।"
+ },
+ {
+  "ref": "eth_071",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "'সকল নাগরিক আইনের দৃষ্টিতে সমান' — সংবিধানের কোন অনুচ্ছেদে বলা হয়েছে?",
+  "options": [
+   "অনুচ্ছেদ ২৬",
+   "অনুচ্ছেদ ২৭",
+   "অনুচ্ছেদ ২৮",
+   "অনুচ্ছেদ ৩১"
+  ],
+  "answer": 1,
+  "explanation": "সংবিধানের ২৭ অনুচ্ছেদ অনুযায়ী সকল নাগরিক আইনের দৃষ্টিতে সমান এবং আইনের সমান আশ্রয় লাভের অধিকারী।"
+ },
+ {
+  "ref": "eth_072",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সংবিধানের কোন অনুচ্ছেদে নির্বাহী বিভাগ থেকে বিচার বিভাগের পৃথকীকরণের কথা বলা হয়েছে?",
+  "options": [
+   "অনুচ্ছেদ ২০",
+   "অনুচ্ছেদ ২১",
+   "অনুচ্ছেদ ২২",
+   "অনুচ্ছেদ ২৩"
+  ],
+  "answer": 2,
+  "explanation": "রাষ্ট্র পরিচালনার মূলনীতির অংশ হিসেবে ২২ অনুচ্ছেদে বিচার বিভাগকে নির্বাহী বিভাগ থেকে পৃথক রাখার কথা বলা হয়েছে।"
+ },
+ {
+  "ref": "eth_073",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশে বিচার বিভাগ নির্বাহী বিভাগ থেকে আনুষ্ঠানিকভাবে পৃথক হয় কবে?",
+  "options": [
+   "১ নভেম্বর ২০০৭",
+   "১৬ ডিসেম্বর ১৯৭২",
+   "১ জানুয়ারি ২০০৯",
+   "২৬ মার্চ ২০০১"
+  ],
+  "answer": 0,
+  "explanation": "মাসদার হোসেন মামলার রায়ের আলোকে ১ নভেম্বর ২০০৭ বিচার বিভাগ নির্বাহী বিভাগ থেকে পৃথক হয়।"
+ },
+ {
+  "ref": "eth_074",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "নাগরিক ও সরকারি কর্মচারীদের কর্তব্যের কথা সংবিধানের কোন অনুচ্ছেদে বলা হয়েছে?",
+  "options": [
+   "অনুচ্ছেদ ১৯",
+   "অনুচ্ছেদ ২০",
+   "অনুচ্ছেদ ২২",
+   "অনুচ্ছেদ ২১"
+  ],
+  "answer": 3,
+  "explanation": "২১ অনুচ্ছেদে সংবিধান ও আইন মান্য করা, শৃঙ্খলা রক্ষা ও জনগণের সেবা করাকে নাগরিক ও সরকারি কর্মচারীদের কর্তব্য বলা হয়েছে।"
+ },
+ {
+  "ref": "eth_075",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "রাষ্ট্র পরিচালনার মূলনীতি সংবিধানের কোন ভাগে রয়েছে?",
+  "options": [
+   "প্রথম ভাগ",
+   "দ্বিতীয় ভাগ",
+   "তৃতীয় ভাগ",
+   "চতুর্থ ভাগ"
+  ],
+  "answer": 1,
+  "explanation": "সংবিধানের দ্বিতীয় ভাগে (অনুচ্ছেদ ৮–২৫) রাষ্ট্র পরিচালনার মূলনীতি রয়েছে।"
+ },
+ {
+  "ref": "eth_076",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "মৌলিক অধিকার সংবিধানের কোন ভাগে রয়েছে?",
+  "options": [
+   "দ্বিতীয় ভাগ",
+   "চতুর্থ ভাগ",
+   "তৃতীয় ভাগ",
+   "পঞ্চম ভাগ"
+  ],
+  "answer": 2,
+  "explanation": "সংবিধানের তৃতীয় ভাগে (অনুচ্ছেদ ২৬–৪৭) মৌলিক অধিকার রয়েছে।"
+ },
+ {
+  "ref": "eth_077",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "bn",
+  "body": "সংবিধানের ৮ অনুচ্ছেদ অনুযায়ী রাষ্ট্র পরিচালনার মূলনীতি কয়টি?",
+  "options": [
+   "৩টি",
+   "৫টি",
+   "৬টি",
+   "৪টি"
+  ],
+  "answer": 3,
+  "explanation": "৮ অনুচ্ছেদ অনুযায়ী রাষ্ট্র পরিচালনার মূলনীতি ৪টি — জাতীয়তাবাদ, সমাজতন্ত্র, গণতন্ত্র ও ধর্মনিরপেক্ষতা।"
+ },
+ {
+  "ref": "eth_078",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "চিন্তা, বিবেক ও বাক্‌স্বাধীনতার অধিকার সংবিধানের কোন অনুচ্ছেদে রয়েছে?",
+  "options": [
+   "অনুচ্ছেদ ৩৯",
+   "অনুচ্ছেদ ৩৬",
+   "অনুচ্ছেদ ৩৭",
+   "অনুচ্ছেদ ৪১"
+  ],
+  "answer": 0,
+  "explanation": "সংবিধানের ৩৯ অনুচ্ছেদে চিন্তা ও বিবেকের স্বাধীনতা এবং বাক্‌ ও ভাব প্রকাশের স্বাধীনতার নিশ্চয়তা দেওয়া হয়েছে।"
+ },
+ {
+  "ref": "eth_079",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "জীবন ও ব্যক্তিস্বাধীনতার অধিকার রক্ষণ সংবিধানের কোন অনুচ্ছেদে রয়েছে?",
+  "options": [
+   "অনুচ্ছেদ ৩১",
+   "অনুচ্ছেদ ৩২",
+   "অনুচ্ছেদ ৩৩",
+   "অনুচ্ছেদ ৩৫"
+  ],
+  "answer": 1,
+  "explanation": "৩২ অনুচ্ছেদ অনুযায়ী আইন অনুযায়ী ছাড়া কোনো ব্যক্তিকে জীবন ও ব্যক্তিস্বাধীনতা থেকে বঞ্চিত করা যাবে না।"
+ },
+ {
+  "ref": "eth_080",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশের মহাহিসাব-নিরীক্ষক ও নিয়ন্ত্রক (Comptroller and Auditor General) পদের বিধান সংবিধানের কোন অনুচ্ছেদে?",
+  "options": [
+   "অনুচ্ছেদ ১১৮",
+   "অনুচ্ছেদ ১৩৭",
+   "অনুচ্ছেদ ১২৭",
+   "অনুচ্ছেদ ৭৭"
+  ],
+  "answer": 2,
+  "explanation": "সংবিধানের ১২৭ অনুচ্ছেদে মহাহিসাব-নিরীক্ষক ও নিয়ন্ত্রকের পদের বিধান রয়েছে। এটি সরকারি অর্থ ব্যয়ের জবাবদিহিতা নিশ্চিত করে।"
+ },
+ {
+  "ref": "eth_081",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশের নির্বাচন কমিশন প্রতিষ্ঠার বিধান সংবিধানের কোন অনুচ্ছেদে?",
+  "options": [
+   "অনুচ্ছেদ ১১৮",
+   "অনুচ্ছেদ ১২৭",
+   "অনুচ্ছেদ ১৩৭",
+   "অনুচ্ছেদ ৬৫"
+  ],
+  "answer": 0,
+  "explanation": "সংবিধানের ১১৮ অনুচ্ছেদে নির্বাচন কমিশন প্রতিষ্ঠার বিধান রয়েছে।"
+ },
+ {
+  "ref": "eth_082",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সরকারি কর্ম কমিশন (PSC) প্রতিষ্ঠার বিধান সংবিধানের কোন অনুচ্ছেদে?",
+  "options": [
+   "অনুচ্ছেদ ১১৮",
+   "অনুচ্ছেদ ১২৭",
+   "অনুচ্ছেদ ১৪০",
+   "অনুচ্ছেদ ১৩৭"
+  ],
+  "answer": 3,
+  "explanation": "সংবিধানের ১৩৭ অনুচ্ছেদে সরকারি কর্ম কমিশন প্রতিষ্ঠার বিধান রয়েছে। BCS পরীক্ষা এই কমিশনই (BPSC) পরিচালনা করে।"
+ },
+ {
+  "ref": "eth_083",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "'গণতন্ত্র ও মানবাধিকার' সংক্রান্ত বিধান সংবিধানের কোন অনুচ্ছেদে?",
+  "options": [
+   "অনুচ্ছেদ ৯",
+   "অনুচ্ছেদ ১১",
+   "অনুচ্ছেদ ১০",
+   "অনুচ্ছেদ ১২"
+  ],
+  "answer": 1,
+  "explanation": "সংবিধানের ১১ অনুচ্ছেদে বলা হয়েছে, প্রজাতন্ত্র হবে একটি গণতন্ত্র যেখানে মৌলিক মানবাধিকার ও স্বাধীনতার নিশ্চয়তা থাকবে।"
+ },
+ {
+  "ref": "eth_084",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "'সুযোগের সমতা' সংক্রান্ত বিধান সংবিধানের কোন অনুচ্ছেদে?",
+  "options": [
+   "অনুচ্ছেদ ১৫",
+   "অনুচ্ছেদ ১৭",
+   "অনুচ্ছেদ ১৯",
+   "অনুচ্ছেদ ২০"
+  ],
+  "answer": 2,
+  "explanation": "সংবিধানের ১৯ অনুচ্ছেদে সকল নাগরিকের জন্য সুযোগের সমতা নিশ্চিত করার কথা বলা হয়েছে।"
+ },
+ {
+  "ref": "eth_085",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সংবিধান ও সুশাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "স্থানীয় শাসন সংক্রান্ত বিধান সংবিধানের কোন অনুচ্ছেদে?",
+  "options": [
+   "অনুচ্ছেদ ৫৯",
+   "অনুচ্ছেদ ৫৫",
+   "অনুচ্ছেদ ৬৫",
+   "অনুচ্ছেদ ৭০"
+  ],
+  "answer": 0,
+  "explanation": "সংবিধানের ৫৯ অনুচ্ছেদে নির্বাচিত ব্যক্তিদের সমন্বয়ে গঠিত প্রতিষ্ঠানের মাধ্যমে স্থানীয় শাসনের বিধান রয়েছে।"
+ },
+ {
+  "ref": "eth_086",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সরকারি কর্মচারীর আচরণ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "সরকারি কর্মচারী (আচরণ) বিধিমালা কত সালের?",
+  "options": [
+   "১৯৭২",
+   "১৯৮৫",
+   "২০১৮",
+   "১৯৭৯"
+  ],
+  "answer": 3,
+  "explanation": "সরকারি কর্মচারীদের আচরণ নিয়ন্ত্রণে 'সরকারি কর্মচারী (আচরণ) বিধিমালা, ১৯৭৯' প্রযোজ্য।"
+ },
+ {
+  "ref": "eth_087",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সরকারি কর্মচারীর আচরণ",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "bn",
+  "body": "বাংলাদেশে 'সরকারি চাকরি আইন' কত সালে প্রণীত হয়?",
+  "options": [
+   "২০১১",
+   "২০১৮",
+   "২০১৫",
+   "২০২০"
+  ],
+  "answer": 1,
+  "explanation": "সরকারি কর্মচারীদের নিয়োগ, পদোন্নতি ও চাকরির শর্তাবলি নিয়ে 'সরকারি চাকরি আইন, ২০১৮' প্রণীত হয়।"
+ },
+ {
+  "ref": "eth_088",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সরকারি কর্মচারীর আচরণ",
+  "difficulty": "hard",
+  "source": null,
+  "lang": "bn",
+  "body": "বর্তমানে প্রযোজ্য 'সরকারি কর্মচারী (শৃঙ্খলা ও আপিল) বিধিমালা' কত সালের?",
+  "options": [
+   "১৯৮৫",
+   "২০১১",
+   "২০১৮",
+   "২০২১"
+  ],
+  "answer": 2,
+  "explanation": "সরকারি কর্মচারী (শৃঙ্খলা ও আপিল) বিধিমালা, ২০১৮ পুরনো ১৯৮৫ সালের বিধিমালার স্থলে প্রণীত হয়।"
+ },
+ {
+  "ref": "eth_089",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দার্শনিক ও গ্রন্থ",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Which philosopher wrote the book 'Politics'?",
+  "options": [
+   "Plato",
+   "Cicero",
+   "Aristotle",
+   "John Locke"
+  ],
+  "answer": 2,
+  "explanation": "'Politics' was written by Aristotle. In it he says that man is by nature a political animal."
+ },
+ {
+  "ref": "eth_090",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "ন্যায়পাল",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "The word 'Ombudsman' comes from which language?",
+  "options": [
+   "Norwegian",
+   "Swedish",
+   "German",
+   "Danish"
+  ],
+  "answer": 1,
+  "explanation": "'Ombudsman' is a Swedish word meaning a representative or agent. Sweden created the first ombudsman office in 1809."
+ },
+ {
+  "ref": "eth_091",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "দুর্নীতি দমন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Which international day is observed on 9 December?",
+  "options": [
+   "Human Rights Day",
+   "International Volunteer Day",
+   "World Peace Day",
+   "International Anti-Corruption Day"
+  ],
+  "answer": 3,
+  "explanation": "9 December is International Anti-Corruption Day. Human Rights Day is the next day, 10 December."
+ },
+ {
+  "ref": "eth_092",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "সুশাসন",
+  "difficulty": "easy",
+  "source": null,
+  "lang": "en",
+  "body": "Which of the following is NOT a feature of good governance?",
+  "options": [
+   "Accountability",
+   "Transparency",
+   "Rule of law",
+   "Nepotism"
+  ],
+  "answer": 3,
+  "explanation": "Nepotism (favouring relatives) goes against good governance. Accountability, transparency and the rule of law are its key features."
+ },
+ {
+  "ref": "eth_093",
+  "exam": "bcs-general",
+  "subject": "Ethics & Good Governance",
+  "topic": "আইনের শাসন",
+  "difficulty": "medium",
+  "source": null,
+  "lang": "en",
+  "body": "Who is best known for explaining the concept of the 'Rule of Law'?",
+  "options": [
+   "A. V. Dicey",
+   "John Austin",
+   "Harold Laski",
+   "Jeremy Bentham"
+  ],
+  "answer": 0,
+  "explanation": "The British constitutional expert A. V. Dicey explained the Rule of Law with three principles: supremacy of law, equality before law and protection of rights by the courts."
+ }
+]

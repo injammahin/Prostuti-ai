@@ -19,7 +19,7 @@ import { Button } from "@/components/ui/button"
 import { Logo, Ring } from "@/components/shared"
 import Illustration from "@/components/Illustration"
 import { useApp } from "@/lib/app-context"
-import { authApi, GOOGLE_CLIENT_ID } from "@/lib/api"
+import { adminApi, authApi, GOOGLE_CLIENT_ID } from "@/lib/api"
 import { cn } from "@/lib/utils"
 
 const RESEND_SECONDS = 45
@@ -166,7 +166,25 @@ function GoogleButton({ onCredential, disabled }) {
 const emptyCode = () => Array(6).fill("")
 
 export default function Login({ mode = "login" }) {
-  const { login, loginGuest } = useApp()
+  const { login, loginGuest, logout, user, isGuest } = useApp()
+
+  // One login for everyone: the admin panel sends people here (?next=admin) and back here after logging out (?logout=1).
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    if (params.get("logout") === "1") {
+      logout()
+      window.history.replaceState(null, "", window.location.pathname)
+      return
+    }
+    if (params.get("next") === "admin" && user && !isGuest) {
+      if (user.is_admin) {
+        adminApi.openPanel().catch(() => {})
+      } else {
+        toast.error("This account doesn't have admin access.")
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   const nav = useNavigate()
   const loc = useLocation()
 
@@ -223,6 +241,12 @@ export default function Login({ mode = "login" }) {
   const finish = (res) => {
     login(res.user, res.token)
     const first = res.user.name.split(" ")[0]
+    if (res.user.is_admin) {
+      // Admins go straight to the admin panel, already signed in there.
+      toast.success(`Welcome back, ${first}! Opening the admin panel…`)
+      adminApi.openPanel().catch(() => nav("/app", { replace: true }))
+      return
+    }
     toast.success(res.is_new_user ? `Welcome to Prostuti, ${first}! 🎉` : `Welcome back, ${first}!`)
     nav(res.is_new_user ? "/onboarding" : loc.state?.from || "/app", { replace: true })
   }

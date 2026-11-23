@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\AnswerQuestionRequest;
 use App\Http\Requests\StartPracticeRequest;
 use App\Http\Resources\QuestionResource;
+use App\Models\ActivityLog;
 use App\Models\Exam;
 use App\Models\PracticeSession;
 use App\Models\Question;
@@ -132,8 +133,8 @@ class PracticeSessionController extends Controller
         return response()->json([
             'id' => $session->id,
             'mode' => $session->mode,
-            'exam' => $session->exam?->only(['slug', 'name']),
-            'subject' => $session->subject?->only(['slug', 'name']),
+            'exam' => $session->exam?->only(['slug', 'name', 'name_bn']),
+            'subject' => $session->subject?->only(['slug', 'name', 'name_bn']),
             'total' => $session->total,
             'finished' => $session->isFinished(),
             'questions' => $questions->map(function (Question $question) use ($answers): array {

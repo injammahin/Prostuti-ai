@@ -1,11 +1,18 @@
 import { TODAY } from "@/lib/data"
 
-const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+/** The app language, kept in sync by AppProvider on every render so helpers can follow it. */
+let currentLang = "en"
+export function setFormatLanguage(lang) {
+  currentLang = lang
+}
+export const isBangla = () => currentLang === "bn"
+const toBnDigits = (text) => String(text).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[d])
+export const localDigits = (value) => (isBangla() ? toBnDigits(value) : String(value))
 
 export function fmtDate(iso, withYear = true) {
   if (!iso) return "—"
   const d = new Date(iso + "T00:00:00")
-  return `${d.getDate()} ${MONTHS[d.getMonth()]}${withYear ? " " + d.getFullYear() : ""}`
+  return d.toLocaleDateString(isBangla() ? "bn-BD" : "en-GB", { day: "numeric", month: "short", ...(withYear ? { year: "numeric" } : {}) })
 }
 
 export function daysUntil(iso) {
@@ -18,6 +25,12 @@ export function daysUntil(iso) {
 export function relDays(iso) {
   const n = daysUntil(iso)
   if (n === null) return ""
+  if (isBangla()) {
+    if (n === 0) return "আজ"
+    if (n === 1) return "আগামীকাল"
+    if (n === -1) return "গতকাল"
+    return n > 0 ? `${toBnDigits(n)} দিন পর` : `${toBnDigits(-n)} দিন আগে`
+  }
   if (n === 0) return "Today"
   if (n === 1) return "Tomorrow"
   if (n === -1) return "Yesterday"

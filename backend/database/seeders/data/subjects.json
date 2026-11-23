@@ -1,0 +1,148 @@
+[
+ {
+  "slug": "bangla",
+  "name": "Bangla",
+  "name_bn": "বাংলা",
+  "icon": "font",
+  "image": "/subjects/bangla.jpg",
+  "exams": [
+   "bcs-general",
+   "ntrca",
+   "primary-teacher",
+   "combined-bank",
+   "bangladesh-bank"
+  ],
+  "sort": 0
+ },
+ {
+  "slug": "english",
+  "name": "English",
+  "name_bn": "ইংরেজি",
+  "icon": "language",
+  "image": "/subjects/english.jpg",
+  "exams": [
+   "bcs-general",
+   "ntrca",
+   "primary-teacher",
+   "combined-bank",
+   "bangladesh-bank"
+  ],
+  "sort": 1
+ },
+ {
+  "slug": "math",
+  "name": "Mathematics & Reasoning",
+  "name_bn": "গাণিতিক যুক্তি ও গণিত",
+  "icon": "calculator",
+  "image": "/subjects/math.jpg",
+  "exams": [
+   "bcs-general",
+   "ntrca",
+   "primary-teacher",
+   "combined-bank",
+   "bangladesh-bank"
+  ],
+  "sort": 2
+ },
+ {
+  "slug": "bd-affairs",
+  "name": "Bangladesh Affairs",
+  "name_bn": "বাংলাদেশ বিষয়াবলি",
+  "icon": "flag",
+  "image": "/subjects/bd-affairs.jpg",
+  "exams": [
+   "bcs-general",
+   "ntrca",
+   "primary-teacher",
+   "combined-bank",
+   "bangladesh-bank"
+  ],
+  "sort": 3
+ },
+ {
+  "slug": "intl-affairs",
+  "name": "International Affairs",
+  "name_bn": "আন্তর্জাতিক বিষয়াবলি",
+  "icon": "earth-asia",
+  "image": "/subjects/intl-affairs.jpg",
+  "exams": [
+   "bcs-general",
+   "ntrca",
+   "combined-bank",
+   "bangladesh-bank"
+  ],
+  "sort": 4
+ },
+ {
+  "slug": "ict",
+  "name": "Computer & ICT",
+  "name_bn": "কম্পিউটার ও আইসিটি",
+  "icon": "laptop-code",
+  "image": "/subjects/ict.jpg",
+  "exams": [
+   "bcs-general",
+   "combined-bank",
+   "bangladesh-bank"
+  ],
+  "sort": 5
+ },
+ {
+  "slug": "science",
+  "name": "General Science",
+  "name_bn": "সাধারণ বিজ্ঞান",
+  "icon": "flask",
+  "image": "/subjects/science.jpg",
+  "exams": [
+   "bcs-general",
+   "primary-teacher"
+  ],
+  "sort": 6
+ },
+ {
+  "slug": "mental",
+  "name": "Mental & Analytical Ability",
+  "name_bn": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
+  "icon": "brain",
+  "image": "/subjects/mental.jpg",
+  "exams": [
+   "bcs-general",
+   "bangladesh-bank",
+   "combined-bank"
+  ],
+  "sort": 7
+ },
+ {
+  "slug": "banking",
+  "name": "Banking & Economics",
+  "name_bn": "ব্যাংকিং ও অর্থনৈতিক জ্ঞান",
+  "icon": "building-columns",
+  "image": "/subjects/banking.jpg",
+  "exams": [
+   "combined-bank",
+   "bangladesh-bank"
+  ],
+  "sort": 8
+ },
+ {
+  "slug": "geography",
+  "name": "Geography & Environment",
+  "name_bn": "ভূগোল ও পরিবেশ",
+  "icon": "mountain-sun",
+  "image": "/subjects/geography.jpg",
+  "exams": [
+   "bcs-general"
+  ],
+  "sort": 9
+ },
+ {
+  "slug": "ethics",
+  "name": "Ethics & Good Governance",
+  "name_bn": "নৈতিকতা ও সুশাসন",
+  "icon": "scale-balanced",
+  "image": "/subjects/ethics.jpg",
+  "exams": [
+   "bcs-general"
+  ],
+  "sort": 10
+ }
+]

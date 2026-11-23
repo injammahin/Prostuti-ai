@@ -1,0 +1,42 @@
+[
+ {
+  "slug": "bcs-general",
+  "name": "BCS General",
+  "name_bn": "বিসিএস সাধারণ",
+  "summary": "Preliminary MCQ (200 marks), written (900 marks) and viva (200 marks) for general and technical cadres of Bangladesh Civil Service.",
+  "coming_soon": false,
+  "sort": 0
+ },
+ {
+  "slug": "ntrca",
+  "name": "NTRCA Teacher Registration",
+  "name_bn": "এনটিআরসিএ শিক্ষক নিবন্ধন",
+  "summary": "Preliminary MCQ (100 marks), Subject Written (100 marks) and Viva (20 marks) for non-government school, college and madrasa teacher registration.",
+  "coming_soon": false,
+  "sort": 0
+ },
+ {
+  "slug": "primary-teacher",
+  "name": "Primary Assistant Teacher",
+  "name_bn": "প্রাথমিক সহকারী শিক্ষক",
+  "summary": "Screening 80-mark Preliminary MCQ examination and 20-mark Viva Voce for Government Primary School Assistant Teacher recruitment.",
+  "coming_soon": false,
+  "sort": 0
+ },
+ {
+  "slug": "combined-bank",
+  "name": "Combined Bank Jobs",
+  "name_bn": "সমন্বিত ব্যাংক নিয়োগ",
+  "summary": "Centralized recruitment for state-owned commercial banks (Sonali, Janata, Agrani, Rupali, BDBL, BASIC, Krishi, PKB) for Senior Officer, Officer & Cash posts.",
+  "coming_soon": false,
+  "sort": 0
+ },
+ {
+  "slug": "bangladesh-bank",
+  "name": "Bangladesh Bank",
+  "name_bn": "বাংলাদেশ ব্যাংক নিয়োগ",
+  "summary": "Recruitment for Assistant Director (General), Officer (General) and Cash Officer posts at the Central Bank of Bangladesh.",
+  "coming_soon": false,
+  "sort": 0
+ }
+]

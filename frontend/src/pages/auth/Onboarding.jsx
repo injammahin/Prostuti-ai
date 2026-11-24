@@ -190,19 +190,20 @@ export default function Onboarding() {
       ),
     },
     {
-      title: "Quick diagnostic test",
-      sub: "25 questions, about 15 minutes. It sets your starting level in each subject so your plan fits you.",
+      title: "All set! Your preparation is ready",
+      sub: "We've customized your target exams, syllabus, and study plan. You're ready to start exploring your home dashboard.",
       ok: true,
       body: (
-        <div className="rounded-2xl border bg-card p-5 text-center">
+        <div className="rounded-2xl border bg-card p-6 text-center">
           <div className="mx-auto grid size-16 place-items-center rounded-2xl bg-primary/10 text-2xl text-primary">
-            <FontAwesomeIcon icon={faClipboardQuestion} />
+            <FontAwesomeIcon icon={faCheck} />
           </div>
-          <p className="mt-4 font-semibold">{exams.find((e) => e.slug === form.main)?.name} diagnostic</p>
-          <ul className="mx-auto mt-3 max-w-xs space-y-1.5 text-left text-sm text-muted-foreground">
-            <li>• No negative marking</li>
-            <li>• Covers every subject in the syllabus</li>
-            <li>• You can pause and continue later</li>
+          <p className="mt-4 text-lg font-bold">{exams.find((e) => e.slug === form.main)?.name || "BCS"} Preparation</p>
+          <p className="mt-1 text-sm text-muted-foreground">Your personalized dashboard, question bank, and daily routine are configured.</p>
+          <ul className="mx-auto mt-4 max-w-xs space-y-2 text-left text-sm text-muted-foreground">
+            <li>✓ Full access to 10th–48th BCS question bank</li>
+            <li>✓ Unlimited model tests with instant analysis</li>
+            <li>✓ Daily streak & subject progress tracking</li>
           </ul>
         </div>
       ),
@@ -210,7 +211,7 @@ export default function Onboarding() {
   ]
 
   const s = steps[step]
-  const done = (diag) => {
+  const done = () => {
     const mainExam = form.main || "bcs-general"
     set({ followed: form.targets, mainExam, lang: form.lang })
     authApi
@@ -225,8 +226,8 @@ export default function Onboarding() {
         JSON.stringify({ exam: mainExam, targetDate: form.date, dailyHours: hours, studyDays: [6, 0, 1, 2, 3, 4, 5], created: true })
       )
     } catch {}
-    // Diagnostic: 25 questions across the chosen exam's subjects. Otherwise go home (or back to the page they came from).
-    nav(diag ? `/app/practice/session?mode=diagnostic&exam=${encodeURIComponent(mainExam)}&n=25` : returnTo || "/app", { replace: true })
+    // Always navigate directly to the Home page (/app)
+    nav(returnTo || "/app", { replace: true })
   }
 
   return (
@@ -264,14 +265,9 @@ export default function Onboarding() {
       <footer className="pb-safe fixed inset-x-0 bottom-0 border-t bg-background/95 backdrop-blur">
         <div className="mx-auto flex max-w-lg gap-3 p-4">
           {step === steps.length - 1 ? (
-            <>
-              <Button variant="outline" className="h-12 flex-1 rounded-full" onClick={() => done(false)}>
-                Later
-              </Button>
-              <Button className="h-12 flex-[2] rounded-full text-base" onClick={() => done(true)}>
-                Start diagnostic
-              </Button>
-            </>
+            <Button className="h-12 w-full rounded-full text-base font-bold shadow-md" onClick={done}>
+              Go to Home / হোমপেজে যান →
+            </Button>
           ) : (
             <Button className="h-12 w-full rounded-full text-base" disabled={!s.ok} onClick={() => goTo(step + 1)}>
               Continue

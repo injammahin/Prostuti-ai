@@ -1,0 +1,37 @@
+User-agent: *
+Allow: /
+Allow: /blog
+Allow: /blog/*
+Allow: /notices
+Allow: /notices/*
+Allow: /downloads/*
+Allow: /covers/*
+Allow: /favicon.svg
+Allow: /favicon.ico
+Allow: /site.webmanifest
+Disallow: /admin
+Disallow: /admin/*
+Disallow: /api/
+Disallow: /api/*
+Disallow: /app/practice/session
+Disallow: /app/test/run
+Disallow: /app/settings
+
+# Googlebot specific rules
+User-agent: Googlebot
+Allow: /
+Allow: /blog
+Allow: /blog/*
+Allow: /notices
+Allow: /notices/*
+Allow: /downloads/
+Allow: /covers/
+
+# Googlebot-Image
+User-agent: Googlebot-Image
+Allow: /covers/
+Allow: /downloads/
+Allow: /logo-mark.png
+Allow: /icon-512.png
+
+Sitemap: https://bd3schools.com/sitemap.xml

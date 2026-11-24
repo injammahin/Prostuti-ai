@@ -25,6 +25,97 @@ export default function BlogPost() {
   const post = data?.data
   const related = data?.related ?? []
 
+  const postUrl = typeof window !== "undefined" ? `${window.location.origin}/blog/${post?.slug}` : `https://bd3schools.com/blog/${post?.slug}`
+  const isBcs = post?.category === "bcs" || post?.slug?.includes("-bcs-question-solution-pdf")
+  const bcsMatch = post?.slug?.match(/(\d+)th-bcs/)
+  const bcsNum = bcsMatch ? bcsMatch[1] : null
+
+  const breadcrumbSchema = post ? {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bd3schools.com" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://bd3schools.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": post.title, "item": postUrl }
+    ]
+  } : null
+
+  const faqSchema = (post && isBcs) ? {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": `${post.title.split("|")[0].trim()} কোথায় পাব?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "bd3schools ওয়েবসাইটে সম্পূর্ণ ২০০টি প্রশ্নের নির্ভুল সমাধান, ব্যাখ্যা এবং বিনামূল্যে হাই-কোয়ালিটি PDF ফাইল পাওয়া যায়।"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `${bcsNum ? `${bcsNum}th BCS` : "বিসিএস"} প্রিলিমিনারিতে কয়টি প্রশ্ন এবং পূর্ণমান কত?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "মোট ২০০টি বহুনির্বাচনী প্রশ্ন (MCQ), পূর্ণমান ২০০ এবং প্রতিটি ভুল উত্তরের জন্য ০.৫০ নেগেটিভ মার্কিং থাকে। সময় ১২০ মিনিট।"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "বিসিএস পরীক্ষার প্রশ্ন সমাধান PDF কীভাবে ডাউনলোড করব?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "bd3schools-এর এই আর্টিকেলের ডাউনলোড বাটন অথবা অ্যাটাচমেন্ট সেকশন থেকে সরাসরি ১ ক্লিকে অফিশিয়াল প্রিন্ট-রেডি PDF ডাউনলোড করা যায়।"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "অনলাইনে কি এই বিসিএস পরীক্ষার মডেল টেস্ট দেওয়া যায়?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "হ্যাঁ, bd3schools প্ল্যাটফর্মে লাইভ টাইমার এবং রিয়েল নেগেটিভ মার্কিং সহ অনলাইনে পরীক্ষা দেওয়া ও তাৎক্ষণিক স্কোর দেখা যায়।"
+        }
+      }
+    ]
+  } : null
+
+  const articleSchema = post ? {
+    "@type": "BlogPosting",
+    "@id": `${postUrl}#article`,
+    "headline": post.title,
+    "description": post.meta_description,
+    "image": post.cover_image ? (post.cover_image.startsWith("http") ? post.cover_image : `https://bd3schools.com${post.cover_image}`) : "https://bd3schools.com/icon-512.png",
+    "datePublished": post.published_at,
+    "dateModified": post.updated_at || post.published_at,
+    "author": {
+      "@type": "Organization",
+      "name": post.author || "bd3schools Team",
+      "url": "https://bd3schools.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "bd3schools",
+      "url": "https://bd3schools.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bd3schools.com/logo-mark.png"
+      }
+    },
+    "inLanguage": post.lang === "bn" ? "bn-BD" : "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": postUrl
+    },
+    "keywords": [...(post.tags || []), "14 bcs question with solution", "bcs question solution pdf", "bcs preliminary question bank", "bpsc"].join(", ")
+  } : null
+
+  const jsonLd = post ? {
+    "@context": "https://schema.org",
+    "@graph": [
+      articleSchema,
+      breadcrumbSchema,
+      ...(faqSchema ? [faqSchema] : [])
+    ]
+  } : null
+
   useSeo(
     post
       ? {
@@ -32,19 +123,9 @@ export default function BlogPost() {
           description: post.meta_description,
           image: post.cover_image,
           type: "article",
-          jsonLd: {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline: post.title,
-            description: post.meta_description,
-            image: post.cover_image ? [post.cover_image] : undefined,
-            datePublished: post.published_at,
-            dateModified: post.updated_at,
-            author: { "@type": "Organization", name: post.author },
-            publisher: { "@type": "Organization", name: "bd3schools" },
-            inLanguage: post.lang === "bn" ? "bn-BD" : "en",
-            mainEntityOfPage: typeof window !== "undefined" ? window.location.href : undefined,
-          },
+          keywords: [...(post.tags || []), "14 bcs question with solution", "bcs question solution", "bcs preliminary question bank", "bpsc"].join(", "),
+          author: post.author,
+          jsonLd: jsonLd,
         }
       : {}
   )

@@ -1,4 +1,4 @@
-﻿import { useMemo, useState } from "react"
+import { useMemo, useState } from "react"
 import { Link } from "react-router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMagnifyingGlass, faBell, faCalendarDays, faCircleInfo, faXmark } from "@fortawesome/free-solid-svg-icons"
@@ -9,6 +9,7 @@ import { notices, exams, noticeTypes } from "@/lib/data"
 import { useApp } from "@/lib/app-context"
 import { cn } from "@/lib/utils"
 import { useNoticesVersion } from "@/lib/notices-store"
+import { useSeo } from "@/lib/seo"
 
 const typeFilters = [
   { value: "all", label: "All" },
@@ -27,6 +28,12 @@ export default function Notices({ inApp = false }) {
   const [exam, setExam] = useState("all")
   const [mine, setMine] = useState(inApp)
   const [q, setQ] = useState("")
+
+  useSeo({
+    title: "Job Notices & Exam Dates | সরকারি চাকরির নিয়োগ বিজ্ঞপ্তি ও পরীক্ষার সময়সূচী — bd3schools",
+    description: "বিসিএস (BCS), প্রাথমিক শিক্ষক, ব্যাংক এবং এনটিআরসিএ (NTRCA) পরীক্ষার লেটেস্ট সার্কুলার, পরীক্ষার তারিখ, এডমিট কার্ড ও ফলাফল সরাসরি অফিশিয়াল রেফারেন্সসহ।",
+    keywords: "bcs circular, bcs exam date, bcs admit card, bcs result, govt job circular bangladesh, primary teacher circular, ntrca circular, bank job circular, bd3schools notices",
+  })
 
   const list = useMemo(
     () =>

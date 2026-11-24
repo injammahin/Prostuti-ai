@@ -31,7 +31,7 @@ function setLink(rel, href) {
  * Sets the page title, description, share preview (Open Graph) and optional
  * structured data for search engines; puts the site defaults back on leave.
  */
-export function useSeo({ title, description, image, type = "website", jsonLd } = {}) {
+export function useSeo({ title, description, image, type = "website", keywords, author, jsonLd } = {}) {
   const ld = jsonLd ? JSON.stringify(jsonLd) : ""
   useEffect(() => {
     if (!title) return
@@ -40,16 +40,22 @@ export function useSeo({ title, description, image, type = "website", jsonLd } =
     const prevDesc = descEl?.getAttribute("content")
     const url = window.location.origin + window.location.pathname
     const fullTitle = title.includes(SITE) ? title : `${title} | ${SITE}`
+    const fullImage = image ? (image.startsWith("http") ? image : `${window.location.origin}${image.startsWith("/") ? "" : "/"}${image}`) : `${window.location.origin}/icon-512.png`
 
     document.title = fullTitle
     setMeta("name", "description", description)
+    if (keywords) setMeta("name", "keywords", keywords)
+    if (author) setMeta("name", "author", author)
     setMeta("property", "og:title", fullTitle)
     setMeta("property", "og:description", description)
     setMeta("property", "og:type", type)
     setMeta("property", "og:url", url)
     setMeta("property", "og:site_name", SITE)
-    setMeta("property", "og:image", image)
-    setMeta("name", "twitter:card", image ? "summary_large_image" : "summary")
+    setMeta("property", "og:image", fullImage)
+    setMeta("name", "twitter:card", "summary_large_image")
+    setMeta("name", "twitter:title", fullTitle)
+    setMeta("name", "twitter:description", description)
+    setMeta("name", "twitter:image", fullImage)
     setLink("canonical", url)
 
     let script
@@ -67,5 +73,5 @@ export function useSeo({ title, description, image, type = "website", jsonLd } =
       document.head.querySelector('link[rel="canonical"]')?.remove()
       script?.remove()
     }
-  }, [title, description, image, type, ld])
+  }, [title, description, image, type, keywords, author, ld])
 }

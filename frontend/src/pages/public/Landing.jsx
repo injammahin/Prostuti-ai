@@ -28,6 +28,7 @@ import Illustration from "@/components/Illustration"
 import { exams, notices } from "@/lib/data"
 import { useApp } from "@/lib/app-context"
 import { useNoticesVersion } from "@/lib/notices-store"
+import { useSeo } from "@/lib/seo"
 
 const faqs = [
   ["Is bd3schools official or linked to BPSC?", "No. We are an independent preparation platform. Every notice links to its official source, and you should always apply only through the official portal."],
@@ -101,6 +102,34 @@ export default function Landing() {
     if (!user) loginGuest()
     nav("/app")
   }
+
+  useSeo({
+    title: "bd3schools — BCS & Govt Job Exam Preparation | বিসিএস ও সরকারি চাকরি প্রস্তুতি",
+    description: "বিসিএস (১০ম-৪৮তম) প্রশ্ন সমাধান PDF, পূর্ণাঙ্গ মডেল টেস্ট, বিষয়ভিত্তিক কুইজ ও সরকারি চাকরির নোটিশ। অনলাইনে প্রস্তুতি নিন bd3schools-এ।",
+    keywords: "14 bcs question with solution, bcs question solution, 10th to 48th bcs question solution, বিসিএস প্রশ্ন সমাধান, bcs question bank, bcs preliminary question with answer, bcs model test online, govt job exam bangladesh, bd3schools",
+    image: "/icon-512.png",
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://bd3schools.com/#webpage",
+          "url": "https://bd3schools.com",
+          "name": "bd3schools — BCS & Govt Job Exam Preparation",
+          "description": "Comprehensive preparation platform for BCS, Bank, NTRCA, and Primary Teacher exams in Bangladesh.",
+          "isPartOf": { "@id": "https://bd3schools.com/#website" }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": faqs.map(([q, a]) => ({
+            "@type": "Question",
+            "name": q,
+            "acceptedAnswer": { "@type": "Answer", "text": a }
+          }))
+        }
+      ]
+    }
+  })
 
   return (
     <>

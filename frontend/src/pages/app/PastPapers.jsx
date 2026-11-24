@@ -9,11 +9,18 @@ import { useApp } from "@/lib/app-context"
 import { useApi } from "@/lib/use-api"
 import { pastPapersApi } from "@/lib/api"
 import { cn } from "@/lib/utils"
+import { useSeo } from "@/lib/seo"
 
 export default function PastPapers() {
   const { L, num } = useApp()
   const { data, error, loading, reload } = useApi(() => pastPapersApi.list(), [], { key: "past-papers" })
   const [query, setQuery] = useState("")
+
+  useSeo({
+    title: "Previous BCS Questions & Full Solutions (10th to 48th BCS) | বিগত বিসিএস প্রশ্ন সমাধান — bd3schools",
+    description: "১০ম থেকে ৪৮তম বিসিএস প্রিলিমিনারি পরীক্ষার ৩৯টি আসল প্রশ্নপত্র, ২০০টি প্রশ্ন ও পূর্ণাঙ্গ নির্ভুল সমাধান। অনলাইনে পরীক্ষা দিন বা বিনামূল্যে PDF সংগ্রহ করুন।",
+    keywords: "10th to 48th bcs question solution, 14 bcs question with solution, bcs question bank, bcs preliminary question with answer, বিগত বিসিএস প্রশ্ন সমাধান, bcs previous year question, bd3schools",
+  })
 
   const papers = useMemo(() => {
     const all = data?.papers ?? []

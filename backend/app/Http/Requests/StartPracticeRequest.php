@@ -24,10 +24,13 @@ class StartPracticeRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'mode' => ['required', Rule::in(['drill', 'past', 'mistakes', 'diagnostic'])],
+            // past_exam: a previous paper taken like the real exam (answers shown only at the end).
+            'mode' => ['required', Rule::in(['drill', 'past', 'past_exam', 'mistakes', 'diagnostic'])],
             'exam' => ['nullable', 'string', Rule::exists('exams', 'slug')],
             'subject' => ['nullable', 'string', Rule::exists('subjects', 'slug')],
-            'count' => ['nullable', 'integer', 'min:5', 'max:100'],
+            'count' => ['nullable', 'integer', 'min:5', 'max:200'],
+            // A previous paper, written as on questions' source, e.g. "47th BCS".
+            'paper' => ['nullable', 'string', 'max:60'],
         ];
     }
 }

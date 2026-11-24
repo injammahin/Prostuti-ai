@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useRef, useState } from "react"
+import { Component, Fragment, useEffect, useRef, useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPaperPlane, faWandMagicSparkles, faCircleInfo, faRotateRight } from "@fortawesome/free-solid-svg-icons"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription } from "@/components/ui/sheet"
@@ -20,6 +20,8 @@ const copy = {
     note: "AI-এর উত্তর অনুশীলনের সহায়তা মাত্র। ভুল মনে হলে প্রশ্নটি রিপোর্ট করুন।",
     retry: "আবার চেষ্টা করুন",
     thinking: "ভাবছে…",
+    crashed: "উত্তরটি দেখাতে সমস্যা হয়েছে।",
+    empty: "এই মুহূর্তে উত্তর পাওয়া যায়নি। আবার চেষ্টা করুন।",
   },
   en: {
     title: "Ask AI why",
@@ -33,16 +35,47 @@ const copy = {
     note: "AI help is practice guidance. Report anything that looks wrong.",
     retry: "Try again",
     thinking: "Thinking…",
+    crashed: "Something went wrong showing this answer.",
+    empty: "No answer came back just now. Please try again.",
   },
+}
+
+/**
+ * Catches render errors inside the AI panel so a bad reply (or a browser extension such as
+ * page translation rewriting the text) cannot blank the whole practice page.
+ */
+class AiErrorBoundary extends Component {
+  state = { failed: false }
+
+  static getDerivedStateFromError() {
+    return { failed: true }
+  }
+
+  componentDidCatch(error) {
+    console.error("AI panel crashed", error)
+  }
+
+  render() {
+    if (!this.state.failed) return this.props.children
+    return (
+      <div className="m-4 rounded-2xl border border-destructive/30 bg-destructive/5 p-4 text-sm text-destructive">
+        <p>{this.props.message}</p>
+        <button onClick={() => this.setState({ failed: false })} className="mt-2 flex items-center gap-1.5 text-xs font-semibold underline underline-offset-2">
+          <FontAwesomeIcon icon={faRotateRight} /> {this.props.retry}
+        </button>
+      </div>
+    )
+  }
 }
 
 /** Renders the tutor's light formatting: **bold**, "- " bullets and paragraphs. */
 function RichText({ text }) {
+  // Each text piece sits in its own <span> so tools that rewrite page text (e.g. Chrome translate) don't break React's DOM updates.
   const inline = (line) =>
     line.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
-      part.startsWith("**") && part.endsWith("**") ? <strong key={i}>{part.slice(2, -2)}</strong> : <Fragment key={i}>{part}</Fragment>
+      part.startsWith("**") && part.endsWith("**") ? <strong key={i}>{part.slice(2, -2)}</strong> : <span key={i}>{part}</span>
     )
-  const blocks = text.trim().split(/\n{2,}/)
+  const blocks = String(text ?? "").trim().split(/\n{2,}/)
   return (
     <div className="space-y-2">
       {blocks.map((block, b) => {
@@ -100,9 +133,10 @@ export default function AskAiSheet({ open, onOpenChange, question }) {
     setLastRequest({ intent, label, message, replyLang })
     try {
       const res = await aiApi.explain({ questionId: question.id, intent, message, lang: replyLang, history })
-      setMsgs((m) => [...m, { role: "assistant", text: res.reply }])
+      const reply = typeof res?.reply === "string" ? res.reply.trim() : ""
+      setMsgs((m) => [...m, reply ? { role: "assistant", text: reply } : { role: "assistant", text: t.empty, error: true }])
     } catch (e) {
-      setMsgs((m) => [...m, { role: "assistant", text: e.message, error: true }])
+      setMsgs((m) => [...m, { role: "assistant", text: String(e?.message || t.empty), error: true }])
     } finally {
       setTyping(false)
     }
@@ -127,7 +161,7 @@ export default function AskAiSheet({ open, onOpenChange, question }) {
         <SheetHeader className="border-b pr-12">
           <div className="flex items-center justify-between gap-3">
             <SheetTitle className={cn("flex items-center gap-2", lang === "bn" && "bn")}>
-              <FontAwesomeIcon icon={faWandMagicSparkles} className="text-primary" /> {t.title}
+              <FontAwesomeIcon icon={faWandMagicSparkles} className="text-primary" /> <span>{t.title}</span>
             </SheetTitle>
             <div className="flex shrink-0 rounded-full bg-muted p-0.5 text-xs font-semibold" role="group" aria-label="Reply language">
               {[
@@ -149,6 +183,7 @@ export default function AskAiSheet({ open, onOpenChange, question }) {
           <SheetDescription className={cn(lang === "bn" && "bn")}>{t.description}</SheetDescription>
         </SheetHeader>
 
+        <AiErrorBoundary key={question?.id} message={t.crashed} retry={t.retry}>
         <div className="flex-1 space-y-3 overflow-y-auto p-4">
           {msgs.length === 0 && (
             <div className="space-y-2">
@@ -173,10 +208,10 @@ export default function AskAiSheet({ open, onOpenChange, question }) {
                 BANGLA.test(m.text) && "bn"
               )}
             >
-              {m.role === "assistant" && !m.error ? <RichText text={m.text} /> : m.text}
+              {m.role === "assistant" && !m.error ? <RichText text={m.text} /> : <span>{m.text}</span>}
               {m.error && i === msgs.length - 1 && (
                 <button onClick={retry} className="mt-2 flex items-center gap-1.5 text-xs font-semibold underline underline-offset-2">
-                  <FontAwesomeIcon icon={faRotateRight} /> {t.retry}
+                  <FontAwesomeIcon icon={faRotateRight} /> <span>{t.retry}</span>
                 </button>
               )}
             </div>
@@ -194,9 +229,10 @@ export default function AskAiSheet({ open, onOpenChange, question }) {
           )}
           <div ref={end} />
         </div>
+        </AiErrorBoundary>
 
         <p className={cn("flex items-center gap-1.5 px-4 pb-1 text-[0.7rem] text-muted-foreground", lang === "bn" && "bn")}>
-          <FontAwesomeIcon icon={faCircleInfo} /> {t.note}
+          <FontAwesomeIcon icon={faCircleInfo} /> <span>{t.note}</span>
         </p>
         <form
           onSubmit={(e) => {

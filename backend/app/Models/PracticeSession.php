@@ -23,7 +23,7 @@ class PracticeSession extends Model
     /**
      * @var list<string>
      */
-    public const MODES = ['drill', 'past', 'mistakes', 'diagnostic', 'daily'];
+    public const MODES = ['drill', 'past', 'past_exam', 'mistakes', 'diagnostic', 'daily'];
 
     /**
      * @return BelongsTo<User, $this>
@@ -65,12 +65,13 @@ class PracticeSession extends Model
     /**
      * Pick questions and open a new session.
      */
-    public static function start(?User $user, string $mode, ?Exam $exam, ?Subject $subject, int $count): self
+    public static function start(?User $user, string $mode, ?Exam $exam, ?Subject $subject, int $count, ?string $paper = null): self
     {
-        $questionIds = match ($mode) {
-            'mistakes' => self::pickMistakes($user, $count),
-            'diagnostic' => self::pickAcrossSubjects($exam, $count),
-            default => self::pickFresh($user, $exam, $subject, $count, pastPapersOnly: $mode === 'past'),
+        $questionIds = match (true) {
+            in_array($mode, ['past', 'past_exam'], true) && filled($paper) => self::pickPaper($paper, $count),
+            $mode === 'mistakes' => self::pickMistakes($user, $count),
+            $mode === 'diagnostic' => self::pickAcrossSubjects($exam, $count),
+            default => self::pickFresh($user, $exam, $subject, $count, pastPapersOnly: in_array($mode, ['past', 'past_exam'], true)),
         };
 
         return static::query()->create([
@@ -81,6 +82,22 @@ class PracticeSession extends Model
             'question_ids' => $questionIds,
             'total' => count($questionIds),
         ]);
+    }
+
+    /**
+     * All live questions of one previous paper (e.g. "47th BCS"), in the order they were added.
+     *
+     * @return list<int>
+     */
+    private static function pickPaper(string $paper, int $count): array
+    {
+        return Question::query()
+            ->live()
+            ->where('source', $paper)
+            ->orderBy('id')
+            ->limit($count)
+            ->pluck('id')
+            ->all();
     }
 
     /**

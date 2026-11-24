@@ -25,6 +25,7 @@ import {
   faBars,
   faBarsStaggered,
   faLock,
+  faFileLines,
 } from "@fortawesome/free-solid-svg-icons"
 import { toast } from "sonner"
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet"
@@ -54,6 +55,7 @@ const groups = [
       { to: "/app", key: "dashboard", icon: faHouse, end: true },
       { to: "/app/practice", key: "practice", icon: faListCheck },
       { to: "/app/test", key: "tests", icon: faStopwatch },
+      { to: "/app/bcs-papers", key: "papers", icon: faFileLines },
       { to: "/app/notebook", key: "notebook", icon: faBook, locked: true },
       { to: "/app/notices", key: "notices", icon: faBullhorn },
     ],
@@ -88,6 +90,7 @@ const titles = {
   "/app": "dashboard",
   "/app/practice": "practice",
   "/app/test": "tests",
+  "/app/bcs-papers": "papers",
   "/app/notices": "notices",
   "/app/progress": "progress",
   "/app/plan": "planner",

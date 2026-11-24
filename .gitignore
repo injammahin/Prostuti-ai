@@ -1,0 +1,4 @@
+# One-off helper scripts used to build the question JSON files.
+# The app only needs the JSON in backend/database/seeders/data/.
+/*.py
+__pycache__/

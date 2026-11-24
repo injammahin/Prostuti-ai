@@ -65,7 +65,7 @@ class CatalogSeeder extends Seeder
             $subject = $subjectsByName[$question['subject']] ?? null;
 
             if (! $subject) {
-                continue;
+                throw new \RuntimeException("Question {$question['ref']} uses unknown subject \"{$question['subject']}\". Add it to subjects.json or fix the name.");
             }
 
             Question::query()->updateOrCreate(['ref' => $question['ref']], [

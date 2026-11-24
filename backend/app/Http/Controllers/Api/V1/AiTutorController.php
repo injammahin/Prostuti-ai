@@ -9,6 +9,7 @@ use Anthropic\Core\Exceptions\RateLimitException;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\AskTutorRequest;
 use App\Models\Question;
+use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
@@ -164,23 +165,54 @@ PROMPT;
             'parts' => [['text' => $turn['content']]],
         ], $this->mergeConsecutiveRoles($turns));
 
-        $model = config('services.gemini.model');
-        $response = Http::timeout(45)
-            ->retry(2, 500, throw: false)
-            ->withHeaders(['x-goog-api-key' => $apiKey])
-            ->post("https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent", [
-                'systemInstruction' => ['parts' => [['text' => self::SYSTEM_PROMPT]]],
-                'contents' => $contents,
-                'generationConfig' => ['maxOutputTokens' => 2048, 'temperature' => 0.4],
-            ]);
+        // Try the main model first, then the fallbacks: a busy (503) or retired (404) model is skipped quickly.
+        $models = collect([config('services.gemini.model')])
+            ->merge(explode(',', (string) config('services.gemini.fallback_models')))
+            ->map(fn (?string $model): string => trim((string) $model))
+            ->filter()
+            ->unique()
+            ->values();
+
+        foreach ($models as $model) {
+            $text = $this->callGemini($apiKey, $model, $contents);
+
+            if ($text !== null) {
+                return $text;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * One generateContent call to a single Gemini model; null when it fails or returns no text.
+     *
+     * @param  list<array{role: string, parts: list<array{text: string}>}>  $contents
+     */
+    private function callGemini(string $apiKey, string $model, array $contents): ?string
+    {
+        try {
+            $response = Http::timeout(30)
+                ->withHeaders(['x-goog-api-key' => $apiKey])
+                ->post("https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent", [
+                    'systemInstruction' => ['parts' => [['text' => self::SYSTEM_PROMPT]]],
+                    'contents' => $contents,
+                    'generationConfig' => ['maxOutputTokens' => 2048, 'temperature' => 0.4],
+                ]);
+        } catch (ConnectionException $exception) {
+            Log::warning('Gemini tutor request timed out', ['model' => $model, 'message' => $exception->getMessage()]);
+
+            return null;
+        }
 
         if (! $response->successful()) {
-            Log::error('Gemini tutor request failed', ['status' => $response->status(), 'body' => str($response->body())->limit(500)->toString()]);
+            Log::warning('Gemini tutor request failed', ['model' => $model, 'status' => $response->status(), 'body' => str($response->body())->limit(300)->toString()]);
 
             return null;
         }
 
         $text = collect($response->json('candidates.0.content.parts', []))
+            ->reject(fn (array $part): bool => (bool) ($part['thought'] ?? false))
             ->pluck('text')
             ->filter()
             ->implode('');

@@ -248,7 +248,10 @@ export default function Login({ mode = "login" }) {
       return
     }
     toast.success(res.is_new_user ? `Welcome to Prostuti, ${first}! 🎉` : `Welcome back, ${first}!`)
-    nav(res.is_new_user ? "/onboarding" : loc.state?.from || "/app", { replace: true })
+    const from = loc.state?.from
+    // New users still pick their exam first, then go back to the page they were on (e.g. a BCS paper).
+    if (res.is_new_user) nav("/onboarding", { replace: true, state: from ? { from } : undefined })
+    else nav(from || "/app", { replace: true })
   }
 
   const signIn = (e) => {

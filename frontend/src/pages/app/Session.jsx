@@ -28,6 +28,7 @@ import { cn } from "@/lib/utils"
 const titles = {
   drill: ["Subject practice", "বিষয়ভিত্তিক অনুশীলন"],
   past: ["Old exam questions", "বিগত সালের প্রশ্ন"],
+  past_exam: ["Previous BCS exam", "বিগত বিসিএস পরীক্ষা"],
   diagnostic: ["Starting-level test", "প্রাথমিক মূল্যায়ন"],
   mistakes: ["Fixing my mistakes", "ভুল সংশোধন"],
 }
@@ -69,7 +70,7 @@ export default function Session() {
   const [params, setParams] = useSearchParams()
   const sessionId = params.get("id")
   const nav = useNavigate()
-  const { bookmarks, toggleBookmark, L, num } = useApp()
+  const { bookmarks, toggleBookmark, L, num, isGuest } = useApp()
   const nameOf = (x) => (x ? L(x.name, x.name_bn || x.name) : "")
 
   const [session, setSession] = useState(null)
@@ -114,6 +115,7 @@ export default function Session() {
         exam: params.get("exam"),
         subject: params.get("subject"),
         count: Number(params.get("n") || params.get("count")) || 20,
+        paper: params.get("paper"),
       })
       .then((data) => {
         setSession(data)
@@ -123,9 +125,23 @@ export default function Session() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sessionId])
 
+  // Elapsed time. For an exam the start time is remembered, so a page refresh does not reset the clock.
   useEffect(() => {
     if (summary || !session) return
-    const t = setInterval(() => setSecs((x) => x + 1), 1000)
+    let startedAt = Date.now()
+    if (session.mode === "past_exam") {
+      const key = `exam-started-${session.id}`
+      try {
+        const saved = Number(localStorage.getItem(key))
+        if (saved) startedAt = saved
+        else localStorage.setItem(key, String(startedAt))
+      } catch {
+        // Storage can be blocked (private mode); the clock then starts from this page load.
+      }
+    }
+    const tick = () => setSecs(Math.floor((Date.now() - startedAt) / 1000))
+    tick()
+    const t = setInterval(tick, 1000)
     return () => clearInterval(t)
   }, [summary, session])
 
@@ -135,14 +151,24 @@ export default function Session() {
 
   const qs = session?.questions ?? []
   const mode = session?.mode ?? params.get("mode") ?? "drill"
-  const instant = mode !== "diagnostic"
+  const examMode = mode === "past_exam"
+  const instant = mode !== "diagnostic" && !examMode
   const q = qs[idx]
   const result = q ? results[q.id] : undefined
   const choice = q ? (result ? result.chosen : picked[q.id]) : undefined
   const revealed = instant && !!result
   const answered = Object.keys(results).length
   const correct = Object.values(results).filter((x) => x.correct).length
-  const time = `${String(Math.floor(secs / 60)).padStart(2, "0")}:${String(secs % 60).padStart(2, "0")}`
+  // BCS preliminary: 200 questions in 2 hours, i.e. 36 seconds per question.
+  const limitSecs = examMode ? qs.length * 36 : null
+  const shownSecs = examMode ? Math.max(0, limitSecs - secs) : secs
+  const clock = (s) =>
+    s >= 3600
+      ? `${Math.floor(s / 3600)}:${String(Math.floor((s % 3600) / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`
+      : `${String(Math.floor(s / 60)).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`
+  const time = clock(shownSecs)
+  const lowTime = examMode && shownSecs <= 300
+  const paperNumber = parseInt(qs[0]?.source, 10) || null
   const sessionHeaderTitle = [nameOf(session?.exam), titles[mode] && L(...titles[mode])].filter(Boolean).join(" · ")
 
   const check = async (question, chosen) => {
@@ -167,11 +193,36 @@ export default function Session() {
 
   const finish = async () => {
     try {
+      // In an exam, save every option the student picked but has not submitted yet.
+      if (!instant) {
+        for (const [questionId, chosen] of Object.entries(picked)) {
+          const question = qs.find((x) => String(x.id) === questionId)
+          if (question && !results[question.id]) await check(question, chosen)
+        }
+      }
       setSummary(await practiceApi.finish(session.id))
+      if (examMode) {
+        try {
+          localStorage.removeItem(`exam-started-${session.id}`)
+        } catch {
+          // Nothing to clean up if storage is blocked.
+        }
+      }
     } catch (e) {
       toast.error(e.message)
     }
   }
+
+  // Time is up: submit automatically.
+  const timeUp = examMode && session && !summary && qs.length > 0 && secs >= limitSecs
+  const submittedOnTimeUp = useRef(false)
+  useEffect(() => {
+    if (!timeUp || submittedOnTimeUp.current) return
+    submittedOnTimeUp.current = true
+    toast.info(L("Time is up — your answers have been submitted.", "সময় শেষ — আপনার উত্তর জমা দেওয়া হয়েছে।"))
+    finish()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timeUp])
 
   const next = async () => {
     // In the starting-level test answers are saved without showing whether they were right.
@@ -203,6 +254,69 @@ export default function Session() {
       <div className="mx-auto flex min-h-dvh max-w-lg flex-col items-center justify-center gap-3 py-10 text-sm text-muted-foreground">
         <span className="size-8 animate-spin rounded-full border-[3px] border-primary/20 border-t-primary" />
         {L("Getting your questions ready…", "আপনার প্রশ্নগুলো প্রস্তুত হচ্ছে…")}
+      </div>
+    )
+  }
+
+  if (summary && examMode) {
+    const marks = summary.correct - summary.wrong * 0.5
+    const pct = Math.max(0, Math.round((marks / Math.max(summary.total, 1)) * 100))
+    return (
+      <div className="mx-auto flex min-h-dvh max-w-lg flex-col justify-center py-10">
+        <Panel className="text-center">
+          <div className="mx-auto grid size-14 place-items-center rounded-2xl bg-warning/15 text-2xl text-warning">
+            <FontAwesomeIcon icon={faTrophy} />
+          </div>
+          <h1 className="mt-4 text-xl font-bold">{L("Exam submitted", "পরীক্ষা জমা হয়েছে")}</h1>
+          <p className="text-sm text-muted-foreground">{qs[0]?.source}</p>
+          <Ring value={pct} size={120} stroke={10} className="mx-auto my-6" label={<span className="text-xl">{num(marks)}<span className="text-sm text-muted-foreground">/{num(summary.total)}</span></span>} />
+          <div className="grid grid-cols-3 divide-x rounded-xl border text-center">
+            <div className="py-3">
+              <p className="text-lg font-bold text-success">{num(summary.correct)}</p>
+              <p className="text-xs text-muted-foreground">{L("Correct", "সঠিক")}</p>
+            </div>
+            <div className="py-3">
+              <p className="text-lg font-bold text-destructive">{num(summary.wrong)}</p>
+              <p className="text-xs text-muted-foreground">{L("Wrong", "ভুল")}</p>
+            </div>
+            <div className="py-3">
+              <p className="text-lg font-bold">{num(summary.skipped)}</p>
+              <p className="text-xs text-muted-foreground">{L("Not answered", "উত্তর দেননি")}</p>
+            </div>
+          </div>
+          <p className="mt-4 text-sm text-muted-foreground">
+            {L(
+              `Marks = correct answers − 0.5 for each wrong answer, as in the BCS preliminary. Time taken: ${clock(Math.min(secs, limitSecs))}.`,
+              `নম্বর = সঠিক উত্তর − প্রতিটি ভুলের জন্য ০.৫, বিসিএস প্রিলিমিনারির নিয়মে। সময় লেগেছে: ${num(clock(Math.min(secs, limitSecs)))}।`
+            )}
+          </p>
+          {isGuest && (
+            <div className="mt-5 rounded-xl border border-primary/25 bg-primary/5 p-4 text-left">
+              <p className="text-sm font-semibold">{L("Don't lose this score", "এই স্কোরটি হারিয়ে ফেলবেন না")}</p>
+              <p className="mt-0.5 text-xs text-muted-foreground">
+                {L(
+                  "You're a guest, so this result isn't saved. Create a free account to track every exam, review your mistakes and see your progress.",
+                  "আপনি অতিথি, তাই এই ফলাফল সংরক্ষিত হবে না। ফ্রি অ্যাকাউন্ট খুলে প্রতিটি পরীক্ষার ফল, ভুলগুলো ও অগ্রগতি দেখুন।"
+                )}
+              </p>
+              <Button asChild className="btn-shine mt-3 h-10 w-full rounded-full">
+                <Link to="/signup" state={{ from: "/app/bcs-papers" }}>
+                  {L("Create free account — 30 seconds", "ফ্রি অ্যাকাউন্ট খুলুন — ৩০ সেকেন্ডে")}
+                </Link>
+              </Button>
+            </div>
+          )}
+          <div className="mt-6 grid gap-2">
+            {paperNumber && (
+              <Button className="h-12 rounded-full" onClick={() => nav(`/app/bcs-papers/${paperNumber}`)}>
+                {L("See all answers & explanations", "সব উত্তর ও ব্যাখ্যা দেখুন")}
+              </Button>
+            )}
+            <Button variant="outline" className="h-12 rounded-full" onClick={() => nav("/app/bcs-papers")}>
+              {L("Back to BCS papers", "বিসিএস প্রশ্নে ফিরে যান")}
+            </Button>
+          </div>
+        </Panel>
       </div>
     )
   }
@@ -293,7 +407,7 @@ export default function Session() {
       {/* Session header */}
       <div className="card mb-5 flex items-center gap-3 p-3 md:gap-4 md:px-5">
         <Link
-          to="/app/practice"
+          to={mode === "past" || examMode ? "/app/bcs-papers" : "/app/practice"}
           className="grid size-10 shrink-0 place-items-center rounded-lg border text-muted-foreground transition-colors hover:border-destructive/40 hover:text-destructive"
           aria-label={L("Exit session", "অনুশীলন থেকে বের হন")}
         >
@@ -310,8 +424,15 @@ export default function Session() {
             </span>
           </div>
         </div>
-        <span className="hidden items-center gap-2 rounded-lg bg-muted px-3 py-2 text-sm font-semibold tabular-nums sm:flex">
-          <FontAwesomeIcon icon={faClock} className="text-muted-foreground" /> {num(time)}
+        <span
+          className={cn(
+            "items-center gap-2 rounded-lg bg-muted px-3 py-2 text-sm font-semibold tabular-nums",
+            examMode ? "flex" : "hidden sm:flex",
+            lowTime && "bg-destructive/10 text-destructive"
+          )}
+          aria-label={examMode ? L("Time left", "বাকি সময়") : L("Time", "সময়")}
+        >
+          <FontAwesomeIcon icon={faClock} className={lowTime ? "" : "text-muted-foreground"} /> {num(time)}
         </span>
       </div>
 
@@ -380,11 +501,42 @@ export default function Session() {
                 <span className="font-semibold tabular-nums">{instant && answered > 0 ? `${num(Math.round((correct / answered) * 100))}%` : "—"}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">{L("Time", "সময়")}</span>
-                <span className="font-semibold tabular-nums">{num(time)}</span>
+                <span className="text-muted-foreground">{examMode ? L("Time left", "বাকি সময়") : L("Time", "সময়")}</span>
+                <span className={cn("font-semibold tabular-nums", lowTime && "text-destructive")}>{num(time)}</span>
               </div>
             </div>
+            {examMode && (
+              <Button variant="outline" className="mt-4 h-10 w-full rounded-full" disabled={saving} onClick={finish}>
+                {L("Submit exam", "পরীক্ষা জমা দিন")}
+              </Button>
+            )}
           </Panel>
+
+          {examMode && (
+            <Panel className="p-4">
+              <h2 className="mb-3 text-xs font-semibold tracking-wider text-muted-foreground uppercase">{L("Questions", "প্রশ্নসমূহ")}</h2>
+              <div className="grid max-h-72 grid-cols-6 gap-1.5 overflow-y-auto">
+                {qs.map((x, i) => {
+                  const done = results[x.id] || picked[x.id] !== undefined
+                  return (
+                    <button
+                      key={x.id}
+                      onClick={() => setIdx(i)}
+                      aria-label={L(`Question ${i + 1}`, `প্রশ্ন ${num(i + 1)}`)}
+                      aria-current={i === idx}
+                      className={cn(
+                        "h-8 rounded-md border text-xs font-semibold tabular-nums transition-colors",
+                        done ? "border-primary bg-primary/10 text-primary" : "bg-card text-muted-foreground hover:border-primary/40",
+                        i === idx && "ring-2 ring-primary"
+                      )}
+                    >
+                      {num(i + 1)}
+                    </button>
+                  )
+                })}
+              </div>
+            </Panel>
+          )}
 
           {session.subject && (
             <Panel className="p-4">

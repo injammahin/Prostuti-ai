@@ -41,7 +41,9 @@ return [
 
     'gemini' => [
         'key' => env('GEMINI_API_KEY'),
-        'model' => env('GEMINI_MODEL', 'gemini-2.5-flash'),
+        'model' => env('GEMINI_MODEL', 'gemini-3.8-flash'),
+        // Tried in order when the main model is busy or retired (comma-separated).
+        'fallback_models' => env('GEMINI_FALLBACK_MODELS', 'gemini-3.6-flash,gemini-3.5-flash-lite'),
     ],
 
     'anthropic' => [

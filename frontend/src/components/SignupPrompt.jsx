@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router"
+﻿import { Link, useLocation } from "react-router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUserPlus, faCircleCheck } from "@fortawesome/free-solid-svg-icons"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
@@ -9,6 +9,9 @@ const perks = ["Save progress, bookmarks and wrong answers", "Personal study pla
 
 export default function SignupPrompt() {
   const { signup, setSignup } = useApp()
+  const { pathname, search } = useLocation()
+  // Bring the user back to this page once they've signed up or signed in.
+  const back = pathname.startsWith("/app") ? { from: pathname + search } : undefined
   const close = () => setSignup({ open: false, reason: "" })
   return (
     <Dialog open={signup.open} onOpenChange={(v) => !v && close()}>
@@ -34,10 +37,10 @@ export default function SignupPrompt() {
           </ul>
           <div className="grid gap-2 pt-1">
             <Button asChild className="btn-shine h-12 text-base" onClick={close}>
-              <Link to="/signup">Create free account</Link>
+              <Link to="/signup" state={back}>Create free account</Link>
             </Button>
             <Button asChild variant="ghost" className="h-11" onClick={close}>
-              <Link to="/login">I already have an account</Link>
+              <Link to="/login" state={back}>I already have an account</Link>
             </Button>
           </div>
         </div>

@@ -29,6 +29,8 @@ const NoticeDetail = p(() => import("@/pages/public/NoticeDetail"))
 const Calendar = p(() => import("@/pages/public/Calendar"))
 const Exams = p(() => import("@/pages/public/Exams"))
 const ExamDetail = p(() => import("@/pages/public/ExamDetail"))
+const Blog = p(() => import("@/pages/public/Blog"))
+const BlogPost = p(() => import("@/pages/public/BlogPost"))
 const Login = p(() => import("@/pages/auth/Login"))
 const Onboarding = p(() => import("@/pages/auth/Onboarding"))
 const NotFound = p(() => import("@/pages/NotFound"))
@@ -38,6 +40,8 @@ const Practice = p(() => import("@/pages/app/Practice"))
 const Session = p(() => import("@/pages/app/Session"))
 const ModelTests = p(() => import("@/pages/app/ModelTests"))
 const TestRun = p(() => import("@/pages/app/TestRun"))
+const PastPapers = p(() => import("@/pages/app/PastPapers"))
+const PaperSolutions = p(() => import("@/pages/app/PaperSolutions"))
 const TestResult = p(() => import("@/pages/app/TestResult"))
 const Written = p(() => import("@/pages/app/Written"))
 const WrittenAnswer = p(() => import("@/pages/app/WrittenAnswer"))
@@ -68,6 +72,21 @@ function MembersOnly({ children }) {
 function GoToAdminPanel() {
   window.location.replace(`${BACKEND_URL}/admin`)
   return null
+}
+
+/**
+ * Public entry to the previous BCS papers (website menu). Members go straight in;
+ * visitors are signed in as a guest first, so they can read and practise right away
+ * and are asked to sign up when they want to keep their results.
+ */
+function OpenBcsPapers() {
+  const { user, loginGuest } = useApp()
+  const { pathname } = useLocation()
+  useEffect(() => {
+    if (!user) loginGuest()
+  }, [user, loginGuest])
+  if (!user) return <Loader />
+  return <Navigate to={`/app${pathname}`} replace />
 }
 
 function RequireAuth({ children }) {
@@ -103,8 +122,12 @@ function AppRoutes() {
           <Route path="calendar" element={<Calendar />} />
           <Route path="exams" element={<Exams />} />
           <Route path="exams/:slug" element={<ExamDetail />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/:slug" element={<BlogPost />} />
           <Route path="doctors" element={<Navigate to="/exams" replace />} />
         </Route>
+        <Route path="bcs-papers" element={<OpenBcsPapers />} />
+        <Route path="bcs-papers/:number" element={<OpenBcsPapers />} />
         <Route path="login" element={<Login mode="login" />} />
         <Route path="signup" element={<Login mode="signup" />} />
         <Route path="onboarding" element={<RequireAuth><Onboarding /></RequireAuth>} />
@@ -116,6 +139,8 @@ function AppRoutes() {
           <Route path="test" element={<ModelTests />} />
           <Route path="test/run" element={<TestRun />} />
           <Route path="test/result" element={<TestResult />} />
+          <Route path="bcs-papers" element={<PastPapers />} />
+          <Route path="bcs-papers/:number" element={<PaperSolutions />} />
           <Route path="written/*" element={<Navigate to="/app/practice" replace />} />
           <Route path="written" element={<Navigate to="/app/practice" replace />} />
           <Route path="medical" element={<Navigate to="/app/practice" replace />} />

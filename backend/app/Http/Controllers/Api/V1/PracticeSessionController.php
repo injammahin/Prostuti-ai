@@ -33,6 +33,7 @@ class PracticeSessionController extends Controller
             Exam::query()->firstWhere('slug', $request->validated('exam')),
             Subject::query()->firstWhere('slug', $request->validated('subject')),
             (int) ($request->validated('count') ?? 20),
+            $request->validated('paper'),
         );
 
         $what = collect([$session->subject?->name, $session->exam?->name])->filter()->join(' · ') ?: 'mixed subjects';

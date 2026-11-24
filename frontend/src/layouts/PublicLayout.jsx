@@ -16,6 +16,8 @@ const links = [
   ["/notices", "notices"],
   ["/calendar", "calendar"],
   ["/exams", "exams"],
+  ["/bcs-papers", "bcsPapers"],
+  ["/blog", "blog"],
 ]
 
 export function LangToggle({ className }) {
@@ -169,6 +171,8 @@ export default function PublicLayout() {
             <ul className="space-y-2.5 text-muted-foreground">
               <li><Link to="/notices" className="hover:text-primary">Notice board</Link></li>
               <li><Link to="/calendar" className="hover:text-primary">Exam calendar</Link></li>
+              <li><Link to="/bcs-papers" className="hover:text-primary">Previous BCS questions</Link></li>
+              <li><Link to="/blog" className="hover:text-primary">Blog</Link></li>
               <li><a href="#" className="hover:text-primary">Privacy policy</a></li>
               <li><a href="#" className="hover:text-primary">Terms</a></li>
             </ul>

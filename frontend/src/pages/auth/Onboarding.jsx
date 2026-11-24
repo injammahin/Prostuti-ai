@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react"
-import { useNavigate } from "react-router"
+import { useLocation, useNavigate } from "react-router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faArrowLeft,
@@ -53,6 +53,7 @@ function Choice({ active, onClick, children, className }) {
 export default function Onboarding() {
   const { set, lang } = useApp()
   const nav = useNavigate()
+  const returnTo = useLocation().state?.from
   const [step, setStep] = useState(0)
   const [furthest, setFurthest] = useState(0) // furthest step reached, so users can go forward again after going back
   const autoNext = useRef(null)
@@ -224,7 +225,7 @@ export default function Onboarding() {
         JSON.stringify({ exam: mainExam, targetDate: form.date, dailyHours: hours, studyDays: [6, 0, 1, 2, 3, 4, 5], created: true })
       )
     } catch {}
-    nav(diag ? "/app/practice/session?mode=diagnostic" : "/app", { replace: true })
+    nav(diag ? "/app/practice/session?mode=diagnostic" : returnTo || "/app", { replace: true })
   }
 
   return (

@@ -225,6 +225,55 @@
   .card {
     @apply rounded-2xl border border-border/70 bg-card shadow-card;
   }
+  /* Blog article text written in the admin panel's rich editor. */
+  .article {
+    @apply text-[1.02rem] leading-[1.85] text-foreground/90;
+  }
+  .article > * + * {
+    @apply mt-4;
+  }
+  .article h2 {
+    @apply mt-9 text-[1.4rem] leading-snug font-bold text-foreground;
+  }
+  .article h3 {
+    @apply mt-7 text-[1.15rem] leading-snug font-bold text-foreground;
+  }
+  .article a {
+    @apply font-medium text-primary underline underline-offset-2;
+  }
+  .article strong {
+    @apply font-semibold text-foreground;
+  }
+  .article ul,
+  .article ol {
+    @apply space-y-2 pl-6;
+  }
+  .article ul {
+    @apply list-disc;
+  }
+  .article ol {
+    @apply list-decimal;
+  }
+  .article li::marker {
+    @apply text-primary;
+  }
+  .article blockquote {
+    @apply rounded-r-xl border-l-4 border-primary bg-secondary/60 px-4 py-3 text-foreground/85;
+  }
+  .article table {
+    @apply block w-full overflow-x-auto text-sm sm:table;
+    border-collapse: collapse;
+  }
+  .article th,
+  .article td {
+    @apply border border-border px-3 py-2 text-left;
+  }
+  .article th {
+    @apply bg-muted font-semibold;
+  }
+  .article img {
+    @apply rounded-xl;
+  }
   .lift {
     transition: transform 0.25s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.25s, border-color 0.2s;
   }

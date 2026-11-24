@@ -144,5 +144,14 @@
    "bcs-general"
   ],
   "sort": 10
+ },
+ {
+  "slug": "medical",
+  "name": "Medical Science",
+  "name_bn": "মেডিকেল সায়েন্স",
+  "icon": "flask",
+  "image": "/subjects/science.jpg",
+  "exams": [],
+  "sort": 11
  }
 ]

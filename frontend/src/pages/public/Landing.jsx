@@ -14,10 +14,15 @@ import {
   faClipboardCheck,
   faChartLine,
   faEye,
+  faBookOpen,
+  faStopwatch,
 } from "@fortawesome/free-solid-svg-icons"
+import { useApi } from "@/lib/use-api"
+import { pastPapersApi, blogApi } from "@/lib/api"
+import { PostCard } from "@/components/BlogCards"
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { NoticeCard, Pill, IconBox, Bar, Ring, SectionTitle } from "@/components/shared"
+import { NoticeCard, Pill, IconBox, SectionTitle } from "@/components/shared"
 import { Icon } from "@/components/icon"
 import Illustration from "@/components/Illustration"
 import { exams, notices } from "@/lib/data"
@@ -32,6 +37,51 @@ const faqs = [
   ["Is it really free?", "Yes. Every feature — adaptive practice drills, full model tests, syllabus guides, mistake notebook and alerts — is 100% free right now."],
 ]
 
+const features = [
+  {
+    icon: faStopwatch,
+    tone: "primary",
+    title: "Real-format model tests",
+    text: "Timed tests with the real question count, time limit and negative marking of each exam.",
+    points: ["Exact BCS, Bank & NTRCA format", "−0.50 / −0.25 negative marking", "Score and weak subjects after each test"],
+  },
+  {
+    icon: faBookOpen,
+    tone: "primary",
+    title: "Previous BCS questions",
+    text: "Every BCS preliminary paper, newest first, with the right answer and an explanation for each question.",
+    points: ["Read questions with solutions", "Sit any paper as a timed exam", "Filter by subject or search"],
+  },
+  {
+    icon: faBullhorn,
+    tone: "info",
+    title: "Verified notice board",
+    text: "Circulars, deadlines, admit cards and results, each checked against the official source.",
+    points: ["Links to the official notice", "Exam calendar with deadlines", "Alerts for the exams you follow"],
+  },
+  {
+    icon: faBuildingColumns,
+    tone: "warning",
+    title: "Bank & teacher exams",
+    text: "Separate question banks for Bangladesh Bank, Combined Bank, NTRCA and Primary Assistant Teacher.",
+    points: ["Questions sorted by subject", "Explanations in Bangla & English", "Practice 10 to 50 at a time"],
+  },
+  {
+    icon: faRoute,
+    tone: "success",
+    title: "Daily study plan",
+    text: "A plan built around your target exam that brings weak topics back before you forget them.",
+    points: ["3–5 focused tasks a day", "Mistakes come back for revision", "Track your streak and progress"],
+  },
+  {
+    icon: faWandMagicSparkles,
+    tone: "info",
+    title: "AI tutor",
+    text: "Stuck on a question? Ask the AI tutor to explain the answer in simple Bangla or English.",
+    points: ["Why the other options are wrong", "Short tricks to remember", "Follow-up questions in chat"],
+  },
+]
+
 const steps = [
   [faClipboardCheck, "Take a 15-minute diagnostic", "We find your level in every subject of your target exam."],
   [faRoute, "Follow your daily plan", "3–5 focused tasks a day. Weak topics come back before you forget them."],
@@ -42,6 +92,11 @@ export default function Landing() {
   const noticesVersion = useNoticesVersion()
   const { loginGuest, user, isGuest } = useApp()
   const nav = useNavigate()
+  const { data: paperList } = useApi(() => pastPapersApi.list(), [], { key: "past-papers" })
+  const { L } = useApp()
+  const { data: blog } = useApi(() => blogApi.list(), [], { key: "blog" })
+  const latestPosts = (blog?.data ?? []).slice(0, 3)
+  const readyPapers =(paperList?.papers ?? []).filter((p) => p.questions >= 100).slice(0, 5) // only full papers make a good first impression
   const guest = () => {
     if (!user) loginGuest()
     nav("/app")
@@ -87,6 +142,14 @@ export default function Landing() {
                 </Button>
               )}
             </div>
+            <Link
+              to="/bcs-papers"
+              className="group mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
+            >
+              <FontAwesomeIcon icon={faBookOpen} className="text-xs" />
+              Previous BCS questions &amp; solutions — free
+              <FontAwesomeIcon icon={faArrowRight} className="text-[0.65rem] transition-transform group-hover:translate-x-0.5" />
+            </Link>
             <div className="mt-8 flex items-center gap-4">
               <div className="flex -space-x-3">
                 {["men-32", "women-44", "men-75", "women-68"].map((a, i) => (
@@ -157,6 +220,44 @@ export default function Landing() {
         </div>
       </section>
 
+      {/* Previous BCS papers */}
+      <section className="mx-auto max-w-6xl px-4 pt-10 md:pt-14">
+        <div className="card relative overflow-hidden rounded-3xl border-primary/20 p-6 md:p-8">
+          <div className="pointer-events-none absolute -top-20 -right-20 size-64 rounded-full bg-primary/8 blur-3xl" />
+          <div className="relative flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div className="max-w-xl">
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                <FontAwesomeIcon icon={faBookOpen} /> বিগত বিসিএস প্রশ্ন ও সমাধান
+              </span>
+              <h2 className="mt-3 text-2xl font-bold md:text-3xl">Previous BCS questions &amp; solutions</h2>
+              <p className="mt-1.5 text-sm text-muted-foreground md:text-base">
+                Every BCS preliminary paper, newest first. Read each question with its answer and explanation, or sit the full paper as a timed exam with
+                −0.5 negative marking.
+              </p>
+              {readyPapers.length > 0 && (
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {readyPapers.map((p) => (
+                    <Link
+                      key={p.number}
+                      to={`/bcs-papers/${p.number}`}
+                      className="inline-flex items-center gap-1.5 rounded-full border bg-card px-3.5 py-1.5 text-sm font-semibold transition-colors hover:border-primary/40 hover:text-primary"
+                    >
+                      {p.name}
+                      <span className="text-xs font-medium text-muted-foreground">{p.questions} Q</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+            <Button asChild className="btn-shine h-12 shrink-0 rounded-full px-7 text-base">
+              <Link to="/bcs-papers">
+                See all BCS papers <FontAwesomeIcon icon={faArrowRight} />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Daily quiz teaser */}
       <section className="mx-auto max-w-6xl px-4 pt-10 md:pt-14">
         <Link
@@ -184,131 +285,24 @@ export default function Landing() {
           <p className="mt-3 text-muted-foreground">Built around how BCS and govt job aspirants actually prepare.</p>
         </div>
 
-        <div className="stagger mt-12 grid gap-4 md:grid-cols-6">
-          {/* Model tests & simulations — wide */}
-          <div className="card lift group relative overflow-hidden p-6 md:col-span-4 md:p-8">
-            <div className="pointer-events-none absolute -top-20 -right-20 size-64 rounded-full bg-secondary" />
-            <div className="relative grid items-center gap-6 sm:grid-cols-[1fr_15rem]">
-              <div>
-                <IconBox className="size-11 transition-transform group-hover:scale-110">
-                  <FontAwesomeIcon icon={faWandMagicSparkles} />
-                </IconBox>
-                <h3 className="mt-5 text-xl font-bold">Simulated model tests &amp; mock drills</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  Practice with authentic question counts, real countdown limits, and strict negative marking (-0.50 / -0.25). Get instant cut-off percentile calculations and weak area diagnostics.
-                </p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {["Timed simulations", "-0.50 negative marking", "Percentile ranks"].map((t) => (
-                    <Pill key={t} tone="primary">{t}</Pill>
-                  ))}
-                </div>
-              </div>
-              <div className="rounded-2xl border bg-card p-4 shadow-lift transition-transform duration-500 group-hover:-rotate-1 group-hover:scale-[1.02]">
-                <div className="flex items-center gap-3">
-                  <Ring value={68} size={54} stroke={6} label={<span className="text-xs">68%</span>} />
-                  <div>
-                    <p className="text-[0.7rem] text-muted-foreground">Mock score</p>
-                    <p className="text-2xl leading-none font-extrabold">124.5<span className="text-sm font-medium text-muted-foreground">/200</span></p>
-                  </div>
-                </div>
-                <div className="mt-4 space-y-2.5">
-                  {[
-                    ["Bangla & Literature", 78, "bg-primary"],
-                    ["English Grammar", 64, "bg-primary"],
-                    ["Math & Analytical", 72, "bg-success"],
-                  ].map(([k, v, c]) => (
-                    <div key={k}>
-                      <div className="mb-1 flex justify-between text-[0.7rem] font-medium">
-                        <span>{k}</span>
-                        <span className="text-muted-foreground">{v}%</span>
-                      </div>
-                      <Bar value={v} tone={c} className="h-1.5" />
-                    </div>
-                  ))}
-                </div>
-                <p className="mt-3 rounded-lg bg-success/10 px-2.5 py-1.5 text-[0.72rem] font-semibold text-success">✓ Cut-off passed · Rank #1,204</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Notice board — dark */}
-          <div className="hero lift group overflow-hidden rounded-2xl p-6 md:col-span-2 md:p-7">
-            <span className="grid size-11 place-items-center rounded-xl bg-white/15 transition-transform group-hover:scale-110">
-              <FontAwesomeIcon icon={faBullhorn} />
-            </span>
-            <h3 className="mt-5 text-xl font-bold">Verified notice board</h3>
-            <p className="mt-2 text-sm leading-relaxed text-white/70">Circulars, deadlines, admit cards and results — checked against the official source.</p>
-            <div className="mt-5 space-y-2">
-              {[
-                ["19", "Dec", "Combined 9 Banks Senior Officer test"],
-                ["10", "Dec", "19th NTRCA application deadline"],
-              ].map(([d, m, t], i) => (
-                <div
-                  key={t}
-                  className="flex items-center gap-3 rounded-xl bg-white/10 p-2 pr-3 backdrop-blur transition-transform duration-300 group-hover:translate-x-1"
-                  style={{ transitionDelay: `${i * 60}ms` }}
-                >
-                  <span className="flex w-10 flex-col items-center rounded-lg bg-white py-1 text-brand">
-                    <span className="text-sm leading-none font-extrabold">{d}</span>
-                    <span className="text-[0.55rem] font-bold uppercase">{m}</span>
-                  </span>
-                  <span className="min-w-0 flex-1 truncate text-xs font-semibold">{t}</span>
-                  <FontAwesomeIcon icon={faCircleCheck} className="text-glow" />
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Bank & Teacher Specialization */}
-          <div className="card lift group relative overflow-hidden p-6 md:col-span-3 md:p-7">
-            <div className="pointer-events-none absolute -right-16 -bottom-16 size-48 rounded-full bg-warning/8" />
-            <div className="relative">
-              <IconBox tone="warning" className="size-11 transition-transform group-hover:scale-110">
-                <FontAwesomeIcon icon={faBuildingColumns} />
+        <div className="stagger mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-3">
+          {features.map(({ icon, tone, title, text, points }) => (
+            <div key={title} className="card lift group flex flex-col p-6">
+              <IconBox tone={tone} className="size-11 transition-transform group-hover:scale-105">
+                <FontAwesomeIcon icon={icon} />
               </IconBox>
-              <h3 className="mt-5 text-xl font-bold">Bank &amp; Teacher Recruitment</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">Dedicated question banks for Bangladesh Bank AD, Combined 9 Banks, NTRCA and Primary Assistant Teacher.</p>
-              <div className="mt-5 rounded-2xl border bg-card p-3.5 shadow-card">
-                <p className="text-xs font-semibold">Bangladesh Bank AD: Cash Reserve Ratio (CRR)?</p>
-                <div className="mt-2 grid grid-cols-2 gap-1.5 text-[0.7rem]">
-                  <span className="rounded-lg border px-2 py-1.5">Vault cash limit</span>
-                  <span className="rounded-lg border border-success bg-success/10 px-2 py-1.5 font-semibold">Reserves with BB ✓</span>
-                </div>
-                <p className="mt-2.5 flex items-center gap-1.5 text-[0.68rem] font-semibold text-success">
-                  <FontAwesomeIcon icon={faCircleCheck} /> Verified past exam question · BSCS pattern
-                </p>
-              </div>
+              <h3 className="mt-4 text-lg font-bold">{title}</h3>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{text}</p>
+              <ul className="mt-4 space-y-2 border-t pt-4 text-sm">
+                {points.map((p) => (
+                  <li key={p} className="flex items-start gap-2">
+                    <FontAwesomeIcon icon={faCircleCheck} className="mt-0.5 text-[0.8rem] text-success" />
+                    <span>{p}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-          </div>
-
-          {/* Adaptive coach */}
-          <div className="card lift group relative overflow-hidden p-6 md:col-span-3 md:p-7">
-            <div className="pointer-events-none absolute -top-16 -right-16 size-48 rounded-full bg-info/8" />
-            <div className="relative">
-              <IconBox tone="info" className="size-11 transition-transform group-hover:scale-110">
-                <FontAwesomeIcon icon={faRoute} />
-              </IconBox>
-              <h3 className="mt-5 text-xl font-bold">One adaptive coach</h3>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">A daily plan that follows your target exams and brings weak topics back before you forget them.</p>
-              <div className="mt-5 flex items-center gap-4 rounded-2xl border bg-card p-3.5 shadow-card">
-                <Ring value={75} size={60} stroke={7} label="3/4" />
-                <ul className="flex-1 space-y-1.5 text-[0.75rem]">
-                  {[
-                    ["Weak-topic drill: UN bodies", true],
-                    ["Revise 12 wrong answers", true],
-                    ["Target drill: Math 20 MCQs", false],
-                  ].map(([t, d]) => (
-                    <li key={t} className="flex items-center gap-2">
-                      <span className={`grid size-4 shrink-0 place-items-center rounded-full text-[0.5rem] ${d ? "bg-success text-white" : "border-2 border-input"}`}>
-                        {d && <FontAwesomeIcon icon={faCircleCheck} />}
-                      </span>
-                      <span className={d ? "text-muted-foreground line-through" : "font-semibold"}>{t}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
@@ -383,6 +377,18 @@ export default function Landing() {
           </Button>
         </div>
       </section>
+
+      {/* From the blog — internal links help search engines find the articles */}
+      {latestPosts.length > 0 && (
+        <section className="mx-auto max-w-6xl px-4 pt-16 md:pt-24">
+          <SectionTitle title="From the blog" to="/blog" linkLabel="All articles" />
+          <div className="stagger grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {latestPosts.map((p) => (
+              <PostCard key={p.slug} post={p} L={L} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* FAQ */}
       <section className="mx-auto grid max-w-6xl gap-8 px-4 pt-16 md:grid-cols-[1fr_1.6fr] md:pt-24">

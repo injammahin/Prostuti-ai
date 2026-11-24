@@ -1,4 +1,11 @@
 // Small fetch wrapper for the Laravel API.
+import { bcs48thQuestions, BCS_48TH_META } from "./bcs-48th-questions"
+import { bcs47thQuestions, BCS_47TH_META } from "./bcs-47th-questions"
+import { bcs46thQuestions, BCS_46TH_META } from "./bcs-46th-questions"
+import { bcs45thQuestions, BCS_45TH_META } from "./bcs-45th-questions"
+import { bcs44thQuestions, BCS_44TH_META } from "./bcs-44th-questions"
+import { bcs43rdQuestions, BCS_43RD_META } from "./bcs-43rd-questions"
+
 export const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:8000/api/v1").replace(/\/$/, "")
 export const BACKEND_URL = API_URL.replace(/\/api\/v1$/, "")
 export const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID || ""
@@ -105,12 +112,203 @@ export const authApi = {
   logout: () => api("/auth/logout", { method: "POST" }),
 }
 
+/** Previous BCS papers, newest first: [{ number, source, name, name_bn, special, questions }] */
+export const pastPapersApi = {
+  list: async () => {
+    try {
+      const res = await api("/past-papers")
+      if (res?.papers) {
+        let has48 = false
+        let has47 = false
+        let has46 = false
+        const papers = res.papers.map((p) => {
+          if (p.number === 48) {
+            has48 = true
+            return {
+              ...p,
+              questions: Math.max(p.questions || 0, 200),
+              name: "48th BCS",
+              name_bn: "৪৮তম বিশেষ বিসিএস",
+              special: true,
+            }
+          }
+          if (p.number === 47) {
+            has47 = true
+            return {
+              ...p,
+              questions: Math.max(p.questions || 0, 200),
+              name: "47th BCS",
+              name_bn: "৪৭তম বিসিএস",
+              special: false,
+            }
+          }
+          if (p.number === 46) {
+            has46 = true
+            return {
+              ...p,
+              questions: Math.max(p.questions || 0, 200),
+              name: "46th BCS",
+              name_bn: "৪৬তম বিসিএস",
+              special: false,
+            }
+          }
+          return p
+        })
+        if (!has46) {
+          const insertIdx = (has48 ? 1 : 0) + (has47 ? 1 : 0)
+          papers.splice(insertIdx, 0, {
+            number: 46,
+            source: "46th BCS",
+            name: "46th BCS",
+            name_bn: "৪৬তম বিসিএস",
+            special: false,
+            questions: 200,
+          })
+        }
+        if (!has47) {
+          const insertIdx = has48 ? 1 : 0
+          papers.splice(insertIdx, 0, {
+            number: 47,
+            source: "47th BCS",
+            name: "47th BCS",
+            name_bn: "৪৭তম বিসিএস",
+            special: false,
+            questions: 200,
+          })
+        }
+        if (!has48) {
+          papers.unshift({
+            number: 48,
+            source: "48th BCS",
+            name: "48th BCS",
+            name_bn: "৪৮তম বিশেষ বিসিএস",
+            special: true,
+            questions: 200,
+          })
+        }
+        return { ...res, papers }
+      }
+      return res
+    } catch {
+      return {
+        papers: [
+          {
+            number: 48,
+            source: "48th BCS",
+            name: "48th BCS",
+            name_bn: "৪৮তম বিশেষ বিসিএস",
+            special: true,
+            questions: 200,
+          },
+          {
+            number: 47,
+            source: "47th BCS",
+            name: "47th BCS",
+            name_bn: "৪৭তম বিসিএস",
+            special: false,
+            questions: 200,
+          },
+          {
+            number: 46,
+            source: "46th BCS",
+            name: "46th BCS",
+            name_bn: "৪৬তম বিসিএস",
+            special: false,
+            questions: 200,
+          },
+        ],
+      }
+    }
+  },
+  /** One paper with every question, its answer and explanation. */
+  show: async (number) => {
+    const numVal = parseInt(number, 10)
+    if (numVal === 48) {
+      try {
+        const res = await api(`/past-papers/${number}`)
+        if (res?.questions && res.questions.length >= 200) {
+          return {
+            paper: {
+              ...res.paper,
+              ...BCS_48TH_META,
+              questions: res.questions.length,
+            },
+            questions: res.questions,
+          }
+        }
+      } catch {
+        // Fallback to client-side complete 200 questions dataset
+      }
+      return {
+        paper: {
+          ...BCS_48TH_META,
+        },
+        questions: bcs48thQuestions,
+      }
+    }
+    if (numVal === 47) {
+      try {
+        const res = await api(`/past-papers/${number}`)
+        if (res?.questions && res.questions.length >= 200) {
+          return {
+            paper: {
+              ...res.paper,
+              ...BCS_47TH_META,
+              questions: res.questions.length,
+            },
+            questions: res.questions,
+          }
+        }
+      } catch {
+        // Fallback to client-side complete 200 questions dataset
+      }
+      return {
+        paper: {
+          ...BCS_47TH_META,
+        },
+        questions: bcs47thQuestions,
+      }
+    }
+    if (numVal === 46) {
+      try {
+        const res = await api(`/past-papers/${number}`)
+        if (res?.questions && res.questions.length >= 200) {
+          return {
+            paper: {
+              ...res.paper,
+              ...BCS_46TH_META,
+              questions: res.questions.length,
+            },
+            questions: res.questions,
+          }
+        }
+      } catch {
+        // Fallback to client-side complete 200 questions dataset
+      }
+      return {
+        paper: {
+          ...BCS_46TH_META,
+        },
+        questions: bcs46thQuestions,
+      }
+    }
+    return api(`/past-papers/${number}`)
+  },
+}
+
+/** Blog articles: list (no body) and one article with related posts. */
+export const blogApi = {
+  list: () => api("/posts"),
+  show: (slug) => api(`/posts/${encodeURIComponent(slug)}`),
+}
+
 export const catalogApi = {
   get: () => api("/catalog"),
 }
 
 export const practiceApi = {
-  start: ({ mode, exam, subject, count }) => api("/practice/sessions", { method: "POST", body: { mode, exam: exam || undefined, subject: subject || undefined, count } }),
+  start: ({ mode, exam, subject, count, paper }) =>
+    api("/practice/sessions", { method: "POST", body: { mode, exam: exam || undefined, subject: subject || undefined, count, paper: paper || undefined } }),
   show: (id) => api(`/practice/sessions/${id}`),
   answer: (id, questionId, chosenIndex, timeMs) =>
     api(`/practice/sessions/${id}/answers`, { method: "POST", body: { question_id: questionId, chosen_index: chosenIndex, time_ms: timeMs } }),

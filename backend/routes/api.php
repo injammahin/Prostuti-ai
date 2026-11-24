@@ -7,6 +7,8 @@ use App\Http\Controllers\Api\V1\CatalogController;
 use App\Http\Controllers\Api\V1\DailyQuizController;
 use App\Http\Controllers\Api\V1\MistakeController;
 use App\Http\Controllers\Api\V1\NoticeController;
+use App\Http\Controllers\Api\V1\PastPaperController;
+use App\Http\Controllers\Api\V1\PostController;
 use App\Http\Controllers\Api\V1\PracticeSessionController;
 use App\Http\Controllers\Api\V1\SiteSettingsController;
 use App\Http\Controllers\Api\V1\StatsController;
@@ -38,6 +40,10 @@ Route::prefix('v1')->name('api.v1.')->group(function () {
     Route::post('daily-quiz/complete', [TrackingController::class, 'dailyQuizCompleted'])->middleware('throttle:20,1')->name('daily-quiz.complete');
     Route::get('settings', [SiteSettingsController::class, 'show'])->name('settings');
     Route::get('notices', [NoticeController::class, 'index'])->name('notices');
+    Route::get('posts', [PostController::class, 'index'])->name('posts');
+    Route::get('posts/{slug}', [PostController::class, 'show'])->name('posts.show');
+    Route::get('past-papers', [PastPaperController::class, 'index'])->name('past-papers');
+    Route::get('past-papers/{number}', [PastPaperController::class, 'show'])->whereNumber('number')->name('past-papers.show');
     Route::post('ai/explain', [AiTutorController::class, 'ask'])->middleware('throttle:20,1')->name('ai.explain');
     Route::post('track', [TrackingController::class, 'pageView'])->middleware('throttle:120,1')->name('track');
 

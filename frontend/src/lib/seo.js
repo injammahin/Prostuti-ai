@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 
-const SITE = "DreamPrep"
+const SITE = "bd3schools"
 
 function setMeta(attr, key, content) {
   let el = document.head.querySelector(`meta[${attr}="${key}"]`)

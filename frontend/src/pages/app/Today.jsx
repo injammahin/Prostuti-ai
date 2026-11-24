@@ -42,7 +42,7 @@ function greeting(L) {
 
 function examDateFromRoutine() {
   try {
-    return JSON.parse(localStorage.getItem("prostuti:plan:settings"))?.targetDate || null
+    return JSON.parse(localStorage.getItem("bd3schools:plan:settings"))?.targetDate || null
   } catch {
     return null
   }
@@ -274,31 +274,36 @@ export default function Today() {
         {s?.unfinished.length > 0 && (
           <section>
             <SectionTitle title={L("Continue where you left off", "যেখানে থেমেছিলেন")} />
-            <div className="stagger grid gap-4 @2xl:grid-cols-2">
-              {s.unfinished.map((p) => (
-                <div key={p.id} className="card lift p-4 md:p-5">
-                  <div className="flex items-start gap-3">
-                    {p.subject_slug ? (
-                      <SubjectTile slug={p.subject_slug} size="sm" />
-                    ) : (
-                      <IconBox tone="primary">
-                        <FontAwesomeIcon icon={p.mode === "mistakes" ? faRotate : faListCheck} />
-                      </IconBox>
-                    )}
-                    <div className="min-w-0 flex-1">
-                      <p className="truncate font-bold">{p.subject ? L(p.subject, p.subject_bn || p.subject) : modeLabel[p.mode] ? L(...modeLabel[p.mode]) : L("Practice", "অনুশীলন")}</p>
-                      <p className="text-xs text-muted-foreground">
-                        {L(`${p.answered} of ${p.total} answered`, `${num(p.total)}টির মধ্যে ${num(p.answered)}টির উত্তর দেওয়া হয়েছে`)}
-                      </p>
+            <div className={cn("stagger grid gap-4", s.unfinished.length > 1 ? "@2xl:grid-cols-2" : "grid-cols-1")}>
+              {s.unfinished.map((p) => {
+                const isSingle = s.unfinished.length === 1
+                return (
+                  <div key={p.id} className={cn("card lift p-4 md:p-5", isSingle && "sm:flex sm:items-center sm:justify-between sm:gap-6")}>
+                    <div className={cn("flex items-start gap-3.5", isSingle && "min-w-0 flex-1")}>
+                      {p.subject_slug ? (
+                        <SubjectTile slug={p.subject_slug} size={isSingle ? "md" : "sm"} />
+                      ) : (
+                        <IconBox tone="primary">
+                          <FontAwesomeIcon icon={p.mode === "mistakes" ? faRotate : faListCheck} />
+                        </IconBox>
+                      )}
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center justify-between gap-2">
+                          <p className="truncate font-bold text-base">{p.subject ? L(p.subject, p.subject_bn || p.subject) : modeLabel[p.mode] ? L(...modeLabel[p.mode]) : L("Practice", "অনুশীলন")}</p>
+                          <span className="text-sm font-extrabold text-primary">{num(p.percent)}%</span>
+                        </div>
+                        <p className="mt-0.5 text-xs text-muted-foreground">
+                          {L(`${p.answered} of ${p.total} answered`, `${num(p.total)}টির মধ্যে ${num(p.answered)}টির উত্তর দেওয়া হয়েছে`)}
+                        </p>
+                        <Bar value={p.percent} className="mt-2.5 h-1.5" />
+                      </div>
                     </div>
-                    <span className="text-sm font-extrabold text-primary">{num(p.percent)}%</span>
+                    <Button asChild className={cn("h-10", isSingle ? "mt-4 sm:mt-0 sm:w-44 shrink-0" : "mt-4 w-full")}>
+                      <Link to={`/app/practice/session?id=${p.id}`}>{L("Continue", "চালিয়ে যান")}</Link>
+                    </Button>
                   </div>
-                  <Bar value={p.percent} className="mt-4 h-1.5" />
-                  <Button asChild className="mt-4 h-10 w-full">
-                    <Link to={`/app/practice/session?id=${p.id}`}>{L("Continue", "চালিয়ে যান")}</Link>
-                  </Button>
-                </div>
-              ))}
+                )
+              })}
             </div>
           </section>
         )}

@@ -288,10 +288,10 @@ export default function Plan() {
   const currentExamObj = exams.find((e) => e.slug === activeExamSlug) || exams[0]
 
   const [planSettings, setPlanSettings] = useState(() =>
-    ({ exam: activeExamSlug, targetDate: "2027-03-15", dailyHours: 3, studyDays: [6, 0, 1, 2, 3, 4, 5], ...load("prostuti:plan:settings", {}) })
+    ({ exam: activeExamSlug, targetDate: "2027-03-15", dailyHours: 3, studyDays: [6, 0, 1, 2, 3, 4, 5], ...load("bd3schools:plan:settings", {}) })
   )
-  const [overrides, setOverrides] = useState(() => load("prostuti:plan:done", {}))
-  const [customTasks, setCustomTasks] = useState(() => load("prostuti:plan:custom", {}))
+  const [overrides, setOverrides] = useState(() => load("bd3schools:plan:done", {}))
+  const [customTasks, setCustomTasks] = useState(() => load("bd3schools:plan:custom", {}))
 
   const [week, setWeek] = useState(weekStart(today))
   const [selDate, setSelDate] = useState(today)
@@ -301,9 +301,9 @@ export default function Plan() {
 
   useEffect(() => {
     try {
-      localStorage.setItem("prostuti:plan:settings", JSON.stringify(planSettings))
-      localStorage.setItem("prostuti:plan:done", JSON.stringify(overrides))
-      localStorage.setItem("prostuti:plan:custom", JSON.stringify(customTasks))
+      localStorage.setItem("bd3schools:plan:settings", JSON.stringify(planSettings))
+      localStorage.setItem("bd3schools:plan:done", JSON.stringify(overrides))
+      localStorage.setItem("bd3schools:plan:custom", JSON.stringify(customTasks))
     } catch {}
   }, [planSettings, overrides, customTasks])
 

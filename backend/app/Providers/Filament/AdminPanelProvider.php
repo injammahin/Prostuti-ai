@@ -33,11 +33,11 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login(Login::class)
-            ->brandName('DreamPrep Admin')
+            ->brandName('bd3schools Admin')
             ->brandLogo(fn (): HtmlString => new HtmlString(
                 '<span style="display:flex;align-items:center;gap:.65rem;font-weight:800;font-size:1.08rem;letter-spacing:-.02em;">'
-                .'<img src="'.asset('favicon.svg').'" alt="" style="width:2.1rem;height:2.1rem;">'
-                .'<span style="display:flex;flex-direction:column;line-height:1.05;"><span>Dream<span style="color:#1d6ca8;">Prep</span></span>'
+                .'<img src="'.asset('favicon.svg').'" alt="bd3schools" style="width:2.1rem;height:2.1rem;">'
+                .'<span style="display:flex;flex-direction:column;line-height:1.05;"><span>bd3<span style="color:#1d6ca8;">schools</span></span>'
                 .'<span style="font-size:.62rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;opacity:.55;margin-top:.2rem;">Admin console</span></span></span>'
             ))
             ->brandLogoHeight('2.25rem')
@@ -71,7 +71,7 @@ class AdminPanelProvider extends PanelProvider
             ->renderHook(
                 PanelsRenderHook::HEAD_END,
                 fn (): HtmlString => new HtmlString(
-                    '<link rel="stylesheet" href="'.asset('css/prostuti-admin.css').'?v='.@filemtime(public_path('css/prostuti-admin.css')).'">'
+                    '<link rel="stylesheet" href="'.asset('css/bd3schools-admin.css').'?v='.@filemtime(public_path('css/bd3schools-admin.css')).'">'
                 ),
             )
             ->renderHook(

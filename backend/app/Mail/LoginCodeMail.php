@@ -19,8 +19,8 @@ class LoginCodeMail extends Mailable
     {
         return new Envelope(
             subject: $this->isReset()
-                ? "{$this->code} is your DreamPrep password reset code"
-                : "{$this->code} is your DreamPrep verification code",
+                ? "{$this->code} is your bd3schools password reset code"
+                : "{$this->code} is your bd3schools verification code",
         );
     }
 
@@ -31,8 +31,8 @@ class LoginCodeMail extends Mailable
             with: [
                 'minutes' => LoginCode::LIFETIME_MINUTES,
                 'intro' => $this->isReset()
-                    ? 'Use this code to set a new password for your DreamPrep account.'
-                    : 'Use this code to confirm your email and finish creating your free DreamPrep account.',
+                    ? 'Use this code to set a new password for your bd3schools account.'
+                    : 'Use this code to confirm your email and finish creating your free bd3schools account.',
             ],
         );
     }

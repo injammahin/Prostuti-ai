@@ -16,9 +16,9 @@ class PostSeeder extends Seeder
         $posts = json_decode(file_get_contents(database_path('seeders/data/posts.json')), true, flags: JSON_THROW_ON_ERROR);
 
         foreach ($posts as $index => $post) {
-            Post::query()->firstOrCreate(['slug' => $post['slug']], [
+            Post::query()->updateOrCreate(['slug' => $post['slug']], [
                 ...$post,
-                'published_at' => now()->subDays(count($posts) - $index)->startOfDay()->addHours(9),
+                'published_at' => $post['published_at'] ?? now()->subDays(count($posts) - $index)->startOfDay()->addHours(9),
                 'is_published' => true,
             ]);
         }

@@ -1,7 +1,7 @@
 @extends('emails.layout')
 
-@section('title', 'Your DreamPrep code')
-@section('preheader', "Your DreamPrep code is {$code}. It works for {$minutes} minutes.")
+@section('title', 'Your bd3schools code')
+@section('preheader', "Your bd3schools code is {$code}. It works for {$minutes} minutes.")
 
 @section('content')
     <h1 style="margin:0 0 8px;font-size:22px;font-weight:800;">

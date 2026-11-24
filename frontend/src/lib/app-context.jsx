@@ -5,11 +5,11 @@ import { authApi, tokenStore } from "@/lib/api"
 import { clearApiCache } from "@/lib/use-api"
 
 const AppContext = createContext(null)
-const KEY = "prostuti:v1"
+const KEY = "bd3schools:v1"
 
 function load() {
   try {
-    const data = JSON.parse(localStorage.getItem(KEY)) || {}
+    const data = JSON.parse(localStorage.getItem(KEY) || localStorage.getItem("prostuti:v1")) || {}
     if (Array.isArray(data.followed)) {
       data.followed = data.followed.filter((x) => x !== "bcs-health")
     }

@@ -49,7 +49,7 @@ export default function PaperSolutions() {
   const [copiedId, setCopiedId] = useState(null)
   const [bookmarks, setBookmarks] = useState(() => {
     try {
-      return JSON.parse(localStorage.getItem("prostuti:bookmarks") || "[]")
+      return JSON.parse(localStorage.getItem("bd3schools:bookmarks") || "[]")
     } catch {
       return []
     }
@@ -111,7 +111,7 @@ export default function PaperSolutions() {
     setBookmarks((prev) => {
       const next = prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
       try {
-        localStorage.setItem("prostuti:bookmarks", JSON.stringify(next))
+        localStorage.setItem("bd3schools:bookmarks", JSON.stringify(next))
       } catch {
         /* storage unavailable */
       }

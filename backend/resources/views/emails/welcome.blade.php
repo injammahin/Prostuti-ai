@@ -1,6 +1,6 @@
 @extends('emails.layout')
 
-@section('title', 'Welcome to DreamPrep')
+@section('title', 'Welcome to bd3schools')
 @section('preheader', 'Your free account is ready. Here is how to get started.')
 
 @section('content')
@@ -8,7 +8,7 @@
         Welcome, {{ \Illuminate\Support\Str::before($user->name, ' ') }}! 🎉
     </h1>
     <p style="margin:0 0 22px;font-size:15px;line-height:1.6;color:#475569;">
-        Your free DreamPrep account is ready. Here's how to get the most out of it:
+        Your free bd3schools account is ready. Here's how to get the most out of it:
     </p>
 
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:14px;line-height:1.5;color:#0f172a;">

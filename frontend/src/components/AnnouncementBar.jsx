@@ -15,7 +15,7 @@ const tones = {
   warning: "bg-amber-500 text-white",
 }
 
-const dismissKey = (text) => `prostuti:announcement-dismissed:${text}`
+const dismissKey = (text) => `bd3schools:announcement-dismissed:${text}`
 
 /** The message the admin sets in Site settings, shown above the page until the visitor closes it. */
 export default function AnnouncementBar({ className }) {

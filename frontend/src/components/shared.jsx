@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router"
+import { Link } from "react-router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faArrowUpRightFromSquare,
@@ -28,18 +28,18 @@ export const tones = {
 
 export function Logo({ className, compact = false, light = false }) {
   return (
-    <Link to="/" className={cn("group flex items-center gap-2.5", className)} aria-label="DreamPrep home">
+    <Link to="/" className={cn("group flex items-center gap-2.5", className)} aria-label="bd3schools home">
       <BrandMark
         className={cn("shrink-0 transition-transform duration-300 group-hover:-translate-y-0.5", light ? "size-10" : "size-9")}
       />
       {!compact && (
         <span className="flex flex-col leading-none">
           <span className="text-[1.25rem] font-extrabold tracking-[-0.03em]">
-            <span className={light ? "text-white" : "text-[#0f172a] dark:text-white"}>Dream</span>
-            <span className={light ? "text-[#9fd3f7]" : "text-[#1d6ca8] dark:text-[#9fd3f7]"}>Prep</span>
+            <span className={light ? "text-white" : "text-[#0f172a] dark:text-white"}>bd3</span>
+            <span className={light ? "text-[#9fd3f7]" : "text-[#1d6ca8] dark:text-[#38bdf8]"}>schools</span>
           </span>
-          <span className={cn("bn mt-1.5 text-[0.7rem] leading-none font-semibold", light ? "text-white/70" : "text-muted-foreground")}>
-            স্বপ্ন শুরু আজ থেকেই
+          <span className={cn("bn mt-1 text-[0.7rem] leading-none font-semibold", light ? "text-white/70" : "text-muted-foreground")}>
+            বিসিএস ও সরকারি চাকরি একাডেমি
           </span>
         </span>
       )}

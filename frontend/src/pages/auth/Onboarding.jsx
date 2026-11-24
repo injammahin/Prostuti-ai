@@ -221,7 +221,7 @@ export default function Onboarding() {
       // Pre-fill the Study routine so users don't answer the same questions twice.
       const hours = Math.min(4, form.hours)
       localStorage.setItem(
-        "prostuti:plan:settings",
+        "bd3schools:plan:settings",
         JSON.stringify({ exam: mainExam, targetDate: form.date, dailyHours: hours, studyDays: [6, 0, 1, 2, 3, 4, 5], created: true })
       )
     } catch {}

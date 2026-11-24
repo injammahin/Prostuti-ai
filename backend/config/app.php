@@ -66,7 +66,7 @@ return [
     'admin' => [
         'email' => env('ADMIN_EMAIL'),
         'password' => env('ADMIN_PASSWORD'),
-        'name' => env('ADMIN_NAME', 'DreamPrep Admin'),
+        'name' => env('ADMIN_NAME', 'bd3schools Admin'),
     ],
 
     /*

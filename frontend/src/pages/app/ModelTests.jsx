@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
 import { Link } from "react-router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -19,8 +19,8 @@ import {
   faCircleInfo,
   faBolt,
   faCheck,
+  faRotateRight,
 } from "@fortawesome/free-solid-svg-icons"
-import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
 import {
   Dialog,
@@ -32,324 +32,345 @@ import {
 } from "@/components/ui/dialog"
 import { PageHeader, HeroCard, Pill, IconBox } from "@/components/shared"
 import { useApp } from "@/lib/app-context"
-import { modelTestsList, exams } from "@/lib/data"
+import { useApi } from "@/lib/use-api"
+import { modelTestsApi } from "@/lib/api"
 import { cn } from "@/lib/utils"
 
 const iconMap = {
-  landmark: faLandmark,
-  "user-graduate": faUserGraduate,
-  "chalkboard-user": faChalkboardUser,
-  "building-columns": faBuildingColumns,
-  calculator: faCalculator,
-  flask: faFlask,
+  "bcs-general": faLandmark,
+  primary: faChalkboardUser,
+  bank: faBuildingColumns,
+  ntrca: faUserGraduate,
+  math: faCalculator,
 }
 
-const syllabusMap = {
-  "bcs-prelim-full": {
-    examName: "BCS General Preliminary",
-    syllabus: [
-      { name: "Bangla Literature & Grammar", marks: 35 },
-      { name: "English Language & Literature", marks: 35 },
-      { name: "Bangladesh Affairs", marks: 30 },
-      { name: "International Affairs", marks: 20 },
-      { name: "Mathematical Reasoning", marks: 15 },
-      { name: "Mental Ability", marks: 15 },
-      { name: "General Science", marks: 15 },
-      { name: "Computer & ICT", marks: 15 },
-      { name: "Geography & Disaster", marks: 10 },
-      { name: "Ethics & Good Governance", marks: 10 },
-    ],
-    difficulty: "Challenging",
-    cutoff: "~112 - 118",
-    attempts: "14,290",
-  },
-  "ntrca-prelim-full": {
-    examName: "19th NTRCA Teacher Registration",
-    syllabus: [
-      { name: "Bengali Language & Grammar", marks: 25 },
-      { name: "English Language & Grammar", marks: 25 },
-      { name: "General Mathematics", marks: 25 },
-      { name: "General Knowledge (BD & Intl)", marks: 25 },
-    ],
-    difficulty: "Standard",
-    cutoff: "40 (Qualifying)",
-    attempts: "8,940",
-  },
-  "primary-teacher-full": {
-    examName: "Primary Assistant Teacher",
-    syllabus: [
-      { name: "Bangla", marks: 20 },
-      { name: "English", marks: 20 },
-      { name: "Mathematics", marks: 20 },
-      { name: "General Knowledge & Science", marks: 20 },
-    ],
-    difficulty: "Standard",
-    cutoff: "~58 - 64",
-    attempts: "11,810",
-  },
-  "combined-bank-full": {
-    examName: "Combined 9 Banks Senior Officer",
-    syllabus: [
-      { name: "English", marks: 20 },
-      { name: "Bangla", marks: 20 },
-      { name: "Quantitative Mathematics", marks: 30 },
-      { name: "General Knowledge", marks: 20 },
-      { name: "Computer & ICT", marks: 10 },
-    ],
-    difficulty: "Challenging",
-    cutoff: "~65 - 70",
-    attempts: "7,450",
-  },
-  "bangladesh-bank-full": {
-    examName: "Bangladesh Bank Assistant Director (General)",
-    syllabus: [
-      { name: "Advanced English", marks: 25 },
-      { name: "Quantitative & Analytical Math", marks: 30 },
-      { name: "Bangla Comprehension & Grammar", marks: 15 },
-      { name: "Banking & Financial Systems", marks: 15 },
-      { name: "ICT & Computing", marks: 15 },
-    ],
-    difficulty: "Challenging",
-    cutoff: "~68 - 72",
-    attempts: "6,120",
-  },
-  "mini-bank-math": {
-    examName: "Combined Bank Speed Drill",
-    syllabus: [
-      { name: "Time, Speed & Distance", marks: 8 },
-      { name: "Pipes & Cisterns", marks: 6 },
-      { name: "Profit, Loss & Interest", marks: 8 },
-      { name: "Algebra & Number Systems", marks: 8 },
-    ],
-    difficulty: "Challenging",
-    cutoff: "~22 / 30",
-    attempts: "4,320",
-  },
-  "mini-primary-bangla": {
-    examName: "Primary Assistant Teacher Mini",
-    syllabus: [
-      { name: "Bangla Grammar & Sandhi", marks: 20 },
-      { name: "Arithmetic & Geometry", marks: 20 },
-    ],
-    difficulty: "Easy",
-    cutoff: "~32 / 40",
-    attempts: "5,190",
-  },
-  "mini-ntrca-gk": {
-    examName: "19th NTRCA Speed Practice",
-    syllabus: [
-      { name: "Bangladesh Affairs", marks: 20 },
-      { name: "International & Current Events", marks: 15 },
-      { name: "Elementary Mathematics", marks: 15 },
-    ],
-    difficulty: "Standard",
-    cutoff: "~38 / 50",
-    attempts: "3,880",
-  },
-  "mini-bcs-science": {
-    examName: "BCS General Science & ICT",
-    syllabus: [
-      { name: "General Science (Physics/Chem/Bio)", marks: 15 },
-      { name: "Computer & Information Tech", marks: 15 },
-    ],
-    difficulty: "Standard",
-    cutoff: "~22 / 30",
-    attempts: "6,740",
-  },
-}
-
-const history = [
-  {
-    title: "BCS Preliminary Full Model Test #7",
-    exam: "BCS General",
-    date: "18 Nov",
-    score: 124.5,
-    of: 200,
-    percentage: 62.2,
-    rank: "1,204 / 8,930",
-    percentile: "86.5%",
-    status: "Passed cut-off",
-  },
-  {
-    title: "Combined Bank Quantitative Math Drill",
-    exam: "Combined Banks",
-    date: "15 Nov",
-    score: 24.5,
-    of: 30,
-    percentage: 81.6,
-    rank: "312 / 4,110",
-    percentile: "92.4%",
-    status: "Excellent",
-  },
-  {
-    title: "19th NTRCA Full Model Test #2",
-    exam: "NTRCA",
-    date: "11 Nov",
-    score: 68.5,
-    of: 100,
-    percentage: 68.5,
-    rank: "580 / 6,410",
-    percentile: "90.9%",
-    status: "Qualified",
-  },
-  {
-    title: "Primary Assistant Teacher Quick Test",
-    exam: "Primary",
-    date: "8 Nov",
-    score: 32,
-    of: 40,
-    percentage: 80.0,
-    rank: "410 / 5,200",
-    percentile: "92.1%",
-    status: "Qualified",
-  },
+const defaultPastTests = [
+  { id: "bcs-prelim-model-test-1", title: "BCS Preliminary Full Model Test #7", exam: "BCS General", date: "18 Nov", score: 124.5, of: 200, percentage: 62 },
+  { id: "bank-math-speed-drill", title: "Combined Bank Quantitative Math Drill", exam: "Combined Banks", date: "15 Nov", score: 24.5, of: 30, percentage: 82 },
+  { id: "ntrca-gk-math-drill", title: "19th NTRCA Full Model Test #2", exam: "NTRCA", date: "11 Nov", score: 68.5, of: 100, percentage: 69 },
+  { id: "primary-bangla-math-quick", title: "Primary Assistant Teacher Quick Test", exam: "Primary", date: "8 Nov", score: 32, of: 40, percentage: 80 },
 ]
 
 export default function ModelTests() {
-  const { mainExam } = useApp()
-  const [selectedExam, setSelectedExam] = useState("all")
-  const [activeModalTest, setActiveModalTest] = useState(null)
-  const [isRegisteredLive, setIsRegisteredLive] = useState(false)
+  const { L, num, user } = useApp()
+  const activeExam = user?.target_exam || "bcs-general"
+  const { data, loading, error, reload } = useApi(() => modelTestsApi.list(), [], { key: "model-tests-list" })
 
-  // Countdown timer for live national mock
-  const [timeLeft, setTimeLeft] = useState({ days: 2, hours: 3, mins: 14, secs: 50 })
+  const [activeModalTest, setActiveModalTest] = useState(null)
+  const [history, setHistory] = useState(defaultPastTests)
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev.secs > 0) return { ...prev, secs: prev.secs - 1 }
-        if (prev.mins > 0) return { ...prev, mins: 59, secs: 59 }
-        if (prev.hours > 0) return { ...prev, hours: prev.hours - 1, mins: 59, secs: 59 }
-        return prev
-      })
-    }, 1000)
-    return () => clearInterval(timer)
+    try {
+      const stored = localStorage.getItem("bd3schools:past_tests")
+      if (stored) {
+        const parsed = JSON.parse(stored)
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setHistory(parsed)
+        }
+      }
+    } catch {}
   }, [])
 
-  const handleRegisterLive = () => {
-    setIsRegisteredLive((prev) => {
-      const next = !prev
-      if (next) {
-        toast.success("You have joined Friday's live test!", {
-          description: "We will remind you 15 minutes before 8:00 PM.",
-        })
-      } else {
-        toast.info("Registration cancelled.")
-      }
-      return next
-    })
-  }
+  const tests = useMemo(() => {
+    if (data?.model_tests && data.model_tests.length > 0) {
+      return data.model_tests
+    }
+    // Fallback default list
+    return [
+      {
+        id: "bcs-prelim-model-test-1",
+        title: "BCS Preliminary Full Model Test #1",
+        title_bn: "বিসিএস প্রিলিমিনারি পূর্ণাঙ্গ মডেল টেস্ট #১",
+        exam: "bcs-general",
+        duration: "2 hours",
+        duration_minutes: 120,
+        marks: 200,
+        negative: 0.5,
+        questions_count: 200,
+        attempts: "14,290",
+        difficulty: "Challenging",
+        syllabus: [
+          { name: "Bangla Literature & Grammar", name_bn: "বাংলা ভাষা ও সাহিত্য", marks: 35 },
+          { name: "English Language & Literature", name_bn: "English Language & Literature", marks: 35 },
+          { name: "Bangladesh Affairs", name_bn: "বাংলাদেশ বিষয়াবলি", marks: 30 },
+          { name: "International Affairs", name_bn: "আন্তর্জাতিক বিষয়াবলি", marks: 20 },
+          { name: "Mathematical Reasoning", name_bn: "গাণিতিক যুক্তি", marks: 15 },
+          { name: "Mental Ability", name_bn: "মানসিক দক্ষতা", marks: 15 },
+          { name: "General Science", name_bn: "সাধারণ বিজ্ঞান", marks: 15 },
+          { name: "Computer & ICT", name_bn: "কম্পিউটার ও তথ্যপ্রযুক্তি", marks: 15 },
+          { name: "Geography & Disaster", name_bn: "ভূগোল ও পরিবেশ", marks: 10 },
+          { name: "Ethics & Good Governance", name_bn: "নৈতিকতা ও সুশাসন", marks: 10 },
+        ],
+      },
+      {
+        id: "bcs-prelim-model-test-2",
+        title: "BCS Preliminary Full Model Test #2",
+        title_bn: "বিসিএস প্রিলিমিনারি পূর্ণাঙ্গ মডেল টেস্ট #২",
+        exam: "bcs-general",
+        duration: "2 hours",
+        duration_minutes: 120,
+        marks: 200,
+        negative: 0.5,
+        questions_count: 200,
+        attempts: "11,840",
+        difficulty: "Standard",
+        syllabus: [
+          { name: "Bangla Literature & Grammar", marks: 35 },
+          { name: "English Language & Literature", marks: 35 },
+          { name: "Bangladesh Affairs", marks: 30 },
+          { name: "International Affairs", marks: 20 },
+          { name: "Mathematical Reasoning", marks: 15 },
+          { name: "Mental Ability", marks: 15 },
+          { name: "General Science", marks: 15 },
+          { name: "Computer & ICT", marks: 15 },
+          { name: "Geography & Disaster", marks: 10 },
+          { name: "Ethics & Good Governance", marks: 10 },
+        ],
+      },
+      {
+        id: "primary-full-model-test-1",
+        title: "Primary Assistant Teacher Full Model Test",
+        title_bn: "প্রাথমিক সহকারী শিক্ষক পূর্ণাঙ্গ মডেল টেস্ট",
+        exam: "primary",
+        duration: "1 hour",
+        duration_minutes: 60,
+        marks: 80,
+        negative: 0.25,
+        questions_count: 80,
+        attempts: "12,180",
+        difficulty: "Standard",
+        syllabus: [
+          { name: "Bangla", marks: 20 },
+          { name: "English", marks: 20 },
+          { name: "Mathematics", marks: 20 },
+          { name: "General Knowledge & Science", marks: 20 },
+        ],
+      },
+      {
+        id: "combined-bank-so-1",
+        title: "Combined 9 Banks Senior Officer Model Test",
+        title_bn: "সমন্বিত ৯ ব্যাংক সিনিয়র অফিসার মডেল টেস্ট",
+        exam: "bank",
+        duration: "1 hour",
+        duration_minutes: 60,
+        marks: 100,
+        negative: 0.25,
+        questions_count: 100,
+        attempts: "8,450",
+        difficulty: "Challenging",
+        syllabus: [
+          { name: "Bangla", marks: 20 },
+          { name: "English", marks: 20 },
+          { name: "Quantitative Mathematics", marks: 30 },
+          { name: "General Knowledge & ICT", marks: 30 },
+        ],
+      },
+      {
+        id: "bb-ad-general-1",
+        title: "Bangladesh Bank AD (General) Model Test",
+        title_bn: "বাংলাদেশ ব্যাংক সহকারী পরিচালক (সাধারণ) মডেল টেস্ট",
+        exam: "bank",
+        duration: "1 hour",
+        duration_minutes: 60,
+        marks: 100,
+        negative: 0.25,
+        questions_count: 100,
+        attempts: "7,320",
+        difficulty: "Challenging",
+        syllabus: [
+          { name: "Advanced English", marks: 30 },
+          { name: "Quantitative Reasoning", marks: 30 },
+          { name: "Bangla", marks: 20 },
+          { name: "Banking & Financial Systems", marks: 20 },
+        ],
+      },
+      {
+        id: "bank-math-speed-drill",
+        title: "Combined Bank: Quantitative Math Speed Drill",
+        title_bn: "ব্যাংক নিয়োগ: দ্রুত গণিত সমাধান ড্রিল",
+        exam: "bank",
+        duration: "25 min",
+        duration_minutes: 25,
+        marks: 30,
+        negative: 0.25,
+        questions_count: 30,
+        attempts: "4,620",
+        difficulty: "Moderate",
+        syllabus: [
+          { name: "Arithmetic & Algebra", marks: 15 },
+          { name: "Geometry & Data Analysis", marks: 15 },
+        ],
+      },
+      {
+        id: "primary-bangla-math-quick",
+        title: "Primary Teacher: Bangla & Math Quick Test",
+        title_bn: "প্রাথমিক শিক্ষক: বাংলা ও গণিত কুইক টেস্ট",
+        exam: "primary",
+        duration: "30 min",
+        duration_minutes: 30,
+        marks: 40,
+        negative: 0.25,
+        questions_count: 40,
+        attempts: "5,890",
+        difficulty: "Standard",
+        syllabus: [
+          { name: "Bangla Grammar & Lit", marks: 20 },
+          { name: "Elementary Math", marks: 20 },
+        ],
+      },
+      {
+        id: "ntrca-gk-math-drill",
+        title: "NTRCA: General Knowledge & Math Drill",
+        title_bn: "এনটিআরসিএ: সাধারণ জ্ঞান ও গণিত ড্রিল",
+        exam: "ntrca",
+        duration: "35 min",
+        duration_minutes: 35,
+        marks: 50,
+        negative: 0.5,
+        questions_count: 50,
+        attempts: "4,120",
+        difficulty: "Standard",
+        syllabus: [
+          { name: "General Knowledge", marks: 25 },
+          { name: "General Mathematics", marks: 25 },
+        ],
+      },
+    ]
+  }, [data])
 
-  // Filter tests
-  const filtered = modelTestsList.filter((t) => selectedExam === "all" || t.exam === selectedExam)
-
-  // Prioritize user's main target exam
-  const sorted = [...filtered].sort((a, b) => (b.exam === mainExam) - (a.exam === mainExam))
+  const bcsFeatured = tests.find((t) => t.exam === "bcs-general") || tests[0]
 
   return (
-    <div className="space-y-5 md:space-y-6">
-      <PageHeader title="Model tests" subtitle="Full exams with a timer, just like the real one." className="mb-0 md:mb-0" />
+    <div className="space-y-6">
+      <PageHeader
+        title={L("Model tests", "মডেল টেস্ট")}
+        subtitle={L(
+          "Standard dynamic model tests generated with deep BPSC syllabus balancing. Practice with real exam time limits and negative marking.",
+          "বিপিএসসি সিলেবাস অনুযায়ী ডিপ অ্যালগরিদমে প্রস্তুত পূর্ণাঙ্গ ও বিষয়ভিত্তিক মডেল টেস্ট।"
+        )}
+      />
 
-      {/* Live weekly test */}
-      <HeroCard className="p-4 md:p-6">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <div className="min-w-0">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-white/20 px-2.5 py-0.5 text-[0.7rem] font-semibold">
-              <span className="size-1.5 animate-pulse rounded-full bg-glow" />
-              Free live test · Friday 8:00 PM
-            </span>
-            <h2 className="mt-2 text-lg font-bold md:text-2xl">Weekly model test</h2>
-            <p className="mt-0.5 text-sm text-white/80">
-              Starts in{" "}
-              <b className="font-semibold text-white tabular-nums">
-                {timeLeft.days}d {timeLeft.hours}h {timeLeft.mins}m
-              </b>{" "}
-              · 9,412 joined
-            </p>
+      {/* Featured Model Test */}
+      {bcsFeatured && (
+        <HeroCard>
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="space-y-1">
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-white/20 px-2.5 py-0.5 text-xs font-semibold">
+                  <span className="size-1.5 rounded-full bg-glow" />
+                  {L("Standard 200 Questions", "পূর্ণাঙ্গ ২০০ প্রশ্ন")}
+                </span>
+                <span className="text-xs text-white/80">
+                  {L("Official BPSC 10-Subject Distribution", "অফিসিয়াল বিপিএসসি ১০ বিষয়ের ভারসাম্য")}
+                </span>
+              </div>
+              <h2 className="text-xl font-bold md:text-2xl">{L(bcsFeatured.title, bcsFeatured.title_bn)}</h2>
+              <p className="text-sm text-white/85">
+                {bcsFeatured.duration} · {num(bcsFeatured.marks)} {L("marks", "নম্বর")} · -{bcsFeatured.negative} {L("for a wrong answer", "ভুল উত্তরের জন্য")} · {num(bcsFeatured.attempts)} {L("attempts", "অংশগ্রহণ")}
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-2">
+              <Button
+                variant="outline"
+                className="rounded-full border-white/40 bg-white/10 text-white hover:bg-white/20 hover:text-white"
+                onClick={() => setActiveModalTest(bcsFeatured)}
+              >
+                {L("What's inside", "সিলেবাস দেখুন")}
+              </Button>
+              <Button
+                asChild
+                className="rounded-full bg-white font-semibold text-primary hover:bg-white/90"
+              >
+                <Link to={`/app/test/run?test=${bcsFeatured.id}`}>
+                  <FontAwesomeIcon icon={faPlay} className="text-xs mr-1.5" />
+                  {L("Start test", "টেস্ট শুরু করুন")}
+                </Link>
+              </Button>
+            </div>
           </div>
-          <Button
-            onClick={handleRegisterLive}
-            className={cn(
-              "h-10 shrink-0 rounded-full px-5 font-semibold",
-              isRegisteredLive ? "border border-white/30 bg-white/15 text-white hover:bg-white/25" : "bg-white text-primary hover:bg-white/90"
-            )}
-          >
-            <FontAwesomeIcon icon={isRegisteredLive ? faCheck : faBolt} />
-            {isRegisteredLive ? "You're in" : "Join free"}
-          </Button>
-        </div>
-      </HeroCard>
+        </HeroCard>
+      )}
 
-      {/* Exam filter */}
-      <div className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 md:mx-0 md:px-0">
-        {[{ slug: "all", name: "All exams" }, ...exams].map((ex) => (
-          <button
-            key={ex.slug}
-            onClick={() => setSelectedExam(ex.slug)}
-            className={cn(
-              "h-9 shrink-0 rounded-full px-4 text-xs font-semibold whitespace-nowrap transition-colors",
-              selectedExam === ex.slug ? "bg-primary text-primary-foreground" : "border bg-card text-muted-foreground hover:bg-muted"
-            )}
-          >
-            {ex.name}
-          </button>
-        ))}
-      </div>
-
-      {/* Tests */}
-      <div className="grid gap-3 md:grid-cols-2 md:gap-4 2xl:grid-cols-3">
-        {sorted.map((t) => {
-          const icon = iconMap[t.icon] || faLandmark
-          const meta = syllabusMap[t.id] || { syllabus: [] }
-          const examName = exams.find((e) => e.slug === t.exam)?.name || t.exam
-          const isUserMain = t.exam === mainExam
+      {/* Tests Grid */}
+      <div className="grid gap-3.5 sm:grid-cols-2 lg:grid-cols-3">
+        {tests.map((test) => {
+          const icon = iconMap[test.exam] || faLandmark
           return (
-            <div key={t.id} className="card flex flex-col p-4">
-              <div className="flex items-start gap-3">
-                <IconBox tone={t.tone} className="size-10 rounded-xl">
-                  <FontAwesomeIcon icon={icon} />
-                </IconBox>
-                <div className="min-w-0 flex-1">
-                  <p className="text-[0.7rem] font-semibold text-muted-foreground">
-                    {examName}
-                    {isUserMain && <span className="ml-1.5 rounded bg-secondary px-1.5 py-px text-primary">Your exam</span>}
-                  </p>
-                  <h3 className="mt-0.5 leading-snug font-semibold">{t.title}</h3>
+            <div
+              key={test.id}
+              className="card flex flex-col justify-between p-4.5 transition-all hover:border-primary/40 hover:shadow-sm"
+            >
+              <div>
+                {/* Badges Bar matching user's reference */}
+                <div className="flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
+                  <span className="inline-flex items-center gap-1 rounded bg-secondary px-2 py-0.5 font-medium">
+                    <FontAwesomeIcon icon={faClock} className="text-[10px] text-muted-foreground" />
+                    {test.duration}
+                  </span>
+                  <span className="rounded bg-secondary px-2 py-0.5 font-medium">
+                    {num(test.marks)} {L("marks", "নম্বর")}
+                  </span>
+                  <span className="rounded bg-secondary px-2 py-0.5 font-medium text-destructive">
+                    -{test.negative} {L("for a wrong answer", "ভুল উত্তরের জন্য")}
+                  </span>
+                </div>
+
+                <div className="mt-3 flex items-start gap-3">
+                  <div className="grid size-9 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary">
+                    <FontAwesomeIcon icon={icon} className="text-sm" />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wide">
+                      {test.exam === "bcs-general"
+                        ? "BCS General Preliminary"
+                        : test.exam === "bank"
+                        ? "Combined Bank Jobs"
+                        : test.exam === "primary"
+                        ? "Primary Assistant Teacher"
+                        : "NTRCA Registration"}
+                    </p>
+                    <h3 className="text-sm font-bold leading-snug line-clamp-2 mt-0.5">
+                      {L(test.title, test.title_bn)}
+                    </h3>
+                  </div>
                 </div>
               </div>
 
-              <div className="mt-3 flex flex-wrap gap-1.5 text-xs">
-                <span className="rounded-full bg-muted px-2.5 py-1">
-                  <FontAwesomeIcon icon={faClock} className="mr-1 text-muted-foreground" />
-                  {t.time}
-                </span>
-                <span className="rounded-full bg-muted px-2.5 py-1">{t.marks} marks</span>
-                <span className="rounded-full bg-muted px-2.5 py-1">−{t.negative} for a wrong answer</span>
-              </div>
-
-              <div className="mt-4 flex items-center gap-2">
-                <Button asChild className="h-10 flex-1 rounded-full font-semibold">
-                  <Link to={`/app/test/run?test=${t.id}`}>
-                    <FontAwesomeIcon icon={faPlay} className="text-xs" /> Start test
+              {/* Action Buttons matching screenshot */}
+              <div className="mt-5 flex items-center justify-between gap-2 border-t pt-3">
+                <Button
+                  asChild
+                  size="sm"
+                  className="flex-1 rounded-full font-semibold gap-1.5"
+                >
+                  <Link to={`/app/test/run?test=${test.id}`}>
+                    <FontAwesomeIcon icon={faPlay} className="text-[10px]" />
+                    {L("Start test", "পরীক্ষা শুরু")}
                   </Link>
                 </Button>
-                {meta.syllabus.length > 0 && (
-                  <Button variant="outline" className="h-10 rounded-full px-4" onClick={() => setActiveModalTest({ ...t, meta })}>
-                    What's inside
-                  </Button>
-                )}
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="rounded-full text-xs text-muted-foreground hover:text-foreground"
+                  onClick={() => setActiveModalTest(test)}
+                >
+                  {L("What's inside", "সিলেবাস")}
+                </Button>
               </div>
             </div>
           )
         })}
       </div>
 
-      {/* Past attempts */}
-      <section className="space-y-3 pt-1">
-        <h2 className="text-[1.05rem] font-semibold">Your past tests</h2>
+      {/* Past attempts table matching reference */}
+      <section className="space-y-3 pt-2">
+        <h2 className="text-[1.05rem] font-bold">{L("Your past tests", "আপনার পূর্ববর্তী টেস্ট")}</h2>
         <div className="card divide-y overflow-hidden">
-          {history.map((h) => (
-            <Link key={h.title} to="/app/test/result" className="flex items-center gap-3 p-3.5 transition-colors hover:bg-muted/40 md:p-4">
+          {history.map((h, idx) => (
+            <div
+              key={h.id + idx}
+              className="flex items-center gap-3 p-3.5 transition-colors hover:bg-muted/40 md:p-4"
+            >
               <div className="min-w-0 flex-1">
                 <p className="truncate text-sm font-semibold">{h.title}</p>
                 <p className="text-xs text-muted-foreground">
@@ -361,10 +382,14 @@ export default function ModelTests() {
                   {h.score}
                   <span className="text-xs font-normal text-muted-foreground">/{h.of}</span>
                 </p>
-                <p className="text-[0.7rem] font-medium text-success">{Math.round(h.percentage)}%</p>
+                <p className="text-[0.7rem] font-bold text-success">{Math.round(h.percentage)}%</p>
               </div>
-              <FontAwesomeIcon icon={faArrowRight} className="text-xs text-muted-foreground" />
-            </Link>
+              <Button asChild variant="ghost" size="icon" className="size-8 rounded-full">
+                <Link to={`/app/test/result?test=${h.id}`}>
+                  <FontAwesomeIcon icon={faArrowRight} className="text-xs text-muted-foreground" />
+                </Link>
+              </Button>
+            </div>
           ))}
         </div>
       </section>
@@ -372,29 +397,34 @@ export default function ModelTests() {
       {/* Syllabus Modal */}
       {activeModalTest && (
         <Dialog open={!!activeModalTest} onOpenChange={() => setActiveModalTest(null)}>
-          <DialogContent className="sm:max-w-md">
+          <DialogContent className="sm:max-w-md rounded-2xl">
             <DialogHeader>
               <div className="flex items-center gap-2 mb-1">
                 <Pill tone="primary" className="text-[10px] uppercase font-bold">
                   {activeModalTest.exam}
                 </Pill>
-                <span className="text-xs text-muted-foreground">Official format</span>
+                <span className="text-xs text-muted-foreground">Standard Syllabus</span>
               </div>
-              <DialogTitle className="text-lg">{activeModalTest.title}</DialogTitle>
+              <DialogTitle className="text-lg font-bold">
+                {L(activeModalTest.title, activeModalTest.title_bn)}
+              </DialogTitle>
               <DialogDescription className="text-xs">
-                {activeModalTest.summary}
+                {L(
+                  "Real exam simulation with official marks distribution, real time limit, and negative marking.",
+                  "আসল পরীক্ষার সময়সীমা ও নেগেটিভ মার্কিংসহ নির্ভুল সিলেবাস বণ্টন।"
+                )}
               </DialogDescription>
             </DialogHeader>
 
             <div className="space-y-4 py-2">
-              <div className="grid grid-cols-3 gap-2 rounded-xl bg-secondary/50 p-3 text-center border">
+              <div className="grid grid-cols-3 gap-2 rounded-xl bg-secondary/60 p-3 text-center border">
                 <div>
                   <p className="text-[10px] text-muted-foreground uppercase font-semibold">Total marks</p>
                   <p className="text-base font-bold text-foreground">{activeModalTest.marks}</p>
                 </div>
                 <div>
                   <p className="text-[10px] text-muted-foreground uppercase font-semibold">Duration</p>
-                  <p className="text-base font-bold text-foreground">{activeModalTest.time}</p>
+                  <p className="text-base font-bold text-foreground">{activeModalTest.duration}</p>
                 </div>
                 <div>
                   <p className="text-[10px] text-muted-foreground uppercase font-semibold">Negative</p>
@@ -404,13 +434,13 @@ export default function ModelTests() {
 
               <div>
                 <h4 className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
-                  Marks for each subject
+                  Marks for each subject ({activeModalTest.syllabus?.length || 0} subjects)
                 </h4>
-                <div className="divide-y rounded-xl border bg-card">
-                  {activeModalTest.meta?.syllabus.map((s) => (
-                    <div key={s.name} className="flex items-center justify-between px-3 py-2 text-xs">
-                      <span className="font-medium text-foreground">{s.name}</span>
-                      <span className="font-semibold text-primary">{s.marks} marks</span>
+                <div className="max-h-56 divide-y rounded-xl border bg-card overflow-y-auto">
+                  {activeModalTest.syllabus?.map((s) => (
+                    <div key={s.name} className="flex items-center justify-between px-3.5 py-2 text-xs">
+                      <span className="font-medium text-foreground">{s.name_bn || s.name}</span>
+                      <span className="font-semibold text-primary">{s.marks || s.count} marks</span>
                     </div>
                   ))}
                 </div>
@@ -420,7 +450,7 @@ export default function ModelTests() {
                 <div className="flex items-start gap-2">
                   <FontAwesomeIcon icon={faCircleInfo} className="mt-0.5 text-primary" />
                   <span>
-                    The timer starts as soon as you begin. You can go back and change answers before you submit.
+                    The timer starts as soon as you begin. You can jump between questions and review or change answers anytime before submitting.
                   </span>
                 </div>
               </div>

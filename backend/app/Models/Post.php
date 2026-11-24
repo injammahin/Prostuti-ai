@@ -99,7 +99,7 @@ class Post extends Model
                 'title' => $file['title'] ?? basename($file['file']),
                 'url' => $this->publicUrl($file['file']),
                 'type' => Str::upper(pathinfo($file['file'], PATHINFO_EXTENSION)),
-                'size' => Storage::disk('public')->exists($file['file']) ? Storage::disk('public')->size($file['file']) : null,
+                'size' => $file['size'] ?? (Storage::disk('public')->exists($file['file']) ? Storage::disk('public')->size($file['file']) : (file_exists(public_path(ltrim($file['file'], '/'))) ? filesize(public_path(ltrim($file['file'], '/'))) : null)),
             ])
             ->values()
             ->all();

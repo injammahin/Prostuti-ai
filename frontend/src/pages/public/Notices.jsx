@@ -100,7 +100,7 @@ export default function Notices({ inApp = false }) {
 
       <p className="mt-6 flex gap-2 rounded-xl bg-muted p-3 text-xs leading-relaxed text-muted-foreground">
         <FontAwesomeIcon icon={faCircleInfo} className="mt-0.5" />
-        Summaries are written by our team. Always confirm on the official website and apply only through the official portal. DreamPrep is not affiliated with
+        Summaries are written by our team. Always confirm on the official website and apply only through the official portal. bd3schools is not affiliated with
         BPSC or any ministry.
       </p>
     </>

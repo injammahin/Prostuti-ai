@@ -86,19 +86,24 @@ export const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:8000/a
 export const BACKEND_URL = API_URL.replace(/\/api\/v1$/, "")
 export const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID || ""
 
-const TOKEN_KEY = "prostuti:token"
+const TOKEN_KEY = "bd3schools:token"
 
 export const tokenStore = {
   get: () => {
     try {
-      return localStorage.getItem(TOKEN_KEY)
+      return localStorage.getItem(TOKEN_KEY) || localStorage.getItem("prostuti:token")
     } catch {
       return null
     }
   },
   set: (token) => {
     try {
-      token ? localStorage.setItem(TOKEN_KEY, token) : localStorage.removeItem(TOKEN_KEY)
+      if (token) {
+        localStorage.setItem(TOKEN_KEY, token)
+      } else {
+        localStorage.removeItem(TOKEN_KEY)
+        localStorage.removeItem("prostuti:token")
+      }
     } catch {
       /* storage unavailable */
     }
@@ -109,10 +114,10 @@ export const tokenStore = {
 let memoryVisitorId = null
 export function visitorId() {
   try {
-    let id = localStorage.getItem("prostuti:visitor")
+    let id = localStorage.getItem("bd3schools:visitor") || localStorage.getItem("prostuti:visitor")
     if (!id) {
       id = crypto.randomUUID?.() || `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 12)}`
-      localStorage.setItem("prostuti:visitor", id)
+      localStorage.setItem("bd3schools:visitor", id)
     }
     return id
   } catch {
@@ -276,6 +281,17 @@ export const pastPapersApi = {
     }
     return api(`/past-papers/${number}`)
   },
+}
+
+/** Dynamic model tests and real exam drills. */
+export const modelTestsApi = {
+  list: (exam) => api(`/model-tests${exam ? `?exam=${encodeURIComponent(exam)}` : ""}`),
+  show: (id) => api(`/model-tests/${encodeURIComponent(id)}`),
+  submit: (id, answers, usedSeconds) =>
+    api(`/model-tests/${encodeURIComponent(id)}/submit`, {
+      method: "POST",
+      body: { answers, used_seconds: usedSeconds },
+    }),
 }
 
 /** Blog articles: list (no body) and one article with related posts. */

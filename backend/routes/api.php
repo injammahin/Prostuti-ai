@@ -44,6 +44,9 @@ Route::prefix('v1')->name('api.v1.')->group(function () {
     Route::get('posts/{slug}', [PostController::class, 'show'])->name('posts.show');
     Route::get('past-papers', [PastPaperController::class, 'index'])->name('past-papers');
     Route::get('past-papers/{number}', [PastPaperController::class, 'show'])->whereNumber('number')->name('past-papers.show');
+    Route::get('model-tests', [\App\Http\Controllers\Api\V1\ModelTestController::class, 'index'])->name('model-tests.index');
+    Route::get('model-tests/{id}', [\App\Http\Controllers\Api\V1\ModelTestController::class, 'show'])->name('model-tests.show');
+    Route::post('model-tests/{id}/submit', [\App\Http\Controllers\Api\V1\ModelTestController::class, 'submit'])->middleware('throttle:60,1')->name('model-tests.submit');
     Route::post('ai/explain', [AiTutorController::class, 'ask'])->middleware('throttle:20,1')->name('ai.explain');
     Route::post('track', [TrackingController::class, 'pageView'])->middleware('throttle:120,1')->name('track');
 

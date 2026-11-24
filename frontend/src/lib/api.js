@@ -118,12 +118,9 @@ export const pastPapersApi = {
     try {
       const res = await api("/past-papers")
       if (res?.papers) {
-        let has48 = false
-        let has47 = false
-        let has46 = false
+        const fullPaperNumbers = [48, 47, 46, 45, 44, 43]
         const papers = res.papers.map((p) => {
           if (p.number === 48) {
-            has48 = true
             return {
               ...p,
               questions: Math.max(p.questions || 0, 200),
@@ -133,7 +130,6 @@ export const pastPapersApi = {
             }
           }
           if (p.number === 47) {
-            has47 = true
             return {
               ...p,
               questions: Math.max(p.questions || 0, 200),
@@ -143,7 +139,6 @@ export const pastPapersApi = {
             }
           }
           if (p.number === 46) {
-            has46 = true
             return {
               ...p,
               questions: Math.max(p.questions || 0, 200),
@@ -152,70 +147,70 @@ export const pastPapersApi = {
               special: false,
             }
           }
+          if (p.number === 45) {
+            return {
+              ...p,
+              questions: Math.max(p.questions || 0, 200),
+              name: "45th BCS",
+              name_bn: "৪৫তম বিসিএস",
+              special: false,
+            }
+          }
+          if (p.number === 44) {
+            return {
+              ...p,
+              questions: Math.max(p.questions || 0, 200),
+              name: "44th BCS",
+              name_bn: "৪৪তম বিসিএস",
+              special: false,
+            }
+          }
+          if (p.number === 43) {
+            return {
+              ...p,
+              questions: Math.max(p.questions || 0, 200),
+              name: "43rd BCS",
+              name_bn: "৪৩তম বিসিএস",
+              special: false,
+            }
+          }
           return p
         })
-        if (!has46) {
-          const insertIdx = (has48 ? 1 : 0) + (has47 ? 1 : 0)
-          papers.splice(insertIdx, 0, {
-            number: 46,
-            source: "46th BCS",
-            name: "46th BCS",
-            name_bn: "৪৬তম বিসিএস",
-            special: false,
-            questions: 200,
-          })
+
+        // Ensure papers 48, 47, 46, 45, 44, 43 exist
+        const metaMap = {
+          48: { name: "48th BCS", name_bn: "৪৮তম বিশেষ বিসিএস", special: true },
+          47: { name: "47th BCS", name_bn: "৪৭তম বিসিএস", special: false },
+          46: { name: "46th BCS", name_bn: "৪৬তম বিসিএস", special: false },
+          45: { name: "45th BCS", name_bn: "৪৫তম বিসিএস", special: false },
+          44: { name: "44th BCS", name_bn: "৪৪তম বিসিএস", special: false },
+          43: { name: "43rd BCS", name_bn: "৪৩তম বিসিএস", special: false },
         }
-        if (!has47) {
-          const insertIdx = has48 ? 1 : 0
-          papers.splice(insertIdx, 0, {
-            number: 47,
-            source: "47th BCS",
-            name: "47th BCS",
-            name_bn: "৪৭তম বিসিএস",
-            special: false,
-            questions: 200,
-          })
+        for (const num of fullPaperNumbers) {
+          if (!papers.some((p) => p.number === num)) {
+            papers.push({
+              number: num,
+              source: `${num}th BCS`,
+              name: metaMap[num].name,
+              name_bn: metaMap[num].name_bn,
+              special: metaMap[num].special,
+              questions: 200,
+            })
+          }
         }
-        if (!has48) {
-          papers.unshift({
-            number: 48,
-            source: "48th BCS",
-            name: "48th BCS",
-            name_bn: "৪৮তম বিশেষ বিসিএস",
-            special: true,
-            questions: 200,
-          })
-        }
+        papers.sort((a, b) => b.number - a.number)
         return { ...res, papers }
       }
       return res
     } catch {
       return {
         papers: [
-          {
-            number: 48,
-            source: "48th BCS",
-            name: "48th BCS",
-            name_bn: "৪৮তম বিশেষ বিসিএস",
-            special: true,
-            questions: 200,
-          },
-          {
-            number: 47,
-            source: "47th BCS",
-            name: "47th BCS",
-            name_bn: "৪৭তম বিসিএস",
-            special: false,
-            questions: 200,
-          },
-          {
-            number: 46,
-            source: "46th BCS",
-            name: "46th BCS",
-            name_bn: "৪৬তম বিসিএস",
-            special: false,
-            questions: 200,
-          },
+          { number: 48, source: "48th BCS", name: "48th BCS", name_bn: "৪৮তম বিশেষ বিসিএস", special: true, questions: 200 },
+          { number: 47, source: "47th BCS", name: "47th BCS", name_bn: "৪৭তম বিসিএস", special: false, questions: 200 },
+          { number: 46, source: "46th BCS", name: "46th BCS", name_bn: "৪৬তম বিসিএস", special: false, questions: 200 },
+          { number: 45, source: "45th BCS", name: "45th BCS", name_bn: "৪৫তম বিসিএস", special: false, questions: 200 },
+          { number: 44, source: "44th BCS", name: "44th BCS", name_bn: "৪৪তম বিসিএস", special: false, questions: 200 },
+          { number: 43, source: "43rd BCS", name: "43rd BCS", name_bn: "৪৩তম বিসিএস", special: false, questions: 200 },
         ],
       }
     }
@@ -223,37 +218,24 @@ export const pastPapersApi = {
   /** One paper with every question, its answer and explanation. */
   show: async (number) => {
     const numVal = parseInt(number, 10)
-    if (numVal === 48) {
-      try {
-        const res = await api(`/past-papers/${number}`)
-        if (res?.questions && res.questions.length >= 200) {
-          return {
-            paper: {
-              ...res.paper,
-              ...BCS_48TH_META,
-              questions: res.questions.length,
-            },
-            questions: res.questions,
-          }
-        }
-      } catch {
-        // Fallback to client-side complete 200 questions dataset
-      }
-      return {
-        paper: {
-          ...BCS_48TH_META,
-        },
-        questions: bcs48thQuestions,
-      }
+    const datasets = {
+      48: { meta: BCS_48TH_META, questions: bcs48thQuestions },
+      47: { meta: BCS_47TH_META, questions: bcs47thQuestions },
+      46: { meta: BCS_46TH_META, questions: bcs46thQuestions },
+      45: { meta: BCS_45TH_META, questions: bcs45thQuestions },
+      44: { meta: BCS_44TH_META, questions: bcs44thQuestions },
+      43: { meta: BCS_43RD_META, questions: bcs43rdQuestions },
     }
-    if (numVal === 47) {
+
+    if (datasets[numVal]) {
+      const entry = datasets[numVal]
       try {
         const res = await api(`/past-papers/${number}`)
         if (res?.questions && res.questions.length >= 200) {
           return {
             paper: {
               ...res.paper,
-              ...BCS_47TH_META,
+              ...entry.meta,
               questions: res.questions.length,
             },
             questions: res.questions,
@@ -264,32 +246,9 @@ export const pastPapersApi = {
       }
       return {
         paper: {
-          ...BCS_47TH_META,
+          ...entry.meta,
         },
-        questions: bcs47thQuestions,
-      }
-    }
-    if (numVal === 46) {
-      try {
-        const res = await api(`/past-papers/${number}`)
-        if (res?.questions && res.questions.length >= 200) {
-          return {
-            paper: {
-              ...res.paper,
-              ...BCS_46TH_META,
-              questions: res.questions.length,
-            },
-            questions: res.questions,
-          }
-        }
-      } catch {
-        // Fallback to client-side complete 200 questions dataset
-      }
-      return {
-        paper: {
-          ...BCS_46TH_META,
-        },
-        questions: bcs46thQuestions,
+        questions: entry.questions,
       }
     }
     return api(`/past-papers/${number}`)

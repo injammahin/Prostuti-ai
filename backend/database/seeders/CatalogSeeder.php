@@ -40,6 +40,7 @@ class CatalogSeeder extends Seeder
         });
 
         $subjectsByName = [];
+        $subjectsBySlug = [];
 
         foreach ($this->json('subjects') as $subject) {
             $examSlugs = $subject['exams'];
@@ -47,6 +48,7 @@ class CatalogSeeder extends Seeder
 
             $model = Subject::query()->updateOrCreate(['slug' => $subject['slug']], $subject);
             $subjectsByName[$model->name] = $model;
+            $subjectsBySlug[$model->slug] = $model;
 
             $model->exams()->sync(
                 collect($examSlugs)
@@ -62,10 +64,22 @@ class CatalogSeeder extends Seeder
             ->flatMap(fn (string $path): array => json_decode(file_get_contents($path), true, flags: JSON_THROW_ON_ERROR));
 
         foreach ($questionFiles as $question) {
-            $subject = $subjectsByName[$question['subject']] ?? null;
+            // Skip questions cancelled by BPSC (they have no correct answer).
+            if (! empty($question['cancelled']) || ! is_int($question['answer'] ?? $question['answer_index'] ?? null)) {
+                continue;
+            }
+
+            // "subject" is either a name string ("Bangla") or an object ({"name": ..., "slug": ...}).
+            $subjectRef = $question['subject'];
+
+            $subject = is_array($subjectRef)
+                ? ($subjectsBySlug[$subjectRef['slug'] ?? ''] ?? $subjectsByName[$subjectRef['name'] ?? ''] ?? null)
+                : ($subjectsByName[$subjectRef] ?? null);
 
             if (! $subject) {
-                throw new \RuntimeException("Question {$question['ref']} uses unknown subject \"{$question['subject']}\". Add it to subjects.json or fix the name.");
+                $label = is_array($subjectRef) ? ($subjectRef['slug'] ?? $subjectRef['name'] ?? json_encode($subjectRef)) : $subjectRef;
+
+                throw new \RuntimeException("Question {$question['ref']} uses unknown subject \"{$label}\". Add it to subjects.json or fix the name.");
             }
 
             Question::query()->updateOrCreate(['ref' => $question['ref']], [
@@ -77,7 +91,7 @@ class CatalogSeeder extends Seeder
                 'lang' => $question['lang'],
                 'body' => $question['body'],
                 'options' => $question['options'],
-                'answer_index' => $question['answer'],
+                'answer_index' => $question['answer'] ?? $question['answer_index'],
                 'explanation' => $question['explanation'],
                 'status' => Question::STATUS_LIVE,
             ]);

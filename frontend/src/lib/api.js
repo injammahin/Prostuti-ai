@@ -5,6 +5,33 @@ import { bcs46thQuestions, BCS_46TH_META } from "./bcs-46th-questions"
 import { bcs45thQuestions, BCS_45TH_META } from "./bcs-45th-questions"
 import { bcs44thQuestions, BCS_44TH_META } from "./bcs-44th-questions"
 import { bcs43rdQuestions, BCS_43RD_META } from "./bcs-43rd-questions"
+import { bcs42ndQuestions, BCS_42ND_META } from "./bcs-42nd-questions"
+import { bcs41stQuestions, BCS_41ST_META } from "./bcs-41st-questions"
+import { bcs40thQuestions, BCS_40TH_META } from "./bcs-40th-questions"
+import { bcs39thQuestions, BCS_39TH_META } from "./bcs-39th-questions"
+import { bcs38thQuestions, BCS_38TH_META } from "./bcs-38th-questions"
+import { bcs37thQuestions, BCS_37TH_META } from "./bcs-37th-questions"
+import { bcs36thQuestions, BCS_36TH_META } from "./bcs-36th-questions"
+import { bcs35thQuestions, BCS_35TH_META } from "./bcs-35th-questions"
+import { bcs34thQuestions, BCS_34TH_META } from "./bcs-34th-questions"
+
+export const BCS_ALL_DATASETS = {
+  48: { meta: BCS_48TH_META, questions: bcs48thQuestions },
+  47: { meta: BCS_47TH_META, questions: bcs47thQuestions },
+  46: { meta: BCS_46TH_META, questions: bcs46thQuestions },
+  45: { meta: BCS_45TH_META, questions: bcs45thQuestions },
+  44: { meta: BCS_44TH_META, questions: bcs44thQuestions },
+  43: { meta: BCS_43RD_META, questions: bcs43rdQuestions },
+  42: { meta: BCS_42ND_META, questions: bcs42ndQuestions },
+  41: { meta: BCS_41ST_META, questions: bcs41stQuestions },
+  40: { meta: BCS_40TH_META, questions: bcs40thQuestions },
+  39: { meta: BCS_39TH_META, questions: bcs39thQuestions },
+  38: { meta: BCS_38TH_META, questions: bcs38thQuestions },
+  37: { meta: BCS_37TH_META, questions: bcs37thQuestions },
+  36: { meta: BCS_36TH_META, questions: bcs36thQuestions },
+  35: { meta: BCS_35TH_META, questions: bcs35thQuestions },
+  34: { meta: BCS_34TH_META, questions: bcs34thQuestions },
+}
 
 export const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:8000/api/v1").replace(/\/$/, "")
 export const BACKEND_URL = API_URL.replace(/\/api\/v1$/, "")

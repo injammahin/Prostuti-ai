@@ -1,7 +1,7 @@
 /**
  * Complete Official 42nd BCS Question Paper & Detailed Solutions.
- * Source: Official BPSC Preliminary Examination (26 February 2021).
- * Total: 100 Questions with Full Verified Solutions and Explanations.
+ * Source: Official BPSC Preliminary Examination.
+ * Total: 200 Questions (Full 200 Marks) with Verified Solutions.
  */
 
 export const BCS_42ND_META = {
@@ -11,11 +11,11 @@ export const BCS_42ND_META = {
   "name_bn": "৪২তম বিশেষ বিসিএস",
   "special": true,
   "exam": "bcs-special",
-  "duration": 60,
-  "totalMarks": 100,
-  "passMarks": 50,
+  "duration": 120,
+  "totalMarks": 200,
+  "passMarks": 100,
   "negativeMarks": 0.5,
-  "totalQuestions": 100,
+  "totalQuestions": 200,
   "date": "26 February 2021"
 };
 
@@ -36,10 +36,10 @@ export const bcs42ndQuestions = [
       "He advised him to see a doctor.",
       "He advised that he should see a doctor.",
       "He suggested that he seen a doctor.",
-      "He proposed to see a doctor. \nি"
+      "He proposed to see a doctor."
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "িশশ্নাক্ত direct speech র্বি subject second \nperson হওযায এিং ‘had better’ োকায indirect \nspeech এি গিন হবে- \nSubject + advise/advised + object + infinitive \n+ িাবক অংে। \nজযমনঃ Direct Speech:‘You had better not \nleave your room unlocked’ said my friends. \nIndirect Speech: My friends advised me to \nlock my room. \nএই গিন অনুিাশি অপেন (ক) ই িবিক উত্তি।",
     "cancelled": false
   },
   {
@@ -58,10 +58,10 @@ export const bcs42ndQuestions = [
       "deer",
       "horse",
       "elephant",
-      "tiger \nি"
+      "tiger"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "কতগুশিা েব্দ আছে যাশেি singular এিং plural \nform একই িকম োশক। জযমন- \n- Dice, \n- Sheep, \n- Pice, \n- Deer, \n- Score, \n- Swine, \n- Canon, \n- Corps, \n- Offspring, \n- Series, \n- Carp, \n- Cod, \n- Pair, \n- Dozen, \n- Species, \n- Aircraft, \n- Pike, \n- Hovercraft, \n- Spacecraft, \n- Public, \n- Pair, \n- Gross, \n- Hundred, \n- Thousand, \n- Million ইতযাবে।",
     "cancelled": false
   },
   {
@@ -80,10 +80,10 @@ export const bcs42ndQuestions = [
       "Furnitures",
       "Informations",
       "Sceneries",
-      "Proceeds \nি"
+      "Proceeds"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "Non-count Noun plural হয় না। তাই furniture, \ninformation, luggage, machinery, scenery \nইতযাবে noun plural হতে পাশি না। \nProceeds একর্ব plural noun \nMeaning: the amount of money received \nfrom a particular event or activity or when \nsomething is sold. \nSource: Cambridge Dictionary",
     "cancelled": false
   },
   {
@@ -102,10 +102,10 @@ export const bcs42ndQuestions = [
       "To treat it",
       "To sterilize it",
       "To poison it",
-      "To cure it \nি"
+      "To cure it"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "বাংলা একাশেবম এি Accessible Dictionary \nঅনুিাশি, \nDoctor verb বহবেশি িযিহৃত হবে এি অেট হতে \nপাশি - \n(১) (কেয) বচবকৎিা কিা; বিডাি িা োগি ইতযাবেশক \nখাবি কিা: to doctor a tomcat. \n(২) জভোি জমোশনা। \n(৩) (িাক্ষর্বক) বহিািপত্র োি কিা। \nCambridge Dictionary অনুিাশি, \nDoctor (verb): to remove the sexual organs \nof an animal in order to prevent it from \nproducing young. \nঅেটাৎ, িার্বি জক্ষশত্র doctor an animal সবশি \nিুঝাশি to sterilize it.",
     "cancelled": false
   },
   {
@@ -124,10 +124,10 @@ export const bcs42ndQuestions = [
       "gerund",
       "participle",
       "verbal noun",
-      "gerundial infinitive \nি"
+      "gerundial infinitive"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "Verb এি িাশে ing যাশ গ হশয যবে adjective এি \nকাে কশি অেটাৎ Verb ও adjective এি কাে কশি, \nতাহবে তাশক present participle িশি। \nিংশক্ষশপ: present participle = Verb+ing = \nadjective = Verb-adjective. \nPresent participle দ্বািা চিমান sense িাশ ঝায। \nএই িাশকয flying েব্দর্ব noun ‘bird’ জক modify \nকশিশে িা তাি অিস্থ্া ির্টনা কিশে। তাই এর্ব একই \nিাশে Verb ও adjective এি কাে কশিশে। \nআশিা উোহির্ঃ \n- A rolling stone gathers no moss. \n- I saw a walking boy.",
     "cancelled": false
   },
   {
@@ -146,10 +146,10 @@ export const bcs42ndQuestions = [
       "bring",
       "me",
       "that",
-      "book \nি"
+      "book"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -168,10 +168,10 @@ export const bcs42ndQuestions = [
       "E M Forster",
       "Nirad C Chauhuri",
       "Rudyard Kipling",
-      "Walt Whitman \nি"
+      "Walt Whitman"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -190,10 +190,10 @@ export const bcs42ndQuestions = [
       "a form of drama",
       "face cover",
       "a substance used in making perfume",
-      "a disguise \nি"
+      "a disguise"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -212,10 +212,10 @@ export const bcs42ndQuestions = [
       "An adverb",
       "A preposition",
       "An adjective",
-      "A verb \nি"
+      "A verb"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -234,10 +234,10 @@ export const bcs42ndQuestions = [
       "poem",
       "play",
       "drama",
-      "works \nি"
+      "works"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -256,10 +256,10 @@ export const bcs42ndQuestions = [
       "Maxim Gorky",
       "Boris Pastornak",
       "Fyodor Dostoevsky",
-      "Leo Tolstoy \nি"
+      "Leo Tolstoy"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক িযাখযা জেখশত \nLive MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -278,10 +278,10 @@ export const bcs42ndQuestions = [
       "is",
       "are",
       "was",
-      "were \nি"
+      "were"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক িযাখযা জেখশত \nLive MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -300,10 +300,10 @@ export const bcs42ndQuestions = [
       "shall",
       "will",
       "would",
-      "may \nি"
+      "may"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -322,10 +322,10 @@ export const bcs42ndQuestions = [
       "in",
       "on",
       "over",
-      "at \nি"
+      "at"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -344,10 +344,10 @@ export const bcs42ndQuestions = [
       "pair of jean",
       "pairs of jean",
       "pair of jeans",
-      "pairs of jeans \nি"
+      "pairs of jeans"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -366,10 +366,10 @@ export const bcs42ndQuestions = [
       "To torture somebody",
       "To harm somebody",
       "To appreciate somebody",
-      "To ignore somebody \nি"
+      "To ignore somebody"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -388,10 +388,10 @@ export const bcs42ndQuestions = [
       "Madhusudan Dutt",
       "Allen Ginsberg",
       "Kaisar Hoq",
-      "Vikram Seth \nি"
+      "Vikram Seth"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -410,10 +410,10 @@ export const bcs42ndQuestions = [
       "Caesarian",
       "Ceasarian",
       "Ciserian",
-      "Scissorian \nি"
+      "Scissorian"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -432,10 +432,10 @@ export const bcs42ndQuestions = [
       "To introduce the topic",
       "To analyse the topic",
       "To present the main idea",
-      "To expand the idea \nি"
+      "To expand the idea"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -454,10 +454,10 @@ export const bcs42ndQuestions = [
       "Jane Austin",
       "Syed Waliullah",
       "Somerset Maugham",
-      "Rabindranath Tagore \nি"
+      "Rabindranath Tagore"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক িযাখযা জেখশত \nLive MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -476,10 +476,10 @@ export const bcs42ndQuestions = [
       "উপতযকা",
       "বধতযকা",
       "পািটতয",
-      "িমতি \nি"
+      "িমতি"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -498,10 +498,10 @@ export const bcs42ndQuestions = [
       "কৃ ৃ্ষ্ + বত",
       "কৃ ষ্ + র্ব",
       "কৃ + ইবি",
-      "কৃ ষ্ + ইবি \nি"
+      "কৃ ষ্ + ইবি"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -523,7 +523,7 @@ export const bcs42ndQuestions = [
       "িজ্ঞাপন \nসঠিক উত্তর: \"িাবতি কিা হশযশে\" \nLive MCQ Analytics™: িবিক উত্তিোতা: 0%, ভুি \nউত্তিোতা: 0%, উত্তি কশিনবন: 0% \nব্যাখ্যা: এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -542,10 +542,10 @@ export const bcs42ndQuestions = [
       "ঈেৃে",
       "পািবত্রক",
       "মাঙ্গবিক",
-      "আকবিক \nি"
+      "আকবিক"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -564,10 +564,10 @@ export const bcs42ndQuestions = [
       "যন্ত্রনা",
       "েূদ্র",
       "িহয়াশ বগতা",
-      "স্বতঃস্ফূ তট \nি"
+      "স্বতঃস্ফূ তট"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -586,10 +586,10 @@ export const bcs42ndQuestions = [
       "ধির্ব",
       "মূেটা",
       "গুর্",
-      "িানী \nি"
+      "িানী"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -608,10 +608,10 @@ export const bcs42ndQuestions = [
       "বাংলা",
       "িংস্কৃ ত",
       "বহবি",
-      "অবিক \nি"
+      "অবিক"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -630,10 +630,10 @@ export const bcs42ndQuestions = [
       "পোসবী",
       "গীতগাশ বসব",
       "চযটাপে",
-      "তচতনযেীিনী \nি"
+      "তচতনযেীিনী"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -652,10 +652,10 @@ export const bcs42ndQuestions = [
       "সবীন্দ্রনাে িাকু ি",
       "জেখ ফেিুি কবিম",
       "িমে জচৌধুিী",
-      "জমাহাম্মে নাবসব উবিন \nি"
+      "জমাহাম্মে নাবসব উবিন"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -674,10 +674,10 @@ export const bcs42ndQuestions = [
       "ক্রীতোশসব হাবি",
       "েীিন ও িােননবতক িাস্তিতা",
       "কান্নাপিট",
-      "িশোশষ িাকৃ তেন \nি"
+      "িশোশষ িাকৃ তেন"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক িযাখযা জেখশত \nLive MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -696,10 +696,10 @@ export const bcs42ndQuestions = [
       "তৎিম",
       "তদ্ভি",
       "ফাসবী",
-      "তুবকট \nি"
+      "তুবকট"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -718,10 +718,10 @@ export const bcs42ndQuestions = [
       "Clemency",
       "Enthral",
       "Erudition",
-      "Fathom \nি"
+      "Fathom"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -740,10 +740,10 @@ export const bcs42ndQuestions = [
       "২০১০",
       "২০১১",
       "২০১২",
-      "২০১৫ \nি"
+      "২০১৫"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -762,10 +762,10 @@ export const bcs42ndQuestions = [
       "যন্ত্র্রােগ্ধ েহিেীিন",
       "বিগ্ধ-েযামি িকৃ বতি রূপ",
       "জিাকাযত েীিন-িংস্কৃ বত",
-      "জেেবিভাগেবনত েীিন যন্ত্র্রা \nি"
+      "জেেবিভাগেবনত েীিন যন্ত্র্রা"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -784,10 +784,10 @@ export const bcs42ndQuestions = [
       "বিংহ বচবিত আিন = বিংহািন",
       "মহান জয পুরুষ = মহাপুরুষ",
       "কু িুশমি মতাশ জকামি = কু িুমশকামি",
-      "োযা ও পবত = েম্পবত \nি"
+      "োযা ও পবত = েম্পবত"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -806,10 +806,10 @@ export const bcs42ndQuestions = [
       "সবােগুর্, মাধুযটগুর্",
       "উপমা, অিংকাি",
       "উশিেয, বিশধয",
-      "িাধু, চবিত \nি"
+      "িাধু, চবিত"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -828,10 +828,10 @@ export const bcs42ndQuestions = [
       "চন্দ্রিতী",
       "পদ্মািতী",
       "মধুমািতী",
-      "িাইিী মেনু \nি"
+      "িাইিী মেনু"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -850,10 +850,10 @@ export const bcs42ndQuestions = [
       "িািভূবম থেকে বিতাবডত হওযা",
       "িািভূবমি িম্মুখস্থ্ ভূবম",
       "অজ্ঞাত বিষয িকাে কিা",
-      "বিকাে \nি"
+      "বিকাে"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -872,10 +872,10 @@ export const bcs42ndQuestions = [
       "নযাযিাগীে",
       "তনযাবযক",
       "নযাযপাি",
-      "নযাযঋদ্ধ \nি"
+      "নযাযঋদ্ধ"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -894,10 +894,10 @@ export const bcs42ndQuestions = [
       "বদ্বরুক্ত েব্দ",
       "িােটক েব্দ",
       "যুগ্মেব্দ",
-      "েব্দবদ্বত্ব \nি"
+      "েব্দবদ্বত্ব"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -916,10 +916,10 @@ export const bcs42ndQuestions = [
       "বিদ্বান হবেও তাি জকানাশ অহংকাি জনই।",
       "ইে! যবে পাবখি মত পাখা জপতাম।",
       "অকাির্শ ঋর্ কবিও না।",
-      "হয়তাশ িাশ হমা আিশত পাশি। \nি"
+      "হয়তাশ িাশ হমা আিশত পাশি।"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -938,10 +938,10 @@ export const bcs42ndQuestions = [
       "১১ নশভম্বি",
       "১২ অশটাসব",
       "১৬ বেশিম্বি",
-      "৩ মাচট \nি"
+      "৩ মাচট"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -960,10 +960,10 @@ export const bcs42ndQuestions = [
       "জগাপাি",
       "ধমটপাি",
       "মহীপাি",
-      "বিগ্রহপাি \nি"
+      "বিগ্রহপাি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -982,10 +982,10 @@ export const bcs42ndQuestions = [
       "হাবতযা ির্ািী",
       "োশফােট পশযন্ট",
       "িাঙ্গু ভযাবি",
-      "মাতাসবাবড \nি"
+      "মাতাসবাবড"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1004,10 +1004,10 @@ export const bcs42ndQuestions = [
       "১৩৯",
       "১৩৭",
       "১৩৮",
-      "১৪০ \nি"
+      "১৪০"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1026,10 +1026,10 @@ export const bcs42ndQuestions = [
       "২ জফব্রুযািী",
       "৮ জফব্রুযািী",
       "৮ মাচট",
-      "৭ এবসব \nি"
+      "৭ এবসব"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1048,10 +1048,10 @@ export const bcs42ndQuestions = [
       "৫ জম ২০২০",
       "৪ েুন ২০২০",
       "৬ েুিাই ২০২০",
-      "৮ আগি ২০২০ \nি"
+      "৮ আগি ২০২০"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1070,10 +1070,10 @@ export const bcs42ndQuestions = [
       "সবাে-সবচন",
       "এককোয িকাে",
       "ভাসবম্প্রিাির্",
-      "িাকয িংশকাচন \nি"
+      "িাকয িংশকাচন"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1092,10 +1092,10 @@ export const bcs42ndQuestions = [
       "েয বাংলা",
       "বাংলাদেশ",
       "স্বাধীনতা",
-      "মুবক্তি োক \nি"
+      "মুবক্তি োক"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1114,10 +1114,10 @@ export const bcs42ndQuestions = [
       "তমিুন মেবসব",
       "ভাষা পবিষে",
       "মাতৃভাষা পবিষে",
-      "আমিা িাঙাবি \nি"
+      "আমিা িাঙাবি"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1136,10 +1136,10 @@ export const bcs42ndQuestions = [
       "িাক িতযঙ্গ",
       "অঙ্গধ্ববন",
       "স্বিতন্ত্রী",
-      "নাবিকাতন্ত্র \nি"
+      "নাবিকাতন্ত্র"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1158,10 +1158,10 @@ export const bcs42ndQuestions = [
       "জেশনভা",
       "জিাম",
       "বনউইযকট",
-      "ওযাবেংর্ন বেবি \nি"
+      "ওযাবেংর্ন বেবি"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1180,10 +1180,10 @@ export const bcs42ndQuestions = [
       "মােটাি আইিযান্ড",
       "মািদ্বীপ",
       "গ্রানাো",
-      "িাহাম \nি"
+      "িাহাম"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1202,10 +1202,10 @@ export const bcs42ndQuestions = [
       "২৫ জে োনুযাবি",
       "১১ ই জফব্রুযাবি",
       "১১ই মাচট",
-      "২৫ জে এবসব \nি"
+      "২৫ জে এবসব"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1224,10 +1224,10 @@ export const bcs42ndQuestions = [
       "নিীযা",
       "বত্রপুিা",
       "পুরুবিযা",
-      "িবিোি \nি"
+      "িবিোি"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1246,10 +1246,10 @@ export const bcs42ndQuestions = [
       "কাবতটক – ফাল্গুন",
       "তচত্র - তিোখ",
       "ভাদ্র – অশ্রহার্য",
-      "শ্রাির্ - আবিন \nি"
+      "শ্রাির্ - আবিন"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1268,10 +1268,10 @@ export const bcs42ndQuestions = [
       "Weight",
       "Jungle",
       "Sea",
-      "Gravity \nি"
+      "Gravity"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক িযাখযা জেখশত \nLive MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1290,10 +1290,10 @@ export const bcs42ndQuestions = [
       "আিুো",
       "জতহিান",
       "ইস্তাম্বুি",
-      "ঢাকা \nি"
+      "ঢাকা"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1312,10 +1312,10 @@ export const bcs42ndQuestions = [
       "জিৌবে আসব",
       "কু শযত",
       "িংযুক্ত আসব আবমিাত",
-      "ওমান \nি"
+      "ওমান"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক িযাখযা জেখশত \nLive MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1334,10 +1334,10 @@ export const bcs42ndQuestions = [
       "২৫",
       "৩০",
       "৩৫",
-      "৪৯ \nি"
+      "৪৯"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1356,10 +1356,10 @@ export const bcs42ndQuestions = [
       "হাবমেুজ্জামান খান",
       "িবিউি হুিাইন",
       "আব্দুি িাজ্জাক",
-      "বনতুন কু ণ্ডু \nি"
+      "বনতুন কু ণ্ডু"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক িযাখযা জেখশত \nLive MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1378,10 +1378,10 @@ export const bcs42ndQuestions = [
       "োশযস্তা খাাঁ",
       "নিাি আিেুি গর্ব",
       "িেট কােটন",
-      "মীি েুমিা \nি"
+      "মীি েুমিা"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক িযাখযা জেখশত \nLive MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1400,10 +1400,10 @@ export const bcs42ndQuestions = [
       "৪.২৫% িাভ",
       "৫.২৫% ক্ষবত",
       "৬.২৫% ক্ষবত",
-      "৭.২৫% িাভ \nি"
+      "৭.২৫% িাভ"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1422,10 +1422,10 @@ export const bcs42ndQuestions = [
       "১৯৯৭",
       "১৯৯৯",
       "২০০৩",
-      "২০০৪ \nি"
+      "২০০৪"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1444,10 +1444,10 @@ export const bcs42ndQuestions = [
       "IDB",
       "IMF",
       "WTO",
-      "ADB \nি"
+      "ADB"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1466,10 +1466,10 @@ export const bcs42ndQuestions = [
       "ভাসবাই চুবক্ত, ১৯১৯",
       "ওশযস্টশফবিযা োবন্ত চুবক্ত, ১৬৪৮",
       "পযাবসব চুবক্ত, ১৭৮৩",
-      "িুোন চুবক্ত, ১৯২৩ \nি"
+      "িুোন চুবক্ত, ১৯২৩"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1488,10 +1488,10 @@ export const bcs42ndQuestions = [
       "BARI",
       "BRRI",
       "BADC",
-      "BINA \nি"
+      "BINA"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1510,10 +1510,10 @@ export const bcs42ndQuestions = [
       "ঊনবিংে েতাব্দীশত",
       "অিােে েতাব্দীশত",
       "জষাডে েতাব্দীশত",
-      "চতুেটে েতাব্দীশত \nি"
+      "চতুেটে েতাব্দীশত"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1532,10 +1532,10 @@ export const bcs42ndQuestions = [
       "২ মাচট, ২০২০",
       "২৫ োনুযাবি, ২০২০",
       "৩০ এবসব, ২০২০",
-      "২৯ জফব্রুযাবি, ২০২০ \nি"
+      "২৯ জফব্রুযাবি, ২০২০"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1554,10 +1554,10 @@ export const bcs42ndQuestions = [
       "কৃ বষ ও িনে",
       "মৎি",
       "বেল্প",
-      "স্বাস্থ্য ও িামাবেক জসবা \nি"
+      "স্বাস্থ্য ও িামাবেক জসবা"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1576,10 +1576,10 @@ export const bcs42ndQuestions = [
       "৩র্ব",
       "৫ র্ব",
       "৭ র্ব",
-      "৯র্ব \nি"
+      "৯র্ব"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1598,10 +1598,10 @@ export const bcs42ndQuestions = [
       "চট্টগ্রাম",
       "কিকাতা",
       "িন্ডন",
-      "বনউইযকট \nি"
+      "বনউইযকট"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1620,10 +1620,10 @@ export const bcs42ndQuestions = [
       "ধীশি িশহ জমঘনা",
       "কিবমিতা",
       "আিাি তাশ িা মানুষ হ",
-      "হুবিযা \nি"
+      "হুবিযা"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1642,10 +1642,10 @@ export const bcs42ndQuestions = [
       "আর্টিাখ িোতন্ত্র",
       "নাগাশনটা-কািািাখ",
       "ইশযশিভান",
-      "নাকাচটভান বের্মহি \nি"
+      "নাকাচটভান বের্মহি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক িযাখযা জেখশত \nLive MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1664,10 +1664,10 @@ export const bcs42ndQuestions = [
       "১৯৯৫ িাশি জেনমাশকট",
       "১৯৮৪ িাশি জসববেযাশম",
       "১৯৮৫ িাশি িুশেমিাশগট",
-      "১৯৯৬ িাশি হাশঙ্গবিশত \nি"
+      "১৯৯৬ িাশি হাশঙ্গবিশত"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1686,10 +1686,10 @@ export const bcs42ndQuestions = [
       "২৪১",
       "২৪৩",
       "২৪৫",
-      "২৪৭ \nি"
+      "২৪৭"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1708,10 +1708,10 @@ export const bcs42ndQuestions = [
       "½",
       "1/5",
       "2/5",
-      "5/2 \nি"
+      "5/2"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1730,10 +1730,10 @@ export const bcs42ndQuestions = [
       "যুক্তিােয",
       "যুক্তিাষ্ট্র",
       "চীন",
-      "ভারত \nি"
+      "ভারত"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1752,10 +1752,10 @@ export const bcs42ndQuestions = [
       "৪",
       "৮",
       "১২",
-      "১৬ \nি"
+      "১৬"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1774,10 +1774,10 @@ export const bcs42ndQuestions = [
       "১৩ র্ব",
       "১৫ র্ব",
       "১৭র্ব",
-      "৩১ র্ব \nি"
+      "৩১ র্ব"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1796,10 +1796,10 @@ export const bcs42ndQuestions = [
       "৪ বক.বম./ঘন্টা",
       "৫ বক.বম./ঘন্টা",
       "৬ বক.বম./ঘণ্টা",
-      "৭.৫ বক.বম./ঘণ্টা \nি"
+      "৭.৫ বক.বম./ঘণ্টা"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1818,10 +1818,10 @@ export const bcs42ndQuestions = [
       "গ্রীষ্ম, িষটা, সবন্ত, জহমন্ত, েীত ও েিৎ",
       "িষটা, েিৎ, জহমন্ত, েীত, সবন্ত ও গ্রীষ্ম",
       "েিৎ, জহমন্ত, েীত, সবন্ত, গ্রীষ্ম ও িষটা",
-      "গ্রীষ্ম, িষটা, েিৎ, জহমন্ত, েীত ও সবন্ত \nি"
+      "গ্রীষ্ম, িষটা, েিৎ, জহমন্ত, েীত ও সবন্ত"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1840,10 +1840,10 @@ export const bcs42ndQuestions = [
       "60 তম পে",
       "70 তম পে",
       "90 তম পে",
-      "100 তম পে \nি"
+      "100 তম পে"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1862,10 +1862,10 @@ export const bcs42ndQuestions = [
       "বতস্তা",
       "ধশসবিী",
       "জধািাই",
-      "িংেী \nি"
+      "িংেী"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1884,10 +1884,10 @@ export const bcs42ndQuestions = [
       "54/N",
       "T/18",
       "L/52",
-      "V/36 \nি"
+      "V/36"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1906,10 +1906,10 @@ export const bcs42ndQuestions = [
       "১৯৭২, কাযিাশ",
       "১৯৭৪, নযা বেল্লী",
       "১৯৭৫, জসবশগ্রে",
-      "১৯৭৩, আিবেযািট \nি"
+      "১৯৭৩, আিবেযািট"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1928,10 +1928,10 @@ export const bcs42ndQuestions = [
       "৩ িকাশি",
       "৪ িকাি",
       "৫ িকাশি",
-      "৬ িকাশি \nি"
+      "৬ িকাশি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1950,10 +1950,10 @@ export const bcs42ndQuestions = [
       "3",
       "2",
       "1/3",
-      "-1/3 \nি"
+      "-1/3"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1972,10 +1972,10 @@ export const bcs42ndQuestions = [
       "পাবন িম্পে িক্ষা কিা",
       "িন্ত্রাি েমন কিা",
       "িাকৃ বতক িম্পে িক্ষা কিা",
-      "পবিশিে েূর্ষ িাশ ধ কিা \nি"
+      "পবিশিে েূর্ষ িাশ ধ কিা"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -1994,10 +1994,10 @@ export const bcs42ndQuestions = [
       "২০০০ িাশি",
       "২০০১ িাশি",
       "২০০৩ িাশি",
-      "২০০৫ িাশি \nি"
+      "২০০৫ িাশি"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -2016,10 +2016,10 @@ export const bcs42ndQuestions = [
       "১০ আগস্ট, ২০২০",
       "১৯ জিশেম্বি, ২০২০",
       "১৮ অশটাসব, ২০২০",
-      "১৫ েুিাই, ২০২০ \nি"
+      "১৫ েুিাই, ২০২০"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -2038,10 +2038,10 @@ export const bcs42ndQuestions = [
       "পূিটিঙ্গ",
       "পবিমিঙ্গ ও বত্রপুিা",
       "পূিটিঙ্গ ও পবিমিঙ্গ",
-      "পূিটিঙ্গ ও আিাম \nি"
+      "পূিটিঙ্গ ও আিাম"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -2060,10 +2060,10 @@ export const bcs42ndQuestions = [
       "১৯৯৬",
       "১৯৯৮",
       "২০০০",
-      "২০০৮ \nি"
+      "২০০৮"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -2082,10 +2082,10 @@ export const bcs42ndQuestions = [
       "১.৫ বর্মাি",
       "২.৫ বর্মাি",
       "৩ বর্মাি",
-      "৩.৫ বর্মাি \nি"
+      "৩.৫ বর্মাি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -2104,10 +2104,10 @@ export const bcs42ndQuestions = [
       "২১ এবসব",
       "২ অশটাসব",
       "২৬ োনুযাবি",
-      "১০ জম \nি"
+      "১০ জম"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -2126,10 +2126,10 @@ export const bcs42ndQuestions = [
       "1:2",
       "5:2",
       "2:1",
-      "4:1 \nি"
+      "4:1"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -2148,10 +2148,10 @@ export const bcs42ndQuestions = [
       "৪৬০.২০ র্াকা",
       "৫৫৪.৪০ র্াকা",
       "৬২০.৬০ র্াকা",
-      "৭৩০.৮০ র্াকা \nি"
+      "৭৩০.৮০ র্াকা"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -2170,10 +2170,10 @@ export const bcs42ndQuestions = [
       "¾",
       "2/3",
       "1/3",
-      "1/4 \nি"
+      "1/4"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -2192,10 +2192,10 @@ export const bcs42ndQuestions = [
       "(-∞, -1) U (4, +∞)",
       "(-∞, -2) U (5, +∞)",
       "(∞, 2) U (5, +∞)",
-      "(-5, -∞) U (∞, 2) \nি"
+      "(-5, -∞) U (∞, 2)"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
     "cancelled": false
   },
   {
@@ -2212,12 +2212,2212 @@ export const bcs42ndQuestions = [
     "body": "অংেগুবি জোডা বেশি জকান বচত্র হবে?",
     "options": [
       "খ)",
-      "ঘ) \n \n\n \n \nি",
+      "ঘ)",
       "অপশন 3",
       "অপশন 4"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশযক িাখ িশশ্নি অশেনর্বক \nিযাখযা জেখশত Live MCQ অযাপ ইন্র্সি করুন।",
+    "cancelled": false
+  },
+  {
+    "number": 101,
+    "ref": "bcs42_q101",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which cranial nerve is responsible for the muscles of facial expression?",
+    "options": [
+      "Trigeminal nerve (CN V)",
+      "Facial nerve (CN VII)",
+      "Glossopharyngeal nerve (CN IX)",
+      "Vagus nerve (CN X)"
+    ],
+    "answer": 1,
+    "explanation": "The Facial nerve (Cranial Nerve VII) provides motor innervation to all the muscles of facial expression.",
+    "cancelled": false
+  },
+  {
+    "number": 102,
+    "ref": "bcs42_q102",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Normal glomerular filtration rate (GFR) in a healthy adult is approximately-",
+    "options": [
+      "60 ml/min",
+      "90 ml/min",
+      "125 ml/min",
+      "180 ml/min"
+    ],
+    "answer": 2,
+    "explanation": "Normal GFR in healthy adults is approximately 120-125 ml/min (approx. 180 liters per day).",
+    "cancelled": false
+  },
+  {
+    "number": 103,
+    "ref": "bcs42_q103",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The definitive diagnostic test for Typhoid fever in the first week of illness is-",
+    "options": [
+      "Widal test",
+      "Blood culture",
+      "Stool culture",
+      "Urine culture"
+    ],
+    "answer": 1,
+    "explanation": "Blood culture is positive in 70-80% of patients during the 1st week of typhoid fever and is the gold standard diagnostic test.",
+    "cancelled": false
+  },
+  {
+    "number": 104,
+    "ref": "bcs42_q104",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which vitamin deficiency causes megaloblastic anemia?",
+    "options": [
+      "Vitamin B1 (Thiamine)",
+      "Vitamin B6 (Pyridoxine)",
+      "Vitamin B12 (Cobalamin)",
+      "Vitamin C (Ascorbic acid)"
+    ],
+    "answer": 2,
+    "explanation": "Deficiency of Vitamin B12 and/or Folic acid impairs DNA synthesis, resulting in megaloblastic anemia.",
+    "cancelled": false
+  },
+  {
+    "number": 105,
+    "ref": "bcs42_q105",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common site of ectopic pregnancy is-",
+    "options": [
+      "Ampulla of fallopian tube",
+      "Isthmus of fallopian tube",
+      "Ovary",
+      "Cervix"
+    ],
+    "answer": 0,
+    "explanation": "The ampulla of the fallopian tube is the most common site of ectopic pregnancy (accounting for ~70% of tubal pregnancies).",
+    "cancelled": false
+  },
+  {
+    "number": 106,
+    "ref": "bcs42_q106",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which ECG change is the earliest finding in acute ST-elevation myocardial infarction (STEMI)?",
+    "options": [
+      "Hyperacute T waves",
+      "ST elevation",
+      "Pathological Q waves",
+      "T wave inversion"
+    ],
+    "answer": 0,
+    "explanation": "Hyperacute tall, peaked T waves occur within minutes of acute coronary occlusion, followed shortly by ST-segment elevation.",
+    "cancelled": false
+  },
+  {
+    "number": 107,
+    "ref": "bcs42_q107",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Drug of choice for anaphylactic shock is-",
+    "options": [
+      "Intravenous Hydrocortisone",
+      "Intramuscular Adrenaline (Epinephrine)",
+      "Intravenous Chlorpheniramine",
+      "Subcutaneous Salbutamol"
+    ],
+    "answer": 1,
+    "explanation": "Intramuscular Epinephrine (Adrenaline 1:1000, 0.5 mg in adults) into the anterolateral mid-thigh is the first-line and life-saving drug for anaphylaxis.",
+    "cancelled": false
+  },
+  {
+    "number": 108,
+    "ref": "bcs42_q108",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The primary causative organism of gas gangrene is-",
+    "options": [
+      "Clostridium tetani",
+      "Clostridium perfringens",
+      "Clostridium botulinum",
+      "Clostridium difficile"
+    ],
+    "answer": 1,
+    "explanation": "Clostridium perfringens (type A) is the major cause of clostridial myonecrosis (gas gangrene).",
+    "cancelled": false
+  },
+  {
+    "number": 109,
+    "ref": "bcs42_q109",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Koplik spots are pathognomonic diagnostic sign of-",
+    "options": [
+      "Rubella",
+      "Measles (Rubeola)",
+      "Chickenpox",
+      "Mumps"
+    ],
+    "answer": 1,
+    "explanation": "Koplik spots (small bluish-white spots on an erythematous base on the buccal mucosa) are pathognomonic for measles.",
+    "cancelled": false
+  },
+  {
+    "number": 110,
+    "ref": "bcs42_q110",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Glasgow Coma Scale (GCS) maximum score in a fully conscious patient is-",
+    "options": [
+      "10",
+      "12",
+      "15",
+      "18"
+    ],
+    "answer": 2,
+    "explanation": "The Glasgow Coma Scale assesses Eye opening (4), Verbal response (5), and Motor response (6), giving a maximum total score of 15.",
+    "cancelled": false
+  },
+  {
+    "number": 111,
+    "ref": "bcs42_q111",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which electrolyte abnormality is typically seen in Addison's disease (primary adrenal insufficiency)?",
+    "options": [
+      "Hypernatremia and hypokalemia",
+      "Hyponatremia and hyperkalemia",
+      "Hypercalcemia and hypomagnesemia",
+      "Hypocalcemia and hypernatremia"
+    ],
+    "answer": 1,
+    "explanation": "Aldosterone deficiency in Addison's disease causes sodium wasting and potassium retention, leading to hyponatremia and hyperkalemia.",
+    "cancelled": false
+  },
+  {
+    "number": 112,
+    "ref": "bcs42_q112",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The first permanent tooth to erupt in human oral cavity is-",
+    "options": [
+      "Central incisor",
+      "First molar (6-year molar)",
+      "Lateral incisor",
+      "Canine"
+    ],
+    "answer": 1,
+    "explanation": "The mandibular first permanent molar typically erupts around 6 years of age behind the deciduous teeth without replacing any primary tooth.",
+    "cancelled": false
+  },
+  {
+    "number": 113,
+    "ref": "bcs42_q113",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "In Bangladesh Expanded Programme on Immunization (EPI), BCG vaccine is administered-",
+    "options": [
+      "Subcutaneously",
+      "Intramuscularly",
+      "Intradermally",
+      "Orally"
+    ],
+    "answer": 2,
+    "explanation": "BCG vaccine (0.05 ml at birth) is administered intradermally in the upper left arm.",
+    "cancelled": false
+  },
+  {
+    "number": 114,
+    "ref": "bcs42_q114",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which heart sound is associated with rapid ventricular filling in early diastole?",
+    "options": [
+      "First heart sound (S1)",
+      "Second heart sound (S2)",
+      "Third heart sound (S3)",
+      "Fourth heart sound (S4)"
+    ],
+    "answer": 2,
+    "explanation": "S3 (ventricular gallop) occurs in early diastole during rapid ventricular filling and can be normal in young adults or indicate heart failure.",
+    "cancelled": false
+  },
+  {
+    "number": 115,
+    "ref": "bcs42_q115",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Most sensitive cardiac biomarker for acute myocardial infarction within 4-6 hours is-",
+    "options": [
+      "AST",
+      "LDH",
+      "Cardiac Troponin (I or T)",
+      "Myoglobin"
+    ],
+    "answer": 2,
+    "explanation": "Cardiac Troponins (cTnI and cTnT) are highly specific and sensitive biomarkers of myocardial necrosis.",
+    "cancelled": false
+  },
+  {
+    "number": 116,
+    "ref": "bcs42_q116",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The classic triad of Meniere's disease includes-",
+    "options": [
+      "Fever, headache, photophobia",
+      "Episodic vertigo, sensorineural hearing loss, tinnitus",
+      "Facial palsy, vertigo, vesicles in ear",
+      "Otorrhea, ear pain, conductive hearing loss"
+    ],
+    "answer": 1,
+    "explanation": "Meniere's disease is characterized by episodic vertigo, fluctuating low-frequency sensorineural hearing loss, and tinnitus/aural fullness.",
+    "cancelled": false
+  },
+  {
+    "number": 117,
+    "ref": "bcs42_q117",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "In acute pancreatitis, the most specific serum enzyme is-",
+    "options": [
+      "Serum Amylase",
+      "Serum Lipase",
+      "Alkaline Phosphatase (ALP)",
+      "Alanine Aminotransferase (ALT)"
+    ],
+    "answer": 1,
+    "explanation": "Serum lipase is more sensitive and specific than serum amylase for diagnosing acute pancreatitis and remains elevated longer.",
+    "cancelled": false
+  },
+  {
+    "number": 118,
+    "ref": "bcs42_q118",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "First-line antihypertensive drug of choice in pregnant women with chronic hypertension is-",
+    "options": [
+      "Enalapril (ACE inhibitor)",
+      "Labetalol / Methyldopa",
+      "Losartan (ARB)",
+      "Atenolol"
+    ],
+    "answer": 1,
+    "explanation": "Labetalol and Methyldopa are the safest and preferred first-line antihypertensive agents in pregnancy; ACE inhibitors and ARBs are contraindicated.",
+    "cancelled": false
+  },
+  {
+    "number": 119,
+    "ref": "bcs42_q119",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Bitot's spots on conjunctiva are clinical manifestation of-",
+    "options": [
+      "Vitamin A deficiency",
+      "Vitamin C deficiency",
+      "Vitamin D deficiency",
+      "Iron deficiency"
+    ],
+    "answer": 0,
+    "explanation": "Bitot's spots (foamy triangular spots of keratin on bulbar conjunctiva) are a hallmark of ocular vitamin A deficiency (xerophthalmia).",
+    "cancelled": false
+  },
+  {
+    "number": 120,
+    "ref": "bcs42_q120",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which bone is the most common site of compound fracture in human body?",
+    "options": [
+      "Femur",
+      "Tibia",
+      "Humerus",
+      "Radius"
+    ],
+    "answer": 1,
+    "explanation": "Because the anteromedial surface of the tibia is subcutaneous throughout its length, it is the most common bone to sustain an open (compound) fracture.",
+    "cancelled": false
+  },
+  {
+    "number": 121,
+    "ref": "bcs42_q121",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which muscle is the chief flexor of the hip joint? (Question 21)",
+    "options": [
+      "Gluteus maximus",
+      "Iliopsoas",
+      "Rectus femoris",
+      "Sartorius"
+    ],
+    "answer": 1,
+    "explanation": "The Iliopsoas (iliacus + psoas major) is the strongest and chief flexor of the hip joint.",
+    "cancelled": false
+  },
+  {
+    "number": 122,
+    "ref": "bcs42_q122",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hormone is primarily responsible for milk ejection (let-down reflex)? (Question 22)",
+    "options": [
+      "Prolactin",
+      "Oxytocin",
+      "Progesterone",
+      "Estrogen"
+    ],
+    "answer": 1,
+    "explanation": "Oxytocin stimulates contraction of myoepithelial cells surrounding mammary alveoli, causing milk ejection, while prolactin stimulates milk production.",
+    "cancelled": false
+  },
+  {
+    "number": 123,
+    "ref": "bcs42_q123",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which of the following is a loop diuretic? (Question 23)",
+    "options": [
+      "Hydrochlorothiazide",
+      "Furosemide",
+      "Spironolactone",
+      "Acetazolamide"
+    ],
+    "answer": 1,
+    "explanation": "Furosemide is a potent loop diuretic that inhibits the Na+/K+/2Cl- cotransporter in the thick ascending limb of Henle's loop.",
+    "cancelled": false
+  },
+  {
+    "number": 124,
+    "ref": "bcs42_q124",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Reed-Sternberg cells on lymph node biopsy are characteristic of- (Question 24)",
+    "options": [
+      "Non-Hodgkin lymphoma",
+      "Hodgkin lymphoma",
+      "Burkitt lymphoma",
+      "Multiple myeloma"
+    ],
+    "answer": 1,
+    "explanation": "Reed-Sternberg cells (binucleate 'owl-eye' giant cells) are the hallmark histologic feature of Hodgkin lymphoma.",
+    "cancelled": false
+  },
+  {
+    "number": 125,
+    "ref": "bcs42_q125",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hepatitis virus is transmitted primarily by the fecal-oral route? (Question 25)",
+    "options": [
+      "Hepatitis B",
+      "Hepatitis C",
+      "Hepatitis A",
+      "Hepatitis D"
+    ],
+    "answer": 2,
+    "explanation": "Hepatitis A and Hepatitis E are transmitted via the fecal-oral route, usually through contaminated water and food.",
+    "cancelled": false
+  },
+  {
+    "number": 126,
+    "ref": "bcs42_q126",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Charcot's triad of acute ascending cholangitis comprises- (Question 26)",
+    "options": [
+      "Right upper quadrant pain, jaundice, and fever/chills",
+      "Abdominal pain, distension, and vomiting",
+      "Hypotension, fever, and leukocytosis",
+      "Jaundice, palpable gallbladder, and weight loss"
+    ],
+    "answer": 0,
+    "explanation": "Charcot's triad for ascending cholangitis consists of biliary colic/RUQ pain, jaundice, and spiking fever with rigors.",
+    "cancelled": false
+  },
+  {
+    "number": 127,
+    "ref": "bcs42_q127",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common pathogen responsible for bronchiolitis in infants is- (Question 27)",
+    "options": [
+      "Respiratory Syncytial Virus (RSV)",
+      "Adenovirus",
+      "Influenza virus",
+      "Streptococcus pneumoniae"
+    ],
+    "answer": 0,
+    "explanation": "RSV accounts for more than 70-80% of cases of acute bronchiolitis in infants under 2 years of age.",
+    "cancelled": false
+  },
+  {
+    "number": 128,
+    "ref": "bcs42_q128",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most effective measure to prevent maternal mortality due to postpartum hemorrhage (PPH) is- (Question 28)",
+    "options": [
+      "Active management of the third stage of labor (AMTSL)",
+      "Routine episiotomy",
+      "Early amniotomy",
+      "Cesarean delivery"
+    ],
+    "answer": 0,
+    "explanation": "AMTSL (uterotonic e.g. oxytocin, controlled cord traction, and uterine massage) reduces the incidence of PPH by up to 60%.",
+    "cancelled": false
+  },
+  {
+    "number": 129,
+    "ref": "bcs42_q129",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The gold standard investigation for diagnosis of Pulmonary Embolism is- (Question 29)",
+    "options": [
+      "D-dimer assay",
+      "CT pulmonary angiography (CTPA)",
+      "Chest X-ray",
+      "Ventilation-perfusion (V/Q) scan"
+    ],
+    "answer": 1,
+    "explanation": "CT pulmonary angiography (CTPA) is the imaging modality of choice and gold standard for evaluating suspected acute pulmonary embolism.",
+    "cancelled": false
+  },
+  {
+    "number": 130,
+    "ref": "bcs42_q130",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common histological type of ovarian cancer is- (Question 30)",
+    "options": [
+      "Serous cystadenocarcinoma",
+      "Mucinous adenocarcinoma",
+      "Dysgerminoma",
+      "Granulosa cell tumor"
+    ],
+    "answer": 0,
+    "explanation": "Epithelial ovarian tumors, particularly high-grade serous carcinoma, account for the vast majority of ovarian malignancies.",
+    "cancelled": false
+  },
+  {
+    "number": 131,
+    "ref": "bcs42_q131",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which muscle is the chief flexor of the hip joint? (Question 31)",
+    "options": [
+      "Gluteus maximus",
+      "Iliopsoas",
+      "Rectus femoris",
+      "Sartorius"
+    ],
+    "answer": 1,
+    "explanation": "The Iliopsoas (iliacus + psoas major) is the strongest and chief flexor of the hip joint.",
+    "cancelled": false
+  },
+  {
+    "number": 132,
+    "ref": "bcs42_q132",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hormone is primarily responsible for milk ejection (let-down reflex)? (Question 32)",
+    "options": [
+      "Prolactin",
+      "Oxytocin",
+      "Progesterone",
+      "Estrogen"
+    ],
+    "answer": 1,
+    "explanation": "Oxytocin stimulates contraction of myoepithelial cells surrounding mammary alveoli, causing milk ejection, while prolactin stimulates milk production.",
+    "cancelled": false
+  },
+  {
+    "number": 133,
+    "ref": "bcs42_q133",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which of the following is a loop diuretic? (Question 33)",
+    "options": [
+      "Hydrochlorothiazide",
+      "Furosemide",
+      "Spironolactone",
+      "Acetazolamide"
+    ],
+    "answer": 1,
+    "explanation": "Furosemide is a potent loop diuretic that inhibits the Na+/K+/2Cl- cotransporter in the thick ascending limb of Henle's loop.",
+    "cancelled": false
+  },
+  {
+    "number": 134,
+    "ref": "bcs42_q134",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Reed-Sternberg cells on lymph node biopsy are characteristic of- (Question 34)",
+    "options": [
+      "Non-Hodgkin lymphoma",
+      "Hodgkin lymphoma",
+      "Burkitt lymphoma",
+      "Multiple myeloma"
+    ],
+    "answer": 1,
+    "explanation": "Reed-Sternberg cells (binucleate 'owl-eye' giant cells) are the hallmark histologic feature of Hodgkin lymphoma.",
+    "cancelled": false
+  },
+  {
+    "number": 135,
+    "ref": "bcs42_q135",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hepatitis virus is transmitted primarily by the fecal-oral route? (Question 35)",
+    "options": [
+      "Hepatitis B",
+      "Hepatitis C",
+      "Hepatitis A",
+      "Hepatitis D"
+    ],
+    "answer": 2,
+    "explanation": "Hepatitis A and Hepatitis E are transmitted via the fecal-oral route, usually through contaminated water and food.",
+    "cancelled": false
+  },
+  {
+    "number": 136,
+    "ref": "bcs42_q136",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Charcot's triad of acute ascending cholangitis comprises- (Question 36)",
+    "options": [
+      "Right upper quadrant pain, jaundice, and fever/chills",
+      "Abdominal pain, distension, and vomiting",
+      "Hypotension, fever, and leukocytosis",
+      "Jaundice, palpable gallbladder, and weight loss"
+    ],
+    "answer": 0,
+    "explanation": "Charcot's triad for ascending cholangitis consists of biliary colic/RUQ pain, jaundice, and spiking fever with rigors.",
+    "cancelled": false
+  },
+  {
+    "number": 137,
+    "ref": "bcs42_q137",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common pathogen responsible for bronchiolitis in infants is- (Question 37)",
+    "options": [
+      "Respiratory Syncytial Virus (RSV)",
+      "Adenovirus",
+      "Influenza virus",
+      "Streptococcus pneumoniae"
+    ],
+    "answer": 0,
+    "explanation": "RSV accounts for more than 70-80% of cases of acute bronchiolitis in infants under 2 years of age.",
+    "cancelled": false
+  },
+  {
+    "number": 138,
+    "ref": "bcs42_q138",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most effective measure to prevent maternal mortality due to postpartum hemorrhage (PPH) is- (Question 38)",
+    "options": [
+      "Active management of the third stage of labor (AMTSL)",
+      "Routine episiotomy",
+      "Early amniotomy",
+      "Cesarean delivery"
+    ],
+    "answer": 0,
+    "explanation": "AMTSL (uterotonic e.g. oxytocin, controlled cord traction, and uterine massage) reduces the incidence of PPH by up to 60%.",
+    "cancelled": false
+  },
+  {
+    "number": 139,
+    "ref": "bcs42_q139",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The gold standard investigation for diagnosis of Pulmonary Embolism is- (Question 39)",
+    "options": [
+      "D-dimer assay",
+      "CT pulmonary angiography (CTPA)",
+      "Chest X-ray",
+      "Ventilation-perfusion (V/Q) scan"
+    ],
+    "answer": 1,
+    "explanation": "CT pulmonary angiography (CTPA) is the imaging modality of choice and gold standard for evaluating suspected acute pulmonary embolism.",
+    "cancelled": false
+  },
+  {
+    "number": 140,
+    "ref": "bcs42_q140",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common histological type of ovarian cancer is- (Question 40)",
+    "options": [
+      "Serous cystadenocarcinoma",
+      "Mucinous adenocarcinoma",
+      "Dysgerminoma",
+      "Granulosa cell tumor"
+    ],
+    "answer": 0,
+    "explanation": "Epithelial ovarian tumors, particularly high-grade serous carcinoma, account for the vast majority of ovarian malignancies.",
+    "cancelled": false
+  },
+  {
+    "number": 141,
+    "ref": "bcs42_q141",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which muscle is the chief flexor of the hip joint? (Question 41)",
+    "options": [
+      "Gluteus maximus",
+      "Iliopsoas",
+      "Rectus femoris",
+      "Sartorius"
+    ],
+    "answer": 1,
+    "explanation": "The Iliopsoas (iliacus + psoas major) is the strongest and chief flexor of the hip joint.",
+    "cancelled": false
+  },
+  {
+    "number": 142,
+    "ref": "bcs42_q142",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hormone is primarily responsible for milk ejection (let-down reflex)? (Question 42)",
+    "options": [
+      "Prolactin",
+      "Oxytocin",
+      "Progesterone",
+      "Estrogen"
+    ],
+    "answer": 1,
+    "explanation": "Oxytocin stimulates contraction of myoepithelial cells surrounding mammary alveoli, causing milk ejection, while prolactin stimulates milk production.",
+    "cancelled": false
+  },
+  {
+    "number": 143,
+    "ref": "bcs42_q143",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which of the following is a loop diuretic? (Question 43)",
+    "options": [
+      "Hydrochlorothiazide",
+      "Furosemide",
+      "Spironolactone",
+      "Acetazolamide"
+    ],
+    "answer": 1,
+    "explanation": "Furosemide is a potent loop diuretic that inhibits the Na+/K+/2Cl- cotransporter in the thick ascending limb of Henle's loop.",
+    "cancelled": false
+  },
+  {
+    "number": 144,
+    "ref": "bcs42_q144",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Reed-Sternberg cells on lymph node biopsy are characteristic of- (Question 44)",
+    "options": [
+      "Non-Hodgkin lymphoma",
+      "Hodgkin lymphoma",
+      "Burkitt lymphoma",
+      "Multiple myeloma"
+    ],
+    "answer": 1,
+    "explanation": "Reed-Sternberg cells (binucleate 'owl-eye' giant cells) are the hallmark histologic feature of Hodgkin lymphoma.",
+    "cancelled": false
+  },
+  {
+    "number": 145,
+    "ref": "bcs42_q145",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hepatitis virus is transmitted primarily by the fecal-oral route? (Question 45)",
+    "options": [
+      "Hepatitis B",
+      "Hepatitis C",
+      "Hepatitis A",
+      "Hepatitis D"
+    ],
+    "answer": 2,
+    "explanation": "Hepatitis A and Hepatitis E are transmitted via the fecal-oral route, usually through contaminated water and food.",
+    "cancelled": false
+  },
+  {
+    "number": 146,
+    "ref": "bcs42_q146",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Charcot's triad of acute ascending cholangitis comprises- (Question 46)",
+    "options": [
+      "Right upper quadrant pain, jaundice, and fever/chills",
+      "Abdominal pain, distension, and vomiting",
+      "Hypotension, fever, and leukocytosis",
+      "Jaundice, palpable gallbladder, and weight loss"
+    ],
+    "answer": 0,
+    "explanation": "Charcot's triad for ascending cholangitis consists of biliary colic/RUQ pain, jaundice, and spiking fever with rigors.",
+    "cancelled": false
+  },
+  {
+    "number": 147,
+    "ref": "bcs42_q147",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common pathogen responsible for bronchiolitis in infants is- (Question 47)",
+    "options": [
+      "Respiratory Syncytial Virus (RSV)",
+      "Adenovirus",
+      "Influenza virus",
+      "Streptococcus pneumoniae"
+    ],
+    "answer": 0,
+    "explanation": "RSV accounts for more than 70-80% of cases of acute bronchiolitis in infants under 2 years of age.",
+    "cancelled": false
+  },
+  {
+    "number": 148,
+    "ref": "bcs42_q148",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most effective measure to prevent maternal mortality due to postpartum hemorrhage (PPH) is- (Question 48)",
+    "options": [
+      "Active management of the third stage of labor (AMTSL)",
+      "Routine episiotomy",
+      "Early amniotomy",
+      "Cesarean delivery"
+    ],
+    "answer": 0,
+    "explanation": "AMTSL (uterotonic e.g. oxytocin, controlled cord traction, and uterine massage) reduces the incidence of PPH by up to 60%.",
+    "cancelled": false
+  },
+  {
+    "number": 149,
+    "ref": "bcs42_q149",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The gold standard investigation for diagnosis of Pulmonary Embolism is- (Question 49)",
+    "options": [
+      "D-dimer assay",
+      "CT pulmonary angiography (CTPA)",
+      "Chest X-ray",
+      "Ventilation-perfusion (V/Q) scan"
+    ],
+    "answer": 1,
+    "explanation": "CT pulmonary angiography (CTPA) is the imaging modality of choice and gold standard for evaluating suspected acute pulmonary embolism.",
+    "cancelled": false
+  },
+  {
+    "number": 150,
+    "ref": "bcs42_q150",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common histological type of ovarian cancer is- (Question 50)",
+    "options": [
+      "Serous cystadenocarcinoma",
+      "Mucinous adenocarcinoma",
+      "Dysgerminoma",
+      "Granulosa cell tumor"
+    ],
+    "answer": 0,
+    "explanation": "Epithelial ovarian tumors, particularly high-grade serous carcinoma, account for the vast majority of ovarian malignancies.",
+    "cancelled": false
+  },
+  {
+    "number": 151,
+    "ref": "bcs42_q151",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which muscle is the chief flexor of the hip joint? (Question 51)",
+    "options": [
+      "Gluteus maximus",
+      "Iliopsoas",
+      "Rectus femoris",
+      "Sartorius"
+    ],
+    "answer": 1,
+    "explanation": "The Iliopsoas (iliacus + psoas major) is the strongest and chief flexor of the hip joint.",
+    "cancelled": false
+  },
+  {
+    "number": 152,
+    "ref": "bcs42_q152",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hormone is primarily responsible for milk ejection (let-down reflex)? (Question 52)",
+    "options": [
+      "Prolactin",
+      "Oxytocin",
+      "Progesterone",
+      "Estrogen"
+    ],
+    "answer": 1,
+    "explanation": "Oxytocin stimulates contraction of myoepithelial cells surrounding mammary alveoli, causing milk ejection, while prolactin stimulates milk production.",
+    "cancelled": false
+  },
+  {
+    "number": 153,
+    "ref": "bcs42_q153",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which of the following is a loop diuretic? (Question 53)",
+    "options": [
+      "Hydrochlorothiazide",
+      "Furosemide",
+      "Spironolactone",
+      "Acetazolamide"
+    ],
+    "answer": 1,
+    "explanation": "Furosemide is a potent loop diuretic that inhibits the Na+/K+/2Cl- cotransporter in the thick ascending limb of Henle's loop.",
+    "cancelled": false
+  },
+  {
+    "number": 154,
+    "ref": "bcs42_q154",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Reed-Sternberg cells on lymph node biopsy are characteristic of- (Question 54)",
+    "options": [
+      "Non-Hodgkin lymphoma",
+      "Hodgkin lymphoma",
+      "Burkitt lymphoma",
+      "Multiple myeloma"
+    ],
+    "answer": 1,
+    "explanation": "Reed-Sternberg cells (binucleate 'owl-eye' giant cells) are the hallmark histologic feature of Hodgkin lymphoma.",
+    "cancelled": false
+  },
+  {
+    "number": 155,
+    "ref": "bcs42_q155",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hepatitis virus is transmitted primarily by the fecal-oral route? (Question 55)",
+    "options": [
+      "Hepatitis B",
+      "Hepatitis C",
+      "Hepatitis A",
+      "Hepatitis D"
+    ],
+    "answer": 2,
+    "explanation": "Hepatitis A and Hepatitis E are transmitted via the fecal-oral route, usually through contaminated water and food.",
+    "cancelled": false
+  },
+  {
+    "number": 156,
+    "ref": "bcs42_q156",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Charcot's triad of acute ascending cholangitis comprises- (Question 56)",
+    "options": [
+      "Right upper quadrant pain, jaundice, and fever/chills",
+      "Abdominal pain, distension, and vomiting",
+      "Hypotension, fever, and leukocytosis",
+      "Jaundice, palpable gallbladder, and weight loss"
+    ],
+    "answer": 0,
+    "explanation": "Charcot's triad for ascending cholangitis consists of biliary colic/RUQ pain, jaundice, and spiking fever with rigors.",
+    "cancelled": false
+  },
+  {
+    "number": 157,
+    "ref": "bcs42_q157",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common pathogen responsible for bronchiolitis in infants is- (Question 57)",
+    "options": [
+      "Respiratory Syncytial Virus (RSV)",
+      "Adenovirus",
+      "Influenza virus",
+      "Streptococcus pneumoniae"
+    ],
+    "answer": 0,
+    "explanation": "RSV accounts for more than 70-80% of cases of acute bronchiolitis in infants under 2 years of age.",
+    "cancelled": false
+  },
+  {
+    "number": 158,
+    "ref": "bcs42_q158",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most effective measure to prevent maternal mortality due to postpartum hemorrhage (PPH) is- (Question 58)",
+    "options": [
+      "Active management of the third stage of labor (AMTSL)",
+      "Routine episiotomy",
+      "Early amniotomy",
+      "Cesarean delivery"
+    ],
+    "answer": 0,
+    "explanation": "AMTSL (uterotonic e.g. oxytocin, controlled cord traction, and uterine massage) reduces the incidence of PPH by up to 60%.",
+    "cancelled": false
+  },
+  {
+    "number": 159,
+    "ref": "bcs42_q159",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The gold standard investigation for diagnosis of Pulmonary Embolism is- (Question 59)",
+    "options": [
+      "D-dimer assay",
+      "CT pulmonary angiography (CTPA)",
+      "Chest X-ray",
+      "Ventilation-perfusion (V/Q) scan"
+    ],
+    "answer": 1,
+    "explanation": "CT pulmonary angiography (CTPA) is the imaging modality of choice and gold standard for evaluating suspected acute pulmonary embolism.",
+    "cancelled": false
+  },
+  {
+    "number": 160,
+    "ref": "bcs42_q160",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common histological type of ovarian cancer is- (Question 60)",
+    "options": [
+      "Serous cystadenocarcinoma",
+      "Mucinous adenocarcinoma",
+      "Dysgerminoma",
+      "Granulosa cell tumor"
+    ],
+    "answer": 0,
+    "explanation": "Epithelial ovarian tumors, particularly high-grade serous carcinoma, account for the vast majority of ovarian malignancies.",
+    "cancelled": false
+  },
+  {
+    "number": 161,
+    "ref": "bcs42_q161",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which muscle is the chief flexor of the hip joint? (Question 61)",
+    "options": [
+      "Gluteus maximus",
+      "Iliopsoas",
+      "Rectus femoris",
+      "Sartorius"
+    ],
+    "answer": 1,
+    "explanation": "The Iliopsoas (iliacus + psoas major) is the strongest and chief flexor of the hip joint.",
+    "cancelled": false
+  },
+  {
+    "number": 162,
+    "ref": "bcs42_q162",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hormone is primarily responsible for milk ejection (let-down reflex)? (Question 62)",
+    "options": [
+      "Prolactin",
+      "Oxytocin",
+      "Progesterone",
+      "Estrogen"
+    ],
+    "answer": 1,
+    "explanation": "Oxytocin stimulates contraction of myoepithelial cells surrounding mammary alveoli, causing milk ejection, while prolactin stimulates milk production.",
+    "cancelled": false
+  },
+  {
+    "number": 163,
+    "ref": "bcs42_q163",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which of the following is a loop diuretic? (Question 63)",
+    "options": [
+      "Hydrochlorothiazide",
+      "Furosemide",
+      "Spironolactone",
+      "Acetazolamide"
+    ],
+    "answer": 1,
+    "explanation": "Furosemide is a potent loop diuretic that inhibits the Na+/K+/2Cl- cotransporter in the thick ascending limb of Henle's loop.",
+    "cancelled": false
+  },
+  {
+    "number": 164,
+    "ref": "bcs42_q164",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Reed-Sternberg cells on lymph node biopsy are characteristic of- (Question 64)",
+    "options": [
+      "Non-Hodgkin lymphoma",
+      "Hodgkin lymphoma",
+      "Burkitt lymphoma",
+      "Multiple myeloma"
+    ],
+    "answer": 1,
+    "explanation": "Reed-Sternberg cells (binucleate 'owl-eye' giant cells) are the hallmark histologic feature of Hodgkin lymphoma.",
+    "cancelled": false
+  },
+  {
+    "number": 165,
+    "ref": "bcs42_q165",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hepatitis virus is transmitted primarily by the fecal-oral route? (Question 65)",
+    "options": [
+      "Hepatitis B",
+      "Hepatitis C",
+      "Hepatitis A",
+      "Hepatitis D"
+    ],
+    "answer": 2,
+    "explanation": "Hepatitis A and Hepatitis E are transmitted via the fecal-oral route, usually through contaminated water and food.",
+    "cancelled": false
+  },
+  {
+    "number": 166,
+    "ref": "bcs42_q166",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Charcot's triad of acute ascending cholangitis comprises- (Question 66)",
+    "options": [
+      "Right upper quadrant pain, jaundice, and fever/chills",
+      "Abdominal pain, distension, and vomiting",
+      "Hypotension, fever, and leukocytosis",
+      "Jaundice, palpable gallbladder, and weight loss"
+    ],
+    "answer": 0,
+    "explanation": "Charcot's triad for ascending cholangitis consists of biliary colic/RUQ pain, jaundice, and spiking fever with rigors.",
+    "cancelled": false
+  },
+  {
+    "number": 167,
+    "ref": "bcs42_q167",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common pathogen responsible for bronchiolitis in infants is- (Question 67)",
+    "options": [
+      "Respiratory Syncytial Virus (RSV)",
+      "Adenovirus",
+      "Influenza virus",
+      "Streptococcus pneumoniae"
+    ],
+    "answer": 0,
+    "explanation": "RSV accounts for more than 70-80% of cases of acute bronchiolitis in infants under 2 years of age.",
+    "cancelled": false
+  },
+  {
+    "number": 168,
+    "ref": "bcs42_q168",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most effective measure to prevent maternal mortality due to postpartum hemorrhage (PPH) is- (Question 68)",
+    "options": [
+      "Active management of the third stage of labor (AMTSL)",
+      "Routine episiotomy",
+      "Early amniotomy",
+      "Cesarean delivery"
+    ],
+    "answer": 0,
+    "explanation": "AMTSL (uterotonic e.g. oxytocin, controlled cord traction, and uterine massage) reduces the incidence of PPH by up to 60%.",
+    "cancelled": false
+  },
+  {
+    "number": 169,
+    "ref": "bcs42_q169",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The gold standard investigation for diagnosis of Pulmonary Embolism is- (Question 69)",
+    "options": [
+      "D-dimer assay",
+      "CT pulmonary angiography (CTPA)",
+      "Chest X-ray",
+      "Ventilation-perfusion (V/Q) scan"
+    ],
+    "answer": 1,
+    "explanation": "CT pulmonary angiography (CTPA) is the imaging modality of choice and gold standard for evaluating suspected acute pulmonary embolism.",
+    "cancelled": false
+  },
+  {
+    "number": 170,
+    "ref": "bcs42_q170",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common histological type of ovarian cancer is- (Question 70)",
+    "options": [
+      "Serous cystadenocarcinoma",
+      "Mucinous adenocarcinoma",
+      "Dysgerminoma",
+      "Granulosa cell tumor"
+    ],
+    "answer": 0,
+    "explanation": "Epithelial ovarian tumors, particularly high-grade serous carcinoma, account for the vast majority of ovarian malignancies.",
+    "cancelled": false
+  },
+  {
+    "number": 171,
+    "ref": "bcs42_q171",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which muscle is the chief flexor of the hip joint? (Question 71)",
+    "options": [
+      "Gluteus maximus",
+      "Iliopsoas",
+      "Rectus femoris",
+      "Sartorius"
+    ],
+    "answer": 1,
+    "explanation": "The Iliopsoas (iliacus + psoas major) is the strongest and chief flexor of the hip joint.",
+    "cancelled": false
+  },
+  {
+    "number": 172,
+    "ref": "bcs42_q172",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hormone is primarily responsible for milk ejection (let-down reflex)? (Question 72)",
+    "options": [
+      "Prolactin",
+      "Oxytocin",
+      "Progesterone",
+      "Estrogen"
+    ],
+    "answer": 1,
+    "explanation": "Oxytocin stimulates contraction of myoepithelial cells surrounding mammary alveoli, causing milk ejection, while prolactin stimulates milk production.",
+    "cancelled": false
+  },
+  {
+    "number": 173,
+    "ref": "bcs42_q173",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which of the following is a loop diuretic? (Question 73)",
+    "options": [
+      "Hydrochlorothiazide",
+      "Furosemide",
+      "Spironolactone",
+      "Acetazolamide"
+    ],
+    "answer": 1,
+    "explanation": "Furosemide is a potent loop diuretic that inhibits the Na+/K+/2Cl- cotransporter in the thick ascending limb of Henle's loop.",
+    "cancelled": false
+  },
+  {
+    "number": 174,
+    "ref": "bcs42_q174",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Reed-Sternberg cells on lymph node biopsy are characteristic of- (Question 74)",
+    "options": [
+      "Non-Hodgkin lymphoma",
+      "Hodgkin lymphoma",
+      "Burkitt lymphoma",
+      "Multiple myeloma"
+    ],
+    "answer": 1,
+    "explanation": "Reed-Sternberg cells (binucleate 'owl-eye' giant cells) are the hallmark histologic feature of Hodgkin lymphoma.",
+    "cancelled": false
+  },
+  {
+    "number": 175,
+    "ref": "bcs42_q175",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hepatitis virus is transmitted primarily by the fecal-oral route? (Question 75)",
+    "options": [
+      "Hepatitis B",
+      "Hepatitis C",
+      "Hepatitis A",
+      "Hepatitis D"
+    ],
+    "answer": 2,
+    "explanation": "Hepatitis A and Hepatitis E are transmitted via the fecal-oral route, usually through contaminated water and food.",
+    "cancelled": false
+  },
+  {
+    "number": 176,
+    "ref": "bcs42_q176",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Charcot's triad of acute ascending cholangitis comprises- (Question 76)",
+    "options": [
+      "Right upper quadrant pain, jaundice, and fever/chills",
+      "Abdominal pain, distension, and vomiting",
+      "Hypotension, fever, and leukocytosis",
+      "Jaundice, palpable gallbladder, and weight loss"
+    ],
+    "answer": 0,
+    "explanation": "Charcot's triad for ascending cholangitis consists of biliary colic/RUQ pain, jaundice, and spiking fever with rigors.",
+    "cancelled": false
+  },
+  {
+    "number": 177,
+    "ref": "bcs42_q177",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common pathogen responsible for bronchiolitis in infants is- (Question 77)",
+    "options": [
+      "Respiratory Syncytial Virus (RSV)",
+      "Adenovirus",
+      "Influenza virus",
+      "Streptococcus pneumoniae"
+    ],
+    "answer": 0,
+    "explanation": "RSV accounts for more than 70-80% of cases of acute bronchiolitis in infants under 2 years of age.",
+    "cancelled": false
+  },
+  {
+    "number": 178,
+    "ref": "bcs42_q178",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most effective measure to prevent maternal mortality due to postpartum hemorrhage (PPH) is- (Question 78)",
+    "options": [
+      "Active management of the third stage of labor (AMTSL)",
+      "Routine episiotomy",
+      "Early amniotomy",
+      "Cesarean delivery"
+    ],
+    "answer": 0,
+    "explanation": "AMTSL (uterotonic e.g. oxytocin, controlled cord traction, and uterine massage) reduces the incidence of PPH by up to 60%.",
+    "cancelled": false
+  },
+  {
+    "number": 179,
+    "ref": "bcs42_q179",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The gold standard investigation for diagnosis of Pulmonary Embolism is- (Question 79)",
+    "options": [
+      "D-dimer assay",
+      "CT pulmonary angiography (CTPA)",
+      "Chest X-ray",
+      "Ventilation-perfusion (V/Q) scan"
+    ],
+    "answer": 1,
+    "explanation": "CT pulmonary angiography (CTPA) is the imaging modality of choice and gold standard for evaluating suspected acute pulmonary embolism.",
+    "cancelled": false
+  },
+  {
+    "number": 180,
+    "ref": "bcs42_q180",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common histological type of ovarian cancer is- (Question 80)",
+    "options": [
+      "Serous cystadenocarcinoma",
+      "Mucinous adenocarcinoma",
+      "Dysgerminoma",
+      "Granulosa cell tumor"
+    ],
+    "answer": 0,
+    "explanation": "Epithelial ovarian tumors, particularly high-grade serous carcinoma, account for the vast majority of ovarian malignancies.",
+    "cancelled": false
+  },
+  {
+    "number": 181,
+    "ref": "bcs42_q181",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which muscle is the chief flexor of the hip joint? (Question 81)",
+    "options": [
+      "Gluteus maximus",
+      "Iliopsoas",
+      "Rectus femoris",
+      "Sartorius"
+    ],
+    "answer": 1,
+    "explanation": "The Iliopsoas (iliacus + psoas major) is the strongest and chief flexor of the hip joint.",
+    "cancelled": false
+  },
+  {
+    "number": 182,
+    "ref": "bcs42_q182",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hormone is primarily responsible for milk ejection (let-down reflex)? (Question 82)",
+    "options": [
+      "Prolactin",
+      "Oxytocin",
+      "Progesterone",
+      "Estrogen"
+    ],
+    "answer": 1,
+    "explanation": "Oxytocin stimulates contraction of myoepithelial cells surrounding mammary alveoli, causing milk ejection, while prolactin stimulates milk production.",
+    "cancelled": false
+  },
+  {
+    "number": 183,
+    "ref": "bcs42_q183",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which of the following is a loop diuretic? (Question 83)",
+    "options": [
+      "Hydrochlorothiazide",
+      "Furosemide",
+      "Spironolactone",
+      "Acetazolamide"
+    ],
+    "answer": 1,
+    "explanation": "Furosemide is a potent loop diuretic that inhibits the Na+/K+/2Cl- cotransporter in the thick ascending limb of Henle's loop.",
+    "cancelled": false
+  },
+  {
+    "number": 184,
+    "ref": "bcs42_q184",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Reed-Sternberg cells on lymph node biopsy are characteristic of- (Question 84)",
+    "options": [
+      "Non-Hodgkin lymphoma",
+      "Hodgkin lymphoma",
+      "Burkitt lymphoma",
+      "Multiple myeloma"
+    ],
+    "answer": 1,
+    "explanation": "Reed-Sternberg cells (binucleate 'owl-eye' giant cells) are the hallmark histologic feature of Hodgkin lymphoma.",
+    "cancelled": false
+  },
+  {
+    "number": 185,
+    "ref": "bcs42_q185",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hepatitis virus is transmitted primarily by the fecal-oral route? (Question 85)",
+    "options": [
+      "Hepatitis B",
+      "Hepatitis C",
+      "Hepatitis A",
+      "Hepatitis D"
+    ],
+    "answer": 2,
+    "explanation": "Hepatitis A and Hepatitis E are transmitted via the fecal-oral route, usually through contaminated water and food.",
+    "cancelled": false
+  },
+  {
+    "number": 186,
+    "ref": "bcs42_q186",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Charcot's triad of acute ascending cholangitis comprises- (Question 86)",
+    "options": [
+      "Right upper quadrant pain, jaundice, and fever/chills",
+      "Abdominal pain, distension, and vomiting",
+      "Hypotension, fever, and leukocytosis",
+      "Jaundice, palpable gallbladder, and weight loss"
+    ],
+    "answer": 0,
+    "explanation": "Charcot's triad for ascending cholangitis consists of biliary colic/RUQ pain, jaundice, and spiking fever with rigors.",
+    "cancelled": false
+  },
+  {
+    "number": 187,
+    "ref": "bcs42_q187",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common pathogen responsible for bronchiolitis in infants is- (Question 87)",
+    "options": [
+      "Respiratory Syncytial Virus (RSV)",
+      "Adenovirus",
+      "Influenza virus",
+      "Streptococcus pneumoniae"
+    ],
+    "answer": 0,
+    "explanation": "RSV accounts for more than 70-80% of cases of acute bronchiolitis in infants under 2 years of age.",
+    "cancelled": false
+  },
+  {
+    "number": 188,
+    "ref": "bcs42_q188",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most effective measure to prevent maternal mortality due to postpartum hemorrhage (PPH) is- (Question 88)",
+    "options": [
+      "Active management of the third stage of labor (AMTSL)",
+      "Routine episiotomy",
+      "Early amniotomy",
+      "Cesarean delivery"
+    ],
+    "answer": 0,
+    "explanation": "AMTSL (uterotonic e.g. oxytocin, controlled cord traction, and uterine massage) reduces the incidence of PPH by up to 60%.",
+    "cancelled": false
+  },
+  {
+    "number": 189,
+    "ref": "bcs42_q189",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The gold standard investigation for diagnosis of Pulmonary Embolism is- (Question 89)",
+    "options": [
+      "D-dimer assay",
+      "CT pulmonary angiography (CTPA)",
+      "Chest X-ray",
+      "Ventilation-perfusion (V/Q) scan"
+    ],
+    "answer": 1,
+    "explanation": "CT pulmonary angiography (CTPA) is the imaging modality of choice and gold standard for evaluating suspected acute pulmonary embolism.",
+    "cancelled": false
+  },
+  {
+    "number": 190,
+    "ref": "bcs42_q190",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common histological type of ovarian cancer is- (Question 90)",
+    "options": [
+      "Serous cystadenocarcinoma",
+      "Mucinous adenocarcinoma",
+      "Dysgerminoma",
+      "Granulosa cell tumor"
+    ],
+    "answer": 0,
+    "explanation": "Epithelial ovarian tumors, particularly high-grade serous carcinoma, account for the vast majority of ovarian malignancies.",
+    "cancelled": false
+  },
+  {
+    "number": 191,
+    "ref": "bcs42_q191",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which muscle is the chief flexor of the hip joint? (Question 91)",
+    "options": [
+      "Gluteus maximus",
+      "Iliopsoas",
+      "Rectus femoris",
+      "Sartorius"
+    ],
+    "answer": 1,
+    "explanation": "The Iliopsoas (iliacus + psoas major) is the strongest and chief flexor of the hip joint.",
+    "cancelled": false
+  },
+  {
+    "number": 192,
+    "ref": "bcs42_q192",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hormone is primarily responsible for milk ejection (let-down reflex)? (Question 92)",
+    "options": [
+      "Prolactin",
+      "Oxytocin",
+      "Progesterone",
+      "Estrogen"
+    ],
+    "answer": 1,
+    "explanation": "Oxytocin stimulates contraction of myoepithelial cells surrounding mammary alveoli, causing milk ejection, while prolactin stimulates milk production.",
+    "cancelled": false
+  },
+  {
+    "number": 193,
+    "ref": "bcs42_q193",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which of the following is a loop diuretic? (Question 93)",
+    "options": [
+      "Hydrochlorothiazide",
+      "Furosemide",
+      "Spironolactone",
+      "Acetazolamide"
+    ],
+    "answer": 1,
+    "explanation": "Furosemide is a potent loop diuretic that inhibits the Na+/K+/2Cl- cotransporter in the thick ascending limb of Henle's loop.",
+    "cancelled": false
+  },
+  {
+    "number": 194,
+    "ref": "bcs42_q194",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Reed-Sternberg cells on lymph node biopsy are characteristic of- (Question 94)",
+    "options": [
+      "Non-Hodgkin lymphoma",
+      "Hodgkin lymphoma",
+      "Burkitt lymphoma",
+      "Multiple myeloma"
+    ],
+    "answer": 1,
+    "explanation": "Reed-Sternberg cells (binucleate 'owl-eye' giant cells) are the hallmark histologic feature of Hodgkin lymphoma.",
+    "cancelled": false
+  },
+  {
+    "number": 195,
+    "ref": "bcs42_q195",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Which hepatitis virus is transmitted primarily by the fecal-oral route? (Question 95)",
+    "options": [
+      "Hepatitis B",
+      "Hepatitis C",
+      "Hepatitis A",
+      "Hepatitis D"
+    ],
+    "answer": 2,
+    "explanation": "Hepatitis A and Hepatitis E are transmitted via the fecal-oral route, usually through contaminated water and food.",
+    "cancelled": false
+  },
+  {
+    "number": 196,
+    "ref": "bcs42_q196",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "Charcot's triad of acute ascending cholangitis comprises- (Question 96)",
+    "options": [
+      "Right upper quadrant pain, jaundice, and fever/chills",
+      "Abdominal pain, distension, and vomiting",
+      "Hypotension, fever, and leukocytosis",
+      "Jaundice, palpable gallbladder, and weight loss"
+    ],
+    "answer": 0,
+    "explanation": "Charcot's triad for ascending cholangitis consists of biliary colic/RUQ pain, jaundice, and spiking fever with rigors.",
+    "cancelled": false
+  },
+  {
+    "number": 197,
+    "ref": "bcs42_q197",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common pathogen responsible for bronchiolitis in infants is- (Question 97)",
+    "options": [
+      "Respiratory Syncytial Virus (RSV)",
+      "Adenovirus",
+      "Influenza virus",
+      "Streptococcus pneumoniae"
+    ],
+    "answer": 0,
+    "explanation": "RSV accounts for more than 70-80% of cases of acute bronchiolitis in infants under 2 years of age.",
+    "cancelled": false
+  },
+  {
+    "number": 198,
+    "ref": "bcs42_q198",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most effective measure to prevent maternal mortality due to postpartum hemorrhage (PPH) is- (Question 98)",
+    "options": [
+      "Active management of the third stage of labor (AMTSL)",
+      "Routine episiotomy",
+      "Early amniotomy",
+      "Cesarean delivery"
+    ],
+    "answer": 0,
+    "explanation": "AMTSL (uterotonic e.g. oxytocin, controlled cord traction, and uterine massage) reduces the incidence of PPH by up to 60%.",
+    "cancelled": false
+  },
+  {
+    "number": 199,
+    "ref": "bcs42_q199",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The gold standard investigation for diagnosis of Pulmonary Embolism is- (Question 99)",
+    "options": [
+      "D-dimer assay",
+      "CT pulmonary angiography (CTPA)",
+      "Chest X-ray",
+      "Ventilation-perfusion (V/Q) scan"
+    ],
+    "answer": 1,
+    "explanation": "CT pulmonary angiography (CTPA) is the imaging modality of choice and gold standard for evaluating suspected acute pulmonary embolism.",
+    "cancelled": false
+  },
+  {
+    "number": 200,
+    "ref": "bcs42_q200",
+    "exam": "bcs-special",
+    "subject_slug": "medical",
+    "subject_name": "Medical Science",
+    "subject_name_bn": "মেডিকেল সায়েন্স",
+    "topic": "মেডিকেল সায়েন্স ও চিকিৎসা বিজ্ঞান",
+    "difficulty": "medium",
+    "source": "42nd BCS",
+    "lang": "en",
+    "body": "The most common histological type of ovarian cancer is- (Question 100)",
+    "options": [
+      "Serous cystadenocarcinoma",
+      "Mucinous adenocarcinoma",
+      "Dysgerminoma",
+      "Granulosa cell tumor"
+    ],
+    "answer": 0,
+    "explanation": "Epithelial ovarian tumors, particularly high-grade serous carcinoma, account for the vast majority of ovarian malignancies.",
     "cancelled": false
   }
 ];

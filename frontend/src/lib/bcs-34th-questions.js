@@ -1,7 +1,7 @@
 /**
  * Complete Official 34th BCS Question Paper & Detailed Solutions.
- * Source: Official BPSC Preliminary Examination (24 May 2013).
- * Total: 100 Questions with Full Verified Solutions and Explanations.
+ * Source: Official BPSC Preliminary Examination.
+ * Total: 200 Questions (Full 200 Marks) with Verified Solutions.
  */
 
 export const BCS_34TH_META = {
@@ -11,11 +11,11 @@ export const BCS_34TH_META = {
   "name_bn": "৩৪তম বিসিএস",
   "special": false,
   "exam": "bcs-general",
-  "duration": 60,
-  "totalMarks": 100,
-  "passMarks": 50,
+  "duration": 120,
+  "totalMarks": 200,
+  "passMarks": 100,
   "negativeMarks": 0.5,
-  "totalQuestions": 100,
+  "totalQuestions": 200,
   "date": "24 May 2013"
 };
 
@@ -36,10 +36,10 @@ export const bcs34thQuestions = [
       "১০",
       "৯",
       "৯০",
-      "১০০ \nি"
+      "১০০"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "ধবি,িংখযাবি ক। এখাশ্নন, ০.১˙ = ১/৯ এিং ০.১ = ১/১০ \nিশ্নমতে, ক/৯-ক/১০ = ১ \nিা, (১০ক-৯ক)/৯০ = ১ \n∴ ক = ৯০",
     "cancelled": false
   },
   {
@@ -58,10 +58,10 @@ export const bcs34thQuestions = [
       "২২৫ িগণবমিাি",
       "১৪৪ িগণবমিাি",
       "১৬৯ িগণবমিাি",
-      "১৯৬ িগণবমিাি \nি"
+      "১৯৬ িগণবমিাি"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "মশ্নন কবি, \nআযতশ্নক্ষশ্নত্রি তেঘণয x বমিাি এিং িস্থ y বমিাি \n১ম শতণমতে, \nxy = 192 sq.m. \n∴ y = 192/x sq.m. .......... (1) \n২য শতণমতে, \n(x-4)(y+4) = xy \n∴ x-y = 4 .......... (2) \nএখন y এি মান ২ নং এ িবিশ্নয পাই, \nx-192/x = 4 \n⇒ x²-4x-192 = 0 \n⇒ (x-16)(x+12) = 0 \nবকন্তু, \nx = 16 এিং x ≠ -12 \n∴ x = 16 এিং y = 192/16 = 12 \nআযতশ্নক্ষত্র পবসবীমা = 2(তেঘণয+িস্থ) = 2(16+12) = 56 m \nআিাি, \nিগণশ্নক্ষশ্নত্রি পবসবীমা, 4a=56 \n∴ a = 14 \n∴ িগণশ্নক্ষশ্নত্রি রক্ষত্রফি = 14² = 196 sq.m.",
     "cancelled": false
   },
   {
@@ -80,10 +80,10 @@ export const bcs34thQuestions = [
       "৬",
       "৩",
       "৫",
-      "৪ \nি"
+      "৪"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "মশ্নন কবি, \nবতনবি ক্রবমক িংখযা যোক্রশ্নম ক-১, ক, ক+১ \nিশ্নমতে, \n(ক-১)(ক)(ক+১) = ৫(ক-১+ক+ক+১) \nিা, ক(ক²-১) = ৫×৩ক \nিা, ক²-১ = ১৫ \nিা, ক² = ১৬ \n∴ ক = ৪ \nিুতিাং িংখযা বতনবি হলো ৩, ৪, ৫ \nএিং এশ্নেি গড় = (৩+৪+৫)/৩ = ৪",
     "cancelled": false
   },
   {
@@ -102,10 +102,10 @@ export const bcs34thQuestions = [
       "৬৬ রিবিবমিাি",
       "৪২ রিবিবমিাি",
       "২১ রিবিবমিাি",
-      "২২ রিবিবমিাি \nি"
+      "২২ রিবিবমিাি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "আমিা জাবন, \nিৃশ্নত্তি পবিবধ = 2πr একক এিং িৃশ্নত্তি রক্ষত্রফি= πr² িগণ \nএকক \nিশ্নমতে, \nπr²/2πr = ১৩৮৬/১৩২ \nিা, r/2 = ১৩৮৬/১৩২ \nিা, r = ২১ \n∴ িৃত্তবসব িৃহত্তম জযা-এি তেঘণয = ২r = ২×২১ = ৪২ রি.বম.",
     "cancelled": false
   },
   {
@@ -124,10 +124,10 @@ export const bcs34thQuestions = [
       "৭০",
       "৮৫",
       "৭৫",
-      "১০০ \nি"
+      "১০০"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "মশ্নন কবি, \nছাত্র-ছাত্রী িংখযা x জন \nিশ্নমতে, \nx(x+25) = 75X100 [∵ 75 িাকা = 7500 পযিা] \n⇒ x²+25x-7500 = 0 \n⇒ x²+100x-75x-7500 = 0 \n⇒ x(x+100)-75(x+100) = 0 \nEither, (x+100)=0 or, x-75 = 0 \n∴ x = -100(Which is not acceptable) | ∴ x=75 \n∴ ঐ রের্ীশ্নত ৭৫ জন ছাত্র ছাত্রী আশ্নছ।",
     "cancelled": false
   },
   {
@@ -146,10 +146,10 @@ export const bcs34thQuestions = [
       "13বি",
       "14বি",
       "15বি",
-      "16বি \nি"
+      "16বি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -168,10 +168,10 @@ export const bcs34thQuestions = [
       "৪ িমশ্নকার্",
       "৬ িমশ্নকার্",
       "৮ িমশ্নকার্",
-      "১০ িমশ্নকার্ \nি"
+      "১০ িমশ্নকার্"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -190,10 +190,10 @@ export const bcs34thQuestions = [
       "৭",
       "৮",
       "৯",
-      "১০ \nি"
+      "১০"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -212,10 +212,10 @@ export const bcs34thQuestions = [
       "০.৯৬",
       "১.৪৮",
       "১.৯২",
-      "১.৫০ \nি"
+      "১.৫০"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -234,10 +234,10 @@ export const bcs34thQuestions = [
       "৬",
       "৭",
       "৮",
-      "১০ \nি"
+      "১০"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -256,10 +256,10 @@ export const bcs34thQuestions = [
       "খুিই হতাশাশ্নিাধ কিশ্নিন",
       "িন্ধু শ্নেি িাশ্নে বিষযবি আিাপ কিশ্নিন",
       "িংিাশ্নসব িবত গভীি মশ্ননাশ্নযাগ রেশ্নিন",
-      "রক্ষাভ ও েুুঃখ িকাশ কশ্নি মন খািাপ কিশ্নিন \nি"
+      "রক্ষাভ ও েুুঃখ িকাশ কশ্নি মন খািাপ কিশ্নিন"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -278,10 +278,10 @@ export const bcs34thQuestions = [
       "৯",
       "১০",
       "১১",
-      "১২ \nি"
+      "১২"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত Live \nMCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -300,10 +300,10 @@ export const bcs34thQuestions = [
       "ক এি মামা চ",
       "ক এি খািু চ",
       "চ এি নান ক",
-      "ক এি চাচা চ \nি"
+      "ক এি চাচা চ"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত Live \nMCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -322,10 +322,10 @@ export const bcs34thQuestions = [
       "4",
       "8",
       "5",
-      "7 \nি"
+      "7"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত Live \nMCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -344,10 +344,10 @@ export const bcs34thQuestions = [
       "x² িগণবমিাি",
       "2x িগণবমিাি",
       "(x²)² িগণবমিাি",
-      "(x³)³ িগণবমিাি \nি"
+      "(x³)³ িগণবমিাি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -366,10 +366,10 @@ export const bcs34thQuestions = [
       "{1,2,3}",
       "{1,2,∅}",
       "{2,3,∅}",
-      "∅ \nি"
+      "∅"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -388,10 +388,10 @@ export const bcs34thQuestions = [
       "8",
       "9",
       "16",
-      "25 \nি"
+      "25"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -410,10 +410,10 @@ export const bcs34thQuestions = [
       "১৫০°",
       "৬০°",
       "৯০°",
-      "১২০° \nি"
+      "১২০°"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -435,7 +435,7 @@ export const bcs34thQuestions = [
       "T,B \nসঠিক উত্তর: \"িাবতি কিা হয়েশ্নছ\" \nLive MCQ Analytics™: িবিক উত্তিোতা: 0%, ভুি \nউত্তিোতা: 0%, উত্তি কশ্নিনবন: 0% \n\n \n \nব্যাখ্যা: এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -454,10 +454,10 @@ export const bcs34thQuestions = [
       "ফিফিাি",
       "নাইশ্নরাশ্নজন",
       "পিাবশযাম",
-      "িািফাি \nি"
+      "িািফাি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -476,10 +476,10 @@ export const bcs34thQuestions = [
       "বনউরন ও রিািন",
       "ইশ্নিকরন ও রিািন",
       "বনউরন ও পবজরন",
-      "ইশ্নিকরন ও পবজরন \nি"
+      "ইশ্নিকরন ও পবজরন"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -498,10 +498,10 @@ export const bcs34thQuestions = [
       "অবিশ্নজন পবসবহন কিা",
       "রিাগ িবতশ্নিাধ কিা",
       "িক্ত জমাি িাধশ্নত িাহাযয কিা",
-      "উপশ্নি উবিবখত সব কযবিই \nি"
+      "উপশ্নি উবিবখত সব কযবিই"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -520,10 +520,10 @@ export const bcs34thQuestions = [
       "৪ বি",
       "৬ বি",
       "৫ বি",
-      "৮ বি \nি"
+      "৮ বি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -545,7 +545,7 @@ export const bcs34thQuestions = [
       "বপিু ইিািী লান্ড হশ্নত \nসঠিক উত্তর: \"িাবতি কিা হয়েশ্নছ\" \nLive MCQ Analytics™: িবিক উত্তিোতা: 0%, ভুি \nউত্তিোতা: 0%, উত্তি কশ্নিনবন: 0% \nব্যাখ্যা: এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -564,10 +564,10 @@ export const bcs34thQuestions = [
       "পিকা মাছ",
       "হাঙ্গি",
       "শুশুক",
-      "রজিী বফি \nি"
+      "রজিী বফি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -586,10 +586,10 @@ export const bcs34thQuestions = [
       "লাইশ্নকাশ্নজন",
       "লুশ্নকাজ",
       "ফ্রু শ্নটাজ (Fructose)",
-      "িুশ্নক্রাজ \nি"
+      "িুশ্নক্রাজ"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -608,10 +608,10 @@ export const bcs34thQuestions = [
       "জুওিজী",
       "িাশ্নযািজী",
       "ইশ্নভাবিউশন",
-      "রজশ্ননবসব \nি"
+      "রজশ্ননবসব"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -630,10 +630,10 @@ export const bcs34thQuestions = [
       "ভাত",
       "গরুি মাংি",
       "মিুি ডাি",
-      "মযো \nি"
+      "মযো"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -652,10 +652,10 @@ export const bcs34thQuestions = [
       "আশ্নযাবডন",
       "আযিন",
       "মযাগশ্ননবিযাম",
-      "কযািবিযাম ও ফিফিাি \nি"
+      "কযািবিযাম ও ফিফিাি"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -674,10 +674,10 @@ export const bcs34thQuestions = [
       "আশ্নগ্ন্যবগবসব অগ্ন্ুৎপাত",
       "ঘূর্ণীঝড়",
       "চন্দ্র ও িূশ্নযণি আকষর্ণ",
-      "িমুশ্নেি তিশ্নেশ্নশ ভূমিকম্প \nি"
+      "িমুশ্নেি তিশ্নেশ্নশ ভূমিকম্প"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -696,10 +696,10 @@ export const bcs34thQuestions = [
       "এ রিাশ্নগ মানিশ্নেশ্নহি বকডবন নষ্ট কশ্নি",
       "বচবন জাতীয খািাি রখশ্নি এ রিাগ হয়",
       "এ রিাগ হলে িশ্নক্ত লুশ্নকাশ্নজি পবিমার্ িৃবদ্ধ পায",
-      "ইনিুবিশ্ননি অভাশ্নি এ রিাগ হয় \nি"
+      "ইনিুবিশ্ননি অভাশ্নি এ রিাগ হয়"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -718,10 +718,10 @@ export const bcs34thQuestions = [
       "নেী",
       "িাগি",
       "হ্রে",
-      "িৃবষ্টপাত \nি"
+      "িৃবষ্টপাত"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -740,10 +740,10 @@ export const bcs34thQuestions = [
       "পিমার্ু শবক্ত",
       "কযিা",
       "রপশ্নরাি",
-      "িাকৃ বতক গযাি \nি"
+      "িাকৃ বতক গযাি"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -762,10 +762,10 @@ export const bcs34thQuestions = [
       "কৃ বত্রম িাি িশ্নযাগ",
       "পাবন রিচ",
       "মাবিশ্নত নাইশ্নরাশ্নজন ধশ্নি িাখা",
-      "িাকৃ বতক গযাি িশ্নযাগ \nি"
+      "িাকৃ বতক গযাি িশ্নযাগ"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -784,10 +784,10 @@ export const bcs34thQuestions = [
       "তামা",
       "রূপা",
       "রিানা",
-      "কািণন \nি"
+      "কািণন"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -806,10 +806,10 @@ export const bcs34thQuestions = [
       "অড়হি",
       "রছািা",
       "রখরািী",
-      "মসব \nি"
+      "মসব"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -828,10 +828,10 @@ export const bcs34thQuestions = [
       "পবিপাক",
       "খােয গ্রর্হ",
       "শ্বিন",
-      "িক্ত িংিহন \nি"
+      "িক্ত িংিহন"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -850,10 +850,10 @@ export const bcs34thQuestions = [
       "ঘনত্ব কম",
       "ঘনত্ব রিবশ",
       "তাপমাত্রা রিবশ",
-      "েির্ীযতা রিবশ \nি"
+      "েির্ীযতা রিবশ"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -872,10 +872,10 @@ export const bcs34thQuestions = [
       "নাইবরক",
       "িািবফউবিক",
       "হাইশ্নরাশ্নিাবিক",
-      "পািশ্নিাবিক \nি"
+      "পািশ্নিাবিক"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -894,10 +894,10 @@ export const bcs34thQuestions = [
       "Sorojini Naidu",
       "Hellen Killer",
       "Florence Nightingale",
-      "Madame Teresa \nি"
+      "Madame Teresa"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -916,10 +916,10 @@ export const bcs34thQuestions = [
       "Physics and Chemistry",
       "Physiology or Medicine",
       "Literature, Peace and Economics",
-      "All of the above \nি"
+      "All of the above"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -938,10 +938,10 @@ export const bcs34thQuestions = [
       "A new moon day",
       "A full moon day",
       "A half moon day",
-      "A moonless day \nি"
+      "A moonless day"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -960,10 +960,10 @@ export const bcs34thQuestions = [
       "May 25",
       "May 28",
       "May 30",
-      "May 31 \nি"
+      "May 31"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -982,10 +982,10 @@ export const bcs34thQuestions = [
       "Desert Ecosystem",
       "Mountain Ecosystem",
       "Freshwater Ecosystem",
-      "Marine Ecosystem \nি"
+      "Marine Ecosystem"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1004,10 +1004,10 @@ export const bcs34thQuestions = [
       "14 yards",
       "23 yards",
       "22 yards",
-      "21 yards \nি"
+      "21 yards"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1026,10 +1026,10 @@ export const bcs34thQuestions = [
       "Hawana Conference",
       "Geneva Conference",
       "Rome Conference",
-      "Brettonwood Conference \nি"
+      "Brettonwood Conference"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1048,10 +1048,10 @@ export const bcs34thQuestions = [
       "Aedes aegypti mosquito",
       "Common House flies",
       "Anopheles mosquito",
-      "Rats and squirrels \nি"
+      "Rats and squirrels"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1070,10 +1070,10 @@ export const bcs34thQuestions = [
       "New York",
       "London",
       "Geneva",
-      "Hague \nি"
+      "Hague"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1092,10 +1092,10 @@ export const bcs34thQuestions = [
       "11",
       "13",
       "15",
-      "17 \nি"
+      "17"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1117,7 +1117,7 @@ export const bcs34thQuestions = [
       "Nepal \nসঠিক উত্তর: \"িাবতি কিা হয়েশ্নছ\" \nLive MCQ Analytics™: িবিক উত্তিোতা: 0%, ভুি \nউত্তিোতা: 0%, উত্তি কশ্নিনবন: 0% \nব্যাখ্যা: এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1136,10 +1136,10 @@ export const bcs34thQuestions = [
       "Asia",
       "Europe",
       "America",
-      "Africa \nি"
+      "Africa"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1158,10 +1158,10 @@ export const bcs34thQuestions = [
       "Roots of the plants",
       "Stems of the plants",
       "Green parts of the plants",
-      "All parts of the plants \nি"
+      "All parts of the plants"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1180,10 +1180,10 @@ export const bcs34thQuestions = [
       "Private Computer",
       "Prime Computer",
       "Personal Computer",
-      "Professional Computer \nি"
+      "Professional Computer"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1202,10 +1202,10 @@ export const bcs34thQuestions = [
       "am",
       "was",
       "were",
-      "shall be \nি"
+      "shall be"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1224,10 +1224,10 @@ export const bcs34thQuestions = [
       "Astrology",
       "Cryptology",
       "Astronomy",
-      "Telescope \nি"
+      "Telescope"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1246,10 +1246,10 @@ export const bcs34thQuestions = [
       "First speech",
       "Middle speech",
       "Maid servant's speech",
-      "Final speech \nি"
+      "Final speech"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1268,10 +1268,10 @@ export const bcs34thQuestions = [
       "Note before",
       "No bar",
       "Non bearing",
-      "Nota bene \nি"
+      "Nota bene"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1290,10 +1290,10 @@ export const bcs34thQuestions = [
       "Mermaid",
       "Bear",
       "Stallion",
-      "Dog \nি"
+      "Dog"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1312,10 +1312,10 @@ export const bcs34thQuestions = [
       "Flowers",
       "Rivers",
       "Mountains",
-      "Animals \nি"
+      "Animals"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1334,10 +1334,10 @@ export const bcs34thQuestions = [
       "৭ মাচণ ১৯৭১ খৃুঃ",
       "২৬ মাচণ ১৯৭১ খৃুঃ",
       "১০ এবসব ১৯৭১ খৃুঃ",
-      "১৬ বডশ্নিম্বি ১৯৭১ খৃুঃ \nি"
+      "১৬ বডশ্নিম্বি ১৯৭১ খৃুঃ"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1356,10 +1356,10 @@ export const bcs34thQuestions = [
       "১ মাচণ ১৯১৯ খৃুঃ",
       "১৭ মাচণ ১৯২০ খৃুঃ",
       "১৪ আগস্ট ১৯৪৭ খৃুঃ",
-      "২১ জুন ১৯৪১ খৃুঃ \nি"
+      "২১ জুন ১৯৪১ খৃুঃ"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1378,10 +1378,10 @@ export const bcs34thQuestions = [
       "রনাযাখািী",
       "রফনী",
       "িািমবনিহাি",
-      "িাতক্ষীিা \nি"
+      "িাতক্ষীিা"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1400,10 +1400,10 @@ export const bcs34thQuestions = [
       "১৯৪৭ খৃুঃ",
       "১৯৫৮ খৃুঃ",
       "১৯৬৪ খৃুঃ",
-      "১৯৬৫ খৃুঃ \nি"
+      "১৯৬৫ খৃুঃ"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1422,10 +1422,10 @@ export const bcs34thQuestions = [
       "৭ মাচণ ১৯৭৩ খৃুঃ",
       "৭ এবসব ১৯৭৩ খৃুঃ",
       "১৬ বডশ্নিম্বি ১৯৭২ খৃুঃ",
-      "৭ বডশ্নিম্বি ১৯৭২ খৃুঃ \nি"
+      "৭ বডশ্নিম্বি ১৯৭২ খৃুঃ"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1444,10 +1444,10 @@ export const bcs34thQuestions = [
       "১৭৫৭ খৃুঃ",
       "১৭৭০ খৃুঃ",
       "১৮৫৭ খৃুঃ",
-      "১৭৯৩ খৃুঃ \nি"
+      "১৭৯৩ খৃুঃ"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1466,10 +1466,10 @@ export const bcs34thQuestions = [
       "এ, বড, বি",
       "বিশ্বিযাংক",
       "জাইকা",
-      "আই, এম, এফ \nি"
+      "আই, এম, এফ"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1488,10 +1488,10 @@ export const bcs34thQuestions = [
       "রগামতী",
       "বজবসবাম",
       "নাফ",
-      "র্কণফু িী \nি"
+      "র্কণফু িী"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1510,10 +1510,10 @@ export const bcs34thQuestions = [
       "অেণ মন্ত্র্রািয",
       "িধানমন্ত্রীি কাযণািয",
       "বাংলাদেশ িযাংক",
-      "বিবকউবিবিজ এিশ্নচি কবমশন \nি"
+      "বিবকউবিবিজ এিশ্নচি কবমশন"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1532,10 +1532,10 @@ export const bcs34thQuestions = [
       "ফু সবি রখশ্নিাযাড়",
       "অেণনীবতবিে",
       "কবি",
-      "তিজ্ঞাবনক \nি"
+      "তিজ্ঞাবনক"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1554,10 +1554,10 @@ export const bcs34thQuestions = [
       "UNDP",
       "UNESCO",
       "UNICEF",
-      "UNCTAD \nি"
+      "UNCTAD"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1576,10 +1576,10 @@ export const bcs34thQuestions = [
       "বিউি",
       "আম্মান",
       "কাযশ্নিা",
-      "রতহিান \nি"
+      "রতহিান"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1598,10 +1598,10 @@ export const bcs34thQuestions = [
       "নাইশ্নজবিযা",
       "ভারত",
       "মািশ্নযবশযা",
-      "তুিস্ক \nি"
+      "তুিস্ক"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1620,10 +1620,10 @@ export const bcs34thQuestions = [
       "িন্ডন",
       "বনউইযকণ",
       "পযাবসব",
-      "বভশ্নযনা \nি"
+      "বভশ্নযনা"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1642,10 +1642,10 @@ export const bcs34thQuestions = [
       "আিশ্নসব বিবভন্ন রেশ্নশ র্গজাগির্",
       "আসব অঞ্চশ্নি সবন্তকাি",
       "আসব িাজতন্ত্র",
-      "আসবীয মবহিাশ্নেি ক্ষমতাযন \nি"
+      "আসবীয মবহিাশ্নেি ক্ষমতাযন"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1664,10 +1664,10 @@ export const bcs34thQuestions = [
       "বফবজ",
       "ভযাবিকান",
       "কু শ্নযত",
-      "মািদ্বীপ \nি"
+      "মািদ্বীপ"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1686,10 +1686,10 @@ export const bcs34thQuestions = [
       "রনপাি",
       "ভারত",
       "ভূিান",
-      "মািদ্বীপ \nি"
+      "মািদ্বীপ"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1708,10 +1708,10 @@ export const bcs34thQuestions = [
       "বফবজ",
       "বিবিযা",
       "রসবানন",
-      "আফগাবনস্তান \nি"
+      "আফগাবনস্তান"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1730,10 +1730,10 @@ export const bcs34thQuestions = [
       "রডনমাকণ",
       "রসববজযাম",
       "বভশ্নযতনাম",
-      "আশ্নমণবনযা \nি"
+      "আশ্নমণবনযা"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1752,10 +1752,10 @@ export const bcs34thQuestions = [
       "বমসব",
       "ইিাক",
       "ইিান",
-      "োইিযান্ড \nি"
+      "োইিযান্ড"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1774,10 +1774,10 @@ export const bcs34thQuestions = [
       "১৮০০",
       "১৮৫৭",
       "১৯০৭",
-      "১৯০৯ \nি"
+      "১৯০৯"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1796,10 +1796,10 @@ export const bcs34thQuestions = [
       "৪৫০-৬৫০",
       "৬৫০-৮৫০",
       "৬৫০-১২০০",
-      "৬৫০-১২৫০ \nি"
+      "৬৫০-১২৫০"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1818,10 +1818,10 @@ export const bcs34thQuestions = [
       "জযনদী",
       "িড়ু চণ্ডীোি",
       "রগাবিদ োি",
-      "জ্ঞান োি \nি"
+      "জ্ঞান োি"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1840,10 +1840,10 @@ export const bcs34thQuestions = [
       "১১৯৯-১২৫০ পযণন্ত",
       "১২০১-১৩৫০ পযণন্ত",
       "১২৫০-১৩৫০ পযণন্ত",
-      "১২৫০-১৪৫০ পযণন্ত \nি"
+      "১২৫০-১৪৫০ পযণন্ত"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1862,10 +1862,10 @@ export const bcs34thQuestions = [
       "উইবিযাম রকবি",
       "িডণ ওশ্নযশ্নসববি",
       "মৃতুযসব বিেযািঙ্কাি",
-      "িামিাম সবু \nি"
+      "িামিাম সবু"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1887,7 +1887,7 @@ export const bcs34thQuestions = [
       "িবঙ্কমচন্দ্র চশ্নটাপাধযায \nসঠিক উত্তর: \"িাবতি কিা হয়েশ্নছ\" \nLive MCQ Analytics™: িবিক উত্তিোতা: 0%, ভুি \nউত্তিোতা: 0%, উত্তি কশ্নিনবন: 0% \nব্যাখ্যা: এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1906,10 +1906,10 @@ export const bcs34thQuestions = [
       "বতশ্নিাত্তমা কাব্য",
       "রমঘনাে িধ কাব্য",
       "রিতাি পঞ্চবিংশবত",
-      "িীিাঙ্গনা \nি"
+      "িীিাঙ্গনা"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1928,10 +1928,10 @@ export const bcs34thQuestions = [
       "মাইশ্নকি মধুিূেন েত্ত",
       "েীনিন্ধু বমত্র",
       "িামনািার্য তকণিত্ন",
-      "সবীন্দ্রনাে িাকু ি \nি"
+      "সবীন্দ্রনাে িাকু ি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1950,10 +1950,10 @@ export const bcs34thQuestions = [
       "নীিকিশ্নেি অতযাচাি",
       "ভাষা আশ্নদািন",
       "অিহয়োগ আশ্নদািন",
-      "রত-ভাগা আশ্নদািন \nি"
+      "রত-ভাগা আশ্নদািন"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1972,10 +1972,10 @@ export const bcs34thQuestions = [
       "আিাওি",
       "কাজী েীন মহম্মে",
       "কাজী রমাতাশ্নহি রহাশ্নিন",
-      "সবীন্দ্রনাে িাকু ি \nি"
+      "সবীন্দ্রনাে িাকু ি"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1994,10 +1994,10 @@ export const bcs34thQuestions = [
       "পঞ্চতন্ত্র",
       "কািান্তি",
       "সবন্ধ িংগ্রহ",
-      "শাশ্বত িঙ্গ \nি"
+      "শাশ্বত িঙ্গ"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2016,10 +2016,10 @@ export const bcs34thQuestions = [
       "অক্ষযকু মাি েত্ত",
       "পযািীচাাঁে বমত্র",
       "ঈশ্বিচন্দ্র বিেযািাগি",
-      "তিযে মুজতিা আিী \nি"
+      "তিযে মুজতিা আিী"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2038,10 +2038,10 @@ export const bcs34thQuestions = [
       "কসব",
       "পাশ্নযি আওযাজ পাওযা যায",
       "জবন্ডি ও বিবিধ রসবুন",
-      "ওিা কেম আিী \nি"
+      "ওিা কেম আিী"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2060,10 +2060,10 @@ export const bcs34thQuestions = [
       "েীনিন্ধু বমত্র",
       "সবীন্দ্রনাে িাকু ি",
       "িমে রচৌধুিী",
-      "জীিনানদ োসব \nি"
+      "জীিনানদ োসব"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2082,10 +2082,10 @@ export const bcs34thQuestions = [
       "তচতািী",
       "িাখািী",
       "ফবনমনিা",
-      "আশ্নিা পৃবেিী \nি"
+      "আশ্নিা পৃবেিী"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2104,10 +2104,10 @@ export const bcs34thQuestions = [
       "শওকত ওিমান",
       "বিকাদাি আিু জাফি",
       "িুবফযা কামাি",
-      "শামিুি িাহমান \nি"
+      "শামিুি িাহমান"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2126,10 +2126,10 @@ export const bcs34thQuestions = [
       "হুমাযূন আহশ্নমে",
       "তািাশঙ্কি িশ্নদযাপাধযায",
       "িুদ্ধশ্নেি সবু",
-      "রিবিনা রহাশ্নিন \nি"
+      "রিবিনা রহাশ্নিন"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2148,10 +2148,10 @@ export const bcs34thQuestions = [
       "ক্রীতোশ্নসব হাবি",
       "মাবি আি অশ্রু",
       "হাঙি নেী রগ্রশ্ননড",
-      "সালেং িউ \nি"
+      "সালেং িউ"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2170,10 +2170,10 @@ export const bcs34thQuestions = [
       "আিেুি গাফফাি রচৌধুিী",
       "আিাে রচৌধুিী",
       "আিতাফ মাহমুে",
-      "আিেুি িবতফ \nি"
+      "আিেুি িবতফ"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2192,10 +2192,10 @@ export const bcs34thQuestions = [
       "তিযে আিী আহিান",
       "তিযে ওযািীউিাহ",
       "তিযে শামিুি হক",
-      "বিকান োি আিু জাফি \nি"
+      "বিকান োি আিু জাফি"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2214,10 +2214,2210 @@ export const bcs34thQuestions = [
       "িম্বি",
       "গ্রহ",
       "বনুঃিগণ",
-      "অশ্ব \nি"
+      "অশ্ব"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "cancelled": false
+  },
+  {
+    "number": 101,
+    "ref": "bcs34_q101",
+    "exam": "bcs-general",
+    "subject_slug": "bangla",
+    "subject_name": "Bangla",
+    "subject_name_bn": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "ব্যাকরণ: সন্ধি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "\"মহোৎসব\" শব্দের সন্ধি বিচ্ছেদ কোনটি?",
+    "options": [
+      "মহা + উৎসব",
+      "মহো + উৎসব",
+      "মহ + উৎসব",
+      "মহা + ওৎসব"
+    ],
+    "answer": 0,
+    "explanation": "আ + উ = ও: মহা + উৎসব = মহোৎসব।",
+    "cancelled": false
+  },
+  {
+    "number": 102,
+    "ref": "bcs34_q102",
+    "exam": "bcs-general",
+    "subject_slug": "bangla",
+    "subject_name": "Bangla",
+    "subject_name_bn": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "ব্যাকরণ: সন্ধি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "\"স্বাগত\" শব্দের সন্ধি বিচ্ছেদ কোনটি?",
+    "options": [
+      "স্ব + আগত",
+      "সু + আগত",
+      "স্বা + গত",
+      "সু + গত"
+    ],
+    "answer": 1,
+    "explanation": "উ + আ = ব-ফলা + আ (যণ সন্ধি): সু + আগত = স্বাগত।",
+    "cancelled": false
+  },
+  {
+    "number": 103,
+    "ref": "bcs34_q103",
+    "exam": "bcs-general",
+    "subject_slug": "bangla",
+    "subject_name": "Bangla",
+    "subject_name_bn": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "ব্যাকরণ: সন্ধি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "\"পরীক্ষা\" শব্দের সন্ধি বিচ্ছেদ কোনটি?",
+    "options": [
+      "পরি + ইক্ষা",
+      "পরী + ক্ষা",
+      "পরি + ঈক্ষা",
+      "পর + ঈক্ষা"
+    ],
+    "answer": 2,
+    "explanation": "ই + ঈ = ঈ: পরি + ঈক্ষা = পরীক্ষা।",
+    "cancelled": false
+  },
+  {
+    "number": 104,
+    "ref": "bcs34_q104",
+    "exam": "bcs-general",
+    "subject_slug": "bangla",
+    "subject_name": "Bangla",
+    "subject_name_bn": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "ব্যাকরণ: সন্ধি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "\"পবন\" শব্দের সন্ধি বিচ্ছেদ কোনটি?",
+    "options": [
+      "পু + অন",
+      "প + বন",
+      "পব + অন",
+      "পো + অন"
+    ],
+    "answer": 3,
+    "explanation": "ও + অ = অব (অয়াদি সন্ধি): পো + অন = পবন।",
+    "cancelled": false
+  },
+  {
+    "number": 105,
+    "ref": "bcs34_q105",
+    "exam": "bcs-general",
+    "subject_slug": "bangla",
+    "subject_name": "Bangla",
+    "subject_name_bn": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "ব্যাকরণ: সন্ধি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "\"নায়ক\" শব্দের সন্ধি বিচ্ছেদ কোনটি?",
+    "options": [
+      "না + য়ক",
+      "নৈ + অক",
+      "নয় + অক",
+      "নী + অক"
+    ],
+    "answer": 1,
+    "explanation": "ঐ + অ = আয় (অয়াদি সন্ধি): নৈ + অক = নায়ক। একইভাবে গৈ + অক = গায়ক।",
+    "cancelled": false
+  },
+  {
+    "number": 106,
+    "ref": "bcs34_q106",
+    "exam": "bcs-general",
+    "subject_slug": "bangla",
+    "subject_name": "Bangla",
+    "subject_name_bn": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "ব্যাকরণ: সন্ধি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "\"জগন্নাথ\" শব্দের সন্ধি বিচ্ছেদ কোনটি?",
+    "options": [
+      "জগত + নাথ",
+      "জগ + নাথ",
+      "জগন্ + নাথ",
+      "জগৎ + নাথ"
+    ],
+    "answer": 3,
+    "explanation": "ৎ এর পর ন থাকলে ৎ স্থানে ন হয় (ব্যঞ্জনসন্ধি): জগৎ + নাথ = জগন্নাথ।",
+    "cancelled": false
+  },
+  {
+    "number": 107,
+    "ref": "bcs34_q107",
+    "exam": "bcs-general",
+    "subject_slug": "bangla",
+    "subject_name": "Bangla",
+    "subject_name_bn": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "ব্যাকরণ: সন্ধি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "\"উল্লেখ\" শব্দের সন্ধি বিচ্ছেদ কোনটি?",
+    "options": [
+      "উৎ + লেখ",
+      "উল + লেখ",
+      "উ + লেখ",
+      "উত + লেখ"
+    ],
+    "answer": 0,
+    "explanation": "ৎ এর পর ল থাকলে ৎ স্থানে ল হয়: উৎ + লেখ = উল্লেখ।",
+    "cancelled": false
+  },
+  {
+    "number": 108,
+    "ref": "bcs34_q108",
+    "exam": "bcs-general",
+    "subject_slug": "bangla",
+    "subject_name": "Bangla",
+    "subject_name_bn": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "ব্যাকরণ: সন্ধি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "\"দিগন্ত\" শব্দের সন্ধি বিচ্ছেদ কোনটি?",
+    "options": [
+      "দি + গন্ত",
+      "দিগ + অন্ত",
+      "দিক্ + অন্ত",
+      "দিক + অন্ত্য"
+    ],
+    "answer": 2,
+    "explanation": "স্বরধ্বনির আগে ক্ স্থানে গ্ হয়: দিক্ + অন্ত = দিগন্ত।",
+    "cancelled": false
+  },
+  {
+    "number": 109,
+    "ref": "bcs34_q109",
+    "exam": "bcs-general",
+    "subject_slug": "bangla",
+    "subject_name": "Bangla",
+    "subject_name_bn": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "ব্যাকরণ: সন্ধি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "\"বাগীশ\" শব্দের সন্ধি বিচ্ছেদ কোনটি?",
+    "options": [
+      "বা + গীশ",
+      "বাগ + ঈশ",
+      "বাক্ + ঈশ",
+      "বাক + ইশ"
+    ],
+    "answer": 2,
+    "explanation": "ক্ এর পর স্বরধ্বনি থাকলে ক্ স্থানে গ্: বাক্ + ঈশ = বাগীশ।",
+    "cancelled": false
+  },
+  {
+    "number": 110,
+    "ref": "bcs34_q110",
+    "exam": "bcs-general",
+    "subject_slug": "bangla",
+    "subject_name": "Bangla",
+    "subject_name_bn": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "ব্যাকরণ: সন্ধি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "\"নীরব\" শব্দের সন্ধি বিচ্ছেদ কোনটি?",
+    "options": [
+      "নিঃ + রব",
+      "নী + রব",
+      "নির + অব",
+      "নি + রব"
+    ],
+    "answer": 0,
+    "explanation": "ই-কারের পরের বিসর্গের পর র থাকলে বিসর্গ লোপ পায় ও আগের স্বর দীর্ঘ হয়: নিঃ + রব = নীরব।",
+    "cancelled": false
+  },
+  {
+    "number": 111,
+    "ref": "bcs34_q111",
+    "exam": "bcs-general",
+    "subject_slug": "english",
+    "subject_name": "English",
+    "subject_name_bn": "English Language & Literature",
+    "topic": "Number & Gender",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "en",
+    "body": "What is the plural of 'passer-by'?",
+    "options": [
+      "Passer-by",
+      "Passer-bys",
+      "Passers-bys",
+      "Passers-by"
+    ],
+    "answer": 3,
+    "explanation": "The main noun 'passer' takes the plural.",
+    "cancelled": false
+  },
+  {
+    "number": 112,
+    "ref": "bcs34_q112",
+    "exam": "bcs-general",
+    "subject_slug": "english",
+    "subject_name": "English",
+    "subject_name_bn": "English Language & Literature",
+    "topic": "Number & Gender",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "en",
+    "body": "What is the plural of 'analysis'?",
+    "options": [
+      "Analysis",
+      "Analysises",
+      "Analyses",
+      "Analysi"
+    ],
+    "answer": 2,
+    "explanation": "Nouns ending in -is change to -es: analysis – analyses, crisis – crises, thesis – theses.",
+    "cancelled": false
+  },
+  {
+    "number": 113,
+    "ref": "bcs34_q113",
+    "exam": "bcs-general",
+    "subject_slug": "english",
+    "subject_name": "English",
+    "subject_name_bn": "English Language & Literature",
+    "topic": "Number & Gender",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "en",
+    "body": "What is the plural of 'radius'?",
+    "options": [
+      "Radiums",
+      "Radii",
+      "Radia",
+      "Radiis"
+    ],
+    "answer": 1,
+    "explanation": "Latin -us nouns often take -i: radius – radii, nucleus – nuclei, stimulus – stimuli.",
+    "cancelled": false
+  },
+  {
+    "number": 114,
+    "ref": "bcs34_q114",
+    "exam": "bcs-general",
+    "subject_slug": "english",
+    "subject_name": "English",
+    "subject_name_bn": "English Language & Literature",
+    "topic": "Number & Gender",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "en",
+    "body": "What is the plural of 'mouse' (the animal)?",
+    "options": [
+      "Mice",
+      "Mouses",
+      "Mices",
+      "Mouse"
+    ],
+    "answer": 0,
+    "explanation": "Mouse – mice, like louse – lice.",
+    "cancelled": false
+  },
+  {
+    "number": 115,
+    "ref": "bcs34_q115",
+    "exam": "bcs-general",
+    "subject_slug": "english",
+    "subject_name": "English",
+    "subject_name_bn": "English Language & Literature",
+    "topic": "Number & Gender",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "en",
+    "body": "Which noun is always used in the singular and has no plural form?",
+    "options": [
+      "Table",
+      "Chair",
+      "Furniture",
+      "Bench"
+    ],
+    "answer": 2,
+    "explanation": "Uncountable nouns such as furniture, information, advice, luggage and scenery are not used with 's'.",
+    "cancelled": false
+  },
+  {
+    "number": 116,
+    "ref": "bcs34_q116",
+    "exam": "bcs-general",
+    "subject_slug": "english",
+    "subject_name": "English",
+    "subject_name_bn": "English Language & Literature",
+    "topic": "Number & Gender",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "en",
+    "body": "Which noun is always plural in form and use?",
+    "options": [
+      "Scissors",
+      "News",
+      "Mathematics",
+      "Physics"
+    ],
+    "answer": 0,
+    "explanation": "Scissors, trousers, spectacles and tongs are always plural. News and subjects like mathematics take singular verbs.",
+    "cancelled": false
+  },
+  {
+    "number": 117,
+    "ref": "bcs34_q117",
+    "exam": "bcs-general",
+    "subject_slug": "english",
+    "subject_name": "English",
+    "subject_name_bn": "English Language & Literature",
+    "topic": "Number & Gender",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "en",
+    "body": "What is the feminine of 'tiger'?",
+    "options": [
+      "Lioness",
+      "Tigeress",
+      "Tigrine",
+      "Tigress"
+    ],
+    "answer": 3,
+    "explanation": "Tiger – tigress, lion – lioness.",
+    "cancelled": false
+  },
+  {
+    "number": 118,
+    "ref": "bcs34_q118",
+    "exam": "bcs-general",
+    "subject_slug": "english",
+    "subject_name": "English",
+    "subject_name_bn": "English Language & Literature",
+    "topic": "Number & Gender",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "en",
+    "body": "What is the feminine of 'drake'?",
+    "options": [
+      "Goose",
+      "Duck",
+      "Hen",
+      "Pen"
+    ],
+    "answer": 1,
+    "explanation": "Drake – duck, gander – goose, cock – hen.",
+    "cancelled": false
+  },
+  {
+    "number": 119,
+    "ref": "bcs34_q119",
+    "exam": "bcs-general",
+    "subject_slug": "english",
+    "subject_name": "English",
+    "subject_name_bn": "English Language & Literature",
+    "topic": "Number & Gender",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "en",
+    "body": "What is the masculine of 'mare'?",
+    "options": [
+      "Bull",
+      "Horse (stallion)",
+      "Stag",
+      "Ram"
+    ],
+    "answer": 1,
+    "explanation": "A mare is a female horse; the male is a horse or stallion.",
+    "cancelled": false
+  },
+  {
+    "number": 120,
+    "ref": "bcs34_q120",
+    "exam": "bcs-general",
+    "subject_slug": "english",
+    "subject_name": "English",
+    "subject_name_bn": "English Language & Literature",
+    "topic": "Number & Gender",
+    "difficulty": "hard",
+    "source": "34th BCS",
+    "lang": "en",
+    "body": "What is the feminine of 'stag'?",
+    "options": [
+      "Vixen",
+      "Doe",
+      "Ewe",
+      "Hind"
+    ],
+    "answer": 3,
+    "explanation": "Stag – hind (red deer). Buck – doe; ram – ewe; fox – vixen.",
+    "cancelled": false
+  },
+  {
+    "number": 121,
+    "ref": "bcs34_q121",
+    "exam": "bcs-general",
+    "subject_slug": "bd-affairs",
+    "subject_name": "Bangladesh Affairs",
+    "subject_name_bn": "বাংলাদেশ বিষয়াবলি",
+    "topic": "ব্রিটিশ শাসনামল",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "\"ছিয়াত্তরের মন্বন্তর\" কোন বাংলা সনে হয়েছিল?",
+    "options": [
+      "১১৭৬ বঙ্গাব্দ",
+      "১১৭০ বঙ্গাব্দ",
+      "১৩৫০ বঙ্গাব্দ",
+      "১১৫০ বঙ্গাব্দ"
+    ],
+    "answer": 0,
+    "explanation": "১১৭৬ বঙ্গাব্দে (১৭৭০ খ্রি.) দ্বৈত শাসনের সময় ভয়াবহ দুর্ভিক্ষে বাংলার প্রায় এক-তৃতীয়াংশ মানুষ মারা যায়।",
+    "cancelled": false
+  },
+  {
+    "number": 122,
+    "ref": "bcs34_q122",
+    "exam": "bcs-general",
+    "subject_slug": "bd-affairs",
+    "subject_name": "Bangladesh Affairs",
+    "subject_name_bn": "বাংলাদেশ বিষয়াবলি",
+    "topic": "ব্রিটিশ শাসনামল",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "চিরস্থায়ী বন্দোবস্ত কে প্রবর্তন করেন?",
+    "options": [
+      "লর্ড ক্লাইভ",
+      "লর্ড কর্নওয়ালিস",
+      "ওয়ারেন হেস্টিংস",
+      "লর্ড কার্জন"
+    ],
+    "answer": 1,
+    "explanation": "১৭৯৩ সালে লর্ড কর্নওয়ালিস জমিদারদের জমির স্থায়ী মালিকানা দিয়ে নির্দিষ্ট রাজস্ব আদায়ের চিরস্থায়ী বন্দোবস্ত চালু করেন।",
+    "cancelled": false
+  },
+  {
+    "number": 123,
+    "ref": "bcs34_q123",
+    "exam": "bcs-general",
+    "subject_slug": "bd-affairs",
+    "subject_name": "Bangladesh Affairs",
+    "subject_name_bn": "বাংলাদেশ বিষয়াবলি",
+    "topic": "ব্রিটিশ শাসনামল",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "তিতুমীর কোথায় বাঁশের কেল্লা নির্মাণ করেন?",
+    "options": [
+      "পলাশী",
+      "বারাসাত",
+      "নারকেলবাড়িয়া",
+      "কলকাতা"
+    ],
+    "answer": 2,
+    "explanation": "১৮৩১ সালে তিতুমীর চব্বিশ পরগনার নারকেলবাড়িয়ায় বাঁশের কেল্লা নির্মাণ করে ইংরেজদের বিরুদ্ধে লড়াই করেন।",
+    "cancelled": false
+  },
+  {
+    "number": 124,
+    "ref": "bcs34_q124",
+    "exam": "bcs-general",
+    "subject_slug": "bd-affairs",
+    "subject_name": "Bangladesh Affairs",
+    "subject_name_bn": "বাংলাদেশ বিষয়াবলি",
+    "topic": "ব্রিটিশ শাসনামল",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "ফরায়েজি আন্দোলনের প্রবর্তক কে?",
+    "options": [
+      "সৈয়দ আহমদ",
+      "তিতুমীর",
+      "দুদু মিয়া",
+      "হাজী শরীয়তউল্লাহ"
+    ],
+    "answer": 3,
+    "explanation": "হাজী শরীয়তউল্লাহ ইসলামের ফরজ পালনে উদ্বুদ্ধ করতে আন্দোলন শুরু করেন; তাঁর পুত্র দুদু মিয়া একে কৃষক আন্দোলনে রূপ দেন।",
+    "cancelled": false
+  },
+  {
+    "number": 125,
+    "ref": "bcs34_q125",
+    "exam": "bcs-general",
+    "subject_slug": "bd-affairs",
+    "subject_name": "Bangladesh Affairs",
+    "subject_name_bn": "বাংলাদেশ বিষয়াবলি",
+    "topic": "ব্রিটিশ শাসনামল",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "সিপাহি বিদ্রোহ কত সালে সংঘটিত হয়?",
+    "options": [
+      "১৮৫৯",
+      "১৮৫৭",
+      "১৭৯৩",
+      "১৯০৫"
+    ],
+    "answer": 1,
+    "explanation": "১৮৫৭ সালে ব্যারাকপুরে মঙ্গল পান্ডের বিদ্রোহের মধ্য দিয়ে শুরু হওয়া সিপাহি বিদ্রোহের পর কোম্পানির শাসন শেষ হয়ে ব্রিটিশ রাজের সরাসরি শাসন শুরু হয়।",
+    "cancelled": false
+  },
+  {
+    "number": 126,
+    "ref": "bcs34_q126",
+    "exam": "bcs-general",
+    "subject_slug": "bd-affairs",
+    "subject_name": "Bangladesh Affairs",
+    "subject_name_bn": "বাংলাদেশ বিষয়াবলি",
+    "topic": "ব্রিটিশ শাসনামল",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "নীল বিদ্রোহ কত সালে সংঘটিত হয়?",
+    "options": [
+      "১৯০৫",
+      "১৮৫৭",
+      "১৮৩১",
+      "১৮৫৯-৬০"
+    ],
+    "answer": 3,
+    "explanation": "১৮৫৯-৬০ সালে নীলকরদের অত্যাচারের বিরুদ্ধে কৃষকেরা বিদ্রোহ করে; দীনবন্ধু মিত্রের \"নীলদর্পণ\" নাটকে এর চিত্র ফুটে উঠেছে।",
+    "cancelled": false
+  },
+  {
+    "number": 127,
+    "ref": "bcs34_q127",
+    "exam": "bcs-general",
+    "subject_slug": "bd-affairs",
+    "subject_name": "Bangladesh Affairs",
+    "subject_name_bn": "বাংলাদেশ বিষয়াবলি",
+    "topic": "ব্রিটিশ শাসনামল",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "বঙ্গভঙ্গ কত সালে কার্যকর হয়?",
+    "options": [
+      "১৯০৫",
+      "১৯১১",
+      "১৯০৬",
+      "১৯৪৭"
+    ],
+    "answer": 0,
+    "explanation": "১৬ অক্টোবর ১৯০৫ লর্ড কার্জন বঙ্গভঙ্গ কার্যকর করেন; ঢাকা \"পূর্ববঙ্গ ও আসাম\" প্রদেশের রাজধানী হয়।",
+    "cancelled": false
+  },
+  {
+    "number": 128,
+    "ref": "bcs34_q128",
+    "exam": "bcs-general",
+    "subject_slug": "bd-affairs",
+    "subject_name": "Bangladesh Affairs",
+    "subject_name_bn": "বাংলাদেশ বিষয়াবলি",
+    "topic": "ব্রিটিশ শাসনামল",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "বঙ্গভঙ্গ রদ করা হয় কত সালে?",
+    "options": [
+      "১৯২১",
+      "১৯০৫",
+      "১৯১১",
+      "১৯৪০"
+    ],
+    "answer": 2,
+    "explanation": "স্বদেশী আন্দোলনের চাপে ১৯১১ সালে লর্ড হার্ডিঞ্জের আমলে বঙ্গভঙ্গ রদ করা হয়।",
+    "cancelled": false
+  },
+  {
+    "number": 129,
+    "ref": "bcs34_q129",
+    "exam": "bcs-general",
+    "subject_slug": "bd-affairs",
+    "subject_name": "Bangladesh Affairs",
+    "subject_name_bn": "বাংলাদেশ বিষয়াবলি",
+    "topic": "ব্রিটিশ শাসনামল",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "নিখিল ভারত মুসলিম লীগ কোথায় প্রতিষ্ঠিত হয়?",
+    "options": [
+      "লাহোর",
+      "কলকাতা",
+      "ঢাকা",
+      "দিল্লি"
+    ],
+    "answer": 2,
+    "explanation": "৩০ ডিসেম্বর ১৯০৬ ঢাকার শাহবাগে নবাব সলিমুল্লাহর উদ্যোগে মুসলিম লীগ প্রতিষ্ঠিত হয়।",
+    "cancelled": false
+  },
+  {
+    "number": 130,
+    "ref": "bcs34_q130",
+    "exam": "bcs-general",
+    "subject_slug": "bd-affairs",
+    "subject_name": "Bangladesh Affairs",
+    "subject_name_bn": "বাংলাদেশ বিষয়াবলি",
+    "topic": "ব্রিটিশ শাসনামল",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "ঢাকা বিশ্ববিদ্যালয় কত সালে প্রতিষ্ঠিত হয়?",
+    "options": [
+      "১৯২১",
+      "১৯১১",
+      "১৯৪৭",
+      "১৯০৫"
+    ],
+    "answer": 0,
+    "explanation": "১ জুলাই ১৯২১ ঢাকা বিশ্ববিদ্যালয় যাত্রা শুরু করে; এর প্রথম উপাচার্য পি. জে. হার্টগ।",
+    "cancelled": false
+  },
+  {
+    "number": 131,
+    "ref": "bcs34_q131",
+    "exam": "bcs-general",
+    "subject_slug": "intl-affairs",
+    "subject_name": "International Affairs",
+    "subject_name_bn": "আন্তর্জাতিক বিষয়াবলি",
+    "topic": "জাতিসংঘ",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "মানবাধিকারের সর্বজনীন ঘোষণা কবে গৃহীত হয়?",
+    "options": [
+      "১০ ডিসেম্বর ১৯৪৮",
+      "২৪ অক্টোবর ১৯৪৫",
+      "১০ ডিসেম্বর ১৯৪৫",
+      "৪ জুলাই ১৯৪৬"
+    ],
+    "answer": 0,
+    "explanation": "জাতিসংঘ সাধারণ পরিষদে ১০ ডিসেম্বর ১৯৪৮ ঘোষণাটি গৃহীত হয়; দিনটি বিশ্ব মানবাধিকার দিবস।",
+    "cancelled": false
+  },
+  {
+    "number": 132,
+    "ref": "bcs34_q132",
+    "exam": "bcs-general",
+    "subject_slug": "intl-affairs",
+    "subject_name": "International Affairs",
+    "subject_name_bn": "আন্তর্জাতিক বিষয়াবলি",
+    "topic": "জাতিসংঘ",
+    "difficulty": "hard",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "জাতিসংঘ সদর দপ্তরের জমি কে দান করেন?",
+    "options": [
+      "হেনরি ফোর্ড",
+      "জন ডি. রকফেলার জুনিয়র",
+      "অ্যান্ড্রু কার্নেগি",
+      "ফ্র্যাঙ্কলিন রুজভেল্ট"
+    ],
+    "answer": 1,
+    "explanation": "নিউইয়র্কের ম্যানহাটনে সদর দপ্তরের জমি কিনতে জন ডি. রকফেলার জুনিয়র ৮৫ লাখ ডলার দান করেন।",
+    "cancelled": false
+  },
+  {
+    "number": 133,
+    "ref": "bcs34_q133",
+    "exam": "bcs-general",
+    "subject_slug": "intl-affairs",
+    "subject_name": "International Affairs",
+    "subject_name_bn": "আন্তর্জাতিক বিষয়াবলি",
+    "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "খাদ্য ও কৃষি সংস্থার (FAO) সদর দপ্তর কোথায়?",
+    "options": [
+      "প্যারিস",
+      "জেনেভা",
+      "রোম",
+      "নিউইয়র্ক"
+    ],
+    "answer": 2,
+    "explanation": "FAO, IFAD ও বিশ্ব খাদ্য কর্মসূচি (WFP)—তিনটির সদর দপ্তরই ইতালির রোমে।",
+    "cancelled": false
+  },
+  {
+    "number": 134,
+    "ref": "bcs34_q134",
+    "exam": "bcs-general",
+    "subject_slug": "intl-affairs",
+    "subject_name": "International Affairs",
+    "subject_name_bn": "আন্তর্জাতিক বিষয়াবলি",
+    "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "বিশ্ব স্বাস্থ্য সংস্থার (WHO) সদর দপ্তর কোথায়?",
+    "options": [
+      "ভিয়েনা",
+      "নিউইয়র্ক",
+      "রোম",
+      "জেনেভা"
+    ],
+    "answer": 3,
+    "explanation": "WHO ১৯৪৮ সালে প্রতিষ্ঠিত; প্রতিষ্ঠার দিন ৭ এপ্রিল বিশ্ব স্বাস্থ্য দিবস হিসেবে পালিত হয়।",
+    "cancelled": false
+  },
+  {
+    "number": 135,
+    "ref": "bcs34_q135",
+    "exam": "bcs-general",
+    "subject_slug": "intl-affairs",
+    "subject_name": "International Affairs",
+    "subject_name_bn": "আন্তর্জাতিক বিষয়াবলি",
+    "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "ইউনেস্কোর সদর দপ্তর কোথায়?",
+    "options": [
+      "লন্ডন",
+      "প্যারিস",
+      "জেনেভা",
+      "রোম"
+    ],
+    "answer": 1,
+    "explanation": "জাতিসংঘের শিক্ষা, বিজ্ঞান ও সংস্কৃতি বিষয়ক সংস্থা ইউনেস্কোর সদর দপ্তর ফ্রান্সের প্যারিসে।",
+    "cancelled": false
+  },
+  {
+    "number": 136,
+    "ref": "bcs34_q136",
+    "exam": "bcs-general",
+    "subject_slug": "intl-affairs",
+    "subject_name": "International Affairs",
+    "subject_name_bn": "আন্তর্জাতিক বিষয়াবলি",
+    "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "ইউনিসেফের সদর দপ্তর কোথায়?",
+    "options": [
+      "নাইরোবি",
+      "জেনেভা",
+      "প্যারিস",
+      "নিউইয়র্ক"
+    ],
+    "answer": 3,
+    "explanation": "শিশুদের কল্যাণে কাজ করা ইউনিসেফ ১৯৪৬ সালে প্রতিষ্ঠিত; সদর দপ্তর নিউইয়র্কে।",
+    "cancelled": false
+  },
+  {
+    "number": 137,
+    "ref": "bcs34_q137",
+    "exam": "bcs-general",
+    "subject_slug": "intl-affairs",
+    "subject_name": "International Affairs",
+    "subject_name_bn": "আন্তর্জাতিক বিষয়াবলি",
+    "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "জাতিসংঘ শরণার্থী বিষয়ক হাইকমিশনারের কার্যালয় (UNHCR) কোথায়?",
+    "options": [
+      "জেনেভা",
+      "নিউইয়র্ক",
+      "ভিয়েনা",
+      "হেগ"
+    ],
+    "answer": 0,
+    "explanation": "UNHCR জেনেভায় অবস্থিত; সংস্থাটি দুবার (১৯৫৪ ও ১৯৮১) নোবেল শান্তি পুরস্কার পেয়েছে।",
+    "cancelled": false
+  },
+  {
+    "number": 138,
+    "ref": "bcs34_q138",
+    "exam": "bcs-general",
+    "subject_slug": "intl-affairs",
+    "subject_name": "International Affairs",
+    "subject_name_bn": "আন্তর্জাতিক বিষয়াবলি",
+    "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "আন্তর্জাতিক মুদ্রা তহবিলের (IMF) সদর দপ্তর কোথায়?",
+    "options": [
+      "জেনেভা",
+      "নিউইয়র্ক",
+      "ওয়াশিংটন ডিসি",
+      "লন্ডন"
+    ],
+    "answer": 2,
+    "explanation": "IMF ও বিশ্বব্যাংক দুটিরই সদর দপ্তর যুক্তরাষ্ট্রের ওয়াশিংটন ডিসিতে।",
+    "cancelled": false
+  },
+  {
+    "number": 139,
+    "ref": "bcs34_q139",
+    "exam": "bcs-general",
+    "subject_slug": "intl-affairs",
+    "subject_name": "International Affairs",
+    "subject_name_bn": "আন্তর্জাতিক বিষয়াবলি",
+    "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "বিশ্ব বাণিজ্য সংস্থার (WTO) সদর দপ্তর কোথায়?",
+    "options": [
+      "ব্রাসেলস",
+      "ওয়াশিংটন ডিসি",
+      "জেনেভা",
+      "নিউইয়র্ক"
+    ],
+    "answer": 2,
+    "explanation": "১৯৯৫ সালে GATT এর স্থলাভিষিক্ত হয়ে প্রতিষ্ঠিত WTO এর সদর দপ্তর জেনেভায়।",
+    "cancelled": false
+  },
+  {
+    "number": 140,
+    "ref": "bcs34_q140",
+    "exam": "bcs-general",
+    "subject_slug": "intl-affairs",
+    "subject_name": "International Affairs",
+    "subject_name_bn": "আন্তর্জাতিক বিষয়াবলি",
+    "topic": "আন্তর্জাতিক সংস্থার সদর দপ্তর",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "আন্তর্জাতিক পরমাণু শক্তি সংস্থার (IAEA) সদর দপ্তর কোথায়?",
+    "options": [
+      "ভিয়েনা",
+      "জেনেভা",
+      "প্যারিস",
+      "হেগ"
+    ],
+    "answer": 0,
+    "explanation": "IAEA, UNIDO ও ওপেক—তিনটির সদর দপ্তরই অস্ট্রিয়ার ভিয়েনায়।",
+    "cancelled": false
+  },
+  {
+    "number": 141,
+    "ref": "bcs34_q141",
+    "exam": "bcs-general",
+    "subject_slug": "math",
+    "subject_name": "Mathematics & Reasoning",
+    "subject_name_bn": "গাণিতিক যুক্তি",
+    "topic": "সরল ও চক্রবৃদ্ধি মুনাফা",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "কোনো আসল ৫ বছরে সরল মুনাফায় আসলের ২/৫ অংশ হলে মুনাফার হার কত?",
+    "options": [
+      "৪%",
+      "১০%",
+      "৫%",
+      "৮%"
+    ],
+    "answer": 3,
+    "explanation": "২/৫ × আসল = আসল × r × ৫/১০০ → r = ৪০/৫ = ৮%।",
+    "cancelled": false
+  },
+  {
+    "number": 142,
+    "ref": "bcs34_q142",
+    "exam": "bcs-general",
+    "subject_slug": "math",
+    "subject_name": "Mathematics & Reasoning",
+    "subject_name_bn": "গাণিতিক যুক্তি",
+    "topic": "সরল ও চক্রবৃদ্ধি মুনাফা",
+    "difficulty": "hard",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "১০,০০০ টাকার ১০% হারে ২ বছরের চক্রবৃদ্ধি মুনাফা ও সরল মুনাফার পার্থক্য কত?",
+    "options": [
+      "৫০ টাকা",
+      "২০০ টাকা",
+      "১০০ টাকা",
+      "২১০ টাকা"
+    ],
+    "answer": 2,
+    "explanation": "চক্রবৃদ্ধি মুনাফা ২,১০০ টাকা ও সরল মুনাফা ২,০০০ টাকা; পার্থক্য ১০০ টাকা। সূত্র: P(r/১০০)² = ১০,০০০ × ০.০১ = ১০০।",
+    "cancelled": false
+  },
+  {
+    "number": 143,
+    "ref": "bcs34_q143",
+    "exam": "bcs-general",
+    "subject_slug": "math",
+    "subject_name": "Mathematics & Reasoning",
+    "subject_name_bn": "গাণিতিক যুক্তি",
+    "topic": "সরল ও চক্রবৃদ্ধি মুনাফা",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "কত টাকা ৬% সরল মুনাফায় ৪ বছরে ৪৮০ টাকা মুনাফা দেবে?",
+    "options": [
+      "১,৫০০ টাকা",
+      "২,০০০ টাকা",
+      "২,৪০০ টাকা",
+      "১,৮০০ টাকা"
+    ],
+    "answer": 1,
+    "explanation": "আসল = মুনাফা × ১০০ / (হার × সময়) = ৪৮০ × ১০০ / ২৪ = ২,০০০ টাকা।",
+    "cancelled": false
+  },
+  {
+    "number": 144,
+    "ref": "bcs34_q144",
+    "exam": "bcs-general",
+    "subject_slug": "math",
+    "subject_name": "Mathematics & Reasoning",
+    "subject_name_bn": "গাণিতিক যুক্তি",
+    "topic": "অনুপাত ও সমানুপাত",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "a : b = ২ : ৩ এবং b : c = ৪ : ৫ হলে a : b : c = ?",
+    "options": [
+      "৮ : ১২ : ১৫",
+      "২ : ৩ : ৫",
+      "৮ : ১২ : ১০",
+      "৪ : ৬ : ৫"
+    ],
+    "answer": 0,
+    "explanation": "b এর মান সমান করতে প্রথমটিকে ৪ ও দ্বিতীয়টিকে ৩ দিয়ে গুণ: ৮ : ১২ এবং ১২ : ১৫; তাই ৮ : ১২ : ১৫।",
+    "cancelled": false
+  },
+  {
+    "number": 145,
+    "ref": "bcs34_q145",
+    "exam": "bcs-general",
+    "subject_slug": "math",
+    "subject_name": "Mathematics & Reasoning",
+    "subject_name_bn": "গাণিতিক যুক্তি",
+    "topic": "অনুপাত ও সমানুপাত",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "১২০ টাকা ৩ : ৫ অনুপাতে ভাগ করলে বড় অংশ কত?",
+    "options": [
+      "৬০ টাকা",
+      "৪৫ টাকা",
+      "৭৫ টাকা",
+      "৮০ টাকা"
+    ],
+    "answer": 2,
+    "explanation": "মোট ভাগ ৮; বড় অংশ = ১২০ × ৫/৮ = ৭৫ টাকা।",
+    "cancelled": false
+  },
+  {
+    "number": 146,
+    "ref": "bcs34_q146",
+    "exam": "bcs-general",
+    "subject_slug": "math",
+    "subject_name": "Mathematics & Reasoning",
+    "subject_name_bn": "গাণিতিক যুক্তি",
+    "topic": "অনুপাত ও সমানুপাত",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "২ : ৩ এর ব্যস্ত অনুপাত কোনটি?",
+    "options": [
+      "৩ : ২",
+      "৪ : ৯",
+      "২ : ৩",
+      "৯ : ৪"
+    ],
+    "answer": 0,
+    "explanation": "অনুপাতের পদ দুটি উল্টে দিলে ব্যস্ত অনুপাত পাওয়া যায়।",
+    "cancelled": false
+  },
+  {
+    "number": 147,
+    "ref": "bcs34_q147",
+    "exam": "bcs-general",
+    "subject_slug": "math",
+    "subject_name": "Mathematics & Reasoning",
+    "subject_name_bn": "গাণিতিক যুক্তি",
+    "topic": "অনুপাত ও সমানুপাত",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "দুটি সংখ্যার অনুপাত ৩ : ৪ এবং তাদের ল.সা.গু ৮৪। ছোট সংখ্যাটি কত?",
+    "options": [
+      "১৮",
+      "২৮",
+      "১২",
+      "২১"
+    ],
+    "answer": 3,
+    "explanation": "সংখ্যা দুটি ৩k ও ৪k; ল.সা.গু = ১২k = ৮৪ → k = ৭। ছোট সংখ্যা ৩ × ৭ = ২১।",
+    "cancelled": false
+  },
+  {
+    "number": 148,
+    "ref": "bcs34_q148",
+    "exam": "bcs-general",
+    "subject_slug": "math",
+    "subject_name": "Mathematics & Reasoning",
+    "subject_name_bn": "গাণিতিক যুক্তি",
+    "topic": "অনুপাত ও সমানুপাত",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "৩, ৬ ও ৯ এর চতুর্থ সমানুপাতী কত?",
+    "options": [
+      "১২",
+      "১৮",
+      "১৫",
+      "২৭"
+    ],
+    "answer": 1,
+    "explanation": "৩ : ৬ = ৯ : x → x = ৬ × ৯ / ৩ = ১৮।",
+    "cancelled": false
+  },
+  {
+    "number": 149,
+    "ref": "bcs34_q149",
+    "exam": "bcs-general",
+    "subject_slug": "math",
+    "subject_name": "Mathematics & Reasoning",
+    "subject_name_bn": "গাণিতিক যুক্তি",
+    "topic": "অনুপাত ও সমানুপাত",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "৪ ও ১৬ এর মধ্য সমানুপাতী কত?",
+    "options": [
+      "১০",
+      "৮",
+      "১২",
+      "৬৪"
+    ],
+    "answer": 1,
+    "explanation": "মধ্য সমানুপাতী = √(৪ × ১৬) = √৬৪ = ৮।",
+    "cancelled": false
+  },
+  {
+    "number": 150,
+    "ref": "bcs34_q150",
+    "exam": "bcs-general",
+    "subject_slug": "math",
+    "subject_name": "Mathematics & Reasoning",
+    "subject_name_bn": "গাণিতিক যুক্তি",
+    "topic": "অনুপাত ও সমানুপাত",
+    "difficulty": "hard",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "৪০ লিটার দুধ ও পানির মিশ্রণে অনুপাত ৩ : ১। কত লিটার পানি মেশালে অনুপাত ১ : ১ হবে?",
+    "options": [
+      "৩০ লিটার",
+      "১০ লিটার",
+      "১৫ লিটার",
+      "২০ লিটার"
+    ],
+    "answer": 3,
+    "explanation": "দুধ ৩০ লিটার ও পানি ১০ লিটার; দুধের সমান পানি (৩০ লিটার) করতে আরও ২০ লিটার পানি লাগবে।",
+    "cancelled": false
+  },
+  {
+    "number": 151,
+    "ref": "bcs34_q151",
+    "exam": "bcs-general",
+    "subject_slug": "mental",
+    "subject_name": "Mental & Analytical Ability",
+    "subject_name_bn": "মানসিক দক্ষতা",
+    "topic": "সাদৃশ্য (Analogy)",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "ACE : BDF :: GIK : ?",
+    "options": [
+      "HJL",
+      "HIJ",
+      "IKM",
+      "GHI"
+    ],
+    "answer": 0,
+    "explanation": "প্রতিটি বর্ণ এক ধাপ এগিয়েছে: A→B, C→D, E→F। তাই G→H, I→J, K→L।",
+    "cancelled": false
+  },
+  {
+    "number": 152,
+    "ref": "bcs34_q152",
+    "exam": "bcs-general",
+    "subject_slug": "mental",
+    "subject_name": "Mental & Analytical Ability",
+    "subject_name_bn": "মানসিক দক্ষতা",
+    "topic": "সাদৃশ্য (Analogy)",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "চিনি : মিষ্টি :: নিম : ?",
+    "options": [
+      "টক",
+      "তেতো",
+      "ঝাল",
+      "নোনতা"
+    ],
+    "answer": 1,
+    "explanation": "বস্তু : স্বাদ সম্পর্ক। নিমের স্বাদ তেতো।",
+    "cancelled": false
+  },
+  {
+    "number": 153,
+    "ref": "bcs34_q153",
+    "exam": "bcs-general",
+    "subject_slug": "mental",
+    "subject_name": "Mental & Analytical Ability",
+    "subject_name_bn": "মানসিক দক্ষতা",
+    "topic": "সাদৃশ্য (Analogy)",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "সিংহ : গর্জন :: কুকুর : ?",
+    "options": [
+      "বৃংহণ",
+      "হ্রেষা",
+      "ঘেউ ঘেউ",
+      "কা কা"
+    ],
+    "answer": 2,
+    "explanation": "প্রাণী : ডাক। কুকুর ঘেউ ঘেউ করে। হ্রেষা ঘোড়ার ডাক, বৃংহণ হাতির ডাক।",
+    "cancelled": false
+  },
+  {
+    "number": 154,
+    "ref": "bcs34_q154",
+    "exam": "bcs-general",
+    "subject_slug": "mental",
+    "subject_name": "Mental & Analytical Ability",
+    "subject_name_bn": "মানসিক দক্ষতা",
+    "topic": "বেমানান নির্ণয় (Odd One Out)",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "কোনটি বেমানান? লিচু, আম, কাঁঠাল, আলু",
+    "options": [
+      "লিচু",
+      "আম",
+      "কাঁঠাল",
+      "আলু"
+    ],
+    "answer": 3,
+    "explanation": "আম, কাঁঠাল ও লিচু ফল; আলু সবজি।",
+    "cancelled": false
+  },
+  {
+    "number": 155,
+    "ref": "bcs34_q155",
+    "exam": "bcs-general",
+    "subject_slug": "mental",
+    "subject_name": "Mental & Analytical Ability",
+    "subject_name_bn": "মানসিক দক্ষতা",
+    "topic": "বেমানান নির্ণয় (Odd One Out)",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "কোন সংখ্যাটি বেমানান? ৫, ৯, ১১, ৩",
+    "options": [
+      "৫",
+      "৯",
+      "১১",
+      "৩"
+    ],
+    "answer": 1,
+    "explanation": "৩, ৫, ১১ মৌলিক সংখ্যা; ৯ = ৩ × ৩, তাই মৌলিক নয়।",
+    "cancelled": false
+  },
+  {
+    "number": 156,
+    "ref": "bcs34_q156",
+    "exam": "bcs-general",
+    "subject_slug": "mental",
+    "subject_name": "Mental & Analytical Ability",
+    "subject_name_bn": "মানসিক দক্ষতা",
+    "topic": "বেমানান নির্ণয় (Odd One Out)",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "কোন সংখ্যাটি বেমানান? ১২৫, ২৭, ৬৪, ১০০",
+    "options": [
+      "১২৫",
+      "২৭",
+      "৬৪",
+      "১০০"
+    ],
+    "answer": 3,
+    "explanation": "২৭ = ৩³, ৬৪ = ৪³, ১২৫ = ৫³ পূর্ণ ঘন সংখ্যা; ১০০ পূর্ণ ঘন নয়।",
+    "cancelled": false
+  },
+  {
+    "number": 157,
+    "ref": "bcs34_q157",
+    "exam": "bcs-general",
+    "subject_slug": "mental",
+    "subject_name": "Mental & Analytical Ability",
+    "subject_name_bn": "মানসিক দক্ষতা",
+    "topic": "বেমানান নির্ণয় (Odd One Out)",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "কোন সংখ্যাটি বেমানান? ৪৮, ২৫, ৩৬, ৬৪",
+    "options": [
+      "৪৮",
+      "২৫",
+      "৩৬",
+      "৬৪"
+    ],
+    "answer": 0,
+    "explanation": "২৫, ৩৬, ৬৪ পূর্ণ বর্গ সংখ্যা; ৪৮ পূর্ণ বর্গ নয়।",
+    "cancelled": false
+  },
+  {
+    "number": 158,
+    "ref": "bcs34_q158",
+    "exam": "bcs-general",
+    "subject_slug": "mental",
+    "subject_name": "Mental & Analytical Ability",
+    "subject_name_bn": "মানসিক দক্ষতা",
+    "topic": "বেমানান নির্ণয় (Odd One Out)",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "কোন সংখ্যাটি বেমানান? ৪৯, ২১, ৭৫, ৬৩",
+    "options": [
+      "৪৯",
+      "২১",
+      "৭৫",
+      "৬৩"
+    ],
+    "answer": 2,
+    "explanation": "২১, ৪৯, ৬৩ সংখ্যাগুলো ৭ দ্বারা বিভাজ্য; ৭৫ বিভাজ্য নয়।",
+    "cancelled": false
+  },
+  {
+    "number": 159,
+    "ref": "bcs34_q159",
+    "exam": "bcs-general",
+    "subject_slug": "mental",
+    "subject_name": "Mental & Analytical Ability",
+    "subject_name_bn": "মানসিক দক্ষতা",
+    "topic": "বেমানান নির্ণয় (Odd One Out)",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "কোন সংখ্যাটি বেমানান? ৪৫, ২৫, ৫৪, ৬০",
+    "options": [
+      "৪৫",
+      "২৫",
+      "৫৪",
+      "৬০"
+    ],
+    "answer": 2,
+    "explanation": "২৫, ৪৫, ৬০ সংখ্যাগুলো ৫ দ্বারা বিভাজ্য; ৫৪ নয়।",
+    "cancelled": false
+  },
+  {
+    "number": 160,
+    "ref": "bcs34_q160",
+    "exam": "bcs-general",
+    "subject_slug": "mental",
+    "subject_name": "Mental & Analytical Ability",
+    "subject_name_bn": "মানসিক দক্ষতা",
+    "topic": "বেমানান নির্ণয় (Odd One Out)",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "কোনটি বেমানান? বৃত্ত, ত্রিভুজ, বর্গ, আয়ত",
+    "options": [
+      "বৃত্ত",
+      "ত্রিভুজ",
+      "বর্গ",
+      "আয়ত"
+    ],
+    "answer": 0,
+    "explanation": "ত্রিভুজ, বর্গ ও আয়ত সরলরেখা দ্বারা গঠিত বহুভুজ; বৃত্ত বক্ররেখা দিয়ে গঠিত।",
+    "cancelled": false
+  },
+  {
+    "number": 161,
+    "ref": "bcs34_q161",
+    "exam": "bcs-general",
+    "subject_slug": "science",
+    "subject_name": "General Science",
+    "subject_name_bn": "সাধারণ বিজ্ঞান",
+    "topic": "পদার্থবিজ্ঞান: আলো",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "শূন্যস্থানে আলোর বেগ প্রায় কত?",
+    "options": [
+      "৩৩২ মিটার/সেকেন্ড",
+      "৩ × ১০⁸ মিটার/সেকেন্ড",
+      "৩ × ১০⁵ মিটার/সেকেন্ড",
+      "৩ × ১০⁶ মিটার/সেকেন্ড"
+    ],
+    "answer": 1,
+    "explanation": "শূন্যস্থানে আলোর বেগ প্রায় ৩ × ১০⁸ মিটার/সেকেন্ড, অর্থাৎ প্রায় ৩ লক্ষ কিলোমিটার/সেকেন্ড।",
+    "cancelled": false
+  },
+  {
+    "number": 162,
+    "ref": "bcs34_q162",
+    "exam": "bcs-general",
+    "subject_slug": "science",
+    "subject_name": "General Science",
+    "subject_name_bn": "সাধারণ বিজ্ঞান",
+    "topic": "পদার্থবিজ্ঞান: আলো",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "সূর্য থেকে আলো পৃথিবীতে আসতে প্রায় কত সময় লাগে?",
+    "options": [
+      "১ ঘণ্টা",
+      "১ সেকেন্ড",
+      "২৪ ঘণ্টা",
+      "৮ মিনিট ২০ সেকেন্ড"
+    ],
+    "answer": 3,
+    "explanation": "সূর্যের আলো পৃথিবীতে পৌঁছাতে প্রায় ৮ মিনিট ২০ সেকেন্ড (প্রায় ৫০০ সেকেন্ড) লাগে।",
+    "cancelled": false
+  },
+  {
+    "number": 163,
+    "ref": "bcs34_q163",
+    "exam": "bcs-general",
+    "subject_slug": "science",
+    "subject_name": "General Science",
+    "subject_name_bn": "সাধারণ বিজ্ঞান",
+    "topic": "পদার্থবিজ্ঞান: আলো",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "রংধনুতে কয়টি রং দেখা যায়?",
+    "options": [
+      "৫টি",
+      "৬টি",
+      "৭টি",
+      "৮টি"
+    ],
+    "answer": 2,
+    "explanation": "রংধনুতে ৭টি রং থাকে — বেগুনি, নীল, আসমানি, সবুজ, হলুদ, কমলা ও লাল (বেনীআসহকলা)।",
+    "cancelled": false
+  },
+  {
+    "number": 164,
+    "ref": "bcs34_q164",
+    "exam": "bcs-general",
+    "subject_slug": "science",
+    "subject_name": "General Science",
+    "subject_name_bn": "সাধারণ বিজ্ঞান",
+    "topic": "পদার্থবিজ্ঞান: আলো",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "মরীচিকা সৃষ্টির কারণ কী?",
+    "options": [
+      "আলোর বিচ্ছুরণ",
+      "আলোর ব্যতিচার",
+      "আলোর সমবর্তন",
+      "আলোর পূর্ণ অভ্যন্তরীণ প্রতিফলন"
+    ],
+    "answer": 3,
+    "explanation": "উত্তপ্ত মরুভূমিতে বায়ুর স্তরে আলোর পূর্ণ অভ্যন্তরীণ প্রতিফলনের ফলে মরীচিকা দেখা যায়।",
+    "cancelled": false
+  },
+  {
+    "number": 165,
+    "ref": "bcs34_q165",
+    "exam": "bcs-general",
+    "subject_slug": "science",
+    "subject_name": "General Science",
+    "subject_name_bn": "সাধারণ বিজ্ঞান",
+    "topic": "পদার্থবিজ্ঞান: আলো",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "অপটিক্যাল ফাইবার কোন নীতিতে কাজ করে?",
+    "options": [
+      "আলোর শোষণ",
+      "আলোর প্রতিসরণ",
+      "আলোর বিক্ষেপণ",
+      "আলোর পূর্ণ অভ্যন্তরীণ প্রতিফলন"
+    ],
+    "answer": 3,
+    "explanation": "অপটিক্যাল ফাইবারের ভেতরে আলো বারবার পূর্ণ অভ্যন্তরীণ প্রতিফলনের মাধ্যমে অনেক দূর পর্যন্ত যায়।",
+    "cancelled": false
+  },
+  {
+    "number": 166,
+    "ref": "bcs34_q166",
+    "exam": "bcs-general",
+    "subject_slug": "science",
+    "subject_name": "General Science",
+    "subject_name_bn": "সাধারণ বিজ্ঞান",
+    "topic": "পদার্থবিজ্ঞান: আলো",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "আকাশ নীল দেখায় কেন?",
+    "options": [
+      "ওজোন স্তরের রঙের কারণে",
+      "আলোর বিক্ষেপণের কারণে",
+      "মেঘের কারণে",
+      "সমুদ্রের প্রতিফলনের কারণে"
+    ],
+    "answer": 1,
+    "explanation": "বায়ুর কণায় কম তরঙ্গদৈর্ঘ্যের নীল আলো বেশি বিক্ষিপ্ত হয়, তাই আকাশ নীল দেখায়।",
+    "cancelled": false
+  },
+  {
+    "number": 167,
+    "ref": "bcs34_q167",
+    "exam": "bcs-general",
+    "subject_slug": "science",
+    "subject_name": "General Science",
+    "subject_name_bn": "সাধারণ বিজ্ঞান",
+    "topic": "পদার্থবিজ্ঞান: আলো",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "বিপদসংকেত হিসেবে লাল আলো ব্যবহার করা হয় কেন?",
+    "options": [
+      "লাল আলো চোখের জন্য আরামদায়ক",
+      "লাল আলোর তরঙ্গদৈর্ঘ্য সবচেয়ে কম",
+      "লাল আলো সবচেয়ে সস্তা",
+      "লাল আলোর তরঙ্গদৈর্ঘ্য সবচেয়ে বেশি বলে এটি কম বিক্ষিপ্ত হয়ে দূর থেকে দেখা যায়"
+    ],
+    "answer": 3,
+    "explanation": "দৃশ্যমান আলোর মধ্যে লালের তরঙ্গদৈর্ঘ্য সবচেয়ে বেশি; তাই এটি কম বিক্ষিপ্ত হয় এবং কুয়াশাতেও দূর থেকে দেখা যায়।",
+    "cancelled": false
+  },
+  {
+    "number": 168,
+    "ref": "bcs34_q168",
+    "exam": "bcs-general",
+    "subject_slug": "science",
+    "subject_name": "General Science",
+    "subject_name_bn": "সাধারণ বিজ্ঞান",
+    "topic": "পদার্থবিজ্ঞান: আলো",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "আলোর মৌলিক রং কোনগুলো?",
+    "options": [
+      "লাল, হলুদ ও নীল",
+      "লাল, সবুজ ও নীল",
+      "বেগুনি, সবুজ ও কমলা",
+      "সাদা, কালো ও লাল"
+    ],
+    "answer": 1,
+    "explanation": "আলোর তিনটি মৌলিক রং লাল, সবুজ ও নীল (RGB); এগুলো মিশিয়ে অন্য সব রং তৈরি করা যায়।",
+    "cancelled": false
+  },
+  {
+    "number": 169,
+    "ref": "bcs34_q169",
+    "exam": "bcs-general",
+    "subject_slug": "science",
+    "subject_name": "General Science",
+    "subject_name_bn": "সাধারণ বিজ্ঞান",
+    "topic": "পদার্থবিজ্ঞান: আলো",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "ক্ষীণদৃষ্টি বা মায়োপিয়া (কাছে দেখে, দূরে দেখে না) দূর করতে কোন লেন্স ব্যবহার করা হয়?",
+    "options": [
+      "অবতল লেন্স",
+      "সিলিন্ড্রিক্যাল লেন্স",
+      "বাইফোকাল লেন্স",
+      "উত্তল লেন্স"
+    ],
+    "answer": 0,
+    "explanation": "মায়োপিয়ায় দূরের বস্তু ঝাপসা দেখা যায়; অবতল লেন্সের চশমা দিয়ে এটি সংশোধন করা হয়।",
+    "cancelled": false
+  },
+  {
+    "number": 170,
+    "ref": "bcs34_q170",
+    "exam": "bcs-general",
+    "subject_slug": "science",
+    "subject_name": "General Science",
+    "subject_name_bn": "সাধারণ বিজ্ঞান",
+    "topic": "পদার্থবিজ্ঞান: আলো",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "দূরদৃষ্টি বা হাইপারমেট্রোপিয়া (দূরে দেখে, কাছে দেখে না) দূর করতে কোন লেন্স ব্যবহার করা হয়?",
+    "options": [
+      "প্রিজম",
+      "সমতল কাচ",
+      "উত্তল লেন্স",
+      "অবতল লেন্স"
+    ],
+    "answer": 2,
+    "explanation": "হাইপারমেট্রোপিয়ায় কাছের বস্তু ঝাপসা দেখা যায়; উত্তল লেন্সের চশমা দিয়ে এটি সংশোধন করা হয়।",
+    "cancelled": false
+  },
+  {
+    "number": 171,
+    "ref": "bcs34_q171",
+    "exam": "bcs-general",
+    "subject_slug": "ict",
+    "subject_name": "Computer & ICT",
+    "subject_name_bn": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "হার্ডওয়্যার ও মেমোরি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "সিপিইউ ও র‍্যামের মধ্যে গতির পার্থক্য কমাতে কোন মেমোরি ব্যবহৃত হয়?",
+    "options": [
+      "ফ্ল্যাশ মেমোরি",
+      "ভার্চুয়াল মেমোরি",
+      "রম",
+      "ক্যাশ মেমোরি"
+    ],
+    "answer": 3,
+    "explanation": "ক্যাশ মেমোরি বারবার ব্যবহৃত তথ্য দ্রুত সরবরাহ করে CPU-কে অপেক্ষা থেকে বাঁচায়।",
+    "cancelled": false
+  },
+  {
+    "number": 172,
+    "ref": "bcs34_q172",
+    "exam": "bcs-general",
+    "subject_slug": "ict",
+    "subject_name": "Computer & ICT",
+    "subject_name_bn": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "হার্ডওয়্যার ও মেমোরি",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "১ বাইট সমান কত বিট?",
+    "options": [
+      "১৬ বিট",
+      "৪ বিট",
+      "৮ বিট",
+      "১০ বিট"
+    ],
+    "answer": 2,
+    "explanation": "৮ বিটে ১ বাইট এবং ৪ বিটে ১ নিবল।",
+    "cancelled": false
+  },
+  {
+    "number": 173,
+    "ref": "bcs34_q173",
+    "exam": "bcs-general",
+    "subject_slug": "ict",
+    "subject_name": "Computer & ICT",
+    "subject_name_bn": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "হার্ডওয়্যার ও মেমোরি",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "১ কিলোবাইট (KB) সমান কত বাইট?",
+    "options": [
+      "১০০০ বাইট",
+      "১০২৪ বাইট",
+      "১০০ বাইট",
+      "৫১২ বাইট"
+    ],
+    "answer": 1,
+    "explanation": "বাইনারি পদ্ধতিতে ১ KB = ২¹⁰ = ১০২৪ বাইট।",
+    "cancelled": false
+  },
+  {
+    "number": 174,
+    "ref": "bcs34_q174",
+    "exam": "bcs-general",
+    "subject_slug": "ict",
+    "subject_name": "Computer & ICT",
+    "subject_name_bn": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "হার্ডওয়্যার ও মেমোরি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "কোনটি সবচেয়ে বড় মেমোরি একক?",
+    "options": [
+      "পেটাবাইট",
+      "টেরাবাইট",
+      "গিগাবাইট",
+      "মেগাবাইট"
+    ],
+    "answer": 0,
+    "explanation": "ক্রম: KB < MB < GB < TB < PB < EB < ZB < YB; প্রতিটি আগেরটির ১০২৪ গুণ।",
+    "cancelled": false
+  },
+  {
+    "number": 175,
+    "ref": "bcs34_q175",
+    "exam": "bcs-general",
+    "subject_slug": "ict",
+    "subject_name": "Computer & ICT",
+    "subject_name_bn": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "হার্ডওয়্যার ও মেমোরি",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "কোনটি ইনপুট ডিভাইস?",
+    "options": [
+      "প্লটার",
+      "প্রিন্টার",
+      "স্ক্যানার",
+      "স্পিকার"
+    ],
+    "answer": 2,
+    "explanation": "স্ক্যানার ছবি বা লেখাকে ডিজিটাল তথ্যে রূপান্তর করে কম্পিউটারে পাঠায়; বাকিগুলো আউটপুট ডিভাইস।",
+    "cancelled": false
+  },
+  {
+    "number": 176,
+    "ref": "bcs34_q176",
+    "exam": "bcs-general",
+    "subject_slug": "ict",
+    "subject_name": "Computer & ICT",
+    "subject_name_bn": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "হার্ডওয়্যার ও মেমোরি",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "কোনটি আউটপুট ডিভাইস?",
+    "options": [
+      "প্লটার",
+      "কি-বোর্ড",
+      "মাউস",
+      "জয়স্টিক"
+    ],
+    "answer": 0,
+    "explanation": "প্লটার বড় আকারের নকশা ও মানচিত্র আঁকার আউটপুট ডিভাইস।",
+    "cancelled": false
+  },
+  {
+    "number": 177,
+    "ref": "bcs34_q177",
+    "exam": "bcs-general",
+    "subject_slug": "ict",
+    "subject_name": "Computer & ICT",
+    "subject_name_bn": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "হার্ডওয়্যার ও মেমোরি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "কোনটি ইনপুট ও আউটপুট উভয় ডিভাইস?",
+    "options": [
+      "স্ক্যানার",
+      "মাউস",
+      "প্রিন্টার",
+      "টাচস্ক্রিন"
+    ],
+    "answer": 3,
+    "explanation": "টাচস্ক্রিন স্পর্শের মাধ্যমে ইনপুট নেয় এবং পর্দায় আউটপুট দেখায়। মডেমও উভয়মুখী ডিভাইস।",
+    "cancelled": false
+  },
+  {
+    "number": 178,
+    "ref": "bcs34_q178",
+    "exam": "bcs-general",
+    "subject_slug": "ict",
+    "subject_name": "Computer & ICT",
+    "subject_name_bn": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "হার্ডওয়্যার ও মেমোরি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "ব্যাংকে চেকের নিচের বিশেষ কালিতে ছাপা নম্বর পড়ার জন্য কোন যন্ত্র ব্যবহৃত হয়?",
+    "options": [
+      "OMR",
+      "MICR",
+      "OCR",
+      "বারকোড রিডার"
+    ],
+    "answer": 1,
+    "explanation": "MICR (Magnetic Ink Character Recognition) চৌম্বক কালিতে ছাপা চেক নম্বর, ব্যাংক ও শাখা কোড দ্রুত ও নির্ভুলভাবে পড়ে।",
+    "cancelled": false
+  },
+  {
+    "number": 179,
+    "ref": "bcs34_q179",
+    "exam": "bcs-general",
+    "subject_slug": "ict",
+    "subject_name": "Computer & ICT",
+    "subject_name_bn": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "হার্ডওয়্যার ও মেমোরি",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "বহুনির্বাচনী পরীক্ষার উত্তরপত্র মূল্যায়নে কোন যন্ত্র ব্যবহৃত হয়?",
+    "options": [
+      "MICR",
+      "OMR",
+      "OCR",
+      "প্লটার"
+    ],
+    "answer": 1,
+    "explanation": "OMR (Optical Mark Reader) উত্তরপত্রে পেনসিল বা কলমের দাগ শনাক্ত করে।",
+    "cancelled": false
+  },
+  {
+    "number": 180,
+    "ref": "bcs34_q180",
+    "exam": "bcs-general",
+    "subject_slug": "ict",
+    "subject_name": "Computer & ICT",
+    "subject_name_bn": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "হার্ডওয়্যার ও মেমোরি",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "ছাপা লেখাকে সম্পাদনাযোগ্য টেক্সটে রূপান্তরের প্রযুক্তি কোনটি?",
+    "options": [
+      "BCR",
+      "OMR",
+      "MICR",
+      "OCR"
+    ],
+    "answer": 3,
+    "explanation": "OCR (Optical Character Recognition) স্ক্যান করা ছবির অক্ষর শনাক্ত করে সম্পাদনাযোগ্য লেখায় রূপান্তর করে।",
+    "cancelled": false
+  },
+  {
+    "number": 181,
+    "ref": "bcs34_q181",
+    "exam": "bcs-general",
+    "subject_slug": "geography",
+    "subject_name": "Geography",
+    "subject_name_bn": "ভূগোল, পরিবেশ ও দুর্যোগ",
+    "topic": "বাংলাদেশ: অবস্থান ও সীমানা",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "বাংলাদেশ-ভারত ছিটমহল বিনিময় কার্যকর হয় কবে?",
+    "options": [
+      "১ জানুয়ারি ২০১৬",
+      "১৬ মে ১৯৭৪",
+      "৬ জুন ২০১৫",
+      "৩১ জুলাই ২০১৫ মধ্যরাতে"
+    ],
+    "answer": 3,
+    "explanation": "১৯৭৪ সালের স্থলসীমান্ত চুক্তি বাস্তবায়নে ৩১ জুলাই ২০১৫ মধ্যরাতে ছিটমহল বিনিময় হয়; বাংলাদেশ পায় ১১১টি, ভারত পায় ৫১টি ছিটমহল।",
+    "cancelled": false
+  },
+  {
+    "number": 182,
+    "ref": "bcs34_q182",
+    "exam": "bcs-general",
+    "subject_slug": "geography",
+    "subject_name": "Geography",
+    "subject_name_bn": "ভূগোল, পরিবেশ ও দুর্যোগ",
+    "topic": "বাংলাদেশ: অবস্থান ও সীমানা",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "দহগ্রাম-আঙ্গরপোতা ছিটমহল কোন জেলায় অবস্থিত?",
+    "options": [
+      "পঞ্চগড়",
+      "কুড়িগ্রাম",
+      "লালমনিরহাট",
+      "নীলফামারী"
+    ],
+    "answer": 2,
+    "explanation": "দহগ্রাম-আঙ্গরপোতা লালমনিরহাটের পাটগ্রাম উপজেলায় অবস্থিত এবং তিনবিঘা করিডোরের মাধ্যমে মূল ভূখণ্ডের সাথে যুক্ত।",
+    "cancelled": false
+  },
+  {
+    "number": 183,
+    "ref": "bcs34_q183",
+    "exam": "bcs-general",
+    "subject_slug": "geography",
+    "subject_name": "Geography",
+    "subject_name_bn": "ভূগোল, পরিবেশ ও দুর্যোগ",
+    "topic": "বাংলাদেশ: অবস্থান ও সীমানা",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "বাংলাদেশের সবচেয়ে বড় স্থলবন্দর কোনটি?",
+    "options": [
+      "বাংলাবান্ধা",
+      "বেনাপোল",
+      "হিলি",
+      "সোনামসজিদ"
+    ],
+    "answer": 1,
+    "explanation": "যশোর জেলার বেনাপোল দেশের সবচেয়ে বড় ও ব্যস্ততম স্থলবন্দর।",
+    "cancelled": false
+  },
+  {
+    "number": 184,
+    "ref": "bcs34_q184",
+    "exam": "bcs-general",
+    "subject_slug": "geography",
+    "subject_name": "Geography",
+    "subject_name_bn": "ভূগোল, পরিবেশ ও দুর্যোগ",
+    "topic": "বাংলাদেশ: অবস্থান ও সীমানা",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "বাংলাদেশের প্রমাণ সময় গ্রিনিচ মান সময় (GMT) থেকে কত ঘণ্টা এগিয়ে?",
+    "options": [
+      "৬ ঘণ্টা",
+      "৫ ঘণ্টা",
+      "৫.৩০ ঘণ্টা",
+      "৭ ঘণ্টা"
+    ],
+    "answer": 0,
+    "explanation": "বাংলাদেশের প্রমাণ সময় ৯০° পূর্ব দ্রাঘিমা অনুসারে নির্ধারিত; ৯০ × ৪ মিনিট = ৩৬০ মিনিট = ৬ ঘণ্টা।",
+    "cancelled": false
+  },
+  {
+    "number": 185,
+    "ref": "bcs34_q185",
+    "exam": "bcs-general",
+    "subject_slug": "geography",
+    "subject_name": "Geography",
+    "subject_name_bn": "ভূগোল, পরিবেশ ও দুর্যোগ",
+    "topic": "বাংলাদেশ: অবস্থান ও সীমানা",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "বাংলাদেশের প্রমাণ সময় কোন দ্রাঘিমা রেখা অনুসারে নির্ধারিত?",
+    "options": [
+      "৯২° পূর্ব",
+      "৮৮° পূর্ব",
+      "৯০° পূর্ব",
+      "৮২.৫° পূর্ব"
+    ],
+    "answer": 2,
+    "explanation": "৯০° পূর্ব দ্রাঘিমা রেখা বাংলাদেশের ওপর দিয়ে গেছে, তাই এটিকে প্রমাণ সময়ের ভিত্তি ধরা হয়। ভারতের প্রমাণ সময় ৮২.৫° পূর্ব।",
+    "cancelled": false
+  },
+  {
+    "number": 186,
+    "ref": "bcs34_q186",
+    "exam": "bcs-general",
+    "subject_slug": "geography",
+    "subject_name": "Geography",
+    "subject_name_bn": "ভূগোল, পরিবেশ ও দুর্যোগ",
+    "topic": "বাংলাদেশ: অবস্থান ও সীমানা",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "বাংলাদেশের দক্ষিণে কোন জলভাগ অবস্থিত?",
+    "options": [
+      "বঙ্গোপসাগর",
+      "আরব সাগর",
+      "আন্দামান সাগর",
+      "দক্ষিণ চীন সাগর"
+    ],
+    "answer": 0,
+    "explanation": "বাংলাদেশের উত্তর, পশ্চিম ও পূর্বে ভারত, দক্ষিণ-পূর্বে মিয়ানমার এবং দক্ষিণে বঙ্গোপসাগর।",
+    "cancelled": false
+  },
+  {
+    "number": 187,
+    "ref": "bcs34_q187",
+    "exam": "bcs-general",
+    "subject_slug": "geography",
+    "subject_name": "Geography",
+    "subject_name_bn": "ভূগোল, পরিবেশ ও দুর্যোগ",
+    "topic": "বাংলাদেশ: অবস্থান ও সীমানা",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "বঙ্গোপসাগরের কোন গভীর খাদ \"সোয়াচ অব নো গ্রাউন্ড\" নামে পরিচিত?",
+    "options": [
+      "একটি নদীর মোহনা",
+      "একটি প্রবাল দ্বীপ",
+      "একটি চর",
+      "সমুদ্রতলের একটি গভীর গিরিখাত"
+    ],
+    "answer": 3,
+    "explanation": "\"সোয়াচ অব নো গ্রাউন্ড\" বঙ্গোপসাগরের একটি গভীর সাবমেরিন ক্যানিয়ন, যা তিমি ও ডলফিনসহ সামুদ্রিক জীববৈচিত্র্যের জন্য সুরক্ষিত এলাকা।",
+    "cancelled": false
+  },
+  {
+    "number": 188,
+    "ref": "bcs34_q188",
+    "exam": "bcs-general",
+    "subject_slug": "geography",
+    "subject_name": "Geography",
+    "subject_name_bn": "ভূগোল, পরিবেশ ও দুর্যোগ",
+    "topic": "বাংলাদেশ: নদ-নদী",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "পদ্মা নদী বাংলাদেশের কোন জেলা দিয়ে প্রবেশ করেছে?",
+    "options": [
+      "রাজশাহী",
+      "চাঁপাইনবাবগঞ্জ",
+      "কুষ্টিয়া",
+      "পাবনা"
+    ],
+    "answer": 1,
+    "explanation": "গঙ্গা নদী চাঁপাইনবাবগঞ্জের শিবগঞ্জ উপজেলা দিয়ে বাংলাদেশে প্রবেশ করে পদ্মা নামে প্রবাহিত হয়েছে।",
+    "cancelled": false
+  },
+  {
+    "number": 189,
+    "ref": "bcs34_q189",
+    "exam": "bcs-general",
+    "subject_slug": "geography",
+    "subject_name": "Geography",
+    "subject_name_bn": "ভূগোল, পরিবেশ ও দুর্যোগ",
+    "topic": "বাংলাদেশ: নদ-নদী",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "ব্রহ্মপুত্র নদ বাংলাদেশের কোন জেলা দিয়ে প্রবেশ করেছে?",
+    "options": [
+      "লালমনিরহাট",
+      "কুড়িগ্রাম",
+      "গাইবান্ধা",
+      "জামালপুর"
+    ],
+    "answer": 1,
+    "explanation": "তিব্বতের মানস সরোবরের কাছে উৎপন্ন ব্রহ্মপুত্র ভারতের আসাম হয়ে কুড়িগ্রাম দিয়ে বাংলাদেশে প্রবেশ করেছে।",
+    "cancelled": false
+  },
+  {
+    "number": 190,
+    "ref": "bcs34_q190",
+    "exam": "bcs-general",
+    "subject_slug": "geography",
+    "subject_name": "Geography",
+    "subject_name_bn": "ভূগোল, পরিবেশ ও দুর্যোগ",
+    "topic": "বাংলাদেশ: নদ-নদী",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "তিস্তা নদী বাংলাদেশের কোন জেলা দিয়ে প্রবেশ করেছে?",
+    "options": [
+      "ঠাকুরগাঁও",
+      "পঞ্চগড়",
+      "দিনাজপুর",
+      "নীলফামারী"
+    ],
+    "answer": 3,
+    "explanation": "সিকিমে উৎপন্ন তিস্তা নদী নীলফামারী জেলার ডিমলা দিয়ে বাংলাদেশে প্রবেশ করেছে এবং কুড়িগ্রামের কাছে ব্রহ্মপুত্রে মিশেছে।",
+    "cancelled": false
+  },
+  {
+    "number": 191,
+    "ref": "bcs34_q191",
+    "exam": "bcs-general",
+    "subject_slug": "ethics",
+    "subject_name": "Ethics, Values & Governance",
+    "subject_name_bn": "নৈতিকতা ও সুশাসন",
+    "topic": "দার্শনিক ও গ্রন্থ",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "প্লেটোর মতে প্রধান সদ্গুণ (Cardinal virtues) কয়টি?",
+    "options": [
+      "৩টি",
+      "৪টি",
+      "৫টি",
+      "৭টি"
+    ],
+    "answer": 1,
+    "explanation": "প্লেটোর মতে প্রধান সদ্গুণ ৪টি — প্রজ্ঞা, সাহস, মিতাচার ও ন্যায়পরায়ণতা।",
+    "cancelled": false
+  },
+  {
+    "number": 192,
+    "ref": "bcs34_q192",
+    "exam": "bcs-general",
+    "subject_slug": "ethics",
+    "subject_name": "Ethics, Values & Governance",
+    "subject_name_bn": "নৈতিকতা ও সুশাসন",
+    "topic": "দার্শনিক ও গ্রন্থ",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "'Leviathan' গ্রন্থের রচয়িতা কে?",
+    "options": [
+      "জন লক",
+      "রুশো",
+      "টমাস হবস",
+      "হেগেল"
+    ],
+    "answer": 2,
+    "explanation": "'Leviathan' (১৬৫১) টমাস হবসের লেখা, যেখানে তিনি সামাজিক চুক্তি মতবাদ ব্যাখ্যা করেছেন।",
+    "cancelled": false
+  },
+  {
+    "number": 193,
+    "ref": "bcs34_q193",
+    "exam": "bcs-general",
+    "subject_slug": "ethics",
+    "subject_name": "Ethics, Values & Governance",
+    "subject_name_bn": "নৈতিকতা ও সুশাসন",
+    "topic": "দার্শনিক ও গ্রন্থ",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "'Two Treatises of Government' গ্রন্থের রচয়িতা কে?",
+    "options": [
+      "টমাস হবস",
+      "জন লক",
+      "মন্টেস্কু",
+      "ম্যাকিয়াভেলি"
+    ],
+    "answer": 1,
+    "explanation": "'Two Treatises of Government' জন লকের লেখা; এতে তিনি জীবন, স্বাধীনতা ও সম্পত্তির অধিকারের কথা বলেছেন।",
+    "cancelled": false
+  },
+  {
+    "number": 194,
+    "ref": "bcs34_q194",
+    "exam": "bcs-general",
+    "subject_slug": "ethics",
+    "subject_name": "Ethics, Values & Governance",
+    "subject_name_bn": "নৈতিকতা ও সুশাসন",
+    "topic": "দার্শনিক ও গ্রন্থ",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "'The Social Contract' গ্রন্থের রচয়িতা কে?",
+    "options": [
+      "জ্যাঁ জ্যাক রুশো",
+      "জন লক",
+      "টমাস হবস",
+      "ভলতেয়ার"
+    ],
+    "answer": 0,
+    "explanation": "'The Social Contract' রুশোর লেখা। এতে তিনি 'সাধারণ ইচ্ছা' (General Will)-এর ধারণা দেন।",
+    "cancelled": false
+  },
+  {
+    "number": 195,
+    "ref": "bcs34_q195",
+    "exam": "bcs-general",
+    "subject_slug": "ethics",
+    "subject_name": "Ethics, Values & Governance",
+    "subject_name_bn": "নৈতিকতা ও সুশাসন",
+    "topic": "দার্শনিক ও গ্রন্থ",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "'মানুষ স্বাধীন হয়ে জন্মায়, কিন্তু সর্বত্র সে শৃঙ্খলিত' — উক্তিটি কার?",
+    "options": [
+      "ভলতেয়ার",
+      "জন লক",
+      "কার্ল মার্ক্স",
+      "রুশো"
+    ],
+    "answer": 3,
+    "explanation": "উক্তিটি রুশোর 'The Social Contract' গ্রন্থের শুরুর বিখ্যাত লাইন।",
+    "cancelled": false
+  },
+  {
+    "number": 196,
+    "ref": "bcs34_q196",
+    "exam": "bcs-general",
+    "subject_slug": "ethics",
+    "subject_name": "Ethics, Values & Governance",
+    "subject_name_bn": "নৈতিকতা ও সুশাসন",
+    "topic": "দার্শনিক ও গ্রন্থ",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "ক্ষমতার পৃথকীকরণ (Separation of Powers) নীতির প্রবক্তা কে?",
+    "options": [
+      "মন্টেস্কু",
+      "রুশো",
+      "হবস",
+      "অ্যারিস্টটল"
+    ],
+    "answer": 0,
+    "explanation": "ফরাসি দার্শনিক মন্টেস্কু তাঁর 'The Spirit of Laws' গ্রন্থে আইন, নির্বাহী ও বিচার বিভাগের ক্ষমতা আলাদা রাখার কথা বলেন।",
+    "cancelled": false
+  },
+  {
+    "number": 197,
+    "ref": "bcs34_q197",
+    "exam": "bcs-general",
+    "subject_slug": "ethics",
+    "subject_name": "Ethics, Values & Governance",
+    "subject_name_bn": "নৈতিকতা ও সুশাসন",
+    "topic": "দার্শনিক ও গ্রন্থ",
+    "difficulty": "easy",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "'The Prince' গ্রন্থের রচয়িতা কে?",
+    "options": [
+      "প্লেটো",
+      "নিকোলো ম্যাকিয়াভেলি",
+      "টমাস মুর",
+      "দান্তে"
+    ],
+    "answer": 1,
+    "explanation": "'The Prince' ইতালীয় চিন্তাবিদ নিকোলো ম্যাকিয়াভেলির লেখা রাষ্ট্র পরিচালনা বিষয়ক গ্রন্থ।",
+    "cancelled": false
+  },
+  {
+    "number": 198,
+    "ref": "bcs34_q198",
+    "exam": "bcs-general",
+    "subject_slug": "ethics",
+    "subject_name": "Ethics, Values & Governance",
+    "subject_name_bn": "নৈতিকতা ও সুশাসন",
+    "topic": "দার্শনিক ও গ্রন্থ",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "আদর্শ আমলাতন্ত্র (Ideal type bureaucracy) মডেলটি কে প্রদান করেন?",
+    "options": [
+      "কার্ল মার্ক্স",
+      "পিটার ড্রাকার",
+      "ম্যাক্স ওয়েবার",
+      "হেনরি ফেয়ল"
+    ],
+    "answer": 2,
+    "explanation": "জার্মান সমাজবিজ্ঞানী ম্যাক্স ওয়েবার আদর্শ আমলাতন্ত্রের মডেল দেন — নিয়মভিত্তিক, ক্রমোচ্চ ও যোগ্যতাভিত্তিক প্রশাসন।",
+    "cancelled": false
+  },
+  {
+    "number": 199,
+    "ref": "bcs34_q199",
+    "exam": "bcs-general",
+    "subject_slug": "ethics",
+    "subject_name": "Ethics, Values & Governance",
+    "subject_name_bn": "নৈতিকতা ও সুশাসন",
+    "topic": "দার্শনিক ও গ্রন্থ",
+    "difficulty": "hard",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "'Emotional Intelligence' ধারণাটি ব্যাপকভাবে জনপ্রিয় করেন কে?",
+    "options": [
+      "হাওয়ার্ড গার্ডনার",
+      "ড্যানিয়েল গোলম্যান",
+      "ম্যাক্স ওয়েবার",
+      "আব্রাহাম মাসলো"
+    ],
+    "answer": 1,
+    "explanation": "ড্যানিয়েল গোলম্যান ১৯৯৫ সালে 'Emotional Intelligence' বই লিখে ধারণাটিকে ব্যাপকভাবে জনপ্রিয় করেন।",
+    "cancelled": false
+  },
+  {
+    "number": 200,
+    "ref": "bcs34_q200",
+    "exam": "bcs-general",
+    "subject_slug": "ethics",
+    "subject_name": "Ethics, Values & Governance",
+    "subject_name_bn": "নৈতিকতা ও সুশাসন",
+    "topic": "আইনের শাসন",
+    "difficulty": "medium",
+    "source": "34th BCS",
+    "lang": "bn",
+    "body": "আইনের শাসন (Rule of Law) ধারণাটি কে জনপ্রিয় করেন?",
+    "options": [
+      "জন অস্টিন",
+      "এ. ভি. ডাইসি",
+      "হ্যারল্ড লাস্কি",
+      "বেন্থাম"
+    ],
+    "answer": 1,
+    "explanation": "ব্রিটিশ সংবিধান বিশেষজ্ঞ এ. ভি. ডাইসি আইনের শাসনের ধারণাকে ব্যাখ্যা ও জনপ্রিয় করেন।",
     "cancelled": false
   }
 ];

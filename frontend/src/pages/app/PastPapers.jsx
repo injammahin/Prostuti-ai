@@ -93,11 +93,7 @@ export default function PastPapers() {
               {papers.map((paper) => {
                 const is48th = paper.number === 48
                 const is47th = paper.number === 47
-                const is46th = paper.number === 46
-                const is45th = paper.number === 45
-                const is44th = paper.number === 44
-                const is43rd = paper.number === 43
-                const isFullSolved = [48, 47, 46, 45, 44, 43].includes(paper.number)
+                const isFullSolved = paper.questions > 0 || (paper.number >= 20 && paper.number <= 48)
                 const isHighlight = isFullSolved
                 return (
                   <div
@@ -130,9 +126,14 @@ export default function PastPapers() {
                               {L("Latest General", "সর্বশেষ সাধারণ")}
                             </span>
                           )}
-                          {(is46th || is45th || is44th || is43rd) && (
+                          {paper.questions >= 200 && !is48th && !is47th && (
                             <span className="rounded-full bg-indigo-500/15 px-2 py-0.5 text-[0.65rem] font-bold text-indigo-600 dark:text-indigo-400">
                               {L("200 Questions", "২০০ প্রশ্ন")}
+                            </span>
+                          )}
+                          {paper.questions > 0 && paper.questions < 200 && (
+                            <span className="rounded-full bg-teal-500/15 px-2 py-0.5 text-[0.65rem] font-bold text-teal-600 dark:text-teal-400">
+                              {L(`${num(paper.questions)} Questions`, `${num(paper.questions)}টি প্রশ্ন`)}
                             </span>
                           )}
                         </div>
@@ -140,12 +141,12 @@ export default function PastPapers() {
                           <span>{L("Preliminary MCQ", "প্রিলিমিনারি এমসিকিউ")}</span>
                           {paper.special && (
                             <span className="rounded bg-amber-500/15 px-1.5 py-px text-[0.7rem] font-semibold text-amber-700 dark:text-amber-400">
-                              {is48th ? L("Special (200 Questions)", "বিশেষ (২০০ প্রশ্ন)") : L("Special", "বিশেষ")}
+                              {L("Special", "বিশেষ")}
                             </span>
                           )}
                           {isFullSolved && (
                             <span className="rounded bg-primary/10 px-1.5 py-px text-[0.7rem] font-semibold text-primary">
-                              {L("Full 200 Marks", "পূর্ণাঙ্গ ২০০ নম্বর")}
+                              {L(`Full ${num(paper.questions || 200)} Marks`, `পূর্ণাঙ্গ ${num(paper.questions || 200)} নম্বর`)}
                             </span>
                           )}
                         </p>

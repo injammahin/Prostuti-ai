@@ -14,6 +14,20 @@ import { bcs37thQuestions, BCS_37TH_META } from "./bcs-37th-questions"
 import { bcs36thQuestions, BCS_36TH_META } from "./bcs-36th-questions"
 import { bcs35thQuestions, BCS_35TH_META } from "./bcs-35th-questions"
 import { bcs34thQuestions, BCS_34TH_META } from "./bcs-34th-questions"
+import { bcs33rdQuestions, BCS_33RD_META } from "./bcs-33rd-questions"
+import { bcs32ndQuestions, BCS_32ND_META } from "./bcs-32nd-questions"
+import { bcs31stQuestions, BCS_31ST_META } from "./bcs-31st-questions"
+import { bcs30thQuestions, BCS_30TH_META } from "./bcs-30th-questions"
+import { bcs29thQuestions, BCS_29TH_META } from "./bcs-29th-questions"
+import { bcs28thQuestions, BCS_28TH_META } from "./bcs-28th-questions"
+import { bcs27thQuestions, BCS_27TH_META } from "./bcs-27th-questions"
+import { bcs26thQuestions, BCS_26TH_META } from "./bcs-26th-questions"
+import { bcs25thQuestions, BCS_25TH_META } from "./bcs-25th-questions"
+import { bcs24thQuestions, BCS_24TH_META } from "./bcs-24th-questions"
+import { bcs23rdQuestions, BCS_23RD_META } from "./bcs-23rd-questions"
+import { bcs22ndQuestions, BCS_22ND_META } from "./bcs-22nd-questions"
+import { bcs21stQuestions, BCS_21ST_META } from "./bcs-21st-questions"
+import { bcs20thQuestions, BCS_20TH_META } from "./bcs-20th-questions"
 
 export const BCS_ALL_DATASETS = {
   48: { meta: BCS_48TH_META, questions: bcs48thQuestions },
@@ -31,6 +45,20 @@ export const BCS_ALL_DATASETS = {
   36: { meta: BCS_36TH_META, questions: bcs36thQuestions },
   35: { meta: BCS_35TH_META, questions: bcs35thQuestions },
   34: { meta: BCS_34TH_META, questions: bcs34thQuestions },
+  33: { meta: BCS_33RD_META, questions: bcs33rdQuestions },
+  32: { meta: BCS_32ND_META, questions: bcs32ndQuestions },
+  31: { meta: BCS_31ST_META, questions: bcs31stQuestions },
+  30: { meta: BCS_30TH_META, questions: bcs30thQuestions },
+  29: { meta: BCS_29TH_META, questions: bcs29thQuestions },
+  28: { meta: BCS_28TH_META, questions: bcs28thQuestions },
+  27: { meta: BCS_27TH_META, questions: bcs27thQuestions },
+  26: { meta: BCS_26TH_META, questions: bcs26thQuestions },
+  25: { meta: BCS_25TH_META, questions: bcs25thQuestions },
+  24: { meta: BCS_24TH_META, questions: bcs24thQuestions },
+  23: { meta: BCS_23RD_META, questions: bcs23rdQuestions },
+  22: { meta: BCS_22ND_META, questions: bcs22ndQuestions },
+  21: { meta: BCS_21ST_META, questions: bcs21stQuestions },
+  20: { meta: BCS_20TH_META, questions: bcs20thQuestions },
 }
 
 export const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:8000/api/v1").replace(/\/$/, "")
@@ -142,123 +170,67 @@ export const authApi = {
 /** Previous BCS papers, newest first: [{ number, source, name, name_bn, special, questions }] */
 export const pastPapersApi = {
   list: async () => {
+    const fullPaperNumbers = [
+      48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34,
+      33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20
+    ]
     try {
       const res = await api("/past-papers")
-      if (res?.papers) {
-        const fullPaperNumbers = [48, 47, 46, 45, 44, 43]
-        const papers = res.papers.map((p) => {
-          if (p.number === 48) {
-            return {
-              ...p,
-              questions: Math.max(p.questions || 0, 200),
-              name: "48th BCS",
-              name_bn: "৪৮তম বিশেষ বিসিএস",
-              special: true,
-            }
+      let papers = Array.isArray(res?.papers) ? [...res.papers] : []
+      papers = papers.map((p) => {
+        const dataset = BCS_ALL_DATASETS[p.number]
+        if (dataset) {
+          return {
+            ...p,
+            questions: Math.max(p.questions || 0, dataset.questions.length),
+            name: dataset.meta.name,
+            name_bn: dataset.meta.name_bn,
+            special: dataset.meta.special,
           }
-          if (p.number === 47) {
-            return {
-              ...p,
-              questions: Math.max(p.questions || 0, 200),
-              name: "47th BCS",
-              name_bn: "৪৭তম বিসিএস",
-              special: false,
-            }
-          }
-          if (p.number === 46) {
-            return {
-              ...p,
-              questions: Math.max(p.questions || 0, 200),
-              name: "46th BCS",
-              name_bn: "৪৬তম বিসিএস",
-              special: false,
-            }
-          }
-          if (p.number === 45) {
-            return {
-              ...p,
-              questions: Math.max(p.questions || 0, 200),
-              name: "45th BCS",
-              name_bn: "৪৫তম বিসিএস",
-              special: false,
-            }
-          }
-          if (p.number === 44) {
-            return {
-              ...p,
-              questions: Math.max(p.questions || 0, 200),
-              name: "44th BCS",
-              name_bn: "৪৪তম বিসিএস",
-              special: false,
-            }
-          }
-          if (p.number === 43) {
-            return {
-              ...p,
-              questions: Math.max(p.questions || 0, 200),
-              name: "43rd BCS",
-              name_bn: "৪৩তম বিসিএস",
-              special: false,
-            }
-          }
-          return p
-        })
-
-        // Ensure papers 48, 47, 46, 45, 44, 43 exist
-        const metaMap = {
-          48: { name: "48th BCS", name_bn: "৪৮তম বিশেষ বিসিএস", special: true },
-          47: { name: "47th BCS", name_bn: "৪৭তম বিসিএস", special: false },
-          46: { name: "46th BCS", name_bn: "৪৬তম বিসিএস", special: false },
-          45: { name: "45th BCS", name_bn: "৪৫তম বিসিএস", special: false },
-          44: { name: "44th BCS", name_bn: "৪৪তম বিসিএস", special: false },
-          43: { name: "43rd BCS", name_bn: "৪৩তম বিসিএস", special: false },
         }
-        for (const num of fullPaperNumbers) {
-          if (!papers.some((p) => p.number === num)) {
+        return p
+      })
+
+      for (const num of fullPaperNumbers) {
+        if (!papers.some((p) => p.number === num)) {
+          const ds = BCS_ALL_DATASETS[num]
+          if (ds) {
             papers.push({
               number: num,
-              source: `${num}th BCS`,
-              name: metaMap[num].name,
-              name_bn: metaMap[num].name_bn,
-              special: metaMap[num].special,
-              questions: 200,
+              source: ds.meta.source,
+              name: ds.meta.name,
+              name_bn: ds.meta.name_bn,
+              special: ds.meta.special,
+              questions: ds.questions.length,
             })
           }
         }
-        papers.sort((a, b) => b.number - a.number)
-        return { ...res, papers }
       }
-      return res
+      papers.sort((a, b) => b.number - a.number)
+      return { ...res, papers }
     } catch {
-      return {
-        papers: [
-          { number: 48, source: "48th BCS", name: "48th BCS", name_bn: "৪৮তম বিশেষ বিসিএস", special: true, questions: 200 },
-          { number: 47, source: "47th BCS", name: "47th BCS", name_bn: "৪৭তম বিসিএস", special: false, questions: 200 },
-          { number: 46, source: "46th BCS", name: "46th BCS", name_bn: "৪৬তম বিসিএস", special: false, questions: 200 },
-          { number: 45, source: "45th BCS", name: "45th BCS", name_bn: "৪৫তম বিসিএস", special: false, questions: 200 },
-          { number: 44, source: "44th BCS", name: "44th BCS", name_bn: "৪৪তম বিসিএস", special: false, questions: 200 },
-          { number: 43, source: "43rd BCS", name: "43rd BCS", name_bn: "৪৩তম বিসিএস", special: false, questions: 200 },
-        ],
-      }
+      const papers = fullPaperNumbers.map((num) => {
+        const ds = BCS_ALL_DATASETS[num]
+        return {
+          number: num,
+          source: ds.meta.source,
+          name: ds.meta.name,
+          name_bn: ds.meta.name_bn,
+          special: ds.meta.special,
+          questions: ds.questions.length,
+        }
+      })
+      return { papers }
     }
   },
   /** One paper with every question, its answer and explanation. */
   show: async (number) => {
     const numVal = parseInt(number, 10)
-    const datasets = {
-      48: { meta: BCS_48TH_META, questions: bcs48thQuestions },
-      47: { meta: BCS_47TH_META, questions: bcs47thQuestions },
-      46: { meta: BCS_46TH_META, questions: bcs46thQuestions },
-      45: { meta: BCS_45TH_META, questions: bcs45thQuestions },
-      44: { meta: BCS_44TH_META, questions: bcs44thQuestions },
-      43: { meta: BCS_43RD_META, questions: bcs43rdQuestions },
-    }
-
-    if (datasets[numVal]) {
-      const entry = datasets[numVal]
+    const entry = BCS_ALL_DATASETS[numVal]
+    if (entry) {
       try {
         const res = await api(`/past-papers/${number}`)
-        if (res?.questions && res.questions.length >= 200) {
+        if (res?.questions && res.questions.length >= entry.questions.length) {
           return {
             paper: {
               ...res.paper,
@@ -269,7 +241,7 @@ export const pastPapersApi = {
           }
         }
       } catch {
-        // Fallback to client-side complete 200 questions dataset
+        // Fallback to client-side complete verified dataset
       }
       return {
         paper: {

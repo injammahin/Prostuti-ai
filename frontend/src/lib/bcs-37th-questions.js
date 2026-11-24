@@ -36,10 +36,10 @@ export const bcs37thQuestions = [
       "এএিইউ (ALU)",
       "কপ্টরাি ইউবনি (control unit)",
       "সিবজস্টাি সসব (Register set)",
-      "সকাপ্টনাবিই নয \nি"
+      "সকাপ্টনাবিই নয"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "বিবপইউ- এি ৩ বি অংশ। \nযো- Control Unit, \n- Arithmetic Logic Unit (গার্ববতক যুবক্ত অংশ) and \n- Memory/Register. \n- ALU (Arithmetic Logic Unit) হপ্টে কবম্পউিাপ্টসব \nকযািকু প্টসবি স্বরূপ। \n- এই অংশ িকি গার্ববতক এিং বিদ্ধান্ত গ্রহপ্র্টি কাজ কপ্টি োপ্টক। \nউৎি: নিম-েশম সের্ীি (উন্মুক্ত বিশ্বঃ) সিার্ণ িই।",
     "cancelled": false
   },
   {
@@ -58,10 +58,10 @@ export const bcs37thQuestions = [
       "AND",
       "NOR",
       "Ex-OR",
-      "OR \nি"
+      "OR"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "যবে Ex-OR Gate এি উভযই ইনপুি এি মান একই \nহয়, তপ্টি িবজক সিপ্টসব আউিপুপ্টসব মান ০ হয়। \nতপ্টি ইনপুি এি মান বভন্ন হপ্টি আউিপুি ১ হয়।",
     "cancelled": false
   },
   {
@@ -80,10 +80,10 @@ export const bcs37thQuestions = [
       "C",
       "DOS",
       "CP/M",
-      "XENIX \nি"
+      "XENIX"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "- কবম্পউিাি সিাগ্রাপ্টমি একবি িযাংগুপ্টযজ এি নাম C, \n- এছাড়া আিও কপ্টযকবি কবম্পউিাি িযাংগুপ্টযজ হপ্টিাঃ \nFORTAN, BASIC, ADA, C++. \nঅন্যবেপ্টক, DOS, CP/M, XENIX ইতযাবে হপ্টে অপাপ্টিবিং \nবিপ্টস্টম।",
     "cancelled": false
   },
   {
@@ -102,10 +102,10 @@ export const bcs37thQuestions = [
       "সনিওযাপ্টকণি মাধযপ্টম যুক্ত একাবধক কবম্পউিাি িাভণাি",
       "একবি বিশাি ক্ষমতা িম্পন্ন কবম্পউিাি িাভণাি",
       "িযিহািকািীি চাবহো অনুযাযী কবম্পউবিং সসবা সেযা",
-      "উপপ্টসব সকাপ্টনাবিই নয \nি"
+      "উপপ্টসব সকাপ্টনাবিই নয"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "ক্লাউর্ িাভণাপ্টসব িধানতম তিবশষ্ট্য হপ্টে Elasticity \n& Scalability। \n- যাি মাপ্টন হপ্টে, এখাপ্টন িাভণাপ্টসব বিপ্টিািণ িযিহািকািীি \nিপ্টযাজনমত িাড়ান কমাপ্টনা যায। \n- এপ্টত কপ্টি, একবেপ্টক সযমন িাভণাপ্টি চাপ পড়প্টি িপ্টযাজপ্টন \nবিপ্টিািণ খুি িহপ্টজ িাড়াপ্টনা যায সতমবন িপ্টযাজপ্টনি \nঅবতবিক্ত বিপ্টিািণ নষ্ট্ হয় না। \nিুত্রঃ আমাজন ওপ্টযি িাবভণি",
     "cancelled": false
   },
   {
@@ -124,10 +124,10 @@ export const bcs37thQuestions = [
       "১২৮",
       "৩২",
       "১২",
-      "৬ \nি"
+      "৬"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "- ক্রমিধণমান সনিওযাকণ বিস্তৃবতি কািপ্র্ট IPv4 এি \n32 বিপ্টসব অযাপ্টেি অিতুি হপ্টয সগপ্টছ। \n- এই িমিযা িমাধাপ্টনি জনয IPv6 নাপ্টম 128 বসব আইবপ \nঅযাপ্টেি চািু হপ্টযপ্টছ। \n- ইন্টািপ্টনি িপ্টিাকপ্টসব সবপ্টচপ্টয িাম্প্রবতক িংস্কির্ হপ্টিা - IPv6 \n- IPv6 uses 128-bit (2128) addresses, allowing 3.4 \nx 1038 unique IP addresses. This is equal to 340 \ntrillion trillion trillion IP addresses. \n- IPv6 is written in hexadecimal notation, \nseparated into 8 groups of 16 bits by the colons, \nthus (8 x 16 = 128) bits in total. \nতেযিূত্র: Redhat website.",
     "cancelled": false
   },
   {
@@ -146,10 +146,10 @@ export const bcs37thQuestions = [
       "OMR",
       "COM",
       "Plotter",
-      "Monitor \nি"
+      "Monitor"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -168,10 +168,10 @@ export const bcs37thQuestions = [
       "২৫৬ বি",
       "৪০৯৬ বি",
       "৬৫৫৩৬ বি",
-      "৪২৯৪৯৬৭২৯৬ বি \nি"
+      "৪২৯৪৯৬৭২৯৬ বি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -190,10 +190,10 @@ export const bcs37thQuestions = [
       "এবসব বনমণাতা গুগি",
       "এবি বিনাক্স কাপ্টনণি বনভণি",
       "এবি িধানত িাচবিন সমািাইি র্বভাইপ্টসব জনয ততবি",
-      "উপপ্টসব সবগুপ্টিা িবিক \nি"
+      "উপপ্টসব সবগুপ্টিা িবিক"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -212,10 +212,10 @@ export const bcs37thQuestions = [
       "অযাপি",
       "গুগি",
       "মাইপ্টক্রািফি",
-      "আইবিএম \nি"
+      "আইবিএম"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -234,10 +234,10 @@ export const bcs37thQuestions = [
       "RAM",
       "ROM",
       "Mercury Delay Lines",
-      "Registors \nি"
+      "Registors"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -256,10 +256,10 @@ export const bcs37thQuestions = [
       "১৯৯০ িাপ্টি",
       "১৯৮৮ িাপ্টি",
       "১৯৯৪ িাপ্টি",
-      "১৯৯৮ িাপ্টি \nি"
+      "১৯৯৮ িাপ্টি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -278,10 +278,10 @@ export const bcs37thQuestions = [
       "Simple Message Transmission Protocol",
       "Strategic Mail Transfer Protocol",
       "Strategic Mail Transmission Protocol",
-      "Simple Mail Transfer Protocol \nি"
+      "Simple Mail Transfer Protocol"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -300,10 +300,10 @@ export const bcs37thQuestions = [
       "সিাগ্রাম",
       "সিাপ্টিাকি",
       "সিাগ্রাবমং",
-      "সলাচািণ \nি"
+      "সলাচািণ"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -322,10 +322,10 @@ export const bcs37thQuestions = [
       "Queue",
       "Stack",
       "Union",
-      "Array \nি"
+      "Array"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -344,10 +344,10 @@ export const bcs37thQuestions = [
       "তামাি তাি",
       "অপবিকযাি ফাইিাি",
       "তািহীন িংপ্টযাগ",
-      "উপপ্টসব সবকবি \nি"
+      "উপপ্টসব সবকবি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -366,10 +366,10 @@ export const bcs37thQuestions = [
       "ধুবির্কা",
       "বায়ুস্তি",
       "িৃবষ্ট্ি র্কা",
-      "অবতপ্টিগুবন িবি \nি"
+      "অবতপ্টিগুবন িবি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -387,11 +387,11 @@ export const bcs37thQuestions = [
     "options": [
       "মেয বশপ্টে",
       "রুবি বশপ্টে",
-      "িাইবিক এবির্ উৎপােনঘ) এক সকাষীয সিাবিন ততবিপ্টত \nি",
+      "িাইবিক এবির্ উৎপােনঘ) এক সকাষীয সিাবিন ততবিপ্টত",
       "অপশন 4"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -410,10 +410,10 @@ export const bcs37thQuestions = [
       "েশ ভাপ্টগি একভাগ",
       "ছয ভাপ্টগি একভাগ",
       "বতন ভাপ্টগি একভাগ",
-      "চাি ভাপ্টগি একভাগ \nি"
+      "চাি ভাপ্টগি একভাগ"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -432,10 +432,10 @@ export const bcs37thQuestions = [
       "িাইপ্টিাজাইম",
       "গযািবিক জুি",
       "বিবিযা",
-      "বিপ্টফািাইি \nি"
+      "বিপ্টফািাইি"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -454,10 +454,10 @@ export const bcs37thQuestions = [
       "র্বএনএ িা আিএনএ োপ্টক",
       "শুধুমাত্র জীিপ্টেপ্টহি অভযন্তপ্টি িংখযািৃবদ্ধ কপ্টি",
       "ফবিক োনায রূপান্তবিত",
-      "িাইপ্টিাপ্টজাম োপ্টক \nি"
+      "িাইপ্টিাপ্টজাম োপ্টক"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -476,10 +476,10 @@ export const bcs37thQuestions = [
       "যাবিকশবক্তপ্টক তাপশবক্তপ্টত রূপান্তি",
       "তাপশবক্তপ্টক যাবিকশবক্তপ্টত রূপান্তি",
       "বিেুযৎশবক্তপ্টক যাবিকশবক্তপ্টত রূপান্তি",
-      "তাপশবক্তপ্টক বিেুযৎশবক্তপ্টত রূপান্তি \nি"
+      "তাপশবক্তপ্টক বিেুযৎশবক্তপ্টত রূপান্তি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -498,10 +498,10 @@ export const bcs37thQuestions = [
       "২৮০ m/s",
       "০",
       "৩৩২ m/s",
-      "১১২০ m/s \nি"
+      "১১২০ m/s"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -520,10 +520,10 @@ export const bcs37thQuestions = [
       "হাইপ্টপা-োইিযর্বজম",
       "িাতকানা",
       "এবনবমযা",
-      "সকাযাবশযিকি \nি"
+      "সকাযাবশযিকি"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -542,10 +542,10 @@ export const bcs37thQuestions = [
       "কাপ্টচি ততবি ঘি",
       "সবুজ আপ্টিাি আপ্টিাবকত ঘি",
       "সবুজ ভিপ্টনি নাম",
-      "সবুজ গাছপািা \nি"
+      "সবুজ গাছপািা"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -564,10 +564,10 @@ export const bcs37thQuestions = [
       "হাইপ্টোপ্টজন",
       "অবক্সপ্টজন",
       "সক্লাবিন",
-      "সরাবমন \nি"
+      "সরাবমন"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -586,10 +586,10 @@ export const bcs37thQuestions = [
       "বফশন",
       "সমিন",
       "বফউশন",
-      "বফউশন ও সমিন \nি"
+      "বফউশন ও সমিন"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -608,10 +608,10 @@ export const bcs37thQuestions = [
       "আবিকাি সজাহাপ্টনসবাপ্টগণ",
       "রাবজপ্টসব বিও-র্বপ্টজবনপ্টিাপ্টত",
       "ইতাবসব সিাপ্টম",
-      "যুক্তিাপ্টেি ওযাবশংিন র্ববিপ্টত \nি"
+      "যুক্তিাপ্টেি ওযাবশংিন র্ববিপ্টত"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -630,10 +630,10 @@ export const bcs37thQuestions = [
       "সমরু অঞ্চপ্টি",
       "বিষুি অঞ্চপ্টি",
       "পাহাপ্টড়ি ওপি",
-      "পৃবেিীি সকপ্টে \nি"
+      "পৃবেিীি সকপ্টে"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -652,10 +652,10 @@ export const bcs37thQuestions = [
       "৪০-৫০ ভাগ",
       "৬০-৭০ ভাগ",
       "৮০-৯০ ভাগ",
-      "৩০-২৫ ভাগ \nি"
+      "৩০-২৫ ভাগ"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -674,10 +674,10 @@ export const bcs37thQuestions = [
       "বভিাবমন ই",
       "বভিাবমন সক",
       "বভিাবমন বি কমবিক্স",
-      "বভিাবমন এ \nি"
+      "বভিাবমন এ"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -696,10 +696,10 @@ export const bcs37thQuestions = [
       "চীপ্টনি িাংহাই",
       "সদরদপ্তর নাই",
       "বিপ্টিাবিযা",
-      "নযাবেল্লী \nি"
+      "নযাবেল্লী"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -718,10 +718,10 @@ export const bcs37thQuestions = [
       "১৯৬৯",
       "১৯৭১",
       "১৯৭৫",
-      "১৯৭৮ \nি"
+      "১৯৭৮"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -740,10 +740,10 @@ export const bcs37thQuestions = [
       "হবিগি",
       "সগাপািগি",
       "বকপ্টশািগি",
-      "মুন্সীগি \nি"
+      "মুন্সীগি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -762,10 +762,10 @@ export const bcs37thQuestions = [
       "সমঘনা",
       "যমুনা",
       "পদ্মা",
-      "র্কণফু িী \nি"
+      "র্কণফু িী"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -784,10 +784,10 @@ export const bcs37thQuestions = [
       "উত্তি-পূর্ণ অঞ্চি",
       "উত্তি-পবিম অঞ্চি",
       "েবক্র্ষ-পবিম অঞ্চি",
-      "েবক্র্ষ-পূর্ণ অঞ্চি \nি"
+      "েবক্র্ষ-পূর্ণ অঞ্চি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -806,10 +806,10 @@ export const bcs37thQuestions = [
       "িপ্টিে অঞ্চি",
       "মধুপুি গড় অঞ্চি",
       "উপকূ িীয অঞ্চি",
-      "চিন বসব অঞ্চি \nি"
+      "চিন বসব অঞ্চি"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -828,10 +828,10 @@ export const bcs37thQuestions = [
       "বিপ্টসব",
       "সিকনাফ",
       "কক্সিাজাি",
-      "িন্দ্বীপ \nি"
+      "িন্দ্বীপ"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -850,10 +850,10 @@ export const bcs37thQuestions = [
       "অক্ষপ্টিখা",
       "িাবঘমাপ্টিখা",
       "উচ্চতা",
-      "িমুিপ্টরাত \nি"
+      "িমুিপ্টরাত"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -872,10 +872,10 @@ export const bcs37thQuestions = [
       "িড়ক েুঘণিনা",
       "তামাক ও মােকসবয গ্রর্হ",
       "বায়ু েূর্ষ",
-      "কযান্সাি \nি"
+      "কযান্সাি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -894,10 +894,10 @@ export const bcs37thQuestions = [
       "নতুন বেবল্ল",
       "কিপ্টম্বা",
       "ঢাকা",
-      "কািমান্ডু \nি"
+      "কািমান্ডু"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -916,10 +916,10 @@ export const bcs37thQuestions = [
       "উদ্ধাি পযণাপ্টয",
       "িভাি পযণাপ্টয",
       "সর্তকতা পযণাপ্টয",
-      "পুনিণািন পযণাপ্টয \nি"
+      "পুনিণািন পযণাপ্টয"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -938,10 +938,10 @@ export const bcs37thQuestions = [
       "ভূমিকম্প",
       "িমুপ্টসব জিস্তপ্টসব িৃবদ্ধ",
       "ঘূর্বণঝড় ও জপ্টিাচ্ছ্বাি",
-      "খরা ও িনযা \nি"
+      "খরা ও িনযা"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -960,10 +960,10 @@ export const bcs37thQuestions = [
       "ির্ণ বিপন",
       "ির্ণ কাজণন",
       "ির্ণ বমপ্টন্টা",
-      "ির্ণ হার্বণি \nি"
+      "ির্ণ হার্বণি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -982,10 +982,10 @@ export const bcs37thQuestions = [
       "ধাপ্টনি শীষ",
       "সনৌকা",
       "িাঙি",
-      "িাইিাইপ্টকি \nি"
+      "িাইিাইপ্টকি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1004,10 +1004,10 @@ export const bcs37thQuestions = [
       "বসব অি িাইসব",
       "মযাগনাকািণা",
       "বপবিশন অি িাইসব",
-      "মুখয আইন \nি"
+      "মুখয আইন"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1026,10 +1026,10 @@ export const bcs37thQuestions = [
       "নিাি বসবাজউপ্টদৌিা",
       "মুবশণে কু িী খান",
       "ইবিযাি শাহ",
-      "আিাউবদন হুপ্টিন শাহ \nি"
+      "আিাউবদন হুপ্টিন শাহ"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1048,10 +1048,10 @@ export const bcs37thQuestions = [
       "র্াযমন্ড",
       "রূপািী",
       "োমপ্টর্হ",
-      "বরশাইি \nি"
+      "বরশাইি"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1070,10 +1070,10 @@ export const bcs37thQuestions = [
       "আউশ ধান",
       "আমন ধান",
       "সিাপ্টিা ধান",
-      "ইবি ধান \nি"
+      "ইবি ধান"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1092,10 +1092,10 @@ export const bcs37thQuestions = [
       "BARI",
       "BRRI",
       "BADC",
-      "BINA \nি"
+      "BINA"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1114,10 +1114,10 @@ export const bcs37thQuestions = [
       "১০০ : ১০৬",
       "১০০ : ১০০.৬",
       "১০০ : ১০০.৩",
-      "১০০ : ১০০ \nি"
+      "১০০ : ১০০"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1136,10 +1136,10 @@ export const bcs37thQuestions = [
       "৬৫.৪ িছি",
       "৬৭.৫ িছি",
       "৭০.৯ িছি",
-      "৭২.৬ িছি \nি"
+      "৭২.৬ িছি"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1161,7 +1161,7 @@ export const bcs37thQuestions = [
       "সনত্রপ্টকানা \nসঠিক উত্তর: \"িাবতি কিা হপ্টযপ্টছ\" \nLive MCQ Analytics™: িবিক উত্তিোতা: 0%, ভুি \nউত্তিোতা: 0%, উত্তি কপ্টিনবন: 0% \nব্যাখ্যা: এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1180,10 +1180,10 @@ export const bcs37thQuestions = [
       "৪.৪ জন",
       "৫.০ জন",
       "৫.৪ জন",
-      "৫.৫ জন \nি"
+      "৫.৫ জন"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1202,10 +1202,10 @@ export const bcs37thQuestions = [
       "ঢাকা বিভাগ",
       "িাজশাহী বিভাগ",
       "িবিশাি বিভাগ",
-      "খুিনা বিভাগ \nি"
+      "খুিনা বিভাগ"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1227,7 +1227,7 @@ export const bcs37thQuestions = [
       "৭.৫% \nসঠিক উত্তর: \"িাবতি কিা হপ্টযপ্টছ\" \nLive MCQ Analytics™: িবিক উত্তিোতা: 0%, ভুি \nউত্তিোতা: 0%, উত্তি কপ্টিনবন: 0% \nব্যাখ্যা: এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "সেখুন।) \n২০১৫-১৬ অেণিপ্টছি বাংলাপ্টেপ্টশি অবজণত অেণশনবতক \nসবৃবদ্ধি হাি - \nক) ৬.৮৫% খ) ৬.৯৭% \nগ) ৭.০০% ঘ) ৭.৫% \nসঠিক উত্তর: \"িাবতি কিা হপ্টযপ্টছ\" \nLive MCQ Analytics™: িবিক উত্তিোতা: 0%, ভুি \nউত্তিোতা: 0%, উত্তি কপ্টিনবন: 0% \nব্যাখ্যা: এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1246,10 +1246,10 @@ export const bcs37thQuestions = [
       "বফনিযান্ড",
       "র্সনমাপ্টকণ",
       "নিওপ্টযপ্টত",
-      "িুইপ্র্টপ্টন \nি"
+      "িুইপ্র্টপ্টন"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1268,10 +1268,10 @@ export const bcs37thQuestions = [
       "সপিাপ্টপাি",
       "কৃ ষ্ণনগড়",
       "র্উবক",
-      "সমাহাবেপুি \nি"
+      "সমাহাবেপুি"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1290,10 +1290,10 @@ export const bcs37thQuestions = [
       "৬বি",
       "৮বি",
       "১০বি",
-      "১২বি \nি"
+      "১২বি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1312,10 +1312,10 @@ export const bcs37thQuestions = [
       "চীন",
       "ভারত",
       "যুক্তিাজয",
-      "োইিযান্ড \nি"
+      "োইিযান্ড"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1334,10 +1334,10 @@ export const bcs37thQuestions = [
       "রযাক িযাংক",
       "র্াচ-বাংলা িযাংক",
       "এবি িযাংক",
-      "সিানািী িযাংক \nি"
+      "সিানািী িযাংক"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1356,10 +1356,10 @@ export const bcs37thQuestions = [
       "িার্বজয মির্ািয",
       "অেণ মির্ািয",
       "পবিকেনা মির্ািয",
-      "বশে মির্ািয \nি"
+      "বশে মির্ািয"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1378,10 +1378,10 @@ export const bcs37thQuestions = [
       "িেম",
       "বিতীয",
       "িপ্তম",
-      "অষ্ট্ম \nি"
+      "অষ্ট্ম"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1400,10 +1400,10 @@ export const bcs37thQuestions = [
       "িক্ষ্মীপুি সজিায",
       "সমপ্টহিপুি সজিায",
       "ঝািকািী সজিায",
-      "িাঙামাবি সজিায \nি"
+      "িাঙামাবি সজিায"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1422,10 +1422,10 @@ export const bcs37thQuestions = [
       "আিমগীি কবসব",
       "খান আতাউি িহমান",
       "হুমাযূন আহপ্টমে",
-      "িুভাষ েত্ত \nি"
+      "িুভাষ েত্ত"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1444,10 +1444,10 @@ export const bcs37thQuestions = [
       "িংিে সনতাি সভাি",
       "হুইপ্টপি সভাি",
       "বিকাপ্টসব সভাি",
-      "িােপবতি সভাি \nি"
+      "িােপবতি সভাি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1466,10 +1466,10 @@ export const bcs37thQuestions = [
       "National Information Legal Guide",
       "National Institute Local Government",
       "National Identity Licence Guide",
-      "National Industrial League Group \nি"
+      "National Industrial League Group"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1488,10 +1488,10 @@ export const bcs37thQuestions = [
       "২৬",
       "২৭",
       "২৮",
-      "৩১ \nি"
+      "৩১"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1510,10 +1510,10 @@ export const bcs37thQuestions = [
       "১৩০",
       "১৩১",
       "১৩৭",
-      "১৪০ \nি"
+      "১৪০"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1532,10 +1532,10 @@ export const bcs37thQuestions = [
       "২ ভাপ্টগ",
       "৪ ভাপ্টগ",
       "৫ ভাপ্টগ",
-      "৮ ভাপ্টগ \nি"
+      "৮ ভাপ্টগ"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1554,10 +1554,10 @@ export const bcs37thQuestions = [
       "সিপ্টনগাি",
       "মািপ্টযবশযা",
       "মাসবীপ",
-      "পাবকস্তান \nি"
+      "পাবকস্তান"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1576,10 +1576,10 @@ export const bcs37thQuestions = [
       "িীি িতীক",
       "িীিপ্টেষ্ঠ",
       "িীি উত্তম",
-      "িীি বিক্রম \nি"
+      "িীি বিক্রম"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1598,10 +1598,10 @@ export const bcs37thQuestions = [
       "১৯৯৭ িাপ্টি",
       "১৯৯৯ িাপ্টি",
       "২০০১ িাপ্টি",
-      "২০০০ িাপ্টি \nি"
+      "২০০০ িাপ্টি"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1620,10 +1620,10 @@ export const bcs37thQuestions = [
       "ভারত ও সনপাি",
       "পাবকস্তান ও চীন",
       "ভূিান ও ভারত",
-      "বাংলাপ্টেশ ও ভারত \nি"
+      "বাংলাপ্টেশ ও ভারত"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1642,10 +1642,10 @@ export const bcs37thQuestions = [
       "ভারত মহািাগি",
       "িশান্ত মহািাগি",
       "আসবাবন্টক মহািাগি",
-      "আকণবিক মহািাগি \nি"
+      "আকণবিক মহািাগি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1664,10 +1664,10 @@ export const bcs37thQuestions = [
       "তুকণপ্টমন",
       "উইঘুি",
       "তাবজক",
-      "কাজাখ \nি"
+      "কাজাখ"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1686,10 +1686,10 @@ export const bcs37thQuestions = [
       "Google Earth",
       "Street View",
       "Road Image",
-      "Google Map \nি"
+      "Google Map"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1708,10 +1708,10 @@ export const bcs37thQuestions = [
       "২৫%",
       "৩৫%",
       "৪৫%",
-      "৫৫% \nি"
+      "৫৫%"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1730,10 +1730,10 @@ export const bcs37thQuestions = [
       "নাইিাি অক্সাইর্",
       "কািণন-র্াই-অক্সাইর্",
       "অবক্সপ্টজন",
-      "বমপ্টেন \nি"
+      "বমপ্টেন"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1752,10 +1752,10 @@ export const bcs37thQuestions = [
       "IPCC",
       "COP 21",
       "Green Peace",
-      "Sierra Club \nি"
+      "Sierra Club"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1774,10 +1774,10 @@ export const bcs37thQuestions = [
       "UNDP",
       "World Bank",
       "IMF",
-      "BRICS \nি"
+      "BRICS"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1796,10 +1796,10 @@ export const bcs37thQuestions = [
       "ওযাবশংিন র্ববি",
       "বনউইযকণ",
       "সজপ্টনভা",
-      "সিাম \nি"
+      "সিাম"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1818,10 +1818,10 @@ export const bcs37thQuestions = [
       "IFC",
       "IBRD",
       "MIGA",
-      "ICSID \nি"
+      "ICSID"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1840,10 +1840,10 @@ export const bcs37thQuestions = [
       "ইতাবি",
       "ইংিযান্ড",
       "িান্স",
-      "িাবশযা \nি"
+      "িাবশযা"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1862,10 +1862,10 @@ export const bcs37thQuestions = [
       "জাপান , জামণাবন, িান্স , বরপ্টিন, কানার্া, যুক্তিাে",
       "িান্স , িাবশযা, যুক্তিাে, বরপ্টিন, চীন",
       "যুক্তিাে, জামণাবন, বরপ্টিন, রাবজি, চীন, নাইপ্টজবিযা",
-      "উত্তি সকাবিযা, পাবকস্তান, ভারত, ইসবাপ্টযি, চীন \nি"
+      "উত্তি সকাবিযা, পাবকস্তান, ভারত, ইসবাপ্টযি, চীন"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1884,10 +1884,10 @@ export const bcs37thQuestions = [
       "২২ নবিকযাি মাইি",
       "৪৪ নবিকযাি মাইি",
       "২০০ নবিকযাি মাইি",
-      "৩৭০ নবিকযাি মাইি \nি"
+      "৩৭০ নবিকযাি মাইি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1906,10 +1906,10 @@ export const bcs37thQuestions = [
       "২ এবসব ২০১৫",
       "১৪ জুিাই ২০১৫",
       "২৪ সিপ্টেম্বি ২০১৪",
-      "১০ র্বপ্টিম্বি ২০১৩ \nি"
+      "১০ র্বপ্টিম্বি ২০১৩"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1928,10 +1928,10 @@ export const bcs37thQuestions = [
       "১৯৪৫",
       "২০১১",
       "২০১৩",
-      "১৯৭১ \nি"
+      "১৯৭১"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1950,10 +1950,10 @@ export const bcs37thQuestions = [
       "একবি গ্রপ্টেি নাম",
       "একবি পানীয",
       "ির্ণিাে বিপ্টিাধী আপ্টন্দািন",
-      "একবি NGO \nি"
+      "একবি NGO"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1972,10 +1972,10 @@ export const bcs37thQuestions = [
       "িাবশযা",
       "যুক্তিাে",
       "ইিান",
-      "জামণাবন \nি"
+      "জামণাবন"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -1997,7 +1997,7 @@ export const bcs37thQuestions = [
       "CTBT"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2016,10 +2016,10 @@ export const bcs37thQuestions = [
       "োবযত্বশীিতা",
       "তনবতকতা",
       "েক্ষতা",
-      "সবিতা \nি"
+      "সবিতা"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2038,10 +2038,10 @@ export const bcs37thQuestions = [
       "িতয ও নযায",
       "িােণকতা",
       "শিতা",
-      "অিবহষ্ণু তা \nি"
+      "অিবহষ্ণু তা"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2060,10 +2060,10 @@ export const bcs37thQuestions = [
       "িাজনীবত",
       "িুবদ্ধজীিী িম্প্রোয",
       "িংিাে মাধযম",
-      "যুিশবক্ত \nি"
+      "যুিশবক্ত"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2082,10 +2082,10 @@ export const bcs37thQuestions = [
       "বিশ্বস্ততা",
       "িৃজনশীিতা",
       "বনিপ্টপক্ষতা",
-      "জিািবেবহতা \nি"
+      "জিািবেবহতা"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2104,10 +2104,10 @@ export const bcs37thQuestions = [
       "৬ বি",
       "৭বি",
       "৮বি",
-      "৯বি \nি"
+      "৯বি"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2126,10 +2126,10 @@ export const bcs37thQuestions = [
       "পুিস্কাি ও শাবস্তি সক্ষপ্টত্র িমতাি নীবত িপ্টযাগ",
       "আইপ্টনি শািন",
       "িুশািপ্টনি জনয উচ্চ বশবক্ষত কমণকতণা বনপ্টযাগ",
-      "অবধকাি ও িুপ্টযাপ্টগি সক্ষপ্টত্র িমতাি বনবিতকির্ \nি"
+      "অবধকাি ও িুপ্টযাপ্টগি সক্ষপ্টত্র িমতাি বনবিতকির্"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2148,10 +2148,10 @@ export const bcs37thQuestions = [
       "যো িমপ্টয অবফপ্টি আগমন ও অবফি তযাগ কিা",
       "োপ্তবিক কাপ্টজ সকাপ্টনা অশিধ িুবিধা গ্রর্হ না কিা",
       "বনপ্টমণাহ ও বনিপ্টপক্ষভাপ্টি অবপণত োবযত্ব যোবিবধ িম্পন্ন কিা",
-      "ঊধণিতন কতৃণপপ্টক্ষি সয সকাপ্টনা বনপ্টেণশ িবতপািন কিা \nি"
+      "ঊধণিতন কতৃণপপ্টক্ষি সয সকাপ্টনা বনপ্টেণশ িবতপািন কিা"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2170,10 +2170,10 @@ export const bcs37thQuestions = [
       "িততা ও বনষ্ঠা",
       "কতণিযপিার্যতা",
       "মাযা ও মমতা",
-      "উোিতা \nি"
+      "উোিতা"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2192,10 +2192,10 @@ export const bcs37thQuestions = [
       "এবিস্টসব",
       "জন স্টু যািণ বমি",
       "মযাককিনী",
-      "সমবকযাপ্টভবি \nি"
+      "সমবকযাপ্টভবি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2214,10 +2214,10 @@ export const bcs37thQuestions = [
       "সুশাসন",
       "আইপ্টনি শািন",
       "িাজনীবত",
-      "মানিাবধকাি \nি"
+      "মানিাবধকাি"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2236,10 +2236,10 @@ export const bcs37thQuestions = [
       "in",
       "on",
       "like",
-      "of \nি"
+      "of"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2258,10 +2258,10 @@ export const bcs37thQuestions = [
       "had it mended",
       "had it mend",
       "did it mend",
-      "had mended \nি"
+      "had mended"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2280,10 +2280,10 @@ export const bcs37thQuestions = [
       "a",
       "an",
       "the",
-      "no article is needed \nি"
+      "no article is needed"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2302,10 +2302,10 @@ export const bcs37thQuestions = [
       "eating all types of food",
       "eating only fruits",
       "eating only meat",
-      "eating grass and plants only \nি"
+      "eating grass and plants only"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2324,10 +2324,10 @@ export const bcs37thQuestions = [
       "Watch out for falling animals.",
       "Make sure you take an umbrella.",
       "Keep your pets inside.",
-      "Keep the windows open. \nি"
+      "Keep the windows open."
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2346,10 +2346,10 @@ export const bcs37thQuestions = [
       "A strong point",
       "A weak point",
       "A permanent solution",
-      "A serious idea \nি"
+      "A serious idea"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2368,10 +2368,10 @@ export const bcs37thQuestions = [
       "A noun phrase",
       "An adjective phrase",
       "An infinitive phrase",
-      "An adverbial phrase \nি"
+      "An adverbial phrase"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2390,10 +2390,10 @@ export const bcs37thQuestions = [
       "A noun clause",
       "An adverbial clause",
       "An adjective clause",
-      "None of the three \nি"
+      "None of the three"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2412,10 +2412,10 @@ export const bcs37thQuestions = [
       "sanction",
       "substitute",
       "stipulation",
-      "directive \nি"
+      "directive"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2434,10 +2434,10 @@ export const bcs37thQuestions = [
       "11 a.m",
       "11 p.m",
       "7 a.m",
-      "7 p.m \nি"
+      "7 p.m"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2456,10 +2456,10 @@ export const bcs37thQuestions = [
       "toxic",
       "spurious",
       "harmless",
-      "lethal \nি"
+      "lethal"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2478,10 +2478,10 @@ export const bcs37thQuestions = [
       "T. S Eliot",
       "W. B Yeats",
       "Mathew Arnold",
-      "Robert Browning \nি"
+      "Robert Browning"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2500,10 +2500,10 @@ export const bcs37thQuestions = [
       "As You Like It",
       "Macbeth",
       "Tempest",
-      "Othello \nি"
+      "Othello"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2522,10 +2522,10 @@ export const bcs37thQuestions = [
       "Thomas Gray",
       "P. B Shelley",
       "Robert Frost",
-      "Y. B Yeats \nি"
+      "Y. B Yeats"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2544,10 +2544,10 @@ export const bcs37thQuestions = [
       "John Webster",
       "Ben Jonson",
       "Christopher Marlowe",
-      "William Shakespeare \nি"
+      "William Shakespeare"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2565,11 +2565,11 @@ export const bcs37thQuestions = [
     "options": [
       "Alliterative",
       "Sonnet form",
-      "Iambic pentameterঘ) Dactylic Hexameter \nি",
+      "Iambic pentameterঘ) Dactylic Hexameter",
       "অপশন 4"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2588,10 +2588,10 @@ export const bcs37thQuestions = [
       "personification",
       "onomatopoeia",
       "alliteration",
-      "rhyme \nি"
+      "rhyme"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2610,10 +2610,10 @@ export const bcs37thQuestions = [
       "The Epic",
       "The Comic",
       "The Occult",
-      "the Tragic \nি"
+      "the Tragic"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2632,10 +2632,10 @@ export const bcs37thQuestions = [
       "Quartet",
       "Limerick",
       "Sixtet",
-      "Haiku \nি"
+      "Haiku"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2654,10 +2654,10 @@ export const bcs37thQuestions = [
       "Lord Byron",
       "P. B Shelley",
       "S. T Coleridge",
-      "Charles Lamb \nি"
+      "Charles Lamb"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2676,10 +2676,10 @@ export const bcs37thQuestions = [
       "Romantic",
       "Victorian",
       "Modern",
-      "Elizabethan \nি"
+      "Elizabethan"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2698,10 +2698,10 @@ export const bcs37thQuestions = [
       "Ring",
       "Handkerchief",
       "Pendant",
-      "Bangles \nি"
+      "Bangles"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2720,10 +2720,10 @@ export const bcs37thQuestions = [
       "John Milton",
       "S. T. Coleridge",
       "John Keats",
-      "Lord Byron \nি"
+      "Lord Byron"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2742,10 +2742,10 @@ export const bcs37thQuestions = [
       "metaphor",
       "simile",
       "alliteration",
-      "personification \nি"
+      "personification"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2764,10 +2764,10 @@ export const bcs37thQuestions = [
       "1560",
       "1660",
       "1760",
-      "1866 \nি"
+      "1866"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2786,10 +2786,10 @@ export const bcs37thQuestions = [
       "Charles Dickens",
       "Herman Melville",
       "Earnest Hemingway",
-      "Thomas Hardy \nি"
+      "Thomas Hardy"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2808,10 +2808,10 @@ export const bcs37thQuestions = [
       "Microphone",
       "Wireless",
       "Electricity",
-      "Wire \nি"
+      "Wire"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2830,10 +2830,10 @@ export const bcs37thQuestions = [
       "Vital",
       "Thin",
       "Careful",
-      "Dangerous \nি"
+      "Dangerous"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2852,10 +2852,10 @@ export const bcs37thQuestions = [
       "formulae",
       "agenda",
       "oases",
-      "radius \nি"
+      "radius"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2874,10 +2874,10 @@ export const bcs37thQuestions = [
       "All of it depend on you",
       "All of it are depending on you",
       "All of it depends on you",
-      "All of it are depended on you \nি"
+      "All of it are depended on you"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2896,10 +2896,10 @@ export const bcs37thQuestions = [
       "Since a stone is rolling, it gathers no moss.",
       "Though a stone rolls, it gathers no moss.",
       "A stone what rolls gathers no moss.",
-      "A stone that rolls, gathers no moss. \nি"
+      "A stone that rolls, gathers no moss."
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2918,10 +2918,10 @@ export const bcs37thQuestions = [
       "changed",
       "removed",
       "joined",
-      "shortened \nি"
+      "shortened"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2940,10 +2940,10 @@ export const bcs37thQuestions = [
       "a noun",
       "an adverb",
       "an adjective",
-      "none of the three \nি"
+      "none of the three"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2962,10 +2962,10 @@ export const bcs37thQuestions = [
       "unexpected",
       "tempting",
       "disappointing",
-      "ordinary \nি"
+      "ordinary"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -2984,10 +2984,10 @@ export const bcs37thQuestions = [
       "By whom was the tree planted here?",
       "Who the tree had been planted hereby?",
       "The tree was planted here by whom?",
-      "By whom had the tree been planted here? \nি"
+      "By whom had the tree been planted here?"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3006,10 +3006,10 @@ export const bcs37thQuestions = [
       "A noun",
       "An adjective",
       "An adverb",
-      "A verb \nি"
+      "A verb"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3028,10 +3028,10 @@ export const bcs37thQuestions = [
       "A gerund",
       "A participle",
       "An infinitive",
-      "A finite verb \nি"
+      "A finite verb"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3050,10 +3050,10 @@ export const bcs37thQuestions = [
       "তচত্র িংক্রাবন্ত",
       "সপৌষ িংক্রাবন্ত",
       "বশপ্টি িংক্রাবন্ত",
-      "বশি-িংক্রাবন্ত \nি"
+      "বশি-িংক্রাবন্ত"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3072,10 +3072,10 @@ export const bcs37thQuestions = [
       "মানি",
       "সগািাপ",
       "একাঙ্ক",
-      "ধাতি \nি"
+      "ধাতি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3094,10 +3094,10 @@ export const bcs37thQuestions = [
       "িঙ্গভাষা ও িাবহতয",
       "িাঙ্গািা িাবহপ্টতযি ইবতহাি",
       "বাংলা িাবহপ্টতযি ইবতিৃত্ত",
-      "বাংলা িাবহপ্টতযি কো \nি"
+      "বাংলা িাবহপ্টতযি কো"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3116,10 +3116,10 @@ export const bcs37thQuestions = [
       "মুনীি সচৌধুিী",
       "হািান হাবফজুি িহমান",
       "শামিুি িাহমান",
-      "গাজীউি হক \nি"
+      "গাজীউি হক"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3138,10 +3138,10 @@ export const bcs37thQuestions = [
       "বনক্র্ক, িূচগ্র, অনুধণি",
       "অনূিণি, ঊধণিগামী, শুদ্ধযশুবদ্ধ",
       "ভূবিভূবি, ভূূঁবড়ওযািা, মাতৃশ্বিা",
-      "িাবন, বিবকির্, েুিবতক্রময \nি"
+      "িাবন, বিবকির্, েুিবতক্রময"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3160,10 +3160,10 @@ export const bcs37thQuestions = [
       "মমতাজউেেীন আহমে",
       "আেুল্লাহ আি মামুন",
       "সিবিম আি েীন",
-      "িাপ্টমন্দু মজুমোি \nি"
+      "িাপ্টমন্দু মজুমোি"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3182,10 +3182,10 @@ export const bcs37thQuestions = [
       "একাগ্রতায",
       "িমান িযিহাপ্টি",
       "িম ভািনায",
-      "একপ্টযাপ্টগ \nি"
+      "একপ্টযাপ্টগ"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3204,10 +3204,10 @@ export const bcs37thQuestions = [
       "ভাসবি",
       "মধুি সব",
       "সিমসব",
-      "িীিাসব \nি"
+      "িীিাসব"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3226,10 +3226,10 @@ export const bcs37thQuestions = [
       "Buddhist Mystic Songs",
       "চযণাগীবতকা",
       "চযণাগীবতপ্টকাষ",
-      "হাজাি িছপ্টসব পুিার্ বাংলা ভাষায সিৌদ্ধগান ও সোহা \nি"
+      "হাজাি িছপ্টসব পুিার্ বাংলা ভাষায সিৌদ্ধগান ও সোহা"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3248,10 +3248,10 @@ export const bcs37thQuestions = [
       "েবক্র্ষাসবন বমত্র মজুমোি",
       "হসবিাে শাস্ত্রী",
       "চেকু মাি সে",
-      "েীপ্টনশচে সিন \nি"
+      "েীপ্টনশচে সিন"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3270,10 +3270,10 @@ export const bcs37thQuestions = [
       "িমােণক িন্দ্ব",
       "বিপিীতােণক িন্দ্ব",
       "অিুক িন্দ্ব",
-      "একপ্টশষ িন্দ্ব \nি"
+      "একপ্টশষ িন্দ্ব"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3292,10 +3292,10 @@ export const bcs37thQuestions = [
       "সযৌবগক স্বিধ্ববন",
       "তাসবয স্বিধ্ববন",
       "বমবিত স্বিধ্ববন",
-      "সকাপ্টনাবি নয \nি"
+      "সকাপ্টনাবি নয"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3314,10 +3314,10 @@ export const bcs37thQuestions = [
       "বিস্ময িািা আপন্ন",
       "বিস্মপ্টয আপন্ন",
       "বিস্মযপ্টক আপন্ন",
-      "বিস্মপ্টয সয আপন্ন \nি"
+      "বিস্মপ্টয সয আপন্ন"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3336,10 +3336,10 @@ export const bcs37thQuestions = [
       "পিাশীি যুদ্ধ",
       "তৃতীয পাবনপপ্টেি যুদ্ধ",
       "১৯৫৭ িাপ্টসব বিপাহী বিপ্টিাহ",
-      "বছযাত্তপ্টসব মন্বন্তি \nি"
+      "বছযাত্তপ্টসব মন্বন্তি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3358,10 +3358,10 @@ export const bcs37thQuestions = [
       "িহু চণ্ডাপ্টসব হাড়",
       "তকিতণ খণ্ড",
       "ফু ি িউ",
-      "অিীক মানুষ \nি"
+      "অিীক মানুষ"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3380,10 +3380,10 @@ export const bcs37thQuestions = [
       "১৯১০",
       "১৯১১",
       "১৯১২",
-      "১৯১৩ \nি"
+      "১৯১৩"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3402,10 +3402,10 @@ export const bcs37thQuestions = [
       "আি মাহমুে",
       "আেুি মান্নান তিযে",
       "অবময চক্রিতণী",
-      "শামিুি িাহমান \nি"
+      "শামিুি িাহমান"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3424,10 +3424,10 @@ export const bcs37thQuestions = [
       "কোনটি চযণাগান, আি কোনটি নয",
       "কোনটি আচির্ীয, আি কোনটি নয",
       "কোনটি চিাচপ্টসব, আি কোনটি নয",
-      "কোনটি আচাপ্টযণি, আি কোনটি নয \nি"
+      "কোনটি আচাপ্টযণি, আি কোনটি নয"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3446,10 +3446,10 @@ export const bcs37thQuestions = [
       "তশিধমণ",
       "সিৌদ্ধ িহজযান",
       "নােধমণ",
-      "সকাপ্টনাবি নয \nি"
+      "সকাপ্টনাবি নয"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3468,10 +3468,10 @@ export const bcs37thQuestions = [
       "িামবনবধ গুপ্ত",
       "োশিবে িায",
       "এন্টবন বফবিবঙ্গ",
-      "িামসবাে সিন \nি"
+      "িামসবাে সিন"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3490,10 +3490,10 @@ export const bcs37thQuestions = [
       "হুমাযুন আজাে",
       "সহিাি হাবফজ",
       "আিাে সচৌধুিী",
-      "িবফক আজাে \nি"
+      "িবফক আজাে"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3512,10 +3512,10 @@ export const bcs37thQuestions = [
       "আইন",
       "িো",
       "শুল্ক",
-      "িাজস্বনীবত \nি"
+      "িাজস্বনীবত"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3534,10 +3534,10 @@ export const bcs37thQuestions = [
       "রাহ্র্মযযুপ্টগ নি মুিবিম বছপ্টিন িপ্টি",
       "ইসবাপ্টমি গুর্কীতণন কপ্টিবছপ্টিন িপ্টি",
       "িাচীন বাংলাি বিপ্টিাহী বছপ্টিন িপ্টি",
-      "িচবিত ধমণ ও িংস্কাি-বিপ্টিষী বছপ্টিন িপ্টি \nি"
+      "িচবিত ধমণ ও িংস্কাি-বিপ্টিষী বছপ্টিন িপ্টি"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3556,10 +3556,10 @@ export const bcs37thQuestions = [
       "িবঙ্কমচপ্টেি 'বিষিৃক্ষ'",
       "সবীেনাপ্টেি 'প্টচাপ্টখি িাবি'",
       "িবঙ্কমচপ্টেি 'কপািকু ণ্ডিা'",
-      "সবীেনাপ্টেি 'প্টযাগাপ্টযাগ' \nি"
+      "সবীেনাপ্টেি 'প্টযাগাপ্টযাগ'"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3578,10 +3578,10 @@ export const bcs37thQuestions = [
       "মীি মশাসবফ সহাপ্টিপ্টনি",
       "ইিমাইি সহাপ্টিন বসবাজীি",
       "সবীেনাে িাকু প্টসব",
-      "কাজী নজরুি ইসবাম \nি"
+      "কাজী নজরুি ইসবাম"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3600,10 +3600,10 @@ export const bcs37thQuestions = [
       "তৃতীয ির্ণ",
       "বিতীয ও চতুেণ ির্ণ",
       "িেম ও বিতীয ির্ণ",
-      "বিতীয ও তৃতীয ির্ণ \nি"
+      "বিতীয ও তৃতীয ির্ণ"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3622,10 +3622,10 @@ export const bcs37thQuestions = [
       "সেবশ উপিগণপ্টযাপ্টগ",
       "বিপ্টেবশ উপিগণপ্টযাপ্টগ",
       "িংস্কৃ ত উপিগণপ্টযাপ্টগ",
-      "সকাপ্টনাবি নয \nি"
+      "সকাপ্টনাবি নয"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3644,10 +3644,10 @@ export const bcs37thQuestions = [
       "মাত্রািৃত্ত",
       "অক্ষসবৃত্ত",
       "মুক্তক",
-      "স্বসবৃত্ত \nি"
+      "স্বসবৃত্ত"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3666,10 +3666,10 @@ export const bcs37thQuestions = [
       "অবহংি – িবহংি",
       "সবন্ন - বিষন্ন",
       "সোষী – বনপ্টেণাষী",
-      "বনষ্পাপ - পাবপনী \nি"
+      "বনষ্পাপ - পাবপনী"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3688,10 +3688,10 @@ export const bcs37thQuestions = [
       "িুদ্ধপ্টেি সবু",
       "েীপ্টনশসবন োশ",
       "িজনীকান্ত োি",
-      "সিপ্টমে বমত্র \nি"
+      "সিপ্টমে বমত্র"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3710,10 +3710,10 @@ export const bcs37thQuestions = [
       "অপপ্টনােন অপ্টেণ",
       "পূজা অপ্টেণ",
       "বসবাপ্টনা অপ্টেণ",
-      "উপহাি অপ্টেণ \nি"
+      "উপহাি অপ্টেণ"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3732,10 +3732,10 @@ export const bcs37thQuestions = [
       "সমাতাপ্টহি সহাপ্টিন সচৌধুিী",
       "িাপ্টমেিুন্দি বত্রপ্টিেী",
       "িমে সচৌধুিী",
-      "কাজী আেুি ওেুে \nি"
+      "কাজী আেুি ওেুে"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3754,10 +3754,10 @@ export const bcs37thQuestions = [
       "আপবন স্বপবসবাপ্টি আমবিত।",
       "তাি কো শুপ্টন আবম আিাযণাবন্বত হিাম।",
       "সতামাি পিশ্রীকাতিতায আবম মুগ্ধ।",
-      "সিবেন সেপ্টক বতবন সিখান আি যায না। \nি"
+      "সিবেন সেপ্টক বতবন সিখান আি যায না।"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3776,10 +3776,10 @@ export const bcs37thQuestions = [
       "সশাককবিতা",
       "পত্রকাব্য",
       "খণ্ড কবিতা",
-      "সকািািগান \nি"
+      "সকািািগান"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3798,10 +3798,10 @@ export const bcs37thQuestions = [
       "বাংলা ধ্ববনবিজ্ঞান",
       "আধুবনক বাংলা ধ্ববনবিজ্ঞান",
       "ধ্ববনবিজ্ঞাপ্টনি কো",
-      "ধ্ববনবিজ্ঞান ও বাংলা ধ্ববনতত্ত্ব \nি"
+      "ধ্ববনবিজ্ঞান ও বাংলা ধ্ববনতত্ত্ব"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3820,10 +3820,10 @@ export const bcs37thQuestions = [
       "পািক",
       "িবহ্ন",
       "হুতাশন",
-      "িজ্ববিত \nি"
+      "িজ্ববিত"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3842,10 +3842,10 @@ export const bcs37thQuestions = [
       "Achivement",
       "Acheivment",
       "Achievement",
-      "Acheivement \nি"
+      "Acheivement"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3864,10 +3864,10 @@ export const bcs37thQuestions = [
       "িুবিবেত",
       "িুগবিত",
       "িুবিনীত",
-      "বিবধত \nি"
+      "বিবধত"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3886,10 +3886,10 @@ export const bcs37thQuestions = [
       "QRPNF",
       "NRMND",
       "ORNMG",
-      "NRMNC \nি"
+      "NRMNC"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3908,10 +3908,10 @@ export const bcs37thQuestions = [
       "9%",
       "9.2%",
       "8%",
-      "8.2% \nি"
+      "8.2%"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3930,10 +3930,10 @@ export const bcs37thQuestions = [
       "16%",
       "20%",
       "25%",
-      "28% \nি"
+      "28%"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3952,10 +3952,10 @@ export const bcs37thQuestions = [
       "57",
       "75",
       "39",
-      "93 \nি"
+      "93"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3974,10 +3974,10 @@ export const bcs37thQuestions = [
       "140",
       "142",
       "148",
-      "150 \nি"
+      "150"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -3996,10 +3996,10 @@ export const bcs37thQuestions = [
       "5",
       "10",
       "12",
-      "8 \nি"
+      "8"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4018,10 +4018,10 @@ export const bcs37thQuestions = [
       "িমিাহু",
       "িমবসবাহু",
       "িমপ্টকার্ী",
-      "স্থূিপ্টকার্ী \nি"
+      "স্থূিপ্টকার্ী"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4040,10 +4040,10 @@ export const bcs37thQuestions = [
       "3",
       "4",
       "5",
-      "6 \nি"
+      "6"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4062,10 +4062,10 @@ export const bcs37thQuestions = [
       "170",
       "182",
       "190",
-      "192 \nি"
+      "192"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4084,10 +4084,10 @@ export const bcs37thQuestions = [
       "পূর্ণ",
       "পবিম",
       "উত্তি",
-      "েবক্র্ষ \nি"
+      "েবক্র্ষ"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4106,10 +4106,10 @@ export const bcs37thQuestions = [
       "সমািা হাতপ্টসব োইভািপ্টক সিবশিাি ঘুিাপ্টত হপ্টি",
       "বচকন হাতপ্টসব োইভািপ্টক সিবশিাি ঘুিাপ্টত হপ্টি",
       "েু'বিপ্টক একই িংখযকিাি ঘুিাপ্টত হপ্টি",
-      "সকাপ্টনাবিই নয \nি"
+      "সকাপ্টনাবিই নয"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4128,10 +4128,10 @@ export const bcs37thQuestions = [
       "৪০",
       "১২৫",
       "৯০",
-      "১৪০ \nি"
+      "১৪০"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4150,10 +4150,10 @@ export const bcs37thQuestions = [
       "০.৬৪",
       "০.০৬৪",
       "০.০০০৬৪",
-      "৬.৪০ \nি"
+      "৬.৪০"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4172,10 +4172,10 @@ export const bcs37thQuestions = [
       "বপছপ্টন",
       "িামপ্টন",
       "র্ান পাপ্টশ্বণ",
-      "িাম পাপ্টশ্বণ \nি"
+      "িাম পাপ্টশ্বণ"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4194,10 +4194,10 @@ export const bcs37thQuestions = [
       "িুধিাি",
       "িৃহিবতিাি",
       "শুক্রিাি",
-      "শবনিাি \nি"
+      "শবনিাি"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4216,10 +4216,10 @@ export const bcs37thQuestions = [
       "১০%",
       "২০%",
       "৩৬%",
-      "৪০% \nি"
+      "৪০%"
     ],
     "answer": 2,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4238,10 +4238,10 @@ export const bcs37thQuestions = [
       "সিপ্টন সনযা িযবক্তি",
       "সিপ্টি সনযা িযবক্তি",
       "েু'জপ্টনি িমান কষ্ট্ হপ্টি",
-      "সকাপ্টনাবিই নয \nি"
+      "সকাপ্টনাবিই নয"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4260,10 +4260,10 @@ export const bcs37thQuestions = [
       "45",
       "81",
       "90",
-      "135 \nি"
+      "135"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4282,10 +4282,10 @@ export const bcs37thQuestions = [
       "5√3",
       "3√5",
       "4√5",
-      "6√5 \nি"
+      "6√5"
     ],
     "answer": 1,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4304,10 +4304,10 @@ export const bcs37thQuestions = [
       "2 < x < 3",
       "-3 < x < -2",
       "x < 2",
-      "x < 3 \nি"
+      "x < 3"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4326,10 +4326,10 @@ export const bcs37thQuestions = [
       "4/9",
       "9/4",
       "√(3/2)",
-      "√(⅔) \nি"
+      "√(⅔)"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4348,10 +4348,10 @@ export const bcs37thQuestions = [
       "35√5",
       "40√5",
       "45√5",
-      "50√5 \nি"
+      "50√5"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4370,10 +4370,10 @@ export const bcs37thQuestions = [
       "{1,2,3,4}",
       "{2,3,4}",
       "{2,3,4,5}",
-      "∅ \nি"
+      "∅"
     ],
     "answer": 3,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4392,10 +4392,10 @@ export const bcs37thQuestions = [
       "2/3",
       "1/3",
       "¾",
-      "1/4 \nি"
+      "1/4"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   },
   {
@@ -4414,10 +4414,10 @@ export const bcs37thQuestions = [
       "৯",
       "৩৬",
       "২৭",
-      "৬৫ \nি"
+      "৬৫"
     ],
     "answer": 0,
-    "explanation": "",
+    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
     "cancelled": false
   }
 ];

@@ -119,33 +119,58 @@ function GoogleButton({ onCredential, disabled }) {
 
   useEffect(() => {
     if (!GOOGLE_CLIENT_ID) return
+    let initialized = false
+    let lastWidth = 0
     const render = () => {
       if (!window.google?.accounts?.id || !box.current) return
-      window.google.accounts.id.initialize({
-        client_id: GOOGLE_CLIENT_ID,
-        callback: (res) => callback.current(res.credential),
-        ux_mode: "popup",
-      })
+      // Google's button is a fixed-width iframe (max 400px), so size it to the form's full width.
+      const width = Math.round(Math.min(400, box.current.parentElement?.offsetWidth || 320))
+      if (initialized && width === lastWidth) return
+      if (!initialized) {
+        window.google.accounts.id.initialize({
+          client_id: GOOGLE_CLIENT_ID,
+          callback: (res) => callback.current(res.credential),
+          ux_mode: "popup",
+        })
+        initialized = true
+      }
+      lastWidth = width
+      box.current.innerHTML = ""
       window.google.accounts.id.renderButton(box.current, {
         theme: "outline",
         size: "large",
         shape: "pill",
         text: "continue_with",
-        width: Math.min(400, box.current.offsetWidth || 320),
+        logo_alignment: "center",
+        width,
       })
       setReady(true)
     }
-    if (window.google?.accounts?.id) return render()
-    let script = document.getElementById("gsi-client")
-    if (!script) {
-      script = document.createElement("script")
-      script.id = "gsi-client"
-      script.src = "https://accounts.google.com/gsi/client"
-      script.async = true
-      document.head.appendChild(script)
+
+    let resizeTimer
+    const onResize = () => {
+      clearTimeout(resizeTimer)
+      resizeTimer = setTimeout(render, 150)
     }
-    script.addEventListener("load", render)
-    return () => script.removeEventListener("load", render)
+    window.addEventListener("resize", onResize)
+
+    let script = document.getElementById("gsi-client")
+    if (window.google?.accounts?.id) render()
+    else {
+      if (!script) {
+        script = document.createElement("script")
+        script.id = "gsi-client"
+        script.src = "https://accounts.google.com/gsi/client"
+        script.async = true
+        document.head.appendChild(script)
+      }
+      script.addEventListener("load", render)
+    }
+    return () => {
+      script?.removeEventListener("load", render)
+      window.removeEventListener("resize", onResize)
+      clearTimeout(resizeTimer)
+    }
   }, [])
 
   if (!GOOGLE_CLIENT_ID)
@@ -156,9 +181,9 @@ function GoogleButton({ onCredential, disabled }) {
     )
 
   return (
-    <div className={cn("flex min-h-12 w-full justify-center", disabled && "pointer-events-none opacity-60")}>
-      <div ref={box} className="w-full [&>div]:mx-auto" />
-      {!ready && <span className="h-11 w-full animate-pulse rounded-full bg-muted" />}
+    <div className={cn("relative flex min-h-11 w-full justify-center", disabled && "pointer-events-none opacity-60")}>
+      <div ref={box} className="flex w-full justify-center" />
+      {!ready && <span className="absolute inset-0 h-11 w-full animate-pulse rounded-full bg-muted" />}
     </div>
   )
 }

@@ -30,7 +30,7 @@ import { useApp } from "@/lib/app-context"
 import { useNoticesVersion } from "@/lib/notices-store"
 
 const faqs = [
-  ["Is Prostuti official or linked to BPSC?", "No. We are an independent preparation platform. Every notice links to its official source, and you should always apply only through the official portal."],
+  ["Is DreamPrep official or linked to BPSC?", "No. We are an independent preparation platform. Every notice links to its official source, and you should always apply only through the official portal."],
   ["How does the real exam simulation work?", "Every model test strictly reflects official exam conditions: exact question counts (80, 100, or 200 marks), authentic time limits, and official negative marking (-0.50 for BCS/NTRCA, -0.25 for Bank & Primary)."],
   ["Which government exams are supported?", "We currently specialize in 5 major exams: BCS General, NTRCA Teacher Registration, Primary Assistant Teacher, Combined Bank Jobs (BSCS), and Bangladesh Bank."],
   ["Can I try it without an account?", "Yes. Continue as a guest to practice and browse notices. Create a free account when you want to save progress, bookmarks and alerts."],
@@ -278,7 +278,7 @@ export default function Landing() {
       {/* Features bento */}
       <section className="mx-auto max-w-6xl px-4 pt-20 md:pt-28">
         <div className="mx-auto max-w-2xl text-center">
-          <Pill tone="primary" className="px-3 py-1">Why Prostuti</Pill>
+          <Pill tone="primary" className="px-3 py-1">Why DreamPrep</Pill>
           <h2 className="mt-4 text-[1.8rem] leading-tight font-semibold tracking-[-0.025em] text-balance md:text-[2.6rem]">
             Everything from circular to viva, <span className="text-primary">in one place</span>
           </h2>

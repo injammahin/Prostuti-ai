@@ -3,20 +3,20 @@
     "ref": "bcs36_q1",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'িন্ধন' শশ্নেি িবিক অক্ষি বিনযাি কোনবি?",
+    "body": "'বন্ধন' শব্দের সঠিক অক্ষর বিন্যাস কোনটি?",
     "options": [
-      "ি + ন + ধ + ন",
-      "িন + ধন",
-      "ি + ন্ধ + ন",
-      "িান + ধন"
+      "ব + ন্ + ধ + ন্",
+      "বন্ + ধন্",
+      "ব + ন্ধ + ন",
+      "বান্ + ধন্"
     ],
     "answer": 1,
-    "explanation": "িন্ধন (বিশ্নশষ্য) \n {(তৎিম িা িংস্কৃ ত) √িন্ধধ +অন(িুযট )} \nঅেণ: - িাাঁধন \n- অিশ্নিাধ; আিক; কশ্নযে \n- আশ্নিষ্টন; িদ্ধভাি (রির্ী-িন্ধন) \n- বনমণার্; গ্রন্থন (রিতু-িন্ধন) \n- বনযন্ত্র্র; িংযম; বনশ্নিাধ \nউৎি: বাংলা একাশ্নেবম অবভধান",
+    "explanation": "বন্ধন (বিশেষ্য)\n{(তৎসম বা সংস্কৃত) √বন্ধ্ +অন(ল্যুট্ )} অর্থ: - বাঁধন\n- অবরোধ; আটক; কয়েদ\n- আবেষ্টন; বদ্ধভাব (বেণী-বন্ধন)\n- নির্মাণ; গ্রন্থন (সেতু-বন্ধন)\n- নিয়ন্ত্রণ; সংযম; নিরোধ\nউৎস: বাংলা একাডেমি অভিধান",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -25,20 +25,20 @@
     "ref": "bcs36_q2",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলা ির্ণমািায অধণমাত্রাি ির্ণ কযবি?",
+    "body": "বাংলা বর্ণমালায় অর্ধমাত্রার বর্ণ কয়টি?",
     "options": [
-      "৭বি",
-      "৯বি",
-      "১০বি",
-      "৮বি"
+      "৭টি",
+      "৯টি",
+      "১০টি",
+      "৮টি"
     ],
     "answer": 3,
-    "explanation": "• বাংলা ির্ণমািায রমাি ির্ণ পঞ্চাশবি। \n• এিমধ্যে পূর্ণমাত্রা ির্ণ ৩২বি এিং অধণমাত্রাি ৮বি। \n• অেণাৎ রমাি মাত্রাযুক্ত ির্ণ ৪০বি। \n• অপিবেশ্নক, মাত্রাহীন ১০বি। \n• মাত্রাহীন ১০ বি িশ্র্নণি মধ্যে িযঞ্জনির্ণ ৬বি এিং স্বসর্বণ ৪বি। \n• মাত্রাযুক্ত স্বসর্বণ ১১-৪ = ৭বি। \nউৎিঃ বাংলা ভাষ্াি িযাকির্, নিম-েশম রের্ব।",
+    "explanation": "• বাংলা বর্ণমালায় মোট বর্ণ পঞ্চাশটি।\n• এরমধ্যে পূর্ণমাত্রা বর্ণ ৩২টি এবং অর্ধমাত্রার ৮টি।\n• অর্থাৎ মোট মাত্রাযুক্ত বর্ণ ৪০টি।\n• অপরদিকে, মাত্রাহীন ১০টি।\n• মাত্রাহীন ১০ টি বর্ণের মধ্যে ব্যঞ্জনবর্ণ ৬টি এবং স্বরবর্ণ ৪টি।\n• মাত্রাযুক্ত স্বরবর্ণ ১১-৪ = ৭টি।\nউৎসঃ বাংলা ভাষার ব্যাকরণ, নবম-দশম শ্রেণি।",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -47,12 +47,12 @@
     "ref": "bcs36_q3",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'বিজ্ঞান' শশ্নেি যুক্তিশ্র্নণি িবিক রূপ কোনবি?",
+    "body": "'বিজ্ঞান' শব্দের যুক্তবর্ণের সঠিক রূপ কোনটি?",
     "options": [
       "জ্ + ঞ",
       "ঞ + গ",
@@ -60,7 +60,7 @@
       "গ + ঞ"
     ],
     "answer": 0,
-    "explanation": "• জ্ঞ = জ + ঞ \n'জ্ঞ' যুক্ত শশ্নেি উোহির্- জ্ঞান, বিজ্ঞান, বিজ্ঞাপন, বিজ্ঞ \nইতযাবে। \nউৎি: বাংলা ভাষ্াি িযাকির্, নিম-েশম রের্ব।",
+    "explanation": "• জ্ঞ = জ + ঞ 'জ্ঞ' যুক্ত শব্দের উদাহরণ- জ্ঞান, বিজ্ঞান, বিজ্ঞাপন, বিজ্ঞ ইত্যাদি।\nউৎস: বাংলা ভাষার ব্যাকরণ, নবম-দশম শ্রেণি।",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -69,20 +69,20 @@
     "ref": "bcs36_q4",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের কোন শেবি িতযযশ্নযাশ্নগ গবিত হয়বন?",
+    "body": "নিচের কোন শব্দটি প্রত্যয়যোগে গঠিত হয়নি?",
     "options": [
-      "িভািে",
-      "শুশ্নভচ্ছা",
-      "ফসবান",
+      "সভাসদ",
+      "শুভেচ্ছা",
+      "ফলবান",
       "তন্বী"
     ],
     "answer": 1,
-    "explanation": "'শুশ্নভচ্ছা' শেবি িবন্ধ িাবধত শে। \n- অ-কাি বকংিা আ-কাশ্নসব পি ই-কাি বকংিা ঈ-কাি \nোকশ্নি উভশ্নয বমশ্নি এ-কাি হয়। এ-কাি পূর্ণিতণী িযঞ্জশ্ননি \nিশ্নে যুক্ত হয়। \n- রযমন- শুভ + ইচ্ছা = শুশ্নভচ্ছা, মহা + ঈশ = মশ্নহশ, পিম \n+ ঈশ = পিশ্নমশ, যো + ইষ্ট = যশ্নেষ্ট ইতযাবে। \nউৎি: বাংলা ভাষ্াি িযাকির্, নিম-েশম রের্ব।",
+    "explanation": "'শুভেচ্ছা' শব্দটি সন্ধি সাধিত শব্দ।\n- অ-কার কিংবা আ-কারের পর ই-কার কিংবা ঈ-কার থাকলে উভয়ে মিলে এ-কার হয়। এ-কার পূর্ববর্তী ব্যঞ্জনের সঙ্গে যুক্ত হয়।\n- যেমন- শুভ + ইচ্ছা = শুভেচ্ছা, মহা + ঈশ = মহেশ, পরম + ঈশ = পরমেশ, যথা + ইষ্ট = যথেষ্ট ইত্যাদি।\nউৎস: বাংলা ভাষার ব্যাকরণ, নবম-দশম শ্রেণি।",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -91,20 +91,20 @@
     "ref": "bcs36_q5",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িহুব্রীবহ িমাসবদ্ধ পে কোনবি?",
+    "body": "বহুব্রীহি সমাসবদ্ধ পদ কোনটি?",
     "options": [
-      "জনশ্রুবত",
-      "অনমনীয",
-      "খািমহি",
-      "তশ্নপািন"
+      "জনশ্রুতি",
+      "অনমনীয়",
+      "খাসমহল",
+      "তপোবন"
     ],
     "answer": 0,
-    "explanation": "• িহুব্রীবহ িমাি: \nরয িমাশ্নি িমিযমান পেগুিাশ্ন ি কোনাশ্ন বসব অেণ না \nিুবিশ্নয, অন্য কোনাশ্ন পেশ্নক িাশ্ন িায, তাশ্নক িহুব্রীবহ িমাি \nিশ্নি। \nরযমন: েশ আনন যাি - েশানন। \n[এখাশ্নন ‘েশ’ িা ‘আনন’ (অেণাৎ মুখ) পশ্নেি অেণ রিািাশ্ননা \nহয়বন। িঙ্কাি িাজা িািশ্র্নি েশবি মাো োকায তাি নাম \nেশানন, এখাশ্নন মূিত ‘েশ আনন যাি’ সবশ্নত িঙ্কাি িাজা \nিাির্শ্নক রিািাশ্ননা হয়েশ্নে।] \nএরূপ বকেু উোহির্ হলো: \n• জশ্ননি মুখ হশ্নত শ্রুত যা - জনশ্রুবত। \n• েশহজ পবিমার্ যাি - েশগবজ। \n• ধশ্নমণ িুবদ্ধ যাি - ধমণিুবদ্ধ। \n• নীি কণ্ঠ যাি - নীিকণ্ঠ। \n• চাি পে আছে যাি - চতুষ্পেী। \nঅন্যবেশ্নক, \n• িযাসবাকয অনুসালে ‘অনমনীয’ শেবি নঞ্ িহুব্রীবহ ও নঞ্ \nতৎপুরুষ্ উভয িমািই হয়। \nরযমন: \n- নয নমনীয যা - অনমনীয (নঞ্ িহুব্রীবহ িমাি)। \n- নয নমনীয - অনমনীয (নঞ্ তৎপুরুষ্) িমাি। \n• খাি রয মহি - খািমহি; কমণধািয িমাি। \n• তশ্নপি বনবমত্ত িন - তশ্নপািন; এবি চতুেণী তৎপুরুষ্ \nিমাশ্নসব উোহির্। \n• িযাসবাকয বিশ্নিচনায িহুব্রীবহ িমাসবদ্ধ পে হশ্নচ্ছ \n‘জনশ্রুবত’। িুতিাং সবণাবধক গ্রর্হশ্নযাগয উত্তি অপশন ‘ক’ \nজনশ্রুবত। \nউৎি: ভাষ্া-বশক্ষা, ে. হাযাৎ মামুে।",
+    "explanation": "• বহুব্রীহি সমাস: যে সমাসে সমস্যমান পদগুলাের কোনােটির অর্থ না বুঝিয়ে, অন্য কোনাে পদকে বােঝায়, তাকে বহুব্রীহি সমাস বলে। যেমন: দশ আনন যার - দশানন।\n[এখানে ‘দশ’ বা ‘আনন’ (অর্থাৎ মুখ) পদের অর্থ বোঝানো হয়নি। লঙ্কার রাজা রাবণের দশটি মাথা থাকায় তার নাম দশানন, এখানে মূলত ‘দশ আনন যার’ বলতে লঙ্কার রাজা রাবণকে বোঝানো হয়েছে।] এরূপ কিছু উদাহরণ হলো:\n• জনের মুখ হতে শ্রুত যা - জনশ্রুতি।\n• দশহজ পরিমাণ যার - দশগজি।\n• ধর্মে বুদ্ধি যার - ধর্মবুদ্ধি।\n• নীল কণ্ঠ যার - নীলকণ্ঠ।\n• চার পদ আছে যার - চতুষ্পদী। অন্যদিকে,\n• ব্যাসবাক্য অনুসারে ‘অনমনীয়’ শব্দটি নঞ্ বহুব্রীহি ও নঞ্ তৎপুরুষ উভয় সমাসই হয়। যেমন:\n- নয় নমনীয় যা - অনমনীয় (নঞ্ বহুব্রীহি সমাস)।\n- নয় নমনীয় - অনমনীয় (নঞ্ তৎপুরুষ) সমাস।\n• খাস যে মহল - খাসমহল; কর্মধারয় সমাস।\n• তপের নিমিত্ত বন - তপোবন; এটি চতুর্থী তৎপুরুষ সমাসের উদাহরণ।\n• ব্যাসবাক্য বিবেচনায় বহুব্রীহি সমাসবদ্ধ পদ হচ্ছে ‘জনশ্রুতি’। সুতরাং সর্বাধিক গ্রহণযোগ্য উত্তর অপশন ‘ক’ জনশ্রুতি।\nউৎস: ভাষা-শিক্ষা, ড. হায়াৎ মামুদ।",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -113,20 +113,20 @@
     "ref": "bcs36_q6",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের কোনবি বিশ্নশষ্য পে?",
+    "body": "নিচের কোনটি বিশেষ্য পদ?",
     "options": [
       "জাত",
-      "তগবিক",
+      "গৈরিক",
       "উদ্ধত",
-      "গাম্ভীযণ"
+      "গাম্ভীর্য"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত Live \nMCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -135,20 +135,20 @@
     "ref": "bcs36_q7",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের কোন শশ্নে র্ত্ব বিবধ অনুসালে 'র্' --এি \nিযিহাি হয়েশ্নে?",
+    "body": "নিচের কোন শব্দে ণত্ব বিধি অনুসারে 'ণ' --এর ব্যবহার হয়েছে?",
     "options": [
-      "কিযার্",
-      "সর্ব",
-      "বনক্র্ব",
-      "বিপর্ব"
+      "কল্যাণ",
+      "প্রবণ",
+      "নিক্বণ",
+      "বিপণি"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -157,20 +157,20 @@
     "ref": "bcs36_q8",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'বমেযািােীশ্নক সবাই অপেন্দ কশ্নি'--- িাকযবিশ্নক \nরনবতিাচক িাশ্নকয রূপান্তি কিশ্নি হয় -----",
+    "body": "'মিথ্যাবাদীকে সবাই অপছন্দ করে'--- বাক্যটিকে নেতিবাচক বাক্যে রূপান্তর করলে হয় -----",
     "options": [
-      "বমেযািােীশ্নক সবাই পেন্দ কশ্নি",
-      "বমেযািােীশ্নক সবাই পেন্দ না কশ্নি পাশ্নি না",
-      "বমেযািােীশ্নক রকউ পেন্দ কশ্নি না",
-      "বমেযািােীশ্নক রকউ অপেন্দ কশ্নি না"
+      "মিথ্যাবাদীকে সবাই পছন্দ করে",
+      "মিথ্যাবাদীকে সবাই পছন্দ না করে পারে না",
+      "মিথ্যাবাদীকে কেউ পছন্দ করে না",
+      "মিথ্যাবাদীকে কেউ অপছন্দ করে না"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -179,20 +179,20 @@
     "ref": "bcs36_q9",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'Null and Void' --এি বাংলা পবিভাষ্া কী?",
+    "body": "'Null and Void' --এর বাংলা পরিভাষা কী?",
     "options": [
-      "িাবতি",
-      "পািাসদর",
-      "মামুবি",
-      "বনিশ্নপক্ষ"
+      "বাতিল",
+      "পালাবদল",
+      "মামুলি",
+      "নিরপেক্ষ"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -201,20 +201,20 @@
     "ref": "bcs36_q10",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'শ্নহে রমৌিভী' কোন কোন ভাষ্াি শে রযাশ্নগ গবিত হয়েশ্নে?",
+    "body": "'হেড মৌলভী' কোন কোন ভাষার শব্দ যোগে গঠিত হয়েছে?",
     "options": [
-      "ইংরেজি + ফাবিণ",
-      "ইংরেজি + আিবি",
-      "তুবকণ + আিবি",
-      "ইংরেজি + পতুণবগজ"
+      "ইংরেজি + ফার্সি",
+      "ইংরেজি + আরবি",
+      "তুর্কি + আরবি",
+      "ইংরেজি + পর্তুগিজ"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -223,20 +223,20 @@
     "ref": "bcs36_q11",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'সবীন্দ্র' --এি িবিক িবন্ধ বিশ্নচ্ছে কোনবি?",
+    "body": "'রবীন্দ্র' --এর সঠিক সন্ধি বিচ্ছেদ কোনটি?",
     "options": [
-      "সবী + ইন্দ্র",
-      "সবী + ঈন্দ্র",
-      "িবি + ইন্দ্র",
-      "িবি + ঈন্দ্র"
+      "রবী + ইন্দ্র",
+      "রবী + ঈন্দ্র",
+      "রবি + ইন্দ্র",
+      "রবি + ঈন্দ্র"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত Live \nMCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -245,20 +245,20 @@
     "ref": "bcs36_q12",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'এ রয আমাশ্নেি রচনা রিাক' ---িাশ্নকয 'শ্নচনা' কোন পে?",
+    "body": "'এ যে আমাদের চেনা লোক' ---বাক্যে 'চেনা' কোন পদ?",
     "options": [
-      "বিশ্নশষ্য",
-      "অিযয",
-      "বিযা",
-      "বিশ্নশষ্র্"
+      "বিশেষ্য",
+      "অব্যয়",
+      "ক্রিয়া",
+      "বিশেষণ"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -267,20 +267,20 @@
     "ref": "bcs36_q13",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'িকষ্ণ' শশ্নেি িমােণক শে -----",
+    "body": "'প্রকর্ষ' শব্দের সমার্থক শব্দ -----",
     "options": [
-      "উৎকষ্ণতা",
-      "অপকষ্ণ",
-      "উৎকষ্ণ",
-      "অপকষ্ণতা"
+      "উৎকর্ষতা",
+      "অপকর্ষ",
+      "উৎকর্ষ",
+      "অপকর্ষতা"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -289,20 +289,20 @@
     "ref": "bcs36_q14",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনবি কাজী নজরুি ইসবাশ্নমি িচনা নয?",
+    "body": "কোনটি কাজী নজরুল ইসলামের রচনা নয়?",
     "options": [
-      "োযানি",
-      "চসবাক",
-      "রুদ্রমেি",
-      "িািুচি"
+      "ছায়ানট",
+      "চক্রবাক",
+      "রুদ্রমঙ্গল",
+      "বালুচর"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -311,12 +311,12 @@
     "ref": "bcs36_q15",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'সবুজপত্র' িকাবশত হয় কোন সালে?",
+    "body": "'সবুজপত্র' প্রকাশিত হয় কোন সালে?",
     "options": [
       "১৯০৯",
       "১৯১০",
@@ -324,7 +324,7 @@
       "১৯২১"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -333,20 +333,20 @@
     "ref": "bcs36_q16",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মুবক্তযুদ্ধবিষ্যক নাটক ---",
+    "body": "মুক্তিযুদ্ধবিষয়ক নাটক ---",
     "options": [
-      "িুিচন বনিণািশ্নন",
-      "িক্তাক্ত িান্তি",
-      "নূসবেীশ্ননি িািা জীিন",
-      "পাশ্নযি আওযাজ পাওযা যায"
+      "সুবচন নির্বাসনে",
+      "রক্তাক্ত প্রান্তর",
+      "নূরলদীনের সারা জীবন",
+      "পায়ের আওয়াজ পাওয়া যায়"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -355,20 +355,20 @@
     "ref": "bcs36_q17",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনবি জিীমউদ েীশ্ননি নাটক?",
+    "body": "কোনটি জসীমউদ্ দীনের নাটক?",
     "options": [
-      "িাখািী",
-      "মাবসব কান্না",
-      "রিশ্নেি রমশ্নয",
-      "রিািা কাবহনী"
+      "রাখালী",
+      "মাটির কান্না",
+      "বেদের মেয়ে",
+      "বোবা কাহিনী"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -377,20 +377,20 @@
     "ref": "bcs36_q18",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মধযযুশ্নগি বাংলা িাবহশ্নতয কোন ধমণিচািক -এি \nিভাি অপবসবীম?",
+    "body": "মধ্যযুগের বাংলা সাহিত্যে কোন ধর্মপ্রচারক -এর প্রভাব অপরিসীম?",
     "options": [
-      "শ্রীচচতনযশ্নেি",
-      "শ্রীকৃ ষ্ণ",
-      "আবেনাে",
-      "মশ্ননাহি োশ"
+      "শ্রীচৈতন্যদেব",
+      "শ্রীকৃষ্ণ",
+      "আদিনাথ",
+      "মনোহর দাশ"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -399,20 +399,20 @@
     "ref": "bcs36_q19",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মুনীি রচৌধুিীি অনূবেত নাটক কোনবি?",
+    "body": "মুনীর চৌধুরীর অনূদিত নাটক কোনটি?",
     "options": [
-      "কসব",
-      "বচবি",
-      "িক্তাক্ত িান্তি",
-      "মুখরা ির্মী িশীকির্"
+      "কবর",
+      "চিঠি",
+      "রক্তাক্ত প্রান্তর",
+      "মুখরা রমণী বশীকরণ"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -421,20 +421,20 @@
     "ref": "bcs36_q20",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনবি উপন্যাস নয?",
+    "body": "কোনটি উপন্যাস নয়?",
     "options": [
-      "বেিািাবত্রি কাব্য",
-      "হাাঁিুিী িাাঁশ্নকি উপকো",
-      "কবিতাি কো",
-      "পশ্নেি পাাঁচািী"
+      "দিবারাত্রির কাব্য",
+      "হাঁসুলী বাঁকের উপকথা",
+      "কবিতার কথা",
+      "পথের পাঁচালী"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -443,20 +443,20 @@
     "ref": "bcs36_q21",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'বিষ্াে বিন্ধু ' একবি ----",
+    "body": "'বিষাদ সিন্ধু ' একটি ----",
     "options": [
-      "গশ্নিষ্র্া গ্রন্থ",
-      "ধমণবিষ্যক সবন্ধ",
-      "ইবতহাি আেযী উপন্যাস",
-      "আত্মজীিনী"
+      "গবেষণা গ্রন্থ",
+      "ধর্মবিষয়ক প্রবন্ধ",
+      "ইতিহাস আশ্রয়ী উপন্যাস",
+      "আত্মজীবনী"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -465,12 +465,12 @@
     "ref": "bcs36_q22",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মধযযুশ্নগি রশষ্ কবি ভারতচন্দ্র িাযগুর্াকি কত \nসালে মৃতুযসর্ব কশ্নিন?",
+    "body": "মধ্যযুগের শেষ কবি ভারতচন্দ্র রায়গুণাকর কত সালে মৃত্যুবরণ করেন?",
     "options": [
       "১৭৫৬",
       "১৭৫২",
@@ -478,7 +478,7 @@
       "১৭৬২"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -487,20 +487,20 @@
     "ref": "bcs36_q23",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'শ্নতাহফা' কাব্যবি রক িচনা কশ্নিন?",
+    "body": "'তোহফা' কাব্যটি কে রচনা করেন?",
     "options": [
-      "রেৌিত কাজী",
-      "মাগন িাকু ি",
-      "িাবিবিে খান",
-      "আিাওি"
+      "দৌলত কাজী",
+      "মাগন ঠাকুর",
+      "সাবিরিদ খান",
+      "আলাওল"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -509,20 +509,20 @@
     "ref": "bcs36_q24",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "এন্টবন বফবিবে কী জাতীয িাবহশ্নতযি িচবযতা?",
+    "body": "এন্টনি ফিরিঙ্গি কী জাতীয় সাহিত্যের রচয়িতা?",
     "options": [
       "কবিগান",
-      "পুাঁবে িাবহতয",
-      "নাে িাবহতয",
-      "তিষ্ণি পে িাবহতয"
+      "পুঁথি সাহিত্য",
+      "নাথ সাহিত্য",
+      "বৈষ্ণব পদ সাহিত্য"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -531,20 +531,20 @@
     "ref": "bcs36_q25",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'িাজা িতাপাবেতয চবিত্র' গ্রন্থবসব িশ্র্নতা -----",
+    "body": "'রাজা প্রতাপাদিত্য চরিত্র' গ্রন্থটির প্রণেতা -----",
     "options": [
-      "উইবিযাম রকবি",
-      "রগািকনাে শমণা",
-      "িামিাম সবু",
-      "হসবিাে িায"
+      "উইলিয়াম কেরি",
+      "গোলকনাথ শর্মা",
+      "রামরাম বসু",
+      "হরপ্রসাদ রায়"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -553,20 +553,20 @@
     "ref": "bcs36_q26",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'ইযং রসদর' রগাষ্ঠীি মুখপত্ররূশ্নপ কোন পবত্রকা \nিকাবশত হয়?",
+    "body": "'ইয়ং বেঙ্গল' গোষ্ঠীর মুখপত্ররূপে কোন পত্রিকা প্রকাশিত হয়?",
     "options": [
-      "িেেূত",
-      "জ্ঞানাশ্নন্বষ্র্",
-      "জ্ঞানাঙ্কু ি",
-      "িংিাে িভাকি"
+      "বঙ্গদূত",
+      "জ্ঞানান্বেষণ",
+      "জ্ঞানাঙ্কুর",
+      "সংবাদ প্রভাকর"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -575,20 +575,20 @@
     "ref": "bcs36_q27",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "হবিনাে মজুমোি িম্পাবেত পবত্রকাি নাম ----",
+    "body": "হরিনাথ মজুমদার সম্পাদিত পত্রিকার নাম ----",
     "options": [
-      "অিকাশ িবঞ্জকা",
-      "বিবিধাযণ িংগ্রহ",
-      "কাব্য িকাশ",
-      "গ্রামিাতণা িকাবশকা"
+      "অবকাশ রঞ্জিকা",
+      "বিবিধার্য সংগ্রহ",
+      "কাব্য প্রকাশ",
+      "গ্রামবার্তা প্রকাশিকা"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -597,20 +597,20 @@
     "ref": "bcs36_q28",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের কোনবি ভ্রর্মিাবহতয বিষ্যক গ্রন্থ নয?",
+    "body": "নিচের কোনটি ভ্রমণসাহিত্য বিষয়ক গ্রন্থ নয়?",
     "options": [
-      "চাি ইযািী কো",
-      "পািাশ্নমৌ",
-      "েৃবষ্টপাত",
-      "রেশ্নশ বিশ্নেশ্নশ"
+      "চার ইয়ারী কথা",
+      "পালামৌ",
+      "দৃষ্টিপাত",
+      "দেশে বিদেশে"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -619,20 +619,20 @@
     "ref": "bcs36_q29",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের রয উপনযাশ্নি গ্রামীর্ িমাজ জীিশ্ননি বচত্র \nিাধানয িাভ কশ্নিবন ----",
+    "body": "নিচের যে উপন্যাসে গ্রামীণ সমাজ জীবনের চিত্র প্রাধান্য লাভ করেনি ----",
     "options": [
-      "র্গশ্নেিতা",
-      "পদ্মনেীি মাবি",
-      "িীতািাম",
-      "পশ্নেি পাাঁচািী"
+      "গণদেবতা",
+      "পদ্মনদীর মাঝি",
+      "সীতারাম",
+      "পথের পাঁচালী"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -641,20 +641,20 @@
     "ref": "bcs36_q30",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের কোন চবিত্র েুবি সবীন্দ্রনাশ্নেি 'ঘশ্নি িাইশ্নি' \nউপনযাশ্নসব?",
+    "body": "নিচের কোন চরিত্র দুটি রবীন্দ্রনাথের 'ঘরে বাইরে' উপন্যাসের?",
     "options": [
-      "বিহািী-বিশ্ননাবেনী",
-      "বনবখশ্নসব-বিমিা",
-      "মধুিূেন-কু মুবেনী",
-      "আবমত-িাির্য"
+      "বিহারী-বিনোদিনী",
+      "নিখিলেস-বিমলা",
+      "মধুসূদন-কুমুদিনী",
+      "আমিত-লাবণ্য"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -663,20 +663,20 @@
     "ref": "bcs36_q31",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনবি কাজী নজরুি ইসবাশ্নমি উপন্যাস?",
+    "body": "কোনটি কাজী নজরুল ইসলামের উপন্যাস?",
     "options": [
-      "বিশ্নক্তি রিেন",
-      "সবণহািা",
-      "আশ্নিযা",
-      "কু শ্নহবিকা"
+      "রিক্তের বেদন",
+      "সর্বহারা",
+      "আলেয়া",
+      "কুহেলিকা"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -685,20 +685,20 @@
     "ref": "bcs36_q32",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনবি মাইশ্নকি মধুিূেন েশ্নত্তি পত্রকাব্য?",
+    "body": "কোনটি মাইকেল মধুসূদন দত্তের পত্রকাব্য?",
     "options": [
-      "ব্রজােনা",
-      "বসবাশ্নতি পত্র",
-      "িীিােনা",
-      "বহমািয"
+      "ব্রজাঙ্গনা",
+      "বিলাতের পত্র",
+      "বীরাঙ্গনা",
+      "হিমালয়"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -707,20 +707,20 @@
     "ref": "bcs36_q33",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'একখাবন রোি রক্ষত আবম এশ্নকিা' ---সবীন্দ্রনাে \nিাকু শ্নসব কোন কবিতাি চির্?",
+    "body": "'একখানি ছোট ক্ষেত আমি একেলা' ---রবীন্দ্রনাথ ঠাকুরের কোন কবিতার চরণ?",
     "options": [
-      "রিানাি তিী",
-      "বচত্রা",
-      "মানিী",
-      "সবাকা"
+      "সোনার তরী",
+      "চিত্রা",
+      "মানসী",
+      "বলাকা"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -729,20 +729,20 @@
     "ref": "bcs36_q34",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'আবম বকংিেন্তীি কো সববে' ----কবিতাবি কাি রিখা?",
+    "body": "'আমি কিংবদন্তীর কথা বলছি' ----কবিতাটি কার লেখা?",
     "options": [
-      "শামিুি িাহমান",
-      "আি মাহমুে",
-      "আিুি ফজি",
-      "আিু জাফি ওিাযেুল্লাহ"
+      "শামসুর রাহমান",
+      "আল মাহমুদ",
+      "আবুল ফজল",
+      "আবু জাফর ওবায়দুল্লাহ"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -751,20 +751,20 @@
     "ref": "bcs36_q35",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনবি শওকত ওিমাশ্ননি িচনা নয?",
+    "body": "কোনটি শওকত ওসমানের রচনা নয়?",
     "options": [
-      "রচৌসববন্ধ",
-      "িীতোশ্নসব হাবি",
-      "রভজাি",
-      "িবন আেম"
+      "চৌরসন্ধি",
+      "ক্রীতদাসের হাসি",
+      "ভেজাল",
+      "বনি আদম"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -772,21 +772,21 @@
   {
     "ref": "bcs36_q36",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "িবিক িানান কোনবি?",
+    "lang": "bn",
+    "body": "সঠিক বানান কোনটি?",
     "options": [
-      "কূ িংস্কাি",
-      "কু িংকাি",
-      "কু িংস্কাি",
-      "কূ শংষ্কাি"
+      "কূসংস্কার",
+      "কু সংকার",
+      "কু সংস্কার",
+      "কূশংষ্কার"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -795,12 +795,12 @@
     "ref": "bcs36_q37",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Professor Razzak was a scholar ____ \nrepute. (Fill in the gap)",
+    "body": "Professor Razzak was a scholar ____ repute. (Fill in the gap)",
     "options": [
       "in",
       "of",
@@ -808,7 +808,7 @@
       "by"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -816,12 +816,12 @@
   {
     "ref": "bcs36_q38",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "bn",
+    "lang": "en",
     "body": "'David Copperfield' is a/an ____ novel.",
     "options": [
       "Victorian",
@@ -830,7 +830,7 @@
       "Modern"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -839,12 +839,12 @@
     "ref": "bcs36_q39",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "'Elegy Written in a Country Churchyard' \nis written by -----",
+    "body": "'Elegy Written in a Country Churchyard' is written by -----",
     "options": [
       "William Wordsworth",
       "Thomas Gray",
@@ -852,7 +852,7 @@
       "W. B. Yeats"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -861,12 +861,12 @@
     "ref": "bcs36_q40",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "John Smith is good ____ Mathematics. \n(Fill in the gap)",
+    "body": "John Smith is good ____ Mathematics. (Fill in the gap)",
     "options": [
       "at",
       "in",
@@ -874,7 +874,7 @@
       "after"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -882,13 +882,13 @@
   {
     "ref": "bcs36_q41",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "Shakespeare's 'Measure for Measure' is a \nsuccessful-----",
+    "lang": "en",
+    "body": "Shakespeare's 'Measure for Measure' is a successful-----",
     "options": [
       "tragedy",
       "comedy",
@@ -896,7 +896,7 @@
       "melodrama"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -905,7 +905,7 @@
     "ref": "bcs36_q42",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -918,7 +918,7 @@
       "will be moving"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -926,13 +926,13 @@
   {
     "ref": "bcs36_q43",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "The romantic age in English literature \nbegan with the publication of ____.",
+    "lang": "en",
+    "body": "The romantic age in English literature began with the publication of ____.",
     "options": [
       "Preface to Shakespeare",
       "Preface to Lyrical Ballads",
@@ -940,7 +940,7 @@
       "Preface to Dr. Johnson"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -948,13 +948,13 @@
   {
     "ref": "bcs36_q44",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "In English grammar, ____ deals with \nformation of sentences.",
+    "lang": "en",
+    "body": "In English grammar, ____ deals with formation of sentences.",
     "options": [
       "Morphology",
       "Etymology",
@@ -962,7 +962,7 @@
       "Semantics"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -971,12 +971,12 @@
     "ref": "bcs36_q45",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Which of the following books is written \nby Thomas Hardy?",
+    "body": "Which of the following books is written by Thomas Hardy?",
     "options": [
       "Vanity Fair",
       "The Return of the Native",
@@ -984,7 +984,7 @@
       "Oliver Twist"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -993,7 +993,7 @@
     "ref": "bcs36_q46",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1006,7 +1006,7 @@
       "to go"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1015,12 +1015,12 @@
     "ref": "bcs36_q47",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "The idiom 'A stitch in time saves nine' - \nrefers to the importance of-----",
+    "body": "The idiom 'A stitch in time saves nine' - refers to the importance of-----",
     "options": [
       "saving lives",
       "timely action",
@@ -1028,7 +1028,7 @@
       "time tailoring"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1036,13 +1036,13 @@
   {
     "ref": "bcs36_q48",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "'Frailty the name is woman' is a famous \ndialogue from -",
+    "lang": "en",
+    "body": "'Frailty the name is woman' is a famous dialogue from -",
     "options": [
       "Christopher Marlowe",
       "John Webstar",
@@ -1050,7 +1050,7 @@
       "T. S. Eliot"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1059,12 +1059,12 @@
     "ref": "bcs36_q49",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "The poem 'The Solitary Reaper' is \nwritten by -",
+    "body": "The poem 'The Solitary Reaper' is written by -",
     "options": [
       "W. H. Auden",
       "W. Wordsworth",
@@ -1072,7 +1072,7 @@
       "Ezra Pound"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1080,13 +1080,13 @@
   {
     "ref": "bcs36_q50",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "'The Merchant of Venice' is a \nShakespearean play about___.",
+    "lang": "en",
+    "body": "'The Merchant of Venice' is a Shakespearean play about___.",
     "options": [
       "a Jew",
       "a Moor",
@@ -1094,7 +1094,7 @@
       "a Turk"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1103,7 +1103,7 @@
     "ref": "bcs36_q51",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1116,7 +1116,7 @@
       "activity"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1125,7 +1125,7 @@
     "ref": "bcs36_q52",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1138,7 +1138,7 @@
       "Arthur Miller"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1146,13 +1146,13 @@
   {
     "ref": "bcs36_q53",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Which of the following writers belongs \nto the romantic period in English literature?",
+    "body": "Which of the following writers belongs to the romantic period in English literature?",
     "options": [
       "A. Tennyson",
       "Alexander Pope",
@@ -1160,7 +1160,7 @@
       "S. T. Coleridge"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত Live \nMCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1169,12 +1169,12 @@
     "ref": "bcs36_q54",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "This could have worked if I ____ been \nmore cautious.",
+    "body": "This could have worked if I ____ been more cautious.",
     "options": [
       "had",
       "have",
@@ -1182,7 +1182,7 @@
       "would"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত Live \nMCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1191,12 +1191,12 @@
     "ref": "bcs36_q55",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "The Climax of a plot is what \nhappens___.",
+    "body": "The Climax of a plot is what happens___.",
     "options": [
       "in the beginning",
       "at the height",
@@ -1204,7 +1204,7 @@
       "in the confrontation"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত Live \nMCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1213,12 +1213,12 @@
     "ref": "bcs36_q56",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "London town is found a living being in \nthe works of___.",
+    "body": "London town is found a living being in the works of___.",
     "options": [
       "Thomas Hardy",
       "Charles Dickens",
@@ -1226,7 +1226,7 @@
       "D. H. Lawrence"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1234,12 +1234,12 @@
   {
     "ref": "bcs36_q57",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "bn",
+    "lang": "en",
     "body": "I have been living in Dhaka ____ 2000.",
     "options": [
       "since",
@@ -1248,7 +1248,7 @@
       "till"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1257,12 +1257,12 @@
     "ref": "bcs36_q58",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Give the antonym of the word \n'transitory'.",
+    "body": "Give the antonym of the word 'transitory'.",
     "options": [
       "temporary",
       "permanent",
@@ -1270,7 +1270,7 @@
       "short-lived"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1279,7 +1279,7 @@
     "ref": "bcs36_q59",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1292,7 +1292,7 @@
       "numerical"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1300,13 +1300,13 @@
   {
     "ref": "bcs36_q60",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "'Child is the father of man' is taken \nfrom the poem of____.",
+    "lang": "en",
+    "body": "'Child is the father of man' is taken from the poem of____.",
     "options": [
       "W. Wordsworth",
       "s. T. Coleridge",
@@ -1314,7 +1314,7 @@
       "A. C. Swinbume"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1323,7 +1323,7 @@
     "ref": "bcs36_q61",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1336,7 +1336,7 @@
       "won"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1345,7 +1345,7 @@
     "ref": "bcs36_q62",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1358,7 +1358,7 @@
       "Socrates"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1367,12 +1367,12 @@
     "ref": "bcs36_q63",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Who is known as 'the poet of nature' in \nEnglish literature?",
+    "body": "Who is known as 'the poet of nature' in English literature?",
     "options": [
       "Lord Tennyson",
       "John Milton",
@@ -1380,7 +1380,7 @@
       "John Keats"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত Live \nMCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1389,7 +1389,7 @@
     "ref": "bcs36_q64",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1402,7 +1402,7 @@
       "Yesterday, he went home"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত Live \nMCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1411,7 +1411,7 @@
     "ref": "bcs36_q65",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1424,7 +1424,7 @@
       "A. H. Auden"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত Live \nMCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1433,12 +1433,12 @@
     "ref": "bcs36_q66",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "'Gitanjali' of Rabindranath Tagore was \ntranslated by-",
+    "body": "'Gitanjali' of Rabindranath Tagore was translated by-",
     "options": [
       "W. B. Yeats",
       "Robert Frost",
@@ -1446,7 +1446,7 @@
       "Rudyard Kipling"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1455,7 +1455,7 @@
     "ref": "bcs36_q67",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1468,7 +1468,7 @@
       "accuse"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1477,7 +1477,7 @@
     "ref": "bcs36_q68",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1490,7 +1490,7 @@
       "to"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1499,7 +1499,7 @@
     "ref": "bcs36_q69",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1512,7 +1512,7 @@
       "to drive off"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1521,7 +1521,7 @@
     "ref": "bcs36_q70",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1534,7 +1534,7 @@
       "Jane Austen"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1542,8 +1542,8 @@
   {
     "ref": "bcs36_q71",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1556,7 +1556,7 @@
       "Paper is made on wood"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1564,13 +1564,13 @@
   {
     "ref": "bcs36_q72",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "A = {x : x রমৌবিক িংখযা এিং x ≤ 5}হলে, \nP(A) এি সদরয িংখযা কত?",
+    "body": "A = {x : x মৌলিক সংখ্যা এবং x ≤ 5}হলে, P(A) এর সদস্য সংখ্যা কত?",
     "options": [
       "8",
       "7",
@@ -1578,7 +1578,7 @@
       "3"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1586,13 +1586,13 @@
   {
     "ref": "bcs36_q73",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "12বি পুস্তক থেকে 5বি কত িকাশ্নি িাোই কিা \nযায রযখাশ্নন 2বি পুস্তক সবণোই অন্তভু ণক্ত োকশ্নি?",
+    "body": "12টি পুস্তক থেকে 5টি কত প্রকারে বাছাই করা যায় যেখানে 2টি পুস্তক সর্বদাই অন্তভুর্ক্ত থাকবে?",
     "options": [
       "252",
       "792",
@@ -1600,7 +1600,7 @@
       "120"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1608,13 +1608,13 @@
   {
     "ref": "bcs36_q74",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আিহাওযা অবফশ্নসব বিশ্নপািণ অনুযাযী -২০১৫ \nিাশ্নসব জুিাই মাশ্নসব ২য িপ্তাশ্নহ িৃবষ্ট হয়েশ্নে রমাি ৫ বেন। \nঐ িপ্তাশ্নহ িুধিাি িৃবষ্ট না হওযাি িম্ভিনা কত?",
+    "body": "আবহাওয়া অফিসের রিপোর্ট অনুযায়ী -২০১৫ সালের জুলাই মাসের ২য় সপ্তাহে বৃষ্টি হয়েছে মোট ৫ দিন। ঐ সপ্তাহে বুধবার বৃষ্টি না হওয়ার সম্ভবনা কত?",
     "options": [
       "1",
       "5/7",
@@ -1622,7 +1622,7 @@
       "1/7"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1630,21 +1630,21 @@
   {
     "ref": "bcs36_q75",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "৩৫০ িাকা েশ্নি ৩ রকবজ বমবষ্ট বকশ্নন ৪ িাকা হাশ্নি \nভযাি বেশ্নি রমাি কত ভযাি বেশ্নত হলে?",
+    "body": "৩৫০ টাকা দরে ৩ কেজি মিষ্টি কিনে ৪ টাকা হারে ভ্যাট দিলে মোট কত ভ্যাট দিতে হবে?",
     "options": [
-      "১৪ িাকা",
-      "৪২ িাকা",
-      "১২ িাকা",
-      "১০৫ িাকা"
+      "১৪ টাকা",
+      "৪২ টাকা",
+      "১২ টাকা",
+      "১০৫ টাকা"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1652,13 +1652,13 @@
   {
     "ref": "bcs36_q76",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "যবে রতশ্নসব মূিয ২৫% িৃবদ্ধ পায তশ্নি রতশ্নসব \nিযিহাি শতকিা কত কমাশ্নি রতি িািে িযয িৃবদ্ধ পাশ্নি না?",
+    "body": "যদি তেলের মূল্য ২৫% বৃদ্ধি পায় তবে তেলের ব্যবহার শতকরা কত কমালে তেল বাবদ ব্যয় বৃদ্ধি পাবে না?",
     "options": [
       "১৬%",
       "২০%",
@@ -1666,7 +1666,7 @@
       "২৪%"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1674,13 +1674,13 @@
   {
     "ref": "bcs36_q77",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "েুবি িংখযাি গুর্ফি ৩৩৮০ এিং গ. িা. গু ১৩। \nিংখযা েুবসব ি. িা. গু. কত?",
+    "body": "দুটি সংখ্যার গুণফল ৩৩৮০ এবং গ. সা. গু ১৩। সংখ্যা দুটির ল. সা. গু. কত?",
     "options": [
       "২৬০",
       "৭৮০",
@@ -1688,7 +1688,7 @@
       "৪৯০"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1696,8 +1696,8 @@
   {
     "ref": "bcs36_q78",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1710,7 +1710,7 @@
       "x2"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1719,11 +1719,11 @@
     "ref": "bcs36_q79",
     "exam": "bcs-general",
     "subject": "Mathematics & Reasoning",
-    "topic": "গাণিতিক যুক্তি ও বাস্তব সংখ্যা",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "bn",
+    "lang": "en",
     "body": "log√381 কত?",
     "options": [
       "4",
@@ -1732,7 +1732,7 @@
       "18"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1740,13 +1740,13 @@
   {
     "ref": "bcs36_q80",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "যবে (25)2x+3 = 53x+6 হয় তশ্নি x = কত?",
+    "body": "যদি (25)2x+3 = 53x+6 হয় তবে x = কত?",
     "options": [
       "0",
       "1",
@@ -1754,7 +1754,7 @@
       "4"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1762,13 +1762,13 @@
   {
     "ref": "bcs36_q81",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বচত্র অনুসালে O রকন্দ্র বিবশষ্ট িৃশ্নত্ত ∆ABC অন্তবিণবখত। ∠y \n= 112° হলে, ∠x = ?",
+    "body": "চিত্র অনুসারে O কেন্দ্র বিশিষ্ট বৃত্তে ∆ABC অন্তর্লিখিত। ∠y = 112° হলে, ∠x = ?",
     "options": [
       "68°",
       "34°",
@@ -1776,7 +1776,7 @@
       "39°"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1784,13 +1784,13 @@
   {
     "ref": "bcs36_q82",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একবি িগণশ্নক্ষশ্নত্রি িশ্র্নণি তেঘণয 4√2 একক হলে ঐ \nিগণশ্নক্ষশ্নত্রি রক্ষত্রফি কত িগণ একক?",
+    "body": "একটি বর্গক্ষেত্রের বর্ণের দৈর্ঘ্য 4√2 একক হলে ঐ বর্গক্ষেত্রের ক্ষেত্রফল কত বর্গ একক?",
     "options": [
       "24",
       "8",
@@ -1798,7 +1798,7 @@
       "32"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1806,21 +1806,21 @@
   {
     "ref": "bcs36_q83",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "△ABC - ∠A = 40°, ∠B = 70°, হলে △ABC \nবক ধিশ্ননি বত্রভুজ?",
+    "body": "△ABC - ∠A = 40°, ∠B = 70°, হলে △ABC কি ধরনের ত্রিভুজ?",
     "options": [
-      "িমশ্নকার্ী",
-      "স্থুিশ্নকার্ী",
-      "িমবসবাহু",
-      "িমিাহু"
+      "সমকোণী",
+      "স্থুলকোণী",
+      "সমদ্বিবাহু",
+      "সমবাহু"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1828,13 +1828,13 @@
   {
     "ref": "bcs36_q84",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "x² + y² = 185, x - y = 3 এি একবি িমাধান হি:",
+    "body": "x² + y² = 185, x - y = 3 এর একটি সমাধান হল:",
     "options": [
       "(7,4)",
       "(9,6)",
@@ -1842,7 +1842,7 @@
       "(11,8)"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1856,15 +1856,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "",
+    "body": "যদি x - 1/x = 1 হয়, তবে x³ - 1/x³ এর মান কত?",
     "options": [
       "1",
-      "-1",
-      "a – 1",
-      "a + 1"
+      "4",
+      "3",
+      "2"
     ],
-    "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "answer": 1,
+    "explanation": "x³ - 1/x³ = (x - 1/x)³ + 3(x)(1/x)(x - 1/x) = 1³ + 3(1)(1) = 1 + 3 = 4।",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1872,12 +1872,12 @@
   {
     "ref": "bcs36_q86",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "bn",
+    "lang": "en",
     "body": "x - 1/x = 1, x³ - 1/x³ = ?",
     "options": [
       "1",
@@ -1886,7 +1886,7 @@
       "4"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1894,8 +1894,8 @@
   {
     "ref": "bcs36_q87",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1908,7 +1908,7 @@
       "৬৬১"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1916,13 +1916,13 @@
   {
     "ref": "bcs36_q88",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িশ্নশ্নিাধক স্থাশ্নন কোন িংখযাবি সবশ্নি?",
+    "body": "প্রশ্নবোধক স্থানে কোন সংখ্যাটি বসবে?",
     "options": [
       "L10",
       "L15",
@@ -1930,7 +1930,7 @@
       "K8"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1938,13 +1938,13 @@
   {
     "ref": "bcs36_q89",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "যবে, ৫ + ৩ = ২৮, ৯ + ১ = ৮১০, ২ + ১ = ১৩ \nহয় তশ্নি, ৫ + ৪ = ?",
+    "body": "যদি, ৫ + ৩ = ২৮, ৯ + ১ = ৮১০, ২ + ১ = ১৩ হয় তবে, ৫ + ৪ = ?",
     "options": [
       "১৮",
       "১৯",
@@ -1952,7 +1952,7 @@
       "২১"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1960,13 +1960,13 @@
   {
     "ref": "bcs36_q90",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ইংরেজি ির্ণমািাি ধািািাবহকভাশ্নি ১৮তম অক্ষশ্নসব \nিামবেশ্নক ১০ম অক্ষি কোনবি?",
+    "body": "ইংরেজি বর্ণমালার ধারাবাহিকভাবে ১৮তম অক্ষরের বামদিকে ১০ম অক্ষর কোনটি?",
     "options": [
       "H",
       "S",
@@ -1974,7 +1974,7 @@
       "J"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1982,8 +1982,8 @@
   {
     "ref": "bcs36_q91",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -1996,7 +1996,7 @@
       "3.65"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2004,13 +2004,13 @@
   {
     "ref": "bcs36_q92",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "৩, ৭, ৪, ১৪, ৫, ২১, ৬ ধািাি অষ্টম িংখযাবি কত হলে?",
+    "body": "৩, ৭, ৪, ১৪, ৫, ২১, ৬ ধারার অষ্টম সংখ্যাটি কত হবে?",
     "options": [
       "৬",
       "৭",
@@ -2018,7 +2018,7 @@
       "২৯"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2026,21 +2026,21 @@
   {
     "ref": "bcs36_q93",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "েুবি িমান্তিাি রিখা কযবি বিন্দুশ্নত রেে কশ্নি?",
+    "body": "দুটি সমান্তরাল রেখা কয়টি বিন্দুতে ছেদ করে?",
     "options": [
       "৪",
       "৭",
       "৮",
-      "রেে কশ্নি না"
+      "ছেদ করে না"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2054,7 +2054,7 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িেত্ত বচশ্নত্রি কোনবি আযনাি িবতফিন?",
+    "body": "িেত্ত বচশ্নত্রি কোনবি আযনািবতফিন?",
     "options": [
       "খ)",
       "ঘ)",
@@ -2062,21 +2062,22 @@
       "অপশন 4"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
-    "cancelled": false
+    "cancelled": false,
+    "status": "draft"
   },
   {
     "ref": "bcs36_q95",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ভাসবাময িক্ষা কিশ্নত নিচের বচশ্নত্র িাম বেশ্নক কত ওজন \nিাখশ্নত হলে?",
+    "body": "ভারসাম্য রক্ষা করতে নিচের চিত্রে বাম দিকে কত ওজন রাখতে হবে?",
     "options": [
       "4 kg",
       "6 kg",
@@ -2084,7 +2085,7 @@
       "10 kg"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2092,13 +2093,13 @@
   {
     "ref": "bcs36_q96",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "২-এি কত শতাংশ ৮ হলে?",
+    "body": "২-এর কত শতাংশ ৮ হবে?",
     "options": [
       "২০০",
       "৪০০",
@@ -2106,7 +2107,7 @@
       "৩০০"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2114,13 +2115,13 @@
   {
     "ref": "bcs36_q97",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িশ্নশ্নিাধক স্থাশ্নন কোনবি সবশ্নি? ৩, ১০, ৯, ৮, \n২৭, ৬, ৮১, ৪, ২৪৩, (?)",
+    "body": "প্রশ্নবোধক স্থানে কোনটি বসবে? ৩, ১০, ৯, ৮, ২৭, ৬, ৮১, ৪, ২৪৩, (?)",
     "options": [
       "২",
       "৪",
@@ -2128,7 +2129,7 @@
       "১২"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2136,13 +2137,13 @@
   {
     "ref": "bcs36_q98",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িশ্নশ্নিাধক স্থাশ্নন কোন িংখযাবি সবশ্নি?",
+    "body": "প্রশ্নবোধক স্থানে কোন সংখ্যাটি বসবে?",
     "options": [
       "36",
       "32",
@@ -2150,7 +2151,7 @@
       "40"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2159,20 +2160,20 @@
     "ref": "bcs36_q99",
     "exam": "bcs-general",
     "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের কোন রমশ্নমািীবি Non-volatile?",
+    "body": "নিচের কোন মেমোরীটি Non-volatile?",
     "options": [
       "SRAM",
       "DRAM",
       "ROM",
-      "উপশ্নসব সবগুশ্নিাই"
+      "উপরের সবগুলোই"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2180,13 +2181,13 @@
   {
     "ref": "bcs36_q100",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের কোনবি 3G Language নয?",
+    "body": "নিচের কোনটি 3G Language নয়?",
     "options": [
       "C",
       "Java",
@@ -2194,7 +2195,7 @@
       "C++"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2202,21 +2203,21 @@
   {
     "ref": "bcs36_q101",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের কোন উবক্তবি িবিক?",
+    "body": "নিচের কোন উক্তিটি সঠিক?",
     "options": [
-      "১ বকশ্নিািাইি = ১০২৪ িাইি",
-      "১ রমগািাইি = ১০২৪ িাইি",
-      "১ বকশ্নিািাইি = ১০০০ িাইি",
-      "১ রমগািাইি = ১০০০ িাইি"
+      "১ কিলোবাইট = ১০২৪ বাইট",
+      "১ মেগাবাইট = ১০২৪ বাইট",
+      "১ কিলোবাইট = ১০০০ বাইট",
+      "১ মেগাবাইট = ১০০০ বাইট"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2224,13 +2225,13 @@
   {
     "ref": "bcs36_q102",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "Wi-fi কোন স্ট্যান্ডেণ-এি উপি বভবত্ত কশ্নি কাজ কশ্নি?",
+    "body": "Wi-fi কোন স্ট্যান্ডর্ড-এর উপর ভিত্তি করে কাজ করে?",
     "options": [
       "IEEE 802.11",
       "IEEE 804.11",
@@ -2238,7 +2239,7 @@
       "IEEE 806.11"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2246,21 +2247,21 @@
   {
     "ref": "bcs36_q103",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের কোনবিশ্নত সাধারণত ইনফ্রাশ্নিে বেভাইি \nিযিহাি কিা হয়?",
+    "body": "নিচের কোনটিতে সাধারণত ইনফ্রারেড ডিভাইস ব্যবহার করা হয়?",
     "options": [
       "WAN",
       "Satellite Communication",
       "MAN",
-      "TV বিশ্নমািণ কশ্নরাশ্নি"
+      "TV রিমোর্ট কন্ট্রোলে"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2268,8 +2269,8 @@
   {
     "ref": "bcs36_q104",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
@@ -2279,10 +2280,10 @@
       "(1100)2",
       "(11000)2",
       "(01100)2",
-      "রকাশ্ননাবিই নয"
+      "কোনোটিই নয়"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2290,21 +2291,21 @@
   {
     "ref": "bcs36_q105",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "WI MAX- এি পূর্ণরূপ বক?",
+    "body": "WI MAX- এর পূর্ণরূপ কি?",
     "options": [
       "Worldwide Interoperability for Microwave Access",
       "Worldwide Internet for Microwave Access",
       "Worldwide Interconection for Microwave Access",
-      "রকাশ্ননাবিই নয"
+      "কোনোটিই নয়"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "Microwave Access",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2312,21 +2313,21 @@
   {
     "ref": "bcs36_q106",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "Boolean Algebra - এি নিচের কোনবি িবিক?",
+    "body": "Boolean Algebra - এর নিচের কোনটি সঠিক?",
     "options": [
       "A + Ā = 1",
       "A . A = 1",
       "A + A = 2A",
-      "উপশ্নসব রকাশ্ননাবিই নয"
+      "উপরের কোনোটিই নয়"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2334,21 +2335,21 @@
   {
     "ref": "bcs36_q107",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "8086 কত বিশ্নসব মাইশ্নিা িশ্নসবি?",
+    "body": "8086 কত বিটের মাইক্রো প্রসেসর?",
     "options": [
       "8",
       "16",
       "32",
-      "উপশ্নসব রকাশ্ননাবিই নয"
+      "উপরের কোনোটিই নয়"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2356,13 +2357,13 @@
   {
     "ref": "bcs36_q108",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "Mobile Phone -এি কোনবি input device নয?",
+    "lang": "en",
+    "body": "Mobile Phone -এর কোনটি input device নয়?",
     "options": [
       "Keypad",
       "Touch Screen",
@@ -2370,7 +2371,7 @@
       "Power Supply"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2378,21 +2379,21 @@
   {
     "ref": "bcs36_q109",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের কোনবি োসালেজ language?",
+    "body": "নিচের কোনটি ডাটাবেজ language?",
     "options": [
       "Oracle",
       "C",
       "MS-Word",
-      "রকাশ্ননাবিই নয"
+      "কোনোটিই নয়"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2400,21 +2401,21 @@
   {
     "ref": "bcs36_q110",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "Linkedin - এি রক্ষশ্নত্র কোনবি িবিক?",
+    "body": "Linkedin - এর ক্ষেত্রে কোনটি সঠিক?",
     "options": [
-      "এবি একবি বিজশ্ননি অবিশ্নযশ্নন্টে রিাশযাি রনিওযাবকণং িাবভণি",
-      "এবি ২০০২ সালে িবতবষ্ঠত",
-      "২০০৬ সালে এবসব সদরয িংখযা ২০ বমবিযশ্ননি অবধক হয়",
-      "উপশ্নসব সবগুশ্নিাই"
+      "এটি একটি বিজনেস অরিয়েন্টেড সোশ্যাল নেটওয়ার্কিং সার্ভিস",
+      "এটি ২০০২ সালে প্রতিষ্ঠিত",
+      "২০০৬ সালে এটির সদস্য সংখ্যা ২০ মিলিয়নের অধিক হয়",
+      "উপরের সবগুলোই"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত Live \nMCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2422,21 +2423,21 @@
   {
     "ref": "bcs36_q111",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কবমউবনশ্নকশন বিশ্নস্ট্শ্নম রগিওশ্নয বক কাশ্নজ িযিহাি হয়?",
+    "body": "কমিউনিকেশন সিস্টেমে গেটওয়ে কি কাজে ব্যবহার হয়?",
     "options": [
-      "বিবভন্ন রনিওযাকণ বেভাইি িংযুক্ত কিাি কাশ্নজ",
-      "েুই িা তাি অবধক বভন্ন ধিশ্ননি রনিওযাকণশ্নক িংযুক্ত কিাি কাশ্নজ",
-      "এবি রনিওযাকণ হাি বকংিা িুইশ্নচি মতই কাজ কশ্নি",
-      "রকাশ্ননাবিই নয"
+      "বিভিন্ন নেটওয়ার্ক ডিভাইস সংযুক্ত করার কাজে",
+      "দুই বা তার অধিক ভিন্ন ধরনের নেটওয়ার্ককে সংযুক্ত করার কাজে",
+      "এটি নেটওয়ার্ক হাব কিংবা সুইচের মতই কাজ করে",
+      "কোনোটিই নয়"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "নেটওয়ার্ককে সংযুক্ত করার কাজে",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2445,20 +2446,20 @@
     "ref": "bcs36_q112",
     "exam": "bcs-general",
     "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের কোনবি কবম্পউিাশ্নসব িাইমাবি রমশ্নমাবি?",
+    "body": "নিচের কোনটি কম্পিউটারের প্রাইমারি মেমোরি?",
     "options": [
       "RAM",
       "Hard Disk",
       "Pen drive",
-      "রকাশ্ননাবিই নয"
+      "কোনোটিই নয়"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2466,21 +2467,21 @@
   {
     "ref": "bcs36_q113",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "Plotter কোন ধিশ্ননি বেভাইি?",
+    "body": "Plotter কোন ধরনের ডিভাইস?",
     "options": [
-      "ইনপুি",
-      "আউিপুি",
-      "রমশ্নমাবি",
-      "উপশ্নসব রকাশ্ননাবিই নয"
+      "ইনপুট",
+      "আউটপুট",
+      "মেমোরি",
+      "উপরের কোনোটিই নয়"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2488,21 +2489,21 @@
   {
     "ref": "bcs36_q114",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িাঙাবি জাবতি িধান অংশ কোন মূি জাবতশ্নগাষ্ঠীি অন্তভু ণক্ত?",
+    "body": "বাঙালি জাতির প্রধান অংশ কোন মূল জাতিগোষ্ঠীর অন্তভুর্ক্ত?",
     "options": [
-      "দ্রাবিড়",
-      "রনবগ্রশ্নিা",
-      "রভািচীন",
-      "অবিক"
+      "দ্রাবিড়",
+      "নেগ্রিটো",
+      "ভোটচীন",
+      "অষ্ট্রিক"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2510,21 +2511,21 @@
   {
     "ref": "bcs36_q115",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাি সবণিাচীন জনপশ্নেি নাম বক?",
+    "body": "বাংলার সর্বপ্রাচীন জনপদের নাম কি?",
     "options": [
       "পুণ্ড্র",
-      "তাম্রবিপ্ত",
-      "রগৌড়",
-      "হবিশ্নকি"
+      "তাম্রলিপ্ত",
+      "গৌড়",
+      "হরিকেল"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2532,21 +2533,21 @@
   {
     "ref": "bcs36_q116",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলা (শ্নেশ ও ভাষ্া) নাশ্নমি উৎপবত্তি বিষ্যবি \nকোন গ্রশ্নন্থ সবণাবধক উশ্নল্লবখত হয়েশ্নে?",
+    "body": "বাংলা (দেশ ও ভাষা) নামের উৎপত্তির বিষয়টি কোন গ্রন্থে সর্বাধিক উল্লেখিত হয়েছে?",
     "options": [
-      "আিমগীিনামা",
-      "আইন-ই-আকসবী",
-      "আকসবনামা",
-      "তুজুক-ই-আকসবী"
+      "আলমগীরনামা",
+      "আইন-ই-আকবরী",
+      "আকবরনামা",
+      "তুজুক-ই-আকবরী"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2560,15 +2561,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ঢাকাি িাসবাশ্নগি েুগণ বনমণার্ কশ্নিন :",
+    "body": "ঢাকার লালবাগের দুর্গ নির্মাণ করেন :",
     "options": [
-      "শাহ িুজা",
-      "শাশ্নযস্তা খান",
-      "মীি জুমিা",
-      "িুশ্নিোি ইসবাম খান"
+      "শাহ সুজা",
+      "শায়েস্তা খান",
+      "মীর জুমলা",
+      "সুবেদার ইসলাম খান"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2582,15 +2583,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাি ' বেযাত্তশ্নসব মন্বন্তি' - এি িময কাি:",
+    "body": "বাংলার ' ছিয়াত্তরের মন্বন্তর' - এর সময় কাল:",
     "options": [
-      "১৭৭০ বিস্ট্াে",
-      "১৭৬০ বিস্ট্াে",
-      "১৭৬৫ বিস্ট্াে",
-      "১৭৫৬ বিস্ট্াে"
+      "১৭৭০ খ্রিস্টাব্দ",
+      "১৭৬০ খ্রিস্টাব্দ",
+      "১৭৬৫ খ্রিস্টাব্দ",
+      "১৭৫৬ খ্রিস্টাব্দ"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2604,15 +2605,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সবণেিীয রকন্দ্রীয িািভাষ্া িংগ্রাম পবিষ্ে গবিত হয়?",
+    "body": "সর্বদলীয় কেন্দ্রীয় রাষ্ট্রভাষা সংগ্রাম পরিষদ গঠিত হয়?",
     "options": [
-      "৩১ জানুযাবি ১৯৫২",
-      "২শ্নফব্রুযাবি ১৯৫২",
-      "১৮শ্নফব্রুযাবি ১৯৫২",
-      "২০ জানুযাবি ১৯৫২"
+      "৩১ জানুয়ারি ১৯৫২",
+      "২ফেব্রুয়ারি ১৯৫২",
+      "১৮ফেব্রুয়ারি ১৯৫২",
+      "২০ জানুয়ারি ১৯৫২"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2626,7 +2627,7 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "৬ েফা োবি রপশ কিা হয় :",
+    "body": "৬ দফা দাবি পেশ করা হয় :",
     "options": [
       "১৯৭০ সালে",
       "১৯৬৬ সালে",
@@ -2634,7 +2635,7 @@
       "১৯৬৯ সালে"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2642,21 +2643,21 @@
   {
     "ref": "bcs36_q121",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সদরন্ধু ি ১৯৭১ িাশ্নসব ৭ মাচণ ভাষ্শ্র্নি িমযকাশ্নি \nপূর্ণ পাবকস্তাশ্নন রয আন্দোলন চিবেি রিবি হলো :",
+    "body": "বঙ্গবন্ধুর ১৯৭১ সালের ৭ মার্চ ভাষণের সময়কালে পূর্ব পাকিস্তানে যে আন্দোলন চলছিল সেটি হলো :",
     "options": [
-      "ইসবামািাশ্নেি িামবিক সবকাি পেতযাশ্নগি আন্দোলন",
-      "পূর্ণ পাবকস্তাশ্নন অিহয়োগ আন্দোলন",
-      "রিবিশ্নেন্ট ইযাহবহয়াি পেতযাগ আন্দোলন",
-      "মাশণাি 'ি' পেতযাশ্নগি আন্দোলন"
+      "ইসলামাবাদের সামরিক সরকার পদত্যাগের আন্দোলন",
+      "পূর্ব পাকিস্তানে অসহযোগ আন্দোলন",
+      "প্রেসিডেন্ট ইয়াহহিয়ার পদত্যাগ আন্দোলন",
+      "মার্শাল 'ল' পদত্যাগের আন্দোলন"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2664,21 +2665,21 @@
   {
     "ref": "bcs36_q122",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "২৬ মাচণ ১৯৭১ এি স্বাধীনতা রঘাষ্র্া সদরন্ধু জািী কশ্নিন",
+    "body": "২৬ মার্চ ১৯৭১ এর স্বাধীনতা ঘোষণা বঙ্গবন্ধু জারী করেন",
     "options": [
-      "রিতাি/শ্নিবেওি মাধযশ্নম",
-      "ওযযািশ্নিশ্নসব মাধযশ্নম",
-      "রিবিগ্রাশ্নমি মাধযশ্নম",
-      "রিবিবভশশ্ননি মাধযশ্নম"
+      "বেতার/রেডিওর মাধ্যমে",
+      "ওয়্যারলেসের মাধ্যমে",
+      "টেলিগ্রামের মাধ্যমে",
+      "টেলিভিশনের মাধ্যমে"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2686,21 +2687,21 @@
   {
     "ref": "bcs36_q123",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাদেশে রিাপা আমন ধান কািা হয় ----",
+    "body": "বাংলাদেশে রোপা আমন ধান কাটা হয় ----",
     "options": [
-      "আষ্াঢ়-োির্ মাশ্নি",
-      "ভাদ্র -আবিন মাশ্নি",
-      "অগ্রহাযন -শ্নপৌষ্ মাশ্নি",
-      "মাঘ-ফাল্গুন"
+      "আষাঢ়-শ্রাবণ মাসে",
+      "ভাদ্র -আশ্বিন মাসে",
+      "অগ্রহায়ন -পৌষ মাসে",
+      "মাঘ-ফাল্গন"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2708,13 +2709,13 @@
   {
     "ref": "bcs36_q124",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িুন্দসবন-এি কত শতাংশ বাংলাদেশেি \nরভৌশ্নগাবিক িীমাি মধ্যে পশ্নড়শ্নে?",
+    "body": "সুন্দরবন-এর কত শতাংশ বাংলাদেশের ভৌগোলিক সীমার মধ্যে পড়েছে?",
     "options": [
       "৫০%",
       "৫৮%",
@@ -2722,7 +2723,7 @@
       "৬৬%"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2730,21 +2731,21 @@
   {
     "ref": "bcs36_q125",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "MDG-এি অন্যতম িক্ষয বক?",
+    "body": "MDG-এর অন্যতম লক্ষ্য কি?",
     "options": [
-      "রেশ থেকে রপাবিও বনমূণি",
-      "HIV / AIDS বনমূণি কিা",
-      "যক্ষ্মা বনমূণি কিা",
-      "ক্ষু ধা ও োবিদ্রয েূি কিা"
+      "দেশ থেকে পোলিও নির্মূল",
+      "HIV / AIDS নির্মূল করা",
+      "যক্ষ্মা নির্মূল করা",
+      "ক্ষুধা ও দারিদ্র্য দূর করা"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2752,13 +2753,13 @@
   {
     "ref": "bcs36_q126",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "তত্ত্বািধাযক সবকাি িযিস্থা সংবিধানের কততম \nিংশ্নশাধনীি মাধযশ্নম িে কিা হয়েশ্নে?",
+    "body": "তত্ত্বাবধায়ক সরকার ব্যবস্থা সংবিধানের কততম সংশোধনীর মাধ্যমে রদ করা হয়েছে?",
     "options": [
       "১২ তম",
       "১৩ তম",
@@ -2766,7 +2767,7 @@
       "১৫ তম"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2774,21 +2775,21 @@
   {
     "ref": "bcs36_q127",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাদেশেি জাতীয িংিে কয কক্ষবিবশষ্ট?",
+    "body": "বাংলাদেশের জাতীয় সংসদ কয় কক্ষবিশিষ্ট?",
     "options": [
       "এক কক্ষ",
-      "েুই িা বিকক্ষ",
-      "বতন কক্ষ",
-      "িহুকক্ষ বিবশষ্ট"
+      "দুই বা দ্বিকক্ষ",
+      "তিন কক্ষ",
+      "বহুকক্ষ বিশিষ্ট"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2796,21 +2797,21 @@
   {
     "ref": "bcs36_q128",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ভারতের কতবি 'বেিমহি' বাংলাদেশেি \nরভৌশ্নগাবিক িীমায অন্তভু ণক্ত হয়েশ্নে?",
+    "body": "ভারতের কতটি 'ছিটমহল' বাংলাদেশের ভৌগোলিক সীমায় অন্তভুর্ক্ত হয়েছে?",
     "options": [
-      "১৬২ বি",
-      "১১১ বি",
-      "৫১ বি",
-      "১০১ বি"
+      "১৬২ টি",
+      "১১১ টি",
+      "৫১ টি",
+      "১০১ টি"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2818,21 +2819,21 @@
   {
     "ref": "bcs36_q129",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাদেশেি রভৌশ্নগাবিক অিস্থান কোনবি?",
+    "body": "বাংলাদেশের ভৌগোলিক অবস্থান কোনটি?",
     "options": [
-      "২২°৩০′ - ২০°-৩৪′ েবক্র্ষ অক্ষাংশ্নশ",
-      "৮০°৩১′ - ৪০°-৯০′ দ্রাবঘমাংশ্নশ",
-      "৩৪°২৫° - ৩৮′ উত্তি অক্ষাংশ্নশ",
-      "৮৮°০১′ - ৯২°৪১′ পূর্ণ দ্রাবঘমাংশ্নশ"
+      "২২°৩০′ - ২০°-৩৪′ দক্ষিণ অক্ষাংশে",
+      "৮০°৩১′ - ৪০°-৯০′ দ্রাঘিমাংশে",
+      "৩৪°২৫° - ৩৮′ উত্তর অক্ষাংশে",
+      "৮৮°০১′ - ৯২°৪১′ পূর্ব দ্রাঘিমাংশে"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2846,15 +2847,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাদেশে িেম আেমশুমাবি অনুবষ্ঠত হয় কশ্নি?",
+    "body": "বাংলাদেশে প্রথম আদমশুমারি অনুষ্ঠিত হয় কবে?",
     "options": [
-      "১৯৭২ িাি",
-      "১৯৭৩ িাি",
-      "১৯৭৪ িাি",
-      "১৯৭৭ িাি"
+      "১৯৭২ সাল",
+      "১৯৭৩ সাল",
+      "১৯৭৪ সাল",
+      "১৯৭৭ সাল"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2868,15 +2869,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন উপজাবত িা ক্ষু দ্র নৃ-শ্নগাষ্ঠীি ধমণ ইসবাম?",
+    "body": "কোন উপজাতি বা ক্ষুদ্র নৃ-গোষ্ঠীর ধর্ম ইসলাম?",
     "options": [
-      "িাখাইন",
-      "মািমা",
+      "রাখাইন",
+      "মারমা",
       "পাঙন",
-      "বখযাং"
+      "খিয়াং"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2890,15 +2891,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ঢাকাি ' রধািাই খাি' রক খনন কশ্নিন?",
+    "body": "ঢাকার ' ধোলাই খাল' কে খনন করেন?",
     "options": [
-      "পবিবিবি",
-      "ইসবাম খান",
-      "শাশ্নযস্তা খান",
+      "পরিবিবি",
+      "ইসলাম খান",
+      "শায়েস্তা খান",
       "ঈশা খান"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2906,21 +2907,21 @@
   {
     "ref": "bcs36_q133",
     "exam": "bcs-general",
-    "subject": "Mathematics & Reasoning",
-    "topic": "গাণিতিক যুক্তি ও বাস্তব সংখ্যা",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাভাষ্াশ্নক পাবকস্তান র্গপবিষ্ে কোন তাবিশ্নখ \nঅন্যতম িািভাষ্া বহলেশ্নি স্বীকৃ বত রেয?",
+    "body": "বাংলাভাষাকে পাকিস্তান গণপরিষদ কোন তারিখে অন্যতম রাষ্ট্রভাষা হিসেবে স্বীকৃতি দেয়?",
     "options": [
-      "৯ রম ১৯৫৪",
-      "২২ রফব্রুযাবি ১৯৫৩",
-      "১৬ রফব্রুযাবি ১৯৫৬",
-      "২১ রফব্রুযাবি ১৯৫২"
+      "৯ মে ১৯৫৪",
+      "২২ ফেব্রুয়ারি ১৯৫৩",
+      "১৬ ফেব্রুয়ারি ১৯৫৬",
+      "২১ ফেব্রুয়ারি ১৯৫২"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2934,15 +2935,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মুবক্তযুদ্ধকািীন কোন তাবিশ্নখ িুবদ্ধজীিীশ্নেি ওপি \nিযাপক হতযাকাণ্ড সংঘটিত হয়?",
+    "body": "মুক্তিযুদ্ধকালীন কোন তারিখে বুদ্ধিজীবীদের ওপর ব্যাপক হত্যাকাণ্ড সংঘটিত হয়?",
     "options": [
-      "২৫ মাচণ ১৯৭১",
-      "২৬ মাচণ ১৯৭১",
-      "১৪ বেশ্নিম্বি ১৯৭১",
-      "১৬ বেশ্নিম্বি ১৯৭১"
+      "২৫ মার্চ ১৯৭১",
+      "২৬ মার্চ ১৯৭১",
+      "১৪ ডিসেম্বর ১৯৭১",
+      "১৬ ডিসেম্বর ১৯৭১"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2950,21 +2951,21 @@
   {
     "ref": "bcs36_q135",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাদেশশ্নক স্বীকৃ বত িোনকািী িেম ইউশ্নিাপীয \nরেশ কোনবি?",
+    "body": "বাংলাদেশকে স্বীকৃতি প্রদানকারী প্রথম ইউরোপীয় দেশ কোনটি?",
     "options": [
-      "যুক্তিাজয",
-      "পূর্ণ জামণাবন",
-      "রেন",
-      "বগ্রি"
+      "যুক্তরাজ্য",
+      "পূর্ব জার্মানি",
+      "স্পেন",
+      "গ্রিস"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2972,21 +2973,21 @@
   {
     "ref": "bcs36_q136",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাদেশেি িৃহত্তি রজিা কতবি?",
+    "body": "বাংলাদেশের বৃহত্তর জেলা কতটি?",
     "options": [
-      "১৭ বি",
-      "২০ বি",
-      "৬৪ বি",
-      "১৯ বি"
+      "১৭ টি",
+      "২০ টি",
+      "৬৪ টি",
+      "১৯ টি"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2994,21 +2995,21 @@
   {
     "ref": "bcs36_q137",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'শুভিং' সবনা কোন রজিায অিবস্থত?",
+    "body": "'শুভলং' ঝরনা কোন জেলায় অবস্থিত?",
     "options": [
-      "িাঙামাবি",
-      "িান্দসবান",
-      "রমৌিভীিাজাি",
-      "বিশ্নসব"
+      "রাঙামাটি",
+      "বান্দরবান",
+      "মৌলভীবাজার",
+      "সিলেট"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3016,21 +3017,21 @@
   {
     "ref": "bcs36_q138",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাদেশেি উষ্ণতম স্থাশ্ননি নাম বক?",
+    "body": "বাংলাদেশের উষ্ণতম স্থানের নাম কি?",
     "options": [
-      "পুবিযা, িাজশাহী",
-      "নাশ্নচাি, চাাঁপাইনিািগঞ্জ",
-      "িািপুি, নাশ্নিাি",
-      "ঈসবেী, পািনা"
+      "পুটিয়া, রাজশাহী",
+      "নাচোল, চাঁপাইনবাবগঞ্জ",
+      "লালপুর, নাটোর",
+      "ঈশ্বরদী, পাবনা"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3044,15 +3045,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাদেশেি জাতীয পতাকা কশ্নি গৃহীত হয়?",
+    "body": "বাংলাদেশের জাতীয় পতাকা কবে গৃহীত হয়?",
     "options": [
-      "১৭ জানুযাবি ১৯৭২",
-      "২৬ মাচণ ১৯৭১",
-      "১৬ বেশ্নিম্বি ১৯৭১",
-      "২১ রফব্রুযাবি ১৯৭২"
+      "১৭ জানুয়ারি ১৯৭২",
+      "২৬ মার্চ ১৯৭১",
+      "১৬ ডিসেম্বর ১৯৭১",
+      "২১ ফেব্রুয়ারি ১৯৭২"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3066,15 +3067,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "রকাশ্ননা িািীয অনুষ্ঠাশ্নন জাতীয িংগীশ্নতি কত \nচির্ িাজাশ্ননা হয়?",
+    "body": "কোনো রাষ্ট্রীয় অনুষ্ঠানে জাতীয় সংগীতের কত চরণ বাজানো হয়?",
     "options": [
-      "িেম ১০ বি",
-      "িেম ৪ বি",
-      "িেম ৬ বি",
-      "িেম ৫ বি"
+      "প্রথম ১০ টি",
+      "প্রথম ৪ টি",
+      "প্রথম ৬ টি",
+      "প্রথম ৫ টি"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3088,15 +3089,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ECNEC - এি রচযািমযান িা িভাপবত রক?",
+    "body": "ECNEC - এর চেয়ারম্যান বা সভাপতি কে?",
     "options": [
-      "অেণমন্ত্রী",
-      "িধানমন্ত্রী",
-      "পবিকল্পনামন্ত্রী",
-      "েীকাি"
+      "অর্থমন্ত্রী",
+      "প্রধানমন্ত্রী",
+      "পরিকল্পনামন্ত্রী",
+      "স্পীকার"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3110,15 +3111,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'অবসবি' বক ফিশ্নসব উন্নত জাত?",
+    "body": "'অগ্নিশ্বর' কি ফসলের উন্নত জাত?",
     "options": [
       "ধান",
-      "কিা",
-      "পাি",
+      "কলা",
+      "পাট",
       "গম"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3126,24 +3127,24 @@
   {
     "ref": "bcs36_q143",
     "exam": "bcs-general",
-    "subject": "International Affairs",
-    "topic": "আন্তর্জাতিক বিষয়াবলি",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "(তৎকািীন িাম্প্রবতক িশ্ন, িতণমান িমশ্নয \nিশ্নযাজয নয।) িতণমান িমশ্নয বাংলাদেশ সবকাশ্নসব িড় \nঅজণন কোনবি?",
+    "body": "(তৎকালীন সাম্প্রতিক প্রশ্ন, বর্তমান সময়ে প্রযোজ্য নয়।) বর্তমান সময়ে বাংলাদেশ সরকারের বড় অর্জন কোনটি?",
     "options": [
-      "যুদ্ধপিাধীশ্নেি বিচাি",
-      "িমুদ্রিীমা বিজয",
-      "তিশ্নেবশক মুদ্রাি বিজাভণ",
-      "বিেুযৎ উৎপােন িৃবদ্ধ \nসঠিক উত্তর: \"িাবতি কিা হয়েশ্নে\" \nLive MCQ Analytics™: িবিক উত্তিোতা: 0%, ভুি \nউত্তিোতা: 0%, উত্তি কশ্নিনবন: 0% \nব্যাখ্যা: এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।"
+      "যুদ্ধপরাধীদের বিচার",
+      "সমুদ্রসীমা বিজয়",
+      "বৈদেশিক মুদ্রার রিজার্ভ",
+      "বিদ্যুৎ উৎপাদন বৃদ্ধি"
     ],
-    "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "answer": null,
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
-    "cancelled": false
+    "cancelled": true
   },
   {
     "ref": "bcs36_q144",
@@ -3154,15 +3155,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন িংকিশ্নক রকন্দ্র কশ্নি ১৯৫০ সালে ' শাবন্তি \nজনয ঐকয িস্তাি' জাতিসংঘের মাধযশ্নম রপশ কিা হয়?",
+    "body": "কোন সংকটকে কেন্দ্র করে ১৯৫০ সালে ' শান্তির জন্য ঐক্য প্রস্তাব' জাতিসংঘের মাধ্যমে পেশ করা হয়?",
     "options": [
-      "বভশ্নযতনাম িংকি",
-      "িাইিাি িংকি",
-      "রকাবিযা িংকি",
-      "পযাশ্নিস্ট্াইন িংকি"
+      "ভিয়েতনাম সংকট",
+      "সাইপ্রাস সংকট",
+      "কোরিয়া সংকট",
+      "প্যালেস্টাইন সংকট"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3170,13 +3171,13 @@
   {
     "ref": "bcs36_q145",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িুশ্নযজ খাি কোন সদর চািু হয়?",
+    "body": "সুয়েজ খাল কোন বছর চালু হয়?",
     "options": [
       "১৯০৩",
       "১৮৬৯",
@@ -3184,7 +3185,7 @@
       "১৮৫৪"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা রেখশ্নত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3192,21 +3193,21 @@
   {
     "ref": "bcs36_q146",
     "exam": "bcs-general",
-    "subject": "General Science",
-    "topic": "সাধারণ বিজ্ঞান ও প্রযুক্তি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "বনম্নবিবখত কোনবি International Mother Earth day?",
+    "lang": "en",
+    "body": "নিম্নলিখিত কোনটি International Mother Earth day?",
     "options": [
-      "১৮ এবসব",
-      "২০ এবসব",
-      "২২ এবসব",
-      "২৪ এবসব"
+      "১৮ এপ্রিল",
+      "২০ এপ্রিল",
+      "২২ এপ্রিল",
+      "২৪ এপ্রিল"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3214,13 +3215,13 @@
   {
     "ref": "bcs36_q147",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "রিবিশ্নেন্ট উইড্র উইসবশ্ননি 14 points এ কত \nনম্বি point এ জাবতপুশ্নঞ্জি িৃবষ্টি কো উশ্নল্লখ কিা হয়েশ্নে?",
+    "body": "প্রেসিডেন্ট উইড্র উইলসনের 14 points এ কত নম্বর point এ জাতিপুঞ্জের সৃষ্টির কথা উল্লেখ করা হয়েছে?",
     "options": [
       "৯",
       "১২",
@@ -3228,7 +3229,7 @@
       "১৪"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3236,13 +3237,13 @@
   {
     "ref": "bcs36_q148",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "১৭৮৩ সালে ভািণাইশ্নত কযবি চুবক্ত স্বাক্ষবিত হয়?",
+    "body": "১৭৮৩ সালে ভার্সাইতে কয়টি চুক্তি স্বাক্ষরিত হয়?",
     "options": [
       "২",
       "৩",
@@ -3250,7 +3251,7 @@
       "৫"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3258,13 +3259,13 @@
   {
     "ref": "bcs36_q149",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িাওশ্নসব (Laos) সবকাবি নাম বক?",
+    "body": "লাওসের (Laos) সরকারি নাম কি?",
     "options": [
       "The Lao People's Democratic Republic",
       "Republic of Laos",
@@ -3272,7 +3273,7 @@
       "Democratic Republic of Laos"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "Republic",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3280,21 +3281,21 @@
   {
     "ref": "bcs36_q150",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের কোন িাি সবণাবধক িাশ্নসব িাশ্নে \nিীমান্তযুক্ত?",
+    "body": "নিচের কোন রাষ্ট্র সর্বাধিক রাষ্ট্রের সাথে সীমান্তযুক্ত?",
     "options": [
       "ভারত",
       "চীন",
-      "বমযানমাি",
-      "আফগাবনস্তান"
+      "মিয়ানমার",
+      "আফগানিস্তান"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3308,15 +3309,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "জাতিসংঘ উন্নযন কমণিূবচ (UNDP) - এি শীষ্ণ \nপেবি বক?",
+    "body": "জাতিসংঘ উন্নয়ন কর্মসূচি (UNDP) - এর শীর্ষ পদটি কি?",
     "options": [
-      "িশািক",
-      "মহাপবিচািক",
-      "মহািবচি",
-      "রিবিশ্নেন্ট"
+      "প্রশাসক",
+      "মহাপরিচালক",
+      "মহাসচিব",
+      "প্রেসিডেন্ট"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3324,21 +3325,21 @@
   {
     "ref": "bcs36_q152",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "জসবাযু পবসবতণন রমাকাশ্নসবায Green Climate fund \nবিশ্নসব েবিদ্র রেশগুশ্নিাি জনয বক পবিমার্ অেণ মঞ্জুি কশ্নিশ্নে?",
+    "body": "জলবায়ু পরিবর্তন মোকাবেলায় Green Climate fund বিশ্বের দরিদ্র দেশগুলোর জন্য কি পরিমাণ অর্থ মঞ্জুর করেছে?",
     "options": [
-      "৮০ বিবিযন েিাি",
-      "১০০ বিবিযন েিাি",
-      "১৫০ বিবিযন েিাি",
-      "২০০ বিবিযন েিাি"
+      "৮০ বিলিয়ন ডলার",
+      "১০০ বিলিয়ন ডলার",
+      "১৫০ বিলিয়ন ডলার",
+      "২০০ বিলিয়ন ডলার"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3346,13 +3347,13 @@
   {
     "ref": "bcs36_q153",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "যুক্তিাি কশ্নি এককভাশ্নি ABM (Anti-Ballistic \nMissile) চুবক্ত থেকে বনশ্নজশ্নক িতযাহাি কশ্নি?",
+    "body": "যুক্তরাষ্ট্র কবে এককভাবে ABM (Anti-Ballistic Missile) চুক্তি থেকে নিজেকে প্রত্যাহার করে?",
     "options": [
       "জুন ২০০১",
       "জুন ২০০০",
@@ -3360,7 +3361,7 @@
       "জুন ২০০৩"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3368,13 +3369,13 @@
   {
     "ref": "bcs36_q154",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আসব িীগ িবতষ্ঠা পায ----",
+    "body": "আরব লীগ প্রতিষ্ঠা পায় ----",
     "options": [
       "১৯৪৯",
       "১৯৫০",
@@ -3382,7 +3383,7 @@
       "১৯৪০"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3396,15 +3397,15 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "Yalta Conference--এি একবি িক্ষয বেি:",
+    "body": "Yalta Conference--এর একটি লক্ষ্য ছিল:",
     "options": [
-      "বসবযুশ্নদ্ধি কাির্ বর্নণয",
-      "বজব্রাসবাি ির্ািীি িুিক্ষা",
-      "জাতিসংঘ িবতষ্ঠা",
-      "যুশ্নদ্ধ ক্ষবতগ্রস্তশ্নেি ক্ষবতপূির্ িোন"
+      "বিশ্বযুদ্ধের কারণ নির্ণয়",
+      "জিব্রালটার প্রণালীর সুরক্ষা",
+      "জাতিসংঘ প্রতিষ্ঠা",
+      "যুদ্ধে ক্ষতিগ্রস্তদের ক্ষতিপূরণ প্রদান"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3412,13 +3413,13 @@
   {
     "ref": "bcs36_q156",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িতণমাশ্নন NAM-এি সদরয িংখযা---",
+    "body": "বর্তমানে NAM-এর সদস্য সংখ্যা---",
     "options": [
       "১২০",
       "১৫",
@@ -3426,7 +3427,7 @@
       "২১"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3434,21 +3435,21 @@
   {
     "ref": "bcs36_q157",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'War and Peace' উপনযাশ্নসব িচবযতা -----",
+    "body": "'War and Peace' উপন্যাসের রচয়িতা -----",
     "options": [
-      "বিও সবস্ট্য",
-      "রেবভে বিকাশ্নেণা",
-      "কািণ মাকণি",
-      "রজন অবস্ট্ন"
+      "লিও টলস্টয়",
+      "ডেভিড রিকার্ডো",
+      "কার্ল মার্কস",
+      "জেন অস্টিন"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3456,21 +3457,21 @@
   {
     "ref": "bcs36_q158",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আন্তজণাবতক রিে সব-এি সদর দপ্তর :",
+    "body": "আন্তর্জাতিক রেড ক্রস-এর সদর দপ্তর :",
     "options": [
-      "বভশ্নযনা",
-      "রজশ্ননভা",
-      "পযাবসব",
-      "িন্ডন"
+      "ভিয়েনা",
+      "জেনেভা",
+      "প্যারিস",
+      "লন্ডন"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3478,21 +3479,21 @@
   {
     "ref": "bcs36_q159",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "IAEA -এি সদর দপ্তর হশ্নচ্ছ :",
+    "body": "IAEA -এর সদর দপ্তর হচ্ছে :",
     "options": [
-      "রজশ্ননভা",
-      "বভশ্নযনা",
-      "ওযাবশংিন",
-      "পযাবসব"
+      "জেনেভা",
+      "ভিয়েনা",
+      "ওয়াশিংটন",
+      "প্যারিস"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3500,13 +3501,13 @@
   {
     "ref": "bcs36_q160",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িাকণ িবতবষ্ঠত হয় -",
+    "body": "সার্ক প্রতিষ্ঠিত হয় -",
     "options": [
       "১৯৮২",
       "১৯৮৫",
@@ -3514,7 +3515,7 @@
       "১৯৮৩"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3528,7 +3529,7 @@
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "জাতিসংঘ কোন সদর িবতবষ্ঠত হয়?",
+    "body": "জাতিসংঘ কোন বছর প্রতিষ্ঠিত হয়?",
     "options": [
       "১৯৪১",
       "১৯৪৫",
@@ -3536,7 +3537,7 @@
       "১৯৪৯"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3544,21 +3545,21 @@
   {
     "ref": "bcs36_q162",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আশ্নিশ্নপা শহিবি কোথায় অিবস্থত?",
+    "body": "আলেপ্পো শহরটি কোথায় অবস্থিত?",
     "options": [
-      "বমশি",
-      "ইিান",
-      "ইিাক",
-      "বিবিযা"
+      "মিশর",
+      "ইরান",
+      "ইরাক",
+      "সিরিয়া"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3566,21 +3567,21 @@
   {
     "ref": "bcs36_q163",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মাোি রতশ্নসবা কোন রেশ্নশ জন্মগ্রর্হ কশ্নিন?",
+    "body": "মাদার তেরেসা কোন দেশে জন্মগ্রহণ করেন?",
     "options": [
-      "রমবিশ্নোবনযা",
-      "আিশ্নজবিযা",
-      "আিশ্নিবনযা",
+      "মেসিডোনিয়া",
+      "আলজেরিয়া",
+      "আলবেনিয়া",
       "ফ্রান্স"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3588,13 +3589,13 @@
   {
     "ref": "bcs36_q164",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাদেশে কখন থেকে িযস্কভাতা চািু হয়?",
+    "body": "বাংলাদেশে কখন থেকে বয়স্কভাতা চালু হয়?",
     "options": [
       "১৯৯৮ সালে",
       "১৯৯৯ সালে",
@@ -3602,7 +3603,7 @@
       "১৯৯৭ সালে"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3610,21 +3611,21 @@
   {
     "ref": "bcs36_q165",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাদেশেি িাশ্নে ভারতের িীমানা কত?",
+    "body": "বাংলাদেশের সাথে ভারতের সীমানা কত?",
     "options": [
-      "৫১৩৮ বক.বম",
-      "৪৩৭১ বক.বম",
-      "৪১৫৬ বক.বম",
-      "৩৯৭৮ বক.বম"
+      "৫১৩৮ কি.মি",
+      "৪৩৭১ কি.মি",
+      "৪১৫৬ কি.মি",
+      "৩৯৭৮ কি.মি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3632,21 +3633,21 @@
   {
     "ref": "bcs36_q166",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "রমযি রমাহাম্মে হাবনফ ফ্লাইওভাশ্নসব তেঘণয কত?",
+    "body": "মেয়র মোহাম্মদ হানিফ ফ্লাইওভারের দৈর্ঘ্য কত?",
     "options": [
-      "১১.২ বক.বম",
-      "১২.২ বক.বম",
-      "১১.৮ বক.বম",
-      "১২.৮ বক.বম"
+      "১১.২ কি.মি",
+      "১২.২ কি.মি",
+      "১১.৮ কি.মি",
+      "১২.৮ কি.মি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3654,21 +3655,21 @@
   {
     "ref": "bcs36_q167",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িুন্দসবশ্নন িাঘ র্গনায িযিহৃত হয় -",
+    "body": "সুন্দরবনে বাঘ গণনায় ব্যবহৃত হয় -",
     "options": [
-      "পাগ-মাকণ",
-      "ফু িমাকণ",
+      "পাগ-মার্ক",
+      "ফুটমার্ক",
       "GIS",
-      "রকাযােণশ্নসব"
+      "কোয়ার্ডবেট"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3676,21 +3677,21 @@
   {
     "ref": "bcs36_q168",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "২০০৪ িাশ্নসব ভযংকি িুনাবম রঢউশ্নযি গবত বেি ঘন্টায --",
+    "body": "২০০৪ সালের ভয়ংকর সুনামি ঢেউয়ের গতি ছিল ঘন্টায় --",
     "options": [
-      "১০০-২০০ বক.বম",
-      "৩০০-৪০০ বক.বম",
-      "৭০০-৮০০ বক.বম",
-      "৯০০-১০০০ বক.বম"
+      "১০০-২০০ কি.মি",
+      "৩০০-৪০০ কি.মি",
+      "৭০০-৮০০ কি.মি",
+      "৯০০-১০০০ কি.মি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3698,21 +3699,21 @@
   {
     "ref": "bcs36_q169",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বফশাবিজ রেবনং ইনবস্ট্বিউি কোথায় অিবস্থত?",
+    "body": "ফিশারিজ ট্রেনিং ইনস্টিটিউট কোথায় অবস্থিত?",
     "options": [
-      "ঢাকায",
-      "খুিনায",
-      "নািার্যগশ্নঞ্জ",
-      "চাাঁেপুশ্নি"
+      "ঢাকায়",
+      "খুলনায়",
+      "নারায়ণগঞ্জে",
+      "চাঁদপুরে"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3720,21 +3721,21 @@
   {
     "ref": "bcs36_q170",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িমুদ্রপৃষ্ঠ ৪৫ রি.বম িৃবদ্ধ রপশ্নি ২০৫০ িাি নাগাে \nবাংলাদেশে climate refugee হলে?",
+    "body": "সমুদ্রপৃষ্ঠ ৪৫ সে.মি বৃদ্ধি পেলে ২০৫০ সাল নাগাদ বাংলাদেশে climate refugee হবে?",
     "options": [
-      "৩ রকাবি",
-      "৩.৫ রকাবি",
-      "৪ রকাবি",
-      "৪.৫ রকাবি"
+      "৩ কোটি",
+      "৩.৫ কোটি",
+      "৪ কোটি",
+      "৪.৫ কোটি"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3742,13 +3743,13 @@
   {
     "ref": "bcs36_q171",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বায়ুমণ্ডশ্নসব রমাি শবক্তি কত শতাংশ িূযণ হশ্নত আশ্নি?",
+    "body": "বায়ুমণ্ডলের মোট শক্তির কত শতাংশ সূর্য হতে আসে?",
     "options": [
       "৯০ শতাংশ",
       "৯৪ শতাংশ",
@@ -3756,7 +3757,7 @@
       "৯৯.৯৭ শতাংশ"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3764,13 +3765,13 @@
   {
     "ref": "bcs36_q172",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বসবিযাংক অনুযাযী ভবিষ্যশ্নতি জসবাযু পবসবতণশ্ননি \nক্ষবতকি িভাি রমাকাশ্নসবায বসব িাহাশ্নযযি কত শতাংশ \nবাংলাদেশশ্নক িোন কিশ্নি?",
+    "body": "বিশ্বব্যাংক অনুযায়ী ভবিষ্যতের জলবায়ু পরিবর্তনের ক্ষতিকর প্রভাব মোকাবেলায় বিশ্ব সাহায্যের কত শতাংশ বাংলাদেশকে প্রদান করবে?",
     "options": [
       "৩০%",
       "৪০%",
@@ -3778,7 +3779,7 @@
       "৬০%"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3786,21 +3787,21 @@
   {
     "ref": "bcs36_q173",
     "exam": "bcs-general",
-    "subject": "Geography",
-    "topic": "ভূগোল, পরিবেশ ও দুর্যোগ ব্যবস্থাপনা",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "দুর্যোগ িযিস্থাপনা নীবতমািা ২০১৫ কশ্নি জাবি হয়েশ্নে?",
+    "body": "দুর্যোগ ব্যবস্থাপনা নীতিমালা ২০১৫ কবে জারি হয়েছে?",
     "options": [
-      "১ জানুযাবি",
-      "১১ জানুযাবি",
-      "১৯ জানুযাবি",
-      "২১ মাচণ"
+      "১ জানুয়ারি",
+      "১১ জানুয়ারি",
+      "১৯ জানুয়ারি",
+      "২১ মার্চ"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3808,21 +3809,21 @@
   {
     "ref": "bcs36_q174",
     "exam": "bcs-general",
-    "subject": "Geography",
-    "topic": "ভূগোল, পরিবেশ ও দুর্যোগ ব্যবস্থাপনা",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িুনাবমি কাির্ হলো -",
+    "body": "সুনামির কারণ হলো -",
     "options": [
-      "ঘূর্বণিড়",
-      "চন্দ্র ও িূশ্নযণি আকষ্র্ণ",
-      "িমুশ্নদ্রি তিশ্নেশ্নশ ভূমিকম্পন",
-      "আশ্নিযবগবসব অিুযৎপাত"
+      "ঘূর্ণিঝড়",
+      "চন্দ্র ও সূর্যের আকর্ষণ",
+      "সমুদ্রের তলদেশে ভূমিকম্পন",
+      "আগ্নেয়গিরির অগ্ন্যুৎপাত"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3830,21 +3831,21 @@
   {
     "ref": "bcs36_q175",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "রযসব অর্ুজীি রিাগ িৃবষ্ট কশ্নি তাশ্নেি সবা হয় -",
+    "body": "যেসব অণুজীব রোগ সৃষ্টি করে তাদের বলা হয় -",
     "options": [
-      "পযােশ্নজবনক",
-      "ইনশ্নফকশন",
-      "িবিন",
-      "জীিার্ু"
+      "প্যাথজেনিক",
+      "ইনফেকশন",
+      "টক্সিন",
+      "জীবাণু"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3852,21 +3853,21 @@
   {
     "ref": "bcs36_q176",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বশশুি মনস্তাবত্ত্বক চাবহো পূিশ্র্ন নিচের কোনবি জরুবি?",
+    "body": "শিশুর মনস্তাত্ত্বিক চাহিদা পূরণে নিচের কোনটি জরুরি?",
     "options": [
-      "স্বীকৃ বত",
-      "রেহ",
-      "িাফিয",
-      "উশ্নল্লবখত সবকবি"
+      "স্বীকৃতি",
+      "স্নেহ",
+      "সাফল্য",
+      "উল্লেখিত সবকটি"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3874,13 +3875,13 @@
   {
     "ref": "bcs36_q177",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আযনায িবতফবিত হলে নিচের কোন শেবসব \nকোন পবসবতণন হলে না?",
+    "body": "আয়নায় প্রতিফলিত হলে নিচের কোন শব্দটির কোন পরিবর্তন হবে না?",
     "options": [
       "OPT",
       "NOON",
@@ -3888,7 +3889,7 @@
       "OTTO"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3896,21 +3897,21 @@
   {
     "ref": "bcs36_q178",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আযনা থেকে ২ ফু ি েূিশ্নত্ব োাঁবড়শ্নয, আযনাশ্নত \nআপনাি িবতবিম্ব কতেূি রেখা যাশ্নি?",
+    "body": "আয়না থেকে ২ ফুট দূরত্বে দাঁড়িয়ে, আয়নাতে আপনার প্রতিবিম্ব কতদূর দেখা যাবে?",
     "options": [
-      "৫ ফু ি",
-      "৪ ফু ি",
-      "৩ ফু ি",
-      "২ফু ি"
+      "৫ ফুট",
+      "৪ ফুট",
+      "৩ ফুট",
+      "২ফুট"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3918,21 +3919,21 @@
   {
     "ref": "bcs36_q179",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নিচের কোনবি আবমষ্ জাতীয খােয হজশ্নম িাহাযয কশ্নি?",
+    "body": "নিচের কোনটি আমিষ জাতীয় খাদ্য হজমে সাহায্য করে?",
     "options": [
-      "বেপবিন",
-      "িাইশ্নপজ",
-      "িাযাবিন",
-      "অযামাইশ্নিজ"
+      "ট্রিপসিন",
+      "লাইপেজ",
+      "টায়ালিন",
+      "অ্যামাইলেজ"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3940,13 +3941,13 @@
   {
     "ref": "bcs36_q180",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বায়ুমণ্ডশ্নি শতকিা কতভাগ আগণন বিেযমান?",
+    "body": "বায়ুমণ্ডলে শতকরা কতভাগ আর্গন বিদ্যমান?",
     "options": [
       "৭৮.০",
       "০.৮",
@@ -3954,7 +3955,7 @@
       "০.৩"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3962,21 +3963,21 @@
   {
     "ref": "bcs36_q181",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মানুশ্নষ্ি িশ্নক্ত রিাবহত কর্বকা কোথায় িবঞ্চত োশ্নক?",
+    "body": "মানুষের রক্তে লোহিত কণিকা কোথায় সঞ্চিত থাকে?",
     "options": [
-      "হৃেযশ্নন্ত্র",
-      "িৃশ্নে",
-      "ফু িফু শ্নি",
-      "প্লীহাশ্নত"
+      "হৃদযন্ত্রে",
+      "বৃক্কে",
+      "ফুসফুসে",
+      "প্লীহাতে"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3984,21 +3985,21 @@
   {
     "ref": "bcs36_q182",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন যশ্নন্ত্রি িাহাশ্নযয যাবন্ত্রক শবক্তশ্নক বিেুযৎ \nশবক্তশ্নত রূপান্তবিত কিা হয়?",
+    "body": "কোন যন্ত্রের সাহায্যে যান্ত্রিক শক্তিকে বিদ্যুৎ শক্তিতে রূপান্তরিত করা হয়?",
     "options": [
-      "োন্সফিমাি",
-      "োযনাশ্নমা",
-      "তিেুযবতক মসব",
-      "হুইি"
+      "ট্রান্সফরমার",
+      "ডায়নামো",
+      "বৈদ্যুতিক মটর",
+      "হুইল"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4006,21 +4007,21 @@
   {
     "ref": "bcs36_q183",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মবস্তষ্ক কোন তশ্নন্ত্রি অে?",
+    "body": "মস্তিষ্ক কোন তন্ত্রের অঙ্গ?",
     "options": [
-      "োযুতশ্নন্ত্রি",
-      "রিচনতশ্নন্ত্রি",
-      "পবিপাকতশ্নন্ত্রি",
-      "িািতশ্নন্ত্রি"
+      "স্নায়ুতন্ত্রের",
+      "রেচনতন্ত্রের",
+      "পরিপাকতন্ত্রের",
+      "শ্বাসতন্ত্রের"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4028,21 +4029,21 @@
   {
     "ref": "bcs36_q184",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ভাইিািজবনত রিাগ নয কোনবি?",
+    "body": "ভাইরাসজনিত রোগ নয় কোনটি?",
     "options": [
-      "জবন্ডি",
-      "এইেি",
-      "বনউশ্নমাবনযা",
-      "রচাখ ওিা"
+      "জন্ডিস",
+      "এইডস",
+      "নিউমোনিয়া",
+      "চোখ ওঠা"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4050,21 +4051,21 @@
   {
     "ref": "bcs36_q185",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িার্বজগশ্নতি উৎপবত্ত ও িংশিম্মন্ধীয বিেযাশ্নক িশ্নি ----",
+    "body": "প্রাণিজগতের উৎপত্তি ও বংশসম্মন্ধীয় বিদ্যাকে বলে ----",
     "options": [
-      "িাশ্নযািজী",
-      "জুওিজী",
-      "রজশ্ননবিক",
-      "ইশ্নভাবিউশন"
+      "বায়োলজী",
+      "জুওলজী",
+      "জেনেটিক",
+      "ইভোলিউশন"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4072,21 +4073,21 @@
   {
     "ref": "bcs36_q186",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন জ্বািাবন রপাড়াশ্নি িািফাি োই-অিাইে \nিাতাশ্নি আশ্নি?",
+    "body": "কোন জ্বালানি পোড়ালে সালফার ডাই-অক্সাইড বাতাসে আসে?",
     "options": [
-      "বেশ্নজি",
-      "রপশ্নোি",
-      "অকশ্নিন",
-      "বিএনবজ"
+      "ডিজেল",
+      "পেট্রোল",
+      "অকটেন",
+      "সিএনজি"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4095,20 +4096,20 @@
     "ref": "bcs36_q187",
     "exam": "bcs-general",
     "subject": "General Science",
-    "topic": "সাধারণ বিজ্ঞান ও প্রযুক্তি",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "রমািাইি রিবিশ্নফাশ্ননি িাইশ্ননি মধয বেশ্নয \nসবাবহত হয় -",
+    "body": "মোবাইল টেলিফোনের লাইনের মধ্য দিয়ে প্রবাহিত হয় -",
     "options": [
-      "শেশবক্ত",
-      "তবড়ৎশবক্ত",
-      "আশ্নিাকশবক্ত",
-      "রচৌম্বকশবক্ত"
+      "শব্দশক্তি",
+      "তড়িৎশক্তি",
+      "আলোকশক্তি",
+      "চৌম্বকশক্তি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4116,21 +4117,21 @@
   {
     "ref": "bcs36_q188",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "জীিজগশ্নতি জনয সবশ্নচশ্নয ক্ষবতকি িবি কোনবি?",
+    "body": "জীবজগতের জন্য সবচেয়ে ক্ষতিকর রশ্মি কোনটি?",
     "options": [
-      "আিফা িবি",
-      "বসবা িবি",
-      "গামা িবি",
-      "আিোভাশ্নযাশ্নসব িবি"
+      "আলফা রশ্মি",
+      "বিটা রশ্মি",
+      "গামা রশ্মি",
+      "আলট্রাভায়োলেট রশ্মি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4138,21 +4139,21 @@
   {
     "ref": "bcs36_q189",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন িং রিবশ েূি থেকে রেখা যায?",
+    "body": "কোন রং বেশি দূর থেকে দেখা যায়?",
     "options": [
-      "িাো",
-      "কাশ্নিা",
-      "হিুে",
-      "িাি"
+      "সাদা",
+      "কালো",
+      "হলুদ",
+      "লাল"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4160,21 +4161,21 @@
   {
     "ref": "bcs36_q190",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কযান্সাি বচবকৎিায িযিহৃত গামা বিবকিশ্র্নি উৎি হলো -",
+    "body": "ক্যান্সার চিকিৎসায় ব্যবহৃত গামা বিকিরণের উৎস হলো -",
     "options": [
-      "আইশ্নসালোন",
-      "আইশ্নসালোপ",
-      "আইশ্নিািাি",
-      "িািাযবনক পোেণ"
+      "আইসোটোন",
+      "আইসোটোপ",
+      "আইসোবার",
+      "রাসায়নিক পদার্থ"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4182,21 +4183,21 @@
   {
     "ref": "bcs36_q191",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "তনবতকতাশ্নক সবা হয় মানিজীিশ্ননি-",
+    "body": "নৈতিকতাকে বলা হয় মানবজীবনের-",
     "options": [
-      "তনবতক শবক্ত",
-      "তনবতক বিবধ",
-      "তনবতক আেশণ",
-      "সবগুশ্নিাই"
+      "নৈতিক শক্তি",
+      "নৈতিক বিধি",
+      "নৈতিক আদর্শ",
+      "সবগুলোই"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4204,21 +4205,21 @@
   {
     "ref": "bcs36_q192",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "'Power : A New Social Analysis' গ্রন্থবি কাি রিখা?",
+    "lang": "en",
+    "body": "'Power : A New Social Analysis' গ্রন্থটি কার লেখা?",
     "options": [
-      "মযাবকযাশ্নভবি",
-      "হসব",
-      "িক",
-      "িাশ্নসব"
+      "ম্যাকিয়াভেলি",
+      "হবস",
+      "লক",
+      "রাসেল"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4226,21 +4227,21 @@
   {
     "ref": "bcs36_q193",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'িুির্ণ মধযক' হলো -",
+    "body": "'সুবর্ণ মধ্যক' হলো -",
     "options": [
-      "গার্ববতক মধযমান",
-      "েুবি চিমপন্থাি মধযিতণী পন্থা",
-      "িম্ভািয সব ধিশ্ননি কাশ্নজি মধযমান",
-      "একবি োশণবনক িম্প্রোশ্নযি নাম"
+      "গাণিতিক মধ্যমান",
+      "দুটি চরমপন্থার মধ্যবর্তী পন্থা",
+      "সম্ভাব্য সব ধরনের কাজের মধ্যমান",
+      "একটি দার্শনিক সম্প্রদায়ের নাম"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4248,21 +4249,21 @@
   {
     "ref": "bcs36_q194",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "তনবতক আচির্বিবধ (Code of ethics) সবশ্নত িুিায -",
+    "body": "নৈতিক আচরণবিধি (Code of ethics) বলতে বুঝায় -",
     "options": [
-      "রমৌবিক মূিযশ্নিাধ িংিান্ত সাধারণ িচন যা িংগিশ্ননি \nরপশাগত ভূবমকাশ্নক িংজ্ঞাবযত কশ্নি",
-      "িাস্তিতাি বনবিশ্নখ বনবেণষ্ট আচিশ্র্নি মানেণ্ড বনধণাির্ িংিান্ত \nআচির্বিবধ",
-      "তেনবন্দন কাযণকিাপ ত্বিাবন্বত কিশ্র্ন ির্ীত তনবতক বনযম, \nমানেণ্ড িা আচির্বিবধ",
-      "উপশ্নসব বতনবিই িবিক"
+      "মৌলিক মূল্যবোধ সংক্রান্ত সাধারণ বচন যা সংগঠনের পেশাগত ভূমিকাকে সংজ্ঞায়িত করে",
+      "বাস্তবতার নিরিখে নির্দিষ্ট আচরণের মানদণ্ড নির্ধারণ সংক্রান্ত আচরণবিধি",
+      "দৈনন্দিন কার্যকলাপ ত্বরান্বিত করণে প্রণীত নৈতিক নিয়ম, মানদণ্ড বা আচরণবিধি",
+      "উপরের তিনটিই সঠিক"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4270,21 +4271,21 @@
   {
     "ref": "bcs36_q195",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িযবক্তগত মূিযশ্নিাধ িািন কশ্নি -",
+    "body": "ব্যক্তিগত মূল্যবোধ লালন করে -",
     "options": [
-      "িামাবজক মূিযশ্নিাধশ্নক",
-      "র্গতাবন্ত্রক মূিযশ্নিাধশ্নক",
-      "িযবক্তগত মূিযশ্নিাধশ্নক",
-      "স্বাধীনতাি মূিযশ্নিাধশ্নক"
+      "সামাজিক মূল্যবোধকে",
+      "গণতান্ত্রিক মূল্যবোধকে",
+      "ব্যক্তিগত মূল্যবোধকে",
+      "স্বাধীনতার মূল্যবোধকে"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4292,21 +4293,21 @@
   {
     "ref": "bcs36_q196",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মূিযশ্নিাধ বশক্ষাি অন্যতম িক্ষয হশ্নচ্ছ -",
+    "body": "মূল্যবোধ শিক্ষার অন্যতম লক্ষ্য হচ্ছে -",
     "options": [
-      "েুনণীবত রিাধ কিা",
-      "িামাবজক অিক্ষয রিাধ কিা",
-      "িাজচনবতক অিক্ষয রিাধ কিা",
-      "িাংস্কৃ বতক অিশ্নিাধ িক্র্ষ কিা"
+      "দুর্নীতি রোধ করা",
+      "সামাজিক অবক্ষয় রোধ করা",
+      "রাজনৈতিক অবক্ষয় রোধ করা",
+      "সাংস্কৃতিক অবরোধ রক্ষণ করা"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4314,21 +4315,21 @@
   {
     "ref": "bcs36_q197",
     "exam": "bcs-general",
-    "subject": "Ethics, Values & Governance",
-    "topic": "নৈতিকতা, মূল্যবোধ ও সুশাসন",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সুশাসন হশ্নচ্ছ এমন এক শািন িযিস্থা যা শািক \nও শাবিশ্নতি মধ্যে -",
+    "body": "সুশাসন হচ্ছে এমন এক শাসন ব্যবস্থা যা শাসক ও শাসিতের মধ্যে -",
     "options": [
-      "িুিম্পকণ গশ্নড় রতাশ্নি",
-      "আস্থাি িম্পকণ গশ্নড় রতাশ্নি",
-      "শাবন্তি িম্পকণ গশ্নড় রতাশ্নি",
-      "রকাশ্ননাবিই নয"
+      "সুসম্পর্ক গড়ে তোলে",
+      "আস্থার সম্পর্ক গড়ে তোলে",
+      "শান্তির সম্পর্ক গড়ে তোলে",
+      "কোনোটিই নয়"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4336,21 +4337,21 @@
   {
     "ref": "bcs36_q198",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িুশািশ্ননি পূর্ণশতণ হশ্নচ্ছ -",
+    "body": "সুশাসনের পূর্বশর্ত হচ্ছে -",
     "options": [
-      "অেণচনবতক উন্নযন",
-      "অেণচনবতক ও িামাবজক উন্নযন",
-      "িামাবজক উন্নযন",
-      "সবগুশ্নিাই"
+      "অর্থনৈতিক উন্নয়ন",
+      "অর্থনৈতিক ও সামাজিক উন্নয়ন",
+      "সামাজিক উন্নয়ন",
+      "সবগুলোই"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4358,21 +4359,21 @@
   {
     "ref": "bcs36_q199",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একজন জনিশািশ্নকি রমৌবিক মূিযশ্নিাধ হলো -",
+    "body": "একজন জনপ্রশাসকের মৌলিক মূল্যবোধ হলো -",
     "options": [
       "স্বাধীনতা",
       "ক্ষমতা",
-      "কমণেক্ষতা",
-      "জনকিযার্"
+      "কর্মদক্ষতা",
+      "জনকল্যাণ"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4380,21 +4381,21 @@
   {
     "ref": "bcs36_q200",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "36th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িুশািশ্ননি পশ্নে অন্তিায -",
+    "body": "সুশাসনের পথে অন্তরায় -",
     "options": [
-      "আইশ্ননি শািন",
-      "জিািবেবহতা",
-      "স্বজনিীবত",
-      "নযাযপিার্যতা"
+      "আইনের শাসন",
+      "জবাবদিহিতা",
+      "স্বজনপ্রীতি",
+      "ন্যায়পরায়ণতা"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কশ্নযক িাখ িশ্নশ্নি অশ্নেনবিক িযাখযা \nরেখশ্নত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false

@@ -2,7 +2,7 @@ import { useMemo, useState } from "react"
 import { Link } from "react-router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBookOpen, faStopwatch, faFileLines, faHourglassHalf, faMagnifyingGlass, faRotateRight, faCircleInfo } from "@fortawesome/free-solid-svg-icons"
-import { examLink } from "@/lib/papers"
+import { examLink, paperStatus } from "@/lib/papers"
 import { Button } from "@/components/ui/button"
 import { PageHeader, HeroCard } from "@/components/shared"
 import { useApp } from "@/lib/app-context"
@@ -24,7 +24,7 @@ export default function PastPapers() {
     return all.filter((p) => String(p.number).includes(digits))
   }, [data, query])
 
-  const ready = (data?.papers ?? []).filter((p) => p.questions > 0).length
+  const ready = (data?.papers ?? []).length
   const latest = data?.papers?.[0]
 
   return (
@@ -93,15 +93,13 @@ export default function PastPapers() {
               {papers.map((paper) => {
                 const is48th = paper.number === 48
                 const is47th = paper.number === 47
-                const isFullSolved = paper.questions > 0 || (paper.number >= 20 && paper.number <= 48)
-                const isHighlight = isFullSolved
+                const isHighlight = true
                 return (
                   <div
                     key={paper.number}
                     className={cn(
                       "card flex flex-col p-4.5 transition-all hover:border-primary/40",
-                      isHighlight && "border-primary/40 bg-gradient-to-br from-primary/3 via-card to-card shadow-sm ring-1 ring-primary/20",
-                      paper.questions === 0 && "opacity-80"
+                      isHighlight && "border-primary/40 bg-gradient-to-br from-primary/3 via-card to-card shadow-sm ring-1 ring-primary/20"
                     )}
                   >
                     <div className="flex items-start gap-3">
@@ -126,16 +124,6 @@ export default function PastPapers() {
                               {L("Latest General", "সর্বশেষ সাধারণ")}
                             </span>
                           )}
-                          {paper.questions >= 200 && !is48th && !is47th && (
-                            <span className="rounded-full bg-indigo-500/15 px-2 py-0.5 text-[0.65rem] font-bold text-indigo-600 dark:text-indigo-400">
-                              {L("200 Questions", "২০০ প্রশ্ন")}
-                            </span>
-                          )}
-                          {paper.questions > 0 && paper.questions < 200 && (
-                            <span className="rounded-full bg-teal-500/15 px-2 py-0.5 text-[0.65rem] font-bold text-teal-600 dark:text-teal-400">
-                              {L(`${num(paper.questions)} Questions`, `${num(paper.questions)}টি প্রশ্ন`)}
-                            </span>
-                          )}
                         </div>
                         <p className="mt-0.5 flex flex-wrap items-center gap-1 text-xs text-muted-foreground">
                           <span>{L("Preliminary MCQ", "প্রিলিমিনারি এমসিকিউ")}</span>
@@ -144,23 +132,19 @@ export default function PastPapers() {
                               {L("Special", "বিশেষ")}
                             </span>
                           )}
-                          {isFullSolved && (
-                            <span className="rounded bg-primary/10 px-1.5 py-px text-[0.7rem] font-semibold text-primary">
-                              {L(`Full ${num(paper.questions || 200)} Marks`, `পূর্ণাঙ্গ ${num(paper.questions || 200)} নম্বর`)}
-                            </span>
-                          )}
+                          <span className="rounded bg-primary/10 px-1.5 py-px text-[0.7rem] font-semibold text-primary">
+                            {L("200 marks", "২০০ নম্বর")}
+                          </span>
                         </p>
                       </div>
                     </div>
 
                     <p className="mt-3 text-xs font-medium text-muted-foreground">
                       <FontAwesomeIcon
-                        icon={paper.questions > 0 ? faFileLines : faHourglassHalf}
-                        className={cn("mr-1.5", paper.questions > 0 ? "text-primary" : "text-muted-foreground")}
+                        icon={faFileLines}
+                        className="mr-1.5 text-primary"
                       />
-                      {paper.questions > 0
-                        ? L(`${num(paper.questions)} questions with full solutions`, `সম্পূর্ণ সমাধানসহ ${num(paper.questions)}টি প্রশ্ন`)
-                        : L("Questions are being added", "প্রশ্ন যোগ করা হচ্ছে")}
+                      {L("All 200 questions with answers", "উত্তরসহ সব ২০০টি প্রশ্ন")}
                     </p>
 
                     <div className="mt-4">
@@ -176,8 +160,8 @@ export default function PastPapers() {
             <FontAwesomeIcon icon={faCircleInfo} className="mt-0.5" />
             <span>
               {L(
-                "Open “Questions & solutions” to read every question with its answer and explanation, or “Take as exam” to sit the paper with the real time limit and −0.5 negative marking. Papers marked “being added” open once their questions are uploaded.",
-                "“প্রশ্ন ও সমাধান”-এ সব প্রশ্ন উত্তর ও ব্যাখ্যাসহ পড়ুন, অথবা “পরীক্ষা দিন”-এ আসল সময়সীমা ও −০.৫ নেগেটিভ মার্কিংসহ পরীক্ষা দিন। “যোগ করা হচ্ছে” লেখা প্রশ্নগুলো আপলোড হলেই খুলে যাবে।"
+                "Open “Questions & solutions” to read every question with its answer and explanation, or “Take as exam” to sit the paper with the real time limit and −0.5 negative marking.",
+                "“প্রশ্ন ও সমাধান”-এ সব প্রশ্ন উত্তর ও ব্যাখ্যাসহ পড়ুন, অথবা “পরীক্ষা দিন”-এ আসল সময়সীমা ও −০.৫ নেগেটিভ মার্কিংসহ পরীক্ষা দিন।"
               )}
             </span>
           </p>
@@ -189,14 +173,6 @@ export default function PastPapers() {
 
 /** Two ways into a paper: read every question with its solution, or take it as a timed exam. */
 function PaperAction({ paper, L, onHero = false }) {
-  if (paper.questions === 0) {
-    return (
-      <Button disabled variant={onHero ? "secondary" : "outline"} className="h-10 w-full rounded-full sm:w-auto sm:px-5">
-        <FontAwesomeIcon icon={faHourglassHalf} className="text-xs" /> {L("Coming soon", "শীঘ্রই আসছে")}
-      </Button>
-    )
-  }
-
   return (
     <div className="flex flex-wrap gap-2">
       <Button

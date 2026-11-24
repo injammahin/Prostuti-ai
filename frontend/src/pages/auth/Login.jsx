@@ -272,7 +272,7 @@ export default function Login({ mode = "login" }) {
       adminApi.openPanel().catch(() => nav("/app", { replace: true }))
       return
     }
-    toast.success(res.is_new_user ? `Welcome to Prostuti, ${first}! 🎉` : `Welcome back, ${first}!`)
+    toast.success(res.is_new_user ? `Welcome to DreamPrep, ${first}! 🎉` : `Welcome back, ${first}!`)
     const from = loc.state?.from
     // New users still pick their exam first, then go back to the page they were on (e.g. a BCS paper).
     if (res.is_new_user) nav("/onboarding", { replace: true, state: from ? { from } : undefined })

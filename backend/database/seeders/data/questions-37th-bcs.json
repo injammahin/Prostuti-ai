@@ -3,20 +3,20 @@
     "ref": "bcs37_q1",
     "exam": "bcs-general",
     "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কবম্পউিাি বিবপইউ (CPU) - এি সকান অংশ \nগার্ববতক বিদ্ধান্ত গ্রহপ্র্টি কাজ কপ্টি?",
+    "body": "কম্পিউটার সিপিইউ (CPU) - এর কোন অংশ গাণিতিক সিদ্ধান্ত গ্রহণের কাজ করে?",
     "options": [
-      "এএিইউ (ALU)",
-      "কপ্টরাি ইউবনি (control unit)",
-      "সিবজস্টাি সসব (Register set)",
-      "সকাপ্টনাবিই নয"
+      "এএলইউ (ALU)",
+      "কন্ট্রোল ইউনিট (control unit)",
+      "রেজিস্টার সেট (Register set)",
+      "কোনোটিই নয়"
     ],
     "answer": 0,
-    "explanation": "বিবপইউ- এি ৩ বি অংশ। \nযো- Control Unit, \n- Arithmetic Logic Unit (গার্ববতক যুবক্ত অংশ) and \n- Memory/Register. \n- ALU (Arithmetic Logic Unit) হপ্টে কবম্পউিাপ্টসব \nকযািকু প্টসবি স্বরূপ। \n- এই অংশ িকি গার্ববতক এিং বিদ্ধান্ত গ্রহপ্র্টি কাজ কপ্টি োপ্টক। \nউৎি: নিম-েশম সের্ীি (উন্মুক্ত বিশ্বঃ) সিার্ণ িই।",
+    "explanation": "সিপিইউ- এর ৩ টি অংশ। যথা- Control Unit,\n- Arithmetic Logic Unit (গাণিতিক যুক্তি অংশ) and\n- Memory/Register.\n- ALU (Arithmetic Logic Unit) হচ্ছে কম্পিউটারের ক্যালকুলেটর স্বরূপ।\n- এই অংশ সকল গাণিতিক এবং সিদ্ধান্ত গ্রহণের কাজ করে থাকে।\nউৎস: নবম-দশম শ্রেণীর (উন্মুক্ত বিশ্বঃ) বোর্ড বই।",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -24,13 +24,13 @@
   {
     "ref": "bcs37_q2",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একবি ২(েুই) ইনপুি িবজক সিপ্টসব আউিপুি ০ \nহপ্টি, যবে এি ইনপুিগুপ্টিা িমান হয় - এি উবক্তবি সকান \nসিপ্টসব জনয িতয?",
+    "body": "একটি ২(দুই) ইনপুট লজিক সেটের আউটপুট ০ হবে, যদি এর ইনপুটগুলো সমান হয় - এর উক্তিটি কোন সেটের জন্য সত্য?",
     "options": [
       "AND",
       "NOR",
@@ -38,7 +38,7 @@
       "OR"
     ],
     "answer": 2,
-    "explanation": "যবে Ex-OR Gate এি উভযই ইনপুি এি মান একই \nহয়, তপ্টি িবজক সিপ্টসব আউিপুপ্টসব মান ০ হয়। \nতপ্টি ইনপুি এি মান বভন্ন হপ্টি আউিপুি ১ হয়।",
+    "explanation": "যদি Ex-OR Gate এর উভয়ই ইনপুট এর মান একই হয়, তবে লজিক সেটের আউটপুটের মান ০ হয়। তবে ইনপুট এর মান ভিন্ন হলে আউটপুট ১ হয়।",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -46,13 +46,13 @@
   {
     "ref": "bcs37_q3",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনটি অপাপ্টিবিং বিপ্টস্টম নয?",
+    "body": "কোনটি অপারেটিং সিস্টেম নয়?",
     "options": [
       "C",
       "DOS",
@@ -60,7 +60,7 @@
       "XENIX"
     ],
     "answer": 0,
-    "explanation": "- কবম্পউিাি সিাগ্রাপ্টমি একবি িযাংগুপ্টযজ এি নাম C, \n- এছাড়া আিও কপ্টযকবি কবম্পউিাি িযাংগুপ্টযজ হপ্টিাঃ \nFORTAN, BASIC, ADA, C++. \nঅন্যবেপ্টক, DOS, CP/M, XENIX ইতযাবে হপ্টে অপাপ্টিবিং \nবিপ্টস্টম।",
+    "explanation": "- কম্পিউটার প্রোগ্রামের একটি ল্যাংগুয়েজ এর নাম C,\n- এছাড়া আরও কয়েকটি কম্পিউটার ল্যাংগুয়েজ হলোঃ FORTAN, BASIC, ADA, C++. অন্যদিকে, DOS, CP/M, XENIX ইত্যাদি হচ্ছে অপারেটিং সিস্টেম।",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -68,21 +68,21 @@
   {
     "ref": "bcs37_q4",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ক্লাউর্ িাভণাি বনপ্টচি কোনটিপ্টত সবপ্টচপ্টয ভাপ্টিা \nির্ণনা কিা িম্ভি?",
+    "body": "ক্লাউড সার্ভার নিচের কোনটিতে সবচেয়ে ভালো বর্ণনা করা সম্ভব?",
     "options": [
-      "সনিওযাপ্টকণি মাধযপ্টম যুক্ত একাবধক কবম্পউিাি িাভণাি",
-      "একবি বিশাি ক্ষমতা িম্পন্ন কবম্পউিাি িাভণাি",
-      "িযিহািকািীি চাবহো অনুযাযী কবম্পউবিং সসবা সেযা",
-      "উপপ্টসব সকাপ্টনাবিই নয"
+      "নেটওয়ার্কের মাধ্যমে যুক্ত একাধিক কম্পিউটার সার্ভার",
+      "একটি বিশাল ক্ষমতা সম্পন্ন কম্পিউটার সার্ভার",
+      "ব্যবহারকারীর চাহিদা অনুযায়ী কম্পিউটিং সেবা দেয়া",
+      "উপরের কোনোটিই নয়"
     ],
     "answer": 2,
-    "explanation": "ক্লাউর্ িাভণাপ্টসব িধানতম তিবশষ্ট্য হপ্টে Elasticity \n& Scalability। \n- যাি মাপ্টন হপ্টে, এখাপ্টন িাভণাপ্টসব বিপ্টিািণ িযিহািকািীি \nিপ্টযাজনমত িাড়ান কমাপ্টনা যায। \n- এপ্টত কপ্টি, একবেপ্টক সযমন িাভণাপ্টি চাপ পড়প্টি িপ্টযাজপ্টন \nবিপ্টিািণ খুি িহপ্টজ িাড়াপ্টনা যায সতমবন িপ্টযাজপ্টনি \nঅবতবিক্ত বিপ্টিািণ নষ্ট্ হয় না। \nিুত্রঃ আমাজন ওপ্টযি িাবভণি",
+    "explanation": "সেবা দেয়া ব্যাখ্যা: ক্লাউড সার্ভারের প্রধানতম বৈশিষ্ট্য হচ্ছে Elasticity & Scalability।\n- যার মানে হচ্ছে, এখানে সার্ভারের রিসোর্স ব্যবহারকারীর প্রয়োজনমত বাড়ান কমানো যায়।\n- এতে করে, একদিকে যেমন সার্ভারে চাপ পড়লে প্রয়োজনে রিসোর্স খুব সহজে বাড়ানো যায় তেমনি প্রয়োজনের অতিরিক্ত রিসোর্স নষ্ট হয় না। সুত্রঃ আমাজন ওয়েব সার্ভিস",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -91,12 +91,12 @@
     "ref": "bcs37_q5",
     "exam": "bcs-general",
     "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "IP-V6 এপ্টেি কত বিপ্টসব?",
+    "body": "IP-V6 এড্রেস কত বিটের?",
     "options": [
       "১২৮",
       "৩২",
@@ -104,7 +104,7 @@
       "৬"
     ],
     "answer": 0,
-    "explanation": "- ক্রমিধণমান সনিওযাকণ বিস্তৃবতি কািপ্র্ট IPv4 এি \n32 বিপ্টসব অযাপ্টেি অিতুি হপ্টয সগপ্টছ। \n- এই িমিযা িমাধাপ্টনি জনয IPv6 নাপ্টম 128 বসব আইবপ \nঅযাপ্টেি চািু হপ্টযপ্টছ। \n- ইন্টািপ্টনি িপ্টিাকপ্টসব সবপ্টচপ্টয িাম্প্রবতক িংস্কির্ হপ্টিা - IPv6 \n- IPv6 uses 128-bit (2128) addresses, allowing 3.4 \nx 1038 unique IP addresses. This is equal to 340 \ntrillion trillion trillion IP addresses. \n- IPv6 is written in hexadecimal notation, \nseparated into 8 groups of 16 bits by the colons, \nthus (8 x 16 = 128) bits in total. \nতেযিূত্র: Redhat website.",
+    "explanation": "- ক্রমবর্ধমান নেটওয়ার্ক বিস্তৃতির কারণে IPv4 এর 32 বিটের অ্যাড্রেস অপ্রতুল হয়ে গেছে।\n- এই সমস্যা সমাধানের জন্য IPv6 নামে 128 বিট আইপি অ্যাড্রেস চালু হয়েছে।\n- ইন্টারনেট প্রটোকলের সবচেয়ে সাম্প্রতিক সংস্করণ হলো - IPv6\n- IPv6 uses 128-bit (2128) addresses, allowing 3.4 x 1038 unique IP addresses. This is equal to 340 trillion trillion trillion IP addresses.\n- IPv6 is written in hexadecimal notation, separated into 8 groups of 16 bits by the colons, thus (8 x 16 = 128) bits in total.\nতথ্যসূত্র: Redhat website.",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -112,13 +112,13 @@
   {
     "ref": "bcs37_q6",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনপ্টচি কোনটি ইনপুি র্বভাইি?",
+    "body": "নিচের কোনটি ইনপুট ডিভাইস?",
     "options": [
       "OMR",
       "COM",
@@ -126,7 +126,7 @@
       "Monitor"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -134,21 +134,21 @@
   {
     "ref": "bcs37_q7",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ইউবনপ্টকাপ্র্টি মাধযপ্টম িম্ভািয কতগুপ্টিা বচহ্নপ্টক \nবনবেণষ্ট্ কিা যায?",
+    "body": "ইউনিকোডের মাধ্যমে সম্ভাব্য কতগুলো চিহ্নকে নির্দিষ্ট করা যায়?",
     "options": [
-      "২৫৬ বি",
-      "৪০৯৬ বি",
-      "৬৫৫৩৬ বি",
-      "৪২৯৪৯৬৭২৯৬ বি"
+      "২৫৬ টি",
+      "৪০৯৬ টি",
+      "৬৫৫৩৬ টি",
+      "৪২৯৪৯৬৭২৯৬ টি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -156,21 +156,21 @@
   {
     "ref": "bcs37_q8",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "এনেপ্টর্য অপাপ্টিবিং বিবস্টপ্টমি সক্ষপ্টত্র বনপ্টচি \nকোনটি িবিক?",
+    "body": "এনড্রয়েড অপারেটিং সিস্টিমের ক্ষেত্রে নিচের কোনটি সঠিক?",
     "options": [
-      "এবসব বনমণাতা গুগি",
-      "এবি বিনাক্স কাপ্টনণি বনভণি",
-      "এবি িধানত িাচবিন সমািাইি র্বভাইপ্টসব জনয ততবি",
-      "উপপ্টসব সবগুপ্টিা িবিক"
+      "এটির নির্মাতা গুগল",
+      "এটি লিনাক্স কার্নেল নির্ভর",
+      "এটি প্রধানত টাচস্ক্রিন মোবাইল ডিভাইসের জন্য তৈরি",
+      "উপরের সবগুলো সঠিক"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -178,21 +178,21 @@
   {
     "ref": "bcs37_q9",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আইওএি (IOS) সমািাইি অপাপ্টিবিং বিপ্টস্টমবি \nসকান িবতষ্ঠান িাজািজাত কপ্টি?",
+    "body": "আইওএস (IOS) মোবাইল অপারেটিং সিস্টেমটি কোন প্রতিষ্ঠান বাজারজাত করে?",
     "options": [
-      "অযাপি",
-      "গুগি",
-      "মাইপ্টক্রািফি",
+      "অ্যাপল",
+      "গুগল",
+      "মাইক্রোসফট",
       "আইবিএম"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -201,12 +201,12 @@
     "ref": "bcs37_q10",
     "exam": "bcs-general",
     "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "EDSAC কবম্পউিাি -এ র্ািা িংিক্ষপ্র্টি জনয বক \nধিপ্টনি সমপ্টমাবি িযিহাি হপ্টতা?",
+    "body": "EDSAC কম্পিউটার -এ ডাটা সংরক্ষণের জন্য কি ধরনের মেমোরি ব্যবহার হতো?",
     "options": [
       "RAM",
       "ROM",
@@ -214,7 +214,7 @@
       "Registors"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -222,21 +222,21 @@
   {
     "ref": "bcs37_q11",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ই-কমািণ িাইি amazon.com কত িাপ্টি িবতবষ্ঠত হয়?",
+    "body": "ই-কমার্স সাইট amazon.com কত সালে প্রতিষ্ঠিত হয়?",
     "options": [
-      "১৯৯০ িাপ্টি",
-      "১৯৮৮ িাপ্টি",
-      "১৯৯৪ িাপ্টি",
-      "১৯৯৮ িাপ্টি"
+      "১৯৯০ সালে",
+      "১৯৮৮ সালে",
+      "১৯৯৪ সালে",
+      "১৯৯৮ সালে"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -244,13 +244,13 @@
   {
     "ref": "bcs37_q12",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ই-প্টমইি আোন িোপ্টন িযিহৃত SMTP এি \nপূর্ণরূপ বক?",
+    "body": "ই-মেইল আদান প্রদানে ব্যবহৃত SMTP এর পূর্ণরূপ কি?",
     "options": [
       "Simple Message Transmission Protocol",
       "Strategic Mail Transfer Protocol",
@@ -258,7 +258,7 @@
       "Simple Mail Transfer Protocol"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -266,21 +266,21 @@
   {
     "ref": "bcs37_q13",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "TCP বেপ্টয কোনটি সিাঝাপ্টনা হয়?",
+    "body": "TCP দিয়ে কোনটি বোঝানো হয়?",
     "options": [
-      "সিাগ্রাম",
-      "সিাপ্টিাকি",
-      "সিাগ্রাবমং",
-      "সলাচািণ"
+      "প্রোগ্রাম",
+      "প্রোটোকল",
+      "প্রোগ্রামিং",
+      "ফ্লোচার্ট"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -288,13 +288,13 @@
   {
     "ref": "bcs37_q14",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "Push এিং Pop বনপ্টচি কাি িাপ্টে িম্পবকণত?",
+    "body": "Push এবং Pop নিচের কার সাথে সম্পর্কিত?",
     "options": [
       "Queue",
       "Stack",
@@ -302,7 +302,7 @@
       "Array"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -310,21 +310,21 @@
   {
     "ref": "bcs37_q15",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ওযাই-ফাই (Wi- Fi) সনিওযাপ্টকণ িংপ্টযাপ্টগি জনয \nিংবিষ্ট্ র্বভাইিবসব িংপ্টযাগ মাধযম কোনটি?",
+    "body": "ওয়াই-ফাই (Wi- Fi) নেটওয়ার্কে সংযোগের জন্য সংশ্লিষ্ট ডিভাইসটির সংযোগ মাধ্যম কোনটি?",
     "options": [
-      "তামাি তাি",
-      "অপবিকযাি ফাইিাি",
-      "তািহীন িংপ্টযাগ",
-      "উপপ্টসব সবকবি"
+      "তামার তার",
+      "অপটিক্যাল ফাইবার",
+      "তারহীন সংযোগ",
+      "উপরের সবকটি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -332,21 +332,21 @@
   {
     "ref": "bcs37_q16",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আকাপ্টশ িংধনু িৃবষ্ট্ি কাির্ -",
+    "body": "আকাশে রংধনু সৃষ্টির কারণ -",
     "options": [
-      "ধুবির্কা",
-      "বায়ুস্তি",
-      "িৃবষ্ট্ি র্কা",
-      "অবতপ্টিগুবন িবি"
+      "ধুলিকণা",
+      "বায়ুস্তর",
+      "বৃষ্টির কণা",
+      "অতিবেগুনি রশ্মি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "প্রশ্ন ১৭. ইস্টের সংশ্লিষ্টতা নেই কোন শিল্পে? ক) মদ্য শিল্পে খ) রুটি শিল্পে গ) সাইট্রিক এসিড উৎপাদনঘ) এক কোষীয় প্রোটিন তৈরিতে সঠিক উত্তর: গ) সাইট্রিক এসিড উৎপাদন",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -360,37 +360,38 @@
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ইপ্টস্টি িংবিষ্ট্তা সনই সকান বশপ্টে?",
+    "body": "ইপ্টস্টিংবিষ্ট্তা সনই সকান বশপ্টে?",
     "options": [
       "মেয বশপ্টে",
       "রুবি বশপ্টে",
-      "িাইবিক এবির্ উৎপােনঘ) এক সকাষীয সিাবিন ততবিপ্টত",
+      "িাইবিক এবির্ উৎপোনঘ) এক সকাষীয সিাবিন ততবিপ্টত",
       "অপশন 4"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
-    "cancelled": false
+    "cancelled": false,
+    "status": "draft"
   },
   {
     "ref": "bcs37_q18",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "চপ্টে সকাপ্টনা িস্তুি ওজন পৃবেিীি ওজপ্টনি-",
+    "body": "চন্দ্রে কোনো বস্তুর ওজন পৃথিবীর ওজনের-",
     "options": [
-      "েশ ভাপ্টগি একভাগ",
-      "ছয ভাপ্টগি একভাগ",
-      "বতন ভাপ্টগি একভাগ",
-      "চাি ভাপ্টগি একভাগ"
+      "দশ ভাগের একভাগ",
+      "ছয় ভাগের একভাগ",
+      "তিন ভাগের একভাগ",
+      "চার ভাগের একভাগ"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -398,21 +399,21 @@
   {
     "ref": "bcs37_q19",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মানিপ্টেপ্টহ সিাগ িবতপ্টিাপ্টধ িােবমক িবতিক্ষাস্তপ্টসব \n(First line of defence) অন্তভু ণক্ত নয কোনটি?",
+    "body": "মানবদেহে রোগ প্রতিরোধে প্রাথমিক প্রতিরক্ষাস্তরের (First line of defence) অন্তভুর্ক্ত নয় কোনটি?",
     "options": [
-      "িাইপ্টিাজাইম",
-      "গযািবিক জুি",
-      "বিবিযা",
-      "বিপ্টফািাইি"
+      "লাইসোজাইম",
+      "গ্যাসট্রিক জুস",
+      "সিলিয়া",
+      "লিস্ফোসাইট"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -420,21 +421,21 @@
   {
     "ref": "bcs37_q20",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনপ্টচি কোনটি ভাইিাপ্টসব জনয িতয নয?",
+    "body": "নিচের কোনটি ভাইরাসের জন্য সত্য নয়?",
     "options": [
-      "র্বএনএ িা আিএনএ োপ্টক",
-      "শুধুমাত্র জীিপ্টেপ্টহি অভযন্তপ্টি িংখযািৃবদ্ধ কপ্টি",
-      "ফবিক োনায রূপান্তবিত",
-      "িাইপ্টিাপ্টজাম োপ্টক"
+      "ডিএনএ বা আরএনএ থাকে",
+      "শুধুমাত্র জীবদেহের অভ্যন্তরে সংখ্যাবৃদ্ধি করে",
+      "স্ফটিক দানায় রূপান্তরিত",
+      "রাইবোজোম থাকে"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -442,21 +443,21 @@
   {
     "ref": "bcs37_q21",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "তাপ ইবিপ্টনি কাজ -",
+    "body": "তাপ ইঞ্জিনের কাজ -",
     "options": [
-      "যাবিকশবক্তপ্টক তাপশবক্তপ্টত রূপান্তি",
-      "তাপশবক্তপ্টক যাবিকশবক্তপ্টত রূপান্তি",
-      "বিেুযৎশবক্তপ্টক যাবিকশবক্তপ্টত রূপান্তি",
-      "তাপশবক্তপ্টক বিেুযৎশবক্তপ্টত রূপান্তি"
+      "যান্ত্রিকশক্তিকে তাপশক্তিতে রূপান্তর",
+      "তাপশক্তিকে যান্ত্রিকশক্তিতে রূপান্তর",
+      "বিদ্যুৎশক্তিকে যান্ত্রিকশক্তিতে রূপান্তর",
+      "তাপশক্তিকে বিদ্যুৎশক্তিতে রূপান্তর"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -464,13 +465,13 @@
   {
     "ref": "bcs37_q22",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "শূনয মাধযপ্টম শপ্টেি সিগ কত?",
+    "body": "শূন্য মাধ্যমে শব্দের বেগ কত?",
     "options": [
       "২৮০ m/s",
       "০",
@@ -478,7 +479,7 @@
       "১১২০ m/s"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -486,21 +487,21 @@
   {
     "ref": "bcs37_q23",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "তেবনক খােয তাবিকায িামুবিক মাছ/শশিাপ্টসব \nঅন্তভু ণবক্ত সকান সিাপ্টগি িােুভণাি কমাপ্টত িাহাযয কিপ্টি?",
+    "body": "দৈনিক খাদ্য তালিকায় সামুদ্রিক মাছ/শৈবালের অন্তভুর্ক্তি কোন রোগের প্রাদুর্ভাব কমাতে সাহায্য করবে?",
     "options": [
-      "হাইপ্টপা-োইিযর্বজম",
-      "িাতকানা",
-      "এবনবমযা",
-      "সকাযাবশযিকি"
+      "হাইপো-থাইরয়ডিজম",
+      "রাতকানা",
+      "এনিমিয়া",
+      "কোয়াশিয়রকর"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -508,21 +509,21 @@
   {
     "ref": "bcs37_q24",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বগ্রনহাউজ বক?",
+    "body": "গ্রিনহাউজ কি?",
     "options": [
-      "কাপ্টচি ততবি ঘি",
-      "সবুজ আপ্টিাি আপ্টিাবকত ঘি",
-      "সবুজ ভিপ্টনি নাম",
-      "সবুজ গাছপািা"
+      "কাচের তৈরি ঘর",
+      "সবুজ আলোর আলোকিত ঘর",
+      "সবুজ ভবনের নাম",
+      "সবুজ গাছপালা"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -530,21 +531,21 @@
   {
     "ref": "bcs37_q25",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনটি জািক পোেণ নয?",
+    "body": "কোনটি জারক পদার্থ নয়?",
     "options": [
-      "হাইপ্টোপ্টজন",
-      "অবক্সপ্টজন",
-      "সক্লাবিন",
-      "সরাবমন"
+      "হাইড্রোজেন",
+      "অক্সিজেন",
+      "ক্লোরিন",
+      "ব্রোমিন"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -552,21 +553,21 @@
   {
     "ref": "bcs37_q26",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনউবক্লযাপ্টসব বিভাজনপ্টক বক সবা হয়?",
+    "body": "নিউক্লিয়াসের বিভাজনকে কি বলা হয়?",
     "options": [
-      "বফশন",
-      "সমিন",
-      "বফউশন",
-      "বফউশন ও সমিন"
+      "ফিশন",
+      "মেসন",
+      "ফিউশন",
+      "ফিউশন ও মেসন"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -574,21 +575,21 @@
   {
     "ref": "bcs37_q27",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ধবিত্রী িপ্টেিন সকাোয অনুবষ্ঠত হয়?",
+    "body": "ধরিত্রী সম্মেলন কোথায় অনুষ্ঠিত হয়?",
     "options": [
-      "আবিকাি সজাহাপ্টনসবাপ্টগণ",
-      "রাবজপ্টসব বিও-র্বপ্টজবনপ্টিাপ্টত",
-      "ইতাবসব সিাপ্টম",
-      "যুক্তিাপ্টেি ওযাবশংিন র্ববিপ্টত"
+      "আফ্রিকার জোহানেসবার্গে",
+      "ব্রাজিলের রিও-ডিজেনিরোতে",
+      "ইতালির রোমে",
+      "যুক্তরাষ্ট্রের ওয়াশিংটন ডিসিতে"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -596,21 +597,21 @@
   {
     "ref": "bcs37_q28",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িস্তুি ওজন সকাোয সবপ্টচপ্টয সিবশ?",
+    "body": "বস্তুর ওজন কোথায় সবচেয়ে বেশি?",
     "options": [
-      "সমরু অঞ্চপ্টি",
-      "বিষুি অঞ্চপ্টি",
-      "পাহাপ্টড়ি ওপি",
-      "পৃবেিীি সকপ্টে"
+      "মেরু অঞ্চলে",
+      "বিষুব অঞ্চলে",
+      "পাহাড়ের ওপর",
+      "পৃথিবীর কেন্দ্রে"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -618,13 +619,13 @@
   {
     "ref": "bcs37_q29",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িাকৃ বতক গযাপ্টি বমপ্টেন বক পবিমার্ োপ্টক?",
+    "body": "প্রাকৃতিক গ্যাসে মিথেন কি পরিমাণ থাকে?",
     "options": [
       "৪০-৫০ ভাগ",
       "৬০-৭০ ভাগ",
@@ -632,7 +633,7 @@
       "৩০-২৫ ভাগ"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -640,21 +641,21 @@
   {
     "ref": "bcs37_q30",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "চা পাতায সকান বভিাবমন োপ্টক?",
+    "body": "চা পাতায় কোন ভিটামিন থাকে?",
     "options": [
-      "বভিাবমন ই",
-      "বভিাবমন সক",
-      "বভিাবমন বি কমবিক্স",
-      "বভিাবমন এ"
+      "ভিটামিন ই",
+      "ভিটামিন কে",
+      "ভিটামিন বি কমপ্লিক্স",
+      "ভিটামিন এ"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -662,21 +663,21 @@
   {
     "ref": "bcs37_q31",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "BRICS এি সদর দপ্তর সকাোয?",
+    "body": "BRICS এর সদর দপ্তর কোথায়?",
     "options": [
-      "চীপ্টনি িাংহাই",
+      "চীনের সাংহাই",
       "সদরদপ্তর নাই",
-      "বিপ্টিাবিযা",
-      "নযাবেল্লী"
+      "প্রিটোরিয়া",
+      "নয়াদিল্লী"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -690,7 +691,7 @@
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "SDR (Special Drawing Rights) িুবিধা \nসবতণপ্টনি জনয কত িাপ্টি IMF এি গিনতি (Articles) \nিংপ্টশাধন কিা হপ্টযবছি?",
+    "body": "SDR (Special Drawing Rights) সুবিধা প্রবর্তনের জন্য কত সালে IMF এর গঠনতন্ত্র (Articles) সংশোধন করা হয়েছিল?",
     "options": [
       "১৯৬৯",
       "১৯৭১",
@@ -698,7 +699,7 @@
       "১৯৭৮"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -706,21 +707,21 @@
   {
     "ref": "bcs37_q33",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাপ্টেপ্টশি বনম্নবিবখত সজিািমূপ্টহি মপ্টধয সকান \nসজিায বনচু ভূবমি (Low land) পবিমার্ সবপ্টচপ্টয সিবশ?",
+    "body": "বাংলাদেশের নিম্নলিখিত জেলাসমূহের মধ্যে কোন জেলায় নিচু ভূমির (Low land) পরিমাণ সবচেয়ে বেশি?",
     "options": [
-      "হবিগি",
-      "সগাপািগি",
-      "বকপ্টশািগি",
-      "মুন্সীগি"
+      "হবিগঞ্জ",
+      "গোপালগঞ্জ",
+      "কিশোরগঞ্জ",
+      "মুন্সীগঞ্জ"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -728,21 +729,21 @@
   {
     "ref": "bcs37_q34",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাপ্টেপ্টশি েীঘণতম নেী কোনটি?",
+    "body": "বাংলাদেশের দীর্ঘতম নদী কোনটি?",
     "options": [
-      "সমঘনা",
+      "মেঘনা",
       "যমুনা",
       "পদ্মা",
-      "র্কণফু িী"
+      "কর্ণফুলী"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -750,21 +751,21 @@
   {
     "ref": "bcs37_q35",
     "exam": "bcs-general",
-    "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাপ্টেপ্টশি সকান অঞ্চি সিবশ খরাসর্ব?",
+    "body": "বাংলাদেশের কোন অঞ্চল বেশি খরাপ্রবণ?",
     "options": [
-      "উত্তি-পূর্ণ অঞ্চি",
-      "উত্তি-পবিম অঞ্চি",
-      "েবক্র্ষ-পবিম অঞ্চি",
-      "েবক্র্ষ-পূর্ণ অঞ্চি"
+      "উত্তর-পূর্ব অঞ্চল",
+      "উত্তর-পশ্চিম অঞ্চল",
+      "দক্ষিণ-পশ্চিম অঞ্চল",
+      "দক্ষিণ-পূর্ব অঞ্চল"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -772,21 +773,21 @@
   {
     "ref": "bcs37_q36",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বাংলাপ্টেপ্টশি সকান অঞ্চপ্টসব পবিপ্টিশ িনযা বনযির্, \nপাবন বনষ্কাশন ও সিপ্টচি (FCDI) কািপ্র্ট খুি সিবশ ক্ষবতগ্রস্ত \nহপ্টযপ্টছ?",
+    "lang": "bn",
+    "body": "বাংলাদেশের কোন অঞ্চলের পরিবেশ বন্যা নিয়ন্ত্রণ, পানি নিষ্কাশন ও সেচের (FCDI) কারণে খুব বেশি ক্ষতিগ্রস্ত হয়েছে?",
     "options": [
-      "িপ্টিে অঞ্চি",
-      "মধুপুি গড় অঞ্চি",
-      "উপকূ িীয অঞ্চি",
-      "চিন বসব অঞ্চি"
+      "বরেন্দ্র অঞ্চল",
+      "মধুপুর গড় অঞ্চল",
+      "উপকূলীয় অঞ্চল",
+      "চলন বিল অঞ্চল"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -794,21 +795,21 @@
   {
     "ref": "bcs37_q37",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বাংলাপ্টেপ্টশ িাবষণক িপ্টিণাচ্চ গড় িৃবষ্ট্পাত বনপ্টম্নি \nসকান সস্টশপ্টন সির্কণ কিা হয়?",
+    "lang": "bn",
+    "body": "বাংলাদেশে বার্ষিক সর্বোচ্চ গড় বৃষ্টিপাত নিম্নের কোন স্টেশনে রেকর্ড করা হয়?",
     "options": [
-      "বিপ্টসব",
-      "সিকনাফ",
-      "কক্সিাজাি",
-      "িন্দ্বীপ"
+      "সিলেট",
+      "টেকনাফ",
+      "কক্সবাজার",
+      "সন্দ্বীপ"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -816,21 +817,21 @@
   {
     "ref": "bcs37_q38",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বনপ্টম্নি সকান বনযামকবি একবি অঞ্চপ্টসব িা সেপ্টশি \nজসবাযু বনধণাির্ কপ্টি না?",
+    "lang": "bn",
+    "body": "নিম্নের কোন নিয়ামকটি একটি অঞ্চলের বা দেশের জলবায়ু নির্ধারণ করে না?",
     "options": [
-      "অক্ষপ্টিখা",
-      "িাবঘমাপ্টিখা",
+      "অক্ষরেখা",
+      "দ্রাঘিমারেখা",
       "উচ্চতা",
-      "িমুিপ্টরাত"
+      "সমুদ্রস্রোত"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -838,21 +839,21 @@
   {
     "ref": "bcs37_q39",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বনপ্টম্নি সকান আপেবি (Hazard) পৃবেিীপ্টত \nমানুপ্টষি মৃতুযি িধান কাির্?",
+    "lang": "bn",
+    "body": "নিম্নের কোন আপদটি (Hazard) পৃথিবীতে মানুষের মৃত্যুর প্রধান কারণ?",
     "options": [
-      "িড়ক েুঘণিনা",
-      "তামাক ও মােকসবয গ্রর্হ",
-      "বায়ু েূর্ষ",
-      "কযান্সাি"
+      "সড়ক দুর্ঘটনা",
+      "তামাক ও মাদকদ্রব্য গ্রহণ",
+      "বায়ু দূষণ",
+      "ক্যান্সার"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -860,21 +861,21 @@
   {
     "ref": "bcs37_q40",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "িাকণ েুপ্টযণাগ িযিস্থাপনা সকে সকাোয অিবস্থত \nবছপ্টিা?",
+    "lang": "bn",
+    "body": "সার্ক দুর্যোগ ব্যবস্থাপনা কেন্দ্র কোথায় অবস্থিত ছিলো?",
     "options": [
-      "নতুন বেবল্ল",
-      "কিপ্টম্বা",
+      "নতুন দিল্লি",
+      "কলম্বো",
       "ঢাকা",
-      "কািমান্ডু"
+      "কাঠমান্ডু"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -882,21 +883,21 @@
   {
     "ref": "bcs37_q41",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "সকান পযণাপ্টয েুপ্টযণাপ্টগি ক্ষবত মূিযাযন কিা হয়?",
+    "lang": "bn",
+    "body": "কোন পর্যায়ে দুর্যোগের ক্ষতি মূল্যায়ন করা হয়?",
     "options": [
-      "উদ্ধাি পযণাপ্টয",
-      "িভাি পযণাপ্টয",
-      "সর্তকতা পযণাপ্টয",
-      "পুনিণািন পযণাপ্টয"
+      "উদ্ধার পর্যায়ে",
+      "প্রভাব পর্যায়ে",
+      "সতর্কতা পর্যায়ে",
+      "পুনর্বাসন পর্যায়ে"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -904,21 +905,21 @@
   {
     "ref": "bcs37_q42",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বনপ্টম্নি সকান েুপ্টযণাগবি বাংলাপ্টেপ্টশি জনগপ্র্টি \nজীবিকা পবসবতণপ্টনি সক্ষপ্টত্র েীঘণস্থাযী িভাি সফিপ্টত পাপ্টি?",
+    "lang": "bn",
+    "body": "নিম্নের কোন দুর্যোগটি বাংলাদেশের জনগণের জীবিকা পরিবর্তনের ক্ষেত্রে দীর্ঘস্থায়ী প্রভাব ফেলতে পারে?",
     "options": [
       "ভূমিকম্প",
-      "িমুপ্টসব জিস্তপ্টসব িৃবদ্ধ",
-      "ঘূর্বণঝড় ও জপ্টিাচ্ছ্বাি",
-      "খরা ও িনযা"
+      "সমুদ্রের জলস্তরের বৃদ্ধি",
+      "ঘূর্ণিঝড় ও জলোচ্ছ্বাস",
+      "খরা ও বন্যা"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -926,21 +927,21 @@
   {
     "ref": "bcs37_q43",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "পূর্ণিঙ্গ ও আিাম িপ্টেশ গিনকাপ্টি বরবিশ ভািপ্টতি \nগভনণি সজনাপ্টসব ও ভাইসবয বছপ্টিন ---",
+    "lang": "bn",
+    "body": "পূর্ববঙ্গ ও আসাম প্রদেশ গঠনকালে ব্রিটিশ ভারতের গভর্নর জেনারেল ও ভাইসরয় ছিলেন ---",
     "options": [
-      "ির্ণ বিপন",
-      "ির্ণ কাজণন",
-      "ির্ণ বমপ্টন্টা",
-      "ির্ণ হার্বণি"
+      "লর্ড রিপন",
+      "লর্ড কার্জন",
+      "লর্ড মিন্টো",
+      "লর্ড হার্ডিঞ্জ"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -948,21 +949,21 @@
   {
     "ref": "bcs37_q44",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "১৯৫৪ িাপ্টি পূর্ণ পাবকস্তান িাপ্টেবশক পবিষে \nবনিণাচপ্টন যুক্তিপ্টন্টি িতীক বছি -",
+    "lang": "bn",
+    "body": "১৯৫৪ সালে পূর্ব পাকিস্তান প্রাদেশিক পরিষদ নির্বাচনে যুক্তফ্রন্টের প্রতীক ছিল -",
     "options": [
-      "ধাপ্টনি শীষ",
-      "সনৌকা",
-      "িাঙি",
-      "িাইিাইপ্টকি"
+      "ধানের শীষ",
+      "নৌকা",
+      "লাঙল",
+      "বাইসাইকেল"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -970,21 +971,21 @@
   {
     "ref": "bcs37_q45",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "ঐবতহাবিক ৬-েফাপ্টক বকপ্টসব িাপ্টে তুিনা কিা হয়?",
+    "lang": "bn",
+    "body": "ঐতিহাসিক ৬-দফাকে কিসের সাথে তুলনা করা হয়?",
     "options": [
-      "বসব অি িাইসব",
-      "মযাগনাকািণা",
-      "বপবিশন অি িাইসব",
-      "মুখয আইন"
+      "বিল অব রাইটস",
+      "ম্যাগনাকার্টা",
+      "পিটিশন অব রাইটস",
+      "মুখ্য আইন"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -992,21 +993,21 @@
   {
     "ref": "bcs37_q46",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বাংলাপ্টেপ্টশি িেম স্বাধীন নিাি সক?",
+    "lang": "bn",
+    "body": "বাংলাদেশের প্রথম স্বাধীন নবাব কে?",
     "options": [
-      "নিাি বসবাজউপ্টদৌিা",
-      "মুবশণে কু িী খান",
-      "ইবিযাি শাহ",
-      "আিাউবদন হুপ্টিন শাহ"
+      "নবাব সিরাজউদ্দৌলা",
+      "মুর্শিদ কু লী খান",
+      "ইলিয়াস শাহ",
+      "আলাউদ্দিন হুসেন শাহ"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1014,21 +1015,21 @@
   {
     "ref": "bcs37_q47",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "আিুি একবি জাত ---",
+    "lang": "bn",
+    "body": "আলুর একটি জাত ---",
     "options": [
-      "র্াযমন্ড",
-      "রূপািী",
-      "োমপ্টর্হ",
-      "বরশাইি"
+      "ডায়মন্ড",
+      "রূপালী",
+      "ড্রামহেড",
+      "ব্রিশাইল"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1036,21 +1037,21 @@
   {
     "ref": "bcs37_q48",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বাংলাপ্টেপ্টশ সবপ্টচপ্টয সিবশ উৎপাবেত হয় -",
+    "lang": "bn",
+    "body": "বাংলাদেশে সবচেয়ে বেশি উৎপাদিত হয় -",
     "options": [
       "আউশ ধান",
       "আমন ধান",
-      "সিাপ্টিা ধান",
-      "ইবি ধান"
+      "বোরো ধান",
+      "ইরি ধান"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1058,13 +1059,13 @@
   {
     "ref": "bcs37_q49",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "িধান িীজ উৎপােনকািী সবকাবি িবতষ্ঠান -",
+    "lang": "bn",
+    "body": "প্রধান বীজ উৎপাদনকারী সরকারি প্রতিষ্ঠান -",
     "options": [
       "BARI",
       "BRRI",
@@ -1072,7 +1073,7 @@
       "BINA"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1080,13 +1081,13 @@
   {
     "ref": "bcs37_q50",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "২০১১ িাপ্টসব আেমশুমাবি অনুযাযী বাংলাপ্টেপ্টশ \nনািী-পুরুপ্টষি অনুপাত -",
+    "lang": "bn",
+    "body": "২০১১ সালের আদমশুমারি অনুযায়ী বাংলাদেশে নারী-পুরুষের অনুপাত -",
     "options": [
       "১০০ : ১০৬",
       "১০০ : ১০০.৬",
@@ -1094,7 +1095,7 @@
       "১০০ : ১০০"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1102,21 +1103,21 @@
   {
     "ref": "bcs37_q51",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "সবকাবি বহিাি মপ্টত বাংলাপ্টেবশপ্টেি গড় আযু -",
+    "lang": "bn",
+    "body": "সরকারি হিসাব মতে বাংলাদেশিদের গড় আয়ু -",
     "options": [
-      "৬৫.৪ িছি",
-      "৬৭.৫ িছি",
-      "৭০.৯ িছি",
-      "৭২.৬ িছি"
+      "৬৫.৪ বছর",
+      "৬৭.৫ বছর",
+      "৭০.৯ বছর",
+      "৭২.৬ বছর"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1124,35 +1125,35 @@
   {
     "ref": "bcs37_q52",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "সয সজিায হাজংপ্টেি সবিাি সনই -",
+    "lang": "bn",
+    "body": "যে জেলায় হাজংদের বসবাস নেই -",
     "options": [
-      "সশিপুি",
-      "মযমনবিংহ",
-      "বিপ্টসব",
-      "সনত্রপ্টকানা \nসঠিক উত্তর: \"িাবতি কিা হপ্টযপ্টছ\" \nLive MCQ Analytics™: িবিক উত্তিোতা: 0%, ভুি \nউত্তিোতা: 0%, উত্তি কপ্টিনবন: 0% \nব্যাখ্যা: এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।"
+      "শেরপুর",
+      "ময়মনসিংহ",
+      "সিলেট",
+      "নেত্রকোনা"
     ],
-    "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "answer": null,
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
-    "cancelled": false
+    "cancelled": true
   },
   {
     "ref": "bcs37_q53",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "২০১১ িাপ্টসব আেমশুমাবি অনুযাযী বাংলাপ্টেপ্টশ \nHousehold িবত জনিংখযা-",
+    "lang": "bn",
+    "body": "২০১১ সালের আদমশুমারি অনুযায়ী বাংলাদেশে Household প্রতি জনসংখ্যা-",
     "options": [
       "৪.৪ জন",
       "৫.০ জন",
@@ -1160,7 +1161,7 @@
       "৫.৫ জন"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1168,21 +1169,21 @@
   {
     "ref": "bcs37_q54",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "সয বিভাপ্টগ িাক্ষিতাি হাি সবণাবধক -",
+    "lang": "bn",
+    "body": "যে বিভাগে সাক্ষরতার হার সর্বাধিক -",
     "options": [
       "ঢাকা বিভাগ",
-      "িাজশাহী বিভাগ",
-      "িবিশাি বিভাগ",
-      "খুিনা বিভাগ"
+      "রাজশাহী বিভাগ",
+      "বরিশাল বিভাগ",
+      "খুলনা বিভাগ"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1190,43 +1191,43 @@
   {
     "ref": "bcs37_q55",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "(তৎকািীন িাম্প্রবতক িশ্ন যা িতণমাপ্টন আি \nিপ্টযাজয নয। িাম্প্রবতক তপ্টেযি জনয িযাখযা সেখুন।) \n২০১৫-১৬ অেণিপ্টছি বাংলাপ্টেপ্টশি অবজণত অেণশনবতক \nসবৃবদ্ধি হাি -",
+    "lang": "bn",
+    "body": "(তৎকালীন সাম্প্রতিক প্রশ্ন যা বর্তমানে আর প্রযোজ্য নয়। সাম্প্রতিক তথ্যের জন্য ব্যাখ্যা দেখুন।) ২০১৫-১৬ অর্থবছের বাংলাদেশের অর্জিত অর্থনৈতিক প্রবৃদ্ধির হার -",
     "options": [
       "৬.৮৫%",
       "৬.৯৭%",
       "৭.০০%",
-      "৭.৫% \nসঠিক উত্তর: \"িাবতি কিা হপ্টযপ্টছ\" \nLive MCQ Analytics™: িবিক উত্তিোতা: 0%, ভুি \nউত্তিোতা: 0%, উত্তি কপ্টিনবন: 0% \nব্যাখ্যা: এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।"
+      "৭.৫%"
     ],
-    "answer": 0,
-    "explanation": "সেখুন।) \n২০১৫-১৬ অেণিপ্টছি বাংলাপ্টেপ্টশি অবজণত অেণশনবতক \nসবৃবদ্ধি হাি - \nক) ৬.৮৫% খ) ৬.৯৭% \nগ) ৭.০০% ঘ) ৭.৫% \nসঠিক উত্তর: \"িাবতি কিা হপ্টযপ্টছ\" \nLive MCQ Analytics™: িবিক উত্তিোতা: 0%, ভুি \nউত্তিোতা: 0%, উত্তি কপ্টিনবন: 0% \nব্যাখ্যা: এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "answer": null,
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
-    "cancelled": false
+    "cancelled": true
   },
   {
     "ref": "bcs37_q56",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বাংলাপ্টেপ্টশ ততবি জাহাজ 'প্টস্টিা সমবসব' িপ্তাবন \nহপ্টযপ্টছ-",
+    "lang": "bn",
+    "body": "বাংলাদেশে তৈরি জাহাজ 'স্টেলা মেরিস' রপ্তানি হয়েছে-",
     "options": [
-      "বফনিযান্ড",
-      "র্সনমাপ্টকণ",
-      "নিওপ্টযপ্টত",
-      "িুইপ্র্টপ্টন"
+      "ফিনল্যান্ড",
+      "ডেনমার্কে",
+      "নরওয়েতে",
+      "সুইডেনে"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1234,21 +1235,21 @@
   {
     "ref": "bcs37_q57",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "সিনাপ্টপাি স্থসবন্দি িংিগ্ন ভারতীয স্থসবন্দি-",
+    "lang": "bn",
+    "body": "বেনাপোল স্থলবন্দর সংলগ্ন ভারতীয় স্থলবন্দর-",
     "options": [
-      "সপিাপ্টপাি",
-      "কৃ ষ্ণনগড়",
-      "র্উবক",
-      "সমাহাবেপুি"
+      "পেট্রাপোল",
+      "কৃষ্ণনগড়",
+      "ডউকি",
+      "মোহাদিপুর"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1256,21 +1257,21 @@
   {
     "ref": "bcs37_q58",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বাংলাপ্টেপ্টশ সবকাবি EPZ িংখযা -",
+    "lang": "bn",
+    "body": "বাংলাদেশে সরকারি EPZ সংখ্যা -",
     "options": [
-      "৬বি",
-      "৮বি",
-      "১০বি",
-      "১২বি"
+      "৬টি",
+      "৮টি",
+      "১০টি",
+      "১২টি"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1278,21 +1279,21 @@
   {
     "ref": "bcs37_q59",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বাংলাপ্টেপ্টশ সবপ্টচপ্টয সিবশ িপ্তাবন কপ্টি -",
+    "lang": "bn",
+    "body": "বাংলাদেশে সবচেয়ে বেশি রপ্তানি করে -",
     "options": [
       "চীন",
       "ভারত",
-      "যুক্তিাজয",
-      "োইিযান্ড"
+      "যুক্তরাজ্য",
+      "থাইল্যান্ড"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1300,21 +1301,21 @@
   {
     "ref": "bcs37_q60",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বাংলাপ্টেপ্টশি িেম সমািাইি িযাংবকং শুরু কপ্টি -",
+    "lang": "bn",
+    "body": "বাংলাদেশের প্রথম মোবাইল ব্যাংকিং শুরু করে -",
     "options": [
-      "রযাক িযাংক",
-      "র্াচ-বাংলা িযাংক",
-      "এবি িযাংক",
-      "সিানািী িযাংক"
+      "ব্র্যাক ব্যাংক",
+      "ডাচ-বাংলা ব্যাংক",
+      "এবি ব্যাংক",
+      "সোনালী ব্যাংক"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1322,21 +1323,21 @@
   {
     "ref": "bcs37_q61",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "িযাবিফ কবমশন সকান মির্ািপ্টযি অধীন -",
+    "lang": "bn",
+    "body": "ট্যারিফ কমিশন কোন মন্ত্রণালয়ের অধীন -",
     "options": [
-      "িার্বজয মির্ািয",
-      "অেণ মির্ািয",
-      "পবিকেনা মির্ািয",
-      "বশে মির্ািয"
+      "বাণিজ্য মন্ত্রণালয়",
+      "অর্থ মন্ত্রণালয়",
+      "পরিকল্পনা মন্ত্রণালয়",
+      "শিল্প মন্ত্রণালয়"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1344,21 +1345,21 @@
   {
     "ref": "bcs37_q62",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বাংলাপ্টেপ্টশি সকান জাতীয িংিপ্টে িধানমিীি \nিপ্টশ্নাত্তি পিণ চািু হয়?",
+    "lang": "bn",
+    "body": "বাংলাদেশের কোন জাতীয় সংসদে প্রধানমন্ত্রীর প্রশ্নোত্তর পর্ব চালু হয়?",
     "options": [
-      "িেম",
-      "বিতীয",
-      "িপ্তম",
-      "অষ্ট্ম"
+      "প্রথম",
+      "দ্বিতীয়",
+      "সপ্তম",
+      "অষ্টম"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1366,21 +1367,21 @@
   {
     "ref": "bcs37_q63",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "মাত্র ১বি িংিেীয আিন -",
+    "lang": "bn",
+    "body": "মাত্র ১টি সংসদীয় আসন -",
     "options": [
-      "িক্ষ্মীপুি সজিায",
-      "সমপ্টহিপুি সজিায",
-      "ঝািকািী সজিায",
-      "িাঙামাবি সজিায"
+      "লক্ষ্মীপুর জেলায়",
+      "মেহেরপুর জেলায়",
+      "ঝালকাঠী জেলায়",
+      "রাঙামাটি জেলায়"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1388,21 +1389,21 @@
   {
     "ref": "bcs37_q64",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বাংলাপ্টেপ্টশি মুবক্তযুপ্টদ্ধি পিভূবমকায বনবমণত 'ধীপ্টি \nিপ্টহ সমঘনা' চিবচ্চপ্টত্রি বনমণাতা সক?",
+    "lang": "bn",
+    "body": "বাংলাদেশের মুক্তিযুদ্ধের পটভূমিকায় নির্মিত 'ধীরে বহে মেঘনা' চলচ্চিত্রের নির্মাতা কে?",
     "options": [
-      "আিমগীি কবসব",
-      "খান আতাউি িহমান",
-      "হুমাযূন আহপ্টমে",
-      "িুভাষ েত্ত"
+      "আলমগীর কবির",
+      "খান আতাউর রহমান",
+      "হুমায়ূন আহমেদ",
+      "সুভাষ দত্ত"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1410,21 +1411,21 @@
   {
     "ref": "bcs37_q65",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "জাতীয িংিপ্টে 'কাবস্টং' সভাি বক?",
+    "lang": "bn",
+    "body": "জাতীয় সংসদে 'কাস্টিং' ভোট কি?",
     "options": [
-      "িংিে সনতাি সভাি",
-      "হুইপ্টপি সভাি",
-      "বিকাপ্টসব সভাি",
-      "িােপবতি সভাি"
+      "সংসদ নেতার ভোট",
+      "হুইপের ভোট",
+      "স্পিকারের ভোট",
+      "রাষ্ট্রপতির ভোট"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1432,13 +1433,13 @@
   {
     "ref": "bcs37_q66",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "NILG এি পূর্ণরূপ-",
+    "lang": "bn",
+    "body": "NILG এর পূর্ণরূপ-",
     "options": [
       "National Information Legal Guide",
       "National Institute Local Government",
@@ -1446,7 +1447,7 @@
       "National Industrial League Group"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "Government",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1454,13 +1455,13 @@
   {
     "ref": "bcs37_q67",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বাংলাপ্টেশ বিবভি িাবভণপ্টসব কযার্াি িংখযা-",
+    "lang": "bn",
+    "body": "বাংলাদেশ সিভিল সার্ভিসের ক্যাডার সংখ্যা-",
     "options": [
       "২৬",
       "২৭",
@@ -1468,7 +1469,7 @@
       "৩১"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1476,13 +1477,13 @@
   {
     "ref": "bcs37_q68",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "িংবিধাপ্টনি সকান অনুপ্টেপ্টে সবকাবি কমণ কবমশন \nগিপ্টনি উপ্টল্লখ আপ্টছ-",
+    "lang": "bn",
+    "body": "সংবিধানের কোন অনুচ্ছেদে সরকারি কর্ম কমিশন গঠনের উল্লেখ আছে-",
     "options": [
       "১৩০",
       "১৩১",
@@ -1490,7 +1491,7 @@
       "১৪০"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1498,21 +1499,21 @@
   {
     "ref": "bcs37_q69",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "অিস্থান অনুিাপ্টি বাংলাপ্টেপ্টশি িািবশযাবি \nপাহাড়প্টক কত ভাপ্টগ ভাগ কিা হয়?",
+    "lang": "bn",
+    "body": "অবস্থান অনুসারে বাংলাদেশের টারশিয়ারি পাহাড়কে কত ভাগে ভাগ করা হয়?",
     "options": [
-      "২ ভাপ্টগ",
-      "৪ ভাপ্টগ",
-      "৫ ভাপ্টগ",
-      "৮ ভাপ্টগ"
+      "২ ভাগে",
+      "৪ ভাগে",
+      "৫ ভাগে",
+      "৮ ভাগে"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1520,21 +1521,21 @@
   {
     "ref": "bcs37_q70",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "বাংলাপ্টেশপ্টক স্বীকৃ বতোনকািী িেম অনাসব \nমুিবিম সেশ কোনটি?",
+    "lang": "bn",
+    "body": "বাংলাদেশকে স্বীকৃতিদানকারী প্রথম অনারব মুসলিম দেশ কোনটি?",
     "options": [
-      "সিপ্টনগাি",
-      "মািপ্টযবশযা",
-      "মাসবীপ",
-      "পাবকস্তান"
+      "সেনেগাল",
+      "মালয়েশিয়া",
+      "মালদ্বীপ",
+      "পাকিস্তান"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1548,15 +1549,15 @@
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাপ্টেপ্টশ মযণাো অনুিাপ্টি ৩য িীিত্বিূচক সখতাি",
+    "body": "বাংলাদেশে মর্যাদা অনুসারে ৩য় বীরত্বসূচক খেতাব",
     "options": [
-      "িীি িতীক",
-      "িীিপ্টেষ্ঠ",
-      "িীি উত্তম",
-      "িীি বিক্রম"
+      "বীর প্রতীক",
+      "বীরশ্রেষ্ঠ",
+      "বীর উত্তম",
+      "বীর বিক্রম"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1570,15 +1571,15 @@
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বক্রপ্টকপ্টি বাংলাপ্টেশ সিস্ট মযণাো পায-",
+    "body": "ক্রিকেটে বাংলাদেশ টেস্ট মর্যাদা পায়-",
     "options": [
-      "১৯৯৭ িাপ্টি",
-      "১৯৯৯ িাপ্টি",
-      "২০০১ িাপ্টি",
-      "২০০০ িাপ্টি"
+      "১৯৯৭ সালে",
+      "১৯৯৯ সালে",
+      "২০০১ সালে",
+      "২০০০ সালে"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1586,21 +1587,21 @@
   {
     "ref": "bcs37_q73",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'কািাপাবন' সকান েুই িাপ্টেি মপ্টধয অমীমাংবিত ভূখণ্ড?",
+    "body": "'কালাপানি' কোন দুই রাষ্ট্রের মধ্যে অমীমাংসিত ভূখণ্ড?",
     "options": [
-      "ভারত ও সনপাি",
-      "পাবকস্তান ও চীন",
-      "ভূিান ও ভারত",
-      "বাংলাপ্টেশ ও ভারত"
+      "ভারত ও নেপাল",
+      "পাকিস্তান ও চীন",
+      "ভূটান ও ভারত",
+      "বাংলাদেশ ও ভারত"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1608,21 +1609,21 @@
   {
     "ref": "bcs37_q74",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িপ্টিামন- িীপপুি সকান মহািাগপ্টি অিবস্থত?",
+    "body": "সলোমন- দ্বীপপুঞ্জ কোন মহাসাগরে অবস্থিত?",
     "options": [
-      "ভারত মহািাগি",
-      "িশান্ত মহািাগি",
-      "আসবাবন্টক মহািাগি",
-      "আকণবিক মহািাগি"
+      "ভারত মহাসাগর",
+      "প্রশান্ত মহাসাগর",
+      "আটলান্টিক মহাসাগর",
+      "আর্কটিক মহাসাগর"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1630,21 +1631,21 @@
   {
     "ref": "bcs37_q75",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "চীপ্টনি বজনবজযাং িপ্টেপ্টশ সবিািকািী িধান \nমুিবিম িম্প্রোপ্টযি নাম বক?",
+    "body": "চীনের জিনজিয়াং প্রদেশে বসবাসকারী প্রধান মুসলিম সম্প্রদায়ের নাম কি?",
     "options": [
-      "তুকণপ্টমন",
-      "উইঘুি",
-      "তাবজক",
+      "তুর্কমেন",
+      "উইঘুর",
+      "তাজিক",
       "কাজাখ"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1652,13 +1653,13 @@
   {
     "ref": "bcs37_q76",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িম্প্রবত ভারত Google সক বনপ্টচি সকান সিাগ্রাপ্টমি \nজনয ছবি সতািা সেপ্টক বসবত কপ্টি?",
+    "body": "সম্প্রতি ভারত Google কে নিচের কোন প্রোগ্রামের জন্য ছবি তোলা থেকে বিরত করে?",
     "options": [
       "Google Earth",
       "Street View",
@@ -1666,7 +1667,7 @@
       "Google Map"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1674,13 +1675,13 @@
   {
     "ref": "bcs37_q77",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সংবিধান অনুযাযী বমযানমাপ্টসব িংিপ্টে কত শতাংশ \nআিন অবনিণাবচত িামবিক িাবহনীি সদরযপ্টেি জনয িংিবক্ষত \nোকপ্টি?",
+    "body": "সংবিধান অনুযায়ী মিয়ানমারের সংসদে কত শতাংশ আসন অনির্বাচিত সামরিক বাহিনীর সদস্যদের জন্য সংরক্ষিত থাকবে?",
     "options": [
       "২৫%",
       "৩৫%",
@@ -1688,7 +1689,7 @@
       "৫৫%"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1696,21 +1697,21 @@
   {
     "ref": "bcs37_q78",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনপ্টম্নি কোনটি বগ্রন হাউজ গযাি নয?",
+    "body": "নিম্নের কোনটি গ্রিন হাউজ গ্যাস নয়?",
     "options": [
-      "নাইিাি অক্সাইর্",
-      "কািণন-র্াই-অক্সাইর্",
-      "অবক্সপ্টজন",
-      "বমপ্টেন"
+      "নাইট্রাস অক্সাইড",
+      "কার্বন-ডাই-অক্সাইড",
+      "অক্সিজেন",
+      "মিথেন"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1718,13 +1719,13 @@
   {
     "ref": "bcs37_q79",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "জাবতিংপ্টঘি পবিপ্টিশ বিষযক িংস্থা (UNEP) ও \nজসবাযু বিষযক িংস্থা (WMO) এি বমবিত উপ্টেযাপ্টগ িবতষ্ঠা \nিাভ কপ্টি -",
+    "body": "জাতিসংঘের পরিবেশ বিষয়ক সংস্থা (UNEP) ও জলবায়ু বিষয়ক সংস্থা (WMO) এর মিলিত উদ্যোগে প্রতিষ্ঠা লাভ করে -",
     "options": [
       "IPCC",
       "COP 21",
@@ -1732,7 +1733,7 @@
       "Sierra Club"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1746,7 +1747,7 @@
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "World Development Report বনপ্টম্নি সকান \nিংস্থাবসব িাবষণক িকাশনা?",
+    "body": "World Development Report নিম্নের কোন সংস্থাটির বার্ষিক প্রকাশনা?",
     "options": [
       "UNDP",
       "World Bank",
@@ -1754,7 +1755,7 @@
       "BRICS"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1768,15 +1769,15 @@
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "IMF এি সদর দপ্তর অিবস্থত -",
+    "body": "IMF এর সদর দপ্তর অবস্থিত -",
     "options": [
-      "ওযাবশংিন র্ববি",
-      "বনউইযকণ",
-      "সজপ্টনভা",
-      "সিাম"
+      "ওয়াশিংটন ডিসি",
+      "নিউইয়র্ক",
+      "জেনেভা",
+      "রোম"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1784,13 +1785,13 @@
   {
     "ref": "bcs37_q82",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বিশ্বিযাংক িংবিষ্ট্ সকান িংস্থযাবি স্বে আপ্টযি \nউন্নযনশীি সেপ্টশ সসবিকাবি খাপ্টত আবেণক িহাযতা ও \nউপপ্টেশ বেপ্টয োপ্টক?",
+    "body": "বিশ্বব্যাংক সংশ্লিষ্ট কোন সংস্থ্যাটি স্বল্প আয়ের উন্নয়নশীল দেশে বেসরকারি খাতে আর্থিক সহায়তা ও উপদেশ দিয়ে থাকে?",
     "options": [
       "IFC",
       "IBRD",
@@ -1798,7 +1799,7 @@
       "ICSID"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1806,21 +1807,21 @@
   {
     "ref": "bcs37_q83",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িামন্তিাে সকান ইউপ্টিাপীয সেপ্টশ িেম িূত্রপাত হয়?",
+    "body": "সামন্তবাদ কোন ইউরোপীয় দেশে প্রথম সূত্রপাত হয়?",
     "options": [
-      "ইতাবি",
-      "ইংিযান্ড",
-      "িান্স",
-      "িাবশযা"
+      "ইতালি",
+      "ইংল্যান্ড",
+      "ফ্রান্স",
+      "রাশিয়া"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1828,21 +1829,21 @@
   {
     "ref": "bcs37_q84",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "জাবতিংপ্টঘি স্থাযী সদরয :",
+    "body": "জাতিসংঘের স্থায়ী সদস্য :",
     "options": [
-      "জাপান , জামণাবন, িান্স , বরপ্টিন, কানার্া, যুক্তিাে",
-      "িান্স , িাবশযা, যুক্তিাে, বরপ্টিন, চীন",
-      "যুক্তিাে, জামণাবন, বরপ্টিন, রাবজি, চীন, নাইপ্টজবিযা",
-      "উত্তি সকাবিযা, পাবকস্তান, ভারত, ইসবাপ্টযি, চীন"
+      "জাপান , জার্মানি, ফ্রান্স , ব্রিটেন, কানাডা, যুক্তরাষ্ট্র",
+      "ফ্রান্স , রাশিয়া, যুক্তরাষ্ট্র, ব্রিটেন, চীন",
+      "যুক্তরাষ্ট্র, জার্মানি, ব্রিটেন, ব্রাজিল, চীন, নাইজেরিয়া",
+      "উত্তর কোরিয়া, পাকিস্তান, ভারত, ইসলায়েল, চীন"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1850,21 +1851,21 @@
   {
     "ref": "bcs37_q85",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'Law of the Sea Convention' অনুযাযী \nউপকূ ি সেপ্টক কত েূিত্ব পযণন্ত 'Exclusive Economic \nZone' বহপ্টিপ্টি র্গয?",
+    "body": "'Law of the Sea Convention' অনুযায়ী উপকূল থেকে কত দূরত্ব পর্যন্ত 'Exclusive Economic Zone' হিসেবে গণ্য?",
     "options": [
-      "২২ নবিকযাি মাইি",
-      "৪৪ নবিকযাি মাইি",
-      "২০০ নবিকযাি মাইি",
-      "৩৭০ নবিকযাি মাইি"
+      "২২ নটিক্যাল মাইল",
+      "৪৪ নটিক্যাল মাইল",
+      "২০০ নটিক্যাল মাইল",
+      "৩৭০ নটিক্যাল মাইল"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1872,21 +1873,21 @@
   {
     "ref": "bcs37_q86",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ইিাপ্টনি িপ্টঙ্গ পািমার্বিক চুবক্ত যা Joint \nComprehensive Plan of Action নাপ্টম পবিবচত তা িই হয়-",
+    "body": "ইরানের সঙ্গে পারমাণবিক চুক্তি যা Joint Comprehensive Plan of Action নামে পরিচিত তা সই হয়-",
     "options": [
-      "২ এবসব ২০১৫",
-      "১৪ জুিাই ২০১৫",
-      "২৪ সিপ্টেম্বি ২০১৪",
-      "১০ র্বপ্টিম্বি ২০১৩"
+      "২ এপ্রিল ২০১৫",
+      "১৪ জুলাই ২০১৫",
+      "২৪ সেপ্টেম্বর ২০১৪",
+      "১০ ডিসেম্বর ২০১৩"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1894,13 +1895,13 @@
   {
     "ref": "bcs37_q87",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'বগ্রনবপি' যাত্রা শুরু কপ্টি-",
+    "body": "'গ্রিনপিস' যাত্রা শুরু করে-",
     "options": [
       "১৯৪৫",
       "২০১১",
@@ -1908,7 +1909,7 @@
       "১৯৭১"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1916,21 +1917,21 @@
   {
     "ref": "bcs37_q88",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "'Black Lives Matter' বক?",
+    "lang": "en",
+    "body": "'Black Lives Matter' কি?",
     "options": [
-      "একবি গ্রপ্টেি নাম",
-      "একবি পানীয",
-      "ির্ণিাে বিপ্টিাধী আপ্টন্দািন",
-      "একবি NGO"
+      "একটি গ্রন্থের নাম",
+      "একটি পানীয়",
+      "বর্ণবাদ বিরোধী আন্দোলন",
+      "একটি NGO"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1938,21 +1939,21 @@
   {
     "ref": "bcs37_q89",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মাোবপছু বগ্রনহাউজ গযাি উেগীিপ্র্ট সবপ্টচপ্টয সিবশ \nোযী বনপ্টচি সকান সেশবি?",
+    "body": "মাথাপিছু গ্রিনহাউজ গ্যাস উদগীরণে সবচেয়ে বেশি দায়ী নিচের কোন দেশটি?",
     "options": [
-      "িাবশযা",
-      "যুক্তিাে",
-      "ইিান",
-      "জামণাবন"
+      "রাশিয়া",
+      "যুক্তরাষ্ট্র",
+      "ইরান",
+      "জার্মানি"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "প্রশ্ন ৯০. কোনটি নিরস্ত্রীকরণের সঙ্গে সম্পৃক্ত নয়? ক) NATO খ) SALT গ) NPT ঘ) CTBT ঠিক উত্তর: ক) NATO",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1966,7 +1967,7 @@
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনটি বনিস্ত্রীকিপ্র্টি িপ্টঙ্গ িম্পৃক্ত নয?",
+    "body": "কোনটি বনিস্ত্রীকিপ্র্টিপ্টঙ্গিম্পৃক্ত নয?",
     "options": [
       "NATO",
       "SALT",
@@ -1974,29 +1975,30 @@
       "CTBT"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
-    "cancelled": false
+    "cancelled": false,
+    "status": "draft"
   },
   {
     "ref": "bcs37_q91",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একজন সযাগয িশািক ও িযিস্থাপপ্টকি \nঅতযািশকীয সমৌবিক গুর্ািবসব মপ্টধয সেষ্ঠ গুর্ কোনটি?",
+    "body": "একজন যোগ্য প্রশাসক ও ব্যবস্থাপকের অত্যাবশকীয় মৌলিক গুণাবলির মধ্যে শ্রেষ্ঠ গুণ কোনটি?",
     "options": [
-      "োবযত্বশীিতা",
-      "তনবতকতা",
-      "েক্ষতা",
-      "সবিতা"
+      "দায়িত্বশীলতা",
+      "নৈতিকতা",
+      "দক্ষতা",
+      "সরলতা"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2004,21 +2006,21 @@
   {
     "ref": "bcs37_q92",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আমাপ্টেি বচিন্তন মূিযপ্টিাধ কোনটি?",
+    "body": "আমাদের চিরন্তন মূল্যবোধ কোনটি?",
     "options": [
-      "িতয ও নযায",
-      "িােণকতা",
-      "শিতা",
-      "অিবহষ্ণু তা"
+      "সত্য ও ন্যায়",
+      "সার্থকতা",
+      "শঠতা",
+      "অসহিষ্ণুতা"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2026,21 +2028,21 @@
   {
     "ref": "bcs37_q93",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িাপ্টেি চতুেণ স্তম্ভ কাপ্টক সবা হয়?",
+    "body": "রাষ্ট্রের চতুর্থ স্তম্ভ কাকে বলা হয়?",
     "options": [
-      "িাজনীবত",
-      "িুবদ্ধজীিী িম্প্রোয",
-      "িংিাে মাধযম",
-      "যুিশবক্ত"
+      "রাজনীতি",
+      "বুদ্ধিজীবী সম্প্রদায়",
+      "সংবাদ মাধ্যম",
+      "যুবশক্তি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2048,21 +2050,21 @@
   {
     "ref": "bcs37_q94",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সবকাবি বিদ্ধান্ত ির্যপ্টন সকান মূিযপ্টিাধবি \nগুরুত্বপূর্ণ নয?",
+    "body": "সরকারি সিদ্ধান্ত প্রণয়নে কোন মূল্যবোধটি গুরুত্বপূর্ণ নয়?",
     "options": [
       "বিশ্বস্ততা",
-      "িৃজনশীিতা",
-      "বনিপ্টপক্ষতা",
-      "জিািবেবহতা"
+      "সৃজনশীলতা",
+      "নিরপেক্ষতা",
+      "জবাবদিহিতা"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2070,21 +2072,21 @@
   {
     "ref": "bcs37_q95",
     "exam": "bcs-general",
-    "subject": "Ethics, Values & Governance",
-    "topic": "নৈতিকতা, মূল্যবোধ ও সুশাসন",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "UNDP সুশাসন বনবিতকিপ্র্ট কযবি উপাোন \nউপ্টল্লখ কপ্টিপ্টছ?",
+    "body": "UNDP সুশাসন নিশ্চিতকরণে কয়টি উপাদান উল্লেখ করেছে?",
     "options": [
-      "৬ বি",
-      "৭বি",
-      "৮বি",
-      "৯বি"
+      "৬ টি",
+      "৭টি",
+      "৮টি",
+      "৯টি"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2092,21 +2094,21 @@
   {
     "ref": "bcs37_q96",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনটি নযাযপিার্যতাি তনবতক মূিনীবত নয?",
+    "body": "কোনটি ন্যায়পরায়ণতার নৈতিক মূলনীতি নয়?",
     "options": [
-      "পুিস্কাি ও শাবস্তি সক্ষপ্টত্র িমতাি নীবত িপ্টযাগ",
-      "আইপ্টনি শািন",
-      "িুশািপ্টনি জনয উচ্চ বশবক্ষত কমণকতণা বনপ্টযাগ",
-      "অবধকাি ও িুপ্টযাপ্টগি সক্ষপ্টত্র িমতাি বনবিতকির্"
+      "পুরস্কার ও শাস্তির ক্ষেত্রে সমতার নীতি প্রয়োগ",
+      "আইনের শাসন",
+      "সুশাসনের জন্য উচ্চ শিক্ষিত কর্মকর্তা নিয়োগ",
+      "অধিকার ও সুযোগের ক্ষেত্রে সমতার নিশ্চিতকরণ"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2114,21 +2116,21 @@
   {
     "ref": "bcs37_q97",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সবকাবি চাকবিপ্টত িততাি মাপকাবি বক?",
+    "body": "সরকারি চাকরিতে সততার মাপকাঠি কি?",
     "options": [
-      "যো িমপ্টয অবফপ্টি আগমন ও অবফি তযাগ কিা",
-      "োপ্তবিক কাপ্টজ সকাপ্টনা অশিধ িুবিধা গ্রর্হ না কিা",
-      "বনপ্টমণাহ ও বনিপ্টপক্ষভাপ্টি অবপণত োবযত্ব যোবিবধ িম্পন্ন কিা",
-      "ঊধণিতন কতৃণপপ্টক্ষি সয সকাপ্টনা বনপ্টেণশ িবতপািন কিা"
+      "যথা সময়ে অফিসে আগমন ও অফিস ত্যাগ করা",
+      "দাপ্তরিক কাজে কোনো অবৈধ সুবিধা গ্রহণ না করা",
+      "নির্মোহ ও নিরপেক্ষভাবে অর্পিত দায়িত্ব যথাবিধি সম্পন্ন করা",
+      "ঊর্ধবতন কর্তৃপক্ষের যে কোনো নির্দেশ প্রতিপালন করা"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "যথাবিধি সম্পন্ন করা",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2136,21 +2138,21 @@
   {
     "ref": "bcs37_q98",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "তনবতক শবক্তি িধান উপাোন বক?",
+    "body": "নৈতিক শক্তির প্রধান উপাদান কি?",
     "options": [
-      "িততা ও বনষ্ঠা",
-      "কতণিযপিার্যতা",
-      "মাযা ও মমতা",
-      "উোিতা"
+      "সততা ও নিষ্ঠা",
+      "কর্তব্যপরায়ণতা",
+      "মায়া ও মমতা",
+      "উদারতা"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2158,21 +2160,21 @@
   {
     "ref": "bcs37_q99",
     "exam": "bcs-general",
-    "subject": "Ethics, Values & Governance",
-    "topic": "নৈতিকতা, মূল্যবোধ ও সুশাসন",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সুশাসন সবপ্টত িাপ্টেি িপ্টঙ্গ িুশীি িমাপ্টজি, \nসবকাপ্টসব িপ্টঙ্গ শাবিত জনগপ্র্টি, শািপ্টকি িপ্টঙ্গ শাবিপ্টতি \nিম্পকণ সিাঝায -উবক্তবি কাি?",
+    "body": "সুশাসন বলতে রাষ্ট্রের সঙ্গে সুশীল সমাজের, সরকারের সঙ্গে শাসিত জনগণের, শাসকের সঙ্গে শাসিতের সম্পর্ক বোঝায় -উক্তিটি কার?",
     "options": [
-      "এবিস্টসব",
-      "জন স্টু যািণ বমি",
-      "মযাককিনী",
-      "সমবকযাপ্টভবি"
+      "এরিস্টটল",
+      "জন স্টুয়ার্ট মিল",
+      "ম্যাককরনী",
+      "মেকিয়াভেলি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2180,21 +2182,21 @@
   {
     "ref": "bcs37_q100",
     "exam": "bcs-general",
-    "subject": "Ethics, Values & Governance",
-    "topic": "নৈতিকতা, মূল্যবোধ ও সুশাসন",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "জনর্গ, িাে ও িশািপ্টনি িাপ্টে ঘবনষ্ঠ িতযয হপ্টিা-",
+    "body": "জনগণ, রাষ্ট্র ও প্রশাসনের সাথে ঘনিষ্ঠ প্রত্যয় হলো-",
     "options": [
       "সুশাসন",
-      "আইপ্টনি শািন",
-      "িাজনীবত",
-      "মানিাবধকাি"
+      "আইনের শাসন",
+      "রাজনীতি",
+      "মানবাধিকার"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2202,13 +2204,13 @@
   {
     "ref": "bcs37_q101",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Choose the appropriate preposition in \nthe blank of the following sentence: \nThe family doesn't feel _____ going outing this \nseason.",
+    "body": "Choose the appropriate preposition in the blank of the following sentence: The family doesn't feel _____ going outing this season.",
     "options": [
       "in",
       "on",
@@ -2216,7 +2218,7 @@
       "of"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2224,13 +2226,13 @@
   {
     "ref": "bcs37_q102",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "fill in the blank with appropriate use of \ntense: I couldn't mend the computer myself, so I \n______ at a shop.",
+    "lang": "en",
+    "body": "fill in the blank with appropriate use of tense: I couldn't mend the computer myself, so I ______ at a shop.",
     "options": [
       "had it mended",
       "had it mend",
@@ -2238,7 +2240,7 @@
       "had mended"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2246,13 +2248,13 @@
   {
     "ref": "bcs37_q103",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "Use the appropriate article: \nI saw _____ one-eyed man when I was walking \non the road.",
+    "lang": "en",
+    "body": "Use the appropriate article: I saw _____ one-eyed man when I was walking on the road.",
     "options": [
       "a",
       "an",
@@ -2260,7 +2262,7 @@
       "no article is needed"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2268,12 +2270,12 @@
   {
     "ref": "bcs37_q104",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
+    "lang": "en",
     "body": "The word 'omnivorous' means :",
     "options": [
       "eating all types of food",
@@ -2282,7 +2284,7 @@
       "eating grass and plants only"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2291,12 +2293,12 @@
     "ref": "bcs37_q105",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Complete the following sentence \nchoosing the appropriate option: \nIt's raining cats and dogs, so----",
+    "body": "Complete the following sentence choosing the appropriate option: It's raining cats and dogs, so----",
     "options": [
       "Watch out for falling animals.",
       "Make sure you take an umbrella.",
@@ -2304,7 +2306,7 @@
       "Keep the windows open."
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2313,7 +2315,7 @@
     "ref": "bcs37_q106",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
@@ -2326,7 +2328,7 @@
       "A serious idea"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2335,12 +2337,12 @@
     "ref": "bcs37_q107",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "He worked with all sincerity. Here the \nphrase “with all sincerity” is _____.",
+    "body": "He worked with all sincerity. Here the phrase “with all sincerity” is _____.",
     "options": [
       "A noun phrase",
       "An adjective phrase",
@@ -2348,7 +2350,7 @@
       "An adverbial phrase"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2357,7 +2359,7 @@
     "ref": "bcs37_q108",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
@@ -2370,7 +2372,7 @@
       "None of the three"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2379,12 +2381,12 @@
     "ref": "bcs37_q109",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Which do you think is the nearest in \nmeaning to 'proviso':",
+    "body": "Which do you think is the nearest in meaning to 'proviso':",
     "options": [
       "sanction",
       "substitute",
@@ -2392,7 +2394,7 @@
       "directive"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2400,13 +2402,13 @@
   {
     "ref": "bcs37_q110",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "Cassandra is a night owl, so she doesn't \nusually get up until about:",
+    "lang": "en",
+    "body": "Cassandra is a night owl, so she doesn't usually get up until about:",
     "options": [
       "11 a.m",
       "11 p.m",
@@ -2414,7 +2416,7 @@
       "7 p.m"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2423,12 +2425,12 @@
     "ref": "bcs37_q111",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Select the word that is the most closely \nopposite in meaning to the capitalized word : \nDELETERIOUS-",
+    "body": "Select the word that is the most closely opposite in meaning to the capitalized word : DELETERIOUS-",
     "options": [
       "toxic",
       "spurious",
@@ -2436,7 +2438,7 @@
       "lethal"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2444,12 +2446,12 @@
   {
     "ref": "bcs37_q112",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
+    "lang": "en",
     "body": "Gerontion is a poem by _______.",
     "options": [
       "T. S Eliot",
@@ -2458,7 +2460,7 @@
       "Robert Browning"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2466,13 +2468,13 @@
   {
     "ref": "bcs37_q113",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "Fill in the blank. ''_______'' is \nShakespeare's last play.",
+    "lang": "en",
+    "body": "Fill in the blank. ''_______'' is Shakespeare's last play.",
     "options": [
       "As You Like It",
       "Macbeth",
@@ -2480,7 +2482,7 @@
       "Othello"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2489,12 +2491,12 @@
     "ref": "bcs37_q114",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Who has written the poem ''Elegy \nWritten in a Country Churchyard''?",
+    "body": "Who has written the poem ''Elegy Written in a Country Churchyard''?",
     "options": [
       "Thomas Gray",
       "P. B Shelley",
@@ -2502,7 +2504,7 @@
       "Y. B Yeats"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2511,7 +2513,7 @@
     "ref": "bcs37_q115",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
@@ -2524,7 +2526,7 @@
       "William Shakespeare"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "প্রশ্ন ১১৬. Shakespeare composed much of his plays in what sort of verse? ক) Alliterative খ) Sonnet form গ) Iambic pentameterঘ) Dactylic Hexameter সঠিক উত্তর: গ) Iambic pentameter",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2538,7 +2540,7 @@
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Shakespeare composed much of his \nplays in what sort of verse?",
+    "body": "Shakespeare composed much of his plays in what sort of verse?",
     "options": [
       "Alliterative",
       "Sonnet form",
@@ -2546,21 +2548,22 @@
       "অপশন 4"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
-    "cancelled": false
+    "cancelled": false,
+    "status": "draft"
   },
   {
     "ref": "bcs37_q117",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "The repetition of beginning consonant \nsound is known as ______.",
+    "lang": "en",
+    "body": "The repetition of beginning consonant sound is known as ______.",
     "options": [
       "personification",
       "onomatopoeia",
@@ -2568,7 +2571,7 @@
       "rhyme"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2577,12 +2580,12 @@
     "ref": "bcs37_q118",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Which of the following is not a poetic \ntradition?",
+    "body": "Which of the following is not a poetic tradition?",
     "options": [
       "The Epic",
       "The Comic",
@@ -2590,7 +2593,7 @@
       "the Tragic"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2599,7 +2602,7 @@
     "ref": "bcs37_q119",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
@@ -2612,7 +2615,7 @@
       "Haiku"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2621,7 +2624,7 @@
     "ref": "bcs37_q120",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
@@ -2634,7 +2637,7 @@
       "Charles Lamb"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2642,12 +2645,12 @@
   {
     "ref": "bcs37_q121",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
+    "lang": "en",
     "body": "Robert Browning was a _____ poet.",
     "options": [
       "Romantic",
@@ -2656,7 +2659,7 @@
       "Elizabethan"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2664,13 +2667,13 @@
   {
     "ref": "bcs37_q122",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "Othello gave Desdemona ______ as a \ntoken of love :",
+    "lang": "en",
+    "body": "Othello gave Desdemona ______ as a token of love :",
     "options": [
       "Ring",
       "Handkerchief",
@@ -2678,7 +2681,7 @@
       "Bangles"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2687,12 +2690,12 @@
     "ref": "bcs37_q123",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "P. B. Shelley's Adonais' is an elegy on \nthe death of _______.",
+    "body": "P. B. Shelley's Adonais' is an elegy on the death of _______.",
     "options": [
       "John Milton",
       "S. T. Coleridge",
@@ -2700,7 +2703,7 @@
       "Lord Byron"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2708,13 +2711,13 @@
   {
     "ref": "bcs37_q124",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "The comparison of unlike things using \nthe words like or as is known to be-",
+    "lang": "en",
+    "body": "The comparison of unlike things using the words like or as is known to be-",
     "options": [
       "metaphor",
       "simile",
@@ -2722,7 +2725,7 @@
       "personification"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2730,13 +2733,13 @@
   {
     "ref": "bcs37_q125",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "'Restoration period' in English \nliterature refers to -",
+    "lang": "en",
+    "body": "'Restoration period' in English literature refers to -",
     "options": [
       "1560",
       "1660",
@@ -2744,7 +2747,7 @@
       "1866"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2752,13 +2755,13 @@
   {
     "ref": "bcs37_q126",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "'The Sun Also Rises' is a novel written \nby-----",
+    "lang": "en",
+    "body": "'The Sun Also Rises' is a novel written by-----",
     "options": [
       "Charles Dickens",
       "Herman Melville",
@@ -2766,7 +2769,7 @@
       "Thomas Hardy"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2774,12 +2777,12 @@
   {
     "ref": "bcs37_q127",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
+    "lang": "en",
     "body": "Telephone : Cable : : Radio :?",
     "options": [
       "Microphone",
@@ -2788,7 +2791,7 @@
       "Wire"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2797,12 +2800,12 @@
     "ref": "bcs37_q128",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Find out the correct synonym of \n'TENUOUS'-",
+    "body": "Find out the correct synonym of 'TENUOUS'-",
     "options": [
       "Vital",
       "Thin",
@@ -2810,7 +2813,7 @@
       "Dangerous"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2819,12 +2822,12 @@
     "ref": "bcs37_q129",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Which of the following words is in \nsingular form?",
+    "body": "Which of the following words is in singular form?",
     "options": [
       "formulae",
       "agenda",
@@ -2832,7 +2835,7 @@
       "radius"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2841,7 +2844,7 @@
     "ref": "bcs37_q130",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
@@ -2854,7 +2857,7 @@
       "All of it are depended on you"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2863,12 +2866,12 @@
     "ref": "bcs37_q131",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "A rolling stone gathers no moss. The \ncomplex form of the sentence is ----",
+    "body": "A rolling stone gathers no moss. The complex form of the sentence is ----",
     "options": [
       "Since a stone is rolling, it gathers no moss.",
       "Though a stone rolls, it gathers no moss.",
@@ -2876,7 +2879,7 @@
       "A stone that rolls, gathers no moss."
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2884,13 +2887,13 @@
   {
     "ref": "bcs37_q132",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "A chart was ''appended'' to the report \nHere 'appended' means----",
+    "lang": "en",
+    "body": "A chart was ''appended'' to the report Here 'appended' means----",
     "options": [
       "changed",
       "removed",
@@ -2898,7 +2901,7 @@
       "shortened"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2906,13 +2909,13 @@
   {
     "ref": "bcs37_q133",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "The mother sat vigilantly beside the \nsick baby. Here 'vigilantly' is-",
+    "lang": "en",
+    "body": "The mother sat vigilantly beside the sick baby. Here 'vigilantly' is-",
     "options": [
       "a noun",
       "an adverb",
@@ -2920,7 +2923,7 @@
       "none of the three"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2928,13 +2931,13 @@
   {
     "ref": "bcs37_q134",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "The new offer of job was ''alluring'' \nHere 'alluring' means-----",
+    "lang": "en",
+    "body": "The new offer of job was ''alluring'' Here 'alluring' means-----",
     "options": [
       "unexpected",
       "tempting",
@@ -2942,7 +2945,7 @@
       "ordinary"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2950,13 +2953,13 @@
   {
     "ref": "bcs37_q135",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "“Who planted this tree here?” The \ncorrect passive voice of this sentence is-",
+    "body": "“Who planted this tree here?” The correct passive voice of this sentence is-",
     "options": [
       "By whom was the tree planted here?",
       "Who the tree had been planted hereby?",
@@ -2964,7 +2967,7 @@
       "By whom had the tree been planted here?"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2973,12 +2976,12 @@
     "ref": "bcs37_q136",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Frailty thy name is women. Here \n''Frailty''is :",
+    "body": "Frailty thy name is women. Here ''Frailty''is :",
     "options": [
       "A noun",
       "An adjective",
@@ -2986,7 +2989,7 @@
       "A verb"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2995,12 +2998,12 @@
     "ref": "bcs37_q137",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Education is ''enlightening'' Here \n'enlightening' is ----:",
+    "body": "Education is ''enlightening'' Here 'enlightening' is ----:",
     "options": [
       "A gerund",
       "A participle",
@@ -3008,7 +3011,7 @@
       "A finite verb"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3016,21 +3019,21 @@
   {
     "ref": "bcs37_q138",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনটি িাগধািা সিাঝায?",
+    "body": "কোনটি বাগধারা বোঝায়?",
     "options": [
-      "তচত্র িংক্রাবন্ত",
-      "সপৌষ িংক্রাবন্ত",
-      "বশপ্টি িংক্রাবন্ত",
-      "বশি-িংক্রাবন্ত"
+      "চৈত্র সংক্রান্তি",
+      "পৌষ সংক্রান্তি",
+      "শিরে সংক্রান্তি",
+      "শিব-সংক্রান্তি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3038,21 +3041,21 @@
   {
     "ref": "bcs37_q139",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনটি সমৌবিক শে?",
+    "body": "কোনটি মৌলিক শব্দ?",
     "options": [
-      "মানি",
-      "সগািাপ",
+      "মানব",
+      "গোলাপ",
       "একাঙ্ক",
-      "ধাতি"
+      "ধাতব"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3060,21 +3063,21 @@
   {
     "ref": "bcs37_q140",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলা িাবহপ্টতযি ইবতহাি বিষযক গ্রেিমূপ্টহি মপ্টধয \nকোনটি র্. মুহেে শহীেুল্লাহ ি সিখা?",
+    "body": "বাংলা সাহিত্যের ইতিহাস বিষয়ক গ্রন্থসমূহের মধ্যে কোনটি ড. মুহম্মদ শহীদুল্লাহ্ র লেখা?",
     "options": [
-      "িঙ্গভাষা ও িাবহতয",
-      "িাঙ্গািা িাবহপ্টতযি ইবতহাি",
-      "বাংলা িাবহপ্টতযি ইবতিৃত্ত",
-      "বাংলা িাবহপ্টতযি কো"
+      "বঙ্গভাষা ও সাহিত্য",
+      "বাঙ্গালা সাহিত্যের ইতিহাস",
+      "বাংলা সাহিত্যের ইতিবৃত্ত",
+      "বাংলা সাহিত্যের কথা"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3082,21 +3085,21 @@
   {
     "ref": "bcs37_q141",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ভাষা আপ্টন্দািনবভবত্তক িেম পবত্রকাি িম্পােপ্টকি \nনাম কী?",
+    "body": "ভাষা আন্দোলনভিত্তিক প্রথম পত্রিকার সম্পাদকের নাম কী?",
     "options": [
-      "মুনীি সচৌধুিী",
-      "হািান হাবফজুি িহমান",
-      "শামিুি িাহমান",
-      "গাজীউি হক"
+      "মুনীর চৌধুরী",
+      "হাসান হাফিজুর রহমান",
+      "শামসুর রাহমান",
+      "গাজীউল হক"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3104,21 +3107,21 @@
   {
     "ref": "bcs37_q142",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনপ্টচি সকান িানানগুপ্টেি সবগুপ্টিা িানানই অশুদ্ধ?",
+    "body": "নিচের কোন বানানগুচ্ছের সবগুলো বানানই অশুদ্ধ?",
     "options": [
-      "বনক্র্ক, িূচগ্র, অনুধণি",
-      "অনূিণি, ঊধণিগামী, শুদ্ধযশুবদ্ধ",
-      "ভূবিভূবি, ভূূঁবড়ওযািা, মাতৃশ্বিা",
-      "িাবন, বিবকির্, েুিবতক্রময"
+      "নিক্কণ, সূচগ্র, অনুর্ধব",
+      "অনূর্বর, ঊর্ধবগামী, শুদ্ধ্যশুদ্ধি",
+      "ভূরিভূরি, ভূঁড়িওয়ালা, মাতৃশ্বসা",
+      "রানি, বিকিরণ, দুরতিক্রম্য"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3126,21 +3129,21 @@
   {
     "ref": "bcs37_q143",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাপ্টেপ্টশ 'গ্রাম বেপ্টযিাি'- এি সবতণক সক?",
+    "body": "বাংলাদেশে 'গ্রাম থিয়েটার'- এর প্রবর্তক কে?",
     "options": [
-      "মমতাজউেেীন আহমে",
-      "আেুল্লাহ আি মামুন",
-      "সিবিম আি েীন",
-      "িাপ্টমন্দু মজুমোি"
+      "মমতাজউদদীন আহমদ",
+      "আব্দুল্লাহ আল মামুন",
+      "সেলিম আল দীন",
+      "রামেন্দুমজুমদার"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3148,21 +3151,21 @@
   {
     "ref": "bcs37_q144",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'িমবভিযাহাপ্টি' শেবসব অেণ কী?",
+    "body": "'সমভিব্যাহারে' শব্দটির অর্থ কী?",
     "options": [
-      "একাগ্রতায",
-      "িমান িযিহাপ্টি",
-      "িম ভািনায",
-      "একপ্টযাপ্টগ"
+      "একাগ্রতায়",
+      "সমান ব্যবহারে",
+      "সম ভাবনায়",
+      "একযোগে"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3170,21 +3173,21 @@
   {
     "ref": "bcs37_q145",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "শৃঙ্গাি সবপ্টক তিষ্ণি পোিবিপ্টত কী সব িপ্টি?",
+    "body": "শৃঙ্গার রসকে বৈষ্ণব পদাবলিতে কী রস বলে?",
     "options": [
-      "ভাসবি",
-      "মধুি সব",
-      "সিমসব",
-      "িীিাসব"
+      "ভাবরস",
+      "মধুর রস",
+      "প্রেমরস",
+      "লীলারস"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3192,21 +3195,21 @@
   {
     "ref": "bcs37_q146",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "র্. মুহেে শহীেুল্লাহ িম্পাবেত চযণাপে বিষযক \nগ্রপ্টেি নাম কী?",
+    "body": "ড. মুহম্মদ শহীদুল্লাহ্ সম্পাদিত চর্যাপদ বিষয়ক গ্রন্থের নাম কী?",
     "options": [
       "Buddhist Mystic Songs",
-      "চযণাগীবতকা",
-      "চযণাগীবতপ্টকাষ",
-      "হাজাি িছপ্টসব পুিার্ বাংলা ভাষায সিৌদ্ধগান ও সোহা"
+      "চর্যাগীতিকা",
+      "চর্যাগীতিকোষ",
+      "হাজার বছরের পুরাণ বাংলা ভাষায় বৌদ্ধগান ও দোহা"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3214,21 +3217,21 @@
   {
     "ref": "bcs37_q147",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'পূর্ণিঙ্গ গীবতকা'ি সিাকপািািমূপ্টহি িংগ্রাহক সক?",
+    "body": "'পূর্ববঙ্গ গীতিকা'র লোকপালাসমূহের সংগ্রাহক কে?",
     "options": [
-      "েবক্র্ষাসবন বমত্র মজুমোি",
-      "হসবিাে শাস্ত্রী",
-      "চেকু মাি সে",
-      "েীপ্টনশচে সিন"
+      "দক্ষিণারঞ্জন মিত্র মজুমদার",
+      "হরপ্রসাদ শাস্ত্রী",
+      "চন্দ্রকুমার দে",
+      "দীনেশচন্দ্র সেন"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3236,21 +3239,21 @@
   {
     "ref": "bcs37_q148",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'জপ্টি-স্থপ্টি' কী িমাি?",
+    "body": "'জলে-স্থলে' কী সমাস?",
     "options": [
-      "িমােণক িন্দ্ব",
-      "বিপিীতােণক িন্দ্ব",
-      "অিুক িন্দ্ব",
-      "একপ্টশষ িন্দ্ব"
+      "সমার্থক দ্বন্দ্ব",
+      "বিপরীতার্থক দ্বন্দ্ব",
+      "অলুক দ্বন্দ্ব",
+      "একশেষ দ্বন্দ্ব"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3258,21 +3261,21 @@
   {
     "ref": "bcs37_q149",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'ঔ' সকান ধিপ্টনি স্বিধ্ববন?",
+    "body": "'ঔ' কোন ধরনের স্বরধ্বনি?",
     "options": [
-      "সযৌবগক স্বিধ্ববন",
-      "তাসবয স্বিধ্ববন",
-      "বমবিত স্বিধ্ববন",
-      "সকাপ্টনাবি নয"
+      "যৌগিক স্বরধ্বনি",
+      "তালব্য স্বরধ্বনি",
+      "মিলিত স্বরধ্বনি",
+      "কোনোটি নয়"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3280,21 +3283,21 @@
   {
     "ref": "bcs37_q150",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'বিস্মযাপন্ন' িমস্ত পেবসব িবিক িযাসবাকয \nকোনটি?",
+    "body": "'বিস্ময়াপন্ন' সমস্ত পদটির সঠিক ব্যাসবাক্য কোনটি?",
     "options": [
-      "বিস্ময িািা আপন্ন",
-      "বিস্মপ্টয আপন্ন",
-      "বিস্মযপ্টক আপন্ন",
-      "বিস্মপ্টয সয আপন্ন"
+      "বিস্ময় দ্বারা আপন্ন",
+      "বিস্ময়ে আপন্ন",
+      "বিস্ময়কে আপন্ন",
+      "বিস্ময়ে যে আপন্ন"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3302,21 +3305,21 @@
   {
     "ref": "bcs37_q151",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কবি কাযপ্টকািাে িচবত 'মহািশান' কাপ্টিযি \nঐবতহাবিক পিভূবম বছি ----",
+    "body": "কবি কায়কোবাদ রচতি 'মহাশ্মশান' কাব্যের ঐতিহাসিক পটভূমি ছিল ----",
     "options": [
-      "পিাশীি যুদ্ধ",
-      "তৃতীয পাবনপপ্টেি যুদ্ধ",
-      "১৯৫৭ িাপ্টসব বিপাহী বিপ্টিাহ",
-      "বছযাত্তপ্টসব মন্বন্তি"
+      "পলাশীর যুদ্ধ",
+      "তৃতীয় পানিপথের যুদ্ধ",
+      "১৯৫৭ সালের সিপাহী বিদ্রোহ",
+      "ছিয়াত্তরের মন্বন্তর"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3324,21 +3327,21 @@
   {
     "ref": "bcs37_q152",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "তিযে মুস্তফা বসবাপ্টজি গ্রে কোনটি?",
+    "body": "সৈয়দ মুস্তফা সিরাজের গ্রন্থ কোনটি?",
     "options": [
-      "িহু চণ্ডাপ্টসব হাড়",
-      "তকিতণ খণ্ড",
-      "ফু ি িউ",
-      "অিীক মানুষ"
+      "রহুচণ্ডালের হাড়",
+      "কৈবর্ত খণ্ড",
+      "ফুল বউ",
+      "অলীক মানুষ"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3347,12 +3350,12 @@
     "ref": "bcs37_q153",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সবীেনাে িাকু প্টসব 'গীতািবি' কাব্য িকাবশত হয় \nকত িপ্টন?",
+    "body": "রবীন্দ্রনাথ ঠাকুরের 'গীতাঞ্জলি' কাব্য প্রকাশিত হয় কত সনে?",
     "options": [
       "১৯১০",
       "১৯১১",
@@ -3360,7 +3363,7 @@
       "১৯১৩"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3369,20 +3372,20 @@
     "ref": "bcs37_q154",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'আিাপ্টেি শািণ' কবিতাি সিখক সক?",
+    "body": "'আসাদের শার্ট' কবিতার লেখক কে?",
     "options": [
-      "আি মাহমুে",
-      "আেুি মান্নান তিযে",
-      "অবময চক্রিতণী",
-      "শামিুি িাহমান"
+      "আল মাহমুদ",
+      "আব্দুল মান্নান সৈয়দ",
+      "অমিয় চক্রবর্তী",
+      "শামসুর রাহমান"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3390,21 +3393,21 @@
   {
     "ref": "bcs37_q155",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'চযণাচযণবিবনিয' --এি অেণ কী?",
+    "body": "'চর্যাচর্যবিনিশ্চয়' --এর অর্থ কী?",
     "options": [
-      "কোনটি চযণাগান, আি কোনটি নয",
-      "কোনটি আচির্ীয, আি কোনটি নয",
-      "কোনটি চিাচপ্টসব, আি কোনটি নয",
-      "কোনটি আচাপ্টযণি, আি কোনটি নয"
+      "কোনটি চর্যাগান, আর কোনটি নয়",
+      "কোনটি আচরণীয়, আর কোনটি নয়",
+      "কোনটি চরাচরের, আর কোনটি নয়",
+      "কোনটি আচার্যের, আর কোনটি নয়"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3413,20 +3416,20 @@
     "ref": "bcs37_q156",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'প্টগািক্ষ বিজয' কাব্য সকান ধমণমপ্টতি কাবহবন \nঅসবম্বপ্টন সিখা?",
+    "body": "'গোরক্ষ বিজয়' কাব্য কোন ধর্মমতের কাহিনি অবলম্বনে লেখা?",
     "options": [
-      "তশিধমণ",
-      "সিৌদ্ধ িহজযান",
-      "নােধমণ",
-      "সকাপ্টনাবি নয"
+      "শৈবধর্ম",
+      "বৌদ্ধ সহজযান",
+      "নাথধর্ম",
+      "কোনোটি নয়"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3434,21 +3437,21 @@
   {
     "ref": "bcs37_q157",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "শাক্ত পোিবসব জনয বিখ্যাত-",
+    "body": "শাক্ত পদাবলির জন্য বিখ্যাত-",
     "options": [
-      "িামবনবধ গুপ্ত",
-      "োশিবে িায",
-      "এন্টবন বফবিবঙ্গ",
-      "িামসবাে সিন"
+      "রামনিধি গুপ্ত",
+      "দাশরথি রায়",
+      "এন্টনি ফিরিঙ্গি",
+      "রামপ্রসাদ সেন"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3456,21 +3459,21 @@
   {
     "ref": "bcs37_q158",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'অপ্টিৌবকক ইবস্টমাি' গ্রপ্টেি িচবযতা সক?",
+    "body": "'অলৌকিক ইস্টিমার' গ্রন্থের রচয়িতা কে?",
     "options": [
-      "হুমাযুন আজাে",
-      "সহিাি হাবফজ",
-      "আিাে সচৌধুিী",
-      "িবফক আজাে"
+      "হুমায়ুন আজাদ",
+      "হেলাল হাফিজ",
+      "আসাদ চৌধুরী",
+      "রফিক আজাদ"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3478,21 +3481,21 @@
   {
     "ref": "bcs37_q159",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'Custom' শপ্টেি পবিভাষা কোনটি যোেণ?",
+    "body": "'Custom' শব্দের পরিভাষা কোনটি যথার্থ?",
     "options": [
       "আইন",
-      "িো",
+      "প্রথা",
       "শুল্ক",
-      "িাজস্বনীবত"
+      "রাজস্বনীতি"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3501,20 +3504,20 @@
     "ref": "bcs37_q160",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কাজী নজরুি ইসবাম তাূঁি কবিতায \n'কািাপাহাড়'- সক স্মির্ কপ্টিপ্টছন সকন?",
+    "body": "কাজী নজরুল ইসলাম তাঁর কবিতায় 'কালাপাহাড়'- কে স্মরণ করেছেন কেন?",
     "options": [
-      "রাহ্র্মযযুপ্টগ নি মুিবিম বছপ্টিন িপ্টি",
-      "ইসবাপ্টমি গুর্কীতণন কপ্টিবছপ্টিন িপ্টি",
-      "িাচীন বাংলাি বিপ্টিাহী বছপ্টিন িপ্টি",
-      "িচবিত ধমণ ও িংস্কাি-বিপ্টিষী বছপ্টিন িপ্টি"
+      "ব্রাহ্মণ্যযুগে নব মুসলিম ছিলেন বলে",
+      "ইসলামের গুণকীর্তন করেছিলেন বলে",
+      "প্রাচীন বাংলার বিদ্রোহী ছিলেন বলে",
+      "প্রচলিত ধর্ম ও সংস্কার-বিদ্বেষী ছিলেন বলে"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3522,21 +3525,21 @@
   {
     "ref": "bcs37_q161",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'িেীপ বনবিযা সগি!' -এ বিখ্যাত ির্ণনা সকান \nউপনযাপ্টসব?",
+    "body": "'প্রদীপ নিবিয়া গেল!' -এ বিখ্যাত বর্ণনা কোন উপন্যাসের?",
     "options": [
-      "িবঙ্কমচপ্টেি 'বিষিৃক্ষ'",
-      "সবীেনাপ্টেি 'প্টচাপ্টখি িাবি'",
-      "িবঙ্কমচপ্টেি 'কপািকু ণ্ডিা'",
-      "সবীেনাপ্টেি 'প্টযাগাপ্টযাগ'"
+      "বঙ্কিমচন্দ্রের 'বিষবৃক্ষ'",
+      "রবীন্দ্রনাথের 'চোখের বালি'",
+      "বঙ্কিমচন্দ্রের 'কপালকুণ্ডলা'",
+      "রবীন্দ্রনাথের 'যোগাযোগ'"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3544,21 +3547,21 @@
   {
     "ref": "bcs37_q162",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'মাতৃভাষায যাহাি ভবক্ত নাই সি মানুষ নপ্টহ।' -কাি উবক্ত?",
+    "body": "'মাতৃভাষায় যাহার ভক্তি নাই সে মানুষ নহে।' -কার উক্তি?",
     "options": [
-      "মীি মশাসবফ সহাপ্টিপ্টনি",
-      "ইিমাইি সহাপ্টিন বসবাজীি",
-      "সবীেনাে িাকু প্টসব",
-      "কাজী নজরুি ইসবাম"
+      "মীর মশাররফ হোসেনের",
+      "ইসমাইল হোসেন সিরাজীর",
+      "রবীন্দ্রনাথ ঠাকুরের",
+      "কাজী নজরুল ইসলাম"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3566,21 +3569,21 @@
   {
     "ref": "bcs37_q163",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িপ্টগণি সকান ির্ণিমূপ্টহি ধ্ববন মহািার্ধ্ববন?",
+    "body": "বর্গের কোন বর্ণসমূহের ধ্বনি মহাপ্রাণধ্বনি?",
     "options": [
-      "তৃতীয ির্ণ",
-      "বিতীয ও চতুেণ ির্ণ",
-      "িেম ও বিতীয ির্ণ",
-      "বিতীয ও তৃতীয ির্ণ"
+      "তৃতীয় বর্ণ",
+      "দ্বিতীয় ও চতুর্থ বর্ণ",
+      "প্রথম ও দ্বিতীয় বর্ণ",
+      "দ্বিতীয় ও তৃতীয় বর্ণ"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3588,21 +3591,21 @@
   {
     "ref": "bcs37_q164",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'কোকাি' শেবি সকান উপিগণপ্টযাপ্টগ গবিত?",
+    "body": "'কদাকার' শব্দটি কোন উপসর্গযোগে গঠিত?",
     "options": [
-      "সেবশ উপিগণপ্টযাপ্টগ",
-      "বিপ্টেবশ উপিগণপ্টযাপ্টগ",
-      "িংস্কৃ ত উপিগণপ্টযাপ্টগ",
-      "সকাপ্টনাবি নয"
+      "দেশি উপসর্গযোগে",
+      "বিদেশি উপসর্গযোগে",
+      "সংস্কৃত উপসর্গযোগে",
+      "কোনোটি নয়"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3610,21 +3613,21 @@
   {
     "ref": "bcs37_q165",
     "exam": "bcs-general",
-    "subject": "Mathematics & Reasoning",
-    "topic": "গাণিতিক যুক্তি ও বাস্তব সংখ্যা",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মুক্তাক্ষি এক মাত্রা এিং িদ্ধাক্ষিও এক মাত্রা \nর্গনা কিা হয় সকান ছপ্টন্দ?",
+    "body": "মুক্তাক্ষর এক মাত্রা এবং বদ্ধাক্ষরও এক মাত্রা গণনা করা হয় কোন ছন্দে?",
     "options": [
-      "মাত্রািৃত্ত",
-      "অক্ষসবৃত্ত",
+      "মাত্রাবৃত্ত",
+      "অক্ষরবৃত্ত",
       "মুক্তক",
-      "স্বসবৃত্ত"
+      "স্বরবৃত্ত"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3632,21 +3635,21 @@
   {
     "ref": "bcs37_q166",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনপ্টচি কোনটি অশুদ্ধ?",
+    "body": "নিচের কোনটি অশুদ্ধ?",
     "options": [
-      "অবহংি – িবহংি",
-      "সবন্ন - বিষন্ন",
-      "সোষী – বনপ্টেণাষী",
-      "বনষ্পাপ - পাবপনী"
+      "অহিংস – সহিংস",
+      "প্রসন্ন - বিষন্ন",
+      "দোষী – নির্দোষী",
+      "নিষ্পাপ - পাপিনী"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3654,21 +3657,21 @@
   {
     "ref": "bcs37_q167",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'কপ্টল্লাি' পবত্রকাি িেম িম্পােপ্টকি নাম কী?",
+    "body": "'কল্লোল' পত্রিকার প্রথম সম্পাদকের নাম কী?",
     "options": [
-      "িুদ্ধপ্টেি সবু",
-      "েীপ্টনশসবন োশ",
-      "িজনীকান্ত োি",
-      "সিপ্টমে বমত্র"
+      "বুদ্ধদেব বসু",
+      "দীনেশরঞ্জন দাশ",
+      "সজনীকান্ত দাস",
+      "প্রেমেন্দ্র মিত্র"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3676,21 +3679,21 @@
   {
     "ref": "bcs37_q168",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'আবম এ কো, এ িযো, িুখ িযাকু িতা কাহাি \nচির্তপ্টি বেি বনছবন।।'- সবীেনাপ্টেি এ গাপ্টন 'বনছবন' কী \nঅপ্টেণ িযিহৃত হপ্টযপ্টছ?",
+    "body": "'আমি এ কথা, এ ব্যথা, সুখ ব্যাকুলতা কাহার চরণতলে দিব নিছনি।।'- রবীন্দ্রনাথের এ গানে 'নিছনি' কী অর্থে ব্যবহৃত হয়েছে?",
     "options": [
-      "অপপ্টনােন অপ্টেণ",
-      "পূজা অপ্টেণ",
-      "বসবাপ্টনা অপ্টেণ",
-      "উপহাি অপ্টেণ"
+      "অপনোদন অর্থে",
+      "পূজা অর্থে",
+      "বিলানো অর্থে",
+      "উপহার অর্থে"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3698,21 +3701,21 @@
   {
     "ref": "bcs37_q169",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'ধমণ সাধারণ সিাপ্টকি িংস্কৃ বত, আি িংস্কৃ বত \nবশবক্ষত মাবজণত সিাপ্টকি ধমণ।'- সক িপ্টিপ্টছন?",
+    "body": "'ধর্ম সাধারণ লোকের সংস্কৃতি, আর সংস্কৃতি শিক্ষিত মার্জিত লোকের ধর্ম।'- কে বলেছেন?",
     "options": [
-      "সমাতাপ্টহি সহাপ্টিন সচৌধুিী",
-      "িাপ্টমেিুন্দি বত্রপ্টিেী",
-      "িমে সচৌধুিী",
-      "কাজী আেুি ওেুে"
+      "মোতাহের হোসেন চৌধুরী",
+      "রামেন্দ্রসুন্দর ত্রিবেদী",
+      "প্রমথ চৌধুরী",
+      "কাজী আব্দুল ওদুদ"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3720,21 +3723,21 @@
   {
     "ref": "bcs37_q170",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সকান িাকযবি শুদ্ধ?",
+    "body": "কোন বাক্যটি শুদ্ধ?",
     "options": [
-      "আপবন স্বপবসবাপ্টি আমবিত।",
-      "তাি কো শুপ্টন আবম আিাযণাবন্বত হিাম।",
-      "সতামাি পিশ্রীকাতিতায আবম মুগ্ধ।",
-      "সিবেন সেপ্টক বতবন সিখান আি যায না।"
+      "আপনি স্বপরিবারে আমন্ত্রিত।",
+      "তার কথা শুনে আমি আশ্চার্যান্বিত হলাম।",
+      "তোমার পরশ্রীকাতরতায় আমি মুগ্ধ।",
+      "সেদিন থেকে তিনি সেখান আর যায় না।"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3743,20 +3746,20 @@
     "ref": "bcs37_q171",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
+    "lang": "en",
     "body": "Ode কী?",
     "options": [
-      "সশাককবিতা",
+      "শোককবিতা",
       "পত্রকাব্য",
       "খণ্ড কবিতা",
-      "সকািািগান"
+      "কোরাসগান"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3764,21 +3767,21 @@
   {
     "ref": "bcs37_q172",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মুহােে আিেুি হাই িবচত ধ্ববনবিজ্ঞান বিষযক \nগ্রপ্টেি নাম কী?",
+    "body": "মুহাম্মদ আবদুল হাই রচিত ধ্বনিবিজ্ঞান বিষয়ক গ্রন্থের নাম কী?",
     "options": [
-      "বাংলা ধ্ববনবিজ্ঞান",
-      "আধুবনক বাংলা ধ্ববনবিজ্ঞান",
-      "ধ্ববনবিজ্ঞাপ্টনি কো",
-      "ধ্ববনবিজ্ঞান ও বাংলা ধ্ববনতত্ত্ব"
+      "বাংলা ধ্বনিবিজ্ঞান",
+      "আধুনিক বাংলা ধ্বনিবিজ্ঞান",
+      "ধ্বনিবিজ্ঞানের কথা",
+      "ধ্বনিবিজ্ঞান ও বাংলা ধ্বনিতত্ত্ব"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3786,21 +3789,21 @@
   {
     "ref": "bcs37_q173",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনটি 'অবগ্ন'ি িমােণক শে নয?",
+    "body": "কোনটি 'অগ্নি'র সমার্থক শব্দ নয়?",
     "options": [
-      "পািক",
-      "িবহ্ন",
+      "পাবক",
+      "বহ্নি",
       "হুতাশন",
-      "িজ্ববিত"
+      "প্রজ্বলিত"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3808,13 +3811,13 @@
   {
     "ref": "bcs37_q174",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সকান িানানবি শুদ্ধ?",
+    "body": "কোন বানানটি শুদ্ধ?",
     "options": [
       "Achivement",
       "Acheivment",
@@ -3822,7 +3825,7 @@
       "Acheivement"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3830,21 +3833,21 @@
   {
     "ref": "bcs37_q175",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বিভা : বকির্ : : িুিবিত :?",
+    "body": "বিভা : কিরণ : : সুবলিত :?",
     "options": [
-      "িুবিবেত",
-      "িুগবিত",
-      "িুবিনীত",
-      "বিবধত"
+      "সুবিদিত",
+      "সুগঠিত",
+      "সুবিনীত",
+      "বিধিত"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3852,13 +3855,13 @@
   {
     "ref": "bcs37_q176",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "If LOYAL is coded as 'JOWAJ', then \nPRONE is coded as ----",
+    "lang": "en",
+    "body": "If LOYAL is coded as 'JOWAJ', then PRONE is coded as ----",
     "options": [
       "QRPNF",
       "NRMND",
@@ -3866,7 +3869,7 @@
       "NRMNC"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3874,13 +3877,13 @@
   {
     "ref": "bcs37_q177",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "10% মুনাফায 3000 িাকা এিং 8% মুনাফায \n2000 িাকা বিবনপ্টযাগ কিপ্টি সমাি মূিধপ্টনি উপি গপ্টড় \nশতকিা কত হাপ্টি মুনাফা পাওযা যাপ্টি?",
+    "body": "10% মুনাফায় 3000 টাকা এবং 8% মুনাফায় 2000 টাকা বিনিয়োগ করলে মোট মূলধনের উপর গড়ে শতকরা কত হারে মুনাফা পাওয়া যাবে?",
     "options": [
       "9%",
       "9.2%",
@@ -3888,7 +3891,7 @@
       "8.2%"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3896,13 +3899,13 @@
   {
     "ref": "bcs37_q178",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "100 িাকায 10 বি র্বম বকপ্টন 100 িাকায 8 বি \nর্বম বিক্রয কিপ্টি শতকিা িাভ কত হপ্টি?",
+    "body": "100 টাকায় 10 টি ডিম কিনে 100 টাকায় 8 টি ডিম বিক্রয় করলে শতকরা লাভ কত হবে?",
     "options": [
       "16%",
       "20%",
@@ -3910,7 +3913,7 @@
       "28%"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3918,13 +3921,13 @@
   {
     "ref": "bcs37_q179",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "েুই অংক বিবশষ্ট্ একবি িংখযা, অংকিপ্টযি স্থান \nবিবনমপ্টযি ফপ্টি 54 িৃবদ্ধ পায। অংক েুবসব সযাগফি 12 হপ্টি \nিংখযাবি কত?",
+    "body": "দুই অংক বিশিষ্ট একটি সংখ্যা, অংকদ্বয়ের স্থান বিনিময়ের ফলে 54 বৃদ্ধি পায়। অংক দুটির যোগফল 12 হলে সংখ্যাটি কত?",
     "options": [
       "57",
       "75",
@@ -3932,7 +3935,7 @@
       "93"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3940,13 +3943,13 @@
   {
     "ref": "bcs37_q180",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একবি িমান্তি অনুক্রপ্টমি সাধারণ অন্তি 10 এিং \n6-তম পেবি 52 হপ্টি 15-তম পেবি--",
+    "body": "একটি সমান্তর অনুক্রমের সাধারণ অন্তর 10 এবং 6-তম পদটি 52 হলে 15-তম পদটি--",
     "options": [
       "140",
       "142",
@@ -3954,7 +3957,7 @@
       "150"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3962,13 +3965,13 @@
   {
     "ref": "bcs37_q181",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একবি গুপ্র্টাত্তি অনুক্রপ্টম তৃতীয পেবি 20 এিং \nষষ্ঠ (6-তম) পেবি 160 হপ্টি িেম পেবি-----",
+    "body": "একটি গুণোত্তর অনুক্রমে তৃতীয় পদটি 20 এবং ষষ্ঠ (6-তম) পদটি 160 হলে প্রথম পদটি-----",
     "options": [
       "5",
       "10",
@@ -3976,7 +3979,7 @@
       "8"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3984,21 +3987,21 @@
   {
     "ref": "bcs37_q182",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "17 সি.বম., 15 সি.বম., 8 সি.বম িাহু বিবশষ্ট্ \nবত্রভুজবি হপ্টি ----",
+    "body": "17 সে.মি., 15 সে.মি., 8 সে.মি বাহুবিশিষ্ট ত্রিভুজটি হবে ----",
     "options": [
-      "িমিাহু",
-      "িমবসবাহু",
-      "িমপ্টকার্ী",
-      "স্থূিপ্টকার্ী"
+      "সমবাহু",
+      "সমদ্বিবাহু",
+      "সমকোণী",
+      "স্থূলকোণী"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4006,13 +4009,13 @@
   {
     "ref": "bcs37_q183",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "13 সিবম িযািাধণ বিবশষ্ট্ িৃপ্টত্তি একবি জযা- এি \nতেঘণয 24 সিবম হপ্টি সকে সেপ্টক উক্ত জযা- এি িম্ব েূিত্ব \nকত সিবম?",
+    "body": "13 সেমি ব্যাসার্ধ বিশিষ্ট বৃত্তের একটি জ্যা- এর দৈর্ঘ্য 24 সেমি হলে কেন্দ্র থেকে উক্ত জ্যা- এর লম্ব দূরত্ব কত সেমি?",
     "options": [
       "3",
       "4",
@@ -4020,7 +4023,7 @@
       "6"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4028,13 +4031,13 @@
   {
     "ref": "bcs37_q184",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "10 বি বজবনপ্টসব মপ্টধয 2 বি এক জাতীয এিং \nিাবকগুপ্টিা বভন্ন বভন্ন বজবনি। ঐ বজবনিগুপ্টিা সেপ্টক িবতিাপ্টি \n5 বি বনপ্টয কত িকাপ্টি িাছাই কিা যায?",
+    "body": "10 টি জিনিসের মধ্যে 2 টি এক জাতীয় এবং বাকিগুলো ভিন্ন ভিন্ন জিনিস। ঐ জিনিসগুলো থেকে প্রতিবারে 5 টি নিয়ে কত প্রকারে বাছাই করা যায়?",
     "options": [
       "170",
       "182",
@@ -4042,7 +4045,7 @@
       "192"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4050,21 +4053,21 @@
   {
     "ref": "bcs37_q185",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সভাি সসবায আপবন সিড়াপ্টত সসব হপ্টযপ্টছন। সসব \nহওযাি িময িূযণ আপনাি িামপ্টন বছি। বকছুক্র্ষ পপ্টি \nআপবন িামবেপ্টক ঘুিপ্টিন, কপ্টযক বমবনি পপ্টি আপবন \nর্ানবেপ্টক ঘুিপ্টিন। এখন আপনাি মুখ সকানবেপ্টক?",
+    "body": "ভোর বেলায় আপনি বেড়াতে বের হয়েছেন। বের হওয়ার সময় সূর্য আপনার সামনে ছিল। কিছুক্ষণ পরে আপনি বামদিকে ঘুরলেন, কয়েক মিনিট পরে আপনি ডানদিকে ঘুরলেন। এখন আপনার মুখ কোনদিকে?",
     "options": [
-      "পূর্ণ",
-      "পবিম",
-      "উত্তি",
-      "েবক্র্ষ"
+      "পূর্ব",
+      "পশ্চিম",
+      "উত্তর",
+      "দক্ষিণ"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4072,21 +4075,21 @@
   {
     "ref": "bcs37_q186",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একবি সমািা ও একবি বচকন হাতিওযািা স্ক্রু-\nোইভাি বেপ্টয একই মাপ্টপি েুবি স্ক্রু-প্টক কািপ্টিাপ্র্টণি বভতপ্টি \nিমান গভীিতায িপ্টিশ কিাপ্টত চাইপ্টি কোনটি ঘিপ্টি?",
+    "body": "একটি মোটা ও একটি চিকন হাতলওয়ালা স্ক্রু- ড্রাইভার দিয়ে একই মাপের দুটি স্ক্রু-কে কাঠবোর্ডের ভিতরে সমান গভীরতায় প্রবেশ করাতে চাইলে কোনটি ঘটবে?",
     "options": [
-      "সমািা হাতপ্টসব োইভািপ্টক সিবশিাি ঘুিাপ্টত হপ্টি",
-      "বচকন হাতপ্টসব োইভািপ্টক সিবশিাি ঘুিাপ্টত হপ্টি",
-      "েু'বিপ্টক একই িংখযকিাি ঘুিাপ্টত হপ্টি",
-      "সকাপ্টনাবিই নয"
+      "মোটা হাতলের ড্রাইভারকে বেশিবার ঘুরাতে হবে",
+      "চিকন হাতলের ড্রাইভারকে বেশিবার ঘুরাতে হবে",
+      "দু'টিকে একই সংখ্যকবার ঘুরাতে হবে",
+      "কোনোটিই নয়"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4094,13 +4097,13 @@
   {
     "ref": "bcs37_q187",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "৫-এি কত শতাংশ ৭ হপ্টি ?",
+    "body": "৫-এর কত শতাংশ ৭ হবে ?",
     "options": [
       "৪০",
       "১২৫",
@@ -4108,7 +4111,7 @@
       "১৪০"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4116,8 +4119,8 @@
   {
     "ref": "bcs37_q188",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
@@ -4130,7 +4133,7 @@
       "৬.৪০"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4138,21 +4141,21 @@
   {
     "ref": "bcs37_q189",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সকাপ্টনা সনৌকাপ্টক সিবশ গবতপ্টত চািাপ্টত হপ্টি, তসবা \nিযিহাি কিপ্টত হপ্টি -",
+    "body": "কোনো নৌকাকে বেশি গতিতে চালাতে হলে, বৈঠা ব্যবহার করতে হবে -",
     "options": [
-      "বপছপ্টন",
-      "িামপ্টন",
-      "র্ান পাপ্টশ্বণ",
-      "িাম পাপ্টশ্বণ"
+      "পিছনে",
+      "সামনে",
+      "ডান পার্শ্বে",
+      "বাম পার্শ্বে"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4160,21 +4163,21 @@
   {
     "ref": "bcs37_q190",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "২০০৯ িাপ্টসব ২৮ আগস্ট শুক্রিাি বছি। ঐ \nিছপ্টসব ১ অপ্টটাসব বক িাি বছি।",
+    "body": "২০০৯ সালের ২৮ আগস্ট শুক্রবার ছিল। ঐ বছরের ১ অক্টোবর কি বার ছিল।",
     "options": [
-      "িুধিাি",
-      "িৃহিবতিাি",
-      "শুক্রিাি",
-      "শবনিাি"
+      "বুধবার",
+      "বৃহস্পতিবার",
+      "শুক্রবার",
+      "শনিবার"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা সেখপ্টত \nLive MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4182,13 +4185,13 @@
   {
     "ref": "bcs37_q191",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সকাপ্টনা িৃপ্টত্তি িযািাধণ যবে ২০% কপ্টম, তপ্টি উক্ত \nিৃপ্টত্তি সক্ষত্রফি কত % কমপ্টি?",
+    "body": "কোনো বৃত্তের ব্যাসার্ধ যদি ২০% কমে, তবে উক্ত বৃত্তের ক্ষেত্রফল কত % কমবে?",
     "options": [
       "১০%",
       "২০%",
@@ -4196,7 +4199,7 @@
       "৪০%"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4204,21 +4207,21 @@
   {
     "ref": "bcs37_q192",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একবি িন সিািািপ্টক যবে েুইজন িযবক্তি একজন \nসিপ্টন সনয ও একজন সিপ্টি সনয তপ্টি কাি সিবশ কষ্ট্ হপ্টি?",
+    "body": "একটি লন রোলারকে যদি দুইজন ব্যক্তির একজন টেনে নেয় ও একজন ঠেলে নেয় তবে কার বেশি কষ্ট হবে?",
     "options": [
-      "সিপ্টন সনযা িযবক্তি",
-      "সিপ্টি সনযা িযবক্তি",
-      "েু'জপ্টনি িমান কষ্ট্ হপ্টি",
-      "সকাপ্টনাবিই নয"
+      "টেনে নেয়া ব্যক্তির",
+      "ঠেলে নেয়া ব্যক্তির",
+      "দু'জনের সমান কষ্ট হবে",
+      "কোনোটিই নয়"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4226,13 +4229,13 @@
   {
     "ref": "bcs37_q193",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "261 বি আম বতন ভাইপ্টযি মপ্টধয 1/3 :1/5 :1/9 \nঅনুপাপ্টত ভাগ কপ্টি বেপ্টি িেম ভাই কতবি আম পাপ্টি?",
+    "body": "261 টি আম তিন ভাইয়ের মধ্যে 1/3 :1/5 :1/9 অনুপাতে ভাগ করে দিলে প্রথম ভাই কতটি আম পাবে?",
     "options": [
       "45",
       "81",
@@ -4240,7 +4243,7 @@
       "135"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4248,13 +4251,13 @@
   {
     "ref": "bcs37_q194",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "x2- 3x + 1 = 0 হপ্টি (x2 - 1/x2) এি মান কত?",
+    "body": "x2- 3x + 1 = 0 হলে (x2 - 1/x2) এর মান কত?",
     "options": [
       "5√3",
       "3√5",
@@ -4262,7 +4265,7 @@
       "6√5"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4270,13 +4273,13 @@
   {
     "ref": "bcs37_q195",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "x2 - 5x+6 < 0 হপ্টি-",
+    "body": "x2 - 5x+6 < 0 হলে-",
     "options": [
       "2 < x < 3",
       "-3 < x < -2",
@@ -4284,7 +4287,7 @@
       "x < 3"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4293,12 +4296,12 @@
     "ref": "bcs37_q196",
     "exam": "bcs-general",
     "subject": "Mathematics & Reasoning",
-    "topic": "গাণিতিক যুক্তি ও বাস্তব সংখ্যা",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "logx(3/2) = -1/2 হপ্টি, x এি মান-",
+    "body": "logx(3/2) = -1/2 হলে, x এর মান-",
     "options": [
       "4/9",
       "9/4",
@@ -4306,7 +4309,7 @@
       "√(⅔)"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4314,13 +4317,13 @@
   {
     "ref": "bcs37_q197",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একবি আযতপ্টক্ষপ্টত্রি কপ্র্টণি তেঘণয 15 বম. এিং \nিস্থ 10 বম. হপ্টি আযতপ্টক্ষপ্টত্রি সক্ষত্রফি কত িগণবমিাি?",
+    "body": "একটি আয়তক্ষেত্রের কর্ণের দৈর্ঘ্য 15 মি. এবং প্রস্থ 10 মি. হলে আয়তক্ষেত্রের ক্ষেত্রফল কত বর্গমিটার?",
     "options": [
       "35√5",
       "40√5",
@@ -4328,7 +4331,7 @@
       "50√5"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4336,13 +4339,13 @@
   {
     "ref": "bcs37_q198",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "A = {x|x ধনাত্মক পূর্ণ িংখযা এিং x2<25}, \nB = {x|x সমৌবিক িংখযা এিং x2<25}, \nC = {x|x সমৌবিক পূর্ণ িংখযা এিং x2=25}, হপ্টি, A∩B∩C =?",
+    "body": "A = {x|x ধনাত্মক পূর্ণ সংখ্যা এবং x2<25}, B = {x|x মৌলিক সংখ্যা এবং x2<25}, C = {x|x মৌলিক পূর্ণ সংখ্যা এবং x2=25}, হলে, A∩B∩C =?",
     "options": [
       "{1,2,3,4}",
       "{2,3,4}",
@@ -4350,7 +4353,7 @@
       "∅"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4358,13 +4361,13 @@
   {
     "ref": "bcs37_q199",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একবি েবিপ্টত 6 বি নীি সব, 8 বি িাো সব এিং 10 \nবি কাপ্টিা সব আপ্টছ। তেিভাপ্টি একবি সব তুিপ্টি সিবি িাো না \nহিাি িম্ভিনা কত?",
+    "body": "একটি থলিতে 6 টি নীল বল, 8 টি সাদা বল এবং 10 টি কালো বল আছে। দৈবভাবে একটি বল তুললে সেটি সাদা না হবার সম্ভবনা কত?",
     "options": [
       "2/3",
       "1/3",
@@ -4372,7 +4375,7 @@
       "1/4"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4380,13 +4383,13 @@
   {
     "ref": "bcs37_q200",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "37th BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "েুইবি িৃপ্টত্তি মপ্টধয িবিক িংখযাবি কত হপ্টি?",
+    "body": "দুইটি বৃত্তের মধ্যে সঠিক সংখ্যাটি কত হবে?",
     "options": [
       "৯",
       "৩৬",
@@ -4394,7 +4397,7 @@
       "৬৫"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন িহ কপ্টযক িাখ িপ্টশ্নি অপ্টেনবিক িযাখযা \nসেখপ্টত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false

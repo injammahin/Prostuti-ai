@@ -65,7 +65,7 @@ export default function Settings() {
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" })
     const a = document.createElement("a")
     a.href = URL.createObjectURL(blob)
-    a.download = `prostuti-backup-${new Date().toISOString().slice(0, 10)}.json`
+    a.download = `dreamprep-backup-${new Date().toISOString().slice(0, 10)}.json`
     a.click()
     toast.success("All personal preparation data successfully exported!")
   }
@@ -481,7 +481,7 @@ export default function Settings() {
 
           {/* Platform Info Panel */}
           <div className="card p-4 border bg-muted/20 text-xs space-y-2 text-muted-foreground">
-            <p className="font-semibold text-foreground">Prostuti Govt Job Prep Platform</p>
+            <p className="font-semibold text-foreground">DreamPrep Govt Job Prep Platform</p>
             <p>Version 2.4.0 (2026 Production Build)</p>
             <p>End-to-end question verification active. Built with high precision syllabus rubrics.</p>
           </div>

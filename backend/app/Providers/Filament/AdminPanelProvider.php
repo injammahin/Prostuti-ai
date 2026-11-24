@@ -33,13 +33,15 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->path('admin')
             ->login(Login::class)
-            ->brandName('Prostuti Admin')
+            ->brandName('DreamPrep Admin')
             ->brandLogo(fn (): HtmlString => new HtmlString(
-                '<span style="display:flex;align-items:center;gap:.65rem;font-weight:750;font-size:1.08rem;letter-spacing:-.015em;">'
-                .'<span style="display:grid;place-items:center;width:2.1rem;height:2.1rem;border-radius:.7rem;background:linear-gradient(135deg,#3b8fe6,#1b63a8 55%,#0c3a6e);color:#fff;font-size:1rem;font-weight:800;box-shadow:0 6px 16px -6px rgba(47,126,216,.8),inset 0 1px 0 rgba(255,255,255,.25);">P</span>'
-                .'<span style="display:flex;flex-direction:column;line-height:1.05;">Prostuti<span style="font-size:.62rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;opacity:.55;margin-top:.2rem;">Admin console</span></span></span>'
+                '<span style="display:flex;align-items:center;gap:.65rem;font-weight:800;font-size:1.08rem;letter-spacing:-.02em;">'
+                .'<img src="'.asset('favicon.svg').'" alt="" style="width:2.1rem;height:2.1rem;">'
+                .'<span style="display:flex;flex-direction:column;line-height:1.05;"><span>Dream<span style="color:#1d6ca8;">Prep</span></span>'
+                .'<span style="font-size:.62rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;opacity:.55;margin-top:.2rem;">Admin console</span></span></span>'
             ))
             ->brandLogoHeight('2.25rem')
+            ->favicon(asset('favicon.svg'))
             ->colors([
                 'primary' => Color::hex('#1b63a8'),
                 'gray' => Color::Slate,

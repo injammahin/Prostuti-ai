@@ -4055,16 +4055,16 @@ export const bcs47thQuestions = [
     "difficulty": "medium",
     "source": "47th BCS",
     "lang": "bn",
-    "body": "",
+    "body": "বঙ্গবন্ধুর লেখা 'অসমাপ্ত আত্মজীবনী' কত সালে প্রথম প্রকাশিত হয়?",
     "options": [
-      "",
-      "",
-      "",
-      ""
+      "২০১০",
+      "২০১২",
+      "২০১৪",
+      "২০১৬"
     ],
-    "answer_index": 0,
-    "answer": 0,
-    "explanation": ""
+    "answer_index": 1,
+    "answer": 1,
+    "explanation": "জাতির পিতা বঙ্গবন্ধু শেখ মুজিবুর রহমান রচিত 'অসমাপ্ত আত্মজীবনী' ২০১২ সালের জুন মাসে প্রথম প্রকাশিত হয়।"
   },
   {
     "id": 8162,

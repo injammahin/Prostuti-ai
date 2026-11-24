@@ -9,13 +9,13 @@ export function downloadIcs(notice) {
   ].filter(Boolean)
   if (!events.length) events.push(["Published", notice.published])
 
-  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Prostuti//Notices//EN"]
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//DreamPrep//Notices//EN"]
   events.forEach(([label, iso], i) => {
     const end = new Date(iso + "T00:00:00")
     end.setDate(end.getDate() + 1)
     lines.push(
       "BEGIN:VEVENT",
-      `UID:${notice.slug}-${i}@prostuti.ai`,
+      `UID:${notice.slug}-${i}@dreamprep.bd`,
       `DTSTAMP:${d(new Date().toISOString().slice(0, 10))}T000000Z`,
       `DTSTART;VALUE=DATE:${d(iso)}`,
       `DTEND;VALUE=DATE:${d(end.toISOString().slice(0, 10))}`,

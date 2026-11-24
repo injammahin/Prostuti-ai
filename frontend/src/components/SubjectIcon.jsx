@@ -1,7 +1,7 @@
 import { Icon } from "@/components/icon"
 import { cn } from "@/lib/utils"
 
-// Prostuti subject icons (line style, drawn in currentColor so they take the tile's accent colour).
+// DreamPrep subject icons (line style, drawn in currentColor so they take the tile's accent colour).
 const svgs = import.meta.glob("@/assets/subject-icons/*.svg", { query: "?raw", import: "default", eager: true })
 
 const byFile = Object.fromEntries(
@@ -26,7 +26,7 @@ const FILE_FOR_SUBJECT = {
   ethics: "ethics-governance",
 }
 
-/** Font Awesome icon used when a subject has no Prostuti icon yet. */
+/** Font Awesome icon used when a subject has no DreamPrep icon yet. */
 const FALLBACK_ICON = { banking: "building-columns" }
 
 /** A calm accent colour per subject — the same everywhere the subject appears. */

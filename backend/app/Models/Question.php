@@ -140,6 +140,20 @@ class Question extends Model
     }
 
     /**
+     * The questions of one previous paper, e.g. "44th BCS": its own seeded questions (ref "bcs44_q…")
+     * and any added in the admin panel (no ref). Bank questions merely tagged with the paper are left out,
+     * as they repeat the paper's own.
+     *
+     * @param  Builder<self>  $query
+     */
+    public function scopeOnPaper(Builder $query, string $source): void
+    {
+        $query->where('source', $source)->where(function (Builder $query) use ($source): void {
+            $query->whereNull('ref')->orWhere('ref', 'like', 'bcs'.(int) $source.'_q%');
+        });
+    }
+
+    /**
      * Questions that belong to the given exam's syllabus (its subjects).
      *
      * @param  Builder<self>  $query
@@ -152,6 +166,17 @@ class Question extends Model
     }
 
     /**
+     * Any change after creation (an admin fixing or publishing a question) marks it as curated,
+     * so the catalog seeder never overwrites it. The seeder itself runs without model events.
+     */
+    protected static function booted(): void
+    {
+        static::updating(function (Question $question): void {
+            $question->curated_at = now();
+        });
+    }
+
+    /**
      * @return array<string, string>
      */
     protected function casts(): array
@@ -159,6 +184,7 @@ class Question extends Model
         return [
             'options' => 'array',
             'answer_index' => 'integer',
+            'curated_at' => 'datetime',
         ];
     }
 }

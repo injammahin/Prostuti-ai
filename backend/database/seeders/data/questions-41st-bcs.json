@@ -3,20 +3,20 @@
     "ref": "bcs41_q1",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বিধিাি রিম বনশয ির্বত উপন্যাস কোনবি?",
+    "body": "বিধবার প্রেম নিয়ে রচিত উপন্যাস কোনটি?",
     "options": [
-      "েির্ৎন্দ্র র্শটাপাধযাশযি ‘রেষ িশ্ন:’",
-      "সবীন্দ্রনাে িাকু শসব ‘র্রাশখি িাবি’",
-      "কাজী নজরুি ইসবাশমি ‘কু শহবিকা’",
-      "িবির্মন্দ্র র্শটাপাধযাশযি ‘কপািকু ন্ডুিা’"
+      "শরৎচন্দ্র চট্টোপাধ্যায়ের ‘শেষ প্রশ্ন:’",
+      "রবীন্দ্রনাথ ঠাকুরের ‘চোখের বালি’",
+      "কাজী নজরুল ইসলামের ‘কুহেলিকা’",
+      "বঙ্কিমচন্দ্র চট্টোপাধ্যায়ের ‘কপালকুন্ডুলা’"
     ],
     "answer": 1,
-    "explanation": "• সবীন্দ্রনাে িাকু ি ির্বত ''র্শাশখি িাবি'' বাংলা \nসাহিত্যেি িেম মনস্তাবিক উপন্যাস। \n• বতবন এই উপন্যাস ির্নাি মাধযশম বাংলা উপন্যাসশক \nনতুন খাশত সবাবহত কশিন। এই উপনযাশিই রিখক \nিেম িমিামবযক িমাশজি পাত্রপাত্রী িযিহাি কশিন। \n• সবীন্দ্রনাে এই উপনযাশিই িেম কাবহনীি ভাি পবিহাি \nকশি িযবক্তশসব ফিস্বরূপ নানা িংকিশক উপনযাশসব \nবিষয বহিাশি িযিহাি কশিন। \n• উপন্যাসবি ১৯০৩ িাশি িকাবেত হয়। \n• িধান র্বিত্র - বিশনাবেনী, মশহন্দ্র, আোিতা, বিহািী, \nিাজিক্ষী িমুখ। \n• বিশনাবেনী বিশিন বিধিা এিং তাি আো-আকাঙ্খা, \nরিম, েুঃখ ইতযাবে এই উপনযাশসব কাবহনীশক এবগশয \nবনশয যায। \n• উপনযাশি আোিতা বিশিন মশহন্দ্রি স্ত্রী ও পবতব্রতা। \nবকন্তু মশহন্দ্র তাি স্ত্রীি ভাশিািািা উশপক্ষা কশি এিং \nবিধিা বিশনাবেনীি িবত আকষর্চ অনুভি কশি। \nউৎিঃ বাংলা সাহিত্যেি ইবতহাি, মাহিুিুি আিম ও র্রাশখি িাবি উপন্যাস।",
+    "explanation": "• রবীন্দ্রনাথ ঠাকুর রচিত ''চোখের বালি'' বাংলা সাহিত্যের প্রথম মনস্তাত্ত্বিক উপন্যাস।\n• তিনি এই উপন্যাস রচনার মাধ্যমে বাংলা উপন্যাসকে নতুন খাতে প্রবাহিত করেন। এই উপন্যাসেই লেখক প্রথম সমসাময়িক সমাজের পাত্রপাত্রী ব্যবহার করেন।\n• রবীন্দ্রনাথ এই উপন্যাসেই প্রথম কাহিনীর ভার পরিহার করে ব্যক্তিত্ত্বের ফলস্বরূপ নানা সংকটকে উপন্যাসের বিষয় হিসাবে ব্যবহার করেন।\n• উপন্যাসটি ১৯০৩ সালে প্রকাশিত হয়।\n• প্রধান চরিত্র - বিনোদিনী, মহেন্দ্র, আশালতা, বিহারী, রাজলক্ষী প্রমুখ।\n• বিনোদিনী ছিলেন বিধবা এবং তার আশা-আকাঙ্খা, প্রেম, দুঃখ ইত্যাদি এই উপন্যাসের কাহিনীকে এগিয়ে নিয়ে যায়।\n• উপন্যাসে আশালতা ছিলেন মহেন্দ্রর স্ত্রী ও পতিব্রতা। কিন্তু মহেন্দ্র তার স্ত্রীর ভালোবাসা উপেক্ষা করে এবং বিধবা বিনোদিনীর প্রতি আকর্ষণ অনুভব করে।\nউৎসঃ বাংলা সাহিত্যের ইতিহাস, মাহবুবুল আলম ও চোখের বালি উপন্যাস। প্রশ্ন:: ২. জেলে জীবন কেন্দ্রিক উপন্যাস কোনটি?",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -34,14 +34,15 @@
     "options": [
       "গঙ্গা",
       "পুতুিনার্শি ইবতকো",
-      "হাাঁিুিী িাাঁশকি উপকো",
+      "হাঁিুিীিাঁশকি উপকো",
       "গৃহোহ"
     ],
     "answer": 0,
-    "explanation": "• 'গঙ্গা' উপন্যাসবি িমশিে সবুি অন্যতম রেষ্ঠ ির্না। \n• এবি ১৯৫৭ িাশি িকাবেত। \n• গঙ্গাি পিভূবম একিাই, জি-জাি-রজশি; বিশেষত \nঅবিভক্ত ২৪ পিগনা রজিাি মৎিযজীিী িম্প্রোশযি \n(মািমািা) জীিনিংগ্রাশমি কাবহবন। গঙ্গা উপনযাশসব \nর্বিত্রগুশিা িামশন অতিা উজ্জ্বি হশয ধিা রেযবন। \n• িমশিে সবুি মূি বিষয র্বিত্র র্বত্র্র নয, মূি বিষয \nরজশিজীিন। \n• রজশিজীিশনি িংগ্রাম র্বত্র্র কিশত যা যা িশযাজন, \nতা কশিশিন। র্বিশত্রি রক্ষশত্রও তাই। \n• এখাশন রমািা োশগ যািা িশযশি: িাইোি বনিাির্, \nবনিাির্শি রিাি ভাই পাাঁর্ু ও রিশি বসবাি, িেীি, \nিযািাম, পার্ী (িাযা), িবিক, েুিাি; অপিবেশক \n \n \nঅমশতচি িউ, োবমনী, বহবম, বহবমি িখী আতি, মহাজন \nব্রশজন িাকু ি িমুখ। \n• আপাতেৃবিশত এই উপনযাশসব নাযক-নাবযকা হবো \nবসবাি ও বহবম। বকন্তু সব র্বিত্র যাি িাযা অসবম্বশন, \nবতবন হবো বনিাির্। রিবেক থেকে বনিাির্ হবো \nরকন্দ্রীয র্বিত্র। \nউৎিঃ 'গঙ্গা' উপন্যাস ও িাবহতয িামবযকী।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
-    "cancelled": false
+    "cancelled": false,
+    "status": "draft"
   },
   {
     "ref": "bcs41_q3",
@@ -52,7 +53,7 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "“বিবি রিশন রসব কিশত হবে”। - কোন ধিশনি \nিাশকযি উোহির্?",
+    "body": "“বিবি রিশন রসব কিশত হবে”। - কোন ধিশনিাশকযি উোহির্?",
     "options": [
       "কমচিার্য",
       "ভাসবার্য",
@@ -60,29 +61,30 @@
       "কমচকতৃচিার্য"
     ],
     "answer": 1,
-    "explanation": "ভাসবার্যঃ \nরয িার্শয কমচ োশক না এিং িাশকযি বিযাি অেচই \nবিশেষভাশি িযক্ত হয়, তাশক ভাসবার্য িশি। \nভাসবার্শযি তিবেষ্ঠযঃ \n- ভাসবার্শয বিযা সবচো নাম পুরুশষি হয়। ভাসবার্শযি \nকতচায ষষ্ঠী, বিতীযা অেিা তৃতীয বিভবক্ত িযুক্ত হয়। \nরযমন - আমাি খাওযা হবো না। (কতচায ষষ্ঠী) \n- কখশনা কখশনা ভাসবার্শয কতচা উহয় োশক, কমচ িািাই \nভাসবার্য গবিত হয়। \nরযমন - এ পশে র্িা যায না; এিাি রেশন ওিা যাক। \nরতমবনভাশি, \nবিবি রিশন রসব কিশত হবে। \n- মূি বিযাি িশঙ্গ িহশযাগী বিযাি িংশযাগ ও বিবভন্ন \nঅশেচ ভাসবার্শযি বিযা গবিত হয়। \nরযমন - এ িাস্তা আমাি র্রনা রনই। \nউৎিঃ মাধযবমক বাংলা িযাকির্ িই।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
-    "cancelled": false
+    "cancelled": false,
+    "status": "draft"
   },
   {
     "ref": "bcs41_q4",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলা সাহিত্যে “কািকূ ি” নাশম পবির্বত কোন \nরিখক?",
+    "body": "বাংলা সাহিত্যে “কালকূট” নামে পরিচিত কোন লেখক?",
     "options": [
-      "িমশিে মজুমোি",
-      "েওকত ওিমান",
-      "িমশিে সবু",
-      "আিাউবিন আি আজাে"
+      "সমরেশ মজুমদার",
+      "শওকত ওসমান",
+      "সমরেশ বসু",
+      "আলাউদ্দিন আল আজাদ"
     ],
     "answer": 2,
-    "explanation": "বাংলা সাহিত্যেি কশযকজন রিখক ও তাশেি িদ্মনামঃ \n- িমশিে সবু = কািকূ ি, - রিাশমন র্ন্দ = ইন্দ্রকু মাি \nরিাম, - বিমি রঘাষ = রমৌমাবি, - বিনযকৃ ষ্ণ মুশখাপাধযায \n= যাযাসব, - িতীনাে ভােুড়ী = র্বত্রগুপ্ত, - বিমি বমত্র = \nজািাবি, - কাবিকানন্দ = অিধূত, - বিযেেচী - তিযে \nমুজতিা আিী, - নীি রিাবহত - িুনীি গশঙ্গাপাধযায \nউৎিঃ বাংলা ভাষা ও িাবহতয বজজ্ঞািা।",
+    "explanation": "বাংলা সাহিত্যের কয়েকজন লেখক ও তাদের ছদ্মনামঃ\n- সমরেশ বসু = কালকূট, - সোমেন চন্দ = ইন্দ্রকুমার সোম, - বিমল ঘোষ = মৌমাছি, - বিনয়কৃষ্ণ মুখোপাধ্যায় = যাযাবর, - সতীনাথ ভাদুড়ী = চিত্রগুপ্ত, - বিমল মিত্র = জাবালি, - কালিকানন্দ = অবধূত, - প্রিয়দর্শী - সৈয়দ মুজতবা আলী, - নীল লোহিত - সুনীল গঙ্গোপাধ্যায়\nউৎসঃ বাংলা ভাষা ও সাহিত্য জিজ্ঞাসা।",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -91,20 +93,20 @@
     "ref": "bcs41_q5",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "“পিাশনি গহীন বভতি” কাশিযি কবি রক?",
+    "body": "“পরানের গহীন ভিতর” কাব্যের কবি কে?",
     "options": [
-      "অিীম িাহা",
-      "অরুর্ সবু",
-      "আিু জাফি ওিাযেুল্লাহ",
-      "তিযে োমিুি হক"
+      "অসীম সাহা",
+      "অরুণ বসু",
+      "আবু জাফর ওবায়দুল্লাহ",
+      "সৈয়দ শামসুল হক"
     ],
     "answer": 3,
-    "explanation": "তিযে োমিুি হক একজন িখযাত বাংলাদেশী িাবহবতযক। \n- বতবন কু বড়গ্রাম রজিায জন্মগ্রর্হ কশিন। \nতাাঁি ির্বত কাব্যগ্রন্থঃ \n- একো এক িাশজয, - পিাশনি গহীন বভতি, \n- বসববতহীন উৎসব, - তিোশখ ির্বত পিবক্তমািা, \n- িবতধ্ববনর্গ, - ধ্বংিস্তূশপ কবি ও নগি ইতযাবে। \nউৎিঃ িাইভ এমবিবকউ রির্কাি ও বাংলা ভাষা ও িাবহতয বজজ্ঞািা।",
+    "explanation": "সৈয়দ শামসুল হক একজন প্রখ্যাত বাংলাদেশী সাহিত্যিক।\n- তিনি কুড়িগ্রাম জেলায় জন্মগ্রহণ করেন। তাঁর রচিত কাব্যগ্রন্থঃ\n- একদা এক রাজ্যে, - পরানের গহীন ভিতর,\n- বিরতিহীন উৎসব, - বৈশাখে রচিত পঙক্তিমালা,\n- প্রতিধ্বনিগণ, - ধ্বংসস্তূপে কবি ও নগর ইত্যাদি।\nউৎসঃ লাইভ এমসিকিউ লেকচার ও বাংলা ভাষা ও সাহিত্য জিজ্ঞাসা।",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -113,20 +115,20 @@
     "ref": "bcs41_q6",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "“এিাি আমাি একবি বির্বত্র অবভজ্ঞতা হবো” - \nএ িাকয কোন ধিশনি?",
+    "body": "“এবার আমার একটি বিচিত্র অভিজ্ঞতা হলো” - এ বাক্য কোন ধরনের?",
     "options": [
-      "অনুজ্ঞািার্ক",
-      "বনশেচোত্মক",
-      "বিস্মযশিাধক",
-      "িশ্ন:শিাধক"
+      "অনুজ্ঞাবাচক",
+      "নির্দেশাত্মক",
+      "বিস্ময়বোধক",
+      "প্রশ্ন:বোধক"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -135,20 +137,20 @@
     "ref": "bcs41_q7",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ভাষা আশন্দািন বনশয রিখা কবিতা কোনবি?",
+    "body": "ভাষা আন্দোলন নিয়ে লেখা কবিতা কোনটি?",
     "options": [
-      "হুবিযা",
-      "রতামাশক অবভিােন বিযা",
-      "রিানাবি কাবিন",
-      "স্মৃবতস্তম্ভ"
+      "হুলিয়া",
+      "তোমাকে অভিবাদন প্রিয়া",
+      "সোনালি কাবিন",
+      "স্মৃতিস্তম্ভ"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -157,20 +159,20 @@
     "ref": "bcs41_q8",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ধ্ববনতি ও েব্দতিশক িাশকয যোযেভাশি \nিযিহাি কিাি বিধাশনি নাম-",
+    "body": "ধ্বনিতত্ত্ব ও শব্দতত্ত্বকে বাক্যে যথাযথভাবে ব্যবহার করার বিধানের নাম-",
     "options": [
-      "সবতি",
-      "রূপতি",
-      "িাকযতি",
-      "বিযাি কাি"
+      "রসতত্ত্ব",
+      "রূপতত্ত্ব",
+      "বাক্যতত্ত্ব",
+      "ক্রিয়ার কাল"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -179,20 +181,20 @@
     "ref": "bcs41_q9",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন িানানবি শুদ্ধ?",
+    "body": "কোন বানানটি শুদ্ধ?",
     "options": [
-      "মশনাকি",
-      "মনঃকি",
-      "র্মকি",
+      "মনোকষ্ট",
+      "মনঃকষ্ট",
+      "মণকষ্ট",
       "মনকস্ট"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -201,20 +203,20 @@
     "ref": "bcs41_q10",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ির্ুি + য = িার্ুযচ; কোন িতযয?",
+    "body": "প্রচুর + য = প্রাচুর্য; কোন প্রত্যয়?",
     "options": [
-      "কৃ ৎ িতযয",
-      "তবদ্ধত িতযয",
-      "বাংলা কৃ ৎ িতযয",
-      "িংস্কৃ ত কৃ ৎ িতযয"
+      "কৃৎ প্রত্যয়",
+      "তদ্ধিত প্রত্যয়",
+      "বাংলা কৃৎ প্রত্যয়",
+      "সংস্কৃত কৃৎ প্রত্যয়"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -223,20 +225,20 @@
     "ref": "bcs41_q11",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িযঞ্জন ধ্ববনি িংবক্ষপ্ত রূপশক িশি-",
+    "body": "ব্যঞ্জন ধ্বনির সংক্ষিপ্ত রূপকে বলে-",
     "options": [
-      "রিফ",
-      "হিন্ত",
-      "কাি",
-      "ফিা"
+      "রেফ",
+      "হসন্ত",
+      "কার",
+      "ফলা"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -245,20 +247,20 @@
     "ref": "bcs41_q12",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "পাাঁর্াবিকাি বহবেশি সবচাবধক খযাবত কাি বসব?",
+    "body": "পাঁচালিকার হিসেবে সর্বাধিক খ্যাতি কার ছিল?",
     "options": [
-      "োেিবে িায",
-      "িামবনবধ গুপ্ত",
-      "ফবকি গিীিুল্লাহ",
-      "িামিাম সবু"
+      "দাশরথি রায়",
+      "রামনিধি গুপ্ত",
+      "ফকির গরীবুল্লাহ",
+      "রামরাম বসু"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -267,20 +269,20 @@
     "ref": "bcs41_q13",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "র্াির্কবি বহবেশি বিখ্যাত রক?",
+    "body": "চারণকবি হিসেবে বিখ্যাত কে?",
     "options": [
-      "আিাওি",
-      "র্ন্দ্রািতী",
-      "মুকু ন্দোি",
-      "মুক্তািাম র্সবতচী"
+      "আলাওল",
+      "চন্দ্রাবতী",
+      "মুকুন্দদাস",
+      "মুক্তারাম চক্রবর্তী"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -289,20 +291,20 @@
     "ref": "bcs41_q14",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সবীন্দ্রনাে িাকু শসব 'নিনীড়' গশেি একবি \nবিখ্যাত র্বিত্র-",
+    "body": "রবীন্দ্রনাথ ঠাকুরের 'নষ্টনীড়' গল্পের একটি বিখ্যাত চরিত্র-",
     "options": [
-      "বিশনাবেনী",
-      "তহমন্তী",
-      "আোিতা",
-      "র্ারুিতা"
+      "বিনোদিনী",
+      "হৈমন্তী",
+      "আশালতা",
+      "চারুলতা"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -311,20 +313,20 @@
     "ref": "bcs41_q15",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "উপমান কমচধািয িমাশসব উোহির্ কোনবি?",
+    "body": "উপমান কর্মধারয় সমাসের উদাহরণ কোনটি?",
     "options": [
-      "েেিযস্ত",
-      "কাির্ি",
-      "পিার্পাবখ",
-      "িহুব্রীবহ"
+      "শশব্যস্ত",
+      "কালচক্র",
+      "পরাণপাখি",
+      "বহুব্রীহি"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -333,20 +335,20 @@
     "ref": "bcs41_q16",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "অবপবনবহবতি উোহির্ কোনবি?",
+    "body": "অপিনিহিতির উদাহরণ কোনটি?",
     "options": [
       "জন্ম > জম্ম",
-      "আবজ > আইজ",
-      "রিস্ক > রিস ক",
-      "অিািু > িািু > িাউ"
+      "আজি > আইজ",
+      "ডেস্ক > ডেস্ ক",
+      "অলাবু > লাবু > লাউ"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -355,20 +357,20 @@
     "ref": "bcs41_q17",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "“কু িীেজীিী” সবশত কাশেি িুঝায?",
+    "body": "“কু সীদজীবী” বলতে কাদের বুঝায়?",
     "options": [
-      "র্াির্কবি",
-      "িাপুশড়",
-      "িুেশখাি",
-      "কৃ বষজীিী"
+      "চারণকবি",
+      "সাপুড়ে",
+      "সুদখোর",
+      "কৃষিজীবী"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -377,20 +379,20 @@
     "ref": "bcs41_q18",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "‘অভাি’ অশেচ িযিহৃত হশযশি কোন উপিগচবি?",
+    "body": "‘অভাব’ অর্থে ব্যবহৃত হয়েছে কোন উপসর্গটি?",
     "options": [
       "অকাজ",
-      "আসবাযা",
-      "আিুবন",
-      "বনখুাঁত"
+      "আবছায়া",
+      "আলুনি",
+      "নিখুঁত"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -399,20 +401,20 @@
     "ref": "bcs41_q19",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলা ভাষায িেম অবভধান িংকিন কশিন রক?",
+    "body": "বাংলা ভাষায় প্রথম অভিধান সংকলন করেন কে?",
     "options": [
-      "িার্মন্দ্র বিেযািাগীে",
-      "িাজশেখি সবু",
-      "হবির্ির্ রে",
-      "অশোক মুশখাপাধযায"
+      "রামচন্দ্র বিদ্যাবাগীশ",
+      "রাজশেখর বসু",
+      "হরিচরণ দে",
+      "অশোক মুখোপাধ্যায়"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -421,20 +423,20 @@
     "ref": "bcs41_q20",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "সবর্শশয কম িযশি কোন রিখক বাংলা \nএকাশিবম পুিস্কাি পান?",
+    "body": "সবচেয়ে কম বয়সে কোন লেখক বাংলা একাডেমি পুরস্কার পান?",
     "options": [
-      "েওকত আিী",
-      "রিবিনা রহাশিন",
-      "আখতারুজ্জামান ইবিযাি",
-      "তিযে োমিুি হক"
+      "শওকত আলী",
+      "সেলিনা হোসেন",
+      "আখতারুজ্জামান ইলিয়াস",
+      "সৈয়দ শামসুল হক"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -443,20 +445,20 @@
     "ref": "bcs41_q21",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'সবকিছু নিশেি অবধকাশি যাশি' গ্রন্থবসব \nির্বযতা রক?",
+    "body": "'সবকিছু নষ্টদের অধিকারে যাবে' গ্রন্থটির রচয়িতা কে?",
     "options": [
-      "তিযে আিী আহিান",
-      "িুকান্ত ভটার্াযচ",
-      "হুমাযুন আজাে",
-      "বনমচশিন্দু গুর্"
+      "সৈয়দ আলী আহসান",
+      "সুকান্ত ভট্টাচার্য",
+      "হুমায়ুন আজাদ",
+      "নির্মলেন্দু গুণ"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -465,20 +467,20 @@
     "ref": "bcs41_q22",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "১৯৭১ িাশি ঢাকা বিশ্ববিেযািশযি িাত্রমৃতুযি \nিবতিাশে কোন উপার্াযচ পেতযাগ কশিবিশিন?",
+    "body": "১৯৭১ সালে ঢাকা বিশ্ববিদ্যালয়ের ছাত্রমৃত্যুর প্রতিবাদে কোন উপাচার্য পদত্যাগ করেছিলেন?",
     "options": [
-      "িযাি এ. এফ. িহমান",
-      "িশমের্ন্দ্র মজুমোি",
-      "তিযে িাজ্জাে রহািাশযন",
-      "বির্ািপবত আিু িাঈে র্রৌধুিী"
+      "স্যার এ. এফ. রহমান",
+      "রমেশচন্দ্র মজুমদার",
+      "সৈয়দ সাজ্জাদ হোসায়েন",
+      "বিচারপতি আবু সাঈদ চৌধুরী"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -487,20 +489,20 @@
     "ref": "bcs41_q23",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মুবক্তযুদ্ধবভবত্তক নাটক কোনবি?",
+    "body": "মুক্তিযুদ্ধভিত্তিক নাটক কোনটি?",
     "options": [
-      "রিাঁড়াতাি",
-      "র্াকা",
-      "িাকী ইবতহাি",
-      "কী র্াহ রহ েঙ্খর্বি"
+      "ছেঁড়াতার",
+      "চাকা",
+      "বাকী ইতিহাস",
+      "কী চাহ হে শঙ্খচিল"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -509,20 +511,20 @@
     "ref": "bcs41_q24",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "রতভাগা আশন্দািনশকবন্দ্রক উপন্যাস কোনবি?",
+    "body": "তেভাগা আন্দোলনকেন্দ্রিক উপন্যাস কোনটি?",
     "options": [
-      "অশটাপাি",
-      "কাশিা সবফ",
-      "িীতোশসব হাবি",
-      "নাঢ়াই"
+      "অক্টোপাস",
+      "কালো বরফ",
+      "ক্রীতদাসের হাসি",
+      "নাঢ়াই"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -531,20 +533,20 @@
     "ref": "bcs41_q25",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কাজী নজরুি ইসবাশমি রমাি ৫বি গ্রন্থ বিবভন্ন \nিমশয বব্রবিে ঔপবনশিবেক সবকাি িাশজযাপ্ত কশি। \nকোন িইবি িেম িাশজযাপ্ত হয়?",
+    "body": "কাজী নজরুল ইসলামের মোট ৫টি গ্রন্থ বিভিন্ন সময়ে ব্রিটিশ ঔপনিবেশিক সরকার বাজেয়াপ্ত করে। কোন বইটি প্রথম বাজেয়াপ্ত হয়?",
     "options": [
-      "বিশষি িাাঁবে",
-      "যুগিার্ী",
-      "ভািাি গান",
-      "সবয বেখা"
+      "বিষের বাঁশি",
+      "যুগবাণী",
+      "ভাঙার গান",
+      "প্রলয় শিখা"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -553,20 +555,20 @@
     "ref": "bcs41_q26",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "তািােসব িশন্দযাপাধযায বাংলাশেশেি মুবক্তযুদ্ধ \nর্িাকাশিই এই মুবক্তযুদ্ধ বনশয একবি উপন্যাস ির্না \nকশিশিন, যা ১৯৭২ িাশি িকাবেত হয়। উপন্যাসবসব \nনাম কী?",
+    "body": "তারাশঙ্কর বন্দ্যোপাধ্যায় বাংলাদেশের মুক্তিযুদ্ধ চলাকালেই এই মুক্তিযুদ্ধ নিয়ে একটি উপন্যাস রচনা করেছেন, যা ১৯৭২ সালে প্রকাশিত হয়। উপন্যাসটির নাম কী?",
     "options": [
-      "র্ততািী ঘূর্বচ",
-      "িশক্তি অক্ষি",
-      "িাযান্ন িাজাি বতপ্পান্ন গবি",
+      "চৈতালী ঘূর্ণি",
+      "রক্তের অক্ষর",
+      "বায়ান্ন বাজার তিপ্পান্ন গলি",
       "১৯৭১"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -575,20 +577,20 @@
     "ref": "bcs41_q27",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "‘শিামত্ত’ েব্দবসব উৎপবত্ত কোন েব্দ থেকে?",
+    "body": "‘সোমত্ত’ শব্দটির উৎপত্তি কোন শব্দ থেকে?",
     "options": [
-      "রিাপান",
-      "িমেচ",
-      "রিাল্লাি",
-      "িওযাি"
+      "সোপান",
+      "সমর্থ",
+      "সোল্লাস",
+      "সওয়ার"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -597,20 +599,20 @@
     "ref": "bcs41_q28",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনঃশ্বাশসব স্বেতম িযাশি উচ্চাবিত ধ্ববন িা \nধ্ববনগুচ্ছশক কী িশি?",
+    "body": "নিঃশ্বাসের স্বল্পতম প্রয়াসে উচ্চারিত ধ্বনি বা ধ্বনিগুচ্ছকে কী বলে?",
     "options": [
-      "রযৌবগক ধ্ববন",
-      "অক্ষি",
-      "ির্চ",
-      "রমৌবিক স্বিধ্ববন"
+      "যৌগিক ধ্বনি",
+      "অক্ষর",
+      "বর্ণ",
+      "মৌলিক স্বরধ্বনি"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -619,20 +621,20 @@
     "ref": "bcs41_q29",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ইংশিবজ ভাষায জীিনানন্দ োশেি ওপি গ্রন্থ \nবিশখশিন রক?",
+    "body": "ইংরেজি ভাষায় জীবনানন্দ দাশের ওপর গ্রন্থ লিখেছেন কে?",
     "options": [
-      "িবিউ বি ইশযসব",
-      "বিনিন বি বিবি",
-      "অরুন্ধতী িায",
-      "অবমতাভ রঘাষ"
+      "ডব্লিউ বি ইয়েটস",
+      "ক্লিনটন বি সিলি",
+      "অরুন্ধতী রায়",
+      "অমিতাভ ঘোষ"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -641,20 +643,20 @@
     "ref": "bcs41_q30",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "‘িািা রিশসব েীঘচাযু কামনা কিশিন’ - এই \nপশিাক্ষ উবক্তি িতযক্ষরূপ হবে-",
+    "body": "‘বাবা ছেলের দীর্ঘায়ু কামনা করলেন’ - এই পরোক্ষ উক্তির প্রত্যক্ষরূপ হবে-",
     "options": [
-      "িািা রিশিশক সবশিন, িািা তুবম েীঘচজীিী হও",
-      "িািা রিশিশক সবশিন রয, রতামাি েীঘচযু রহাক",
-      "িািা রিশিশক সবশিন, ‘তুবম েীঘচজীিী হও’",
-      "িািা রিশিশক সবশিন রয, আবম রতামাি েীঘচাযু কামনা কবি"
+      "বাবা ছেলেকে বললেন, বাবা তুমি দীর্ঘজীবী হও",
+      "বাবা ছেলেকে বললেন যে, তোমার দীর্ঘয়ুহোক",
+      "বাবা ছেলেকে বললেন, ‘তুমি দীর্ঘজীবী হও’",
+      "বাবা ছেলেকে বললেন যে, আমি তোমার দীর্ঘায়ু কামনা করি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "হও’ ব্যাখ্যা:",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -663,20 +665,20 @@
     "ref": "bcs41_q31",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "‘গ্রামিাতচা িকাবেকা’ পবত্রকাবি কোন স্থান \nথেকে িকাবেত?",
+    "body": "‘গ্রামবার্তা প্রকাশিকা’ পত্রিকাটি কোন স্থান থেকে প্রকাশিত?",
     "options": [
-      "ঢাকাি পল্টন",
-      "নওগাাঁি পবসবি",
-      "কু বিযাি কু মািখািী",
-      "মযমনবিংশহি বত্রোি"
+      "ঢাকার পল্টন",
+      "নওগাঁর পরিসর",
+      "কুষ্টিয়ার কু মারখালী",
+      "ময়মনসিংহের ত্রিশাল"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -685,20 +687,20 @@
     "ref": "bcs41_q32",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "জীিনী সাহিত্যেি ধািা গশড় ওশি কাশক রকন্দ্র \nকশি?",
+    "body": "জীবনী সাহিত্যের ধারা গড়ে ওঠে কাকে কেন্দ্র করে?",
     "options": [
-      "শ্রীর্চতনযশেি",
+      "শ্রীচৈতন্যদেব",
       "কাহ্নপা",
-      "বিেযাপবত",
-      "িামকৃ ষ্ণ পিমহংিশেি"
+      "বিদ্যাপতি",
+      "রামকৃষ্ণ পরমহংসদেব"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -707,20 +709,20 @@
     "ref": "bcs41_q33",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "র্যচাপশেি িীকাকাশসব নাম বক?",
+    "body": "চর্যাপদের টীকাকারের নাম কি?",
     "options": [
-      "মীননাে",
-      "িশিার্ধন্দ্র িার্গী",
-      "হসবিাে োস্ত্রী",
-      "মুবনেত্ত"
+      "মীননাথ",
+      "প্রবোধচন্দ্র বাগচী",
+      "হরপ্রসাদ শাস্ত্রী",
+      "মুনিদত্ত"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -729,20 +731,20 @@
     "ref": "bcs41_q34",
     "exam": "bcs-general",
     "subject": "Bangla",
-    "topic": "বাংলা ভাষা ও সাহিত্য",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন িানানবি শুদ্ধ?",
+    "body": "কোন বানানটি শুদ্ধ?",
     "options": [
-      "পুিষ্কাি",
-      "আবিস্কাি",
-      "িমযশপাশযাগী",
+      "পুরষ্কার",
+      "আবিস্কার",
+      "সময়পোযোগী",
       "স্বত্ব"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক িযাখযা \nরেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -750,21 +752,21 @@
   {
     "ref": "bcs41_q35",
     "exam": "bcs-general",
-    "subject": "Mathematics & Reasoning",
-    "topic": "গাণিতিক যুক্তি ও বাস্তব সংখ্যা",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ঊনিত্তশসব র্গ-অভুযত্থাশনি পিভূবমকায রিখা \nউপন্যাস কোনবি?",
+    "body": "ঊনসত্তরের গণ-অভ্যুত্থানের পটভূমিকায় লেখা উপন্যাস কোনটি?",
     "options": [
-      "ভূবমপুত্র",
-      "মাবসব জাহাজ",
-      "কাাঁিাতাশি িজাপবত",
-      "র্বশিশকািাি রিপাই"
+      "ভূমিপুত্র",
+      "মাটির জাহাজ",
+      "কাঁটাতারে প্রজাপতি",
+      "চিলেকোঠার সেপাই"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -772,13 +774,13 @@
   {
     "ref": "bcs41_q36",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "“To win a prize is my ambition”. \nThe underlined part of the sentence is a/an-",
+    "lang": "en",
+    "body": "“To win a prize is my ambition”. The underlined part of the sentence is a/an-",
     "options": [
       "adjective phrase",
       "noun phrase",
@@ -786,7 +788,7 @@
       "conjunctional phrase"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -795,12 +797,12 @@
     "ref": "bcs41_q37",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Choose the word opposite in \nmeaning to “terse”-",
+    "body": "Choose the word opposite in meaning to “terse”-",
     "options": [
       "concise",
       "detailed",
@@ -808,7 +810,7 @@
       "descriptive"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -817,12 +819,12 @@
     "ref": "bcs41_q38",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "“Who's that?” In this sentence \n“that” is a/an-",
+    "body": "“Who's that?” In this sentence “that” is a/an-",
     "options": [
       "pronoun",
       "conjunction",
@@ -830,7 +832,7 @@
       "adverb"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -839,12 +841,12 @@
     "ref": "bcs41_q39",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "What is the noun form of the word \n“know”?",
+    "body": "What is the noun form of the word “know”?",
     "options": [
       "knowing",
       "knowledge",
@@ -852,7 +854,7 @@
       "Known"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -860,13 +862,13 @@
   {
     "ref": "bcs41_q40",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "“Why, then, 'tis none to you, for \nthere is nothing either good or bad, but \nthinking makes it so”. \nThis extract is taken from the drama-",
+    "lang": "en",
+    "body": "“Why, then, 'tis none to you, for there is nothing either good or bad, but thinking makes it so”. This extract is taken from the drama-",
     "options": [
       "King Lear",
       "Macbeth",
@@ -874,7 +876,7 @@
       "Hamlet"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -882,13 +884,13 @@
   {
     "ref": "bcs41_q41",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "“Made weak by time and fate, but \nstrong in will To strive to seek, to find, and \nnot to yield” is taken from the poem \nwritten by-",
+    "lang": "en",
+    "body": "“Made weak by time and fate, but strong in will To strive to seek, to find, and not to yield” is taken from the poem written by-",
     "options": [
       "Robert Browning",
       "Matthew Arnold",
@@ -896,7 +898,7 @@
       "Lord Byron"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -905,20 +907,20 @@
     "ref": "bcs41_q42",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "“Give somebody a piece of your \nmind” means to-",
+    "body": "“Give somebody a piece of your mind” means to-",
     "options": [
-      "tell someone that you are very angry \nwith them.",
+      "tell someone that you are very angry with them.",
       "say exactly what you feel or think.",
-      "return or to help somebody return to a \nnormal situation.",
+      "return or to help somebody return to a normal situation.",
       "give somebody mental peace"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "very angry with them. ব্যাখ্যা:",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -927,12 +929,12 @@
     "ref": "bcs41_q43",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "“I shall help you provided you obey \nme”. Here the underlined word is a/an-",
+    "body": "“I shall help you provided you obey me”. Here the underlined word is a/an-",
     "options": [
       "adverb",
       "adjective",
@@ -940,7 +942,7 @@
       "verb"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -949,7 +951,7 @@
     "ref": "bcs41_q44",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
@@ -962,7 +964,7 @@
       "questionair"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -971,7 +973,7 @@
     "ref": "bcs41_q45",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
@@ -984,7 +986,7 @@
       "There is no one but likes him."
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -992,8 +994,8 @@
   {
     "ref": "bcs41_q46",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
@@ -1006,7 +1008,7 @@
       "T. S. Eliot"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1015,12 +1017,12 @@
     "ref": "bcs41_q47",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "In Shakespeare's play Hamlet, \nHamlet was prince of",
+    "body": "In Shakespeare's play Hamlet, Hamlet was prince of",
     "options": [
       "Norway",
       "Britain",
@@ -1028,7 +1030,7 @@
       "France"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1036,13 +1038,13 @@
   {
     "ref": "bcs41_q48",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "Adela Quested and Mrs. Moore are \ncharacters from the novel-",
+    "lang": "en",
+    "body": "Adela Quested and Mrs. Moore are characters from the novel-",
     "options": [
       "David Copperfield",
       "The Return of the Native",
@@ -1050,7 +1052,7 @@
       "Adam Bede"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1058,12 +1060,12 @@
   {
     "ref": "bcs41_q49",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
-    "lang": "bn",
+    "lang": "en",
     "body": "“Shylock” is a character in the play-",
     "options": [
       "Twelfth Night",
@@ -1072,7 +1074,7 @@
       "Measure for Measure"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1081,7 +1083,7 @@
     "ref": "bcs41_q50",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
@@ -1094,7 +1096,7 @@
       "Virgina Woolf"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1103,12 +1105,12 @@
     "ref": "bcs41_q51",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "'Pip' is the protagonist in Charles \nDickens' novel-",
+    "body": "'Pip' is the protagonist in Charles Dickens' novel-",
     "options": [
       "A Christmas Carol",
       "A Tale of Two Cities",
@@ -1116,7 +1118,7 @@
       "Great Expectations"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1125,12 +1127,12 @@
     "ref": "bcs41_q52",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "‘Lady Chatterley's Lover’ was \nwritten by the author of-",
+    "body": "‘Lady Chatterley's Lover’ was written by the author of-",
     "options": [
       "Lord Jim",
       "The Rainbow",
@@ -1138,7 +1140,7 @@
       "A Passage to India"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1147,12 +1149,12 @@
     "ref": "bcs41_q53",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Identify the word that can be used \nas both singular and plural:",
+    "body": "Identify the word that can be used as both singular and plural:",
     "options": [
       "wood",
       "issue",
@@ -1160,7 +1162,7 @@
       "light"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1169,12 +1171,12 @@
     "ref": "bcs41_q54",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Find out the correct passive form of \nthe sentence 'Who taught you French?'",
+    "body": "Find out the correct passive form of the sentence 'Who taught you French?'",
     "options": [
       "By whom you were taught French?",
       "By whom French was taught you?",
@@ -1182,7 +1184,7 @@
       "By whom were you taught French?"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "French? ব্যাখ্যা:",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1191,12 +1193,12 @@
     "ref": "bcs41_q55",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "“The old man was tired of walking”. \nHere 'walking' is a/an-",
+    "body": "“The old man was tired of walking”. Here 'walking' is a/an-",
     "options": [
       "present participle",
       "adjective",
@@ -1204,7 +1206,7 @@
       "gerund"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1213,7 +1215,7 @@
     "ref": "bcs41_q56",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
@@ -1226,7 +1228,7 @@
       "The doctor saw my pulse."
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1235,12 +1237,12 @@
     "ref": "bcs41_q57",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "‘I will not let you go’. In this \nsentence 'go' is a/an-",
+    "body": "‘I will not let you go’. In this sentence 'go' is a/an-",
     "options": [
       "infinitive",
       "gerund",
@@ -1248,7 +1250,7 @@
       "verbal noun"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1257,12 +1259,12 @@
     "ref": "bcs41_q58",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "When Ushashi entered _____ the \nroom everybody stopped talking.",
+    "body": "When Ushashi entered _____ the room everybody stopped talking.",
     "options": [
       "into",
       "in",
@@ -1270,7 +1272,7 @@
       "no preposition required"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1279,12 +1281,12 @@
     "ref": "bcs41_q59",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "The play 'The Birthday Party' is \nwritten by-",
+    "body": "The play 'The Birthday Party' is written by-",
     "options": [
       "Samel Beckett",
       "Henry Livings",
@@ -1292,7 +1294,7 @@
       "Arthur Miller"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1300,13 +1302,13 @@
   {
     "ref": "bcs41_q60",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "“Time held me green and dying \nThough I sang in my chains like the sea”. \nThese lines have been quoted from Dylan \nThomas' poem-",
+    "lang": "en",
+    "body": "“Time held me green and dying Though I sang in my chains like the sea”. These lines have been quoted from Dylan Thomas' poem-",
     "options": [
       "The Flower",
       "Fern Hill",
@@ -1314,7 +1316,7 @@
       "After the Funeral"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1323,12 +1325,12 @@
     "ref": "bcs41_q61",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "One whose attitude is 'eat, drink \nand be merry' is-",
+    "body": "One whose attitude is 'eat, drink and be merry' is-",
     "options": [
       "materialistic",
       "epicurean",
@@ -1336,7 +1338,7 @@
       "stoic"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1344,13 +1346,13 @@
   {
     "ref": "bcs41_q62",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "'Was this the face that launch'd a \nthousand ships, And burnt the topless \ntowers of Ilium? Who speaks the famous \nlines?",
+    "body": "'Was this the face that launch'd a thousand ships, And burnt the topless towers of Ilium? Who speaks the famous lines?",
     "options": [
       "Caesar",
       "Antony",
@@ -1358,7 +1360,7 @@
       "Romeo"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1366,13 +1368,13 @@
   {
     "ref": "bcs41_q63",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "The Character 'Alfred Doolittle' is \ntaken from Shaw's play titled-",
+    "lang": "en",
+    "body": "The Character 'Alfred Doolittle' is taken from Shaw's play titled-",
     "options": [
       "Pygmalion",
       "Man and Superman",
@@ -1380,7 +1382,7 @@
       "Mrs. Warren's Profession"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1389,12 +1391,12 @@
     "ref": "bcs41_q64",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "The poem 'The Love Song of J. \nAlfred Prufrock' is written by-",
+    "body": "The poem 'The Love Song of J. Alfred Prufrock' is written by-",
     "options": [
       "W. B. Yeats",
       "T. S. Eliot",
@@ -1402,7 +1404,7 @@
       "Robert Browning"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1410,13 +1412,13 @@
   {
     "ref": "bcs41_q65",
     "exam": "bcs-general",
-    "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "subject": "English",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Who is the author of the first \nscientific romance 'The Time Machine'?",
+    "body": "Who is the author of the first scientific romance 'The Time Machine'?",
     "options": [
       "H. G. Wells",
       "Samuel Butler",
@@ -1424,7 +1426,7 @@
       "George Moore"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1433,12 +1435,12 @@
     "ref": "bcs41_q66",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "'Call me if you have any problems \nregarding your work'. Here 'regarding' is \na/an-",
+    "body": "'Call me if you have any problems regarding your work'. Here 'regarding' is a/an-",
     "options": [
       "gerund",
       "apposition",
@@ -1446,7 +1448,7 @@
       "conjunction"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1455,20 +1457,20 @@
     "ref": "bcs41_q67",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Select the correct comparative form \nof the sentence. \n'A string of pearls was not so bright as her \nteeth.'",
+    "body": "Select the correct comparative form of the sentence. 'A string of pearls was not so bright as her teeth.'",
     "options": [
-      "Her teeth was more brighter than a \nstring of pearls.",
-      "Her teeth were brighter than a string of \npearls.",
-      "A string of pearls was brighter than her \nteeth.",
-      "A string of pearls were very bright than \nher teeth."
+      "Her teeth was more brighter than a string of pearls.",
+      "Her teeth were brighter than a string of pearls.",
+      "A string of pearls was brighter than her teeth.",
+      "A string of pearls were very bright than her teeth."
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "string of pearls. ব্যাখ্যা:",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1477,12 +1479,12 @@
     "ref": "bcs41_q68",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "‘Come on, it's time to go home’. \nHere 'home' is a/an-",
+    "body": "‘Come on, it's time to go home’. Here 'home' is a/an-",
     "options": [
       "noun",
       "verb",
@@ -1490,7 +1492,7 @@
       "adverb"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1499,12 +1501,12 @@
     "ref": "bcs41_q69",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "‘Huffing and puffing, we arrived at the \nclassroom door with only seven seconds to \nspare’. In this sentence the verb 'arrived' is-",
+    "body": "‘Huffing and puffing, we arrived at the classroom door with only seven seconds to spare’. In this sentence the verb 'arrived' is-",
     "options": [
       "intransitive",
       "transitive",
@@ -1512,7 +1514,7 @@
       "Defective"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1521,12 +1523,12 @@
     "ref": "bcs41_q70",
     "exam": "bcs-general",
     "subject": "English",
-    "topic": "English Language & Literature",
+    "topic": "ইংরেজি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "en",
-    "body": "Which one of the following is a \ncommon gender?",
+    "body": "Which one of the following is a common gender?",
     "options": [
       "king",
       "sovereign",
@@ -1534,7 +1536,7 @@
       "Queen"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1542,13 +1544,13 @@
   {
     "ref": "bcs41_q71",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "১ থেকে ৪৪০ পযচন্ত িংখযাগুশিাি একবি \nতেির্যন পদ্ধবতশত রনওযা হবে িংখযাবি িগচিংখযা \nহওযাি িম্ভািনা-",
+    "body": "১ থেকে ৪৪০ পর্যন্ত সংখ্যাগুলোর একটি দৈবচয়ন পদ্ধতিতে নেওয়া হলে সংখ্যাটি বর্গসংখ্যা হওয়ার সম্ভাবনা-",
     "options": [
       "১/২২",
       "১/৬৪",
@@ -1556,7 +1558,7 @@
       "২/৬৫"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1564,13 +1566,13 @@
   {
     "ref": "bcs41_q72",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "০.১২ + ০.০০১২ + ০.০০০০১২ + ........ \nধািাবসব অিীম পে পযচন্ত রযাগফি-",
+    "body": "০.১২ + ০.০০১২ + ০.০০০০১২ + ........ ধারাটির অসীম পদ পর্যন্ত যোগফল-",
     "options": [
       "8/৩৩",
       "৪/৯৯",
@@ -1578,7 +1580,7 @@
       "১৪/৯৯"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1586,8 +1588,8 @@
   {
     "ref": "bcs41_q73",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
@@ -1600,7 +1602,7 @@
       "-4i"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1608,13 +1610,13 @@
   {
     "ref": "bcs41_q74",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "|x - 2| < 3 হবে, m এিং n এি কোন \nমাশনি জনয m৷ < 3x+5 < n হবে?",
+    "body": "|x - 2| < 3 হলে, m এবং n এর কোন মানের জন্য m। < 3x+5 < n হবে?",
     "options": [
       "m = 1, n = 10",
       "m = 2, n = 20",
@@ -1622,7 +1624,7 @@
       "m = 4, n = 40"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1630,13 +1632,13 @@
   {
     "ref": "bcs41_q75",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একবি আযতশক্ষশত্রি তেঘচয ৫% িৃবদ্ধ কিশি \nতাি রক্ষত্রফি েতকিা কত িৃবদ্ধ পাশি?",
+    "body": "একটি আয়তক্ষেত্রের দৈর্ঘ্য ৫% বৃদ্ধি করলে তার ক্ষেত্রফল শতকরা কত বৃদ্ধি পাবে?",
     "options": [
       "৫%",
       "১০%",
@@ -1644,7 +1646,7 @@
       "২৫%"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1652,13 +1654,13 @@
   {
     "ref": "bcs41_q76",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "র্ববনি মূিয ১০% কশম যাওযায র্ববনি \nিযিহাি েতকিা কত ভাগ িাড়াশি র্ববন িািে খির্ \nএকই োকশি?",
+    "body": "চিনির মূল্য ১০% কমে যাওয়ায় চিনির ব্যবহার শতকরা কত ভাগ বাড়ালে চিনি বাবদ খরচ একই থাকবে?",
     "options": [
       "৮%",
       "৮(১/৩)%",
@@ -1666,7 +1668,7 @@
       "১১(১/৯)%"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1674,21 +1676,21 @@
   {
     "ref": "bcs41_q77",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "৬ রি.বম. িযািাধচ বিবেি িৃশত্তি অন্তঃস্থ একবি \nিমিাহু বত্রভুশজি রক্ষত্রফি-",
+    "body": "৬ সে.মি. ব্যাসার্ধ বিশিষ্ট বৃত্তের অন্তঃস্থ একটি সমবাহু ত্রিভুজের ক্ষেত্রফল-",
     "options": [
-      "২১√৩ িগচ রি.বম.",
-      "২৩√২ িগচ রি.বম.",
-      "২৫√৩ িগচ রি.বম.",
-      "২৭√৩ িগচ রি.বম,"
+      "২১√৩ বর্গ সে.মি.",
+      "২৩√২ বর্গ সে.মি.",
+      "২৫√৩ বর্গ সে.মি.",
+      "২৭√৩ বর্গ সে.মি,"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1696,13 +1698,13 @@
   {
     "ref": "bcs41_q78",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ΔABC এি ∠A = 40° এিং ∠B = 80°। \n∠C এি িমবিখণ্ডক AB িাহুশক D বিন্দুশত রিে কিশি \n∠CDA = ?",
+    "body": "ΔABC এর ∠A = 40° এবং ∠B = 80°। ∠C এর সমদ্বিখণ্ডক AB বাহুকে D বিন্দুতে ছেদ করলে ∠CDA = ?",
     "options": [
       "১১০°",
       "১০০°",
@@ -1710,7 +1712,7 @@
       "৮০°"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1718,13 +1720,13 @@
   {
     "ref": "bcs41_q79",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "৫ জন পুরুষ ও ৪ জন মবহিাি একবি েি \nথেকে একজন পুরুষ ও েুইজন মবহিা বনশয কত \nিকাশি একবি কবমবি গিন কিা যাশি?",
+    "body": "৫ জন পুরুষ ও ৪ জন মহিলার একটি দল থেকে একজন পুরুষ ও দুইজন মহিলা নিয়ে কত প্রকারে একটি কমিটি গঠন করা যাবে?",
     "options": [
       "১০",
       "১৫",
@@ -1732,7 +1734,7 @@
       "৩০"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1740,13 +1742,13 @@
   {
     "ref": "bcs41_q80",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "x + 21/3 + 22/3 = 0 হবে, x3 + 6 এি \nমান কত?",
+    "body": "x + 21/3 + 22/3 = 0 হলে, x3 + 6 এর মান কত?",
     "options": [
       "4x",
       "6x",
@@ -1754,7 +1756,7 @@
       "৪"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1762,13 +1764,13 @@
   {
     "ref": "bcs41_q81",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "5x + 8.5x + 16.5x = 1 হবে, x এি মান কত?",
+    "body": "5x + 8.5x + 16.5x = 1 হলে, x এর মান কত?",
     "options": [
       "-3",
       "-2",
@@ -1776,7 +1778,7 @@
       "-(1/2)"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1784,13 +1786,13 @@
   {
     "ref": "bcs41_q82",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "5/12, 6/13, 11/24 এিং 3/8 এি মশধয \nিড় ভগ্াংেবি-",
+    "body": "5/12, 6/13, 11/24 এবং 3/8 এর মধ্যে বড় ভগ্নাংশটি-",
     "options": [
       "5/12",
       "6/13",
@@ -1798,7 +1800,7 @@
       "3/8"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1806,13 +1808,13 @@
   {
     "ref": "bcs41_q83",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "a + b = 7 এিং ab = 12 হবে, 1/a2 + \n1/b2 এি মান কত?",
+    "body": "a + b = 7 এবং ab = 12 হলে, 1/a2 + 1/b2 এর মান কত?",
     "options": [
       "3/25",
       "25/144",
@@ -1820,7 +1822,7 @@
       "11/49"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1828,21 +1830,21 @@
   {
     "ref": "bcs41_q84",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িাবষচক ১০% মুনাফায ৮০০ িাকাি ২ সবশসব \nর্সবৃবদ্ধ মূিধন কত?",
+    "body": "বার্ষিক ১০% মুনাফায় ৮০০ টাকার ২ বছরের চক্রবৃদ্ধি মূলধন কত?",
     "options": [
-      "৯৪০ িাকা",
-      "৯৬০ িাকা",
-      "৯৬৮ িাকা",
-      "৯৮০ িাকা"
+      "৯৪০ টাকা",
+      "৯৬০ টাকা",
+      "৯৬৮ টাকা",
+      "৯৮০ টাকা"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1851,11 +1853,11 @@
     "ref": "bcs41_q85",
     "exam": "bcs-general",
     "subject": "Mathematics & Reasoning",
-    "topic": "গাণিতিক যুক্তি ও বাস্তব সংখ্যা",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
-    "lang": "bn",
+    "lang": "en",
     "body": "log2 log√ee2 = ?",
     "options": [
       "-2",
@@ -1864,7 +1866,7 @@
       "2"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1872,21 +1874,21 @@
   {
     "ref": "bcs41_q86",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "গ্রাবফন (graphene) কাি িহুরূপী?",
+    "body": "গ্রাফিন (graphene) কার বহুরূপী?",
     "options": [
-      "কািচন",
-      "কািচন ও অবিশজন",
-      "কািচন ও হাইশরাশজন",
-      "কািচন ও নাইশোশজন"
+      "কার্বন",
+      "কার্বন ও অক্সিজেন",
+      "কার্বন ও হাইড্রোজেন",
+      "কার্বন ও নাইট্রোজেন"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1894,21 +1896,21 @@
   {
     "ref": "bcs41_q87",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আইনস্টাইন নাশ শসব পুিস্কাি পান-",
+    "body": "আইনস্টাইন নােবেল পুরস্কার পান-",
     "options": [
-      "আশপবক্ষক তশসব উপি",
-      "মহাকষচীয ধ্রুিক আবিষ্কাশসব জনয",
-      "কৃ ষ্ণগহ্বি আবিষ্কাশসব জনয",
-      "আশিাক তবড়ৎ বিযাি িযাখযা িোশনি জনয"
+      "আপেক্ষিক তত্ত্বের উপর",
+      "মহাকর্ষীয় ধ্রুবক আবিষ্কারের জন্য",
+      "কৃষ্ণগহ্বর আবিষ্কারের জন্য",
+      "আলোক তড়িৎ ক্রিয়ার ব্যাখ্যা প্রদানের জন্য"
     ],
     "answer": 3,
-    "explanation": "িোশনি জনয \nসঠিক উত্তর: ঘ) আশিাক তবড়ৎ বিযাি িযাখযা িোশনি জনয \nLive MCQ Analytics™: িবিক উত্তিোতা: 44%, ভুি \nউত্তিোতা: 17%, উত্তি কশিনবন: 37% \nব্যাখ্যা: এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1916,21 +1918,21 @@
   {
     "ref": "bcs41_q88",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন পাবনশত অবিশজশনি পবিমার্ রিবে?",
+    "body": "কোন পানিতে অক্সিজেনের পরিমাণ বেশি?",
     "options": [
-      "পুকু শসব পাবনশত",
-      "রিশকি পাবনশত",
-      "নেীি পাবনশত",
-      "িাগশসব পাবনশত"
+      "পুকুরের পানিতে",
+      "লেকের পানিতে",
+      "নদীর পানিতে",
+      "সাগরের পানিতে"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1938,21 +1940,21 @@
   {
     "ref": "bcs41_q89",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "হািচ থেকে িক্ত িাইশি বনশয যায রয িক্তনািী-",
+    "body": "হার্ট থেকে রক্ত বাইরে নিয়ে যায় যে রক্তনালী-",
     "options": [
-      "রভইন",
-      "আিচাবি",
-      "কযাবপিাবি",
-      "নাভচ"
+      "ভেইন",
+      "আর্টারি",
+      "ক্যাপিলারি",
+      "নার্ভ"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1960,21 +1962,21 @@
   {
     "ref": "bcs41_q90",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িাশ বিন ততবি হয়-",
+    "body": "প্রােটিন তৈরি হয়-",
     "options": [
-      "ফযাবি অযাবসব বেশয",
-      "বনউবিক অযাবসব বেশয",
-      "অযাবমনাশ অযাবসব বেশয",
-      "উপশসব কোনবিই নয"
+      "ফ্যাটি অ্যাসিড দিয়ে",
+      "নিউক্লিক অ্যাসিড দিয়ে",
+      "অ্যামিনাে অ্যাসিড দিয়ে",
+      "উপরের কোনটিই নয়"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -1982,21 +1984,21 @@
   {
     "ref": "bcs41_q91",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোনবি পাবনশত দ্রিীভূত হয় না?",
+    "body": "কোনটি পানিতে দ্রবীভূত হয় না?",
     "options": [
-      "বসবাবিন",
-      "বফিবকবি",
-      "রিাবিযাম রিািাইি",
-      "কযািবিযাম কাশিচাশনি"
+      "গ্লিসারিন",
+      "ফিটকিরি",
+      "সোডিয়াম ক্লোরাইড",
+      "ক্যালসিয়াম কার্বোনেট"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2004,21 +2006,21 @@
   {
     "ref": "bcs41_q92",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মানিশেশহ িাশ বহত কর্বকাি আযুষ্কাি কত বেন?",
+    "body": "মানবদেহে লােহিত কণিকার আয়ুষ্কাল কত দিন?",
     "options": [
-      "৭ বেন",
-      "৩০ বেন",
-      "১৮০ বেন",
-      "উপশসব কোনবিই নয"
+      "৭ দিন",
+      "৩০ দিন",
+      "১৮০ দিন",
+      "উপরের কোনটিই নয়"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2026,21 +2028,21 @@
   {
     "ref": "bcs41_q93",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নেীি পাবনি রক্ষশত্র কোনবি িতয?",
+    "body": "নদীর পানির ক্ষেত্রে কোনটি সত্য?",
     "options": [
       "COD > BOD",
       "COD < BOD",
       "COD = BOD",
-      "উপশসব কোনবিই নয"
+      "উপরের কোনটিই নয়"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2048,13 +2050,13 @@
   {
     "ref": "bcs41_q94",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "পােফাইন্ডাি-এি মঙ্গশি অিতির্ িাি-",
+    "body": "পাথফাইন্ডার-এর মঙ্গলে অবতরণ সাল-",
     "options": [
       "১৯৯০",
       "১৯৯৫",
@@ -2062,7 +2064,7 @@
       "২০০০"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2070,21 +2072,21 @@
   {
     "ref": "bcs41_q95",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ওশজান স্তি বায়ুমণ্ডশসব কোন স্তশি অিবস্থত?",
+    "body": "ওজোন স্তর বায়ুমণ্ডলের কোন স্তরে অবস্থিত?",
     "options": [
-      "স্ট্রাশিামণ্ডি",
-      "েপাশ মণ্ডি",
-      "রমশিামণ্ডি",
-      "তাপমণ্ডি"
+      "স্ট্রাটোমণ্ডল",
+      "ট্রপােমণ্ডল",
+      "মেসোমণ্ডল",
+      "তাপমণ্ডল"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2092,21 +2094,21 @@
   {
     "ref": "bcs41_q96",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কাাঁেুশন গযাশসব অপি নাম কী?",
+    "body": "কাঁদুনে গ্যাসের অপর নাম কী?",
     "options": [
-      "রিাশিাবপবিন",
-      "বমশেন",
-      "নাইশোশজন",
-      "ইশেন"
+      "ক্লোরোপিক্রিন",
+      "মিথেন",
+      "নাইট্রোজেন",
+      "ইথেন"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2114,21 +2116,21 @@
   {
     "ref": "bcs41_q97",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আশিাকিষচ িযিহাি কশি কী পবিমাপ কিা হয়?",
+    "body": "আলোকবর্ষ ব্যবহার করে কী পরিমাপ করা হয়?",
     "options": [
-      "েূিত্ব",
-      "িময",
-      "ভি",
+      "দূরত্ব",
+      "সময়",
+      "ভর",
       "ওজন"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2136,21 +2138,21 @@
   {
     "ref": "bcs41_q98",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িূশযচি বনকিতম নক্ষশত্রি নাম-",
+    "body": "সূর্যের নিকটতম নক্ষত্রের নাম-",
     "options": [
-      "রভিা",
-      "িবিমা রিন্টাউবি",
-      "আিফা রিন্টাউবি A",
-      "আিফা রিন্টাউবি B"
+      "ভেলা",
+      "প্রক্সিমা সেন্টাউরি",
+      "আলফা সেন্টাউরি A",
+      "আলফা সেন্টাউরি B"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2158,21 +2160,21 @@
   {
     "ref": "bcs41_q99",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "১০০ ওযাি-এি একবি তিেুযবতক িাল্ব ১ ঘন্টা \nর্িশি কত েবক্ত িযয হয়?",
+    "body": "১০০ ওয়াট-এর একটি বৈদ্যুতিক বাল্ব ১ ঘন্টা চললে কত শক্তি ব্যয় হয়?",
     "options": [
-      "১০০ জুি",
-      "৬০ জুি",
-      "৬০০০ জুি",
-      "৩৬০০০০ জুি"
+      "১০০ জুল",
+      "৬০ জুল",
+      "৬০০০ জুল",
+      "৩৬০০০০ জুল"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2180,21 +2182,21 @@
   {
     "ref": "bcs41_q100",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "General Science",
+    "topic": "সাধারণ বিজ্ঞান",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ইশিক্ট্রবনক িাল্ব-এি বফিাশমন্ট যািা িািা \nততবি-",
+    "body": "ইলেক্ষ্মনিক বাল্ব-এর ফিলামেন্ট যারা দ্বারা তৈরি-",
     "options": [
-      "আযিন",
-      "কািচন",
-      "িাংশস্টন",
-      "রসব"
+      "আয়রন",
+      "কার্বন",
+      "টাংস্টেন",
+      "লেড"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2202,13 +2204,13 @@
   {
     "ref": "bcs41_q101",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "Apache এক ধিশনি-",
+    "body": "Apache এক ধরনের-",
     "options": [
       "Database Management System (DBMS)",
       "Web Server",
@@ -2216,7 +2218,7 @@
       "Protocol"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2224,21 +2226,21 @@
   {
     "ref": "bcs41_q102",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িাউি কবম্পউবিং-এি িাবভচি মশসব \nকোনবি?",
+    "body": "ক্লাউড কম্পিউটিং-এর সার্ভিস মডেল কোনটি?",
     "options": [
-      "অিকািাশমাগত",
-      "প্লািফমচবভবত্তক",
-      "িফিওযযাি",
-      "উপশসব সবগুশিা"
+      "অবকাঠামোগত",
+      "প্লাটফর্মভিত্তিক",
+      "সফটওয়্যার",
+      "উপরের সবগুলো"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2246,21 +2248,21 @@
   {
     "ref": "bcs41_q103",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন রনিওযাকচ িশপািবজশত হাি (hub) \nিযিহাি কিা হয়?",
+    "body": "কোন নেটওয়ার্ক টপোলজিতে হাব (hub) ব্যবহার করা হয়?",
     "options": [
-      "িাি িশপািবজ",
-      "বিং িশপািবজ",
-      "স্টাি িশপািবজ",
-      "বে িশপািবজ"
+      "বাস টপোলজি",
+      "রিং টপোলজি",
+      "স্টার টপোলজি",
+      "ট্রি টপোলজি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2268,13 +2270,13 @@
   {
     "ref": "bcs41_q104",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একবি কবম্পউিাি boot কিশত পাশি না \nযবে তাশত না োশক-",
+    "body": "একটি কম্পিউটার boot করতে পারে না যদি তাতে না থাকে-",
     "options": [
       "compiler",
       "loader",
@@ -2282,7 +2284,7 @@
       "bootstrap"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2290,21 +2292,21 @@
   {
     "ref": "bcs41_q105",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মাইশিািফি IIS হশচ্ছ একবি-",
+    "body": "মাইক্রোসফট IIS হচ্ছে একটি-",
     "options": [
-      "ইশমইি িাভচাি",
-      "ওশযি িাভচাি",
-      "িািাশিইি িাভচাি",
-      "ফাইি িাভচাি"
+      "ইমেইল সার্ভার",
+      "ওয়েব সার্ভার",
+      "ডাটাবেইস সার্ভার",
+      "ফাইল সার্ভার"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2312,21 +2314,21 @@
   {
     "ref": "bcs41_q106",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িুিু ে কত েূিত্ব পযচন্ত কাজ কশি?",
+    "body": "ব্লুটুথ কত দূরত্ব পর্যন্ত কাজ করে?",
     "options": [
-      "১০-৩০ বমিাি",
-      "১০-৫০ বমিাি।",
-      "১০-১০০ বমিাি",
-      "১০-৩০০ বমিাি"
+      "১০-৩০ মিটার",
+      "১০-৫০ মিটার।",
+      "১০-১০০ মিটার",
+      "১০-৩০০ মিটার"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2334,13 +2336,13 @@
   {
     "ref": "bcs41_q107",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একবি বিশস্টম রযখাশন আইশিমগুশিা এক \nিাশন্ত িংশযাবজত হয় বকন্তু অন্য িান্ত থেকে সবাশনা হয় \nতাি নাম-",
+    "body": "একটি সিস্টেম যেখানে আইটেমগুলো এক প্রান্তে সংযোজিত হয় কিন্তু অন্য প্রান্ত থেকে সরানো হয় তার নাম-",
     "options": [
       "Array",
       "Linked list",
@@ -2348,7 +2350,7 @@
       "Queue"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2356,13 +2358,13 @@
   {
     "ref": "bcs41_q108",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনর্শি কোনবি anti-virus িফিওযযাি নয?",
+    "body": "নিচের কোনটি anti-virus সফটওয়্যার নয়?",
     "options": [
       "Oracle",
       "McAfee",
@@ -2370,7 +2372,7 @@
       "Kaspersky"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2378,13 +2380,13 @@
   {
     "ref": "bcs41_q109",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "রয কবম্পউিাি ভাষায সবকিছু শুধুমাত্র \nিাইনাবি রকাশি রিখা হয় তাশক িশি-",
+    "body": "যে কম্পিউটার ভাষায় সবকিছু শুধুমাত্র বাইনারি কোডে লেখা হয় তাকে বলে-",
     "options": [
       "Machine language",
       "C",
@@ -2392,7 +2394,7 @@
       "Python"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2401,12 +2403,12 @@
     "ref": "bcs41_q110",
     "exam": "bcs-general",
     "subject": "Computer & ICT",
-    "topic": "কম্পিউটার ও তথ্যপ্রযুক্তি",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "API মাশন-",
+    "body": "API মানে-",
     "options": [
       "Advanced Processing Information",
       "Application Processing Information",
@@ -2414,7 +2416,7 @@
       "Application Processing Interface"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "Interface ব্যাখ্যা:",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2422,21 +2424,21 @@
   {
     "ref": "bcs41_q111",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "রয ইশিক্ট্রবনক িবজক রগইশসব আউিপুি \nিাবজক 0 শুধুমাত্র যখন িকি ইনপুি িবজক 1 তাি \nনাম-",
+    "body": "যে ইলেক্ষ্মনিক লজিক গেইটের আউটপুট লাজিক 0 শুধুমাত্র যখন সকল ইনপুট লজিক 1 তার নাম-",
     "options": [
-      "AND রগইি",
-      "OR রগইি",
-      "NAND রগইি",
-      "উপশসব কোনবিই নয"
+      "AND গেইট",
+      "OR গেইট",
+      "NAND গেইট",
+      "উপরের কোনটিই নয়"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2444,13 +2446,13 @@
   {
     "ref": "bcs41_q112",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনর্শি কোনবসব যাশ গাযাশ শগি েূিত্ব \nসবর্শশয কম?",
+    "body": "নিচের কোনটির যােগাযােগের দূরত্ব সবচেয়ে কম?",
     "options": [
       "Wi-Fi",
       "Bluetooth",
@@ -2458,7 +2460,7 @@
       "Cellular network"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2466,13 +2468,13 @@
   {
     "ref": "bcs41_q113",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনর্শি কোনবি ১০০ এি ১ কমবপ্লশমন্ট?",
+    "body": "নিচের কোনটি ১০০ এর ১ কমপ্লিমেন্ট?",
     "options": [
       "১১১",
       "১০১",
@@ -2480,7 +2482,7 @@
       "০০১"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2488,13 +2490,13 @@
   {
     "ref": "bcs41_q114",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "RFID সবশত িুঝায-",
+    "body": "RFID বলতে বুঝায়-",
     "options": [
       "Random Frequency Identification",
       "Random Frequency Information",
@@ -2502,7 +2504,7 @@
       "Radio Frequency Identification"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2516,7 +2518,7 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনর্শি কোনবি িবিক নয?",
+    "body": "বনর্শি কোনবিবিক নয?",
     "options": [
       "খ)",
       "ঘ)",
@@ -2524,29 +2526,30 @@
       "অপশন 4"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
-    "cancelled": false
+    "cancelled": false,
+    "status": "draft"
   },
   {
     "ref": "bcs41_q116",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Computer & ICT",
+    "topic": "কম্পিউটার ও আইসিটি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনর্শি কোন অক্ষিগুিাশ পুনবিচনযাি কশি \nএকবি অেচিাশ ধক েব্দ ততবি কিা যায?",
+    "body": "নিচের কোন অক্ষরগুলাে পুনর্বিন্যাস করে একটি অর্থবােধক শব্দ তৈরি করা যায়?",
     "options": [
-      "িা ত্র রহা অ",
-      "ি িা ধী প বন",
-      "দ্র তা বি ো",
-      "িা ি ি অ ধযা"
+      "রা ত্র হো অ",
+      "র বা ধী প নি",
+      "দ্র তা রি দা",
+      "সা ব ব অ ধ্যা"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2554,13 +2557,13 @@
   {
     "ref": "bcs41_q117",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "'RELATION' - এি আযনায িবতবিম্ব \nকোনবি হবে?",
+    "body": "'RELATION' - এর আয়নায় প্রতিবিম্ব কোনটি হবে?",
     "options": [
       "ИOITA⅃ƎЯ",
       "ИOIꓕⱯLƎᴚ",
@@ -2568,7 +2571,7 @@
       "NOITALƎЯ"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2576,21 +2579,21 @@
   {
     "ref": "bcs41_q118",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "পাাঁর্জন িযবক্ত রেশন ভ্রর্ম কিশিন। তািা \nহবেন ক, খ, গ, ঘ, ি। ক হবেন গ এি মা, গ আিাি \nি এি স্ত্রী। ঘ হবেন ক এি ভাই এিং খ হবেন ক এি \nস্বামী। ি এি িশঙ্গ খ এি িম্পকচ কী?",
+    "body": "পাঁচজন ব্যক্তি ট্রেনে ভ্রমণ করছেন। তারা হলেন ক, খ, গ, ঘ, ঙ। ক হলেন গ এর মা, গ আবার ঙ এর স্ত্রী। ঘ হলেন ক এর ভাই এবং খ হলেন ক এর স্বামী। ঙ এর সঙ্গে খ এর সম্পর্ক কী?",
     "options": [
-      "শ্বশুি",
-      "বপতা",
-      "র্ার্া",
+      "শ্বশুর",
+      "পিতা",
+      "চাচা",
       "ভাই"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2598,21 +2601,21 @@
   {
     "ref": "bcs41_q119",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "যবে মাশসব ২য বেন রিামিাি হয়, তশি \nমাশসব ১৮তম বেন কী িাি হবে?",
+    "body": "যদি মাসের ২য় দিন সোমবার হয়, তবে মাসের ১৮তম দিন কী বার হবে?",
     "options": [
-      "িবসবাি",
-      "রিামিাি",
-      "মঙ্গসবাি",
-      "িুধিাি"
+      "রবিবার",
+      "সোমবার",
+      "মঙ্গলবার",
+      "বুধবার"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2620,13 +2623,13 @@
   {
     "ref": "bcs41_q120",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িশ্ন:িাশ ধক র্ববহ্নত স্থাশন কোন িংখযা \nসবশি?",
+    "body": "প্রশ্ন:বােধক চিহ্নিত স্থানে কোন সংখ্যা বসবে?",
     "options": [
       "১৮",
       "৬৮",
@@ -2634,7 +2637,7 @@
       "৪৪"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2642,21 +2645,21 @@
   {
     "ref": "bcs41_q121",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "৫০ বমবনি আশগ িময বসব ৪িা রিশজ ৪৫ \nবমবনি, ৬িা িাজশত আি কতক্র্ষ িময িাবক আশি?",
+    "body": "৫০ মিনিট আগে সময় ছিল ৪টা বেজে ৪৫ মিনিট, ৬টা বাজতে আর কতক্ষণ সময় বাকি আছে?",
     "options": [
-      "১৫ বমবনি",
-      "২০ বমবনি",
-      "২৫ বমবনি",
-      "৩০ বমবনি"
+      "১৫ মিনিট",
+      "২০ মিনিট",
+      "২৫ মিনিট",
+      "৩০ মিনিট"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2664,21 +2667,21 @@
   {
     "ref": "bcs41_q122",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "স্ক্রু ও ঘবড়ি কাাঁিাি ঘূর্চন গবতি বেক-",
+    "body": "স্ক্রু ও ঘড়ির কাঁটার ঘূর্ণন গতির দিক-",
     "options": [
-      "একই বেশক",
-      "উশল্টা বেশক",
-      "উিম্ব রিখায",
-      "িমান্তিাশি"
+      "একই দিকে",
+      "উল্টো দিকে",
+      "উলম্ব রেখায়",
+      "সমান্তরালে"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2686,13 +2689,13 @@
   {
     "ref": "bcs41_q123",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনর্শি কোনবি সবর্শশয িাশ ি িংখযা?",
+    "body": "নিচের কোনটি সবচেয়ে ছােট সংখ্যা?",
     "options": [
       "১৮/৩৬",
       "৫/৩",
@@ -2700,7 +2703,7 @@
       "৪/১২"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2708,8 +2711,8 @@
   {
     "ref": "bcs41_q124",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
@@ -2722,7 +2725,7 @@
       "১.৯৮"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2730,21 +2733,21 @@
   {
     "ref": "bcs41_q125",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একজন িযবক্তি রিতন ৫% কশমশি। বকন্তু \nএক সবি পি তা আিাি ৫% রিশড়শি। রমাশসব উপি \nতাি রিতন েতকিা কত িৃবদ্ধ িা হ্রাি রপশযশি?",
+    "body": "একজন ব্যক্তির বেতন ৫% কমেছে। কিন্তু এক বছর পর তা আবার ৫% বেড়েছে। মোটের উপর তার বেতন শতকরা কত বৃদ্ধি বা হ্রাস পেয়েছে?",
     "options": [
-      "০.৫% রিশড়শি",
-      "০.২৫% রিশড়শি",
-      "০.২৫% কশমশি",
-      "০.৫% কশমশি"
+      "০.৫% বেড়েছে",
+      "০.২৫% বেড়েছে",
+      "০.২৫% কমেছে",
+      "০.৫% কমেছে"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2752,13 +2755,13 @@
   {
     "ref": "bcs41_q126",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন িানানবি শুদ্ধ?",
+    "body": "কোন বানানটি শুদ্ধ?",
     "options": [
       "Incyclopedia",
       "Encyclopedia",
@@ -2766,7 +2769,7 @@
       "Encyclopedea"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2774,21 +2777,21 @@
   {
     "ref": "bcs41_q127",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ঘবড় : কািা : োশমচাবমিাি : ?",
+    "body": "ঘড়ি : কাটা : থার্মোমিটার : ?",
     "options": [
-      "ফাশিনহাইি",
+      "ফারেনহাইট",
       "তাপমাত্রা",
-      "র্ববকৎিা",
-      "পািে"
+      "চিকিৎসা",
+      "পারদ"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2796,13 +2799,13 @@
   {
     "ref": "bcs41_q128",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mathematics & Reasoning",
+    "topic": "গাণিতিক যুক্তি ও গণিত",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "১০০ থেকে ২০০ এি মশধয ৩ িািা বিভাজয \nিংখযা কযবি?",
+    "body": "১০০ থেকে ২০০ এর মধ্যে ৩ দ্বারা বিভাজ্য সংখ্যা কয়টি?",
     "options": [
       "৩১",
       "৩২",
@@ -2810,7 +2813,7 @@
       "৩৪"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2818,21 +2821,21 @@
   {
     "ref": "bcs41_q129",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Bangla",
+    "topic": "বাংলা",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "“বতবন আমাি কো িাখশিন না, বতবন \nিাখশিন _____ িাশহশসব কো।”",
+    "body": "“তিনি আমার কথা রাখলেন না, তিনি রাখলেন _____ সাহেবের কথা।”",
     "options": [
-      "আইযুি খান",
-      "ইযাবহয়া খান",
-      "ভুশটা",
-      "বকবিঞ্জাি"
+      "আইয়ুব খান",
+      "ইয়াহিয়া খান",
+      "ভুট্টো",
+      "কিসিঞ্জার"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2840,21 +2843,21 @@
   {
     "ref": "bcs41_q130",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Mental & Analytical Ability",
+    "topic": "মানসিক দক্ষতা ও অ্যানালিটিক্যাল",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িবহম উত্তি বেশক ১০ মাইি রহাঁশি িানবেশক \nঘুশি ৫ মাইি হাাঁশিন। তািপি িানবেশক ঘুশি ২ মাইি \nহাাঁশিন। বতবন কোন বেশক হাাঁিশিন?",
+    "body": "রহিম উত্তর দিকে ১০ মাইল হেঁটে ডানদিকে ঘুরে ৫ মাইল হাঁটেন। তারপর ডানদিকে ঘুরে ২ মাইল হাঁটেন। তিনি কোন দিকে হাঁটছেন?",
     "options": [
-      "পূিচ",
-      "পবিম",
-      "উত্তি",
-      "েবক্র্ষ"
+      "পূর্ব",
+      "পশ্চিম",
+      "উত্তর",
+      "দক্ষিণ"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2862,21 +2865,21 @@
   {
     "ref": "bcs41_q131",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িংবিধাশনি কোন অনুশচ্ছশেি আিাশ শক \nবাংলাশেশে তিশেবেক নীবত পবির্াবিত হয়?",
+    "body": "সংবিধানের কোন অনুচ্ছেদের আলােকে বাংলাদেশে বৈদেশিক নীতি পরিচালিত হয়?",
     "options": [
-      "অনুশচ্ছে ২২",
-      "অনুশচ্ছে ২৩",
-      "অনুশচ্ছে ২৪",
-      "অনুশচ্ছে ২৫"
+      "অনুচ্ছেদ ২২",
+      "অনুচ্ছেদ ২৩",
+      "অনুচ্ছেদ ২৪",
+      "অনুচ্ছেদ ২৫"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2884,21 +2887,21 @@
   {
     "ref": "bcs41_q132",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাশেশেি সবচেবক্ষর্শ কোনবি অিবস্থত?",
+    "body": "বাংলাদেশের সর্বদক্ষিণে কোনটি অবস্থিত?",
     "options": [
-      "েবক্র্ষ তািপবট",
-      "রিন্টমাবিচন",
-      "বনঝু ম িীপ",
-      "রভািা"
+      "দক্ষিণ তালপট্টি",
+      "সেন্টমার্টিন",
+      "নিঝুম দ্বীপ",
+      "ভোলা"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2906,21 +2909,21 @@
   {
     "ref": "bcs41_q133",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাশেশেি িীমান্তিতচী ভািশতি িাজয \nকযবি?",
+    "body": "বাংলাদেশের সীমান্তবর্তী ভারতের রাজ্য কয়টি?",
     "options": [
-      "৩বি",
-      "৪বি",
-      "৫বি",
-      "৬বি"
+      "৩টি",
+      "৪টি",
+      "৫টি",
+      "৬টি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2934,15 +2937,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন িীিশেশষ্ঠি রেহািশেষ বাংলাশেশে \nএশন িীিশেষ্ঠ মবতউি িহমাশনি কিশসব পাশে িমাবহত \nকিা হয়?",
+    "body": "কোন বীরশ্রেষ্ঠের দেহাবশেষ বাংলাদেশে এনে বীরশ্রেষ্ঠ মতিউর রহমানের কবরের পাশে সমাহিত করা হয়?",
     "options": [
-      "বিপাহী রমাস্তফা কামাি",
-      "িযান্স নাশযক মুবন্স আিেুি িউফ",
-      "িযান্স নাশযক নূি মাশ হাম্মে রেখ",
-      "বিপাহী হাবমেুি িহমান"
+      "সিপাহী মোস্তফা কামাল",
+      "ল্যান্স নায়েক মুন্সি আবদুর রউফ",
+      "ল্যান্স নায়েক নূর মােহাম্মদ শেখ",
+      "সিপাহী হামিদুর রহমান"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2956,15 +2959,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "রক িীিশেষ্ঠ নন?",
+    "body": "কে বীরশ্রেষ্ঠ নন?",
     "options": [
-      "হাবমেুি িহমান",
-      "রমাস্তফা কামাি",
-      "মুন্সী আব্দুি িবহম",
-      "নুি মাশ হাম্মে রেখ"
+      "হামিদুর রহমান",
+      "মোস্তফা কামাল",
+      "মুন্সী আব্দুর রহিম",
+      "নুর মােহাম্মদ শেখ"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -2978,7 +2981,7 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাশেশে িেম সাধারণ বনিচার্ন কখন \nঅনুবষ্ঠত হয়?",
+    "body": "বাংলাদেশে প্রথম সাধারণ নির্বাচন কখন অনুষ্ঠিত হয়?",
     "options": [
       "৭ মার্চ ১৯৭৩",
       "১৭ মার্চ ১৯৭৩",
@@ -2986,7 +2989,7 @@
       "৭ মার্চ ১৯৭৪"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3000,15 +3003,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িাবন্তক হ্রে কোন রজিায অিবস্থত?",
+    "body": "প্রান্তিক হ্রদ কোন জেলায় অবস্থিত?",
     "options": [
-      "িাঙ্গামাবি",
-      "খাগড়ািবড়",
-      "িান্দসবান",
-      "বিশসব"
+      "রাঙ্গামাটি",
+      "খাগড়াছড়ি",
+      "বান্দরবান",
+      "সিলেট"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3022,15 +3025,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িাহাশ শি অনুবষ্ঠত OIC েীষচ িশম্মিশন \nিঙ্গিন্ধু কশি যাশ গোন কশিন?",
+    "body": "লাহােরে অনুষ্ঠিত OIC শীর্ষ সম্মেলনে বঙ্গবন্ধু কবে যােগদান করেন?",
     "options": [
-      "২০-২১ রফব্রুযাবি, ১৯৭৪",
-      "২৩-২৪ রফব্রুযাবি, ১৯৭৪",
-      "২৫-২৬ রফব্রুযাবি, ১৯৭৪",
-      "২৭-২৮ রফব্রুযাবি ১৯৭৪"
+      "২০-২১ ফেব্রুয়ারি, ১৯৭৪",
+      "২৩-২৪ ফেব্রুয়ারি, ১৯৭৪",
+      "২৫-২৬ ফেব্রুয়ারি, ১৯৭৪",
+      "২৭-২৮ ফেব্রুয়ারি ১৯৭৪"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3044,15 +3047,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িঙ্গিন্ধু শক কখন “জুবিও কু িী” োবন্ত \nপুিস্কাি িোন কিা হয়?",
+    "body": "বঙ্গবন্ধু কে কখন “জুলিও কু রী” শান্তি পুরস্কার প্রদান করা হয়?",
     "options": [
-      "২০ রম, ১৯৭৩",
-      "২১ রম, ১৯৭২",
-      "২২ রম, ১৯৭২",
-      "২৩ রম, ১৯৭৩"
+      "২০ মে, ১৯৭৩",
+      "২১ মে, ১৯৭২",
+      "২২ মে, ১৯৭২",
+      "২৩ মে, ১৯৭৩"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3060,21 +3063,21 @@
   {
     "ref": "bcs41_q140",
     "exam": "bcs-general",
-    "subject": "International Affairs",
-    "topic": "আন্তর্জাতিক বিষয়াবলি",
+    "subject": "Bangladesh Affairs",
+    "topic": "বাংলাদেশ বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ঐবতহাবিক “িয েফা োবিশত” রয বিষযবি \nঅন্তভু চক্ত বসব না-",
+    "body": "ঐতিহাসিক “ছয় দফা দাবিতে” যে বিষয়টি অন্তভুর্ক্ত ছিল না-",
     "options": [
-      "োিনতাবিক কািাশমা",
-      "রকন্দ্রীয সবকাশসব ক্ষমতা",
-      "স্বতি মুদ্রা িযিস্থা",
-      "বির্াি িযিস্থা"
+      "শাসনতান্ত্রিক কাঠামো",
+      "কেন্দ্রীয় সরকারের ক্ষমতা",
+      "স্বতন্ত্র মুদ্রা ব্যবস্থা",
+      "বিচার ব্যবস্থা"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3088,15 +3091,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "“মাৎিযনযায” বাংলাি কোন িমযকাি বনশেচে কশি?",
+    "body": "“মাৎস্যন্যায়” বাংলার কোন সময়কাল নির্দেশ করে?",
     "options": [
-      "৫ম-৬ষ্ঠ েতক",
-      "৬ষ্ঠ-৭ম েতক",
-      "৭ম-৮ম েতক",
-      "৮ম-৯ম েতক"
+      "৫ম-৬ষ্ঠ শতক",
+      "৬ষ্ঠ-৭ম শতক",
+      "৭ম-৮ম শতক",
+      "৮ম-৯ম শতক"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3110,15 +3113,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাি কোন িুিতাশনি োিনামিশক \nস্র্বচযুগ সবা হয়?",
+    "body": "বাংলার কোন সুলতানের শাসনামলকে স্বর্ণযুগ বলা হয়?",
     "options": [
-      "োমিুিীন ইবিযাি োহ",
-      "নাবিরুিীন মাহমুে োহ",
-      "আিাউবিন রহাশিন োহ",
-      "বগযািউবিন আজম োহ"
+      "শামসুদ্দীন ইলিয়াস শাহ",
+      "নাসিরুদ্দীন মাহমুদ শাহ",
+      "আলাউদ্দিন হোসেন শাহ",
+      "গিয়াসউদ্দিন আজম শাহ"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3132,15 +3135,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ঢাকা বিশ্ববিেযািয িবতষ্ঠায রক অগ্র্রী \nভূবমকা পািন কশিন?",
+    "body": "ঢাকা বিশ্ববিদ্যালয় প্রতিষ্ঠায় কে অগ্রণী ভূমিকা পালন করেন?",
     "options": [
-      "নওযাি আিেুি িবতফ",
-      "িযাি তিযে আহশমে",
-      "নওযাি িযাি িবিমুল্লাহ",
-      "খাজা নাবজমুবিন"
+      "নওয়াব আবদুল লতিফ",
+      "স্যার সৈয়দ আহমেদ",
+      "নওয়াব স্যার সলিমুল্লাহ",
+      "খাজা নাজিমুদ্দিন"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3154,15 +3157,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ভাষা আশন্দািশনি িময পাবকস্তাশনি \nিধানমিী রক বিশিন?",
+    "body": "ভাষা আন্দোলনের সময় পাকিস্তানের প্রধানমন্ত্রী কে ছিলেন?",
     "options": [
-      "খাজা নাবজম উিীন",
-      "নুরুি আবমন",
-      "বিযাকত আিী খান",
-      "মাশ হাম্মে আিী বজন্নাহ"
+      "খাজা নাজিম উদ্দীন",
+      "নুরুল আমিন",
+      "লিয়াকত আলী খান",
+      "মােহাম্মদ আলী জিন্নাহ"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3170,21 +3173,21 @@
   {
     "ref": "bcs41_q145",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আিুবসবা িাকৃ বতক গুহা কোথায় অিবস্থত?",
+    "body": "আলুটিলা প্রাকৃতিক গুহা কোথায় অবস্থিত?",
     "options": [
-      "খাগড়ািাবড় রজিায",
-      "িাঙ্গামাবি রজিায",
-      "িান্দসবান রজিায",
-      "কসবাজাি রজিায"
+      "খাগড়াছাড়ি জেলায়",
+      "রাঙ্গামাটি জেলায়",
+      "বান্দরবান জেলায়",
+      "কক্সবাজার জেলায়"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3198,15 +3201,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলায রিন িংশেি (১০৭০-১২৩০ বসবাব্দ) \nরেষ োিনকতচা রক বিশিন?",
+    "body": "বাংলায় সেন বংশের (১০৭০-১২৩০ খ্রিষ্টাব্দ) শেষ শাসনকর্তা কে ছিলেন?",
     "options": [
-      "রহমন্ত রিন",
-      "িল্লাি রিন",
-      "িক্র্ষ রিন",
-      "রকেি রিন"
+      "হেমন্ত সেন",
+      "বল্লাল সেন",
+      "লক্ষণ সেন",
+      "কেশব সেন"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3220,15 +3223,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাি সবচিার্ীন জনপশেি নাম কী?",
+    "body": "বাংলার সর্বপ্রাচীন জনপদের নাম কী?",
     "options": [
       "পুন্ড্রু",
-      "তাম্রবিবপ্ত",
-      "রগৌড়",
-      "হবিশকি"
+      "তাম্রলিপ্তি",
+      "গৌড়",
+      "হরিকেল"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3242,15 +3245,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কাগমািী িশম্মিন অনুবষ্ঠত হয়-",
+    "body": "কাগমারী সম্মেলন অনুষ্ঠিত হয়-",
     "options": [
-      "রিাজ গাশিচন",
-      "বসবাজগশঞ্জ",
-      "িশন্তাশষ",
-      "িুনামগঞ্জ"
+      "রোজ গার্ডেন",
+      "সিরাজগঞ্জে",
+      "সন্তোষে",
+      "সুনামগঞ্জ"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3264,15 +3267,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মুবক্তযুদ্ধকাশি রকািকাতাি ৮, বেশযিাি \nিাশ শি “বাংলাদেশ িাবহনী” কখন গিন কিা হয়?",
+    "body": "মুক্তিযুদ্ধকালে কোলকাতার ৮, থিয়েটার রােডে “বাংলাদেশ বাহিনী” কখন গঠন করা হয়?",
     "options": [
-      "এবসব ১০, ১৯৭১",
-      "এবসব ১১, ১৯৭১",
-      "এবসব ১২, ১৯৭১",
-      "এবসব ১৩, ১৯৭১"
+      "এপ্রিল ১০, ১৯৭১",
+      "এপ্রিল ১১, ১৯৭১",
+      "এপ্রিল ১২, ১৯৭১",
+      "এপ্রিল ১৩, ১৯৭১"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3286,15 +3289,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন অনুশচ্ছে িশি বাংলাশেশেি \nিংবিধাশনি রমৌবিক বিধানাসবী পবসবতচনশযাগয নয?",
+    "body": "কোন অনুচ্ছেদ বলে বাংলাদেশের সংবিধানের মৌলিক বিধানাবলী পরিবর্তনযোগ্য নয়?",
     "options": [
-      "অনুশচ্ছে ৭",
-      "অনুশচ্ছি ৭(ক)",
-      "অনুশচ্ছে ৭(খ)",
-      "অনুশচ্ছে ৮"
+      "অনুচ্ছেদ ৭",
+      "অনুচ্ছেল ৭(ক)",
+      "অনুচ্ছেদ ৭(খ)",
+      "অনুচ্ছেদ ৮"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3308,15 +3311,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাশেশেি িংবিধাশনি ত্রশযােে \nিংশোধনীি মূি বিষয কী বসব?",
+    "body": "বাংলাদেশের সংবিধানের ত্রয়োদশ সংশোধনীর মূল বিষয় কী ছিল?",
     "options": [
-      "িহুেিীয িযিস্থা",
-      "িাকোি িবতষ্ঠা",
-      "তিািধাযক সবকাি",
-      "িংিশে মবহিা আিন"
+      "বহুদলীয় ব্যবস্থা",
+      "বাকশাল প্রতিষ্ঠা",
+      "তত্ত্বাবধায়ক সরকার",
+      "সংসদে মহিলা আসন"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3324,21 +3327,21 @@
   {
     "ref": "bcs41_q152",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িংবিধাশনি র্রতনাি বিপিীশত িামবিক \nোিনশক তিধতা বেশত কোন তফবিশসব অপিযিহাি \nকিা হয়?",
+    "body": "সংবিধানের চেতনার বিপরীতে সামরিক শাসনকে বৈধতা দিতে কোন তফসিলের অপব্যবহার করা হয়?",
     "options": [
-      "৪েচ তফবসব",
-      "৫ম তফবসব",
-      "৬ষ্ঠ তফবসব",
-      "৭ম তফবসব"
+      "৪র্থ তফসিল",
+      "৫ম তফসিল",
+      "৬ষ্ঠ তফসিল",
+      "৭ম তফসিল"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3346,21 +3349,21 @@
   {
     "ref": "bcs41_q153",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন উপজাবতবসব আিািস্থি “বিবিবেবি” \nরনত্রশকানায?",
+    "body": "কোন উপজাতিটির আবাসস্থল “বিরিশিরি” নেত্রকোনায়?",
     "options": [
-      "িাঁওতাি",
-      "গাশিা",
-      "খাবিযা",
-      "মুিং"
+      "সঁওতাল",
+      "গারো",
+      "খাসিয়া",
+      "মুরং"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3374,15 +3377,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাশেশেি িার্বজয ভাসবাময কীভাশি িক্ষা হয়?",
+    "body": "বাংলাদেশের বাণিজ্য ভারসাম্য কীভাবে রক্ষা হয়?",
     "options": [
-      "IDA credit-এি মাধযশম",
-      "IMF-এি bailout package-এি মাধযশম",
-      "সবািীশেি পািানাশ rmittance-এি মাধযশম",
-      "বিশ্ব িযাংশকি budgetary support-এি মাধযশম"
+      "IDA credit-এর মাধ্যমে",
+      "IMF-এর bailout package-এর মাধ্যমে",
+      "প্রবাসীদের পাঠানাে rmittance-এর মাধ্যমে",
+      "বিশ্ব ব্যাংকের budgetary support-এর মাধ্যমে"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "মাধ্যমে ব্যাখ্যা:",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3396,15 +3399,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "অবিভক্ত বাংলাি সবচিেম িাজা কাশক সবা হয়?",
+    "body": "অবিভক্ত বাংলার সর্বপ্রথম রাজা কাকে বলা হয়?",
     "options": [
-      "অোশ ক",
-      "েোি",
-      "রমগো",
-      "ধমচপাি"
+      "অশােক",
+      "শশাঙ্ক",
+      "মেগদা",
+      "ধর্মপাল"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3418,15 +3421,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িঙ্গভঙ্গ িে রক রঘার্ষা কশিন?",
+    "body": "বঙ্গভঙ্গ রদ কে ঘোষণা করেন?",
     "options": [
-      "সবচ কাজচন",
-      "িাজা পঞ্চম জজচ",
-      "সবচ মাউন্ট িযাশিন",
-      "সবচ ওযাশভি"
+      "লর্ড কার্জন",
+      "রাজা পঞ্চম জর্জ",
+      "লর্ড মাউন্ট ব্যাটেন",
+      "লর্ড ওয়াভেল"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3440,15 +3443,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ঢাকা েহশসব রগাড়াপত্তন হয়-",
+    "body": "ঢাকা শহরের গোড়াপত্তন হয়-",
     "options": [
-      "বব্রবিে আমশি",
-      "িুিতাবন আমশি",
-      "মুঘি আমশি",
-      "স্বাধীন নিািী আমশি"
+      "ব্রিটিশ আমলে",
+      "সুলতানি আমলে",
+      "মুঘল আমলে",
+      "স্বাধীন নবাবী আমলে"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3462,15 +3465,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বস্টভ র্রন ও র্াি হািবসব িাশে রযৌেভাশি \nকোন বাংলাদেশী ইউবিউি (YouTube) িবতষ্ঠা কশিন?",
+    "body": "স্টিভ চেন ও চাড হারলির সাথে যৌথভাবে কোন বাংলাদেশী ইউটিউব (YouTube) প্রতিষ্ঠা করেন?",
     "options": [
-      "জাশিে কবিম",
-      "ফজিুি কবিম",
-      "জাওযােুি কবিম",
-      "মঞ্জুরুি কবিম"
+      "জাবেদ করিম",
+      "ফজলুল করিম",
+      "জাওয়াদুল করিম",
+      "মঞ্জুরুল করিম"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3484,15 +3487,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "পাবকস্তান কশি বাংলাদেশশক একবি \nিািচশভৌম িাষ্ট্র বহবেশি স্বীকৃ বত রেয?",
+    "body": "পাকিস্তান কবে বাংলাদেশকে একটি সার্বভৌম রাষ্ট্র হিসেবে স্বীকৃতি দেয়?",
     "options": [
-      "রফব্রুযাবি ২০, ১৯৭৪",
-      "রফব্রুযাবি ২১, ১৯৭৪",
-      "রফব্রুযাবি ২২, ১৯৭৪",
-      "রফব্রুযাবি ২৩, ১৯৭৪"
+      "ফেব্রুয়ারি ২০, ১৯৭৪",
+      "ফেব্রুয়ারি ২১, ১৯৭৪",
+      "ফেব্রুয়ারি ২২, ১৯৭৪",
+      "ফেব্রুয়ারি ২৩, ১৯৭৪"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3506,15 +3509,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাদেশ জাতীয িংিশেি িেম িংিে \nরনতা রক?",
+    "body": "বাংলাদেশ জাতীয় সংসদের প্রথম সংসদ নেতা কে?",
     "options": [
-      "িঙ্গিন্ধু রেখ মুবজিুি িহমান",
-      "মাশ হাম্মেউল্লাহ",
-      "তাজউবিন আহমে",
-      "কযাশেন এম মনিুি আিী"
+      "বঙ্গবন্ধু শেখ মুজিবুর রহমান",
+      "মােহাম্মদউল্লাহ",
+      "তাজউদ্দিন আহমদ",
+      "ক্যাপ্টেন এম মনসুর আলী"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3522,21 +3525,21 @@
   {
     "ref": "bcs41_q161",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "োন্সপাশিবন্স ইন্টািনযােনাি কোন রেে \nবভবত্তক আন্তজচাবতক িংস্থা?",
+    "body": "ট্রান্সপারেন্সি ইন্টারন্যাশনাল কোন দেশ ভিত্তিক আন্তর্জাতিক সংস্থা?",
     "options": [
-      "িুইশিন",
-      "মাবকচন যুক্তিাষ্ট্র",
-      "যুক্তিাজয",
-      "জামচাবন"
+      "সুইডেন",
+      "মার্কিন যুক্তরাষ্ট্র",
+      "যুক্তরাজ্য",
+      "জার্মানি"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3544,13 +3547,13 @@
   {
     "ref": "bcs41_q162",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িামবিক ভাষায 'WMD' অেচ কী?",
+    "body": "সামরিক ভাষায় 'WMD' অর্থ কী?",
     "options": [
       "Weapons of Mass Destruction",
       "Worldwide Mass Destruction",
@@ -3558,7 +3561,7 @@
       "Weapons for Massive Destruction"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3566,21 +3569,21 @@
   {
     "ref": "bcs41_q163",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "২০২০ িাশি িকাবেত “আইশনি োিন” \nিূর্শক েীষচস্থান অজচনকািী রেশেি নাম কী?",
+    "body": "২০২০ সালে প্রকাশিত “আইনের শাসন” সূচকে শীর্ষস্থান অর্জনকারী দেশের নাম কী?",
     "options": [
-      "রিনমাকচ",
-      "নিওশয",
-      "জামচাবন",
-      "বিঙ্গাপুি"
+      "ডেনমার্ক",
+      "নরওয়ে",
+      "জার্মানি",
+      "সিঙ্গাপুর"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3588,13 +3591,13 @@
   {
     "ref": "bcs41_q164",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "জাবতিংশঘি কোন িংস্থা িাবষচক বিশ্ব \nবিবনযাশ গ িবতশিেন িকাে কশি?",
+    "body": "জাতিসংঘের কোন সংস্থা বার্ষিক বিশ্ব বিনিয়ােগ প্রতিবেদন প্রকাশ করে?",
     "options": [
       "WTO",
       "MIGA",
@@ -3602,7 +3605,7 @@
       "UNCTAD"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3610,21 +3613,21 @@
   {
     "ref": "bcs41_q165",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আন্তজচাবতক আোিশত বমযানমাি কতৃচক \nিাশ বহঙ্গা র্গহতযাি অবভযাশ শগ মামিা কশি কোন \nরেে?",
+    "body": "আন্তর্জাতিক আদালতে মিয়ানমার কর্তৃক রােহিঙ্গা গণহত্যার অভিযােগে মামলা করে কোন দেশ?",
     "options": [
-      "নাইশজবিযা",
-      "গাবম্বযা",
+      "নাইজেরিয়া",
+      "গাম্বিয়া",
       "বাংলাদেশ",
-      "আিশজবিযা"
+      "আলজেরিয়া"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3632,21 +3635,21 @@
   {
     "ref": "bcs41_q166",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন বিশেবে িাষ্ট্র বাংলাশক অন্যতম \nিাষ্ট্রভাষাি মযচাো বেশযশি?",
+    "body": "কোন বিদেশি রাষ্ট্র বাংলাকে অন্যতম রাষ্ট্রভাষার মর্যাদা দিয়েছে?",
     "options": [
-      "রুযান্ডা",
-      "বিশযিা বিযন",
-      "িুোন",
-      "িাইশিবিযা"
+      "রুয়ান্ডা",
+      "সিয়েরা লিয়ন",
+      "সুদান",
+      "লাইবেরিয়া"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3660,15 +3663,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "জাতিসংঘ নামকির্ কশিন-",
+    "body": "জাতিসংঘ নামকরণ করেন-",
     "options": [
-      "রুজশভল্ট",
-      "স্টাবিন",
-      "র্ার্বচি",
-      "েযা গি"
+      "রুজভেল্ট",
+      "স্টালিন",
+      "চার্চিল",
+      "দ্যা গল"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3676,21 +3679,21 @@
   {
     "ref": "bcs41_q168",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন মুিবিম রেে িামবিক রজাি নযাশিাি \nসদরয?",
+    "body": "কোন মুসলিম দেশ সামরিক জোট ন্যাটোর সদস্য?",
     "options": [
-      "রিৌবে আসব",
-      "মািশযবেযা",
-      "পাবকস্তান",
-      "তুিস্ক"
+      "সৌদি আরব",
+      "মালয়েশিয়া",
+      "পাকিস্তান",
+      "তুরস্ক"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3698,21 +3701,21 @@
   {
     "ref": "bcs41_q169",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "নেচ আসবাবন্টক বেবি অগচানাইশজেন কোন \nসবি িবতবষ্ঠত হয়?",
+    "body": "নর্থ আটলান্টিক ট্রিটি অর্গানাইজেশন কোন বছর প্রতিষ্ঠিত হয়?",
     "options": [
-      "১৯৪৫ িাশি",
-      "১৯৪৯ িাশি",
-      "১৯৪৮ িাশি",
-      "১৯৫১ িাশি"
+      "১৯৪৫ সালে",
+      "১৯৪৯ সালে",
+      "১৯৪৮ সালে",
+      "১৯৫১ সালে"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3720,21 +3723,21 @@
   {
     "ref": "bcs41_q170",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "জামচানীি িেম নািী র্যাশন্সসব রক?",
+    "body": "জার্মানীর প্রথম নারী চ্যান্সেলর কে?",
     "options": [
-      "অযাশনগশসব িাম্প",
-      "বিনা রহিবির্",
-      "অযাশঞ্জিা মািশকি",
-      "রপো রকবি"
+      "অ্যানেগরেট ক্রাম্প",
+      "লিনা হেডরিচ",
+      "অ্যাঞ্জেলা মারকেল",
+      "পেট্রা কেলি"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3742,21 +3745,21 @@
   {
     "ref": "bcs41_q171",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আন্তজচাবতক বির্াি আোিত িাশ বহঙ্গা \nর্গহতযা বিষযক অন্তিচতচীকািীন িাশয বমযানমািশক \nকযবি বনবেচি িযিস্থা গ্রহর্শি কো িশিশি?",
+    "body": "আন্তর্জাতিক বিচার আদালত রােহিঙ্গা গণহত্যা বিষয়ক অন্তর্বর্তীকালীন রায়ে মিয়ানমারকে কয়টি নির্দিষ্ট ব্যবস্থা গ্রহণের কথা বলেছে?",
     "options": [
-      "৩বি",
-      "২বি",
-      "৫বি",
-      "৪বি"
+      "৩টি",
+      "২টি",
+      "৫টি",
+      "৪টি"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3764,21 +3767,21 @@
   {
     "ref": "bcs41_q172",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন েুবি রেশেি মশধয িীমান্ত বিশিাধ \nবনষ্পবত্তি জনয ২০১৯ িাশি নাশ শসব োবন্ত পুিস্কাি \nরেযা হয়?",
+    "body": "কোন দুটি দেশের মধ্যে সীমান্ত বিরোধ নিষ্পত্তির জন্য ২০১৯ সালে নােবেল শান্তি পুরস্কার দেয়া হয়?",
     "options": [
-      "কযাশমরুন এিং ইবেওবপযা",
-      "রপরু এিং রভশনজুশযিা",
-      "ইবেওবপযা এিং ইবিবত্রযা",
-      "মাবি এিং রিশনগাি"
+      "ক্যামেরুন এবং ইথিওপিয়া",
+      "পেরু এবং ভেনেজুয়েলা",
+      "ইথিওপিয়া এবং ইরিত্রিয়া",
+      "মালি এবং সেনেগাল"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3786,21 +3789,21 @@
   {
     "ref": "bcs41_q173",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "ইনকা িভযতা কোন অঞ্চশি বসবাজমান বসব?",
+    "body": "ইনকা সভ্যতা কোন অঞ্চলে বিরাজমান ছিল?",
     "options": [
-      "েবক্র্ষ আশমবিকা",
-      "আবিকা",
-      "মধযিার্য",
-      "ইউিাশ প"
+      "দক্ষিণ আমেরিকা",
+      "আফ্রিকা",
+      "মধ্যপ্রাচ্য",
+      "ইউরােপ"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3808,21 +3811,21 @@
   {
     "ref": "bcs41_q174",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনর্শি কোন রেেবিশত িাবেযাি িামবিক \nঘাাঁবসব িুবিধা বিেযমান?",
+    "body": "নিচের কোন দেশটিতে রাশিয়ার সামরিক ঘাঁটির সুবিধা বিদ্যমান?",
     "options": [
-      "বকউিা",
-      "বভশযতনাম",
-      "উজশিবকস্তান",
-      "রিামাবিযা"
+      "কিউবা",
+      "ভিয়েতনাম",
+      "উজবেকিস্তান",
+      "সোমালিয়া"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3830,21 +3833,21 @@
   {
     "ref": "bcs41_q175",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বফনিযান্ড কোন রেশেি উপবনশিে বসব?",
+    "body": "ফিনল্যান্ড কোন দেশের উপনিবেশ ছিল?",
     "options": [
-      "িাবেযা",
-      "রিনমাকচ",
-      "িুইশিন",
-      "ইংিযান্ড"
+      "রাশিয়া",
+      "ডেনমার্ক",
+      "সুইডেন",
+      "ইংল্যান্ড"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3852,21 +3855,21 @@
   {
     "ref": "bcs41_q176",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "এবেযাশক আবিকা মহাশেে থেকে পৃেক \nকশিশি কোন ির্ািী?",
+    "body": "এশিয়াকে আফ্রিকা মহাদেশ থেকে পৃথক করেছে কোন প্রণালী?",
     "options": [
-      "বজব্রাল্টাি ির্ািী",
-      "সবফিাি ির্ািী",
-      "িাি এি মাশন্দি ির্ািী",
-      "রিবিং ির্ািী"
+      "জিব্রাল্টার প্রণালী",
+      "বসফরাস প্রণালী",
+      "বাব এল মান্দেব প্রণালী",
+      "বেরিং প্রণালী"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3874,21 +3877,21 @@
   {
     "ref": "bcs41_q177",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বব্রবিে ভািশতি িাজধানী কিকাতা থেকে \nবেল্লীশত স্থানান্তবিত হয় কত িাশি?",
+    "body": "ব্রিটিশ ভারতের রাজধানী কলকাতা থেকে দিল্লীতে স্থানান্তরিত হয় কত সালে?",
     "options": [
-      "১৯১২ িাশি",
-      "১৯১৩ িাশি",
-      "১৯১৪ িাশি",
-      "১৯১৫ িাশি"
+      "১৯১২ সালে",
+      "১৯১৩ সালে",
+      "১৯১৪ সালে",
+      "১৯১৫ সালে"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3902,15 +3905,15 @@
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "আন্তজচাবতক মুদ্রা তহবসব কোন িাশি গবিত \nহয়?",
+    "body": "আন্তর্জাতিক মুদ্রা তহবিল কোন সালে গঠিত হয়?",
     "options": [
-      "১৯৪৪ িাশি",
-      "১৯৪৫ িাশি",
-      "১৯৪৮ িাশি",
-      "১৯৪৯ িাশি"
+      "১৯৪৪ সালে",
+      "১৯৪৫ সালে",
+      "১৯৪৮ সালে",
+      "১৯৪৯ সালে"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3918,13 +3921,13 @@
   {
     "ref": "bcs41_q179",
     "exam": "bcs-general",
-    "subject": "English",
-    "topic": "English Language & Literature",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
-    "lang": "en",
-    "body": "জাবতিংশঘি কোন িংস্থাবি কিাশ না \nভাইিািশক 'pandemic' ঘাশ র্ষা কশিশি?",
+    "lang": "bn",
+    "body": "জাতিসংঘের কোন সংস্থাটি করােনা ভাইরাসকে 'pandemic' ঘােষণা করেছে?",
     "options": [
       "ECOSOC",
       "FAO",
@@ -3932,7 +3935,7 @@
       "HRC"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3940,13 +3943,13 @@
   {
     "ref": "bcs41_q180",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "International Affairs",
+    "topic": "আন্তর্জাতিক বিষয়াবলি",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "যুক্তিাশষ্ট্রি িাষ্ট্রপবত বনিচার্শন রিশমাশিবিক \nেশসব মনাশ নযশনি জনয নূযনতম কতজন রিবিশগশসব \nিমেচন িযাশ জন?",
+    "body": "যুক্তরাষ্ট্রের রাষ্ট্রপতি নির্বাচনে ডেমোক্রেটিক দলের মনােনয়নের জন্য ন্যূনতম কতজন ডেলিগেটের সমর্থন প্রয়ােজন?",
     "options": [
       "২৫০০",
       "১৯৯১",
@@ -3954,7 +3957,7 @@
       "১৮৯০"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3962,21 +3965,21 @@
   {
     "ref": "bcs41_q181",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মাশিচি কোন ধিশনি বেিা?",
+    "body": "মার্বেল কোন ধরনের শিলা?",
     "options": [
-      "রূপান্তবিত বেিা",
-      "আশগ্য বেিা",
-      "পািবিক বেিা",
-      "বমে বেিা"
+      "রূপান্তরিত শিলা",
+      "আগ্নেয় শিলা",
+      "পাললিক শিলা",
+      "মিশ্র শিলা"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -3984,21 +3987,21 @@
   {
     "ref": "bcs41_q182",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মধযম উচ্চতাি রমঘ কোনবি?",
+    "body": "মধ্যম উচ্চতার মেঘ কোনটি?",
     "options": [
-      "বসবাি",
-      "বনম্বাি",
-      "বকউমুযিাি",
-      "রস্ট্রিাি"
+      "সিরাস",
+      "নিম্বাস",
+      "কিউম্যুলাস",
+      "স্ট্রেটাস"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4006,21 +4009,21 @@
   {
     "ref": "bcs41_q183",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "২০১৫ িাশসব পযাবসব র্ুবক্তি িাশে \nিম্পবকচত বিষযিস্তু হবো:",
+    "body": "২০১৫ সালের প্যারিস চুক্তির সাথে সম্পর্কিত বিষয়বস্তু হলো:",
     "options": [
-      "আপে ঝু াঁবক হ্রাি",
-      "জসবাযু পবসবতচন হ্রাি",
-      "জনিংখযা িৃবদ্ধ হ্রাি",
-      "িমুদ্র পবসবহন িযিস্থাপনা"
+      "আপদ ঝুঁকি হ্রাস",
+      "জলবায়ু পরিবর্তন হ্রাস",
+      "জনসংখ্যা বৃদ্ধি হ্রাস",
+      "সমুদ্র পরিবহন ব্যবস্থাপনা"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4028,21 +4031,21 @@
   {
     "ref": "bcs41_q184",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "“িঙ্গিন্ধু িীপ” কোথায় অিবস্থত?",
+    "body": "“বঙ্গবন্ধু দ্বীপ” কোথায় অবস্থিত?",
     "options": [
-      "রমঘনা মাশ হনায",
-      "িুন্দসবশনি েবক্ষর্শ",
-      "পদ্মা এিং যমুনাি িংযাশ গস্থশি",
-      "রিকনাশফি েবক্ষর্শ"
+      "মেঘনা মােহনায়",
+      "সুন্দরবনের দক্ষিণে",
+      "পদ্মা এবং যমুনার সংযােগস্থলে",
+      "টেকনাফের দক্ষিণে"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4050,21 +4053,21 @@
   {
     "ref": "bcs41_q185",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "‘শিঙ্গি ফযান’-ভূবমরূপবি কোথায় অিবস্থত?",
+    "body": "‘বেঙ্গল ফ্যান’-ভূমিরূপটি কোথায় অবস্থিত?",
     "options": [
-      "মধুপুি গশড়",
-      "িশঙ্গাপিাগশি",
-      "হাওি অঞ্চশি",
-      "িািবেযাবি পাহাশড়"
+      "মধুপুর গড়ে",
+      "বঙ্গোপসাগরে",
+      "হাওর অঞ্চলে",
+      "টারশিয়ারি পাহাড়ে"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4072,13 +4075,13 @@
   {
     "ref": "bcs41_q186",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "UDMC-এি পূর্ণরূপ হিাশ :",
+    "body": "UDMC-এর পূর্ণরূপ হলাে:",
     "options": [
       "United Disaster Management Centre",
       "Union Disaster Management Committee",
@@ -4086,7 +4089,7 @@
       "None of the above"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "Committee ব্যাখ্যা:",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4094,21 +4097,21 @@
   {
     "ref": "bcs41_q187",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "একই পবিমার্ িৃবিপাত অঞ্চসবমূহশক রয \nকােবনক রিখাি িাহাশযয রেখাশনা হয় তাি নাম-",
+    "body": "একই পরিমাণ বৃষ্টিপাত অঞ্চলসমূহকে যে কাল্পনিক রেখার সাহায্যে দেখানো হয় তার নাম-",
     "options": [
-      "আইশিাবপ্লে",
-      "আইশিাহাইি",
-      "আইশিাহয়ািাইন",
-      "আইশিাোমচ"
+      "আইসোপ্লিথ",
+      "আইসোহাইট",
+      "আইসোহ্যালাইন",
+      "আইসোথার্ম"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4116,21 +4119,21 @@
   {
     "ref": "bcs41_q188",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বাংলাশেশেি সবর্শশয িার্ীন সববত \nকোনবি?",
+    "body": "বাংলাদেশের সবচেয়ে প্রাচীন বসতি কোনটি?",
     "options": [
-      "মযনামবত",
-      "পুণ্ড্রিধচন",
-      "পাহাড়পুি",
-      "রিানািগাাঁ"
+      "ময়নামতি",
+      "পুণ্ড্রবর্ধন",
+      "পাহাড়পুর",
+      "সোনারগাঁ"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4138,21 +4141,21 @@
   {
     "ref": "bcs41_q189",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "বনর্শি কোনবি িতয নয?",
+    "body": "নিচের কোনটি সত্য নয়?",
     "options": [
-      "ইিািতী মাযানমাশসব একবি নেী",
-      "রগািী মরুভূবম ভািশত অিবস্থত",
-      "েি মরুভূবম ভািশতি পবিমাংশে অিবস্থত",
-      "িাশজক ভযাবি বাংলাশেশে অিবস্থত"
+      "ইরাবতী মায়ানমারের একটি নদী",
+      "গোবী মরুভূমি ভারতে অবস্থিত",
+      "থর মরুভূমি ভারতের পশ্চিমাংশে অবস্থিত",
+      "সাজেক ভ্যালি বাংলাদেশে অবস্থিত"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4160,21 +4163,21 @@
   {
     "ref": "bcs41_q190",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Geography & Environment",
+    "topic": "ভূগোল ও পরিবেশ",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "েবক্র্ষ রগািাশধচ উষ্ণতম মাি কোনবি?",
+    "body": "দক্ষিণ গোলার্ধে উষ্ণতম মাস কোনটি?",
     "options": [
-      "জানুযাবি",
-      "রফব্রুযাবি",
-      "বিশিম্বি",
-      "রম"
+      "জানুয়ারি",
+      "ফেব্রুয়ারি",
+      "ডিসেম্বর",
+      "মে"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4182,21 +4185,21 @@
   {
     "ref": "bcs41_q191",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "“িাশষ্ট্রি িকি রক্ষশত্র উন্নযশনি জনয িুোিন \nআিেযক।” রক এই উবক্ত কশিন?",
+    "body": "“রাষ্ট্রের সকল ক্ষেত্রে উন্নয়নের জন্য সুশাসন আবশ্যক।” কে এই উক্তি করেন?",
     "options": [
-      "এইর্. বি, রস্টইন",
-      "জন বস্মে",
-      "বমশেি কযামশসবাি",
-      "এম, িবিউ, পামশি"
+      "এইচ. ডি, স্টেইন",
+      "জন স্মিথ",
+      "মিশেল ক্যামডেসাস",
+      "এম, ডব্লিউ, পামফ্রে"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4204,21 +4207,21 @@
   {
     "ref": "bcs41_q192",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
-    "lang": "bn",
-    "body": "'Political Ideals' গ্রশন্থি রিখক রক?",
+    "lang": "en",
+    "body": "'Political Ideals' গ্রন্থের লেখক কে?",
     "options": [
-      "রমবকযাশভবি",
-      "িাশসব",
-      "রপ্লশিা",
-      "এবিস্টসব"
+      "মেকিয়াভেলি",
+      "রাসেল",
+      "প্লেটো",
+      "এরিস্টটল"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4226,21 +4229,21 @@
   {
     "ref": "bcs41_q193",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "র্গিজাতিী বাংলাশেশেি িংবিধাশনি কোন \nঅনুশচ্ছশে জনস্বাস্থয ও তনবতকতাি বিষযবি আশিার্বত \nহশযশি?",
+    "body": "গণপ্রজাতন্ত্রী বাংলাদেশের সংবিধানের কোন অনুচ্ছেদে জনস্বাস্থ্য ও নৈতিকতার বিষয়টি আলোচিত হয়েছে?",
     "options": [
-      "অনুশচ্ছে ১৩",
-      "অনুশচ্ছে ১৮",
-      "অনুশচ্ছে ২০",
-      "অনুশচ্ছে ২৫"
+      "অনুচ্ছেদ ১৩",
+      "অনুচ্ছেদ ১৮",
+      "অনুচ্ছেদ ২০",
+      "অনুচ্ছেদ ২৫"
     ],
     "answer": 1,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4248,21 +4251,21 @@
   {
     "ref": "bcs41_q194",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মূিযিাশ শধি গুরুত্বপূর্ণ তিবেিয হিাশ -",
+    "body": "মূল্যবােধের গুরুত্বপূর্ণ বৈশিষ্ট্য হলাে-",
     "options": [
-      "বিবভন্নতা",
-      "পবসবতচনেীিতা",
-      "আশপবক্ষকতা",
-      "উপশসব সবগুশিা"
+      "বিভিন্নতা",
+      "পরিবর্তনশীলতা",
+      "আপেক্ষিকতা",
+      "উপরের সবগুলো"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4270,21 +4273,21 @@
   {
     "ref": "bcs41_q195",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "রপ্লশিা “িেণ্র্ড” সবশত িুবঝশযশিন-",
+    "body": "প্লেটো “সদণ্ডণ” বলতে বুঝিয়েছেন-",
     "options": [
-      "িজ্ঞা, িাহি, আত্মবনযির্ ও নযায।",
-      "অিতযয, রির্ষা ও বনযির্",
-      "িুখ, ভাশিাত্ব ও রিম।",
-      "িজ্ঞা, আত্মবনযির্, িুখ ও নযায।"
+      "প্রজ্ঞা, সাহস, আত্মনিয়ন্ত্রণ ও ন্যায়।",
+      "অপ্রত্যয়, প্রেষণা ও নিয়ন্ত্রণ",
+      "সুখ, ভালোত্ব ও প্রেম।",
+      "প্রজ্ঞা, আত্মনিয়ন্ত্রণ, সুখ ও ন্যায়।"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4292,21 +4295,21 @@
   {
     "ref": "bcs41_q196",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "মূিযশিাধ েৃঢ় হয়-",
+    "body": "মূল্যবোধ দৃঢ় হয়-",
     "options": [
-      "বেক্ষাি মাধযম",
-      "িূোিশনি মাধযশম",
-      "ধশমচি মাধযশম",
-      "র্গতি র্র্চাি মাধযশম"
+      "শিক্ষার মাধ্যম",
+      "সূশাসনের মাধ্যমে",
+      "ধর্মের মাধ্যমে",
+      "গণতন্ত্র চর্চার মাধ্যমে"
     ],
     "answer": 0,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4314,21 +4317,21 @@
   {
     "ref": "bcs41_q197",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "কোন মূিযশিাধ িাষ্ট্র, সবকাি ও রগাষ্ঠী \nকতৃচক স্বীকৃ ত?",
+    "body": "কোন মূল্যবোধ রাষ্ট্র, সরকার ও গোষ্ঠী কর্তৃক স্বীকৃত?",
     "options": [
-      "িামাবজক মূিযশিাধ",
-      "ইবতিার্ক মূিযশিাধ",
-      "র্গতাবিক মূিযশিাধ",
-      "তনবতক মূিযশিাধ"
+      "সামাজিক মূল্যবোধ",
+      "ইতিবাচক মূল্যবোধ",
+      "গণতান্ত্রিক মূল্যবোধ",
+      "নৈতিক মূল্যবোধ"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4336,21 +4339,21 @@
   {
     "ref": "bcs41_q198",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "রক ‘কতচশিযি তনবতকতা’ি ধাির্া সবতচন \nকশেন?",
+    "body": "কে ‘কর্তব্যের নৈতিকতা’র ধারণা প্রবর্তন কর্নে?",
     "options": [
-      "হয়ািল্ড উইসবন",
-      "এিওযািচ ওসবনচ উইসবন",
-      "জন স্টু যািচ বমি",
-      "ইমানুশযি কান্ট"
+      "হ্যারল্ড উইলসন",
+      "এডওয়ার্ড ওসবর্ন উইলসন",
+      "জন স্টুয়ার্ট মিল",
+      "ইমানুয়েল কান্ট"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4358,21 +4361,21 @@
   {
     "ref": "bcs41_q199",
     "exam": "bcs-general",
-    "subject": "Bangladesh Affairs",
-    "topic": "বাংলাদেশ বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "িভযতাি অন্যতম িবতচ্ছবি হিাশ -",
+    "body": "সভ্যতার অন্যতম প্রতিচ্ছবি হলাে-",
     "options": [
-      "িুোিন",
-      "িাষ্ট্র",
-      "তনবতকতা",
-      "িমাজ"
+      "সুশাসন",
+      "রাষ্ট্র",
+      "নৈতিকতা",
+      "সমাজ"
     ],
     "answer": 3,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false
@@ -4380,21 +4383,21 @@
   {
     "ref": "bcs41_q200",
     "exam": "bcs-general",
-    "subject": "International Affairs",
-    "topic": "আন্তর্জাতিক বিষয়াবলি",
+    "subject": "Ethics & Good Governance",
+    "topic": "নৈতিকতা ও সুশাসন",
     "difficulty": "medium",
     "source": "41st BCS",
     "type": "mcq",
     "lang": "bn",
-    "body": "“িুোিন র্ািবি স্তশম্ভি ওপি বনভচিেীি”। - \nএই অবভমত কোন িংস্থা িকাে কশি?",
+    "body": "“সুশাসন চারটি স্তম্ভের ওপর নির্ভরশীল”। - এই অভিমত কোন সংস্থা প্রকাশ করে?",
     "options": [
       "জাতিসংঘ",
-      "জাতিসংঘ উন্নযন কমচিূর্ব",
-      "বিশ্বিযাংক",
-      "এবেযা উন্নযন িযাংক"
+      "জাতিসংঘ উন্নয়ন কর্মসূচি",
+      "বিশ্বব্যাংক",
+      "এশিয়া উন্নয়ন ব্যাংক"
     ],
     "answer": 2,
-    "explanation": "এই িশ্ন: িহ কশযক িাখ িশশ্নি অশেনবিক \nিযাখযা রেখশত Live MCQ অযাপ ইন্সসব করুন।",
+    "explanation": "",
     "marks": 1,
     "negative_marks": 0.5,
     "cancelled": false

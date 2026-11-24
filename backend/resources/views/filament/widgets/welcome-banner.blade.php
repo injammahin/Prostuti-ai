@@ -4,7 +4,7 @@
         <div class="pa-hero-main">
             <p class="pa-hero-date">{{ $date }}</p>
             <h2 class="pa-hero-title">{{ $greeting }}, {{ $name }} 👋</h2>
-            <p class="pa-hero-sub">Here's Prostuti at a glance. Everything on this page updates on its own.</p>
+            <p class="pa-hero-sub">Here's DreamPrep at a glance. Everything on this page updates on its own.</p>
 
             <div class="pa-hero-actions">
                 @foreach ($actions as $action)

@@ -352,9 +352,20 @@ export default function Session() {
               : L("No mistakes this time — great work!", "এবার কোনো ভুল নেই — দারুণ!")}
           </p>
           <div className="mt-6 grid gap-2">
-            <Button className="h-12 rounded-full" onClick={() => nav("/app/practice")}>
-              {L("Continue practising", "অনুশীলন চালিয়ে যান")}
-            </Button>
+            {mode === "diagnostic" ? (
+              <>
+                <Button className="h-12 rounded-full" onClick={() => nav("/app", { replace: true })}>
+                  {L("See my study plan", "আমার পড়ার পরিকল্পনা দেখুন")}
+                </Button>
+                <Button variant="outline" className="h-12 rounded-full" onClick={() => nav("/app/practice")}>
+                  {L("Start practising", "অনুশীলন শুরু করুন")}
+                </Button>
+              </>
+            ) : (
+              <Button className="h-12 rounded-full" onClick={() => nav("/app/practice")}>
+                {L("Continue practising", "অনুশীলন চালিয়ে যান")}
+              </Button>
+            )}
             {summary.wrong > 0 && (
               <Button variant="outline" className="h-12 rounded-full" onClick={() => nav("/app/notebook")}>
                 <FontAwesomeIcon icon={faRotateRight} /> {L("Review my mistakes", "আমার ভুলগুলো দেখুন")}

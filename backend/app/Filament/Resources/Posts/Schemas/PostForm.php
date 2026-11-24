@@ -162,7 +162,7 @@ class PostForm
                                 ->maxSize(4096)
                                 ->helperText('Shown on the blog and when the link is shared on Facebook. Best size 1200 × 630.'),
                             TextInput::make('author')
-                                ->default('Prostuti Team')
+                                ->default('DreamPrep Team')
                                 ->required()
                                 ->maxLength(100),
                             TextInput::make('slug')

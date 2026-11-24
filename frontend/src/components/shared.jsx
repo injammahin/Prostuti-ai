@@ -28,16 +28,18 @@ export const tones = {
 
 export function Logo({ className, compact = false, light = false }) {
   return (
-    <Link to="/" className={cn("group flex items-center gap-2.5", className)} aria-label="Prostuti home">
+    <Link to="/" className={cn("group flex items-center gap-2.5", className)} aria-label="DreamPrep home">
       <BrandMark
-        variant={light ? "bare" : "tile"}
         className={cn("shrink-0 transition-transform duration-300 group-hover:-translate-y-0.5", light ? "size-10" : "size-9")}
       />
       {!compact && (
         <span className="flex flex-col leading-none">
-          <span className={cn("text-[1.25rem] font-extrabold tracking-[-0.03em]", light ? "text-white" : "text-brand dark:text-foreground")}>Prostuti</span>
-          <span className={cn("bn mt-1.5 text-[0.72rem] leading-none font-semibold", light ? "text-white/70" : "text-muted-foreground")}>
-            প্রস্তুতি
+          <span className="text-[1.25rem] font-extrabold tracking-[-0.03em]">
+            <span className={light ? "text-white" : "text-[#0f172a] dark:text-white"}>Dream</span>
+            <span className={light ? "text-[#9fd3f7]" : "text-[#1d6ca8] dark:text-[#9fd3f7]"}>Prep</span>
+          </span>
+          <span className={cn("bn mt-1.5 text-[0.7rem] leading-none font-semibold", light ? "text-white/70" : "text-muted-foreground")}>
+            স্বপ্ন শুরু আজ থেকেই
           </span>
         </span>
       )}

@@ -23,7 +23,7 @@ import AskAiSheet from "@/components/AskAiSheet"
 import { useApp } from "@/lib/app-context"
 import { useApi } from "@/lib/use-api"
 import { pastPapersApi } from "@/lib/api"
-import { examLink } from "@/lib/papers"
+import { COMPLETE_SHARE, examLink } from "@/lib/papers"
 import { cn } from "@/lib/utils"
 
 /** Printed BCS papers label options ক খ গ ঘ, even for English questions. */
@@ -35,7 +35,7 @@ const LETTERS = ["ক", "খ", "গ", "ঘ"]
  */
 export default function PaperSolutions() {
   const { number } = useParams()
-  const { L, num, isGuest, requireAccount } = useApp()
+  const { L, num, fmtDate, isGuest, requireAccount } = useApp()
   const { data, error, loading, reload } = useApi(() => pastPapersApi.show(number), [number], { key: `past-paper-${number}` })
 
   const [showAnswers, setShowAnswers] = useState(true)
@@ -57,7 +57,8 @@ export default function PaperSolutions() {
 
   const paper = data?.paper
   const questions = useMemo(() => (data?.questions ?? []).map((q, i) => ({ ...q, number: q.number || i + 1 })), [data])
-  const is48th = String(number) === "48"
+  const paperSize = Math.max(paper?.total ?? 0, questions.length)
+  const fullMarks = paper?.full_marks ?? paperSize
   const paperTag = paper ? L(paper.name, paper.name_bn || paper.name) : ""
 
   const subjects = useMemo(() => {
@@ -267,18 +268,24 @@ export default function PaperSolutions() {
                 <h1 className="bn text-2xl font-extrabold text-foreground md:text-3xl">
                   {L(`${paper.name} (Preliminary)`, `${paper.name_bn || paper.name} (প্রিলি.)`)}
                 </h1>
-                {(paper?.exam_date || paper?.exam_date_bn) ? (
+                {paper.exam_date && (
                   <p className="bn mt-1 text-sm font-medium text-muted-foreground">
-                    {L(`Date: ${paper.exam_date}`, `তারিখ: ${paper.exam_date_bn || paper.exam_date}`)}
+                    {L("Date", "তারিখ")}: {fmtDate(paper.exam_date, { day: "numeric", month: "long", year: "numeric" })}
                   </p>
-                ) : is48th ? (
-                  <p className="bn mt-1 text-sm font-medium text-muted-foreground">{L("Date: 18 July 2025", "তারিখ: ১৮ জুলাই ২০২৫")}</p>
-                ) : null}
+                )}
                 <div className="mx-auto mt-3 flex max-w-md items-center justify-between text-sm font-semibold text-foreground/80">
-                  <span>{L(`Full marks: ${num(questions.length)}`, `পূর্ণমান: ${num(questions.length)}`)}</span>
+                  <span>{L(`Full marks: ${num(fullMarks)}`, `পূর্ণমান: ${num(fullMarks)}`)}</span>
                   <span className="text-xs font-medium text-muted-foreground">{L("−0.5 per wrong", "ভুলে −০.৫")}</span>
-                  <span>{L(`Time: ${questions.length >= 200 ? "2 hours" : "1 hour"}`, `সময়: ${questions.length >= 200 ? "২ ঘণ্টা" : "১ ঘণ্টা"}`)}</span>
+                  <span>{L(`Time: ${paperSize >= 200 ? "2 hours" : "1 hour"}`, `সময়: ${paperSize >= 200 ? "২ ঘণ্টা" : "১ ঘণ্টা"}`)}</span>
                 </div>
+                {questions.length < paperSize * COMPLETE_SHARE && (
+                  <p className="mx-auto mt-3 max-w-lg rounded-lg bg-amber-500/10 px-3 py-2 text-xs font-medium text-amber-700 dark:text-amber-300">
+                    {L(
+                      `${num(questions.length)} of ${num(paperSize)} questions are ready. The rest are being proofread and will appear here soon.`,
+                      `${num(paperSize)}টির মধ্যে ${num(questions.length)}টি প্রশ্ন প্রস্তুত। বাকিগুলো যাচাই করা হচ্ছে, শীঘ্রই যোগ হবে।`
+                    )}
+                  </p>
+                )}
                 {!showAnswers && (
                   <p className="mt-3 text-xs font-medium text-emerald-600 dark:text-emerald-400">
                     {L("Self-test: tap an option to check it, or tap “Show answer”.", "নিজে যাচাই: অপশনে চাপ দিয়ে উত্তর মিলিয়ে নিন, অথবা “উত্তর দেখুন” চাপুন।")}

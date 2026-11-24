@@ -93,7 +93,7 @@ class PracticeSession extends Model
     {
         return Question::query()
             ->live()
-            ->where('source', $paper)
+            ->onPaper($paper)
             ->orderBy('id')
             ->limit($count)
             ->pluck('id')

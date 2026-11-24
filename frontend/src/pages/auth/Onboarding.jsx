@@ -225,7 +225,8 @@ export default function Onboarding() {
         JSON.stringify({ exam: mainExam, targetDate: form.date, dailyHours: hours, studyDays: [6, 0, 1, 2, 3, 4, 5], created: true })
       )
     } catch {}
-    nav(diag ? "/app/practice/session?mode=diagnostic" : returnTo || "/app", { replace: true })
+    // Diagnostic: 25 questions across the chosen exam's subjects. Otherwise go home (or back to the page they came from).
+    nav(diag ? `/app/practice/session?mode=diagnostic&exam=${encodeURIComponent(mainExam)}&n=25` : returnTo || "/app", { replace: true })
   }
 
   return (

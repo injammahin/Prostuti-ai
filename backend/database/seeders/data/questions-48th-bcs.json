@@ -1455,7 +1455,7 @@
       "49"
     ],
     "answer": 0,
-    "explanation": "আমরা জানি, (x - y)² = (x + y)² - 4xy\n= 7² - 4(10)\n= 49 - 40\n= 9."
+    "explanation": "আমরা জানি, (x - y)² = (x + y)² - 4xy = 7² - 4(10) = 49 - 40 = 9."
   },
   {
     "ref": "bcs48_q82",
@@ -1473,7 +1473,7 @@
       "৫০%"
     ],
     "answer": 1,
-    "explanation": "ধরি, ক্রয়মূল্য = ৩ টাকা। অতএব বিক্রয়মূল্য = ৪ টাকা।\nলাভ = ৪ - ৩ = ১ টাকা।\nশতকরা লাভ = (১ / ৩) × ১০০% = ৩৩.৩৩% (বা ৩৩ ⅓%)।"
+    "explanation": "ধরি, ক্রয়মূল্য = ৩ টাকা। অতএব বিক্রয়মূল্য = ৪ টাকা। লাভ = ৪ - ৩ = ১ টাকা। শতকরা লাভ = (১ / ৩) × ১০০% = ৩৩.৩৩% (বা ৩৩ ⅓%)।"
   },
   {
     "ref": "bcs48_q83",
@@ -1491,7 +1491,7 @@
       "১৩৫০"
     ],
     "answer": 1,
-    "explanation": "প্রথম n-সংখ্যক স্বাভাবিক সংখ্যার সমষ্টি = [n(n + 1)] / ২\nএখানে n = ৫০\nসমষ্টি = [৫০ × (৫০ + ১)] / ২ = ২৫ × ৫১ = ১২৭৫।"
+    "explanation": "প্রথম n-সংখ্যক স্বাভাবিক সংখ্যার সমষ্টি = [n(n + 1)] / ২ এখানে n = ৫০ সমষ্টি = [৫০ × (৫০ + ১)] / ২ = ২৫ × ৫১ = ১২৭৫।"
   },
   {
     "ref": "bcs48_q84",
@@ -1509,7 +1509,7 @@
       "6"
     ],
     "answer": 2,
-    "explanation": "32 = 2⁵\nঅতএব, log₂ 32 = log₂ (2⁵) = 5 log₂ 2 = 5 × 1 = 5."
+    "explanation": "32 = 2⁵ অতএব, log₂ 32 = log₂ (2⁵) = 5 log₂ 2 = 5 × 1 = 5."
   },
   {
     "ref": "bcs48_q85",
@@ -1527,7 +1527,7 @@
       "১৪ সেমি"
     ],
     "answer": 1,
-    "explanation": "পিথাগোরাসের উপপাদ্য অনুযায়ী,\nঅতিভুজ² = ভূমি² + লম্ব²\n= ৮² + ৬² = ৬৪ + ৩৬ = ১০০\nঅতএব, অতিভুজ = √১০০ = ১০ সেমি।"
+    "explanation": "পিথাগোরাসের উপপাদ্য অনুযায়ী, অতিভুজ² = ভূমি² + লম্ব² = ৮² + ৬² = ৬৪ + ৩৬ = ১০০ অতএব, অতিভুজ = √১০০ = ১০ সেমি।"
   },
   {
     "ref": "bcs48_q86",
@@ -1545,7 +1545,7 @@
       "৮ দিন"
     ],
     "answer": 1,
-    "explanation": "ক ১ দিনে করে ১/১০ অংশ এবং খ ১ দিনে করে ১/১৫ অংশ।\nএকত্রে ১ দিনে করে (১/১০ + ১/১৫) = (৩ + ২)/৩০ = ৫/৩০ = ১/৬ অংশ।\nসুতরাং তারা একত্রে কাজটি ৬ দিনে সম্পন্ন করতে পারবে।"
+    "explanation": "ক ১ দিনে করে ১/১০ অংশ এবং খ ১ দিনে করে ১/১৫ অংশ। একত্রে ১ দিনে করে (১/১০ + ১/১৫) = (৩ + ২)/৩০ = ৫/৩০ = ১/৬ অংশ। সুতরাং তারা একত্রে কাজটি ৬ দিনে সম্পন্ন করতে পারবে।"
   },
   {
     "ref": "bcs48_q87",
@@ -1555,7 +1555,7 @@
     "difficulty": "medium",
     "source": "48th BCS",
     "lang": "bn",
-    "body": "দুটি সংখ্যার অনুপাত ৫ : ৭ এবং তাদের গ.সা.গু ৪ হলে, সংখ্যা দুটির ল.সা.গু কত?",
+    "body": "দুটি সংখ্যার অনুপাত ৫ : ৭ এবং তাদের গ.সা.গু ৪ হলে, সংখ্যা দুটির ল.সা.গুকত?",
     "options": [
       "১০০",
       "১২০",
@@ -1563,7 +1563,7 @@
       "১৬০"
     ],
     "answer": 2,
-    "explanation": "সংখ্যা দুটি = ৫ × ৪ = ২০ এবং ৭ × ৪ = ২৮।\nল.সা.গু = ২০ ও ২৮ এর ল.সা.গু = ৪ × ৫ × ৭ = ১৪০।"
+    "explanation": "সংখ্যা দুটি = ৫ × ৪ = ২০ এবং ৭ × ৪ = ২৮। ল.সা.গু = ২০ ও ২৮ এর ল.সা.গু = ৪ × ৫ × ৭ = ১৪০।"
   },
   {
     "ref": "bcs48_q88",
@@ -1581,7 +1581,7 @@
       "৮ কিমি"
     ],
     "answer": 0,
-    "explanation": "এটি একটি সমকোণী ত্রিভুজ তৈরি করে যার লম্ব ৪ কিমি এবং ভূমি ৩ কিমি।\nসরাসরি দূরত্ব = √(৪² + ৩²) = √(১৬ + ৯) = √২৫ = ৫ কিমি।"
+    "explanation": "এটি একটি সমকোণী ত্রিভুজ তৈরি করে যার লম্ব ৪ কিমি এবং ভূমি ৩ কিমি। সরাসরি দূরত্ব = √(৪² + ৩²) = √(১৬ + ৯) = √২৫ = ৫ কিমি।"
   },
   {
     "ref": "bcs48_q89",
@@ -1617,7 +1617,7 @@
       "১৩৫"
     ],
     "answer": 2,
-    "explanation": "নিয়ম: পূর্ববর্তী সংখ্যা × ২ + ১\n৩ × ২ + ১ = ৭\n৭ × ২ + ১ = ১৫\n১৫ × ২ + ১ = ৩১\n৩১ × ২ + ১ = ৬৩\n৬৩ × ২ + ১ = ১২৭।"
+    "explanation": "নিয়ম: পূর্ববর্তী সংখ্যা × ২ + ১ ৩ × ২ + ১ = ৭ ৭ × ২ + ১ = ১৫ ১৫ × ২ + ১ = ৩১ ৩১ × ২ + ১ = ৬৩ ৬৩ × ২ + ১ = ১২৭।"
   },
   {
     "ref": "bcs48_q91",
@@ -1653,7 +1653,7 @@
       "২/৩"
     ],
     "answer": 0,
-    "explanation": "ছক্কার মোট সম্ভাব্য ফলাফল = {১, ২, ৩, ৪, ৫, ৬} অর্থাৎ ৬টি।\nমৌলিক সংখ্যা = {২, ৩, ৫} অর্থাৎ ৩টি।\nসম্ভাবনা = ৩/৬ = ১/২।"
+    "explanation": "ছক্কার মোট সম্ভাব্য ফলাফল = {১, ২, ৩, ৪, ৫, ৬} অর্থাৎ ৬টি। মৌলিক সংখ্যা = {২, ৩, ৫} অর্থাৎ ৩টি। সম্ভাবনা = ৩/৬ = ১/২।"
   },
   {
     "ref": "bcs48_q93",
@@ -1707,7 +1707,7 @@
       "শুক্রবার"
     ],
     "answer": 0,
-    "explanation": "প্রতি ৭ দিন পর পর একই বার ফিরে আসে।\n৬০ কে ৭ দিয়ে ভাগ করলে: ৬০ = (৭ × ৮) + ৪, অর্থাৎ অবশিষ্ট থাকে ৪ দিন।\nশুক্রবার + ৪ দিন = শনিবার (১), রবিবার (২), সোমবার (৩), মঙ্গলবার (৪)। সুতরাং ৬০ দিন পর মঙ্গলবার হবে।"
+    "explanation": "প্রতি ৭ দিন পর পর একই বার ফিরে আসে। ৬০ কে ৭ দিয়ে ভাগ করলে: ৬০ = (৭ × ৮) + ৪, অর্থাৎ অবশিষ্ট থাকে ৪ দিন। শুক্রবার + ৪ দিন = শনিবার (১), রবিবার (২), সোমবার (৩), মঙ্গলবার (৪)। সুতরাং ৬০ দিন পর মঙ্গলবার হবে।"
   },
   {
     "ref": "bcs48_q96",
@@ -1725,7 +1725,7 @@
       "V"
     ],
     "answer": 2,
-    "explanation": "Alphabet positions difference:\nA (1) + 2 = C (3)\nC (3) + 3 = F (6)\nF (6) + 4 = J (10)\nJ (10) + 5 = O (15)\nO (15) + 6 = U (21).\nSo the missing letter is U."
+    "explanation": "Alphabet positions difference: A (1) + 2 = C (3) C (3) + 3 = F (6) F (6) + 4 = J (10) J (10) + 5 = O (15) O (15) + 6 = U (21). So the missing letter is U."
   },
   {
     "ref": "bcs48_q97",
@@ -1743,7 +1743,7 @@
       "৬০০ মিটার"
     ],
     "answer": 2,
-    "explanation": "৬০ কিমি/ঘণ্টা = (৬০ × ১০০০) / ৩৬০০ মি/সে = ৫০/৩ মিটার/সেকেন্ড।\nএকটি খুঁটি অতিক্রম করতে ট্রেনটিকে নিজের দৈর্ঘ্যের সমান দূরত্ব অতিক্রম করতে হয়।\nদূরত্ব (দৈর্ঘ্য) = বেগ × সময় = (৫০/৩) × ৩০ = ৫০০ মিটার।"
+    "explanation": "৬০ কিমি/ঘণ্টা = (৬০ × ১০০০) / ৩৬০০ মি/সে = ৫০/৩ মিটার/সেকেন্ড। একটি খুঁটি অতিক্রম করতে ট্রেনটিকে নিজের দৈর্ঘ্যের সমান দূরত্ব অতিক্রম করতে হয়। দূরত্ব (দৈর্ঘ্য) = বেগ × সময় = (৫০/৩) × ৩০ = ৫০০ মিটার।"
   },
   {
     "ref": "bcs48_q98",
@@ -1761,7 +1761,7 @@
       "১১৫°"
     ],
     "answer": 1,
-    "explanation": "কোণ নির্ণয়ের সূত্র: |(১১M - ৬০H) / ২|\nএখানে H = ২, M = ৩০\n= |(১১ × ৩০ - ৬০ × ২) / ২|\n= |(৩৩০ - ১২০) / ২|\n= |২১০ / ২| = ১০৫°।"
+    "explanation": "কোণ নির্ণয়ের সূত্র: |(১১M - ৬০H) / ২| এখানে H = ২, M = ৩০ = |(১১ × ৩০ - ৬০ × ২) / ২| = |(৩৩০ - ১২০) / ২| = |২১০ / ২| = ১০৫°।"
   },
   {
     "ref": "bcs48_q99",
@@ -1779,7 +1779,7 @@
       "40"
     ],
     "answer": 1,
-    "explanation": "Sum of alphabetical positions:\nBOOK = B(2) + O(15) + O(15) + K(11) = 43.\nPEN = P(16) + E(5) + N(14) = 35."
+    "explanation": "Sum of alphabetical positions: BOOK = B(2) + O(15) + O(15) + K(11) = 43. PEN = P(16) + E(5) + N(14) = 35."
   },
   {
     "ref": "bcs48_q100",
@@ -1797,7 +1797,7 @@
       "4/3"
     ],
     "answer": 0,
-    "explanation": "ax² + bx + c = 0 সমীকরণের মূলদ্বয় বাস্তব ও সমান হওয়ার শর্ত হলো নিশ্চায়ক D = b² - 4ac = 0।\nএখানে a = k, b = 3, c = 4\n∴ 3² - 4 × k × 4 = 0\n⇒ 9 - 16k = 0\n⇒ 16k = 9\n∴ k = 9/16।"
+    "explanation": "ax² + bx + c = 0 সমীকরণের মূলদ্বয় বাস্তব ও সমান হওয়ার শর্ত হলো নিশ্চায়ক D = b² - 4ac = 0। এখানে a = k, b = 3, c = 4 ∴ 3² - 4 × k × 4 = 0 ⇒ 9 - 16k = 0 ⇒ 16k = 9 ∴ k = 9/16।"
   },
   {
     "ref": "bcs48_q101",
@@ -1815,7 +1815,7 @@
       "Coma"
     ],
     "answer": 0,
-    "explanation": "Rise of respiratory rate:\tIn mild (compensated) shock,\nthe body attempts to maintain perfusion by increasing\nrespiratory rate and heart rate.\nOther Options:\nখ)\tFall of blood pressure: This is a sign of\ndecompensated (moderate to severe) shock, not mild.\nগ)\tReduced Urinary output: Typically occurs in\nmoderate to severe shock.\nঘ)\tComa: Suggests severe cerebral hypoperfusion, a late\nand severe sign."
+    "explanation": "Rise of respiratory rate: In mild (compensated) shock, the body attempts to maintain perfusion by increasing respiratory rate and heart rate. Other Options: খ) Fall of blood pressure: This is a sign of decompensated (moderate to severe) shock, not mild. গ) Reduced Urinary output: Typically occurs in moderate to severe shock. ঘ) Coma: Suggests severe cerebral hypoperfusion, a late and severe sign."
   },
   {
     "ref": "bcs48_q102",
@@ -1833,7 +1833,7 @@
       "Lymph"
     ],
     "answer": 1,
-    "explanation": "Intracellular fluid:\tAbout 2/3 of total body water is\ninside cells.\nOther Options:\nক)\tBlood: Only a small portion of extracellular fluid.\nগ)\tInterstitial fluid: It’s part of extracellular fluid but\nless than intracellular.\nঘ)\tLymph: Very small percentage."
+    "explanation": "Intracellular fluid: About 2/3 of total body water is inside cells. Other Options: ক) Blood: Only a small portion of extracellular fluid. গ) Interstitial fluid: It’s part of extracellular fluid but less than intracellular. ঘ) Lymph: Very small percentage."
   },
   {
     "ref": "bcs48_q103",
@@ -1851,7 +1851,7 @@
       "Injury to liver"
     ],
     "answer": 0,
-    "explanation": "Postpartum Hemorrhage:\tCommon complication due to\nuterine atony or surgical trauma.\nOther Options:\nখ)\tVaginal stenosis: Not related to C-section.\nগ)\tLow platelet count: Not a direct complication.\nঘ)\tInjury to liver: Rare and usually only with very\ndifficult upper-segment surgeries."
+    "explanation": "Postpartum Hemorrhage: Common complication due to uterine atony or surgical trauma. Other Options: খ) Vaginal stenosis: Not related to C-section. গ) Low platelet count: Not a direct complication. ঘ) Injury to liver: Rare and usually only with very difficult upper-segment surgeries."
   },
   {
     "ref": "bcs48_q104",
@@ -1869,7 +1869,7 @@
       "Melanocytes"
     ],
     "answer": 2,
-    "explanation": "Langerhan cells:\tDendritic cells in the epidermis;\npresent antigen to T-cells.\nOther Options:\nক)\tBasal cells: Keratinocyte precursors.\nখ)\tKeratinocytes: Structural role, not APCs.\nঘ)\tMelanocytes: Pigment-producing, not immune cells."
+    "explanation": "Langerhan cells: Dendritic cells in the epidermis; present antigen to T-cells. Other Options: ক) Basal cells: Keratinocyte precursors. খ) Keratinocytes: Structural role, not APCs. ঘ) Melanocytes: Pigment-producing, not immune cells."
   },
   {
     "ref": "bcs48_q105",
@@ -1887,7 +1887,7 @@
       "Right Renal Vein"
     ],
     "answer": 2,
-    "explanation": "Hepatic veins:\tLarge vessels draining blood from liver\ndirectly into IVC.\nOther Options:\nক)\tLeft renal vein: Drains left kidney.\nখ)\tLumbar veins: Small tributaries.\nঘ)\tRight renal vein: Similar to left, but not the largest."
+    "explanation": "Hepatic veins: Large vessels draining blood from liver directly into IVC. Other Options: ক) Left renal vein: Drains left kidney. খ) Lumbar veins: Small tributaries. ঘ) Right renal vein: Similar to left, but not the largest."
   },
   {
     "ref": "bcs48_q106",
@@ -1905,7 +1905,7 @@
       "Ulnar nerve"
     ],
     "answer": 0,
-    "explanation": "Median nerve:\tPasses through carpal tunnel and is\ncompressed in carpal tunnel syndrome.\nOther Options:\nখ) Musculocutaneous nerve: Supplies anterior arm\nmuscles.\nগ) Radial nerve: Does not pass through carpal tunnel.\nঘ) Ulnar nerve: Passes through Guyon’s canal, not\ncarpal tunnel."
+    "explanation": "Median nerve: Passes through carpal tunnel and is compressed in carpal tunnel syndrome. Other Options: খ) Musculocutaneous nerve: Supplies anterior arm muscles. গ) Radial nerve: Does not pass through carpal tunnel. ঘ) Ulnar nerve: Passes through Guyon’s canal, not carpal tunnel."
   },
   {
     "ref": "bcs48_q107",
@@ -1923,7 +1923,7 @@
       "rigor mortis"
     ],
     "answer": 0,
-    "explanation": "Adipocere formation:\tPostmortem change occurring\nafter days/weeks; sign of late decomposition.\nOther Options:\nখ)\tCooling of body: Early sign (algor mortis).\nগ)\tDilatation of pupils: Early sign.\nঘ)\tRigor mortis: Appears within hours."
+    "explanation": "Adipocere formation: Postmortem change occurring after days/weeks; sign of late decomposition. Other Options: খ) Cooling of body: Early sign (algor mortis). গ) Dilatation of pupils: Early sign. ঘ) Rigor mortis: Appears within hours."
   },
   {
     "ref": "bcs48_q108",
@@ -1941,7 +1941,7 @@
       "correcting maternal anaemia"
     ],
     "answer": 0,
-    "explanation": "care\nImproving essential obstetric care:\tPrevents obstructed\nlabor, the most common cause.\nOther Options:\nখ)\tEarly operations of fibroid uterus: Not directly\npreventive.\nগ)\tTreating PID cases: PID is not a major cause of\ngenital fistula.\nঘ)\tCorrecting maternal anemia: Important for general\nhealth, not directly for fistula."
+    "explanation": "care Improving essential obstetric care: Prevents obstructed labor, the most common cause. Other Options: খ) Early operations of fibroid uterus: Not directly preventive. গ) Treating PID cases: PID is not a major cause of genital fistula. ঘ) Correcting maternal anemia: Important for general health, not directly for fistula."
   },
   {
     "ref": "bcs48_q109",
@@ -1959,7 +1959,7 @@
       "Follow-up"
     ],
     "answer": 0,
-    "explanation": "Screening:\tEarly detection among asymptomatic people\n(e.g., breast cancer screening).\nOther Options:\nখ)\tIntervention: Comes after detection.\nগ)\tContact tracing: Related to infectious diseases, not\ngeneral screening.\nঘ)\tFollow-up: For known cases, not for detection."
+    "explanation": "Screening: Early detection among asymptomatic people (e.g., breast cancer screening). Other Options: খ) Intervention: Comes after detection. গ) Contact tracing: Related to infectious diseases, not general screening. ঘ) Follow-up: For known cases, not for detection."
   },
   {
     "ref": "bcs48_q110",
@@ -1977,7 +1977,7 @@
       "Bronchorrhoea"
     ],
     "answer": 1,
-    "explanation": "Tachycardia:\tClassic sign due to vagal inhibition.\nOther Options:\nক)\tMild dilated pupil: Atropine causes marked dilatation.\nগ)\tCrepitation in lungs: Suggestive of pulmonary\nedema/infection, not atropine.\nঘ)\tBronchorrhoea: Atropine reduces secretions, used to\ntreat bronchorrhoea."
+    "explanation": "Tachycardia: Classic sign due to vagal inhibition. Other Options: ক) Mild dilated pupil: Atropine causes marked dilatation. গ) Crepitation in lungs: Suggestive of pulmonary edema/infection, not atropine. ঘ) Bronchorrhoea: Atropine reduces secretions, used to treat bronchorrhoea."
   },
   {
     "ref": "bcs48_q111",
@@ -1995,7 +1995,7 @@
       "10% Circumferential burn in the lower limb"
     ],
     "answer": 2,
-    "explanation": "Inhalation burn:\tSerious complication, needs airway\nmanagement, oxygenation, and ICU.\nOther Options:\nক)\t5% burn in the trunk of an adult: Minor burn — can\nbe managed outpatient.\nখ)\t10% burn in the trunk of a child: Moderate — may\nneed observation but not a strong indication.\nঘ)\t10% circumferential burn in the lower limb:\nImportant but not an immediate life threat unless it\ncompromises circulation."
+    "explanation": "Inhalation burn: Serious complication, needs airway management, oxygenation, and ICU. Other Options: ক) 5% burn in the trunk of an adult: Minor burn — can be managed outpatient. খ) 10% burn in the trunk of a child: Moderate — may need observation but not a strong indication. ঘ) 10% circumferential burn in the lower limb: Important but not an immediate life threat unless it compromises circulation."
   },
   {
     "ref": "bcs48_q112",
@@ -2013,7 +2013,7 @@
       "Folic acid deficiency anaemia"
     ],
     "answer": 2,
-    "explanation": "Iron deficiency anemia:\tDue to increased demand and\ndietary insufficiency in pregnancy.\nOther Options:\nক)\tThalassemia: Genetic and less common.\nখ)\tHereditary Spherocytosis: Rare inherited condition.\nঘ)\tFolic acid deficiency anaemia: Second most common,\nbut not the top one."
+    "explanation": "Iron deficiency anemia: Due to increased demand and dietary insufficiency in pregnancy. Other Options: ক) Thalassemia: Genetic and less common. খ) Hereditary Spherocytosis: Rare inherited condition. ঘ) Folic acid deficiency anaemia: Second most common, but not the top one."
   },
   {
     "ref": "bcs48_q113",
@@ -2031,7 +2031,7 @@
       "Renal agenesis of fetus"
     ],
     "answer": 3,
-    "explanation": "Renal agenesis:\tKidneys produce urine, which is a major\ncomponent of amniotic fluid. Without kidneys → severe\noligohydramnios.\nক)\tGestational diabetes: More often causes\npolyhydramnios.\nখ)\tAnencephaly: Also associated with polyhydramnios.\nগ)\tNulliparous women: Parity doesn’t directly relate to\namniotic fluid."
+    "explanation": "Renal agenesis: Kidneys produce urine, which is a major component of amniotic fluid. Without kidneys → severe oligohydramnios. ক) Gestational diabetes: More often causes polyhydramnios. খ) Anencephaly: Also associated with polyhydramnios. গ) Nulliparous women: Parity doesn’t directly relate to amniotic fluid."
   },
   {
     "ref": "bcs48_q114",
@@ -2049,7 +2049,7 @@
       "Presence of rebound tenderness"
     ],
     "answer": 2,
-    "explanation": "Absent muscle guarding:\tTypically there is muscle\nguarding (peritonitis sign).\nOther Options:\nক)\tSevere constant upper abdominal pain: Classical\nfeature.\nখ)\tRadiation to back: Common due to retroperitoneal\nlocation of pancreas.\nঘ)\tRebound tenderness: Can occur due to peritoneal\nirritation."
+    "explanation": "Absent muscle guarding: Typically there is muscle guarding (peritonitis sign). Other Options: ক) Severe constant upper abdominal pain: Classical feature. খ) Radiation to back: Common due to retroperitoneal location of pancreas. ঘ) Rebound tenderness: Can occur due to peritoneal irritation."
   },
   {
     "ref": "bcs48_q115",
@@ -2067,7 +2067,7 @@
       "Nikolsky sign"
     ],
     "answer": 3,
-    "explanation": "Nikolsky sign:\tSkin sloughs off with slight rubbing —\nseen in SJS, TEN.\nOther Options:\nক)\tKoebner phenomenon: Seen in psoriasis and lichen\nplanus.\nখ)\tAuspitz sign: Pinpoint bleeding in psoriasis.\nগ)\tDimple sign: Seen in dermatofibroma."
+    "explanation": "Nikolsky sign: Skin sloughs off with slight rubbing — seen in SJS, TEN. Other Options: ক) Koebner phenomenon: Seen in psoriasis and lichen planus. খ) Auspitz sign: Pinpoint bleeding in psoriasis. গ) Dimple sign: Seen in dermatofibroma."
   },
   {
     "ref": "bcs48_q116",
@@ -2085,7 +2085,7 @@
       "Oculomotor"
     ],
     "answer": 0,
-    "explanation": "Olfactory:\tCN I — purely sensory, for smell.\nOther Options:\nখ)\tTrigeminal: Touch/pain/temp of face.\nগ)\tFacial: Taste (anterior 2/3 tongue), not smell.\nঘ)\tOculomotor: Eye movement, not sensory."
+    "explanation": "Olfactory: CN I — purely sensory, for smell. Other Options: খ) Trigeminal: Touch/pain/temp of face. গ) Facial: Taste (anterior 2/3 tongue), not smell. ঘ) Oculomotor: Eye movement, not sensory."
   },
   {
     "ref": "bcs48_q117",
@@ -2103,7 +2103,7 @@
       "Transitional epithelium"
     ],
     "answer": 3,
-    "explanation": "Transitional epithelium:\tSpecialized to stretch — seen\nin renal pelvis, ureter, bladder.\nOther Options:\nক)\tCiliated columnar epithelium: Found in respiratory\ntract.\nখ)\tEndothelium: Lines blood vessels.\nগ)\tMesothelium: Lines body cavities (pleura,\nperitoneum)."
+    "explanation": "Transitional epithelium: Specialized to stretch — seen in renal pelvis, ureter, bladder. Other Options: ক) Ciliated columnar epithelium: Found in respiratory tract. খ) Endothelium: Lines blood vessels. গ) Mesothelium: Lines body cavities (pleura, peritoneum)."
   },
   {
     "ref": "bcs48_q118",
@@ -2121,7 +2121,7 @@
       "Right Ventricle"
     ],
     "answer": 0,
-    "explanation": "Left atrium:\tLies posteriorly, forms base of heart\n(posterior surface).\nOther Options:\nখ)\tLeft ventricle: Forms apex and part of diaphragmatic\nsurface.\nগ)\tRight atrium: Right border.\nঘ)\tRight ventricle: Forms anterior surface."
+    "explanation": "Left atrium: Lies posteriorly, forms base of heart (posterior surface). Other Options: খ) Left ventricle: Forms apex and part of diaphragmatic surface. গ) Right atrium: Right border. ঘ) Right ventricle: Forms anterior surface."
   },
   {
     "ref": "bcs48_q119",
@@ -2139,7 +2139,7 @@
       "Herpes zoster"
     ],
     "answer": 1,
-    "explanation": "HPV:\tEspecially high-risk types 16 & 18 cause cervical\nintraepithelial neoplasia (CIN).\nOther Options:\nক)\tHSV: Not linked to cervical cancer.\nগ)\tChlamydia: Can cause PID but not cancer.\nঘ)\tHerpes zoster: Reactivation of varicella-zoster virus,\nnot linked to cancer."
+    "explanation": "HPV: Especially high-risk types 16 & 18 cause cervical intraepithelial neoplasia (CIN). Other Options: ক) HSV: Not linked to cervical cancer. গ) Chlamydia: Can cause PID but not cancer. ঘ) Herpes zoster: Reactivation of varicella-zoster virus, not linked to cancer."
   },
   {
     "ref": "bcs48_q120",
@@ -2157,7 +2157,7 @@
       "sloping edge"
     ],
     "answer": 2,
-    "explanation": "Everted edge:\tTypical of squamous cell carcinoma\nulcers.\nOther Options:\nক)\tUndermined edge: Seen in TB ulcers.\nখ)\tPunched out edge: Common in trophic or gummatous\nsyphilitic ulcers.\nঘ)\tSloping edge: Found in healing ulcers."
+    "explanation": "Everted edge: Typical of squamous cell carcinoma ulcers. Other Options: ক) Undermined edge: Seen in TB ulcers. খ) Punched out edge: Common in trophic or gummatous syphilitic ulcers. ঘ) Sloping edge: Found in healing ulcers."
   },
   {
     "ref": "bcs48_q121",
@@ -2175,7 +2175,7 @@
       "Sacral ganglion"
     ],
     "answer": 2,
-    "explanation": "Ciliary ganglion:\tA parasympathetic ganglion supplying\nthe eye.\nOther Options:\nক)\tCeliac ganglion: Part of sympathetic nervous system.\nখ)\tCervical ganglion: Also sympathetic (e.g., superior\ncervical ganglion).\nঘ)\tSacral ganglion: Anatomically refers to sympathetic\nchain ganglia."
+    "explanation": "Ciliary ganglion: A parasympathetic ganglion supplying the eye. Other Options: ক) Celiac ganglion: Part of sympathetic nervous system. খ) Cervical ganglion: Also sympathetic (e.g., superior cervical ganglion). ঘ) Sacral ganglion: Anatomically refers to sympathetic chain ganglia."
   },
   {
     "ref": "bcs48_q122",
@@ -2193,7 +2193,7 @@
       "Accidental sampling"
     ],
     "answer": 0,
-    "explanation": "Stratified random sampling:\tPopulation is divided into\nstrata, then randomly sampled — a type of probability\nsampling.\nOther Options:\nখ)\tQuota sampling: Non-probability sampling, though\nsimilar to stratified.\nগ)\tPurposive sampling: Also non-probability — based on\njudgment.\nঘ)\tAccidental sampling: A type of convenience sampling,\nnot probability-based."
+    "explanation": "Stratified random sampling: Population is divided into strata, then randomly sampled — a type of probability sampling. Other Options: খ) Quota sampling: Non-probability sampling, though similar to stratified. গ) Purposive sampling: Also non-probability — based on judgment. ঘ) Accidental sampling: A type of convenience sampling, not probability-based."
   },
   {
     "ref": "bcs48_q123",
@@ -2211,7 +2211,7 @@
       "Phimosis"
     ],
     "answer": 3,
-    "explanation": "Phimosis:\tTight foreskin that can’t be retracted — most\ncommon indication for circumcision.\nOther Options:\nক)\tEpispadias: Surgical correction needed, but not by\ncircumcision.\nখ)\tHypospadias: Circumcision is avoided because\nforeskin may be used for repair.\nগ)\tUndescended testes: Not related to foreskin."
+    "explanation": "Phimosis: Tight foreskin that can’t be retracted — most common indication for circumcision. Other Options: ক) Epispadias: Surgical correction needed, but not by circumcision. খ) Hypospadias: Circumcision is avoided because foreskin may be used for repair. গ) Undescended testes: Not related to foreskin."
   },
   {
     "ref": "bcs48_q124",
@@ -2229,7 +2229,7 @@
       "Toxoplasmosis"
     ],
     "answer": 3,
-    "explanation": "TORCH infections cause congenital anomalies:\nT = Toxoplasmosis\nO = Other (Syphilis, VZV)\nR = Rubella\nC = CMV\nH = HSV\nPolio, measles, chickenpox: Less commonly associated\nwith congenital malformations."
+    "explanation": "TORCH infections cause congenital anomalies: T = Toxoplasmosis O = Other (Syphilis, VZV) R = Rubella C = CMV H = HSV Polio, measles, chickenpox: Less commonly associated with congenital malformations."
   },
   {
     "ref": "bcs48_q125",
@@ -2247,7 +2247,7 @@
       "Mitochondria"
     ],
     "answer": 3,
-    "explanation": "Mitochondria:\tRelease cytochrome c, activating caspases\n→ apoptosis.\nOther Options:\nক)\tEndoplasmic reticulum: Involved in protein\nsynthesis/folding.\nখ)\tGolgi apparatus: Involved in protein\nprocessing/packaging.\nগ)\tLysosome: Involved in autophagy, not apoptosis."
+    "explanation": "Mitochondria: Release cytochrome c, activating caspases → apoptosis. Other Options: ক) Endoplasmic reticulum: Involved in protein synthesis/folding. খ) Golgi apparatus: Involved in protein processing/packaging. গ) Lysosome: Involved in autophagy, not apoptosis."
   },
   {
     "ref": "bcs48_q126",
@@ -2265,7 +2265,7 @@
       "may resolve spontaneously"
     ],
     "answer": 1,
-    "explanation": "Worse in erect posture:\tGravity worsens the prolapse\nsymptoms.\nOther Options:\nক)\tVery painful: Usually painless; heaviness or dragging\nsensation is common.\nগ)\tCommon in nulliparous: More common in\nmultiparous women.\nঘ)\tMay resolve spontaneously: Usually requires pelvic\nfloor exercises or surgery."
+    "explanation": "Worse in erect posture: Gravity worsens the prolapse symptoms. Other Options: ক) Very painful: Usually painless; heaviness or dragging sensation is common. গ) Common in nulliparous: More common in multiparous women. ঘ) May resolve spontaneously: Usually requires pelvic floor exercises or surgery."
   },
   {
     "ref": "bcs48_q127",
@@ -2283,7 +2283,7 @@
       "Interleukin-1"
     ],
     "answer": 3,
-    "explanation": "Interleukin-1:\tA pyrogen that acts on the hypothalamus\nto raise body temperature.\nOther Options:\nক)\tBradykinin: Involved in pain and vasodilation.\nখ)\tComplement: Role in immunity, not fever.\nগ)\tHageman factor: Initiates clotting and inflammation."
+    "explanation": "Interleukin-1: A pyrogen that acts on the hypothalamus to raise body temperature. Other Options: ক) Bradykinin: Involved in pain and vasodilation. খ) Complement: Role in immunity, not fever. গ) Hageman factor: Initiates clotting and inflammation."
   },
   {
     "ref": "bcs48_q128",
@@ -2301,7 +2301,7 @@
       "Abdominal pain preceded by amenorrhoea"
     ],
     "answer": 3,
-    "explanation": "amenorrhoea\nAbdominal pain preceded by amenorrhoea:\tClassical\ntriad — amenorrhoea → pain → bleeding.\nOther Options:\nক)\tBleeding precedes pain: Usually pain precedes or\ncoincides with bleeding.\nখ)\tIsthmus is the commonest site: Ampulla of fallopian\ntube is most common.\nগ)\tMore common among OCP users: OCPs reduce risk of\nectopic."
+    "explanation": "amenorrhoea Abdominal pain preceded by amenorrhoea: Classical triad — amenorrhoea → pain → bleeding. Other Options: ক) Bleeding precedes pain: Usually pain precedes or coincides with bleeding. খ) Isthmus is the commonest site: Ampulla of fallopian tube is most common. গ) More common among OCP users: OCPs reduce risk of ectopic."
   },
   {
     "ref": "bcs48_q129",
@@ -2319,7 +2319,7 @@
       "Protein buffer"
     ],
     "answer": 1,
-    "explanation": "Bicarbonate buffer:\tMain buffer in plasma. HCO₃⁻ + H⁺\n↔ H₂CO₃\n↔ CO₂ + H₂O.\nOther Options:\nক)\tAmmonia buffer: Important in renal tubules, not\nprimary in blood.\nগ)\tPhosphate buffer: Also renal, not primary in blood.\nঘ)\tProtein buffer: Contributes, but not the primary."
+    "explanation": "Bicarbonate buffer: Main buffer in plasma. HCO₃⁻ + H⁺ ↔ H₂CO₃ ↔ CO₂ + H₂O. Other Options: ক) Ammonia buffer: Important in renal tubules, not primary in blood. গ) Phosphate buffer: Also renal, not primary in blood. ঘ) Protein buffer: Contributes, but not the primary."
   },
   {
     "ref": "bcs48_q130",
@@ -2337,7 +2337,7 @@
       "Grade V spleen injury"
     ],
     "answer": 3,
-    "explanation": "Grade V spleen injury:\tMassive injury with shattered\nspleen — life-saving splenectomy.\nOther Options:\nক)\tLymphoma: Not absolute — only if symptomatic or\ndiagnostic need.\nখ)\tThalassemia: Relative indication — if hypersplenism\nor transfusion-dependent.\nগ)\tLeukemia: Again, not absolute."
+    "explanation": "Grade V spleen injury: Massive injury with shattered spleen — life-saving splenectomy. Other Options: ক) Lymphoma: Not absolute — only if symptomatic or diagnostic need. খ) Thalassemia: Relative indication — if hypersplenism or transfusion-dependent. গ) Leukemia: Again, not absolute."
   },
   {
     "ref": "bcs48_q131",
@@ -2355,7 +2355,7 @@
       "Pulmonary fibrosis"
     ],
     "answer": 0,
-    "explanation": "Arthritis:\tCorrect. In acute inflammatory arthritis (like\ngout or septic arthritis), neutrophils infiltrate joints and\nrelease enzymes and ROS causing tissue damage.\nExample: Gouty arthritis involves urate crystals that\nattract neutrophils, leading to leukocyte-mediated\ninjury.\nOther Options:\nখ)\tAsthma\n• Though leukocytes like eosinophils play a role in\nchronic inflammation in asthma, it is not primarily an\nacute leukocyte-induced tissue injury.\n• It is more of a chronic hypersensitivity reaction.\nগ)\tAtherosclerosis\n• \tIt is a chronic inflammatory disease, with\nmacrophages and T cells playing a long-term role in\nplaque formation.\n• \tNot typically classified under acute leukocyte-induced\ninjury.\nঘ)\tPulmonary fibrosis\n• \tThis is the result of chronic inflammation and repair,\noften involving fibroblast activation and collagen\ndeposition.\n• \tIt’s chronic, not acute, and leukocyte injury is not the\npredominant mechanism."
+    "explanation": "Arthritis: Correct. In acute inflammatory arthritis (like gout or septic arthritis), neutrophils infiltrate joints and release enzymes and ROS causing tissue damage. Example: Gouty arthritis involves urate crystals that attract neutrophils, leading to leukocyte-mediated injury. Other Options: খ) Asthma • Though leukocytes like eosinophils play a role in chronic inflammation in asthma, it is not primarily an acute leukocyte-induced tissue injury. • It is more of a chronic hypersensitivity reaction. গ) Atherosclerosis • It is a chronic inflammatory disease, with macrophages and T cells playing a long-term role in plaque formation. • Not typically classified under acute leukocyte-induced injury. ঘ) Pulmonary fibrosis • This is the result of chronic inflammation and repair, often involving fibroblast activation and collagen deposition. • It’s chronic, not acute, and leukocyte injury is not the predominant mechanism."
   },
   {
     "ref": "bcs48_q132",
@@ -2373,7 +2373,7 @@
       "Coagulation disorder"
     ],
     "answer": 0,
-    "explanation": "Idiopathic:\tMost common cause, especially from Little’s\narea/Kiesselbach’s plexus.\nOther Options:\nখ)\tHypertension: A known cause, especially in older\nadults, but not the most common.\nগ)\tThrombocytopenia: Rare, usually associated with\ngeneralized bleeding.\nঘ)\tCoagulation disorder: Less common and usually seen\nin known bleeding disorders."
+    "explanation": "Idiopathic: Most common cause, especially from Little’s area/Kiesselbach’s plexus. Other Options: খ) Hypertension: A known cause, especially in older adults, but not the most common. গ) Thrombocytopenia: Rare, usually associated with generalized bleeding. ঘ) Coagulation disorder: Less common and usually seen in known bleeding disorders."
   },
   {
     "ref": "bcs48_q133",
@@ -2391,7 +2391,7 @@
       "Hypertonic Normal saline"
     ],
     "answer": 0,
-    "explanation": "Hartmann’s (Ringer’s lactate):\tBest fluid for initial\nresuscitation in burns — closely mimics plasma.\nOther Options:\nখ)\t5% Dextrose in Aqua: No electrolytes, not suitable for\nvolume resuscitation.\nগ)\t5% Dextrose in normal saline: Hyperosmolar, not\nideal for large-volume replacement.\nঘ)\tHypertonic saline: Can cause fluid shifts, not first-\nline."
+    "explanation": "Hartmann’s (Ringer’s lactate): Best fluid for initial resuscitation in burns — closely mimics plasma. Other Options: খ) 5% Dextrose in Aqua: No electrolytes, not suitable for volume resuscitation. গ) 5% Dextrose in normal saline: Hyperosmolar, not ideal for large-volume replacement. ঘ) Hypertonic saline: Can cause fluid shifts, not first- line."
   },
   {
     "ref": "bcs48_q134",
@@ -2409,7 +2409,7 @@
       "Metaphysis"
     ],
     "answer": 2,
-    "explanation": "Epiphyseal cartilage (growth plate):\tSite of longitudinal\ngrowth.\nOther Options:\nক)\tDiaphysis: Shaft of the bone, not growth center.\nখ)\tEpiphysis: End part of bone but not the main growth\nplate.\nঘ)\tMetaphysis: Rich vascular area but not the growth\nzone itself."
+    "explanation": "Epiphyseal cartilage (growth plate): Site of longitudinal growth. Other Options: ক) Diaphysis: Shaft of the bone, not growth center. খ) Epiphysis: End part of bone but not the main growth plate. ঘ) Metaphysis: Rich vascular area but not the growth zone itself."
   },
   {
     "ref": "bcs48_q135",
@@ -2427,7 +2427,7 @@
       "T inversion"
     ],
     "answer": 0,
-    "explanation": "New onset LBBB:\tConsidered a STEMI equivalent —\nimmediate thrombolysis or PCI is warranted.\nOther Options:\nখ)\tST depression: Indicates ischemia but not a trigger\nfor thrombolysis.\nগ)\tAppearance of Q wave: Indicates old infarct.\nঘ)\tT inversion: Can be seen in ischemia but not an\nindication for thrombolytics."
+    "explanation": "New onset LBBB: Considered a STEMI equivalent — immediate thrombolysis or PCI is warranted. Other Options: খ) ST depression: Indicates ischemia but not a trigger for thrombolysis. গ) Appearance of Q wave: Indicates old infarct. ঘ) T inversion: Can be seen in ischemia but not an indication for thrombolytics."
   },
   {
     "ref": "bcs48_q136",
@@ -2445,7 +2445,7 @@
       "Septic Shock"
     ],
     "answer": 0,
-    "explanation": "Conn’s Syndrome:\tPrimary hyperaldosteronism →\nsodium retention → HTN → secondary HTN.\nOther Options:\nখ)\tBurn: Can lead to fluid shifts but not chronic HTN.\nগ)\tRenal ischemia: True, also causes secondary HTN (via\nrenin-angiotensin), but not the best choice over Conn’s.\nঘ)\tSeptic shock: Associated with hypotension, not HTN."
+    "explanation": "Conn’s Syndrome: Primary hyperaldosteronism → sodium retention → HTN → secondary HTN. Other Options: খ) Burn: Can lead to fluid shifts but not chronic HTN. গ) Renal ischemia: True, also causes secondary HTN (via renin-angiotensin), but not the best choice over Conn’s. ঘ) Septic shock: Associated with hypotension, not HTN."
   },
   {
     "ref": "bcs48_q137",
@@ -2463,7 +2463,7 @@
       "examination of cervix"
     ],
     "answer": 1,
-    "explanation": "Oxytocin 10 units IM:\tGold standard to prevent\npostpartum hemorrhage.\nOther Options:\nক)\tAortic compression: Emergency measure in PPH, not\nroutine AMTSL.\nগ)\tPerineal massage: Not part of AMTSL.\nঘ)\tCervix exam: Done but not a component of AMTSL."
+    "explanation": "Oxytocin 10 units IM: Gold standard to prevent postpartum hemorrhage. Other Options: ক) Aortic compression: Emergency measure in PPH, not routine AMTSL. গ) Perineal massage: Not part of AMTSL. ঘ) Cervix exam: Done but not a component of AMTSL."
   },
   {
     "ref": "bcs48_q138",
@@ -2481,7 +2481,7 @@
       "Ziehl-Neelson stain"
     ],
     "answer": 3,
-    "explanation": "Ziehl-Neelsen stain:\tAcid-fast stain — stains mycolic\nacid in MTB cell wall.\nOther Options:\nক)\tGiemsa: Used for parasites like malaria.\nখ)\tGram stain: Mycobacteria are gram-indeterminate.\nগ)\tSilver stain: For fungi, pneumocystis."
+    "explanation": "Ziehl-Neelsen stain: Acid-fast stain — stains mycolic acid in MTB cell wall. Other Options: ক) Giemsa: Used for parasites like malaria. খ) Gram stain: Mycobacteria are gram-indeterminate. গ) Silver stain: For fungi, pneumocystis."
   },
   {
     "ref": "bcs48_q139",
@@ -2499,7 +2499,7 @@
       "Cefuroxime"
     ],
     "answer": 2,
-    "explanation": "Ceftriaxone:\tMostly excreted by liver → safer in renal\nimpairment.\nOther Options:\nক)\tCefazolin: Requires dose adjustment in renal failure.\nখ)\tCefotetan: Dose adjustment needed.\nঘ)\tCefuroxime: Excreted renally → not ideal without\ndose adjustment."
+    "explanation": "Ceftriaxone: Mostly excreted by liver → safer in renal impairment. Other Options: ক) Cefazolin: Requires dose adjustment in renal failure. খ) Cefotetan: Dose adjustment needed. ঘ) Cefuroxime: Excreted renally → not ideal without dose adjustment."
   },
   {
     "ref": "bcs48_q140",
@@ -2517,7 +2517,7 @@
       "Platelet aggregation"
     ],
     "answer": 3,
-    "explanation": "Platelet aggregation:\tInitial step — forms the temporary\nhemostatic plug.\nOther Options:\nক)\tActivation of clotting factors: Occurs after platelet\nplug forms.\nখ)\tClot retraction: Final phase of hemostasis.\nগ)\tFibrin mesh formation: Later stage to stabilize clot."
+    "explanation": "Platelet aggregation: Initial step — forms the temporary hemostatic plug. Other Options: ক) Activation of clotting factors: Occurs after platelet plug forms. খ) Clot retraction: Final phase of hemostasis. গ) Fibrin mesh formation: Later stage to stabilize clot."
   },
   {
     "ref": "bcs48_q141",
@@ -2535,7 +2535,7 @@
       "Pyloric stenosis"
     ],
     "answer": 2,
-    "explanation": "Non-ulcer dyspepsia:\tA functional disorder under acid-\npeptic spectrum (includes gastritis, GERD, peptic ulcer).\nOther Options:\nক)\tInflammatory bowel disease: Autoimmune condition\naffecting the colon and small intestine.\nখ)\tIrritable bowel syndrome: Functional GI disorder;\nunrelated to acid or ulcers.\nঘ)\tPyloric stenosis: Mechanical obstruction, not\nprimarily acid-related."
+    "explanation": "Non-ulcer dyspepsia: A functional disorder under acid- peptic spectrum (includes gastritis, GERD, peptic ulcer). Other Options: ক) Inflammatory bowel disease: Autoimmune condition affecting the colon and small intestine. খ) Irritable bowel syndrome: Functional GI disorder; unrelated to acid or ulcers. ঘ) Pyloric stenosis: Mechanical obstruction, not primarily acid-related."
   },
   {
     "ref": "bcs48_q142",
@@ -2553,7 +2553,7 @@
       "Septicemia"
     ],
     "answer": 2,
-    "explanation": "Cerebral hemorrhage:\tRaised BP → hemorrhage →\ncoma/death — commonest direct cause in eclampsia.\nther Options:\nক)\tRetained placenta: Causes hemorrhage but not the\nusual cause of death in eclampsia.\nখ)\tRuptured uterus: Obstetric emergency but not due to\neclampsia.\nঘ)\tSepticemia: Less likely unless secondary infection\noccurs."
+    "explanation": "Cerebral hemorrhage: Raised BP → hemorrhage → coma/death — commonest direct cause in eclampsia. ther Options: ক) Retained placenta: Causes hemorrhage but not the usual cause of death in eclampsia. খ) Ruptured uterus: Obstetric emergency but not due to eclampsia. ঘ) Septicemia: Less likely unless secondary infection occurs."
   },
   {
     "ref": "bcs48_q143",
@@ -2571,7 +2571,7 @@
       "Mycophenolate Mofetil"
     ],
     "answer": 1,
-    "explanation": "Sulfasalazine:\tSafe in pregnancy; commonly used in\ninflammatory arthritis.\nOther Options:\nক)\tMethotrexate: Teratogenic — contraindicated.\nগ)\tLeflunomide: Highly teratogenic; contraindicated.\nঘ)\tMycophenolate mofetil: Teratogenic\nimmunosuppressant."
+    "explanation": "Sulfasalazine: Safe in pregnancy; commonly used in inflammatory arthritis. Other Options: ক) Methotrexate: Teratogenic — contraindicated. গ) Leflunomide: Highly teratogenic; contraindicated. ঘ) Mycophenolate mofetil: Teratogenic immunosuppressant."
   },
   {
     "ref": "bcs48_q144",
@@ -2589,7 +2589,7 @@
       "Haptoglobin"
     ],
     "answer": 0,
-    "explanation": "Plasminogen:\tConverted to plasmin → breaks down\nfibrin clots.\nOther Options:\nখ)\tProthrombin: Involved in coagulation, not fibrinolysis.\nগ)\tFibrinogen: Precursor to fibrin (forms clots), not\nbreakdown.\nঘ)\tHaptoglobin: Binds free hemoglobin, unrelated to\nclotting."
+    "explanation": "Plasminogen: Converted to plasmin → breaks down fibrin clots. Other Options: খ) Prothrombin: Involved in coagulation, not fibrinolysis. গ) Fibrinogen: Precursor to fibrin (forms clots), not breakdown. ঘ) Haptoglobin: Binds free hemoglobin, unrelated to clotting."
   },
   {
     "ref": "bcs48_q145",
@@ -2607,7 +2607,7 @@
       "Less evidence of inflammation"
     ],
     "answer": 2,
-    "explanation": "Applicable for infected wound:\tLeft open to heal from\nbase — e.g., abscess cavity.\nOther Options:\nক)\tTakes place in clean wound: Clean wounds →\nprimary intention.\nখ)\tFine scar formation: Secondary intention → larger\nscars.\nঘ)\tLess evidence of inflammation: More inflammation\nand granulation occurs."
+    "explanation": "Applicable for infected wound: Left open to heal from base — e.g., abscess cavity. Other Options: ক) Takes place in clean wound: Clean wounds → primary intention. খ) Fine scar formation: Secondary intention → larger scars. ঘ) Less evidence of inflammation: More inflammation and granulation occurs."
   },
   {
     "ref": "bcs48_q146",
@@ -2625,7 +2625,7 @@
       "Sub acute thyroiditis"
     ],
     "answer": 3,
-    "explanation": "Subacute thyroiditis:\tPreformed hormone release →\nlow TSH, low uptake, and self-limiting.\nOther Options:\nক)\tGraves disease: High iodine uptake.\nখ)\tToxic adenoma: Focal high uptake.\nগ)\tToxic multinodular goitre: Patchy uptake."
+    "explanation": "Subacute thyroiditis: Preformed hormone release → low TSH, low uptake, and self-limiting. Other Options: ক) Graves disease: High iodine uptake. খ) Toxic adenoma: Focal high uptake. গ) Toxic multinodular goitre: Patchy uptake."
   },
   {
     "ref": "bcs48_q147",
@@ -2643,7 +2643,7 @@
       "Formation of huge granulation tissue"
     ],
     "answer": 0,
-    "explanation": "Mild serosanguinous discharge:\tCommon in minor,\nsuperficial infections.\nOther Options:\nখ)\tCopious purulent discharge: Suggests major or deep\ninfection.\nগ)\tFever: Systemic involvement.\nঘ)\tHuge granulation tissue: Seen in chronic non-healing\nwounds."
+    "explanation": "Mild serosanguinous discharge: Common in minor, superficial infections. Other Options: খ) Copious purulent discharge: Suggests major or deep infection. গ) Fever: Systemic involvement. ঘ) Huge granulation tissue: Seen in chronic non-healing wounds."
   },
   {
     "ref": "bcs48_q148",
@@ -2661,7 +2661,7 @@
       "Vit B12"
     ],
     "answer": 3,
-    "explanation": "Vitamin B12:\tMegaloblastic anemia + posterior column\nneuropathy (tingling, numbness, gait issues).\nOther Options:\nক)\tFolic acid: Causes megaloblastic anemia but not\nneuropathy.\nখ)\tIron: Microcytic anemia, no neuropathy.\nগ)\tPyridoxine (B6): Neuropathy, yes — but not\nmegaloblastic anemia."
+    "explanation": "Vitamin B12: Megaloblastic anemia + posterior column neuropathy (tingling, numbness, gait issues). Other Options: ক) Folic acid: Causes megaloblastic anemia but not neuropathy. খ) Iron: Microcytic anemia, no neuropathy. গ) Pyridoxine (B6): Neuropathy, yes — but not megaloblastic anemia."
   },
   {
     "ref": "bcs48_q149",
@@ -2679,7 +2679,7 @@
       "Testicular atrophy"
     ],
     "answer": 2,
-    "explanation": "Ascites:\tIndicates portal hypertension and hepatic\ndysfunction — hallmark of decompensation.\nOther Options:\nক)\tLoss of hair: Non-specific.\nখ)\tSplenomegaly: May occur in portal hypertension but\nnot a marker of decompensation.\nঘ)\tTesticular atrophy: May occur in chronic liver\ndisease, but not defining decompensation."
+    "explanation": "Ascites: Indicates portal hypertension and hepatic dysfunction — hallmark of decompensation. Other Options: ক) Loss of hair: Non-specific. খ) Splenomegaly: May occur in portal hypertension but not a marker of decompensation. ঘ) Testicular atrophy: May occur in chronic liver disease, but not defining decompensation."
   },
   {
     "ref": "bcs48_q150",
@@ -2697,7 +2697,7 @@
       "Peri-ampullary carcinoma"
     ],
     "answer": 3,
-    "explanation": "Periampullary carcinoma:\tObstructs bile flow without\npain — “painless progressive jaundice”.\nOther Options:\nক)\tCholelithiasis: Painful jaundice due to obstruction.\nখ)\tCholangitis: Pain, fever, jaundice (Charcot’s triad).\nগ)\tMucocele of gallbladder: Rare and not a typical cause\nof jaundice."
+    "explanation": "Periampullary carcinoma: Obstructs bile flow without pain — “painless progressive jaundice”. Other Options: ক) Cholelithiasis: Painful jaundice due to obstruction. খ) Cholangitis: Pain, fever, jaundice (Charcot’s triad). গ) Mucocele of gallbladder: Rare and not a typical cause of jaundice."
   },
   {
     "ref": "bcs48_q151",
@@ -2715,7 +2715,7 @@
       "Rheumatic fever"
     ],
     "answer": 3,
-    "explanation": "Rheumatic fever:\tAutoimmune response to group A\nstreptococcal infection → molecular mimicry causes\nheart, joint, skin, and brain involvement.\nOther Options:\nক)\tBronchial asthma: Hypersensitivity disorder, not\nautoimmune.\nখ)\tHypertension: Multifactorial, not autoimmune.\nগ)\tHeart failure: A complication of cardiac disease, not\nimmune-mediated."
+    "explanation": "Rheumatic fever: Autoimmune response to group A streptococcal infection → molecular mimicry causes heart, joint, skin, and brain involvement. Other Options: ক) Bronchial asthma: Hypersensitivity disorder, not autoimmune. খ) Hypertension: Multifactorial, not autoimmune. গ) Heart failure: A complication of cardiac disease, not immune-mediated."
   },
   {
     "ref": "bcs48_q152",
@@ -2733,7 +2733,7 @@
       "Bicornuate Uterus"
     ],
     "answer": 0,
-    "explanation": "Diabetes Mellitus:\tPoorly controlled maternal diabetes\ncan cause fetal hypoxia, macrosomia, congenital\nmalformations → IUD.\nOther Options:\nখ)\tRespiratory distress syndrome: Postnatal condition.\nগ)\tBreech presentation: Can cause complications during\ndelivery but not a direct IUD cause.\nঘ)\tBicornuate uterus: May increase miscarriage risk but\nnot the most common cause of IUD."
+    "explanation": "Diabetes Mellitus: Poorly controlled maternal diabetes can cause fetal hypoxia, macrosomia, congenital malformations → IUD. Other Options: খ) Respiratory distress syndrome: Postnatal condition. গ) Breech presentation: Can cause complications during delivery but not a direct IUD cause. ঘ) Bicornuate uterus: May increase miscarriage risk but not the most common cause of IUD."
   },
   {
     "ref": "bcs48_q153",
@@ -2751,7 +2751,7 @@
       "Lung Cancer"
     ],
     "answer": 0,
-    "explanation": "Bronchiectasis:\tChronic productive cough, hemoptysis,\nclubbing — hallmark triad.\nOther Options:\nখ)\tInterstitial lung disease: Clubbing may occur but\nhemoptysis is rare.\nগ)\tMitral stenosis: May cause hemoptysis but not\nrecurrent for years with clubbing.\nঘ)\tLung cancer: May cause hemoptysis, but less likely\nover 5 years with stable symptoms."
+    "explanation": "Bronchiectasis: Chronic productive cough, hemoptysis, clubbing — hallmark triad. Other Options: খ) Interstitial lung disease: Clubbing may occur but hemoptysis is rare. গ) Mitral stenosis: May cause hemoptysis but not recurrent for years with clubbing. ঘ) Lung cancer: May cause hemoptysis, but less likely over 5 years with stable symptoms."
   },
   {
     "ref": "bcs48_q154",
@@ -2769,7 +2769,7 @@
       "Thyroid"
     ],
     "answer": 1,
-    "explanation": "Liver:\tLargest gland — both endocrine (glucose\nmetabolism, albumin) and exocrine (bile).\nOther Options:\nক)\tAdrenal: Small endocrine gland.\nগ)\tPancreas: Mixed gland but smaller.\nঘ)\tThyroid: Largest endocrine gland only, but not\noverall largest."
+    "explanation": "Liver: Largest gland — both endocrine (glucose metabolism, albumin) and exocrine (bile). Other Options: ক) Adrenal: Small endocrine gland. গ) Pancreas: Mixed gland but smaller. ঘ) Thyroid: Largest endocrine gland only, but not overall largest."
   },
   {
     "ref": "bcs48_q155",
@@ -2787,7 +2787,7 @@
       "Submucosa"
     ],
     "answer": 3,
-    "explanation": "Submucosa:\tContains Meissner’s nerve plexus, blood\nvessels, lymphatics.\nOther Options:\nক)\tMucosa: Absorption and secretion.\nখ)\tMuscular layer: For peristalsis.\nগ)\tSerous layer: Outer protective layer."
+    "explanation": "Submucosa: Contains Meissner’s nerve plexus, blood vessels, lymphatics. Other Options: ক) Mucosa: Absorption and secretion. খ) Muscular layer: For peristalsis. গ) Serous layer: Outer protective layer."
   },
   {
     "ref": "bcs48_q156",
@@ -2805,7 +2805,7 @@
       "Sick person"
     ],
     "answer": 0,
-    "explanation": "Insane person:\tLacks legal capacity to understand →\nconsent is invalid.\nOther Options:\nখ)\tElderly person: Valid if mentally sound.\nগ)\tIlliterate person: Consent valid if information is\nproperly explained and understood.\nঘ)\tSick person: As long as mental capacity is intact,\nconsent is valid."
+    "explanation": "Insane person: Lacks legal capacity to understand → consent is invalid. Other Options: খ) Elderly person: Valid if mentally sound. গ) Illiterate person: Consent valid if information is properly explained and understood. ঘ) Sick person: As long as mental capacity is intact, consent is valid."
   },
   {
     "ref": "bcs48_q157",
@@ -2823,7 +2823,7 @@
       "Tetanus"
     ],
     "answer": 0,
-    "explanation": "BCG:\tGiven at birth to prevent severe forms of\ntuberculosis.\nOther Options:\nখ)\tDiphtheria: Part of DPT — given at 6 weeks.\nগ)\tMeasles: Given at 9 months.\nঘ)\tTetanus: Not directly given at birth (Tetanus toxoid\ngiven to mothers antenatally)."
+    "explanation": "BCG: Given at birth to prevent severe forms of tuberculosis. Other Options: খ) Diphtheria: Part of DPT — given at 6 weeks. গ) Measles: Given at 9 months. ঘ) Tetanus: Not directly given at birth (Tetanus toxoid given to mothers antenatally)."
   },
   {
     "ref": "bcs48_q158",
@@ -2841,7 +2841,7 @@
       "Transverse"
     ],
     "answer": 2,
-    "explanation": "Oblique:\tTypical of hanging — runs upward and\nobliquely due to suspension.\nOther Options:\nক)\tCompletely encircling neck: More common in\nstrangulation.\nখ)\tContinuous: Ligature marks in hanging are often\nincomplete.\nঘ)\tTransverse: Seen in strangulation, not hanging."
+    "explanation": "Oblique: Typical of hanging — runs upward and obliquely due to suspension. Other Options: ক) Completely encircling neck: More common in strangulation. খ) Continuous: Ligature marks in hanging are often incomplete. ঘ) Transverse: Seen in strangulation, not hanging."
   },
   {
     "ref": "bcs48_q159",
@@ -2859,7 +2859,7 @@
       "Peripheral neuropathy"
     ],
     "answer": 0,
-    "explanation": "Genital infection:\tDue to glycosuria, common in both\nmales and females.\nOther Options:\nখ)\tLactic acidosis: More associated with metformin.\nগ)\tFluid retention: Not typical; more with TZDs (e.g.,\npioglitazone).\nঘ)\tPeripheral neuropathy: Not a common adverse effect\nof SGLT2 inhibitors."
+    "explanation": "Genital infection: Due to glycosuria, common in both males and females. Other Options: খ) Lactic acidosis: More associated with metformin. গ) Fluid retention: Not typical; more with TZDs (e.g., pioglitazone). ঘ) Peripheral neuropathy: Not a common adverse effect of SGLT2 inhibitors."
   },
   {
     "ref": "bcs48_q160",
@@ -2877,7 +2877,7 @@
       "Trachea"
     ],
     "answer": 0,
-    "explanation": "Alveoli:\tSite of gas exchange — functional unit.\nOther Options:\nখ)\tBronchiole: Conducting airways, no gas exchange.\nগ)\tBronchus: Larger conducting airway.\nঘ)\tTrachea: Air conduction only, not functional for gas\nexchange."
+    "explanation": "Alveoli: Site of gas exchange — functional unit. Other Options: খ) Bronchiole: Conducting airways, no gas exchange. গ) Bronchus: Larger conducting airway. ঘ) Trachea: Air conduction only, not functional for gas exchange."
   },
   {
     "ref": "bcs48_q161",
@@ -2895,7 +2895,7 @@
       "Iron binding capacity falls"
     ],
     "answer": 0,
-    "explanation": "Factor X increases:\tCoagulation factors like fibrinogen,\nfactor VII, VIII, X increase — pregnancy is a\nhypercoagulable state.\nOther Options:\nখ)\tAntithrombin III concentration increases: It decreases,\nenhancing coagulation tendency.\nগ)\tVenous pressure falls: It rises due to mechanical\npressure by gravid uterus.\nঘ)\tIron binding capacity falls: It increases due to\nelevated transferrin levels."
+    "explanation": "Factor X increases: Coagulation factors like fibrinogen, factor VII, VIII, X increase — pregnancy is a hypercoagulable state. Other Options: খ) Antithrombin III concentration increases: It decreases, enhancing coagulation tendency. গ) Venous pressure falls: It rises due to mechanical pressure by gravid uterus. ঘ) Iron binding capacity falls: It increases due to elevated transferrin levels."
   },
   {
     "ref": "bcs48_q162",
@@ -2913,7 +2913,7 @@
       "Low cost"
     ],
     "answer": 3,
-    "explanation": "Low cost:\tRapid antigen tests are cheap and used for\nmass screening.\nOther Options:\nক)\tHigh accuracy: Less accurate than RT-PCR.\nখ)\tHigh sensitivity: Sensitivity is low, especially in\nasymptomatic patients.\nগ)\tHigh specificity: Moderate, not highest."
+    "explanation": "Low cost: Rapid antigen tests are cheap and used for mass screening. Other Options: ক) High accuracy: Less accurate than RT-PCR. খ) High sensitivity: Sensitivity is low, especially in asymptomatic patients. গ) High specificity: Moderate, not highest."
   },
   {
     "ref": "bcs48_q163",
@@ -2931,7 +2931,7 @@
       "Respiratory alkalosis"
     ],
     "answer": 2,
-    "explanation": "Respiratory acidosis:\tCO₂ buildup → ↓pH → respiratory\nacidosis.\nOther Options:\nক)\tMetabolic acidosis: Caused by acid accumulation (e.g.,\nDKA, renal failure), not CO₂.\nখ)\tMetabolic alkalosis: Seen with vomiting or diuretics.\nঘ)\tRespiratory alkalosis: Happens with low CO₂ (e.g.,\nhyperventilation)."
+    "explanation": "Respiratory acidosis: CO₂ buildup → ↓pH → respiratory acidosis. Other Options: ক) Metabolic acidosis: Caused by acid accumulation (e.g., DKA, renal failure), not CO₂. খ) Metabolic alkalosis: Seen with vomiting or diuretics. ঘ) Respiratory alkalosis: Happens with low CO₂ (e.g., hyperventilation)."
   },
   {
     "ref": "bcs48_q164",
@@ -2949,7 +2949,7 @@
       "Carcinogenic"
     ],
     "answer": 2,
-    "explanation": "Non-electrolyte:\tReduces tissue reaction and avoids\ngalvanic corrosion with metals.\nOther Options:\nক)\tShrimable: Not a valid term in suture material\ncontext.\nখ)\tNon-predictable tissue behavior: Ideal material should\nhave predictable behavior.\nঘ)\tCarcinogenic: Absolutely undesirable in any material."
+    "explanation": "Non-electrolyte: Reduces tissue reaction and avoids galvanic corrosion with metals. Other Options: ক) Shrimable: Not a valid term in suture material context. খ) Non-predictable tissue behavior: Ideal material should have predictable behavior. ঘ) Carcinogenic: Absolutely undesirable in any material."
   },
   {
     "ref": "bcs48_q165",
@@ -2967,7 +2967,7 @@
       "Enzyme induction"
     ],
     "answer": 2,
-    "explanation": "Idiosyncrasy:\tAn unusual, unpredictable reaction due to\ngenetic factors — a type of ADR.\nOther Options:\nক)\tSynergism: Therapeutic concept — beneficial or\nharmful, not always ADR.\nখ)\tAntagonism: Drug interaction concept.\nঘ)\tEnzyme induction: Pharmacokinetic change, not an\nadverse reaction itself."
+    "explanation": "Idiosyncrasy: An unusual, unpredictable reaction due to genetic factors — a type of ADR. Other Options: ক) Synergism: Therapeutic concept — beneficial or harmful, not always ADR. খ) Antagonism: Drug interaction concept. ঘ) Enzyme induction: Pharmacokinetic change, not an adverse reaction itself."
   },
   {
     "ref": "bcs48_q166",
@@ -2985,7 +2985,7 @@
       "Thromboembolic episode"
     ],
     "answer": 3,
-    "explanation": "Thromboembolic episode:\tDue to reduced warfarin\nlevels (CYP induction) → clot formation risk.\nOther Options:\nক)\tAntiplatelet effect: Warfarin works on coagulation\nfactors, not platelets.\nখ)\tFibrinolytic effect: Warfarin doesn’t increase clot\nbreakdown.\nগ)\tIncreased bleeding tendency: Phenobarbital is an\nenzyme inducer, reduces warfarin efficacy."
+    "explanation": "Thromboembolic episode: Due to reduced warfarin levels (CYP induction) → clot formation risk. Other Options: ক) Antiplatelet effect: Warfarin works on coagulation factors, not platelets. খ) Fibrinolytic effect: Warfarin doesn’t increase clot breakdown. গ) Increased bleeding tendency: Phenobarbital is an enzyme inducer, reduces warfarin efficacy."
   },
   {
     "ref": "bcs48_q167",
@@ -3003,7 +3003,7 @@
       "Left internal mammary artery"
     ],
     "answer": 3,
-    "explanation": "Left internal mammary artery (LIMA):\tMost durable,\nwith best long-term patency.\nOther Options:\nক)\tGreat saphenous vein: Used often but less durable\nthan arterial grafts.\nখ)\tUlnar artery: Rarely used.\nগ)\tRadial artery: Can be used, but second-line."
+    "explanation": "Left internal mammary artery (LIMA): Most durable, with best long-term patency. Other Options: ক) Great saphenous vein: Used often but less durable than arterial grafts. খ) Ulnar artery: Rarely used. গ) Radial artery: Can be used, but second-line."
   },
   {
     "ref": "bcs48_q168",
@@ -3021,7 +3021,7 @@
       "H+ is increased"
     ],
     "answer": 2,
-    "explanation": "HCO₃⁻ is increased:\tOnly in chronic compensation. In\nacute, it remains normal or slightly increased.\nOther Options:\nক)\tPaO₂ < 8.0 kPa: Hypoxemia — characteristic.\nখ)\tPaCO₂ > 8.0 kPa: Hypercapnia — defining for Type II.\nঘ)\tH⁺ is increased: Respiratory acidosis leads to\nacidemia."
+    "explanation": "HCO₃⁻ is increased: Only in chronic compensation. In acute, it remains normal or slightly increased. Other Options: ক) PaO₂ < 8.0 kPa: Hypoxemia — characteristic. খ) PaCO₂ > 8.0 kPa: Hypercapnia — defining for Type II. ঘ) H⁺ is increased: Respiratory acidosis leads to acidemia."
   },
   {
     "ref": "bcs48_q169",
@@ -3039,7 +3039,7 @@
       "Haemangioma"
     ],
     "answer": 3,
-    "explanation": "Haemangioma:\tVascular tumor — soft, compressible,\nmay refill on release.\nOther Options:\nক)\tNeurofibroma: Solid and non-compressible.\nখ)\tChondroma: Cartilage tumor — firm.\nগ)\tLymphoma: Firm, rubbery lymph node swelling."
+    "explanation": "Haemangioma: Vascular tumor — soft, compressible, may refill on release. Other Options: ক) Neurofibroma: Solid and non-compressible. খ) Chondroma: Cartilage tumor — firm. গ) Lymphoma: Firm, rubbery lymph node swelling."
   },
   {
     "ref": "bcs48_q170",
@@ -3057,7 +3057,7 @@
       "Night blindness"
     ],
     "answer": 2,
-    "explanation": "Keratomalacia:\tCorneal softening → permanent\nblindness — irreversible.\nOther Options:\nক)\tBitot’s spot: Early and reversible.\nখ)\tXerosis conjunctivae: Reversible.\nঘ)\tNight blindness: Earliest sign, completely reversible\nwith treatment."
+    "explanation": "Keratomalacia: Corneal softening → permanent blindness — irreversible. Other Options: ক) Bitot’s spot: Early and reversible. খ) Xerosis conjunctivae: Reversible. ঘ) Night blindness: Earliest sign, completely reversible with treatment."
   },
   {
     "ref": "bcs48_q171",
@@ -3075,7 +3075,7 @@
       "Oral Ulceration"
     ],
     "answer": 2,
-    "explanation": "Positive HLA-B27:\tGenetic marker found in most types\nincluding ankylosing spondylitis, reactive arthritis,\npsoriatic arthritis, and IBD-related arthritis.\nOther Options:\nক)\tSymmetrical polyarthritis: Seen in rheumatoid\narthritis, not typical for spondyloarthritis (which is\nusually asymmetric).\nখ)\tConjunctivitis: Seen in reactive arthritis, not universal\nto all spondyloarthropathies.\nঘ)\tOral ulceration: Common in Behçet’s disease or SLE,\nnot typical in spondyloarthritis."
+    "explanation": "Positive HLA-B27: Genetic marker found in most types including ankylosing spondylitis, reactive arthritis, psoriatic arthritis, and IBD-related arthritis. Other Options: ক) Symmetrical polyarthritis: Seen in rheumatoid arthritis, not typical for spondyloarthritis (which is usually asymmetric). খ) Conjunctivitis: Seen in reactive arthritis, not universal to all spondyloarthropathies. ঘ) Oral ulceration: Common in Behçet’s disease or SLE, not typical in spondyloarthritis."
   },
   {
     "ref": "bcs48_q172",
@@ -3093,7 +3093,7 @@
       "Hypotension"
     ],
     "answer": 1,
-    "explanation": "Bradycardia:\tPart of Cushing’s triad (bradycardia,\nhypertension, irregular respiration).\nOther Options:\nক)\tRaised respiratory rate: Often depressed in late\nstages.\nগ)\tFever: Not a classic sign of raised ICP.\nঘ)\tHypotension: Hypertension is typical in raised ICP."
+    "explanation": "Bradycardia: Part of Cushing’s triad (bradycardia, hypertension, irregular respiration). Other Options: ক) Raised respiratory rate: Often depressed in late stages. গ) Fever: Not a classic sign of raised ICP. ঘ) Hypotension: Hypertension is typical in raised ICP."
   },
   {
     "ref": "bcs48_q173",
@@ -3111,7 +3111,7 @@
       "Follicular Carcinoma of thyroid"
     ],
     "answer": 3,
-    "explanation": "Follicular carcinoma of thyroid:\tSpreads\nhematogenously → commonly to bone and lungs.\nOther Options:\nক)\tCarcinoma gallbladder: Rarely metastasizes to bone.\nখ)\tMalignant melanoma: Commonly spreads to skin,\nliver, lungs.\nগ)\tSquamous cell carcinoma of skin: Local invasion more\ncommon."
+    "explanation": "Follicular carcinoma of thyroid: Spreads hematogenously → commonly to bone and lungs. Other Options: ক) Carcinoma gallbladder: Rarely metastasizes to bone. খ) Malignant melanoma: Commonly spreads to skin, liver, lungs. গ) Squamous cell carcinoma of skin: Local invasion more common."
   },
   {
     "ref": "bcs48_q174",
@@ -3129,7 +3129,7 @@
       "Mucous membrane"
     ],
     "answer": 0,
-    "explanation": "Muscle:\tDerived from paraxial mesoderm (somites).\nOther Options:\nখ)\tSkin: Epidermis comes from ectoderm.\nগ)\tNail: Ectodermal derivative.\nঘ)\tMucous membrane: Endoderm in origin (respiratory,\nGI)."
+    "explanation": "Muscle: Derived from paraxial mesoderm (somites). Other Options: খ) Skin: Epidermis comes from ectoderm. গ) Nail: Ectodermal derivative. ঘ) Mucous membrane: Endoderm in origin (respiratory, GI)."
   },
   {
     "ref": "bcs48_q175",
@@ -3147,7 +3147,7 @@
       "Pregnancy"
     ],
     "answer": 2,
-    "explanation": "Age:\tBone ossification centers, dental X-rays —\ncommonly used in age estimation.\nOther Options:\nক)\tPoison: Identified by toxicology.\nখ)\tForeign body: Yes, radiology can help, but not the\nprimary use in forensics.\nঘ)\tPregnancy: Determined clinically or by ultrasound,\nnot primarily forensic."
+    "explanation": "Age: Bone ossification centers, dental X-rays — commonly used in age estimation. Other Options: ক) Poison: Identified by toxicology. খ) Foreign body: Yes, radiology can help, but not the primary use in forensics. ঘ) Pregnancy: Determined clinically or by ultrasound, not primarily forensic."
   },
   {
     "ref": "bcs48_q176",
@@ -3165,7 +3165,7 @@
       "Pancreatic cancer"
     ],
     "answer": 2,
-    "explanation": "Ovarian cancer:\tEspecially in epithelial ovarian cancers\n(used for diagnosis & follow-up).\nOther Options:\nক)\tBreast cancer: CA 15-3 is used.\nখ)\tColon cancer: CEA (Carcinoembryonic antigen) is\nused.\nঘ)\tPancreatic cancer: CA 19-9 is used."
+    "explanation": "Ovarian cancer: Especially in epithelial ovarian cancers (used for diagnosis & follow-up). Other Options: ক) Breast cancer: CA 15-3 is used. খ) Colon cancer: CEA (Carcinoembryonic antigen) is used. ঘ) Pancreatic cancer: CA 19-9 is used."
   },
   {
     "ref": "bcs48_q177",
@@ -3183,7 +3183,7 @@
       "Trichomomiasis"
     ],
     "answer": 0,
-    "explanation": "Endometriosis:\tCommon cause of secondary\ndysmenorrhea in adolescents.\nOther Options:\nখ)\tPolycystic ovary disease (PCOS): Typically presents\nwith oligomenorrhea, not painful periods.\nগ)\tAdenomyosis: Common in older, multiparous women.\nঘ)\tTrichomoniasis: STI with discharge, not\ndysmenorrhea."
+    "explanation": "Endometriosis: Common cause of secondary dysmenorrhea in adolescents. Other Options: খ) Polycystic ovary disease (PCOS): Typically presents with oligomenorrhea, not painful periods. গ) Adenomyosis: Common in older, multiparous women. ঘ) Trichomoniasis: STI with discharge, not dysmenorrhea."
   },
   {
     "ref": "bcs48_q178",
@@ -3201,7 +3201,7 @@
       "Retrobulbar neuritis"
     ],
     "answer": 3,
-    "explanation": "Retrobulbar neuritis:\tDose-dependent optic neuritis —\naffects color vision, visual acuity; hard to detect in\nyoung children.\nOther Options:\nক)\tPeripheral neuropathy: More with isoniazid.\nখ)\tHepatitis: Seen more with isoniazid, rifampicin, and\npyrazinamide.\nগ)\tRash: Minor side effect."
+    "explanation": "Retrobulbar neuritis: Dose-dependent optic neuritis — affects color vision, visual acuity; hard to detect in young children. Other Options: ক) Peripheral neuropathy: More with isoniazid. খ) Hepatitis: Seen more with isoniazid, rifampicin, and pyrazinamide. গ) Rash: Minor side effect."
   },
   {
     "ref": "bcs48_q179",
@@ -3219,7 +3219,7 @@
       "Twelve"
     ],
     "answer": 0,
-    "explanation": "Four:\tAs per WHO’s focused ANC model, minimum 4\nvisits (though newer guidelines recommend 8).\nOther Options:\nখ)\tSix: May be practiced, but not officially minimum.\nগ)\tEight: New WHO recommendation, not national\nminimum yet.\nঘ)\tTwelve: Too high — not the recommendation."
+    "explanation": "Four: As per WHO’s focused ANC model, minimum 4 visits (though newer guidelines recommend 8). Other Options: খ) Six: May be practiced, but not officially minimum. গ) Eight: New WHO recommendation, not national minimum yet. ঘ) Twelve: Too high — not the recommendation."
   },
   {
     "ref": "bcs48_q180",
@@ -3237,7 +3237,7 @@
       "Bone"
     ],
     "answer": 0,
-    "explanation": "Uterus:\tFemale reproductive organ involved in\nmenstruation and pregnancy.\nOther Options:\nখ)\tUrinary bladder: Excretory system.\nগ)\tUrethra: Excretory function.\nঘ)\tBone: Skeletal system, unrelated."
+    "explanation": "Uterus: Female reproductive organ involved in menstruation and pregnancy. Other Options: খ) Urinary bladder: Excretory system. গ) Urethra: Excretory function. ঘ) Bone: Skeletal system, unrelated."
   },
   {
     "ref": "bcs48_q181",
@@ -3255,7 +3255,7 @@
       "Hepatitis B"
     ],
     "answer": 2,
-    "explanation": "Dengue:\tCauses bone marrow suppression and\nperipheral platelet destruction — hallmark is\nthrombocytopenia.\nOther Options:\nক)\tSARS-CoV-2: May cause mild thrombocytopenia but\nnot characteristically.\nখ)\tInfluenza: Rarely associated with significant drop in\nplatelets.\nঘ)\tHepatitis B: May rarely cause it in advanced cases but\nnot typical."
+    "explanation": "Dengue: Causes bone marrow suppression and peripheral platelet destruction — hallmark is thrombocytopenia. Other Options: ক) SARS-CoV-2: May cause mild thrombocytopenia but not characteristically. খ) Influenza: Rarely associated with significant drop in platelets. ঘ) Hepatitis B: May rarely cause it in advanced cases but not typical."
   },
   {
     "ref": "bcs48_q182",
@@ -3273,7 +3273,7 @@
       "Immunization without infection"
     ],
     "answer": 2,
-    "explanation": "Post-infection:\tClassical serological profile.\nOther Options:\nThis is a resolved HBV infection profile:\n○ HBsAg (-): No active infection.\n○ Anti-HBc IgG (+): Past exposure.\n○ Anti-HBs (+): Immunity.\n○ Anti-HBc IgM (-): No recent infection.\nক) Acute hepatitis (early): Would have HBsAg (+) and\nIgM (+).\nখ) Convalescence: Might be possible, but Anti-HBs\nusually not yet formed.\nঘ) Immunization without infection: No Anti-HBc present\nin vaccine-induced immunity."
+    "explanation": "Post-infection: Classical serological profile. Other Options: This is a resolved HBV infection profile: ○ HBsAg (-): No active infection. ○ Anti-HBc IgG (+): Past exposure. ○ Anti-HBs (+): Immunity. ○ Anti-HBc IgM (-): No recent infection. ক) Acute hepatitis (early): Would have HBsAg (+) and IgM (+). খ) Convalescence: Might be possible, but Anti-HBs usually not yet formed. ঘ) Immunization without infection: No Anti-HBc present in vaccine-induced immunity."
   },
   {
     "ref": "bcs48_q183",
@@ -3291,7 +3291,7 @@
       "Once daily"
     ],
     "answer": 1,
-    "explanation": "6 hourly:\tAppropriate based on 3-hour half-life.\nOther Options:\nRule of thumb: Dose interval ≈ 1–2 times the half-life\nfor steady-state.\nক)\t3 hourly: Too frequent — unnecessary.\nগ)\t12 hourly: Not frequent enough — drug may drop\nbelow therapeutic level.\nঘ)\tOnce daily: Too long an interval."
+    "explanation": "6 hourly: Appropriate based on 3-hour half-life. Other Options: Rule of thumb: Dose interval ≈ 1–2 times the half-life for steady-state. ক) 3 hourly: Too frequent — unnecessary. গ) 12 hourly: Not frequent enough — drug may drop below therapeutic level. ঘ) Once daily: Too long an interval."
   },
   {
     "ref": "bcs48_q184",
@@ -3309,7 +3309,7 @@
       "Parovarian cyst"
     ],
     "answer": 2,
-    "explanation": "Fibroma:\tSolid, benign tumor of ovarian stromal origin.\nOther Options:\nক)\tChocolate cyst: Endometriotic cyst — not solid.\nখ)\tTheca lutein cyst: Functional cyst, not solid.\nঘ)\tParovarian cyst: Cystic structure, not a solid tumor."
+    "explanation": "Fibroma: Solid, benign tumor of ovarian stromal origin. Other Options: ক) Chocolate cyst: Endometriotic cyst — not solid. খ) Theca lutein cyst: Functional cyst, not solid. ঘ) Parovarian cyst: Cystic structure, not a solid tumor."
   },
   {
     "ref": "bcs48_q185",
@@ -3327,7 +3327,7 @@
       "Ethambutol"
     ],
     "answer": 0,
-    "explanation": "Amikacin:\tSecond-line aminoglycoside used in MDR-TB.\nOther Options:\nখ)\tStreptomycin: First-line but not effective in MDR-TB.\nগ)\tTazobactam: β-lactamase inhibitor — no role in TB.\nঘ)\tEthambutol: First-line drug; resistance likely in MDR-\nTB."
+    "explanation": "Amikacin: Second-line aminoglycoside used in MDR-TB. Other Options: খ) Streptomycin: First-line but not effective in MDR-TB. গ) Tazobactam: β-lactamase inhibitor — no role in TB. ঘ) Ethambutol: First-line drug; resistance likely in MDR- TB."
   },
   {
     "ref": "bcs48_q186",
@@ -3345,7 +3345,7 @@
       "Trypsin"
     ],
     "answer": 3,
-    "explanation": "Trypsin:\tSecreted by pancreas, breaks down proteins\ninto peptides.\nOther Options:\nক)\tAmylase: Digests starch (carbohydrates).\nখ)\tBile salt: Emulsifies fats, no enzymatic action.\nগ)\tLipase: Digests fats."
+    "explanation": "Trypsin: Secreted by pancreas, breaks down proteins into peptides. Other Options: ক) Amylase: Digests starch (carbohydrates). খ) Bile salt: Emulsifies fats, no enzymatic action. গ) Lipase: Digests fats."
   },
   {
     "ref": "bcs48_q187",
@@ -3363,7 +3363,7 @@
       "Under-5 mortality rate"
     ],
     "answer": 2,
-    "explanation": "Infant mortality rate:\tMost widely used global health\nindicator.\nOther Options:\nIMR reflects:\n○ Maternal health\n○ Health service access\n○ Nutrition\nক) Child death rate: Broader and less specific.\nখ) Case fatality rate: Measures disease severity, not\npopulation health.\nঘ) Under-5 mortality rate: Good indicator, but IMR is\nmore accepted."
+    "explanation": "Infant mortality rate: Most widely used global health indicator. Other Options: IMR reflects: ○ Maternal health ○ Health service access ○ Nutrition ক) Child death rate: Broader and less specific. খ) Case fatality rate: Measures disease severity, not population health. ঘ) Under-5 mortality rate: Good indicator, but IMR is more accepted."
   },
   {
     "ref": "bcs48_q188",
@@ -3381,7 +3381,7 @@
       "Thyroid stimulating hormone"
     ],
     "answer": 2,
-    "explanation": "Parathyroid hormone:\tRegulates calcium/phosphate\nbalance, increases bone resorption.\nOther Options:\nক)\tGlucagon: Raises blood glucose, not involved in\nbones.\nখ)\tGrowth hormone: Promotes growth, but indirectly\naffects bone.\nঘ)\tThyroid-stimulating hormone: Acts on thyroid, not\nbone metabolism directly."
+    "explanation": "Parathyroid hormone: Regulates calcium/phosphate balance, increases bone resorption. Other Options: ক) Glucagon: Raises blood glucose, not involved in bones. খ) Growth hormone: Promotes growth, but indirectly affects bone. ঘ) Thyroid-stimulating hormone: Acts on thyroid, not bone metabolism directly."
   },
   {
     "ref": "bcs48_q189",
@@ -3399,7 +3399,7 @@
       "Wickman Striae"
     ],
     "answer": 1,
-    "explanation": "Burrow:\tThin, grayish lines in finger webs, wrists —\ndiagnostic of scabies.\nOther Options:\nক)\tComedon: Seen in acne.\nগ)\tSilvery scale: Psoriasis.\nঘ)\tWickham’s striae: Lichen planus."
+    "explanation": "Burrow: Thin, grayish lines in finger webs, wrists — diagnostic of scabies. Other Options: ক) Comedon: Seen in acne. গ) Silvery scale: Psoriasis. ঘ) Wickham’s striae: Lichen planus."
   },
   {
     "ref": "bcs48_q190",
@@ -3417,7 +3417,7 @@
       "Entrapment in mine"
     ],
     "answer": 3,
-    "explanation": "Entrapment in mine:\tSudden unavailability of food →\nacute starvation.\nOther Options:\nক)\tSelf-refusal: Chronic starvation (e.g., anorexia\nnervosa).\nখ)\tDysphasia: Can cause feeding problems but not the\ntypical cause of acute starvation.\nগ)\tAnorexia: Again, a chronic issue."
+    "explanation": "Entrapment in mine: Sudden unavailability of food → acute starvation. Other Options: ক) Self-refusal: Chronic starvation (e.g., anorexia nervosa). খ) Dysphasia: Can cause feeding problems but not the typical cause of acute starvation. গ) Anorexia: Again, a chronic issue."
   },
   {
     "ref": "bcs48_q191",
@@ -3435,7 +3435,7 @@
       "Left ventricular dysfunction"
     ],
     "answer": 2,
-    "explanation": "Older patient:\tCCBs are particularly effective in elderly\nhypertensives, especially with isolated systolic HTN.\nOther Options:\nক)\tHeart failure: Some CCBs (especially non-\ndihydropyridines like verapamil) may worsen heart\nfailure.\nখ)\tSecondary stroke prevention: Not specifically CCBs;\nACEIs or diuretics preferred.\nঘ)\tLeft ventricular dysfunction: Beta-blockers or ACEIs\npreferred."
+    "explanation": "Older patient: CCBs are particularly effective in elderly hypertensives, especially with isolated systolic HTN. Other Options: ক) Heart failure: Some CCBs (especially non- dihydropyridines like verapamil) may worsen heart failure. খ) Secondary stroke prevention: Not specifically CCBs; ACEIs or diuretics preferred. ঘ) Left ventricular dysfunction: Beta-blockers or ACEIs preferred."
   },
   {
     "ref": "bcs48_q192",
@@ -3453,7 +3453,7 @@
       "Circulation and control of haemorrhage"
     ],
     "answer": 1,
-    "explanation": "Head to toe examination:\tThis is done during secondary\nsurvey to assess all systems thoroughly after stabilizing\nthe patient.\nOther Options:\nক)\tAirway and cervical spine control: Part of primary\nsurvey.\nগ)\tBreathing and ventilation: Part of primary survey.\nঘ)\tCirculation and control of hemorrhage: Also part of\nprimary survey."
+    "explanation": "Head to toe examination: This is done during secondary survey to assess all systems thoroughly after stabilizing the patient. Other Options: ক) Airway and cervical spine control: Part of primary survey. গ) Breathing and ventilation: Part of primary survey. ঘ) Circulation and control of hemorrhage: Also part of primary survey."
   },
   {
     "ref": "bcs48_q193",
@@ -3471,7 +3471,7 @@
       "Rosiglitazone"
     ],
     "answer": 2,
-    "explanation": "Insulin:\tDoes not cross placenta, preferred for both\ngestational and pregestational diabetes.\nOther Options:\nক)\tGlipizide: Sulfonylureas cross the placenta → risk to\nfetus.\nখ)\tMetformin: Can be used in some cases (GDM), but\ninsulin is gold standard.\nঘ)\tRosiglitazone: Contraindicated in pregnancy."
+    "explanation": "Insulin: Does not cross placenta, preferred for both gestational and pregestational diabetes. Other Options: ক) Glipizide: Sulfonylureas cross the placenta → risk to fetus. খ) Metformin: Can be used in some cases (GDM), but insulin is gold standard. ঘ) Rosiglitazone: Contraindicated in pregnancy."
   },
   {
     "ref": "bcs48_q194",
@@ -3489,7 +3489,7 @@
       "Sertraline"
     ],
     "answer": 1,
-    "explanation": "Fluoxetine:\tKnown to be weight neutral or even cause\nweight loss.\nOther Options:\nক)\tEscitalopram: May cause mild weight gain with long-\nterm use.\nগ)\tParoxetine: Commonly associated with weight gain.\nঘ)\tSertraline: Mild weight gain possible with chronic\nuse."
+    "explanation": "Fluoxetine: Known to be weight neutral or even cause weight loss. Other Options: ক) Escitalopram: May cause mild weight gain with long- term use. গ) Paroxetine: Commonly associated with weight gain. ঘ) Sertraline: Mild weight gain possible with chronic use."
   },
   {
     "ref": "bcs48_q195",
@@ -3507,7 +3507,7 @@
       "Cerebellum"
     ],
     "answer": 0,
-    "explanation": "Medulla:\tContains dorsal and ventral respiratory groups\n— controls inspiration and expiration.\nOther Options:\nখ)\tSpinal cord: Conveys impulses but not the control\ncenter.\nগ)\tBrain cortex: Can influence voluntary breathing but\nnot autonomic.\nঘ)\tCerebellum: Coordinates movement, not respiration."
+    "explanation": "Medulla: Contains dorsal and ventral respiratory groups — controls inspiration and expiration. Other Options: খ) Spinal cord: Conveys impulses but not the control center. গ) Brain cortex: Can influence voluntary breathing but not autonomic. ঘ) Cerebellum: Coordinates movement, not respiration."
   },
   {
     "ref": "bcs48_q196",
@@ -3525,7 +3525,7 @@
       "Sever anaemia"
     ],
     "answer": 2,
-    "explanation": "Cyanosis:\tClassic sign due to sudden respiratory collapse\nand hypoxia.\nOther Options:\nক)\tHypertension: Usually causes hypotension due to\nshock.\nখ)\tBronchodilatation: Opposite occurs — bronchospasm\nmay occur.\nঘ)\tSevere anemia: Not a feature; shock is due to\nembolism and coagulopathy."
+    "explanation": "Cyanosis: Classic sign due to sudden respiratory collapse and hypoxia. Other Options: ক) Hypertension: Usually causes hypotension due to shock. খ) Bronchodilatation: Opposite occurs — bronchospasm may occur. ঘ) Severe anemia: Not a feature; shock is due to embolism and coagulopathy."
   },
   {
     "ref": "bcs48_q197",
@@ -3543,7 +3543,7 @@
       "Vomiting"
     ],
     "answer": 2,
-    "explanation": "inguinal region\nTense and tender lump:\tNon-reducible, irreducible,\ntender, and tense mass = strangulation.\nOther Options:\nক)\tPain: Present in both reducible and strangulated\nhernia.\nখ)\tFever: Can occur later, not specific.\nঘ)\tVomiting: Non-specific symptom of intestinal\nobstruction."
+    "explanation": "inguinal region Tense and tender lump: Non-reducible, irreducible, tender, and tense mass = strangulation. Other Options: ক) Pain: Present in both reducible and strangulated hernia. খ) Fever: Can occur later, not specific. ঘ) Vomiting: Non-specific symptom of intestinal obstruction."
   },
   {
     "ref": "bcs48_q198",
@@ -3561,7 +3561,7 @@
       "are painful due to ischemia"
     ],
     "answer": 2,
-    "explanation": "Start at fundus of uterus:\tPacemaker region initiates\ncontraction → spreads downward.\nOther Options:\nক)\tConsciously controllable: Involuntary, smooth muscle\naction.\nখ)\tEfficient at 5 mmHg: Requires higher intrauterine\npressure (>30 mmHg).\nঘ)\tAre painful due to ischemia: Pain mainly due to\nstretching and cervical dilation."
+    "explanation": "Start at fundus of uterus: Pacemaker region initiates contraction → spreads downward. Other Options: ক) Consciously controllable: Involuntary, smooth muscle action. খ) Efficient at 5 mmHg: Requires higher intrauterine pressure (>30 mmHg). ঘ) Are painful due to ischemia: Pain mainly due to stretching and cervical dilation."
   },
   {
     "ref": "bcs48_q199",
@@ -3579,7 +3579,7 @@
       "Renal tubular acidosis"
     ],
     "answer": 3,
-    "explanation": "Renal tubular acidosis:\tNormal anion gap due to\nbicarbonate loss without unmeasured anions.\nOther Options:\nক)\tChronic renal failure: Causes high anion gap acidosis.\nখ)\tDiabetic ketoacidosis: High anion gap acidosis due to\nketones.\nগ)\tMethanol poisoning: High anion gap due to formic\nacid."
+    "explanation": "Renal tubular acidosis: Normal anion gap due to bicarbonate loss without unmeasured anions. Other Options: ক) Chronic renal failure: Causes high anion gap acidosis. খ) Diabetic ketoacidosis: High anion gap acidosis due to ketones. গ) Methanol poisoning: High anion gap due to formic acid."
   },
   {
     "ref": "bcs48_q200",
@@ -3597,6 +3597,6 @@
       "Copper transport"
     ],
     "answer": 0,
-    "explanation": "maintenance\nColloidal osmotic pressure maintenance:\tMaintains\noncotic pressure to prevent edema.\nOther Options:\nখ)\tBlood clotting: Role of fibrinogen, not albumin.\nগ)\tIron transport: Done by transferrin.\nঘ)\tCopper transport: Done by ceruloplasmin.\n- সমাপ্ত -\nLive MCQ কী এবং েকন?\nLive MCQ বাংলােদেশর পৰ্থম পৰ্িতেযািগতামূলক অনলাইন পরীক্ষােকন্দৰ্। বাংলােদেশর সকল পৰ্িতেযািগতামূলক পরীক্ষার (েযমন, িবিসএস ও\nিবিভন্ন চাকিরর পরীক্ষা) পৰ্স্তুিতর সময় পরীক্ষাথর্ীরা েবশ কেয়কিট সমসGায় পেড়ন, েসসব সমসGার সমাধান করাই Live MCQ এর পৰ্ধান লক্ষG।\nএকটু িবস্তািরত বলা যাক -\nবাংলােদেশর কেয়কিট চাকিরর পরীক্ষা (েযমন, NTRCA, BJS) ছাড়া বািক পৰ্ায় সব চাকিরর িপৰ্িল পরীক্ষা পৰ্িতেযািগতামূলক। আপিন পড়াশ‌ুনা\nকরেলন, মেডল েটেস্টর বইেত পরীক্ষা িদেয় ভাল নামব্ার েপেলন আর ভাবেলন েয কাট মাকর্েতা এমনই থােক তাই পৰ্স্তুিত িঠক আেছ। আসেলই\nিক তাই?\nপিরসংখGান বেল, চাকিরেভেদ িপৰ্িলিমনাির পরীক্ষায় পাশ করেত হেল আপনােক পৰ্থম ৫-১০% এর মেধG থাকেত হেব। িকন্তু চূ ড়ান্ত পরীক্ষার\nআেগ আপিন েকানভােবই িনেজর অবস্থান জানেত পারেছন না। কারণ, আপিন কখেনাই িপৰ্িল পরীক্ষার আেগ আপনার পৰ্িতদব্ন্দব্ীেদর সােথ\nপরীক্ষা েদয়ার সুেযাগ পােচ্ছন না। েযমন, িবিসএেসর িপৰ্িলর জনG আপিন একা একা মেডল েটস্ট িদেয় েয পৰ্েশ্ন ১১০ েপেলন এবং আেগর\nবছেরর কাট মাকর্গ‌ুেলা েদেখ িনিশ্চত েভেব বসেলন েয পৰ্স্তুিত িঠক আেছ। আদেত েদখা যােব, েসই একই পৰ্েশ্ন পরীক্ষা হেল, ৪ লাখ পরীক্ষা\nিদেল, ২৫ হাজার পােবন ১২০ এর উপের। পুেরাটাই িনভর্র করেছ পৰ্শ্ন কিঠন না সহজ হেলা তার উপর। অথর্াৎ, এই পৰ্েশ্ন পরীক্ষা হেল আপনার\nপাশ করার েকান সম্ভাবনা েনই বলেলই চেল।\nপৰ্স্তুিতর পৰ্কৃ ত অবস্থান জানেত আপিন যােদর সেঙ্গ পৰ্িতদব্িন্দব্তা করেবন িঠক তােদর সােথই পরীক্ষা িদেত হেব, একা নয়।\nLive MCQ আপনােক েসই সুেযাগিট কের িদেয়েছ। Live MCQ বGবহার কের, আপিন -\nØ ঘের বেসই িবিসএস এবং অনGানG চাকিরর জনG পৰ্স্তুিত িনেত পারেবন।\nØ চূ ড়ান্ত পরীক্ষার মত একিট িনিদর্ষ্ট সমেয় হাজােরা পরীক্ষাথর্ীর সােথ Live পরীক্ষায়/মেডল েটেস্ট অংশগৰ্হণ করার সুেযাগ পােবন।\nØ একই ‘মেডল েটেস্ট’ সকল পৰ্িতেযাগীর সােপেক্ষ আপনার পৰ্স্তুিত এবং অবস্থান সম্পেকর্ জানেত পারেবন।\nØ েকান পৰ্কার আলাদা পিরশৰ্ম ও সময় বGয় না কের পৰ্িতিট পৰ্েশ্নর িবস্তািরত বGাখGা েরফােরন্সসহ পােবন।\nØ আপিন েয েকান সময় আকর্াইভ েথেক পুরাতন পৰ্শ্নপতৰ্ েদখেত ও পড়েত পারেবন এবং এই পৰ্েশ্ন পরীক্ষা িদেত পারেবন।\nLive MCQ এর অনGতম ৈবিশষ্টGসমূহ:\nü পৰ্কৃ ত পৰ্িতেযাগীেদর সােথ একই সমেয় LIVE মেডল েটস্ট।\nü পুেরাপুির িবজ্ঞাপনমুক্ত (Ad Free)।\nü চূ ড়ান্ত পরীক্ষা সম্পন্ন হওয়ার পূবর্ পযর্ন্ত িনয়িমত মেডল েটস্ট।\nü িবষয়িভিত্তক পৰ্স্তুিতর জনG রেয়েছ টিপকগ‌ুরু।\nü পৰ্িত সপ্তােহ ২০০ মােকর্র িফৰ্ মেডল েটস্ট।\nü স্মাটর্ সােচর্র মাধGেম েয েকান পৰ্েশ্নর উত্তর ও বGাখGা সহেজই খুঁেজ পাওয়ার সুেযাগ।\nü কনিফউিজং ও িবতিকর্ত সমসGা িনেয় িবেশ্লষণমূলক আেলাচনা (তথGকল্পদৰ্ুম)।\nü িনেজর মত কের টিপক, পৰ্শ্নসংখGা ও সময় িনধর্ারন কের কু ইজ পরীক্ষা েদয়ার সুেযাগ।\nü িবষয়িভিত্তক িভিডেয়া ক্লাস ও ক্লাস টিপেকর উপর পরীক্ষা।\nü পৰ্িত পরীক্ষার েশেষ ভু ল ও েছেড় েদয়া পৰ্শ্নগ‌ুেলা একসােথ েদখেত পােবন Wrong and Unasnwered বাটেন।\nü পিরবিতর্ত তেথGর জনG রেয়েছ ডায়নািমক ইনেফা পGােনল।\nü িনয়িমত িরেয়ল জেবর উপর লাইভ পরীক্ষা ও জব সলুGশেনর সমৃদ্ধ আকর্াইভ।\nü এপেসর মেধGই পােবন স্টািড গৰ্ুেপ সংযুক্ত হওয়ার সুেযাগ।\nপৰ্িতেযািগতার পরীক্ষায় পৰ্িতেযািগতার মাধGেমই পৰ্স্তুিত িনন। আপিন এই দুইিটর েযেকােনা একিটর মাধGেম আমােদর প্লGাটফমর্ বGবহার করেত\nপারেবন:\nWebsite\nios App\nAndriod App\n[Play Store Link]\nlivemcq.com\n[App Store Link]"
+    "explanation": ""
   }
 ]

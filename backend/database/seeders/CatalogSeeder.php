@@ -6,6 +6,7 @@ use App\Models\Exam;
 use App\Models\Question;
 use App\Models\Subject;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Collection;
 
 class CatalogSeeder extends Seeder
 {
@@ -63,6 +64,22 @@ class CatalogSeeder extends Seeder
         $questionFiles = collect(glob(database_path('seeders/data/questions*.json')))
             ->flatMap(fn (string $path): array => json_decode(file_get_contents($path), true, flags: JSON_THROW_ON_ERROR));
 
+        // Without model events, so seeding doesn't mark questions as curated (see Question::booted).
+        Question::withoutEvents(fn () => $this->seedQuestions($questionFiles, $subjectsByName, $subjectsBySlug, $exams));
+    }
+
+    /**
+     * Seed files are the source of truth, except for questions changed in the admin panel since
+     * (curated): those keep the admin's version. A seed question may carry "status": "draft" —
+     * e.g. text that came out of the PDF unreadable — so it waits in the admin panel instead of going live.
+     *
+     * @param  iterable<int, array<string, mixed>>  $questionFiles
+     * @param  array<string, Subject>  $subjectsByName
+     * @param  array<string, Subject>  $subjectsBySlug
+     * @param  Collection<string, Exam>  $exams
+     */
+    private function seedQuestions(iterable $questionFiles, array $subjectsByName, array $subjectsBySlug, Collection $exams): void
+    {
         foreach ($questionFiles as $question) {
             // Skip questions cancelled by BPSC (they have no correct answer).
             if (! empty($question['cancelled']) || ! is_int($question['answer'] ?? $question['answer_index'] ?? null)) {
@@ -82,19 +99,25 @@ class CatalogSeeder extends Seeder
                 throw new \RuntimeException("Question {$question['ref']} uses unknown subject \"{$label}\". Add it to subjects.json or fix the name.");
             }
 
-            Question::query()->updateOrCreate(['ref' => $question['ref']], [
+            $model = Question::query()->firstOrNew(['ref' => $question['ref']]);
+
+            if ($model->curated_at !== null) {
+                continue;
+            }
+
+            $model->fill([
                 'subject_id' => $subject->id,
                 'exam_id' => $exams[$question['exam']]->id ?? null,
                 'topic' => $question['topic'],
                 'difficulty' => $question['difficulty'],
-                'source' => $question['source'],
+                'source' => $question['source'] ?? null,
                 'lang' => $question['lang'],
                 'body' => $question['body'],
                 'options' => $question['options'],
                 'answer_index' => $question['answer'] ?? $question['answer_index'],
-                'explanation' => $question['explanation'],
-                'status' => Question::STATUS_LIVE,
-            ]);
+                'explanation' => $question['explanation'] ?: null,
+                'status' => ($question['status'] ?? null) === Question::STATUS_DRAFT ? Question::STATUS_DRAFT : Question::STATUS_LIVE,
+            ])->save();
         }
     }
 

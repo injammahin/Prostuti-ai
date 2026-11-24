@@ -41,7 +41,7 @@ export default function BlogPost() {
             datePublished: post.published_at,
             dateModified: post.updated_at,
             author: { "@type": "Organization", name: post.author },
-            publisher: { "@type": "Organization", name: "Prostuti" },
+            publisher: { "@type": "Organization", name: "DreamPrep" },
             inLanguage: post.lang === "bn" ? "bn-BD" : "en",
             mainEntityOfPage: typeof window !== "undefined" ? window.location.href : undefined,
           },

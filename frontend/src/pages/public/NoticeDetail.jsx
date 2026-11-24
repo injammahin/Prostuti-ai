@@ -94,7 +94,7 @@ export default function NoticeDetail({ inApp = false }) {
           <Panel>
             <h2 className="mb-2 text-sm font-semibold text-muted-foreground">Summary</h2>
             <p className="leading-relaxed">{n.summary}</p>
-            <p className="mt-3 text-xs text-muted-foreground">Summary written by the Prostuti team. Read the full notice on the official website.</p>
+            <p className="mt-3 text-xs text-muted-foreground">Summary written by the DreamPrep team. Read the full notice on the official website.</p>
           </Panel>
 
           <Panel className="p-0 md:p-0">
@@ -172,7 +172,7 @@ export default function NoticeDetail({ inApp = false }) {
           </div>
           <p className="flex gap-2 rounded-xl bg-muted p-3 text-xs leading-relaxed text-muted-foreground">
             <FontAwesomeIcon icon={faTriangleExclamation} className="mt-0.5" />
-            Apply only through the official portal. Prostuti is not affiliated with BPSC or any ministry.
+            Apply only through the official portal. DreamPrep is not affiliated with BPSC or any ministry.
           </p>
         </aside>
       </div>

@@ -180,8 +180,8 @@ export default function PublicLayout() {
         </div>
         <div className="border-t border-border/70">
           <p className="mx-auto max-w-6xl px-4 py-5 text-xs leading-relaxed text-muted-foreground">
-            Prostuti is an independent preparation platform and is not affiliated with BPSC or any ministry. Always confirm dates on the official website
-            and apply only through the official portal. © 2026 Prostuti.
+            DreamPrep is an independent preparation platform and is not affiliated with BPSC or any ministry. Always confirm dates on the official website
+            and apply only through the official portal. © 2026 DreamPrep.
           </p>
         </div>
       </footer>

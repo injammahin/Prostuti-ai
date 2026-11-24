@@ -134,7 +134,7 @@ export default function DailyQuiz() {
   }
 
   const share = (where) => {
-    const text = `I scored ${score}/${qs.length} on today's Prostuti daily quiz 🎯 Can you beat me? Free, no sign-up:`
+    const text = `I scored ${score}/${qs.length} on today's DreamPrep daily quiz 🎯 Can you beat me? Free, no sign-up:`
     if (where === "wa") window.open(`https://wa.me/?text=${encodeURIComponent(`${text} ${shareUrl}`)}`, "_blank")
     if (where === "fb") window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, "_blank")
     if (where === "copy") {
@@ -258,7 +258,7 @@ export default function DailyQuiz() {
         {/* sign-up pitch */}
         <div className="card p-5 md:p-6">
           <h2 className="text-lg font-bold">Want a higher score tomorrow?</h2>
-          <p className="mt-1 text-sm text-muted-foreground">Prostuti is 100% free. Practise every day and watch your score grow.</p>
+          <p className="mt-1 text-sm text-muted-foreground">DreamPrep is 100% free. Practise every day and watch your score grow.</p>
           <ul className="mt-4 space-y-2.5 text-sm">
             {[
               [faCircleCheck, "6,500+ real exam questions with explanations"],

@@ -19,8 +19,8 @@
                                 <tr>
                                     <td style="width:40px;height:40px;"><img src="{{ asset('logo-mark.png') }}" width="40" height="40" alt="bd3schools" style="display:block;border:0;border-radius:10px;"></td>
                                     <td style="padding-left:10px;">
-                                        <div style="font-size:20px;font-weight:800;color:#0f172a;line-height:1;letter-spacing:-0.02em;">Dream<span style="color:#1d6ca8;">Prep</span></div>
-                                        <div style="font-size:12px;color:#64748b;padding-top:3px;">স্বপ্ন শুরু আজ থেকেই</div>
+                                        <div style="font-size:20px;font-weight:800;color:#0f172a;line-height:1;letter-spacing:-0.02em;">bd3<span style="color:#1d6ca8;">schools</span></div>
+                                        <div style="font-size:12px;color:#64748b;padding-top:3px;">বিসিএস ও সরকারি চাকরি একাডেমি</div>
                                     </td>
                                 </tr>
                             </table>

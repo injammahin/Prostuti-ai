@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect, useRef } from "react"
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router"
 import { BACKEND_URL, blogApi, modelTestsApi, pastPapersApi, siteApi } from "@/lib/api"
 import { prefetchApi } from "@/lib/use-api"
+import { useNoIndex } from "@/lib/seo"
 import { TopLoadingBar } from "@/components/Loaders"
 import { loadNotices } from "@/lib/notices-store"
 import { TooltipProvider } from "@/components/ui/tooltip"
@@ -114,6 +115,7 @@ function RequireAuth({ children }) {
 function PageTracker() {
   const { pathname } = useLocation()
   const lastPath = useRef(null)
+  useNoIndex(pathname)
   useEffect(() => {
     if (lastPath.current === pathname) return
     const referrer = lastPath.current === null ? document.referrer : undefined

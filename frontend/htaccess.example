@@ -1,21 +1,26 @@
-# Optional lines for the EXISTING .htaccess on the live server (bd3schools.com also serves /api and /admin).
-# Add these to it. Do not replace the file, and keep its existing rules for /api, /admin and pages.
+# Lines to ADD to the existing /home/cfbusygx/ai-exam/.htaccess. Nothing in that file is removed or replaced.
+# Keep a copy of the old file first. Deploy the backend and the new build BEFORE adding these.
 
-# 1) Right after "RewriteEngine On": www goes to the main address
-RewriteCond %{HTTP_HOST} ^www\.bd3schools\.com$ [NC]
+# ===== BLOCK 1: directly after "RewriteEngine On" =====
+
+# One address for everyone: https, without www
+RewriteCond %{REQUEST_URI} !^/\.well-known/
+RewriteCond %{HTTPS} !=on
+RewriteCond %{SERVER_PORT} !=443
+RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+RewriteRule ^ https://bd3schools.com%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^ https://bd3schools.com%{REQUEST_URI} [R=301,L]
 
-# 2) At the end of the file: smaller downloads and longer caching
-AddType image/webp .webp
-AddType application/manifest+json .webmanifest
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript text/javascript application/json application/xml image/svg+xml application/manifest+json
-</IfModule>
-<IfModule mod_headers.c>
-  <FilesMatch "\.(webp|jpg|jpeg|png|svg|ico|woff2)$">
-    Header set Cache-Control "public, max-age=2592000"
-  </FilesMatch>
-  <FilesMatch "\.html$">
-    Header set Cache-Control "no-cache"
-  </FilesMatch>
-</IfModule>
+# No second copies of pages and files
+RewriteRule ^index\.html$ https://bd3schools.com/ [R=301,L]
+RewriteCond %{THE_REQUEST} \s/_spa/
+RewriteRule ^_spa/(.*)$ https://bd3schools.com/$1 [R=301,L]
+
+# ===== BLOCK 2: directly above "# 4. Everything else -> React" =====
+
+# 3a. App pages -> React
+RewriteRule ^(app|login|signup|onboarding|bcs-papers|doctors)(/.*)?$ _spa/index.html [L]
+
+# 3b. Public pages (with their text) and real 404s -> Laravel
+RewriteRule ^ index.php [L]

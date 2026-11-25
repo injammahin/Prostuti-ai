@@ -31,6 +31,7 @@ import { useApi } from "@/lib/use-api"
 import { QUESTION_COUNT } from "@/lib/data"
 import { tr, localDigits } from "@/lib/format"
 import { useApp } from "@/lib/app-context"
+import { useSeo } from "@/lib/seo"
 import { cn } from "@/lib/utils"
 
 const COUNT = 10
@@ -101,6 +102,7 @@ export default function DailyQuiz() {
       })),
     [quiz]
   )
+  useSeo({ title: "Today's BCS Quiz: 10 Free MCQ Questions | আজকের কুইজ — bd3schools", description: "Take a free 10-question BCS, bank, NTRCA and Primary quiz with explanations. No sign-up. আজকের ফ্রি বিসিএস কুইজ, ব্যাখ্যাসহ।" })
   const [stage, setStage] = useState("intro") // intro | quiz | result
   const [qs, setQs] = useState(today)
   const [i, setI] = useState(0)

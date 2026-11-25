@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import { Logo } from "@/components/shared"
 import { useApp } from "@/lib/app-context"
+import { firstPageDone, firstPageHtml } from "@/lib/server-page"
 import { FACEBOOK_URL, YOUTUBE_URL } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
@@ -38,6 +39,14 @@ export function LangToggle({ className }) {
       {lang === "en" ? "বাংলা" : "English"}
     </button>
   )
+}
+
+/** While a page's code loads: the content the server sent, or the usual placeholder. */
+function FirstPage() {
+  const html = firstPageHtml()
+  useEffect(() => () => firstPageDone(), [])
+  if (html) return <div dangerouslySetInnerHTML={{ __html: html }} />
+  return <PageLoader className="mx-auto max-w-6xl px-4 py-8" />
 }
 
 export default function PublicLayout() {
@@ -142,7 +151,7 @@ export default function PublicLayout() {
 
       <main className="flex-1">
         <div key={pathname} className="rise">
-          <Suspense fallback={<PageLoader className="mx-auto max-w-6xl px-4 py-8" />}>
+          <Suspense fallback={<FirstPage />}>
             <Outlet />
           </Suspense>
         </div>

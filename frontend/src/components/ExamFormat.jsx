@@ -48,7 +48,7 @@ function SubjectTable({ stage }) {
                 <tr key={en} className={cn(tint)}>
                   <td className={cn(cell, "text-center font-semibold tabular-nums")}>{num(i + 1)}</td>
                   <td className={cell}>
-                    {L(en, bn)}
+                    {L(en, bn)} <span className="text-xs text-muted-foreground">({L(bn, en)})</span>
                     {changes[en] && (
                       <span className={cn("ml-1.5 font-semibold whitespace-nowrap tabular-nums", changes[en] > 0 ? "text-success" : "text-destructive")}>({change(en)})</span>
                     )}

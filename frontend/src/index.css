@@ -1,5 +1,7 @@
 ﻿@import "tailwindcss";
 @import "tw-animate-css";
+/* Pages rendered by Laravel use the same classes. */
+@source "../../backend/resources/views/seo";
 
 @custom-variant dark (&:is(.dark *));
 

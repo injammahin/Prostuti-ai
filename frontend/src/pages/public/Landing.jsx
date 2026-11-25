@@ -32,84 +32,11 @@ import { daysUntil, keyDate, noticeTitle, relDays } from "@/lib/format"
 import { useApp } from "@/lib/app-context"
 import { useNoticesVersion } from "@/lib/notices-store"
 import { useSeo } from "@/lib/seo"
+import { faqs, features, steps } from "@/content/landing"
 
-const faqs = [
-  ["What is bd3schools?", "bd3schools is a free online exam preparation website in Bangladesh. Students use it to prepare for BCS, NTRCA teacher registration, Primary Assistant Teacher and bank job exams with previous questions, model tests and job notices.", "bd3schools কী?", "bd3schools বাংলাদেশের একটি ফ্রি অনলাইন পরীক্ষা প্রস্তুতির ওয়েবসাইট। বিসিএস, এনটিআরসিএ, প্রাথমিক সহকারী শিক্ষক ও ব্যাংক পরীক্ষার বিগত প্রশ্ন, মডেল টেস্ট ও চাকরির নোটিশ এখানে পাওয়া যায়।"],
-  ["Is bd3schools official or linked to BPSC?", "No. We are an independent preparation platform. Every notice links to its official source, and you should always apply only through the official portal.", "bd3schools কি অফিসিয়াল বা বিপিএসসির সঙ্গে যুক্ত?", "না। আমরা একটি স্বাধীন প্রস্তুতি প্ল্যাটফর্ম। প্রতিটি নোটিশে অফিসিয়াল সূত্রের লিংক থাকে; সবসময় শুধু অফিসিয়াল পোর্টালেই আবেদন করবেন।"],
-  ["How does the real exam simulation work?", "Every model test strictly reflects official exam conditions: exact question counts (90, 100, or 200 marks), authentic time limits, and official negative marking (-0.50 for BCS, -0.25 for Bank, NTRCA & Primary).", "আসল পরীক্ষার মতো মডেল টেস্ট কীভাবে হয়?", "প্রতিটি মডেল টেস্ট আসল পরীক্ষার নিয়মেই হয়: একই প্রশ্নসংখ্যা (৯০, ১০০ বা ২০০ নম্বর), একই সময় এবং অফিসিয়াল নেগেটিভ মার্কিং (বিসিএস -০.৫০; ব্যাংক, এনটিআরসিএ ও প্রাইমারি -০.২৫)।"],
-  ["Which government exams are supported?", "We currently specialize in 5 major exams: BCS General, NTRCA Teacher Registration, Primary Assistant Teacher, Combined Bank Jobs (BSCS), and Bangladesh Bank.", "কোন কোন সরকারি পরীক্ষার প্রস্তুতি নেওয়া যায়?", "বর্তমানে ৫টি প্রধান পরীক্ষা: বিসিএস সাধারণ, এনটিআরসিএ শিক্ষক নিবন্ধন, প্রাথমিক সহকারী শিক্ষক, সমন্বিত ব্যাংক (বিএসসিএস) ও বাংলাদেশ ব্যাংক।"],
-  ["Can I try it without an account?", "Yes. Continue as a guest to practice and browse notices. Create a free account when you want to save progress, bookmarks and alerts.", "অ্যাকাউন্ট ছাড়া কি ব্যবহার করা যাবে?", "হ্যাঁ। অতিথি হিসেবে অনুশীলন করুন ও নোটিশ দেখুন। অগ্রগতি, বুকমার্ক ও অ্যালার্ট সংরক্ষণ করতে চাইলে ফ্রি অ্যাকাউন্ট খুলুন।"],
-  ["Is it really free?", "Yes. Every feature — adaptive practice drills, full model tests, syllabus guides, mistake notebook and alerts — is 100% free right now.", "এটা কি সত্যিই ফ্রি?", "হ্যাঁ। অনুশীলন, পূর্ণাঙ্গ মডেল টেস্ট, সিলেবাস গাইড, ভুলের নোটবুক ও অ্যালার্ট — সব সুবিধা এখন ১০০% ফ্রি।"],
-]
-
-const features = [
-  {
-    icon: faStopwatch,
-    tone: "primary",
-    title: "Real-format model tests",
-    text: "Timed tests with the real question count, time limit and negative marking of each exam.",
-    points: ["Exact BCS, Bank & NTRCA format", "−0.50 / −0.25 negative marking", "Score and weak subjects after each test"],
-    titleBn: "আসল পরীক্ষার মতো মডেল টেস্ট",
-    textBn: "প্রতিটি পরীক্ষার আসল প্রশ্নসংখ্যা, সময় ও নেগেটিভ মার্কিংসহ মডেল টেস্ট।",
-    pointsBn: ["বিসিএস, ব্যাংক ও এনটিআরসিএর হুবহু ফরম্যাট", "−০.৫০ / −০.২৫ নেগেটিভ মার্কিং", "প্রতি টেস্ট শেষে স্কোর ও দুর্বল বিষয়"],
-  },
-  {
-    icon: faBookOpen,
-    tone: "primary",
-    title: "Previous BCS questions",
-    text: "Every BCS preliminary paper, newest first, with the right answer and an explanation for each question.",
-    points: ["Read questions with solutions", "Sit any paper as a timed exam", "Filter by subject or search"],
-    titleBn: "বিগত বিসিএস প্রশ্ন",
-    textBn: "সব বিসিএস প্রিলিমিনারি প্রশ্ন, প্রতিটির সঠিক উত্তর ও ব্যাখ্যাসহ।",
-    pointsBn: ["সমাধানসহ প্রশ্ন পড়ুন", "যেকোনো প্রশ্নপত্রে সময় ধরে পরীক্ষা দিন", "বিষয় ধরে বা সার্চ করে খুঁজুন"],
-  },
-  {
-    icon: faBullhorn,
-    tone: "info",
-    title: "Verified notice board",
-    text: "Circulars, deadlines, admit cards and results, each checked against the official source.",
-    points: ["Links to the official notice", "Exam calendar with deadlines", "Alerts for the exams you follow"],
-    titleBn: "যাচাইকৃত নোটিশ বোর্ড",
-    textBn: "সার্কুলার, শেষ তারিখ, প্রবেশপত্র ও ফলাফল — সবই অফিসিয়াল সূত্রে যাচাই করা।",
-    pointsBn: ["অফিসিয়াল নোটিশের লিংক", "শেষ তারিখসহ পরীক্ষার ক্যালেন্ডার", "আপনার পরীক্ষার অ্যালার্ট"],
-  },
-  {
-    icon: faBuildingColumns,
-    tone: "warning",
-    title: "Bank & teacher exams",
-    text: "Separate question banks for Bangladesh Bank, Combined Bank, NTRCA and Primary Assistant Teacher.",
-    points: ["Questions sorted by subject", "Explanations in Bangla & English", "Practice 10 to 50 at a time"],
-    titleBn: "ব্যাংক ও শিক্ষক নিয়োগ পরীক্ষা",
-    textBn: "বাংলাদেশ ব্যাংক, সমন্বিত ব্যাংক, এনটিআরসিএ ও প্রাথমিক শিক্ষকের আলাদা প্রশ্নব্যাংক।",
-    pointsBn: ["বিষয়ভিত্তিক সাজানো প্রশ্ন", "বাংলা ও ইংরেজিতে ব্যাখ্যা", "একবারে ১০ থেকে ৫০টি অনুশীলন"],
-  },
-  {
-    icon: faRoute,
-    tone: "success",
-    title: "Daily study plan",
-    text: "A plan built around your target exam that brings weak topics back before you forget them.",
-    points: ["3–5 focused tasks a day", "Mistakes come back for revision", "Track your streak and progress"],
-    titleBn: "প্রতিদিনের পড়ার রুটিন",
-    textBn: "আপনার লক্ষ্য পরীক্ষা অনুযায়ী রুটিন, যা ভুলে যাওয়ার আগেই দুর্বল টপিক ফিরিয়ে আনে।",
-    pointsBn: ["দিনে ৩–৫টি নির্দিষ্ট কাজ", "ভুলগুলো রিভিশনে ফিরে আসে", "ধারাবাহিকতা ও অগ্রগতি দেখুন"],
-  },
-  {
-    icon: faWandMagicSparkles,
-    tone: "info",
-    title: "AI tutor",
-    text: "Stuck on a question? Ask the AI tutor to explain the answer in simple Bangla or English.",
-    points: ["Why the other options are wrong", "Short tricks to remember", "Follow-up questions in chat"],
-    titleBn: "এআই টিউটর",
-    textBn: "প্রশ্নে আটকে গেছেন? এআই টিউটর সহজ বাংলা বা ইংরেজিতে বুঝিয়ে দেবে।",
-    pointsBn: ["অন্য অপশন কেন ভুল", "মনে রাখার ছোট কৌশল", "চ্যাটে আরও প্রশ্ন করুন"],
-  },
-]
-
-const steps = [
-  [faClipboardCheck, "Take a 15-minute diagnostic", "We find your level in every subject of your target exam.", "১৫ মিনিটের যাচাই পরীক্ষা দিন", "আপনার লক্ষ্য পরীক্ষার প্রতিটি বিষয়ে আপনার অবস্থান জানুন।"],
-  [faRoute, "Follow your daily plan", "3–5 focused tasks a day. Weak topics come back before you forget them.", "প্রতিদিনের রুটিন মেনে চলুন", "দিনে ৩–৫টি নির্দিষ্ট কাজ। ভুলে যাওয়ার আগেই দুর্বল টপিক ফিরে আসবে।"],
-  [faChartLine, "Test, get feedback, improve", "Real-format timed model tests and instant diagnostic feedback on weak subjects.", "পরীক্ষা দিন, জানুন, উন্নতি করুন", "আসল ফরম্যাটে সময় ধরে মডেল টেস্ট এবং দুর্বল বিষয়ের তাৎক্ষণিক বিশ্লেষণ।"],
-]
+// In the same order as the texts in content/landing.js
+const featureIcons = [faStopwatch, faBookOpen, faBullhorn, faBuildingColumns, faRoute, faWandMagicSparkles]
+const stepIcons = [faClipboardCheck, faRoute, faChartLine]
 
 export default function Landing() {
   useNoticesVersion()
@@ -135,27 +62,6 @@ export default function Landing() {
     description: "bd3schools is a free exam preparation website in Bangladesh for BCS, NTRCA, Primary and bank jobs. বিসিএস প্রশ্ন সমাধান, মডেল টেস্ট, কুইজ ও চাকরির নোটিশ।",
     keywords: "14 bcs question with solution, bcs question solution, 10th to 48th bcs question solution, বিসিএস প্রশ্ন সমাধান, bcs question bank, bcs preliminary question with answer, bcs model test online, govt job exam bangladesh, bd3schools",
     image: "/icon-512.png",
-    jsonLd: {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebPage",
-          "@id": "https://bd3schools.com/#webpage",
-          "url": "https://bd3schools.com",
-          "name": "bd3schools — BCS & Govt Job Exam Preparation",
-          "description": "Comprehensive preparation platform for BCS, Bank, NTRCA, and Primary Teacher exams in Bangladesh.",
-          "isPartOf": { "@id": "https://bd3schools.com/#website" }
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": faqs.map(([q, a]) => ({
-            "@type": "Question",
-            "name": q,
-            "acceptedAnswer": { "@type": "Answer", "text": a }
-          }))
-        }
-      ]
-    }
   })
 
   return (
@@ -362,10 +268,10 @@ export default function Landing() {
         </div>
 
         <div className="stagger mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-3">
-          {features.map(({ icon, tone, title, text, points, titleBn, textBn, pointsBn }) => (
+          {features.map(({ tone, title, text, points, titleBn, textBn, pointsBn }, i) => (
             <div key={title} className="card lift group flex flex-col p-6">
               <IconBox tone={tone} className="size-11 transition-transform group-hover:scale-105">
-                <FontAwesomeIcon icon={icon} />
+                <FontAwesomeIcon icon={featureIcons[i]} />
               </IconBox>
               <h3 className="mt-4 text-lg font-bold">{L(title, titleBn)}</h3>
               <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{L(text, textBn)}</p>
@@ -390,10 +296,10 @@ export default function Landing() {
             <Pill tone="primary" className="px-3 py-1">{L("How it works", "যেভাবে কাজ করে")}</Pill>
             <h2 className="mt-3 text-[1.75rem] leading-tight font-extrabold md:text-4xl">{L("Three steps to a better score", "ভালো স্কোরের তিন ধাপ")}</h2>
             <ol className="stagger mt-7 space-y-4">
-              {steps.map(([ic, title, text, titleBn, textBn], i) => (
+              {steps.map(([title, text, titleBn, textBn], i) => (
                 <li key={title} className="card lift flex gap-4 p-4">
                   <span className="relative grid size-11 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground">
-                    <FontAwesomeIcon icon={ic} />
+                    <FontAwesomeIcon icon={stepIcons[i]} />
                     <span className="absolute -top-1.5 -right-1.5 grid size-5 place-items-center rounded-full bg-glow text-[0.65rem] font-extrabold text-brand-strong">{num(i + 1)}</span>
                   </span>
                   <span>

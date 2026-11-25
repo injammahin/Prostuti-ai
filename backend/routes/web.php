@@ -3,10 +3,6 @@
 use App\Http\Controllers\AdminSsoController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return redirect('/admin');
-});
-
 Route::get('/sitemap.xml', function () {
     $path = public_path('sitemap.xml');
     if (file_exists($path)) {

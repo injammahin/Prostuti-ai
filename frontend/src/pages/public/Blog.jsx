@@ -18,7 +18,7 @@ export default function Blog() {
   const [q, setQ] = useState("")
 
   useSeo({
-    title: L("Blog — BCS & govt job preparation guides", "ব্লগ — বিসিএস ও সরকারি চাকরির প্রস্তুতি গাইড"),
+    title: "BCS Question Solution & Exam Preparation Blog | বিসিএস প্রশ্ন সমাধান — bd3schools",
     description: L(
       "Preparation guides, syllabus breakdowns, exam strategy and study tips for BCS, Bank, NTRCA and Primary teacher exams.",
       "বিসিএস, ব্যাংক, এনটিআরসিএ ও প্রাথমিক শিক্ষক নিয়োগ পরীক্ষার প্রস্তুতি গাইড, সিলেবাস, পরীক্ষার কৌশল ও পড়াশোনার টিপস।"

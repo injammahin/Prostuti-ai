@@ -22,6 +22,7 @@ import { notices, exams } from "@/lib/data"
 import { fmtDate, relDays, daysUntil, td, examName, noticeTitle, noticeSummary } from "@/lib/format"
 import { downloadIcs } from "@/lib/ics"
 import { useApp } from "@/lib/app-context"
+import { useSeo } from "@/lib/seo"
 import { cn } from "@/lib/utils"
 import NotFound from "@/pages/NotFound"
 import { useNoticesVersion } from "@/lib/notices-store"
@@ -34,6 +35,7 @@ export default function NoticeDetail({ inApp = false }) {
   const [report, setReport] = useState(false)
   const [elig, setElig] = useState(false)
   const n = notices.find((x) => x.slug === slug)
+  useSeo(n ? { title: `${n.title}${n.title_bn ? ` | ${n.title_bn}` : ""} — bd3schools`, description: (n.summary_bn || n.summary).slice(0, 155), type: "article" } : {})
   // Before the latest notices arrive, a brand-new notice isn't in the list yet — wait instead of saying "not found".
   if (!n && noticesVersion === 0) return <PageLoader className="mx-auto max-w-3xl px-4 py-8" />
   if (!n) return <NotFound />
@@ -72,7 +74,7 @@ export default function NoticeDetail({ inApp = false }) {
 
   const content = (
     <article>
-      <PageHeader back={base} title={<span className="text-lg md:text-2xl">{noticeTitle(n)}</span>} />
+      <PageHeader back={base} title={<span className="text-lg md:text-2xl">{noticeTitle(n)}</span>} subtitle={n.title_bn ? <span className={L("bn", "")}>{L(n.title_bn, n.title)}</span> : undefined} />
 
       <div className="-mt-2 mb-4 flex flex-wrap items-center gap-2 text-sm">
         <NoticeTypePill type={n.type} />
@@ -98,6 +100,11 @@ export default function NoticeDetail({ inApp = false }) {
           <Panel>
             <h2 className="mb-2 text-sm font-semibold text-muted-foreground">{L("Summary", "সারসংক্ষেপ")}</h2>
             <p className="leading-relaxed">{noticeSummary(n)}</p>
+            {n.summary_bn && (
+              <p className="mt-3 leading-relaxed" lang={L("bn", "en")}>
+                {L(n.summary_bn, n.summary)}
+              </p>
+            )}
             <p className="mt-3 text-xs text-muted-foreground">{L("Summary written by the bd3schools team. Read the full notice on the official website.", "সারসংক্ষেপ bd3schools টিমের লেখা। পূর্ণ নোটিশ অফিসিয়াল ওয়েবসাইটে পড়ুন।")}</p>
           </Panel>
 

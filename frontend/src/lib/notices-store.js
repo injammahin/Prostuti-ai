@@ -1,6 +1,7 @@
 import { useSyncExternalStore } from "react"
 import { notices } from "@/lib/data"
 import { api } from "@/lib/api"
+import { serverPage } from "@/lib/server-page"
 
 /**
  * Notices come from the admin panel (API). The shared `notices` array from data.js is filled in place,
@@ -21,11 +22,13 @@ function show(data) {
 
 /** Shows the notices from the last visit at once, then the current ones. */
 export async function loadNotices() {
-  try {
-    const { at, data } = JSON.parse(localStorage.getItem(STORAGE_KEY)) ?? {}
-    if (data && Date.now() - at < 24 * 60 * 60 * 1000) show(data)
-  } catch {
-    /* nothing saved */
+  if (!serverPage.data.notices) {
+    try {
+      const { at, data } = JSON.parse(localStorage.getItem(STORAGE_KEY)) ?? {}
+      if (data && Date.now() - at < 24 * 60 * 60 * 1000) show(data)
+    } catch {
+      /* nothing saved */
+    }
   }
   try {
     const { data } = await api("/notices", { silent: true })
@@ -39,6 +42,9 @@ export async function loadNotices() {
     /* keep whatever is already loaded */
   }
 }
+
+// Notices that came with the page are there from the first render.
+if (serverPage.data.notices) show(serverPage.data.notices)
 
 const subscribe = (listener) => {
   listeners.add(listener)

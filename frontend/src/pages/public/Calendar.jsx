@@ -17,6 +17,7 @@ import { notices, exams, examFamilies, TODAY } from "@/lib/data"
 import { fmtDate, daysUntil, tr, td, examName, noticeTitle, dateLocale, localDigits } from "@/lib/format"
 import { downloadIcs } from "@/lib/ics"
 import { useApp } from "@/lib/app-context"
+import { useSeo } from "@/lib/seo"
 import { cn } from "@/lib/utils"
 import { useNoticesVersion } from "@/lib/notices-store"
 
@@ -200,6 +201,7 @@ export default function Calendar({ inApp = false }) {
   const [mine, setMine] = useState(false)
   const [month, setMonth] = useState(new Date(TODAY.getFullYear(), TODAY.getMonth(), 1))
   const [selected, setSelected] = useState(iso(TODAY))
+  useSeo(inApp ? {} : { title: "Govt Exam Calendar | সরকারি চাকরির পরীক্ষার তারিখ ও আবেদনের শেষ সময় — bd3schools", description: "Upcoming BCS, bank, NTRCA and Primary exam dates and application deadlines from official notices. পরীক্ষার তারিখ ও আবেদনের শেষ সময়।" })
   const base = inApp ? "/app/notices" : "/notices"
 
   const events = useMemo(() => {

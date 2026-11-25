@@ -1,10 +1,11 @@
 import { useCallback, useEffect, useState } from "react"
+import { serverPage } from "@/lib/server-page"
 
 /**
  * In-memory cache shared by every page: revisiting a page shows the last data instantly,
  * then refreshes it quietly in the background ("stale-while-revalidate").
  */
-const cache = new Map()
+const cache = new Map(Object.entries(serverPage.data))
 
 /** Public lists (same for everyone) are also kept in the browser, so a reload shows them at once. */
 const PERSISTED = ["past-papers", "blog", "model-tests-list"]

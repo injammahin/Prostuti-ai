@@ -33,7 +33,7 @@ class PostController extends Controller
     public function show(string $slug): JsonResponse
     {
         $post = Post::query()->published()->where('slug', $slug)->firstOrFail();
-        $post->increment('views');
+        Post::withoutEvents(fn () => $post->increment('views'));
 
         $related = Post::query()
             ->published()

@@ -31,7 +31,7 @@ export default function Notices({ inApp = false }) {
   const [q, setQ] = useState("")
 
   useSeo({
-    title: "Job Notices & Exam Dates | সরকারি চাকরির নিয়োগ বিজ্ঞপ্তি ও পরীক্ষার সময়সূচী — bd3schools",
+    title: "Govt Job Notices & Exam Dates | সরকারি চাকরির বিজ্ঞপ্তি ও পরীক্ষার তারিখ — bd3schools",
     description: "বিসিএস (BCS), প্রাথমিক শিক্ষক, ব্যাংক এবং এনটিআরসিএ (NTRCA) পরীক্ষার লেটেস্ট সার্কুলার, পরীক্ষার তারিখ, এডমিট কার্ড ও ফলাফল সরাসরি অফিশিয়াল রেফারেন্সসহ।",
     keywords: "bcs circular, bcs exam date, bcs admit card, bcs result, govt job circular bangladesh, primary teacher circular, ntrca circular, bank job circular, bd3schools notices",
   })

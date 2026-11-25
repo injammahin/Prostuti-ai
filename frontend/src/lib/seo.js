@@ -1,6 +1,10 @@
 import { useEffect } from "react"
+import { serverPage } from "@/lib/server-page"
 
 const SITE = "bd3schools"
+
+/** True once the visitor has gone to another page: from then on React sets the tags. */
+let left = false
 
 function setMeta(attr, key, content) {
   let el = document.head.querySelector(`meta[${attr}="${key}"]`)
@@ -35,10 +39,13 @@ export function useSeo({ title, description, image, type = "website", keywords, 
   const ld = jsonLd ? JSON.stringify(jsonLd) : ""
   useEffect(() => {
     if (!title) return
+    // The page the visitor opened already came with its tags.
+    if (serverPage.path === window.location.pathname && document.head.querySelector("link[data-server], script[data-page]") && !left) return
+    left = true
     const prevTitle = document.title
     const descEl = document.head.querySelector('meta[name="description"]')
     const prevDesc = descEl?.getAttribute("content")
-    const url = window.location.origin + window.location.pathname
+    const url = window.location.origin + (window.location.pathname.replace(/\/+$/, "") || "/")
     const fullTitle = title.includes(SITE) ? title : `${title} | ${SITE}`
     const fullImage = image ? (image.startsWith("http") ? image : `${window.location.origin}${image.startsWith("/") ? "" : "/"}${image}`) : `${window.location.origin}/icon-512.png`
 
@@ -58,8 +65,12 @@ export function useSeo({ title, description, image, type = "website", keywords, 
     setMeta("name", "twitter:image", fullImage)
     setLink("canonical", url)
 
+    // The server's structured data belongs to the page it was sent for.
+    if (serverPage.path !== window.location.pathname) document.head.querySelector("script[data-page]")?.remove()
+    const fromServer = document.head.querySelector("script[data-page]")
+
     let script
-    if (ld) {
+    if (ld && !fromServer) {
       script = document.createElement("script")
       script.type = "application/ld+json"
       script.text = ld
@@ -74,4 +85,17 @@ export function useSeo({ title, description, image, type = "website", keywords, 
       script?.remove()
     }
   }, [title, description, image, type, keywords, author, ld])
+}
+
+const PRIVATE = /^\/(app|login|signup|onboarding|bcs-papers)(\/|$)/
+
+/** Pages of the app itself are not for search results. */
+export function useNoIndex(pathname) {
+  useEffect(() => {
+    const el = document.head.querySelector('meta[name="robots"]')
+    if (!el || !PRIVATE.test(pathname)) return
+    const before = el.getAttribute("content")
+    el.setAttribute("content", "noindex, follow")
+    return () => el.setAttribute("content", before)
+  }, [pathname])
 }

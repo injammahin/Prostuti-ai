@@ -11,6 +11,7 @@ import { Icon } from "@/components/icon"
 import { exams, notices } from "@/lib/data"
 import { td } from "@/lib/format"
 import { useApp } from "@/lib/app-context"
+import { useSeo } from "@/lib/seo"
 import NotFound from "@/pages/NotFound"
 import { useNoticesVersion } from "@/lib/notices-store"
 
@@ -44,6 +45,7 @@ export default function ExamDetail({ inApp = false }) {
   const { followed, toggleFollow, user, L, num } = useApp()
   const [tab, setTab] = useState("format")
   const e = exams.find((x) => x.slug === slug)
+  useSeo(e && !inApp ? { title: `${e.name} Syllabus & Mark Distribution | ${e.nameBn} সিলেবাস ও নম্বর বণ্টন — bd3schools`, description: `${e.name}: ${e.summary} ${e.nameBn} সিলেবাস ও নম্বর বণ্টন।`.slice(0, 160) } : {})
   if (!e) return <NotFound />
   const on = followed.includes(e.slug)
   const related = notices.filter((n) => n.exam === e.slug)
@@ -51,7 +53,7 @@ export default function ExamDetail({ inApp = false }) {
 
   const body = (
     <>
-      <PageHeader back={inApp ? "/app/exams" : "/exams"} title={L(e.name, e.nameBn)} subtitle={`${td(e.org)} · ${L("Syllabus", "সিলেবাস")}: ${td(e.syllabusVersion)}`} />
+      <PageHeader back={inApp ? "/app/exams" : "/exams"} title={<>{L(e.name, e.nameBn)} <span className="font-medium text-muted-foreground">({L(e.nameBn, e.name)})</span></>} subtitle={`${td(e.org)} · ${L("Syllabus", "সিলেবাস")}: ${td(e.syllabusVersion)}`} />
       <Panel className="mb-4 flex flex-col gap-4 sm:flex-row sm:items-center">
         <IconBox tone={e.color} className="size-12 text-lg">
           <Icon name={e.icon} />

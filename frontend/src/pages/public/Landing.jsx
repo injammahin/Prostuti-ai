@@ -32,6 +32,7 @@ import { daysUntil, keyDate, noticeTitle, relDays } from "@/lib/format"
 import { useApp } from "@/lib/app-context"
 import { useNoticesVersion } from "@/lib/notices-store"
 import { useSeo } from "@/lib/seo"
+import { bcsPath } from "@/lib/bcs"
 import { faqs, features, steps } from "@/content/landing"
 
 // In the same order as the texts in content/landing.js
@@ -115,7 +116,7 @@ export default function Landing() {
               )}
             </div>
             <Link
-              to="/bcs-papers"
+              to="/bcs"
               className="group mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
             >
               <FontAwesomeIcon icon={faBookOpen} className="text-xs" />
@@ -220,7 +221,7 @@ export default function Landing() {
                   {readyPapers.map((p) => (
                     <Link
                       key={p.number}
-                      to={`/bcs-papers/${p.number}`}
+                      to={bcsPath(p.number)}
                       className="inline-flex items-center gap-1.5 rounded-full border bg-card px-3.5 py-1.5 text-sm font-semibold transition-colors hover:border-primary/40 hover:text-primary"
                     >
                       {L(p.name, `${num(p.number)}তম বিসিএস`)}
@@ -231,7 +232,7 @@ export default function Landing() {
               )}
             </div>
             <Button asChild className="btn-shine h-12 shrink-0 rounded-full px-7 text-base">
-              <Link to="/bcs-papers">
+              <Link to="/bcs">
                 {L("See all BCS papers", "সব বিসিএস প্রশ্ন দেখুন")} <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </Button>

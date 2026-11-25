@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { writeFileSync } from 'node:fs'
 import { faqs, features, steps } from './src/content/landing.js'
+import { daily } from './src/content/daily.js'
 import { PAGES, UPDATED } from './src/content/legal.js'
 import { exams } from './src/lib/data.js'
 
@@ -17,7 +18,7 @@ function seoContent() {
       outDir = path.resolve(config.root, config.build.outDir)
     },
     closeBundle: () => {
-      writeFileSync(path.join(outDir, 'seo-content.json'), JSON.stringify({ faqs, features, steps, exams, legal: { updated: UPDATED, pages: PAGES } }))
+      writeFileSync(path.join(outDir, 'seo-content.json'), JSON.stringify({ faqs, features, steps, daily, exams, legal: { updated: UPDATED, pages: PAGES } }))
     },
   }
 }

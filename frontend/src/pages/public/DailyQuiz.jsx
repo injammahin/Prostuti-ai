@@ -24,11 +24,12 @@ import {
 import { faWhatsapp, faFacebookF } from "@fortawesome/free-brands-svg-icons"
 import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
-import { Ring } from "@/components/shared"
+import { Crumbs, Ring } from "@/components/shared"
 import AskAiSheet from "@/components/AskAiSheet"
 import { dailyQuizApi, siteApi } from "@/lib/api"
 import { useApi } from "@/lib/use-api"
 import { QUESTION_COUNT } from "@/lib/data"
+import { daily } from "@/content/daily"
 import { tr, localDigits } from "@/lib/format"
 import { useApp } from "@/lib/app-context"
 import { useSeo } from "@/lib/seo"
@@ -218,6 +219,7 @@ ${autoStartUrl}
   if (stage === "intro")
     return (
       <div className="mx-auto max-w-xl px-4 py-8 md:py-14">
+        <Crumbs items={[[L("Daily quiz", "আজকের কুইজ")]]} />
         <div className="hero overflow-hidden rounded-3xl p-6 text-center md:p-9 shadow-lg">
           <span className="inline-flex items-center gap-1.5 rounded-full bg-white/20 px-3 py-1 text-xs font-semibold">
             <FontAwesomeIcon icon={faCalendarDay} /> {dateLabel}
@@ -285,6 +287,21 @@ ${autoStartUrl}
             </div>
           </div>
         )}
+
+        {daily.map(([heading, headingBn, text, textBn]) => (
+          <section key={heading} className="mt-6">
+            <h2 className="text-lg font-bold">{L(heading, headingBn)}</h2>
+            <p className="mt-1.5 text-sm leading-relaxed">{L(text, textBn)}</p>
+            <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{L(textBn, text)}</p>
+          </section>
+        ))}
+        <p className="mt-6 flex flex-wrap gap-x-3 gap-y-1 text-sm font-semibold text-primary">
+          <Link to="/bcs">{L("BCS questions", "বিসিএস প্রশ্ন")}</Link>
+          <Link to="/ntrca">{L("NTRCA", "এনটিআরসিএ")}</Link>
+          <Link to="/primary-teacher">{L("Primary", "প্রাথমিক শিক্ষক")}</Link>
+          <Link to="/bank-jobs">{L("Bank jobs", "ব্যাংক চাকরি")}</Link>
+          <Link to="/model-tests">{L("Model tests", "মডেল টেস্ট")}</Link>
+        </p>
       </div>
     )
 

@@ -12,7 +12,7 @@ import {
   faHourglassHalf,
 } from "@fortawesome/free-solid-svg-icons"
 import { Button } from "@/components/ui/button"
-import { PageHeader, Segmented, EmptyState } from "@/components/shared"
+import { Crumbs, PageHeader, Segmented, EmptyState } from "@/components/shared"
 import { notices, exams, examFamilies, TODAY } from "@/lib/data"
 import { fmtDate, daysUntil, tr, td, examName, noticeTitle, dateLocale, localDigits } from "@/lib/format"
 import { downloadIcs } from "@/lib/ics"
@@ -234,6 +234,7 @@ export default function Calendar({ inApp = false }) {
 
   const body = (
     <>
+      {!inApp && <Crumbs items={[[L("Exam calendar", "পরীক্ষার ক্যালেন্ডার")]]} />}
       <PageHeader
         title={L("Exam calendar", "পরীক্ষার ক্যালেন্ডার")}
         subtitle={L("Deadlines and exam dates from verified official notices", "যাচাইকৃত অফিসিয়াল নোটিশের শেষ তারিখ ও পরীক্ষার তারিখ")}

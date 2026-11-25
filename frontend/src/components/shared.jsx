@@ -76,6 +76,21 @@ export function IconBox({ tone = "primary", className, children }) {
   return <span className={cn("grid size-10 shrink-0 place-items-center rounded-xl text-base", tones[tone], className)}>{children}</span>
 }
 
+/** Where this page is on the website: [["Blog", "/blog"], ["This article"]]. */
+export function Crumbs({ items, className }) {
+  return (
+    <nav className={cn("mb-4 text-sm text-muted-foreground", className)} aria-label="Breadcrumb">
+      <Link to="/" className="hover:text-primary">{tr("Home", "হোম")}</Link>
+      {items.map(([label, to]) => (
+        <span key={label}>
+          <span aria-hidden className="mx-1">›</span>
+          {to ? <Link to={to} className="hover:text-primary">{label}</Link> : label}
+        </span>
+      ))}
+    </nav>
+  )
+}
+
 export function PageHeader({ title, subtitle, back, action, className }) {
   return (
     <div className={cn("mb-5 flex items-start gap-3 md:mb-7", className)}>

@@ -18,7 +18,7 @@
             <h2 class="text-lg font-bold">Read next</h2>
             <ul class="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 @foreach ($related as $other)
-                    <li class="card p-5"><a href="/blog/{{ $other['slug'] }}" class="bn font-bold" lang="{{ $other['lang'] }}">{{ $other['title'] }}</a></li>
+                    <li class="card p-5"><a href="{{ $other['url'] }}" class="bn font-bold" lang="{{ $other['lang'] }}">{{ $other['title'] }}</a></li>
                 @endforeach
             </ul>
         </section>

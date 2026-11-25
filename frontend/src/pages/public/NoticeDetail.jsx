@@ -15,7 +15,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
-import { NoticeCard, NoticeTypePill, PageHeader, Panel } from "@/components/shared"
+import { Crumbs, NoticeCard, NoticeTypePill, PageHeader, Panel } from "@/components/shared"
 import ReportDialog from "@/components/ReportDialog"
 import EligibilityDialog from "@/components/EligibilityDialog"
 import { notices, exams } from "@/lib/data"
@@ -74,6 +74,7 @@ export default function NoticeDetail({ inApp = false }) {
 
   const content = (
     <article>
+      {!inApp && <Crumbs items={[[L("Notices", "নোটিশ"), "/notices"], [noticeTitle(n)]]} />}
       <PageHeader back={base} title={<span className="text-lg md:text-2xl">{noticeTitle(n)}</span>} subtitle={n.title_bn ? <span className={L("bn", "")}>{L(n.title_bn, n.title)}</span> : undefined} />
 
       <div className="-mt-2 mb-4 flex flex-wrap items-center gap-2 text-sm">

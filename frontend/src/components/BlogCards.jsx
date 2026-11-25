@@ -35,7 +35,7 @@ function Meta({ post, L }) {
 
 export function LeadPost({ post, L }) {
   return (
-    <Link to={`/blog/${post.slug}`} className="card lift group grid overflow-hidden md:grid-cols-[1.15fr_1fr]">
+    <Link to={post.url ?? `/blog/${post.slug}`} className="card lift group grid overflow-hidden md:grid-cols-[1.15fr_1fr]">
       <Cover post={post} className="aspect-[1200/670] md:aspect-auto md:h-full" />
       <div className="flex flex-col justify-center p-5 md:p-8">
         <div className="flex items-center gap-2">
@@ -62,7 +62,7 @@ export function LeadPost({ post, L }) {
 
 export function PostCard({ post, L }) {
   return (
-    <Link to={`/blog/${post.slug}`} className="card lift group flex flex-col overflow-hidden">
+    <Link to={post.url ?? `/blog/${post.slug}`} className="card lift group flex flex-col overflow-hidden">
       <Cover post={post} className="aspect-[1200/670]" />
       <div className="flex flex-1 flex-col p-5">
         <span className="self-start rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold text-primary">{post.category_label}</span>

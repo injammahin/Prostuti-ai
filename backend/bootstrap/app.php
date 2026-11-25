@@ -19,6 +19,8 @@ return Application::configure(basePath: dirname(__DIR__))
         // The live site runs behind the host's proxy (LiteSpeed); trust it so each
         // visitor's real IP is used for rate limits and logs instead of the proxy's.
         $middleware->trustProxies(at: '*');
+        // The sign-in page is part of the website; API requests get a 401 instead of a redirect.
+        $middleware->redirectGuestsTo(fn (Request $request): ?string => $request->is('api/*') ? null : '/login');
         $middleware->api(append: FastApiResponses::class);
     })
     ->withExceptions(function (Exceptions $exceptions): void {

@@ -1,4 +1,4 @@
-import { PageHeader } from "@/components/shared"
+import { Crumbs, PageHeader } from "@/components/shared"
 import { useApp } from "@/lib/app-context"
 import { useSeo } from "@/lib/seo"
 import { CONTACT_EMAIL } from "@/lib/site"
@@ -13,6 +13,7 @@ export default function Legal({ page }) {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
+      <Crumbs items={[[L(...title)]]} />
       <PageHeader title={L(...title)} subtitle={`${L("Last updated", "সর্বশেষ হালনাগাদ")}: ${fmtDate(UPDATED, { day: "numeric", month: "long", year: "numeric" })}`} />
       <div className="card space-y-7 p-5 md:p-8">
         {sections.map(([heading, headingBn, items]) => (

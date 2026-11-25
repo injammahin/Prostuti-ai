@@ -1,12 +1,13 @@
 import { useState } from "react"
-import { Link, useParams } from "react-router"
+import { Link, Navigate, useParams } from "react-router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowLeft, faClock, faFilePdf, faFileArrowDown, faLink, faCheck, faBookOpen, faRotateRight, faNewspaper } from "@fortawesome/free-solid-svg-icons"
 import { faFacebook, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
 import { Button } from "@/components/ui/button"
-import { EmptyState } from "@/components/shared"
+import { Crumbs, EmptyState } from "@/components/shared"
 import { useApi } from "@/lib/use-api"
 import { blogApi } from "@/lib/api"
+import { movedPost } from "@/lib/bcs"
 import { useApp } from "@/lib/app-context"
 import { useSeo } from "@/lib/seo"
 import { cn } from "@/lib/utils"
@@ -17,8 +18,14 @@ function fileSize(bytes) {
   return bytes > 1024 * 1024 ? `${(bytes / 1024 / 1024).toFixed(1)} MB` : `${Math.max(1, Math.round(bytes / 1024))} KB`
 }
 
+/** Solutions of BCS papers moved to /bcs; their old addresses lead there. */
 export default function BlogPost() {
   const { slug } = useParams()
+  const moved = movedPost(slug)
+  return moved ? <Navigate to={moved} replace /> : <Article slug={slug} />
+}
+
+function Article({ slug }) {
   const { L, num, fmtDate } = useApp()
   const { data, error, loading, reload } = useApi(() => blogApi.show(slug), [slug], { key: `blog-${slug}` })
   const [copied, setCopied] = useState(false)
@@ -26,10 +33,6 @@ export default function BlogPost() {
   const related = data?.related ?? []
 
   const postUrl = typeof window !== "undefined" ? `${window.location.origin}/blog/${post?.slug}` : `https://bd3schools.com/blog/${post?.slug}`
-  const isBcs = post?.category === "bcs" || post?.slug?.includes("-bcs-question-solution-pdf")
-  const bcsMatch = post?.slug?.match(/(\d+)th-bcs/)
-  const bcsNum = bcsMatch ? bcsMatch[1] : null
-
   const breadcrumbSchema = post ? {
     "@type": "BreadcrumbList",
     "itemListElement": [
@@ -142,6 +145,7 @@ export default function BlogPost() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-6 md:py-10">
       <article className="mx-auto max-w-3xl" lang={isBn ? "bn" : "en"}>
+        <Crumbs items={[[L("Blog", "ব্লগ"), "/blog"], [post.title]]} />
         <Link to="/blog" className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground">
           <FontAwesomeIcon icon={faArrowLeft} className="text-xs" /> {L("All articles", "সব লেখা")}
         </Link>
@@ -218,7 +222,7 @@ export default function BlogPost() {
             </p>
           </div>
           <Button asChild className="h-11 shrink-0 rounded-full bg-white px-6 font-semibold text-primary hover:bg-white/90">
-            <Link to="/bcs-papers">
+            <Link to="/bcs">
               <FontAwesomeIcon icon={faBookOpen} /> {L("Previous BCS questions", "বিগত বিসিএস প্রশ্ন")}
             </Link>
           </Button>

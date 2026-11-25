@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Api\V1\PostController;
 use App\Models\Notice;
 use App\Models\Post;
+use App\Services\ExamPages;
 use App\Services\PageShell;
 use App\Services\PastPapers;
 use App\Services\PublicPage;
@@ -42,7 +43,7 @@ class PublicPageController extends Controller
                     'content' => $content,
                     'notices' => $this->notices()->take(3),
                     'posts' => $this->posts()->take(3),
-                    'papers' => collect(PastPapers::numbers())->take(5)->map(fn (int $number): string => PastPapers::source($number)),
+                    'papers' => collect(PastPapers::numbers())->take(8)->map(fn (int $number): array => ['name' => PastPapers::source($number), 'path' => ExamPages::paperPath($number)]),
                 ],
                 data: ['notices' => $this->notices()->values()],
             );
@@ -85,7 +86,7 @@ class PublicPageController extends Controller
                 type: 'article',
                 image: $article['cover_image'],
                 jsonLd: [
-                    $this->article($path, $article['title'], $article['meta_description'], $article['published_at'], $article['updated_at'], $article['cover_image'], $post->lang),
+                    PublicPage::article($path, $article['title'], $article['meta_description'], $article['published_at'], $article['updated_at'], $article['cover_image'], $post->lang),
                     PublicPage::breadcrumbs(['Home' => '/', 'Blog' => '/blog', $article['title'] => $path]),
                 ],
                 data: ["blog-{$slug}" => ['data' => $article, 'related' => $related]],
@@ -143,7 +144,7 @@ class PublicPageController extends Controller
                 ],
                 type: 'article',
                 jsonLd: [
-                    $this->article($path, $notice['title'], $notice['summary'], $notice['published'], Notice::query()->where('slug', $slug)->value('updated_at')?->toIso8601String(), null, 'en'),
+                    PublicPage::article($path, $notice['title'], $notice['summary'], $notice['published'], Notice::query()->where('slug', $slug)->value('updated_at')?->toIso8601String(), null, 'en'),
                     PublicPage::breadcrumbs(['Home' => '/', 'Notices' => '/notices', $notice['title'] => $path]),
                 ],
                 data: ['notices' => $all],
@@ -186,7 +187,7 @@ class PublicPageController extends Controller
                 title: "{$exam['name']} Syllabus & Mark Distribution | {$exam['nameBn']} সিলেবাস ও নম্বর বণ্টন — bd3schools",
                 description: str("{$exam['name']}: {$exam['summary']} {$exam['nameBn']} সিলেবাস ও নম্বর বণ্টন।")->limit(158)->toString(),
                 view: 'seo.exam',
-                viewData: ['exam' => $exam, 'notices' => $this->notices()->where('exam', $slug)->take(5)],
+                viewData: ['exam' => $exam, 'questionsPath' => ExamPages::examPath($slug), 'notices' => $this->notices()->where('exam', $slug)->take(5)],
                 jsonLd: [PublicPage::breadcrumbs(['Home' => '/', 'Exams' => '/exams', $exam['name'] => "/exams/{$slug}"])],
                 data: ['notices' => $this->notices()],
             ) : null;
@@ -200,8 +201,17 @@ class PublicPageController extends Controller
             title: "Today's BCS Quiz: 10 Free MCQ Questions | আজকের কুইজ — bd3schools",
             description: 'Take a free 10-question BCS, bank, NTRCA and Primary quiz with explanations. No sign-up. আজকের ফ্রি বিসিএস কুইজ, ব্যাখ্যাসহ।',
             view: 'seo.daily',
+            viewData: ['daily' => PageShell::content()['daily'] ?? []],
             jsonLd: [PublicPage::breadcrumbs(['Home' => '/', 'Daily quiz' => '/daily'])],
         ));
+    }
+
+    /**
+     * Pages made from the question bank (see ExamPages).
+     */
+    public function examPage(Request $request): Response|RedirectResponse
+    {
+        return $this->page($request, fn (): ?PublicPage => ExamPages::resolve($request->getPathInfo()));
     }
 
     public function legal(Request $request): Response|RedirectResponse
@@ -252,6 +262,10 @@ class PublicPageController extends Controller
             return redirect(rtrim($path, '/'), 301);
         }
 
+        if ($moved = ExamPages::moved($path)) {
+            return redirect($moved, 301);
+        }
+
         abort_if(PageShell::path() === null, 404);
 
         $html = PageShell::html($path, $build);
@@ -292,27 +306,5 @@ class PublicPageController extends Controller
     private function relatedPosts(Post $post): Collection
     {
         return Post::query()->published()->whereKeyNot($post->id)->orderByRaw('category = ? desc', [$post->category])->orderByDesc('published_at')->limit(3)->get();
-    }
-
-    /**
-     * @return array<string, mixed>
-     */
-    private function article(string $path, string $headline, string $description, ?string $published, ?string $modified, ?string $image, string $lang): array
-    {
-        $organization = ['@id' => config('seo.site').'/#organization'];
-
-        return [
-            '@type' => 'Article',
-            '@id' => PublicPage::absolute($path).'#article',
-            'mainEntityOfPage' => PublicPage::absolute($path),
-            'headline' => str($headline)->limit(107)->toString(),
-            'description' => $description,
-            'image' => PublicPage::absolute($image ?: '/icon-512.png'),
-            'datePublished' => $published,
-            'dateModified' => $modified ?: $published,
-            'inLanguage' => $lang,
-            'author' => $organization,
-            'publisher' => $organization,
-        ];
     }
 }

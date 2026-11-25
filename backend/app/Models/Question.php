@@ -34,6 +34,9 @@ class Question extends Model
         self::STATUS_LIVE => 'Live',
     ];
 
+    /** Other exam websites: an explanation that mentions one was copied from it. */
+    private const OTHER_SITES = '/live\s*-?\s*mcq|লাইভ\s*এমসিকিউ|biddabari|বিদ্যাবাড়ি|uttoron|satt\s*academy|chakribangla|bcsourgoal|testmitro|w3classroom/iu';
+
     /**
      * @var array<string, string>
      */
@@ -114,6 +117,14 @@ class Question extends Model
         }
 
         return ['created' => $created, 'duplicates' => $duplicates, 'errors' => $errors];
+    }
+
+    /**
+     * The explanation, unless it was copied from another exam website (it names the site it came from).
+     */
+    public function ownExplanation(): ?string
+    {
+        return preg_match(self::OTHER_SITES, (string) $this->explanation) ? null : $this->explanation;
     }
 
     /**

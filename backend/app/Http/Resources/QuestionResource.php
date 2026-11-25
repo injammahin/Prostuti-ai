@@ -46,7 +46,7 @@ class QuestionResource extends JsonResource
             'body' => $this->body,
             'options' => $this->options,
             'answer_index' => $this->when($this->withAnswer, $this->answer_index),
-            'explanation' => $this->when($this->withAnswer, $this->explanation),
+            'explanation' => $this->when($this->withAnswer, fn (): ?string => $this->ownExplanation()),
         ];
     }
 }

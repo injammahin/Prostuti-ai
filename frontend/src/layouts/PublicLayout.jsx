@@ -9,7 +9,8 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import { Logo } from "@/components/shared"
 import { useApp } from "@/lib/app-context"
-import { firstPageDone, firstPageHtml } from "@/lib/server-page"
+import ServerContent from "@/components/ServerContent"
+import { firstPageDone, firstPageWaiting, serverPage } from "@/lib/server-page"
 import { FACEBOOK_URL, YOUTUBE_URL } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
@@ -24,7 +25,7 @@ const links = [
   ["/notices", "notices"],
   ["/calendar", "calendar"],
   ["/exams", "exams"],
-  ["/bcs-papers", "bcsPapers"],
+  ["/bcs", "bcsPapers"],
   ["/blog", "blog"],
 ]
 
@@ -43,9 +44,9 @@ export function LangToggle({ className }) {
 
 /** While a page's code loads: the content the server sent, or the usual placeholder. */
 function FirstPage() {
-  const html = firstPageHtml()
+  const element = firstPageWaiting()
   useEffect(() => () => firstPageDone(), [])
-  if (html) return <div dangerouslySetInnerHTML={{ __html: html }} />
+  if (element) return <ServerContent element={element} />
   return <PageLoader className="mx-auto max-w-6xl px-4 py-8" />
 }
 
@@ -150,7 +151,7 @@ export default function PublicLayout() {
       </Sheet>
 
       <main className="flex-1">
-        <div key={pathname} className="rise">
+        <div key={pathname} className={pathname === serverPage.path ? undefined : "rise"}>
           <Suspense fallback={<FirstPage />}>
             <Outlet />
           </Suspense>
@@ -178,11 +179,12 @@ export default function PublicLayout() {
           <div className="text-sm">
             <p className="mb-3 font-semibold">{L("Prepare", "প্রস্তুতি")}</p>
             <ul className="space-y-2.5 text-muted-foreground">
-              <li><Link to="/exams/bcs-general" className="hover:text-primary">{L("BCS General", "বিসিএস সাধারণ")}</Link></li>
-              <li><Link to="/exams/ntrca" className="hover:text-primary">{L("NTRCA Registration", "এনটিআরসিএ শিক্ষক নিবন্ধন")}</Link></li>
-              <li><Link to="/exams/primary-teacher" className="hover:text-primary">{L("Primary Teacher", "প্রাথমিক শিক্ষক")}</Link></li>
-              <li><Link to="/exams/combined-bank" className="hover:text-primary">{L("Combined Bank Jobs", "সমন্বিত ব্যাংক")}</Link></li>
-              <li><Link to="/exams/bangladesh-bank" className="hover:text-primary">{L("Bangladesh Bank", "বাংলাদেশ ব্যাংক")}</Link></li>
+              <li><Link to="/bcs" className="hover:text-primary">{L("BCS questions & solutions", "বিসিএস প্রশ্ন ও সমাধান")}</Link></li>
+              <li><Link to="/ntrca" className="hover:text-primary">{L("NTRCA", "এনটিআরসিএ শিক্ষক নিবন্ধন")}</Link></li>
+              <li><Link to="/primary-teacher" className="hover:text-primary">{L("Primary Teacher", "প্রাথমিক শিক্ষক")}</Link></li>
+              <li><Link to="/bank-jobs" className="hover:text-primary">{L("Bank jobs", "ব্যাংক চাকরি")}</Link></li>
+              <li><Link to="/model-tests" className="hover:text-primary">{L("Model tests", "মডেল টেস্ট")}</Link></li>
+              <li><Link to="/exams" className="hover:text-primary">{L("Exam syllabus & marks", "সিলেবাস ও নম্বর বণ্টন")}</Link></li>
             </ul>
           </div>
           <div className="text-sm">
@@ -190,7 +192,6 @@ export default function PublicLayout() {
             <ul className="space-y-2.5 text-muted-foreground">
               <li><Link to="/notices" className="hover:text-primary">{L("Notice board", "নোটিশ বোর্ড")}</Link></li>
               <li><Link to="/calendar" className="hover:text-primary">{L("Exam calendar", "পরীক্ষার ক্যালেন্ডার")}</Link></li>
-              <li><Link to="/bcs-papers" className="hover:text-primary">{L("Previous BCS questions", "বিগত বিসিএস প্রশ্ন")}</Link></li>
               <li><Link to="/blog" className="hover:text-primary">{t("blog")}</Link></li>
               <li><Link to="/about" className="hover:text-primary">{L("About bd3schools", "bd3schools সম্পর্কে")}</Link></li>
               <li><Link to="/privacy" className="hover:text-primary">{L("Privacy policy", "গোপনীয়তা নীতি")}</Link></li>

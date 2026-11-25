@@ -14,8 +14,6 @@ use Illuminate\Support\Collection;
  */
 class PastPaperController extends Controller
 {
-    private const BANGLA_DIGITS = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
-
     public function index(): JsonResponse
     {
         $ready = PastPapers::index()->countBy('paper');
@@ -67,7 +65,7 @@ class PastPaperController extends Controller
             'number' => $number,
             'source' => PastPapers::source($number),
             'name' => PastPapers::source($number),
-            'name_bn' => self::banglaOrdinal($number).' বিসিএস',
+            'name_bn' => PastPapers::label($number)['name_bn'],
             'special' => in_array($number, config('bcs_papers.special', []), true),
             'questions' => $ready,
             'added' => $added,
@@ -90,34 +88,11 @@ class PastPaperController extends Controller
         return [
             ...(new QuestionResource($question))->revealAnswer()->resolve(),
             'number' => $ownPaper === $number ? $question->numberOnPaper() : null,
-            'from' => $ownPaper === $number ? null : self::label($ownPaper),
+            'from' => $ownPaper === $number ? null : PastPapers::label($ownPaper),
             'also_in' => collect($papers)
                 ->reject(fn (int $paper): bool => $paper === $ownPaper)
-                ->map(fn (int $paper): array => self::label($paper))
+                ->map(fn (int $paper): array => PastPapers::label($paper))
                 ->values(),
         ];
-    }
-
-    /**
-     * @return array{number: int, name: string, name_bn: string, year: int|null}
-     */
-    private static function label(int $number): array
-    {
-        return [
-            'number' => $number,
-            'name' => PastPapers::source($number),
-            'name_bn' => self::banglaOrdinal($number).' বিসিএস',
-            'year' => PastPapers::year($number),
-        ];
-    }
-
-    /**
-     * 10 → "১০ম", 47 → "৪৭তম".
-     */
-    private static function banglaOrdinal(int $number): string
-    {
-        $digits = strtr((string) $number, array_combine(range(0, 9), self::BANGLA_DIGITS));
-
-        return $digits.($number === 10 ? 'ম' : 'তম');
     }
 }

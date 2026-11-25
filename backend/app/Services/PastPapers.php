@@ -15,6 +15,8 @@ class PastPapers
     /** Every paper is shown as a set of this many questions. */
     public const FULL_SET = 200;
 
+    private const INDEX_KEY = 'past-papers:index';
+
     private const INDEX_MINUTES = 10;
 
     /**
@@ -61,6 +63,19 @@ class PastPapers
     }
 
     /**
+     * @return array{number: int, name: string, name_bn: string, year: int|null}
+     */
+    public static function label(int $number): array
+    {
+        return [
+            'number' => $number,
+            'name' => self::source($number),
+            'name_bn' => Bangla::ordinal($number).' বিসিএস',
+            'year' => self::year($number),
+        ];
+    }
+
+    /**
      * @return list<int> newest first
      */
     public static function numbers(): array
@@ -75,9 +90,17 @@ class PastPapers
      */
     public static function index(): Collection
     {
-        $rows = Cache::remember('past-papers:index', now()->addMinutes(self::INDEX_MINUTES), fn (): array => self::buildIndex());
+        $rows = Cache::remember(self::INDEX_KEY, now()->addMinutes(self::INDEX_MINUTES), fn (): array => self::buildIndex());
 
         return collect($rows);
+    }
+
+    /**
+     * Called when questions change.
+     */
+    public static function refresh(): void
+    {
+        Cache::forget(self::INDEX_KEY);
     }
 
     /**

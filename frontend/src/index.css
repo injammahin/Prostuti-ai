@@ -227,6 +227,35 @@
   .card {
     @apply rounded-2xl border border-border/70 bg-card shadow-card;
   }
+  /* A question with its answer, on the pages made from the question bank. Those out of view cost nothing to draw. */
+  .qa {
+    @apply border-t border-border/70 py-5;
+    content-visibility: auto;
+    contain-intrinsic-size: auto 260px;
+    scroll-margin-top: 5rem;
+  }
+  .qa-body {
+    @apply leading-relaxed font-semibold whitespace-pre-line;
+  }
+  .qa-options {
+    @apply mt-2 grid gap-x-6 gap-y-1 text-[0.95rem] sm:grid-cols-2;
+  }
+  .qa-right,
+  .qa-answer {
+    @apply font-semibold text-success;
+  }
+  .qa-answer {
+    @apply mt-2 text-sm;
+  }
+  .qa-why {
+    @apply mt-2 text-[0.92rem] leading-relaxed break-words whitespace-pre-line text-foreground/85;
+  }
+  .qa-meta {
+    @apply mt-2 text-xs text-muted-foreground;
+  }
+  .qa-meta a {
+    @apply underline underline-offset-2;
+  }
   /* Blog article text written in the admin panel's rich editor. */
   .article {
     @apply text-[1.02rem] leading-[1.85] text-foreground/90;
@@ -373,5 +402,19 @@ h1, h2, h3 {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* "Save as PDF" on the question pages: the questions only. */
+@media print {
+  header,
+  footer,
+  .no-print,
+  [aria-label="Breadcrumb"] {
+    display: none !important;
+  }
+  .qa {
+    content-visibility: visible;
+    break-inside: avoid;
   }
 }

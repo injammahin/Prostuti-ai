@@ -5,7 +5,7 @@
     <ul class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         @foreach ($posts as $post)
             <li class="card p-5">
-                <h2 class="bn font-bold" lang="{{ $post['lang'] }}"><a href="/blog/{{ $post['slug'] }}">{{ $post['title'] }}</a></h2>
+                <h2 class="bn font-bold" lang="{{ $post['lang'] }}"><a href="{{ $post['url'] }}">{{ $post['title'] }}</a></h2>
                 <p class="bn mt-1.5 text-sm text-muted-foreground">{{ $post['excerpt'] }}</p>
             </li>
         @endforeach

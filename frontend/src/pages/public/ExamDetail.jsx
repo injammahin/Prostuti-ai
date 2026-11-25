@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBell, faCheck, faArrowRight, faFileLines, faHourglassHalf } from "@fortawesome/free-solid-svg-icons"
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { PageHeader, IconBox, Pill, Panel, NoticeCard, Segmented, EmptyState } from "@/components/shared"
+import { Crumbs, PageHeader, IconBox, Pill, Panel, NoticeCard, Segmented, EmptyState } from "@/components/shared"
 import ExamFormat from "@/components/ExamFormat"
 import { Icon } from "@/components/icon"
 import { exams, notices } from "@/lib/data"
@@ -31,6 +31,9 @@ const sampleTopics = {
   "General Knowledge": ["National affairs & Bangabandhu", "International events & capitals", "Science, sports & awards"],
 }
 
+/** The page with each exam's questions and answers. */
+const questionPages = { "bcs-general": "/bcs", ntrca: "/ntrca", "primary-teacher": "/primary-teacher", "combined-bank": "/bank-jobs", "bangladesh-bank": "/bank-jobs" }
+
 const pastPapersByExam = {
   "bcs-general": ["46th BCS", "45th BCS", "44th BCS", "43rd BCS", "41st BCS", "40th BCS", "38th BCS", "37th BCS"],
   ntrca: ["18th NTRCA", "17th NTRCA", "16th NTRCA", "15th NTRCA", "14th NTRCA", "13th NTRCA"],
@@ -53,12 +56,20 @@ export default function ExamDetail({ inApp = false }) {
 
   const body = (
     <>
+      {!inApp && <Crumbs items={[[L("Exams", "পরীক্ষা"), "/exams"], [L(e.name, e.nameBn)]]} />}
       <PageHeader back={inApp ? "/app/exams" : "/exams"} title={<>{L(e.name, e.nameBn)} <span className="font-medium text-muted-foreground">({L(e.nameBn, e.name)})</span></>} subtitle={`${td(e.org)} · ${L("Syllabus", "সিলেবাস")}: ${td(e.syllabusVersion)}`} />
       <Panel className="mb-4 flex flex-col gap-4 sm:flex-row sm:items-center">
         <IconBox tone={e.color} className="size-12 text-lg">
           <Icon name={e.icon} />
         </IconBox>
-        <p className="flex-1 text-sm leading-relaxed text-muted-foreground">{td(e.summary)}</p>
+        <div className="flex-1 text-sm leading-relaxed">
+          <p className="text-muted-foreground">{td(e.summary)}</p>
+          {!inApp && questionPages[e.slug] && (
+            <Link to={questionPages[e.slug]} className="mt-1.5 inline-block font-semibold text-primary hover:underline">
+              {L("Questions with answers and explanations", "উত্তর ও ব্যাখ্যাসহ প্রশ্ন")}
+            </Link>
+          )}
+        </div>
         <div className="flex gap-2">
           <Button
             variant="outline"

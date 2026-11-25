@@ -26,8 +26,10 @@ function preloadAllPages() {
     pageImporters.forEach((load) => load().catch(() => {}))
     prefetchData()
   }
-  if ("requestIdleCallback" in window) window.requestIdleCallback(run, { timeout: 2500 })
-  else setTimeout(run, 1500)
+  // Only once the page itself is done, so it never competes with what the visitor is waiting for.
+  const start = () => setTimeout(() => ("requestIdleCallback" in window ? window.requestIdleCallback(run, { timeout: 4000 }) : run()), 3000)
+  if (document.readyState === "complete") start()
+  else window.addEventListener("load", start, { once: true })
 }
 /** The lists people open next, so those pages appear with their content. */
 function prefetchData() {
@@ -45,6 +47,7 @@ const Exams = p(() => import("@/pages/public/Exams"))
 const ExamDetail = p(() => import("@/pages/public/ExamDetail"))
 const Blog = p(() => import("@/pages/public/Blog"))
 const BlogPost = p(() => import("@/pages/public/BlogPost"))
+const ServerPage = p(() => import("@/pages/public/ServerPage"))
 const Legal = p(() => import("@/pages/public/Legal"))
 const Login = p(() => import("@/pages/auth/Login"))
 const Onboarding = p(() => import("@/pages/auth/Onboarding"))
@@ -140,6 +143,13 @@ function AppRoutes() {
           <Route path="exams/:slug" element={<ExamDetail />} />
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:slug" element={<BlogPost />} />
+          <Route path="bcs" element={<ServerPage />} />
+          <Route path="bcs/*" element={<ServerPage />} />
+          <Route path="ntrca" element={<ServerPage />} />
+          <Route path="primary-teacher" element={<ServerPage />} />
+          <Route path="bank-jobs" element={<ServerPage />} />
+          <Route path="model-tests" element={<ServerPage />} />
+          <Route path="quiz" element={<Navigate to="/daily" replace />} />
           <Route path="about" element={<Legal page="about" />} />
           <Route path="privacy" element={<Legal page="privacy" />} />
           <Route path="terms" element={<Legal page="terms" />} />

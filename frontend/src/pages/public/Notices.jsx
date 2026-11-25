@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMagnifyingGlass, faBell, faCalendarDays, faCircleInfo, faXmark } from "@fortawesome/free-solid-svg-icons"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { NoticeCard, PageHeader, Segmented, EmptyState } from "@/components/shared"
+import { Crumbs, NoticeCard, PageHeader, Segmented, EmptyState } from "@/components/shared"
 import { notices, exams, noticeTypes } from "@/lib/data"
 import { examName } from "@/lib/format"
 import { useApp } from "@/lib/app-context"
@@ -137,6 +137,7 @@ export default function Notices({ inApp = false }) {
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
+      {!inApp && <Crumbs items={[[L("Notices", "নোটিশ")]]} />}
       <PageHeader
         title={L("Govt job notice board", "সরকারি চাকরির নোটিশ বোর্ড")}
         subtitle={L(

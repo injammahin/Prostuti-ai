@@ -3,6 +3,9 @@
     <h1 class="text-[1.35rem] leading-tight font-bold md:text-[1.7rem]">{{ $exam['name'] }} <span class="bn" lang="bn">({{ $exam['nameBn'] }})</span></h1>
     <p class="mt-1 text-sm text-muted-foreground">{{ $exam['org'] }} · Syllabus: {{ $exam['syllabusVersion'] }}</p>
     <p class="mt-4 leading-relaxed">{{ $exam['summary'] }}</p>
+    @if ($questionsPath)
+        <p class="mt-3"><a href="{{ $questionsPath }}" class="font-semibold text-primary">{{ $exam['name'] }}: questions with answers and explanations</a></p>
+    @endif
     @foreach ($exam['stages'] as $stage)
         <section class="card mt-6 p-4 sm:p-6">
             <h2 class="text-xl font-semibold">{{ $exam['name'] }} — {{ $stage['type'] }}</h2>

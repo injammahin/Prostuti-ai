@@ -24,3 +24,10 @@ RewriteRule ^(app|login|signup|onboarding|bcs-papers|doctors)(/.*)?$ _spa/index.
 
 # 3b. Public pages (with their text) and real 404s -> Laravel
 RewriteRule ^ index.php [L]
+
+# PDF files stay downloadable but out of search results (the pages under /bcs are the ones to find)
+<IfModule mod_headers.c>
+  <FilesMatch "\.pdf$">
+    Header set X-Robots-Tag "noindex"
+  </FilesMatch>
+</IfModule>

@@ -7,7 +7,10 @@ use App\Models\Exam;
 use App\Models\ModelTest;
 use App\Models\Notice;
 use App\Models\Post;
+use App\Models\Question;
+use App\Models\Subject;
 use App\Services\PageShell;
+use App\Services\PastPapers;
 use Filament\Auth\Http\Responses\Contracts\LogoutResponse;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
@@ -39,10 +42,13 @@ class AppServiceProvider extends ServiceProvider
      */
     private function refreshPublicPages(): void
     {
-        foreach ([Post::class, Notice::class, Exam::class, ModelTest::class] as $model) {
+        foreach ([Post::class, Notice::class, Exam::class, ModelTest::class, Question::class, Subject::class] as $model) {
             $model::saved(fn () => PageShell::refresh());
             $model::deleted(fn () => PageShell::refresh());
         }
+
+        Question::saved(fn () => PastPapers::refresh());
+        Question::deleted(fn () => PastPapers::refresh());
     }
 
     /**

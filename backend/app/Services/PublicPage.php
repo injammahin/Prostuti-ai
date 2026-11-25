@@ -56,4 +56,26 @@ class PublicPage
             })->values()->all(),
         ];
     }
+
+    /**
+     * @return array<string, mixed>
+     */
+    public static function article(string $path, string $headline, string $description, ?string $published, ?string $modified, ?string $image, string $lang): array
+    {
+        $organization = ['@id' => config('seo.site').'/#organization'];
+
+        return [
+            '@type' => 'Article',
+            '@id' => self::absolute($path).'#article',
+            'mainEntityOfPage' => self::absolute($path),
+            'headline' => str($headline)->limit(107)->toString(),
+            'description' => $description,
+            'image' => self::absolute($image ?: '/icon-512.png'),
+            'datePublished' => $published,
+            'dateModified' => $modified ?: $published,
+            'inLanguage' => $lang,
+            'author' => $organization,
+            'publisher' => $organization,
+        ];
+    }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Services\ExamPages;
 use Database\Factories\PostFactory;
 use Filament\Forms\Components\RichEditor\RichContentRenderer;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
@@ -41,6 +42,12 @@ class Post extends Model
         $query->where('is_published', true)->whereNotNull('published_at')->where('published_at', '<=', now());
     }
 
+    /** Its address: solutions of BCS papers have their own pages under /bcs. */
+    public function path(): string
+    {
+        return ExamPages::moved("/blog/{$this->slug}") ?? "/blog/{$this->slug}";
+    }
+
     /** Roughly how long the article takes to read (about 200 words a minute). */
     public function readingMinutes(): int
     {
@@ -56,6 +63,7 @@ class Post extends Model
     {
         return [
             'slug' => $this->slug,
+            'url' => $this->path(),
             'title' => $this->title,
             'category' => $this->category,
             'category_label' => self::CATEGORIES[$this->category] ?? Str::headline($this->category),

@@ -3,7 +3,7 @@ import { Link } from "react-router"
 import { toast } from "sonner"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBell, faCheck, faChevronRight } from "@fortawesome/free-solid-svg-icons"
-import { PageHeader, Segmented, IconBox, Pill } from "@/components/shared"
+import { Crumbs, PageHeader, Segmented, IconBox, Pill } from "@/components/shared"
 import { Icon } from "@/components/icon"
 import { exams, examFamilies, notices } from "@/lib/data"
 import { td } from "@/lib/format"
@@ -22,6 +22,7 @@ export default function Exams({ inApp = false }) {
 
   const body = (
     <>
+      {!inApp && <Crumbs items={[[L("Exams", "পরীক্ষা")]]} />}
       <PageHeader title={L("Exam catalog", "পরীক্ষার তালিকা")} subtitle={L("Find every government exam that fits you. Follow to get alerts.", "আপনার উপযোগী সরকারি পরীক্ষা খুঁজুন। অ্যালার্ট পেতে ফলো করুন।")} />
       <Segmented options={[{ value: "all", label: L("All", "সব") }, ...examFamilies.map((f) => ({ value: f.id, label: L(f.name, f.nameBn) }))]} value={family} onChange={setFamily} />
       <div className="mt-4 grid gap-3 md:grid-cols-2">

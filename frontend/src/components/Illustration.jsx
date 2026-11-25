@@ -25,7 +25,7 @@ export default function Illustration({ name = "desk", className, circle = true, 
       {failed ? (
         <StudentArt {...art[name]} className="relative w-[86%]" />
       ) : (
-        <img src={ILLUSTRATIONS[name]} alt={alt} width="900" height="900" decoding="async" fetchPriority={priority ? "high" : undefined} loading={priority ? undefined : "lazy"} onError={() => setFailed(true)} className={cn("relative object-contain mix-blend-multiply [filter:brightness(1.04)_contrast(1.06)]", circle ? "w-[82%] [clip-path:circle(54%_at_50%_50%)]" : "w-full")} />
+        <img src={ILLUSTRATIONS[name]} srcSet={name === "desk" ? "/illustrations/study-desk-480.webp 480w, /illustrations/study-desk.webp 900w" : undefined} sizes={name === "desk" ? "(min-width: 448px) 424px, 92vw" : undefined} alt={alt} width="900" height="900" decoding="async" fetchPriority={priority ? "high" : undefined} loading={priority ? undefined : "lazy"} onError={() => setFailed(true)} className={cn("relative object-contain mix-blend-multiply [filter:brightness(1.04)_contrast(1.06)]", circle ? "w-[82%] [clip-path:circle(54%_at_50%_50%)]" : "w-full")} />
       )}
     </div>
   )

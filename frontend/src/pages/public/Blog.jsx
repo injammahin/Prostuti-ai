@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faMagnifyingGlass, faXmark, faNewspaper, faRotateRight } from "@fortawesome/free-solid-svg-icons"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
-import { PageHeader, EmptyState } from "@/components/shared"
+import { Crumbs, PageHeader, EmptyState } from "@/components/shared"
 import { useApi } from "@/lib/use-api"
 import { blogApi } from "@/lib/api"
 import { useApp } from "@/lib/app-context"
@@ -46,6 +46,7 @@ export default function Blog() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-6 md:py-10">
+      <Crumbs items={[[L("Blog", "ব্লগ")]]} />
       <PageHeader
         title={L("Blog", "ব্লগ")}
         subtitle={L("Guides, syllabus breakdowns and exam strategy for BCS and govt job exams.", "বিসিএস ও সরকারি চাকরির পরীক্ষার প্রস্তুতি গাইড, সিলেবাস ও কৌশল।")}

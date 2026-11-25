@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\V1\DailyQuizController;
 use App\Http\Controllers\Api\V1\MistakeController;
 use App\Http\Controllers\Api\V1\ModelTestController;
 use App\Http\Controllers\Api\V1\NoticeController;
+use App\Http\Controllers\Api\V1\PageController;
 use App\Http\Controllers\Api\V1\PastPaperController;
 use App\Http\Controllers\Api\V1\PostController;
 use App\Http\Controllers\Api\V1\PracticeSessionController;
@@ -42,6 +43,7 @@ Route::prefix('v1')->name('api.v1.')->group(function () {
     Route::post('daily-quiz/complete', [TrackingController::class, 'dailyQuizCompleted'])->middleware('throttle:20,1')->name('daily-quiz.complete');
     Route::get('settings', [SiteSettingsController::class, 'show'])->name('settings');
     Route::get('notices', [NoticeController::class, 'index'])->name('notices');
+    Route::get('pages', [PageController::class, 'show'])->name('pages');
     Route::get('posts', [PostController::class, 'index'])->name('posts');
     Route::get('posts/{slug}', [PostController::class, 'show'])->name('posts.show');
     Route::get('past-papers', [PastPaperController::class, 'index'])->name('past-papers');

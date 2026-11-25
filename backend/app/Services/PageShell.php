@@ -43,13 +43,26 @@ class PageShell
             return null;
         }
 
-        $key = implode(':', ['seo:page', (int) Cache::get(self::VERSION_KEY, 1), filemtime($shell), md5($path)]);
-
-        return Cache::remember($key, now()->addMinutes((int) config('seo.cache_minutes')), function () use ($build): ?string {
+        return self::remember('page:'.filemtime($shell).':'.md5($path), function () use ($build): ?string {
             $page = $build();
 
             return $page ? self::render($page) : null;
         });
+    }
+
+    /**
+     * Keeps something built from the public content until that content changes.
+     *
+     * @template TValue
+     *
+     * @param  callable(): TValue  $build
+     * @return TValue
+     */
+    public static function remember(string $key, callable $build): mixed
+    {
+        $key = 'seo:'.(int) Cache::get(self::VERSION_KEY, 1).":{$key}";
+
+        return Cache::remember($key, now()->addMinutes((int) config('seo.cache_minutes')), $build(...));
     }
 
     /**

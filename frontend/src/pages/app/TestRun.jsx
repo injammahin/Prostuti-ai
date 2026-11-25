@@ -17,11 +17,13 @@ import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, D
 import { Pill } from "@/components/shared"
 import { Option } from "@/pages/app/Session"
 import { modelTestsApi } from "@/lib/api"
-import { bcs48thQuestions } from "@/lib/bcs-48th-questions"
+import { examOfTest } from "@/lib/exam-tests"
+import { useApp } from "@/lib/app-context"
 import { cn } from "@/lib/utils"
 
 export default function TestRun() {
   const nav = useNavigate()
+  const { L } = useApp()
   const [params] = useSearchParams()
   const testId = params.get("test") || "bcs-prelim-model-test-1"
 
@@ -48,31 +50,14 @@ export default function TestRun() {
           setTestInfo(res.test)
           setQs(res.questions)
           setLeft(res.test.duration_seconds || res.test.duration_minutes * 60 || 7200)
-        } else {
-          fallbackLoad()
         }
       })
       .catch(() => {
-        if (mounted) fallbackLoad()
+        /* the "could not load" message below is shown */
       })
       .finally(() => {
         if (mounted) setLoading(false)
       })
-
-    function fallbackLoad() {
-      // Offline fallback: Use 200 authentic questions
-      const mockQuestions = bcs48thQuestions.slice(0, 200)
-      setTestInfo({
-        id: testId,
-        title: "BCS Preliminary Full Model Test",
-        duration_minutes: 120,
-        total_marks: 200,
-        negative_marking: 0.50,
-        total_questions: 200,
-      })
-      setQs(mockQuestions)
-      setLeft(120 * 60)
-    }
 
     return () => {
       mounted = false
@@ -82,12 +67,14 @@ export default function TestRun() {
   const duration = (testInfo?.duration_minutes ? testInfo.duration_minutes * 60 : 7200)
 
   const submit = () => {
-    nav("/app/test/result", {
+    nav("/app/model-test/result", {
       replace: true,
       state: {
+        attemptId: `${testId}-${Date.now()}`,
         answers,
         testId: testInfo?.id || testId,
         testTitle: testInfo?.title || "BCS Model Test",
+        examSlug: examOfTest(testInfo?.id || testId, testInfo?.exam),
         negative: parseFloat(testInfo?.negative_marking) || 0.5,
         totalMarks: parseFloat(testInfo?.total_marks) || qs.length,
         used: duration - left,
@@ -118,7 +105,17 @@ export default function TestRun() {
   }
 
   const q = qs[idx] || qs[0]
-  if (!q) return null
+  if (!q) {
+    return (
+      <div className="flex min-h-[60vh] flex-col items-center justify-center gap-3 px-4 text-center">
+        <p className="font-semibold">{L("This test could not be loaded.", "টেস্টটি লোড করা যায়নি।")}</p>
+        <p className="text-sm text-muted-foreground">{L("Check your internet connection and try again.", "ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করুন।")}</p>
+        <Button className="rounded-full" onClick={() => window.location.reload()}>
+          {L("Try again", "আবার চেষ্টা করুন")}
+        </Button>
+      </div>
+    )
+  }
 
   const answered = Object.keys(answers).length
   const hours = Math.floor(left / 3600)
@@ -208,7 +205,7 @@ export default function TestRun() {
       </header>
 
       {/* Main Question Interface */}
-      <main className="flex-1 pt-5 pb-32">
+      <main className="flex-1 pt-5 pb-12">
         <div className="mb-3.5 flex flex-wrap items-center gap-2">
           <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">
             Question {idx + 1} of {qs.length}
@@ -275,15 +272,13 @@ export default function TestRun() {
         <p className="mt-4 text-xs text-muted-foreground">
           Tip: Tap an option to select, tap again to clear. Negative marking: -{testInfo?.negative_marking || 0.5} marks per wrong answer.
         </p>
-      </main>
 
-      {/* Navigation Footer */}
-      <footer className="fixed inset-x-0 bottom-0 z-20 border-t bg-background/95 px-4 py-3 backdrop-blur md:rounded-t-2xl">
-        <div className="mx-auto flex max-w-3xl items-center justify-between gap-3">
+        {/* Action buttons directly under question & options */}
+        <div className="mt-6 flex items-center justify-between gap-3 border-t pt-5">
           <Button
             variant="outline"
-            size="sm"
-            className="h-10 rounded-full px-4 font-semibold"
+            size="default"
+            className="h-11 rounded-full px-5 font-bold shadow-xs active:scale-95 transition-all touch-manipulation"
             disabled={idx === 0}
             onClick={() => setIdx((i) => Math.max(0, i - 1))}
           >
@@ -297,8 +292,8 @@ export default function TestRun() {
           </span>
 
           <Button
-            size="sm"
-            className="h-10 rounded-full px-5 font-semibold"
+            size="default"
+            className="h-11 rounded-full px-6 font-bold shadow-xs active:scale-95 transition-all touch-manipulation"
             onClick={() => (idx < qs.length - 1 ? setIdx((i) => i + 1) : setConfirm(true))}
           >
             {idx < qs.length - 1 ? (
@@ -310,7 +305,7 @@ export default function TestRun() {
             )}
           </Button>
         </div>
-      </footer>
+      </main>
 
       {/* Question Palette Grid Sheet */}
       <Sheet open={grid} onOpenChange={setGrid}>
@@ -357,7 +352,7 @@ export default function TestRun() {
 
       {/* Submit Confirmation Dialog */}
       <Dialog open={confirm} onOpenChange={setConfirm}>
-        <DialogContent className="max-w-md rounded-2xl">
+        <DialogContent className="w-[calc(100vw-2.5rem)] max-w-[calc(100vw-2.5rem)] sm:w-full sm:max-w-md rounded-2xl p-5 sm:p-6">
           <DialogHeader>
             <DialogTitle className="text-lg font-bold">Submit Model Test?</DialogTitle>
             <DialogDescription className="text-sm">
@@ -367,10 +362,10 @@ export default function TestRun() {
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="gap-2 sm:justify-end">
-            <Button variant="outline" className="rounded-full" onClick={() => setConfirm(false)}>
+            <Button variant="outline" className="w-full sm:w-auto h-11 sm:h-10 rounded-full" onClick={() => setConfirm(false)}>
               Keep Answering
             </Button>
-            <Button className="rounded-full font-bold px-6" onClick={submit}>
+            <Button className="w-full sm:w-auto h-11 sm:h-10 rounded-full font-bold px-6" onClick={submit}>
               Submit Now
             </Button>
           </DialogFooter>
@@ -379,7 +374,7 @@ export default function TestRun() {
 
       {/* Exit Confirmation Dialog */}
       <Dialog open={exit} onOpenChange={setExit}>
-        <DialogContent className="max-w-md rounded-2xl">
+        <DialogContent className="w-[calc(100vw-2.5rem)] max-w-[calc(100vw-2.5rem)] sm:w-full sm:max-w-md rounded-2xl p-5 sm:p-6">
           <DialogHeader>
             <DialogTitle className="text-lg font-bold">Quit Test?</DialogTitle>
             <DialogDescription className="text-sm">
@@ -387,10 +382,10 @@ export default function TestRun() {
             </DialogDescription>
           </DialogHeader>
           <DialogFooter className="gap-2 sm:justify-end">
-            <Button variant="outline" className="rounded-full" onClick={() => setExit(false)}>
+            <Button variant="outline" className="w-full sm:w-auto h-11 sm:h-10 rounded-full" onClick={() => setExit(false)}>
               Resume Test
             </Button>
-            <Button variant="destructive" className="rounded-full" onClick={() => nav("/app/test")}>
+            <Button variant="destructive" className="w-full sm:w-auto h-11 sm:h-10 rounded-full font-bold px-6" onClick={() => nav("/app/model-test")}>
               Quit
             </Button>
           </DialogFooter>

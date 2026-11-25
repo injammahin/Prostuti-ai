@@ -18,6 +18,7 @@ import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
 import { Logo, Ring } from "@/components/shared"
 import Illustration from "@/components/Illustration"
+import { isBangla, tr } from "@/lib/format"
 import { useApp } from "@/lib/app-context"
 import { adminApi, authApi, GOOGLE_CLIENT_ID } from "@/lib/api"
 import { cn } from "@/lib/utils"
@@ -42,7 +43,7 @@ function Field({ icon, right, className, ...props }) {
   )
 }
 
-function PasswordField({ value, onChange, placeholder = "Password", autoComplete = "current-password", id }) {
+function PasswordField({ value, onChange, placeholder = tr("Password", "পাসওয়ার্ড"), autoComplete = "current-password", id }) {
   const [show, setShow] = useState(false)
   return (
     <Field
@@ -142,6 +143,7 @@ function GoogleButton({ onCredential, disabled }) {
         shape: "pill",
         text: "continue_with",
         logo_alignment: "center",
+        locale: isBangla() ? "bn" : "en",
         width,
       })
       setReady(true)
@@ -175,8 +177,8 @@ function GoogleButton({ onCredential, disabled }) {
 
   if (!GOOGLE_CLIENT_ID)
     return (
-      <Button type="button" variant="outline" className="h-12 w-full text-[0.95rem]" onClick={() => toast("Google sign-in is coming soon. Please use your email for now.")}>
-        <FontAwesomeIcon icon={faGoogle} /> Continue with Google
+      <Button type="button" variant="outline" className="h-12 w-full text-[0.95rem]" onClick={() => toast(tr("Google sign-in is coming soon. Please use your email for now.", "গুগল সাইন ইন শিগগিরই আসছে। আপাতত ইমেইল ব্যবহার করুন।"))}>
+        <FontAwesomeIcon icon={faGoogle} /> {tr("Continue with Google", "গুগল দিয়ে চালিয়ে যান")}
       </Button>
     )
 
@@ -191,7 +193,7 @@ function GoogleButton({ onCredential, disabled }) {
 const emptyCode = () => Array(6).fill("")
 
 export default function Login({ mode = "login" }) {
-  const { login, loginGuest, logout, user, isGuest } = useApp()
+  const { login, loginGuest, logout, user, isGuest, L, num } = useApp()
 
   // One login for everyone: the admin panel sends people here (?next=admin) and back here after logging out (?logout=1).
   useEffect(() => {
@@ -205,7 +207,7 @@ export default function Login({ mode = "login" }) {
       if (user.is_admin) {
         adminApi.openPanel().catch(() => {})
       } else {
-        toast.error("This account doesn't have admin access.")
+        toast.error(L("This account doesn't have admin access.", "এই অ্যাকাউন্টে অ্যাডমিন অনুমতি নেই।"))
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -272,7 +274,9 @@ export default function Login({ mode = "login" }) {
       adminApi.openPanel().catch(() => nav("/app", { replace: true }))
       return
     }
-    toast.success(res.is_new_user ? `Welcome to bd3schools, ${first}! 🎉` : `Welcome back, ${first}!`)
+    toast.success(
+      res.is_new_user ? L(`Welcome to bd3schools, ${first}! 🎉`, `bd3schools-এ স্বাগতম, ${first}! 🎉`) : L(`Welcome back, ${first}!`, `আবার স্বাগতম, ${first}!`)
+    )
     const from = loc.state?.from
     // New users still pick their exam first, then go back to the page they were on (e.g. a BCS paper).
     if (res.is_new_user) nav("/onboarding", { replace: true, state: from ? { from } : undefined })
@@ -294,7 +298,7 @@ export default function Login({ mode = "login" }) {
       setPassword("")
       setStep("code")
       setTimer(RESEND_SECONDS)
-      toast.success("Code sent! Check your email.")
+      toast.success(L("Code sent! Check your email.", "কোড পাঠানো হয়েছে! ইমেইল দেখুন।"))
     })
   }
 
@@ -309,7 +313,7 @@ export default function Login({ mode = "login" }) {
     if (!codeFull || !passwordOk) return
     run(async () => {
       const res = await authApi.resetPassword({ email: cleanEmail, code: code.join(""), password })
-      toast.success("Your new password is set.")
+      toast.success(L("Your new password is set.", "নতুন পাসওয়ার্ড সেট হয়েছে।"))
       finish(res)
     })
   }
@@ -325,13 +329,13 @@ export default function Login({ mode = "login" }) {
   const resend = (
     <p className="mt-5 text-center text-sm text-muted-foreground">
       {timer > 0 ? (
-        <>Didn't get it? Resend in 0:{String(timer).padStart(2, "0")}</>
+        L(`Didn't get it? Resend in 0:${String(timer).padStart(2, "0")}`, `কোড পাননি? ${num(timer)} সেকেন্ড পর আবার পাঠান`)
       ) : (
         <button type="button" onClick={sendCode} className="font-bold text-primary">
-          Resend code
+          {L("Resend code", "আবার কোড পাঠান")}
         </button>
       )}
-      <span className="mt-1 block text-xs">Can't find it? Check your Spam or Promotions folder.</span>
+      <span className="mt-1 block text-xs">{L("Can't find it? Check your Spam or Promotions folder.", "খুঁজে পাচ্ছেন না? Spam বা Promotions ফোল্ডার দেখুন।")}</span>
     </p>
   )
 
@@ -345,22 +349,22 @@ export default function Login({ mode = "login" }) {
         <div className="relative mx-auto my-auto w-full max-w-md">
           <Illustration name="write" className="aspect-square w-full" />
           <div className="float card absolute top-4 -left-6 flex items-center gap-3 p-3 text-foreground">
-            <Ring value={72} size={44} stroke={5} label={<span className="text-[0.6rem]">72%</span>} />
+            <Ring value={72} size={44} stroke={5} label={<span className="text-[0.6rem]">{num("72%")}</span>} />
             <span className="text-sm">
-              <b className="block">Answers correct</b>
-              <span className="text-xs text-muted-foreground">+3.2% this week</span>
+              <b className="block">{L("Answers correct", "সঠিক উত্তর")}</b>
+              <span className="text-xs text-muted-foreground">{L("+3.2% this week", "এ সপ্তাহে +৩.২%")}</span>
             </span>
           </div>
           <div className="float-slow card absolute -right-4 bottom-10 p-3 text-sm text-foreground">
             <p className="flex items-center gap-2 font-bold">
-              <FontAwesomeIcon icon={faCircleCheck} className="text-success" /> Verified notice
+              <FontAwesomeIcon icon={faCircleCheck} className="text-success" /> {L("Verified notice", "যাচাইকৃত নোটিশ")}
             </p>
-            <p className="text-xs text-muted-foreground">50th BCS written · 8 Dec</p>
+            <p className="text-xs text-muted-foreground">{L("Every notice links to its source", "প্রতিটি নোটিশে সূত্রের লিংক")}</p>
           </div>
         </div>
         <div>
-          <h2 className="text-3xl leading-tight font-extrabold">Every govt exam you're preparing for, in one place.</h2>
-          <p className="mt-3 text-white/70">100% free. Not affiliated with BPSC or any ministry.</p>
+          <h2 className="text-3xl leading-tight font-extrabold">{L("Every govt exam you're preparing for, in one place.", "আপনার সব সরকারি পরীক্ষার প্রস্তুতি, এক জায়গায়।")}</h2>
+          <p className="mt-3 text-white/70">{L("100% free. Not affiliated with BPSC or any ministry.", "১০০% ফ্রি। বিপিএসসি বা কোনো মন্ত্রণালয়ের সঙ্গে যুক্ত নয়।")}</p>
         </div>
       </aside>
 
@@ -375,7 +379,7 @@ export default function Login({ mode = "login" }) {
             <Logo className="lg:invisible" />
           )}
           <Link to="/" className="text-sm font-semibold text-muted-foreground hover:text-foreground">
-            Home
+            {L("Home", "হোম")}
           </Link>
         </div>
 
@@ -383,13 +387,13 @@ export default function Login({ mode = "login" }) {
           {/* ---------- Sign in / Create account (first step) ---------- */}
           {(view === "signin" || view === "signup") && step === "form" && (
             <div className="stagger">
-              <h1 className="text-[1.75rem] leading-tight font-extrabold">{view === "signin" ? "Welcome back" : "Create your free account"}</h1>
-              <p className="mt-1.5 text-muted-foreground">{view === "signin" ? "Sign in to continue your preparation." : "It takes less than a minute."}</p>
+              <h1 className="text-[1.75rem] leading-tight font-extrabold">{view === "signin" ? L("Welcome back", "আবার স্বাগতম") : L("Create your free account", "ফ্রি অ্যাকাউন্ট খুলুন")}</h1>
+              <p className="mt-1.5 text-muted-foreground">{view === "signin" ? L("Sign in to continue your preparation.", "প্রস্তুতি চালিয়ে যেতে সাইন ইন করুন।") : L("It takes less than a minute.", "এক মিনিটও লাগবে না।")}</p>
 
               <div className="mt-6 grid grid-cols-2 rounded-2xl bg-muted p-1">
                 {[
-                  ["signin", "Sign in"],
-                  ["signup", "Create account"],
+                  ["signin", L("Sign in", "সাইন ইন")],
+                  ["signup", L("Create account", "অ্যাকাউন্ট খুলুন")],
                 ].map(([v, l]) => (
                   <button
                     key={v}
@@ -407,7 +411,7 @@ export default function Login({ mode = "login" }) {
               </div>
 
               <div className="my-5 flex items-center gap-3 text-xs font-medium text-muted-foreground">
-                <span className="h-px flex-1 bg-border" /> or with email <span className="h-px flex-1 bg-border" />
+                <span className="h-px flex-1 bg-border" /> {L("or with email", "অথবা ইমেইল দিয়ে")} <span className="h-px flex-1 bg-border" />
               </div>
 
               {view === "signin" ? (
@@ -417,20 +421,20 @@ export default function Login({ mode = "login" }) {
                     type="email"
                     inputMode="email"
                     autoComplete="email"
-                    placeholder="Email address"
+                    placeholder={L("Email address", "ইমেইল ঠিকানা")}
                     value={email}
                     onChange={(e) => (setEmail(e.target.value), setError(""))}
-                    aria-label="Email address"
+                    aria-label={L("Email address", "ইমেইল ঠিকানা")}
                   />
                   <PasswordField value={password} onChange={(e) => (setPassword(e.target.value), setError(""))} />
                   <div className="text-right">
                     <button type="button" onClick={() => switchView("forgot")} className="text-sm font-semibold text-primary">
-                      Forgot password?
+                      {L("Forgot password?", "পাসওয়ার্ড ভুলে গেছেন?")}
                     </button>
                   </div>
                   {errorText}
                   <Button type="submit" disabled={!validEmail || !password || loading} className="btn-shine h-[3.25rem] w-full text-base">
-                    {loading ? "Signing in…" : "Sign in"}
+                    {loading ? L("Signing in…", "সাইন ইন হচ্ছে…") : L("Sign in", "সাইন ইন")}
                   </Button>
                 </form>
               ) : (
@@ -440,31 +444,33 @@ export default function Login({ mode = "login" }) {
                     type="email"
                     inputMode="email"
                     autoComplete="email"
-                    placeholder="Email address"
+                    placeholder={L("Email address", "ইমেইল ঠিকানা")}
                     value={email}
                     onChange={(e) => (setEmail(e.target.value), setError(""))}
-                    aria-label="Email address"
+                    aria-label={L("Email address", "ইমেইল ঠিকানা")}
                   />
                   {errorText}
                   <Button type="submit" disabled={!validEmail || loading} className="btn-shine h-[3.25rem] w-full text-base">
                     {loading ? (
-                      "Sending code…"
+                      L("Sending code…", "কোড পাঠানো হচ্ছে…")
                     ) : (
                       <>
-                        Continue <FontAwesomeIcon icon={faArrowRight} />
+                        {L("Continue", "এগিয়ে যান")} <FontAwesomeIcon icon={faArrowRight} />
                       </>
                     )}
                   </Button>
-                  <p className="text-center text-xs text-muted-foreground">We'll email you a code to confirm it's really you.</p>
+                  <p className="text-center text-xs text-muted-foreground">{L("We'll email you a code to confirm it's really you.", "আপনাকে নিশ্চিত করতে ইমেইলে একটি কোড পাঠাব।")}</p>
                 </form>
               )}
 
               <Button type="button" variant="ghost" className="mt-4 h-11 w-full text-[0.95rem] text-muted-foreground" onClick={guest}>
-                <FontAwesomeIcon icon={faEye} /> Just look around (guest)
+                <FontAwesomeIcon icon={faEye} /> {L("Just look around (guest)", "অতিথি হিসেবে ঘুরে দেখুন")}
               </Button>
 
               <p className="mt-5 text-center text-xs leading-relaxed text-muted-foreground">
-                By continuing you agree to our <a className="font-semibold underline">Terms</a> and <a className="font-semibold underline">Privacy Policy</a>.
+                {L("By continuing you agree to our ", "এগিয়ে গেলে আপনি আমাদের ")}
+                <Link to="/terms" className="font-semibold underline">{L("Terms", "শর্তাবলি")}</Link> {L("and", "ও")} <Link to="/privacy" className="font-semibold underline">{L("Privacy Policy", "গোপনীয়তা নীতি")}</Link>
+                {L(".", " মেনে নিচ্ছেন।")}
               </p>
             </div>
           )}
@@ -475,9 +481,9 @@ export default function Login({ mode = "login" }) {
               <div className="mb-5 grid size-14 place-items-center rounded-2xl bg-secondary text-xl text-primary">
                 <FontAwesomeIcon icon={faEnvelopeOpenText} />
               </div>
-              <h1 className="text-[1.75rem] leading-tight font-extrabold">Check your email</h1>
+              <h1 className="text-[1.75rem] leading-tight font-extrabold">{L("Check your email", "ইমেইল দেখুন")}</h1>
               <p className="mt-1.5 text-muted-foreground">
-                Enter the 6-digit code we sent to <b className="break-all text-foreground">{cleanEmail}</b>
+                {L("Enter the 6-digit code we sent to", "৬ সংখ্যার কোডটি লিখুন, পাঠানো হয়েছে:")} <b className="break-all text-foreground">{cleanEmail}</b>
               </p>
 
               <div className="mt-6">
@@ -485,14 +491,14 @@ export default function Login({ mode = "login" }) {
               </div>
 
               <div className="mt-6 space-y-3">
-                <Field icon={faUser} placeholder="Your full name" autoComplete="name" value={name} onChange={(e) => setName(e.target.value)} aria-label="Full name" />
-                <PasswordField value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Create a password" autoComplete="new-password" />
-                <p className={cn("text-xs", password && !passwordOk ? "text-destructive" : "text-muted-foreground")}>At least {MIN_PASSWORD} characters.</p>
+                <Field icon={faUser} placeholder={L("Your full name", "আপনার পুরো নাম")} autoComplete="name" value={name} onChange={(e) => setName(e.target.value)} aria-label={L("Full name", "পুরো নাম")} />
+                <PasswordField value={password} onChange={(e) => setPassword(e.target.value)} placeholder={L("Create a password", "পাসওয়ার্ড দিন")} autoComplete="new-password" />
+                <p className={cn("text-xs", password && !passwordOk ? "text-destructive" : "text-muted-foreground")}>{L(`At least ${MIN_PASSWORD} characters.`, `কমপক্ষে ${num(MIN_PASSWORD)} অক্ষর।`)}</p>
                 {errorText}
               </div>
 
               <Button type="submit" disabled={!codeFull || name.trim().length < 2 || !passwordOk || loading} className="mt-5 h-[3.25rem] w-full text-base">
-                {loading ? "Creating account…" : "Create my account"}
+                {loading ? L("Creating account…", "অ্যাকাউন্ট তৈরি হচ্ছে…") : L("Create my account", "অ্যাকাউন্ট তৈরি করুন")}
               </Button>
               {resend}
             </form>
@@ -504,21 +510,21 @@ export default function Login({ mode = "login" }) {
               <div className="mb-5 grid size-14 place-items-center rounded-2xl bg-secondary text-xl text-primary">
                 <FontAwesomeIcon icon={faKey} />
               </div>
-              <h1 className="text-[1.75rem] leading-tight font-extrabold">Forgot your password?</h1>
-              <p className="pb-3 text-muted-foreground">No problem. Enter your email and we'll send you a code to set a new one.</p>
+              <h1 className="text-[1.75rem] leading-tight font-extrabold">{L("Forgot your password?", "পাসওয়ার্ড ভুলে গেছেন?")}</h1>
+              <p className="pb-3 text-muted-foreground">{L("No problem. Enter your email and we'll send you a code to set a new one.", "সমস্যা নেই। ইমেইল দিন, নতুন পাসওয়ার্ডের জন্য কোড পাঠাব।")}</p>
               <Field
                 icon={faEnvelope}
                 type="email"
                 inputMode="email"
                 autoComplete="email"
-                placeholder="Email address"
+                placeholder={L("Email address", "ইমেইল ঠিকানা")}
                 value={email}
                 onChange={(e) => (setEmail(e.target.value), setError(""))}
-                aria-label="Email address"
+                aria-label={L("Email address", "ইমেইল ঠিকানা")}
               />
               {errorText}
               <Button type="submit" disabled={!validEmail || loading} className="h-[3.25rem] w-full text-base">
-                {loading ? "Sending code…" : "Send me a code"}
+                {loading ? L("Sending code…", "কোড পাঠানো হচ্ছে…") : L("Send me a code", "কোড পাঠান")}
               </Button>
             </form>
           )}
@@ -529,20 +535,20 @@ export default function Login({ mode = "login" }) {
               <div className="mb-5 grid size-14 place-items-center rounded-2xl bg-secondary text-xl text-primary">
                 <FontAwesomeIcon icon={faEnvelopeOpenText} />
               </div>
-              <h1 className="text-[1.75rem] leading-tight font-extrabold">Set a new password</h1>
+              <h1 className="text-[1.75rem] leading-tight font-extrabold">{L("Set a new password", "নতুন পাসওয়ার্ড দিন")}</h1>
               <p className="mt-1.5 text-muted-foreground">
-                Enter the code we sent to <b className="break-all text-foreground">{cleanEmail}</b>
+                {L("Enter the code we sent to", "কোডটি লিখুন, পাঠানো হয়েছে:")} <b className="break-all text-foreground">{cleanEmail}</b>
               </p>
               <div className="mt-6">
                 <CodeBoxes value={code} onChange={(v) => (setCode(v), setError(""))} error={!!error} />
               </div>
               <div className="mt-6 space-y-3">
-                <PasswordField value={password} onChange={(e) => setPassword(e.target.value)} placeholder="New password" autoComplete="new-password" />
-                <p className={cn("text-xs", password && !passwordOk ? "text-destructive" : "text-muted-foreground")}>At least {MIN_PASSWORD} characters.</p>
+                <PasswordField value={password} onChange={(e) => setPassword(e.target.value)} placeholder={L("New password", "নতুন পাসওয়ার্ড")} autoComplete="new-password" />
+                <p className={cn("text-xs", password && !passwordOk ? "text-destructive" : "text-muted-foreground")}>{L(`At least ${MIN_PASSWORD} characters.`, `কমপক্ষে ${num(MIN_PASSWORD)} অক্ষর।`)}</p>
                 {errorText}
               </div>
               <Button type="submit" disabled={!codeFull || !passwordOk || loading} className="mt-5 h-[3.25rem] w-full text-base">
-                {loading ? "Saving…" : "Save & sign in"}
+                {loading ? L("Saving…", "সংরক্ষণ হচ্ছে…") : L("Save & sign in", "সংরক্ষণ ও সাইন ইন")}
               </Button>
               {resend}
             </form>

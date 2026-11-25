@@ -11,21 +11,21 @@ use Illuminate\Support\Collection;
 class CatalogSeeder extends Seeder
 {
     /**
-     * BCS preliminary marks per subject (200 total).
+     * BCS preliminary marks per subject (200 total), as changed for the 50th BCS.
      *
      * @var array<string, int>
      */
-    private const BCS_MARKS = [
-        'bangla' => 35,
-        'english' => 35,
-        'bd-affairs' => 30,
-        'intl-affairs' => 20,
-        'math' => 15,
+    public const BCS_MARKS = [
+        'bangla' => 30,
+        'english' => 30,
+        'bd-affairs' => 25,
+        'intl-affairs' => 25,
+        'math' => 20,
         'mental' => 15,
         'science' => 15,
         'ict' => 15,
         'geography' => 10,
-        'ethics' => 10,
+        'ethics' => 15,
     ];
 
     /**

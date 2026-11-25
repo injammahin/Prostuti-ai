@@ -20,12 +20,15 @@ return [
     // Special BCS (held for particular cadres, e.g. health). Shown with a "Special" tag.
     'special' => [32, 39, 42, 48],
 
-    // Every historical paper is available with full 200 questions and full 200 marks.
-    'two_hundred_from' => 10,
-    'sizes' => [],
+    // Papers had 200 questions from the 35th BCS on and 100 before that. Seed files pad the older papers to 200 with
+    // practice questions; those are not part of the paper and never shown as such.
+    'two_hundred_from' => 35,
 
-    // Full 200 marks for all papers.
-    'marks' => [],
+    // Papers with a different number of questions.
+    'sizes' => [19 => 50],
+
+    // Full marks, where they differ from the number of questions.
+    'marks' => [19 => 100],
 
     // Preliminary exam dates (Y-m-d) shown on a paper's header, where known.
     'dates' => [

@@ -6,27 +6,28 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { NoticeCard, PageHeader, Segmented, EmptyState } from "@/components/shared"
 import { notices, exams, noticeTypes } from "@/lib/data"
+import { examName } from "@/lib/format"
 import { useApp } from "@/lib/app-context"
 import { cn } from "@/lib/utils"
 import { useNoticesVersion } from "@/lib/notices-store"
 import { useSeo } from "@/lib/seo"
 
 const typeFilters = [
-  { value: "all", label: "All" },
-  { value: "circular", label: "Circulars" },
-  { value: "schedule", label: "Exam dates" },
-  { value: "admit", label: "Admit cards" },
-  { value: "result", label: "Results" },
-  { value: "deadline", label: "Deadlines" },
-  { value: "syllabus", label: "Syllabus" },
+  { value: "all", label: "All", bn: "সব" },
+  { value: "circular", label: "Circulars", bn: "বিজ্ঞপ্তি" },
+  { value: "schedule", label: "Exam dates", bn: "পরীক্ষার তারিখ" },
+  { value: "admit", label: "Admit cards", bn: "প্রবেশপত্র" },
+  { value: "result", label: "Results", bn: "ফলাফল" },
+  { value: "deadline", label: "Deadlines", bn: "শেষ তারিখ" },
+  { value: "syllabus", label: "Syllabus", bn: "সিলেবাস" },
 ]
 
 export default function Notices({ inApp = false }) {
   const noticesVersion = useNoticesVersion()
-  const { followed, user } = useApp()
+  const { followed, mainExam, user, L, num } = useApp()
   const [type, setType] = useState("all")
-  const [exam, setExam] = useState("all")
-  const [mine, setMine] = useState(inApp)
+  const [exam, setExam] = useState(inApp ? mainExam : "all")
+  const [mine, setMine] = useState(false)
   const [q, setQ] = useState("")
 
   useSeo({
@@ -42,7 +43,7 @@ export default function Notices({ inApp = false }) {
           (type === "all" || n.type === type) &&
           (exam === "all" || n.exam === exam) &&
           (!mine || followed.includes(n.exam)) &&
-          (!q || (n.title + n.org + n.summary).toLowerCase().includes(q.toLowerCase()))
+          (!q || [n.title, n.title_bn, n.org, n.summary, n.summary_bn].join(" ").toLowerCase().includes(q.toLowerCase()))
       ),
     [type, exam, mine, q, followed, noticesVersion]
   )
@@ -55,7 +56,7 @@ export default function Notices({ inApp = false }) {
           <Input
             value={q}
             onChange={(e) => setQ(e.target.value)}
-            placeholder="Search circulars, organisations…"
+            placeholder={L("Search circulars, organisations…", "বিজ্ঞপ্তি বা প্রতিষ্ঠান খুঁজুন…")}
             className="h-11 rounded-full bg-card pl-10 text-base md:text-sm"
             aria-label="Search notices"
           />
@@ -65,7 +66,7 @@ export default function Notices({ inApp = false }) {
             </button>
           )}
         </div>
-        <Segmented options={typeFilters} value={type} onChange={setType} />
+        <Segmented options={typeFilters.map((f) => ({ value: f.value, label: L(f.label, f.bn) }))} value={type} onChange={setType} />
         <div className="flex flex-wrap items-center gap-2">
           <select
             value={exam}
@@ -73,10 +74,10 @@ export default function Notices({ inApp = false }) {
             className="h-9 rounded-full border bg-card px-3 text-sm"
             aria-label="Filter by exam"
           >
-            <option value="all">All exams</option>
+            <option value="all">{L("All exams", "সব পরীক্ষা")}</option>
             {exams.map((e) => (
               <option key={e.slug} value={e.slug}>
-                {e.name}
+                {examName(e)}
               </option>
             ))}
           </select>
@@ -90,10 +91,10 @@ export default function Notices({ inApp = false }) {
               aria-pressed={mine}
             >
               <FontAwesomeIcon icon={faBell} className="mr-1.5" />
-              My exams
+              {L("My exams", "আমার পরীক্ষা")}
             </button>
           )}
-          <span className="ml-auto text-xs text-muted-foreground">{list.length} notices</span>
+          <span className="ml-auto text-xs text-muted-foreground">{L(`${list.length} notices`, `${num(list.length)}টি নোটিশ`)}</span>
         </div>
       </div>
 
@@ -101,14 +102,16 @@ export default function Notices({ inApp = false }) {
         {list.length ? (
           list.map((n) => <NoticeCard key={n.slug} n={n} base={inApp ? "/app/notices" : "/notices"} />)
         ) : (
-          <EmptyState icon={<FontAwesomeIcon icon={faMagnifyingGlass} />} title="No notices match" text="Try a different filter or search term." />
+          <EmptyState icon={<FontAwesomeIcon icon={faMagnifyingGlass} />} title={L("No notices match", "কোনো নোটিশ পাওয়া যায়নি")} text={L("Try a different filter or search term.", "অন্য ফিল্টার বা শব্দ দিয়ে চেষ্টা করুন।")} />
         )}
       </div>
 
       <p className="mt-6 flex gap-2 rounded-xl bg-muted p-3 text-xs leading-relaxed text-muted-foreground">
         <FontAwesomeIcon icon={faCircleInfo} className="mt-0.5" />
-        Summaries are written by our team. Always confirm on the official website and apply only through the official portal. bd3schools is not affiliated with
-        BPSC or any ministry.
+        {L(
+          "Summaries are written by our team. Always confirm on the official website and apply only through the official portal. bd3schools is not affiliated with BPSC or any ministry.",
+          "সারসংক্ষেপ আমাদের টিমের লেখা। সবসময় অফিসিয়াল ওয়েবসাইটে যাচাই করুন এবং শুধু অফিসিয়াল পোর্টালেই আবেদন করুন। bd3schools বিপিএসসি বা কোনো মন্ত্রণালয়ের সঙ্গে যুক্ত নয়।"
+        )}
       </p>
     </>
   )
@@ -117,12 +120,12 @@ export default function Notices({ inApp = false }) {
     return (
       <>
         <PageHeader
-          title="Notice board"
-          subtitle="Verified circulars, dates and results"
+          title={L("Notice board", "নোটিশ বোর্ড")}
+          subtitle={L("Verified circulars, dates and results", "যাচাইকৃত বিজ্ঞপ্তি, তারিখ ও ফলাফল")}
           action={
             <Button asChild variant="outline" size="sm" className="h-9 rounded-full">
               <Link to="/app/calendar">
-                <FontAwesomeIcon icon={faCalendarDays} /> <span className="hidden sm:inline">Calendar</span>
+                <FontAwesomeIcon icon={faCalendarDays} /> <span className="hidden sm:inline">{L("Calendar", "ক্যালেন্ডার")}</span>
               </Link>
             </Button>
           }
@@ -135,12 +138,15 @@ export default function Notices({ inApp = false }) {
   return (
     <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">
       <PageHeader
-        title="Govt job notice board"
-        subtitle={`Circulars, deadlines, admit cards and results — ${Object.keys(noticeTypes).length - 1} notice types, all verified.`}
+        title={L("Govt job notice board", "সরকারি চাকরির নোটিশ বোর্ড")}
+        subtitle={L(
+          `Circulars, deadlines, admit cards and results — ${Object.keys(noticeTypes).length - 1} notice types, all verified.`,
+          "বিজ্ঞপ্তি, শেষ তারিখ, প্রবেশপত্র ও ফলাফল — সব যাচাই করা।"
+        )}
         action={
           <Button asChild variant="outline" size="sm" className="h-9 rounded-full">
             <Link to="/calendar">
-              <FontAwesomeIcon icon={faCalendarDays} /> <span className="hidden sm:inline">Calendar</span>
+              <FontAwesomeIcon icon={faCalendarDays} /> <span className="hidden sm:inline">{L("Calendar", "ক্যালেন্ডার")}</span>
             </Link>
           </Button>
         }
@@ -148,9 +154,9 @@ export default function Notices({ inApp = false }) {
       {!user && (
         <div className="mb-4 flex items-center gap-3 rounded-2xl bg-secondary p-3.5 text-sm text-secondary-foreground">
           <FontAwesomeIcon icon={faBell} className="text-lg" />
-          <p className="flex-1">Get free alerts before deadlines close.</p>
+          <p className="flex-1">{L("Get free alerts before deadlines close.", "শেষ তারিখের আগেই ফ্রি অ্যালার্ট পান।")}</p>
           <Button asChild size="sm" className="rounded-full">
-            <Link to="/login">Turn on</Link>
+            <Link to="/login">{L("Turn on", "চালু করুন")}</Link>
           </Button>
         </div>
       )}

@@ -5,10 +5,12 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\QuestionResource;
 use App\Models\Question;
+use App\Services\PastPapers;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Support\Collection;
 
 /**
- * Previous BCS preliminary papers, newest first, with 200 questions for each paper.
+ * Previous BCS preliminary papers, newest first.
  */
 class PastPaperController extends Controller
 {
@@ -16,142 +18,97 @@ class PastPaperController extends Controller
 
     public function index(): JsonResponse
     {
-        $first = (int) config('bcs_papers.first', 10);
-        $latest = (int) config('bcs_papers.latest', 48);
-        $special = config('bcs_papers.special', [32, 39, 42, 48]);
+        $ready = PastPapers::index()->countBy('paper');
+        $all = $ready->sum();
 
-        $papers = collect(range($latest, $first))->map(function (int $number) use ($special): array {
-            $source = self::paperSource($number);
-
-            return [
-                'number' => $number,
-                'source' => $source,
-                'name' => $source,
-                'name_bn' => self::banglaOrdinal($number).' বিসিএস',
-                'special' => in_array($number, $special, true),
-                'questions' => 200,
-                'total' => 200,
-                'full_marks' => 200,
-                'exam_date' => config('bcs_papers.dates')[$number] ?? null,
-            ];
-        });
-
-        return response()->json(['papers' => $papers->values()]);
+        return response()->json([
+            'papers' => collect(PastPapers::numbers())
+                ->map(fn (int $number): array => self::paper($number, $own = $ready[$number] ?? 0, max(0, min(PastPapers::FULL_SET - $own, $all - $own))))
+                ->values(),
+        ]);
     }
 
     /**
-     * One paper with every question, its correct answer and explanation (the "solutions" view).
+     * One paper with every question, its correct answer and explanation (the "solutions" view), plus the questions
+     * from other papers that complete it to a full set.
      */
     public function show(int $number): JsonResponse
     {
         abort_unless($number >= (int) config('bcs_papers.first') && $number <= (int) config('bcs_papers.latest'), 404);
 
-        $source = self::paperSource($number);
-
         $questions = Question::query()
             ->live()
             ->with('subject')
-            ->onPaper($source)
+            ->onPaper(PastPapers::source($number))
             ->orderBy('id')
             ->get()
-            ->map(fn (Question $question): array => [
-                ...(new QuestionResource($question))->revealAnswer()->resolve(),
-                'number' => self::numberOnPaper($question),
-            ])
-            ->sortBy(fn (array $question): int => $question['number'] ?? PHP_INT_MAX);
+            ->sortBy(fn (Question $question): int => $question->numberOnPaper() ?? PHP_INT_MAX)
+            ->values();
 
-        // If database has fewer than 200 questions, load the complete 200 verified questions from seeder file
-        if ($questions->count() < 200) {
-            $jsonFile = database_path("seeders/data/questions-{$number}th-bcs.json");
-            if (!file_exists($jsonFile)) {
-                $matches = glob(database_path("seeders/data/questions-*{$number}*-bcs.json"));
-                if (!empty($matches)) {
-                    $jsonFile = $matches[0];
-                }
-            }
-
-            if (file_exists($jsonFile)) {
-                $raw = json_decode(file_get_contents($jsonFile), true);
-                if (is_array($raw) && count($raw) === 200) {
-                    $questions = collect($raw)->map(function (array $q, int $idx) use ($number, $source): array {
-                        $num = $idx + 1;
-                        $ans = $q['answer'] ?? $q['answer_index'] ?? 0;
-                        return [
-                            'id' => $q['ref'] ?? "bcs{$number}_q{$num}",
-                            'number' => $num,
-                            'ref' => $q['ref'] ?? "bcs{$number}_q{$num}",
-                            'exam' => $q['exam'] ?? 'bcs-general',
-                            'subject' => [
-                                'name' => $q['subject'] ?? 'General',
-                                'name_bn' => 'সাধারণ',
-                                'slug' => 'general',
-                            ],
-                            'topic' => $q['topic'] ?? '',
-                            'difficulty' => $q['difficulty'] ?? 'medium',
-                            'source' => $source,
-                            'type' => 'mcq',
-                            'lang' => $q['lang'] ?? 'bn',
-                            'body' => $q['body'] ?? '',
-                            'options' => $q['options'] ?? [],
-                            'answer' => $ans,
-                            'answer_index' => $ans,
-                            'explanation' => $q['explanation'] ?? '',
-                            'marks' => 1,
-                            'negative_marks' => 0.5,
-                            'cancelled' => false,
-                        ];
-                    });
-                }
-            }
-        }
+        $fillers = Question::query()->live()->with('subject')->whereIn('id', PastPapers::fillers($number))->orderBy('id')->get();
+        $repeats = PastPapers::repeats();
 
         return response()->json([
-            'paper' => [
-                'number' => $number,
-                'source' => $source,
-                'name' => $source,
-                'name_bn' => self::banglaOrdinal($number).' বিসিএস',
-                'special' => in_array($number, config('bcs_papers.special', []), true),
-                'questions' => 200,
-                'total' => 200,
-                'full_marks' => 200,
-                'exam_date' => config('bcs_papers.dates')[$number] ?? null,
-            ],
-            'questions' => $questions->values(),
+            'paper' => self::paper($number, $questions->count(), $fillers->count()),
+            'questions' => $questions->map(fn (Question $question): array => self::question($question, $number, $repeats)),
+            'extra_questions' => $fillers->map(fn (Question $question): array => self::question($question, $number, $repeats)),
         ]);
     }
 
     /**
-     * The "source" text used on questions for a BCS paper, e.g. 47 → "47th BCS".
+     * `questions` is how many of the paper's own questions are ready; `total` is how many the real paper had;
+     * `shown` also counts the questions added from other papers.
+     *
+     * @return array<string, mixed>
      */
-    public static function paperSource(int $number): string
+    private static function paper(int $number, int $ready, int $added): array
     {
-        $suffix = in_array($number % 100, [11, 12, 13], true)
-            ? 'th'
-            : match ($number % 10) {
-                1 => 'st',
-                2 => 'nd',
-                3 => 'rd',
-                default => 'th',
-            };
-
-        return "{$number}{$suffix} BCS";
+        return [
+            'number' => $number,
+            'source' => PastPapers::source($number),
+            'name' => PastPapers::source($number),
+            'name_bn' => self::banglaOrdinal($number).' বিসিএস',
+            'special' => in_array($number, config('bcs_papers.special', []), true),
+            'questions' => $ready,
+            'added' => $added,
+            'shown' => $ready + $added,
+            'total' => PastPapers::size($number),
+            'full_marks' => config('bcs_papers.marks')[$number] ?? PastPapers::size($number),
+            'exam_date' => config('bcs_papers.dates')[$number] ?? null,
+        ];
     }
 
     /**
-     * How many questions (= marks) the paper has: 200 for all papers.
+     * @param  Collection<string, list<int>>  $repeats
+     * @return array<string, mixed>
      */
-    public static function paperSize(int $number): int
+    private static function question(Question $question, int $number, Collection $repeats): array
     {
-        return 200;
+        $ownPaper = (int) $question->source;
+        $papers = $repeats[PastPapers::textKey($question->body)] ?? [];
+
+        return [
+            ...(new QuestionResource($question))->revealAnswer()->resolve(),
+            'number' => $ownPaper === $number ? $question->numberOnPaper() : null,
+            'from' => $ownPaper === $number ? null : self::label($ownPaper),
+            'also_in' => collect($papers)
+                ->reject(fn (int $paper): bool => $paper === $ownPaper)
+                ->map(fn (int $paper): array => self::label($paper))
+                ->values(),
+        ];
     }
 
     /**
-     * The question's number on the printed paper, read from its ref ("bcs35_q17" → 17).
+     * @return array{number: int, name: string, name_bn: string, year: int|null}
      */
-    private static function numberOnPaper(Question $question): ?int
+    private static function label(int $number): array
     {
-        return preg_match('/_q(\d+)$/', (string) $question->ref, $matches) ? (int) $matches[1] : null;
+        return [
+            'number' => $number,
+            'name' => PastPapers::source($number),
+            'name_bn' => self::banglaOrdinal($number).' বিসিএস',
+            'year' => PastPapers::year($number),
+        ];
     }
 
     /**

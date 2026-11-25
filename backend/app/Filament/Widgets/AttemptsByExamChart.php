@@ -42,7 +42,7 @@ class AttemptsByExamChart extends ChartWidget
         return [
             'datasets' => [[
                 'data' => $rows->pluck('total')->map(fn ($v) => (int) $v)->all(),
-                'backgroundColor' => ['#1b63a8', '#22c55e', '#f59e0b', '#8b5cf6', '#ec4899', '#14b8a6', '#94a3b8'],
+                'backgroundColor' => ['#0f2a55', '#1b63a8', '#4a90d9', '#93bfe8', '#64748b', '#94a3b8', '#cbd5e1'],
                 'borderWidth' => 0,
             ]],
             'labels' => $rows->pluck('exam')->all(),

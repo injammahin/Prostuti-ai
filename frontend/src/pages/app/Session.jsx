@@ -35,33 +35,71 @@ const titles = {
 
 export function Option({ i, text, state, onClick, disabled, lang }) {
   const { L } = useApp()
-  const styles = {
-    idle: "hover:border-primary/40 hover:bg-secondary/40",
-    selected: "border-primary bg-secondary/70",
-    correct: "border-success bg-success/8",
-    wrong: "border-destructive bg-destructive/6",
-    dim: "opacity-55",
+
+  const handleClick = (e) => {
+    if (disabled) return
+    try {
+      if (typeof navigator !== "undefined" && navigator?.vibrate) {
+        navigator.vibrate(15)
+      }
+    } catch {}
+    onClick?.(e)
   }
+
+  const styles = {
+    idle: "border-border/80 bg-card hover:border-primary/50 hover:bg-primary/5 active:bg-primary/10 active:border-primary active:scale-[0.985]",
+    selected: "border-primary bg-primary/10 ring-2 ring-primary/40 shadow-xs font-semibold scale-[1.01] active:scale-[0.99]",
+    correct: "border-success bg-success/10 ring-2 ring-success/30 font-semibold shadow-xs scale-[1.01]",
+    wrong: "border-destructive bg-destructive/10 ring-2 ring-destructive/30 font-semibold shadow-xs scale-[1.01]",
+    dim: "opacity-45 border-border/50",
+  }
+
   return (
     <button
-      onClick={onClick}
+      type="button"
+      onClick={handleClick}
       disabled={disabled}
-      className={cn("group flex w-full items-center gap-3.5 rounded-lg border bg-card p-3.5 text-left transition-colors disabled:cursor-default md:p-4", styles[state])}
+      className={cn(
+        "group flex w-full items-center gap-3.5 rounded-xl border p-3.5 text-left transition-all duration-150 select-none touch-manipulation cursor-pointer",
+        "focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2",
+        disabled && "cursor-default active:scale-100",
+        styles[state]
+      )}
     >
       <span
         className={cn(
-          "grid size-8 shrink-0 place-items-center rounded-md border bg-muted/60 text-sm font-semibold text-muted-foreground transition-colors",
-          state === "idle" && "group-hover:border-primary/40 group-hover:text-primary",
-          state === "correct" && "border-success bg-success text-white",
-          state === "wrong" && "border-destructive bg-destructive text-white",
-          state === "selected" && "border-primary bg-primary text-primary-foreground"
+          "grid size-8 shrink-0 place-items-center rounded-lg border text-sm font-bold transition-all duration-150",
+          state === "idle" && "border-border bg-muted/60 text-muted-foreground group-hover:border-primary/60 group-hover:text-primary group-active:scale-95 group-active:bg-primary group-active:text-white",
+          state === "selected" && "border-primary bg-primary text-primary-foreground shadow-xs scale-105",
+          state === "correct" && "border-success bg-success text-white shadow-xs scale-105",
+          state === "wrong" && "border-destructive bg-destructive text-white shadow-xs scale-105",
+          state === "dim" && "border-border bg-muted/40 text-muted-foreground/60"
         )}
       >
-        {state === "correct" ? <FontAwesomeIcon icon={faCheck} /> : state === "wrong" ? <FontAwesomeIcon icon={faXmark} /> : String.fromCharCode(65 + i)}
+        {state === "correct" ? (
+          <FontAwesomeIcon icon={faCheck} className="text-xs" />
+        ) : state === "wrong" ? (
+          <FontAwesomeIcon icon={faXmark} className="text-xs" />
+        ) : (
+          String.fromCharCode(65 + i)
+        )}
       </span>
-      <span className={cn("flex-1 text-[0.95rem]", lang !== "en" && "bn")}>{text}</span>
-      {state === "correct" && <span className="text-xs font-semibold text-success">{L("Correct answer", "সঠিক উত্তর")}</span>}
-      {state === "wrong" && <span className="text-xs font-semibold text-destructive">{L("Your answer", "আপনার উত্তর")}</span>}
+      <span className={cn("flex-1 text-[0.95rem] leading-relaxed", lang !== "en" && "bn")}>{text}</span>
+      {state === "selected" && (
+        <span className="shrink-0 size-2.5 rounded-full bg-primary ring-4 ring-primary/20 animate-pulse" />
+      )}
+      {state === "correct" && (
+        <span className="text-xs font-bold text-success flex items-center gap-1">
+          <FontAwesomeIcon icon={faCheck} className="text-[10px]" />
+          {L("Correct answer", "সঠিক উত্তর")}
+        </span>
+      )}
+      {state === "wrong" && (
+        <span className="text-xs font-bold text-destructive flex items-center gap-1">
+          <FontAwesomeIcon icon={faXmark} className="text-[10px]" />
+          {L("Your answer", "আপনার উত্তর")}
+        </span>
+      )}
     </button>
   )
 }
@@ -414,7 +452,7 @@ export default function Session() {
   )
 
   return (
-    <div className="mx-auto w-full max-w-6xl pt-4 pb-28 md:pt-6 lg:pb-10">
+    <div className="mx-auto w-full max-w-6xl pt-4 pb-10 md:pt-6">
       {/* Session header */}
       <div className="card mb-5 flex items-center gap-3 p-3 md:gap-4 md:px-5">
         <Link
@@ -454,7 +492,7 @@ export default function Session() {
             <span className="text-sm font-semibold text-primary">{L(`Question ${idx + 1}`, `প্রশ্ন ${num(idx + 1)}`)}</span>
             <span className="text-muted-foreground/50">·</span>
             {q.topic && <Pill tone="primary">{q.topic}</Pill>}
-            {q.source && <Pill>{q.source}</Pill>}
+            {q.source && <Pill>{q.source_year ? `${q.source} (${num(String(q.source_year))})` : q.source}</Pill>}
             <div className="ml-auto flex gap-1">
               <button
                 onClick={() => toggleBookmark(q.id)}
@@ -494,8 +532,8 @@ export default function Session() {
             </div>
           )}
 
-          {/* Desktop footer actions */}
-          <div className="mt-8 hidden items-center border-t pt-5 lg:flex">{actions}</div>
+          {/* Question action buttons right under question card */}
+          <div className="mt-6 flex items-center border-t pt-5">{actions}</div>
         </div>
 
         {/* Right sidebar info */}
@@ -559,11 +597,7 @@ export default function Session() {
         </aside>
       </div>
 
-      {/* Mobile sticky actions bar */}
-      <div className="pb-safe fixed inset-x-0 bottom-0 z-20 flex items-center border-t bg-background/95 p-3 backdrop-blur lg:hidden">
-        {actions}
-      </div>
-
+      {/* Report and AI sheets */}
       <ReportDialog open={report} onOpenChange={setReport} questionId={q.id} />
       <AskAiSheet open={ai} onOpenChange={setAi} question={q} />
     </div>

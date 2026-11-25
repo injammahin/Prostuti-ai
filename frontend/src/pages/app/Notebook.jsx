@@ -11,8 +11,8 @@ import { relDays } from "@/lib/format"
 import { cn } from "@/lib/utils"
 
 export default function Notebook() {
-  const { L, num } = useApp()
-  const { data, loading, error, reload } = useApi(() => mistakesApi.list(), [])
+  const { mainExam, L, num } = useApp()
+  const { data, loading, error, reload } = useApi(() => mistakesApi.list(mainExam), [mainExam])
   const [open, setOpen] = useState(null)
   const mistakes = data?.mistakes ?? []
   const due = data?.due_count ?? 0

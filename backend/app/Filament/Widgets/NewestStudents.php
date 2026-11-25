@@ -11,7 +11,7 @@ use Filament\Widgets\TableWidget;
 
 class NewestStudents extends TableWidget
 {
-    protected static ?int $sort = 8;
+    protected static ?int $sort = 9;
 
     protected static ?string $heading = 'Newest students';
 

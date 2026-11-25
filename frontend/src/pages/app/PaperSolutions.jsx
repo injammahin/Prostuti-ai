@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { useMemo, useState, useEffect } from "react"
 import { Link, useParams } from "react-router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -47,6 +47,41 @@ export default function PaperSolutions() {
   const [revealed, setRevealed] = useState({})
   const [openExplanations, setOpenExplanations] = useState({})
   const [copiedId, setCopiedId] = useState(null)
+  const [filterBarVisible, setFilterBarVisible] = useState(true)
+  const [isSearchFocused, setIsSearchFocused] = useState(false)
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY
+    let ticking = false
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY
+
+          // Always show when near the top of the page (within 60px) or when search input is focused
+          if (currentScrollY < 60 || isSearchFocused) {
+            setFilterBarVisible(true)
+          } else {
+            const diff = currentScrollY - lastScrollY
+            // Scrolling down by more than 8px -> hide on mobile
+            if (diff > 8) {
+              setFilterBarVisible(false)
+            } else if (diff < -8) {
+              // Scrolling up by more than 8px -> show on mobile
+              setFilterBarVisible(true)
+            }
+          }
+          lastScrollY = currentScrollY
+          ticking = false
+        })
+        ticking = true
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true })
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [isSearchFocused])
   const [bookmarks, setBookmarks] = useState(() => {
     try {
       return JSON.parse(localStorage.getItem("bd3schools:bookmarks") || "[]")
@@ -199,7 +234,14 @@ export default function PaperSolutions() {
       {paper && questions.length > 0 && (
         <>
           {/* Sticky filter bar so 200 questions stay easy to move through */}
-          <div className="sticky top-16 z-10 -mx-1 space-y-2 bg-background/95 px-1 py-2 backdrop-blur-md md:top-[4.5rem]">
+          <div
+            className={cn(
+              "sticky top-16 z-10 -mx-1 space-y-2 bg-background/95 px-1 py-2 backdrop-blur-md transition-all duration-300 ease-in-out md:top-[4.5rem] md:translate-y-0 md:opacity-100 md:pointer-events-auto",
+              filterBarVisible
+                ? "translate-y-0 opacity-100 pointer-events-auto"
+                : "-translate-y-[120%] opacity-0 pointer-events-none"
+            )}
+          >
             <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
               <div className="no-scrollbar -mx-4 flex gap-1.5 overflow-x-auto px-4 md:mx-0 md:px-0">
                 <SubjectChip active={subject === "all"} onClick={() => setSubject("all")} label={L("All", "সব")} count={num(questions.length)} />
@@ -211,6 +253,8 @@ export default function PaperSolutions() {
                 <FontAwesomeIcon icon={faMagnifyingGlass} className="pointer-events-none absolute top-1/2 left-3.5 -translate-y-1/2 text-xs text-muted-foreground" />
                 <input
                   value={searchQuery}
+                  onFocus={() => setIsSearchFocused(true)}
+                  onBlur={() => setIsSearchFocused(false)}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder={L("Search, or type a question no.", "খুঁজুন বা প্রশ্ন নম্বর লিখুন")}
                   className="h-9 w-full rounded-full border bg-card pr-8 pl-9 text-base outline-none focus:border-primary md:text-xs"
@@ -278,6 +322,14 @@ export default function PaperSolutions() {
                   <span className="text-xs font-medium text-muted-foreground">{L("−0.5 per wrong", "ভুলে −০.৫")}</span>
                   <span>{L(`Time: ${paperSize >= 200 ? "2 hours" : "1 hour"}`, `সময়: ${paperSize >= 200 ? "২ ঘণ্টা" : "১ ঘণ্টা"}`)}</span>
                 </div>
+                {paper.added > 0 && (
+                  <p className="bn mx-auto mt-3 max-w-lg rounded-lg bg-secondary/70 px-3 py-2 text-xs font-medium text-secondary-foreground">
+                    {L(
+                      `${num(paper.own)} questions from this paper and ${num(paper.added)} from other BCS papers, each marked with its BCS and year.`,
+                      `এই প্রশ্নপত্রের ${num(paper.own)}টি এবং অন্য বিসিএসের ${num(paper.added)}টি প্রশ্ন; প্রতিটিতে বিসিএস ও সাল উল্লেখ আছে।`
+                    )}
+                  </p>
+                )}
                 {questions.length < paperSize * COMPLETE_SHARE && (
                   <p className="mx-auto mt-3 max-w-lg rounded-lg bg-amber-500/10 px-3 py-2 text-xs font-medium text-amber-700 dark:text-amber-300">
                     {L(
@@ -313,7 +365,7 @@ export default function PaperSolutions() {
                         q={q}
                         L={L}
                         num={num}
-                        paperTag={paperTag}
+                        paperTag={q.from ? sourceLabel(q.from, L, num) : paperTag}
                         showAnswer={showAnswers || userChoices[q.id] !== undefined || !!revealed[q.id]}
                         selfTest={!showAnswers}
                         choice={userChoices[q.id]}
@@ -356,6 +408,12 @@ function SubjectChip({ active, onClick, label, count }) {
   )
 }
 
+/** "41st BCS (2021)" */
+function sourceLabel(paper, L, num) {
+  const name = L(paper.name, paper.name_bn)
+  return paper.year ? `${name} (${num(String(paper.year))})` : name
+}
+
 /** One question as it appears on the printed sheet. */
 function QuestionItem({
   q,
@@ -387,6 +445,21 @@ function QuestionItem({
             {q.body} <span className="bn text-[0.7rem] font-normal whitespace-nowrap text-muted-foreground italic">[{paperTag}]</span>
           </p>
 
+          {(q.from || q.also_in?.length > 0) && (
+            <p className="bn mt-1 flex flex-wrap gap-1.5 text-[0.7rem]">
+              {q.from && (
+                <span className="rounded bg-amber-500/12 px-1.5 py-px font-semibold text-amber-700 dark:text-amber-300">
+                  {L(`From ${sourceLabel(q.from, L, num)}`, `${sourceLabel(q.from, L, num)} থেকে`)}
+                </span>
+              )}
+              {q.also_in?.length > 0 && (
+                <span className="rounded bg-primary/10 px-1.5 py-px font-semibold text-primary">
+                  {L("Also asked in", "আরও এসেছে")}: {q.also_in.map((p) => sourceLabel(p, L, num)).join(", ")}
+                </span>
+              )}
+            </p>
+          )}
+
           <div className={cn("mt-1.5 grid gap-x-4 gap-y-0.5", longOptions ? "grid-cols-1" : "grid-cols-2")}>
             {q.options.map((opt, i) => {
               const isCorrect = i === q.answer_index
@@ -396,13 +469,20 @@ function QuestionItem({
                   key={i}
                   type="button"
                   disabled={!selfTest || choice !== undefined}
-                  onClick={() => onChoose(i)}
+                  onClick={() => {
+                    try {
+                      if (typeof navigator !== "undefined" && navigator?.vibrate) {
+                        navigator.vibrate(15)
+                      }
+                    } catch {}
+                    onChoose(i)
+                  }}
                   className={cn(
-                    "flex items-start gap-1.5 rounded-md px-1.5 py-1 text-left text-sm transition-colors disabled:cursor-default",
-                    selfTest && choice === undefined && "hover:bg-primary/8",
-                    showAnswer && isCorrect && "bg-emerald-500/12 font-semibold text-emerald-700 dark:text-emerald-300",
-                    showAnswer && isChosen && !isCorrect && "bg-rose-500/12 text-rose-700 line-through decoration-rose-500/60 dark:text-rose-300",
-                    !showAnswer && isChosen && "bg-primary/10"
+                    "flex items-start gap-1.5 rounded-lg px-2.5 py-1.5 text-left text-sm transition-all duration-150 disabled:cursor-default touch-manipulation select-none active:scale-[0.985]",
+                    selfTest && choice === undefined && "hover:bg-primary/10 hover:border-primary/40 active:bg-primary/20",
+                    showAnswer && isCorrect && "bg-emerald-500/15 ring-1 ring-emerald-500/30 font-semibold text-emerald-700 dark:text-emerald-300",
+                    showAnswer && isChosen && !isCorrect && "bg-rose-500/15 ring-1 ring-rose-500/30 text-rose-700 line-through decoration-rose-500/60 dark:text-rose-300",
+                    !showAnswer && isChosen && "border border-primary bg-primary/15 ring-2 ring-primary/40 font-semibold shadow-xs"
                   )}
                 >
                   <span className="bn shrink-0 font-semibold">{LETTERS[i]}.</span>

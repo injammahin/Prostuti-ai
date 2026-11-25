@@ -11,9 +11,9 @@ use Filament\Widgets\TableWidget;
 
 class LatestActivity extends TableWidget
 {
-    protected static ?int $sort = 7;
+    protected static ?int $sort = 8;
 
-    protected int|string|array $columnSpan = 'full';
+    protected int|string|array $columnSpan = ['md' => 2, 'xl' => 2];
 
     protected static ?string $heading = 'Live activity';
 

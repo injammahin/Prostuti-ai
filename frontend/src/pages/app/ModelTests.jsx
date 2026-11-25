@@ -34,6 +34,9 @@ import { PageHeader, HeroCard, Pill, IconBox } from "@/components/shared"
 import { useApp } from "@/lib/app-context"
 import { useApi } from "@/lib/use-api"
 import { modelTestsApi } from "@/lib/api"
+import { exams } from "@/lib/data"
+import { examOfTest, testsForExam } from "@/lib/exam-tests"
+import { examName } from "@/lib/format"
 import { cn } from "@/lib/utils"
 
 const iconMap = {
@@ -44,20 +47,13 @@ const iconMap = {
   math: faCalculator,
 }
 
-const defaultPastTests = [
-  { id: "bcs-prelim-model-test-1", title: "BCS Preliminary Full Model Test #7", exam: "BCS General", date: "18 Nov", score: 124.5, of: 200, percentage: 62 },
-  { id: "bank-math-speed-drill", title: "Combined Bank Quantitative Math Drill", exam: "Combined Banks", date: "15 Nov", score: 24.5, of: 30, percentage: 82 },
-  { id: "ntrca-gk-math-drill", title: "19th NTRCA Full Model Test #2", exam: "NTRCA", date: "11 Nov", score: 68.5, of: 100, percentage: 69 },
-  { id: "primary-bangla-math-quick", title: "Primary Assistant Teacher Quick Test", exam: "Primary", date: "8 Nov", score: 32, of: 40, percentage: 80 },
-]
-
 export default function ModelTests() {
-  const { L, num, user } = useApp()
-  const activeExam = user?.target_exam || "bcs-general"
+  const { L, num, mainExam } = useApp()
+  const examInfo = exams.find((e) => e.slug === mainExam) || exams[0]
   const { data, loading, error, reload } = useApi(() => modelTestsApi.list(), [], { key: "model-tests-list" })
 
   const [activeModalTest, setActiveModalTest] = useState(null)
-  const [history, setHistory] = useState(defaultPastTests)
+  const [history, setHistory] = useState([])
 
   useEffect(() => {
     try {
@@ -71,7 +67,7 @@ export default function ModelTests() {
     } catch {}
   }, [])
 
-  const tests = useMemo(() => {
+  const allTests = useMemo(() => {
     if (data?.model_tests && data.model_tests.length > 0) {
       return data.model_tests
     }
@@ -87,19 +83,19 @@ export default function ModelTests() {
         marks: 200,
         negative: 0.5,
         questions_count: 200,
-        attempts: "14,290",
+        attempts: 0,
         difficulty: "Challenging",
         syllabus: [
-          { name: "Bangla Literature & Grammar", name_bn: "বাংলা ভাষা ও সাহিত্য", marks: 35 },
-          { name: "English Language & Literature", name_bn: "English Language & Literature", marks: 35 },
-          { name: "Bangladesh Affairs", name_bn: "বাংলাদেশ বিষয়াবলি", marks: 30 },
-          { name: "International Affairs", name_bn: "আন্তর্জাতিক বিষয়াবলি", marks: 20 },
-          { name: "Mathematical Reasoning", name_bn: "গাণিতিক যুক্তি", marks: 15 },
+          { name: "Bangla Literature & Grammar", name_bn: "বাংলা ভাষা ও সাহিত্য", marks: 30 },
+          { name: "English Language & Literature", name_bn: "English Language & Literature", marks: 30 },
+          { name: "Bangladesh Affairs", name_bn: "বাংলাদেশ বিষয়াবলি", marks: 25 },
+          { name: "International Affairs", name_bn: "আন্তর্জাতিক বিষয়াবলি", marks: 25 },
+          { name: "Mathematical Reasoning", name_bn: "গাণিতিক যুক্তি", marks: 20 },
           { name: "Mental Ability", name_bn: "মানসিক দক্ষতা", marks: 15 },
           { name: "General Science", name_bn: "সাধারণ বিজ্ঞান", marks: 15 },
           { name: "Computer & ICT", name_bn: "কম্পিউটার ও তথ্যপ্রযুক্তি", marks: 15 },
           { name: "Geography & Disaster", name_bn: "ভূগোল ও পরিবেশ", marks: 10 },
-          { name: "Ethics & Good Governance", name_bn: "নৈতিকতা ও সুশাসন", marks: 10 },
+          { name: "Ethics & Good Governance", name_bn: "নৈতিকতা ও সুশাসন", marks: 15 },
         ],
       },
       {
@@ -112,19 +108,19 @@ export default function ModelTests() {
         marks: 200,
         negative: 0.5,
         questions_count: 200,
-        attempts: "11,840",
+        attempts: 0,
         difficulty: "Standard",
         syllabus: [
-          { name: "Bangla Literature & Grammar", marks: 35 },
-          { name: "English Language & Literature", marks: 35 },
-          { name: "Bangladesh Affairs", marks: 30 },
-          { name: "International Affairs", marks: 20 },
-          { name: "Mathematical Reasoning", marks: 15 },
+          { name: "Bangla Literature & Grammar", marks: 30 },
+          { name: "English Language & Literature", marks: 30 },
+          { name: "Bangladesh Affairs", marks: 25 },
+          { name: "International Affairs", marks: 25 },
+          { name: "Mathematical Reasoning", marks: 20 },
           { name: "Mental Ability", marks: 15 },
           { name: "General Science", marks: 15 },
           { name: "Computer & ICT", marks: 15 },
           { name: "Geography & Disaster", marks: 10 },
-          { name: "Ethics & Good Governance", marks: 10 },
+          { name: "Ethics & Good Governance", marks: 15 },
         ],
       },
       {
@@ -137,7 +133,7 @@ export default function ModelTests() {
         marks: 80,
         negative: 0.25,
         questions_count: 80,
-        attempts: "12,180",
+        attempts: 0,
         difficulty: "Standard",
         syllabus: [
           { name: "Bangla", marks: 20 },
@@ -148,7 +144,7 @@ export default function ModelTests() {
       },
       {
         id: "combined-bank-so-1",
-        title: "Combined 9 Banks Senior Officer Model Test",
+        title: "Combined Bank Senior Officer Model Test",
         title_bn: "সমন্বিত ৯ ব্যাংক সিনিয়র অফিসার মডেল টেস্ট",
         exam: "bank",
         duration: "1 hour",
@@ -156,7 +152,7 @@ export default function ModelTests() {
         marks: 100,
         negative: 0.25,
         questions_count: 100,
-        attempts: "8,450",
+        attempts: 0,
         difficulty: "Challenging",
         syllabus: [
           { name: "Bangla", marks: 20 },
@@ -175,7 +171,7 @@ export default function ModelTests() {
         marks: 100,
         negative: 0.25,
         questions_count: 100,
-        attempts: "7,320",
+        attempts: 0,
         difficulty: "Challenging",
         syllabus: [
           { name: "Advanced English", marks: 30 },
@@ -194,7 +190,7 @@ export default function ModelTests() {
         marks: 30,
         negative: 0.25,
         questions_count: 30,
-        attempts: "4,620",
+        attempts: 0,
         difficulty: "Moderate",
         syllabus: [
           { name: "Arithmetic & Algebra", marks: 15 },
@@ -211,7 +207,7 @@ export default function ModelTests() {
         marks: 40,
         negative: 0.25,
         questions_count: 40,
-        attempts: "5,890",
+        attempts: 0,
         difficulty: "Standard",
         syllabus: [
           { name: "Bangla Grammar & Lit", marks: 20 },
@@ -228,7 +224,7 @@ export default function ModelTests() {
         marks: 50,
         negative: 0.5,
         questions_count: 50,
-        attempts: "4,120",
+        attempts: 0,
         difficulty: "Standard",
         syllabus: [
           { name: "General Knowledge", marks: 25 },
@@ -238,15 +234,17 @@ export default function ModelTests() {
     ]
   }, [data])
 
-  const bcsFeatured = tests.find((t) => t.exam === "bcs-general") || tests[0]
+  const tests = useMemo(() => testsForExam(allTests, mainExam), [allTests, mainExam])
+  const bcsFeatured = tests.find((t) => t.type === "full") || tests[0]
+  const examHistory = history.filter((h) => (h.examSlug || "bcs-general") === mainExam)
 
   return (
     <div className="space-y-6">
       <PageHeader
         title={L("Model tests", "মডেল টেস্ট")}
         subtitle={L(
-          "Standard dynamic model tests generated with deep BPSC syllabus balancing. Practice with real exam time limits and negative marking.",
-          "বিপিএসসি সিলেবাস অনুযায়ী ডিপ অ্যালগরিদমে প্রস্তুত পূর্ণাঙ্গ ও বিষয়ভিত্তিক মডেল টেস্ট।"
+          `Model tests for ${examInfo.name}, with the real time limit and negative marking.`,
+          `${examInfo.nameBn}: আসল সময় ও নেগেটিভ মার্কিংসহ মডেল টেস্ট।`
         )}
       />
 
@@ -258,15 +256,15 @@ export default function ModelTests() {
               <div className="flex items-center gap-2">
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-white/20 px-2.5 py-0.5 text-xs font-semibold">
                   <span className="size-1.5 rounded-full bg-glow" />
-                  {L("Standard 200 Questions", "পূর্ণাঙ্গ ২০০ প্রশ্ন")}
+                  {L(`${bcsFeatured.questions_count} questions`, `${num(bcsFeatured.questions_count)}টি প্রশ্ন`)}
                 </span>
                 <span className="text-xs text-white/80">
-                  {L("Official BPSC 10-Subject Distribution", "অফিসিয়াল বিপিএসসি ১০ বিষয়ের ভারসাম্য")}
+                  {L(examInfo.name, examInfo.nameBn)}
                 </span>
               </div>
               <h2 className="text-xl font-bold md:text-2xl">{L(bcsFeatured.title, bcsFeatured.title_bn)}</h2>
               <p className="text-sm text-white/85">
-                {bcsFeatured.duration} · {num(bcsFeatured.marks)} {L("marks", "নম্বর")} · -{bcsFeatured.negative} {L("for a wrong answer", "ভুল উত্তরের জন্য")} · {num(bcsFeatured.attempts)} {L("attempts", "অংশগ্রহণ")}
+                {bcsFeatured.duration} · {num(bcsFeatured.marks)} {L("marks", "নম্বর")} · -{bcsFeatured.negative} {L("for a wrong answer", "ভুল উত্তরের জন্য")}
               </p>
             </div>
             <div className="flex flex-wrap items-center gap-2">
@@ -281,7 +279,7 @@ export default function ModelTests() {
                 asChild
                 className="rounded-full bg-white font-semibold text-primary hover:bg-white/90"
               >
-                <Link to={`/app/test/run?test=${bcsFeatured.id}`}>
+                <Link to={`/app/model-test/run?test=${bcsFeatured.id}`}>
                   <FontAwesomeIcon icon={faPlay} className="text-xs mr-1.5" />
                   {L("Start test", "টেস্ট শুরু করুন")}
                 </Link>
@@ -321,13 +319,7 @@ export default function ModelTests() {
                   </div>
                   <div className="min-w-0 flex-1">
                     <p className="text-[11px] font-semibold text-muted-foreground uppercase tracking-wide">
-                      {test.exam === "bcs-general"
-                        ? "BCS General Preliminary"
-                        : test.exam === "bank"
-                        ? "Combined Bank Jobs"
-                        : test.exam === "primary"
-                        ? "Primary Assistant Teacher"
-                        : "NTRCA Registration"}
+                      {examName(exams.find((e) => e.slug === examOfTest(test.id, test.exam)))}
                     </p>
                     <h3 className="text-sm font-bold leading-snug line-clamp-2 mt-0.5">
                       {L(test.title, test.title_bn)}
@@ -343,7 +335,7 @@ export default function ModelTests() {
                   size="sm"
                   className="flex-1 rounded-full font-semibold gap-1.5"
                 >
-                  <Link to={`/app/test/run?test=${test.id}`}>
+                  <Link to={`/app/model-test/run?test=${test.id}`}>
                     <FontAwesomeIcon icon={faPlay} className="text-[10px]" />
                     {L("Start test", "পরীক্ষা শুরু")}
                   </Link>
@@ -363,41 +355,43 @@ export default function ModelTests() {
       </div>
 
       {/* Past attempts table matching reference */}
-      <section className="space-y-3 pt-2">
-        <h2 className="text-[1.05rem] font-bold">{L("Your past tests", "আপনার পূর্ববর্তী টেস্ট")}</h2>
-        <div className="card divide-y overflow-hidden">
-          {history.map((h, idx) => (
-            <div
-              key={h.id + idx}
-              className="flex items-center gap-3 p-3.5 transition-colors hover:bg-muted/40 md:p-4"
-            >
-              <div className="min-w-0 flex-1">
-                <p className="truncate text-sm font-semibold">{h.title}</p>
-                <p className="text-xs text-muted-foreground">
-                  {h.exam} · {h.date}
-                </p>
+      {examHistory.length > 0 && (
+        <section className="space-y-3 pt-2">
+          <h2 className="text-[1.05rem] font-bold">{L("Your past tests", "আপনার পূর্ববর্তী টেস্ট")}</h2>
+          <div className="card divide-y overflow-hidden">
+            {examHistory.map((h, idx) => (
+              <div
+                key={h.id + idx}
+                className="flex items-center gap-3 p-3.5 transition-colors hover:bg-muted/40 md:p-4"
+              >
+                <div className="min-w-0 flex-1">
+                  <p className="truncate text-sm font-semibold">{h.title}</p>
+                  <p className="text-xs text-muted-foreground">
+                    {h.exam} · {h.date}
+                  </p>
+                </div>
+                <div className="text-right">
+                  <p className="text-sm font-bold tabular-nums">
+                    {h.score}
+                    <span className="text-xs font-normal text-muted-foreground">/{h.of}</span>
+                  </p>
+                  <p className="text-[0.7rem] font-bold text-success">{Math.round(h.percentage)}%</p>
+                </div>
+                <Button asChild variant="ghost" size="icon" className="size-8 rounded-full">
+                  <Link to={`/app/model-test/result?test=${h.id}`}>
+                    <FontAwesomeIcon icon={faArrowRight} className="text-xs text-muted-foreground" />
+                  </Link>
+                </Button>
               </div>
-              <div className="text-right">
-                <p className="text-sm font-bold tabular-nums">
-                  {h.score}
-                  <span className="text-xs font-normal text-muted-foreground">/{h.of}</span>
-                </p>
-                <p className="text-[0.7rem] font-bold text-success">{Math.round(h.percentage)}%</p>
-              </div>
-              <Button asChild variant="ghost" size="icon" className="size-8 rounded-full">
-                <Link to={`/app/test/result?test=${h.id}`}>
-                  <FontAwesomeIcon icon={faArrowRight} className="text-xs text-muted-foreground" />
-                </Link>
-              </Button>
-            </div>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Syllabus Modal */}
       {activeModalTest && (
         <Dialog open={!!activeModalTest} onOpenChange={() => setActiveModalTest(null)}>
-          <DialogContent className="sm:max-w-md rounded-2xl">
+          <DialogContent className="w-[calc(100vw-2.5rem)] max-w-[calc(100vw-2.5rem)] sm:w-full sm:max-w-md rounded-2xl p-5 sm:p-6 max-h-[85dvh] overflow-y-auto">
             <DialogHeader>
               <div className="flex items-center gap-2 mb-1">
                 <Pill tone="primary" className="text-[10px] uppercase font-bold">
@@ -466,7 +460,7 @@ export default function ModelTests() {
                 className="rounded-full font-semibold gap-1.5"
                 onClick={() => setActiveModalTest(null)}
               >
-                <Link to={`/app/test/run?test=${activeModalTest.id}`}>
+                <Link to={`/app/model-test/run?test=${activeModalTest.id}`}>
                   <FontAwesomeIcon icon={faPlay} className="text-xs" />
                   Start test
                 </Link>

@@ -17,11 +17,17 @@ class Dashboard extends BaseDashboard
         return 'Overview';
     }
 
+    /** The welcome widget greets the admin instead of a page heading. */
+    public function getHeading(): string|Htmlable
+    {
+        return '';
+    }
+
     /**
      * @return int|array<string, int|null>
      */
     public function getColumns(): int|array
     {
-        return ['md' => 2, 'xl' => 2];
+        return ['md' => 2, 'xl' => 3];
     }
 }

@@ -204,7 +204,7 @@ export default function BlogPost() {
           </div>
         </header>
 
-        {post.cover_image && <img src={post.cover_image} alt={post.title} className="mt-6 aspect-[1.91/1] w-full rounded-2xl object-cover" />}
+        {post.cover_image && <img src={post.cover_image} alt={post.title} className="mt-6 aspect-[1200/670] w-full rounded-2xl object-cover" />}
 
         <div className={cn("article mt-8", isBn && "bn")} dangerouslySetInnerHTML={{ __html: post.body }} />
 

@@ -12,7 +12,7 @@ import {
 import { cn } from "@/lib/utils"
 import BrandMark from "@/components/BrandMark"
 import { exams, noticeTypes } from "@/lib/data"
-import { fmtDate, keyDate, relDays, daysUntil, isBangla, localDigits } from "@/lib/format"
+import { fmtDate, keyDate, relDays, daysUntil, isBangla, localDigits, tr, td, examName, noticeTitle, noticeSummary } from "@/lib/format"
 
 export const tones = {
   primary: "bg-primary/10 text-primary",
@@ -93,7 +93,7 @@ export function PageHeader({ title, subtitle, back, action, className }) {
   )
 }
 
-export function SectionTitle({ title, to, linkLabel = "View all", className, action }) {
+export function SectionTitle({ title, to, linkLabel = tr("View all", "সব দেখুন"), className, action }) {
   return (
     <div className={cn("mb-3 flex items-center justify-between gap-2", className)}>
       <h2 className="text-[1.05rem] font-bold">{title}</h2>
@@ -225,14 +225,14 @@ export function accuracyTone(a) {
 
 export function NoticeTypePill({ type }) {
   const t = noticeTypes[type] || noticeTypes.other
-  return <Pill tone={t.tone}>{t.label}</Pill>
+  return <Pill tone={t.tone}>{td(t.label)}</Pill>
 }
 
 const CHIP_LABELS_BN = { Apply: "আবেদন", Exam: "পরীক্ষা", Pub: "প্রকাশ", Result: "ফল" }
 
 export function DateChip({ iso, label }) {
   const n = daysUntil(iso)
-  const urgent = n !== null && n >= 0 && n <= 3
+  const urgent = label !== "Pub" && n !== null && n >= 0 && n <= 3
   const d = new Date(iso + "T00:00:00")
   return (
     <div
@@ -260,28 +260,30 @@ export function NoticeCard({ n, compact = false, base = "/notices" }) {
           <NoticeTypePill type={n.type} />
           {n.isNew && (
             <Pill tone="success">
-              <span className="live-dot size-1.5 rounded-full bg-success" /> New
+              <span className="live-dot size-1.5 rounded-full bg-success" /> {tr("New", "নতুন")}
             </Pill>
           )}
           {n.changes?.length > 0 && (
             <Pill tone="warning">
-              <FontAwesomeIcon icon={faClockRotateLeft} /> Updated
+              <FontAwesomeIcon icon={faClockRotateLeft} /> {tr("Updated", "হালনাগাদ")}
             </Pill>
           )}
         </div>
-        <h3 className="line-clamp-2 text-[0.95rem] leading-snug font-bold transition-colors group-hover:text-primary">{n.title}</h3>
-        {!compact && <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">{n.summary}</p>}
+        <h3 className="line-clamp-2 text-[0.95rem] leading-snug font-bold transition-colors group-hover:text-primary">{noticeTitle(n)}</h3>
+        {!compact && <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">{noticeSummary(n)}</p>}
         <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
-          <span className="font-semibold text-foreground/80">{n.org}</span>
-          {exam && <span>{exam.name}</span>}
+          <span className="font-semibold text-foreground/80">{td(n.org)}</span>
+          {exam && <span>{examName(exam)}</span>}
           {k.label !== "Published" && days >= 0 && (
             <span className={cn(days <= 3 && "font-semibold text-destructive")}>
-              {k.label} {relDays(k.date).toLowerCase()}
+              {td(k.label)} {relDays(k.date).toLowerCase()}
             </span>
           )}
-          <span className="flex items-center gap-1 font-medium text-success">
-            <FontAwesomeIcon icon={faCircleCheck} /> Verified {fmtDate(n.verifiedAt, false)}
-          </span>
+          {n.verifiedAt && (
+            <span className="flex items-center gap-1 font-medium text-success">
+              <FontAwesomeIcon icon={faCircleCheck} /> {tr("Verified", "যাচাইকৃত")} {fmtDate(n.verifiedAt, false)}
+            </span>
+          )}
         </div>
       </div>
       <FontAwesomeIcon icon={faChevronRight} className="mt-1 hidden text-xs text-muted-foreground transition-transform group-hover:translate-x-0.5 sm:block" />
@@ -292,7 +294,7 @@ export function NoticeCard({ n, compact = false, base = "/notices" }) {
 export function OfficialLink({ url, className }) {
   return (
     <a href={url} target="_blank" rel="noreferrer" className={cn("inline-flex items-center gap-1.5 font-semibold text-primary hover:underline", className)}>
-      Official source <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="text-xs" />
+      {tr("Official source", "অফিসিয়াল সূত্র")} <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="text-xs" />
     </a>
   )
 }

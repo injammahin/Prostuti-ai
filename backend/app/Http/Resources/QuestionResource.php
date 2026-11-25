@@ -3,6 +3,7 @@
 namespace App\Http\Resources;
 
 use App\Models\Question;
+use App\Services\PastPapers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -40,6 +41,7 @@ class QuestionResource extends JsonResource
             'topic' => $this->topic,
             'difficulty' => $this->difficulty,
             'source' => $this->source,
+            'source_year' => PastPapers::yearOfSource($this->source),
             'lang' => $this->lang,
             'body' => $this->body,
             'options' => $this->options,

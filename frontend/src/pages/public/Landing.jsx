@@ -25,17 +25,21 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { NoticeCard, Pill, IconBox, SectionTitle } from "@/components/shared"
 import { Icon } from "@/components/icon"
 import Illustration from "@/components/Illustration"
-import { exams, notices } from "@/lib/data"
+import CountUp from "@/components/CountUp"
+import { cn } from "@/lib/utils"
+import { exams, notices, QUESTION_COUNT } from "@/lib/data"
+import { daysUntil, keyDate, noticeTitle, relDays } from "@/lib/format"
 import { useApp } from "@/lib/app-context"
 import { useNoticesVersion } from "@/lib/notices-store"
 import { useSeo } from "@/lib/seo"
 
 const faqs = [
-  ["Is bd3schools official or linked to BPSC?", "No. We are an independent preparation platform. Every notice links to its official source, and you should always apply only through the official portal."],
-  ["How does the real exam simulation work?", "Every model test strictly reflects official exam conditions: exact question counts (80, 100, or 200 marks), authentic time limits, and official negative marking (-0.50 for BCS/NTRCA, -0.25 for Bank & Primary)."],
-  ["Which government exams are supported?", "We currently specialize in 5 major exams: BCS General, NTRCA Teacher Registration, Primary Assistant Teacher, Combined Bank Jobs (BSCS), and Bangladesh Bank."],
-  ["Can I try it without an account?", "Yes. Continue as a guest to practice and browse notices. Create a free account when you want to save progress, bookmarks and alerts."],
-  ["Is it really free?", "Yes. Every feature — adaptive practice drills, full model tests, syllabus guides, mistake notebook and alerts — is 100% free right now."],
+  ["What is bd3schools?", "bd3schools is a free online exam preparation website in Bangladesh. Students use it to prepare for BCS, NTRCA teacher registration, Primary Assistant Teacher and bank job exams with previous questions, model tests and job notices.", "bd3schools কী?", "bd3schools বাংলাদেশের একটি ফ্রি অনলাইন পরীক্ষা প্রস্তুতির ওয়েবসাইট। বিসিএস, এনটিআরসিএ, প্রাথমিক সহকারী শিক্ষক ও ব্যাংক পরীক্ষার বিগত প্রশ্ন, মডেল টেস্ট ও চাকরির নোটিশ এখানে পাওয়া যায়।"],
+  ["Is bd3schools official or linked to BPSC?", "No. We are an independent preparation platform. Every notice links to its official source, and you should always apply only through the official portal.", "bd3schools কি অফিসিয়াল বা বিপিএসসির সঙ্গে যুক্ত?", "না। আমরা একটি স্বাধীন প্রস্তুতি প্ল্যাটফর্ম। প্রতিটি নোটিশে অফিসিয়াল সূত্রের লিংক থাকে; সবসময় শুধু অফিসিয়াল পোর্টালেই আবেদন করবেন।"],
+  ["How does the real exam simulation work?", "Every model test strictly reflects official exam conditions: exact question counts (90, 100, or 200 marks), authentic time limits, and official negative marking (-0.50 for BCS, -0.25 for Bank, NTRCA & Primary).", "আসল পরীক্ষার মতো মডেল টেস্ট কীভাবে হয়?", "প্রতিটি মডেল টেস্ট আসল পরীক্ষার নিয়মেই হয়: একই প্রশ্নসংখ্যা (৯০, ১০০ বা ২০০ নম্বর), একই সময় এবং অফিসিয়াল নেগেটিভ মার্কিং (বিসিএস -০.৫০; ব্যাংক, এনটিআরসিএ ও প্রাইমারি -০.২৫)।"],
+  ["Which government exams are supported?", "We currently specialize in 5 major exams: BCS General, NTRCA Teacher Registration, Primary Assistant Teacher, Combined Bank Jobs (BSCS), and Bangladesh Bank.", "কোন কোন সরকারি পরীক্ষার প্রস্তুতি নেওয়া যায়?", "বর্তমানে ৫টি প্রধান পরীক্ষা: বিসিএস সাধারণ, এনটিআরসিএ শিক্ষক নিবন্ধন, প্রাথমিক সহকারী শিক্ষক, সমন্বিত ব্যাংক (বিএসসিএস) ও বাংলাদেশ ব্যাংক।"],
+  ["Can I try it without an account?", "Yes. Continue as a guest to practice and browse notices. Create a free account when you want to save progress, bookmarks and alerts.", "অ্যাকাউন্ট ছাড়া কি ব্যবহার করা যাবে?", "হ্যাঁ। অতিথি হিসেবে অনুশীলন করুন ও নোটিশ দেখুন। অগ্রগতি, বুকমার্ক ও অ্যালার্ট সংরক্ষণ করতে চাইলে ফ্রি অ্যাকাউন্ট খুলুন।"],
+  ["Is it really free?", "Yes. Every feature — adaptive practice drills, full model tests, syllabus guides, mistake notebook and alerts — is 100% free right now.", "এটা কি সত্যিই ফ্রি?", "হ্যাঁ। অনুশীলন, পূর্ণাঙ্গ মডেল টেস্ট, সিলেবাস গাইড, ভুলের নোটবুক ও অ্যালার্ট — সব সুবিধা এখন ১০০% ফ্রি।"],
 ]
 
 const features = [
@@ -45,6 +49,9 @@ const features = [
     title: "Real-format model tests",
     text: "Timed tests with the real question count, time limit and negative marking of each exam.",
     points: ["Exact BCS, Bank & NTRCA format", "−0.50 / −0.25 negative marking", "Score and weak subjects after each test"],
+    titleBn: "আসল পরীক্ষার মতো মডেল টেস্ট",
+    textBn: "প্রতিটি পরীক্ষার আসল প্রশ্নসংখ্যা, সময় ও নেগেটিভ মার্কিংসহ মডেল টেস্ট।",
+    pointsBn: ["বিসিএস, ব্যাংক ও এনটিআরসিএর হুবহু ফরম্যাট", "−০.৫০ / −০.২৫ নেগেটিভ মার্কিং", "প্রতি টেস্ট শেষে স্কোর ও দুর্বল বিষয়"],
   },
   {
     icon: faBookOpen,
@@ -52,6 +59,9 @@ const features = [
     title: "Previous BCS questions",
     text: "Every BCS preliminary paper, newest first, with the right answer and an explanation for each question.",
     points: ["Read questions with solutions", "Sit any paper as a timed exam", "Filter by subject or search"],
+    titleBn: "বিগত বিসিএস প্রশ্ন",
+    textBn: "সব বিসিএস প্রিলিমিনারি প্রশ্ন, প্রতিটির সঠিক উত্তর ও ব্যাখ্যাসহ।",
+    pointsBn: ["সমাধানসহ প্রশ্ন পড়ুন", "যেকোনো প্রশ্নপত্রে সময় ধরে পরীক্ষা দিন", "বিষয় ধরে বা সার্চ করে খুঁজুন"],
   },
   {
     icon: faBullhorn,
@@ -59,6 +69,9 @@ const features = [
     title: "Verified notice board",
     text: "Circulars, deadlines, admit cards and results, each checked against the official source.",
     points: ["Links to the official notice", "Exam calendar with deadlines", "Alerts for the exams you follow"],
+    titleBn: "যাচাইকৃত নোটিশ বোর্ড",
+    textBn: "সার্কুলার, শেষ তারিখ, প্রবেশপত্র ও ফলাফল — সবই অফিসিয়াল সূত্রে যাচাই করা।",
+    pointsBn: ["অফিসিয়াল নোটিশের লিংক", "শেষ তারিখসহ পরীক্ষার ক্যালেন্ডার", "আপনার পরীক্ষার অ্যালার্ট"],
   },
   {
     icon: faBuildingColumns,
@@ -66,6 +79,9 @@ const features = [
     title: "Bank & teacher exams",
     text: "Separate question banks for Bangladesh Bank, Combined Bank, NTRCA and Primary Assistant Teacher.",
     points: ["Questions sorted by subject", "Explanations in Bangla & English", "Practice 10 to 50 at a time"],
+    titleBn: "ব্যাংক ও শিক্ষক নিয়োগ পরীক্ষা",
+    textBn: "বাংলাদেশ ব্যাংক, সমন্বিত ব্যাংক, এনটিআরসিএ ও প্রাথমিক শিক্ষকের আলাদা প্রশ্নব্যাংক।",
+    pointsBn: ["বিষয়ভিত্তিক সাজানো প্রশ্ন", "বাংলা ও ইংরেজিতে ব্যাখ্যা", "একবারে ১০ থেকে ৫০টি অনুশীলন"],
   },
   {
     icon: faRoute,
@@ -73,6 +89,9 @@ const features = [
     title: "Daily study plan",
     text: "A plan built around your target exam that brings weak topics back before you forget them.",
     points: ["3–5 focused tasks a day", "Mistakes come back for revision", "Track your streak and progress"],
+    titleBn: "প্রতিদিনের পড়ার রুটিন",
+    textBn: "আপনার লক্ষ্য পরীক্ষা অনুযায়ী রুটিন, যা ভুলে যাওয়ার আগেই দুর্বল টপিক ফিরিয়ে আনে।",
+    pointsBn: ["দিনে ৩–৫টি নির্দিষ্ট কাজ", "ভুলগুলো রিভিশনে ফিরে আসে", "ধারাবাহিকতা ও অগ্রগতি দেখুন"],
   },
   {
     icon: faWandMagicSparkles,
@@ -80,21 +99,29 @@ const features = [
     title: "AI tutor",
     text: "Stuck on a question? Ask the AI tutor to explain the answer in simple Bangla or English.",
     points: ["Why the other options are wrong", "Short tricks to remember", "Follow-up questions in chat"],
+    titleBn: "এআই টিউটর",
+    textBn: "প্রশ্নে আটকে গেছেন? এআই টিউটর সহজ বাংলা বা ইংরেজিতে বুঝিয়ে দেবে।",
+    pointsBn: ["অন্য অপশন কেন ভুল", "মনে রাখার ছোট কৌশল", "চ্যাটে আরও প্রশ্ন করুন"],
   },
 ]
 
 const steps = [
-  [faClipboardCheck, "Take a 15-minute diagnostic", "We find your level in every subject of your target exam."],
-  [faRoute, "Follow your daily plan", "3–5 focused tasks a day. Weak topics come back before you forget them."],
-  [faChartLine, "Test, get feedback, improve", "Real-format timed model tests and instant diagnostic feedback on weak subjects."],
+  [faClipboardCheck, "Take a 15-minute diagnostic", "We find your level in every subject of your target exam.", "১৫ মিনিটের যাচাই পরীক্ষা দিন", "আপনার লক্ষ্য পরীক্ষার প্রতিটি বিষয়ে আপনার অবস্থান জানুন।"],
+  [faRoute, "Follow your daily plan", "3–5 focused tasks a day. Weak topics come back before you forget them.", "প্রতিদিনের রুটিন মেনে চলুন", "দিনে ৩–৫টি নির্দিষ্ট কাজ। ভুলে যাওয়ার আগেই দুর্বল টপিক ফিরে আসবে।"],
+  [faChartLine, "Test, get feedback, improve", "Real-format timed model tests and instant diagnostic feedback on weak subjects.", "পরীক্ষা দিন, জানুন, উন্নতি করুন", "আসল ফরম্যাটে সময় ধরে মডেল টেস্ট এবং দুর্বল বিষয়ের তাৎক্ষণিক বিশ্লেষণ।"],
 ]
 
 export default function Landing() {
-  const noticesVersion = useNoticesVersion()
+  useNoticesVersion()
+  const latestNotice = notices.find((n) => n.isNew && n.type !== "other")
+  const nextDate = notices
+    .map((n) => ({ n, ...keyDate(n) }))
+    .filter((x) => x.label !== "Published" && daysUntil(x.date) >= 0)
+    .sort((a, b) => a.date.localeCompare(b.date))[0]
   const { loginGuest, user, isGuest } = useApp()
   const nav = useNavigate()
   const { data: paperList } = useApi(() => pastPapersApi.list(), [], { key: "past-papers" })
-  const { L } = useApp()
+  const { L, bn, num, fmtDate } = useApp()
   const { data: blog } = useApi(() => blogApi.list(), [], { key: "blog" })
   const latestPosts = (blog?.data ?? []).slice(0, 3)
   const readyPapers =(paperList?.papers ?? []).filter((p) => p.questions >= 100).slice(0, 5) // only full papers make a good first impression
@@ -104,8 +131,8 @@ export default function Landing() {
   }
 
   useSeo({
-    title: "bd3schools — BCS & Govt Job Exam Preparation | বিসিএস ও সরকারি চাকরি প্রস্তুতি",
-    description: "বিসিএস (১০ম-৪৮তম) প্রশ্ন সমাধান PDF, পূর্ণাঙ্গ মডেল টেস্ট, বিষয়ভিত্তিক কুইজ ও সরকারি চাকরির নোটিশ। অনলাইনে প্রস্তুতি নিন bd3schools-এ।",
+    title: "bd3schools — BCS & Govt Job Exam Preparation in Bangladesh | বিসিএস প্রস্তুতি",
+    description: "bd3schools is a free exam preparation website in Bangladesh for BCS, NTRCA, Primary and bank jobs. বিসিএস প্রশ্ন সমাধান, মডেল টেস্ট, কুইজ ও চাকরির নোটিশ।",
     keywords: "14 bcs question with solution, bcs question solution, 10th to 48th bcs question solution, বিসিএস প্রশ্ন সমাধান, bcs question bank, bcs preliminary question with answer, bcs model test online, govt job exam bangladesh, bd3schools",
     image: "/icon-512.png",
     jsonLd: {
@@ -138,36 +165,46 @@ export default function Landing() {
 
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 pt-8 pb-14 md:pt-14 lg:grid-cols-[1.02fr_1fr] lg:pb-20">
           <div className="stagger">
-            <Link
-              to="/notices/51st-special-bcs-circular"
-              className="group inline-flex items-center gap-2 rounded-full border border-primary/15 bg-white/80 py-1.5 pr-3.5 pl-1.5 text-xs font-semibold shadow-card backdrop-blur transition-all hover:border-primary/30 sm:text-sm dark:bg-card"
+            {latestNotice && (
+              <Link
+                to={`/notices/${latestNotice.slug}`}
+                className="group inline-flex items-center gap-2 rounded-full border border-primary/15 bg-white/80 py-1.5 pr-3.5 pl-1.5 text-xs font-semibold shadow-card backdrop-blur transition-all hover:border-primary/30 sm:text-sm dark:bg-card"
+              >
+                <span className="rounded-full bg-primary px-2.5 py-0.5 text-[0.68rem] font-bold text-primary-foreground">{L("NEW", "নতুন")}</span>
+                <span className="line-clamp-1">{noticeTitle(latestNotice)}</span>
+                <FontAwesomeIcon icon={faArrowRight} className="text-[0.65rem] text-primary transition-transform group-hover:translate-x-0.5" />
+              </Link>
+            )}
+            <h1
+              className={cn(
+                "mt-6 font-semibold text-balance",
+                bn ? "text-[2.1rem] leading-[1.35] sm:text-[2.9rem] lg:text-[3.3rem]" : "text-[2.35rem] leading-[1.1] tracking-[-0.03em] sm:text-[3.4rem] lg:text-[4rem]"
+              )}
             >
-              <span className="rounded-full bg-primary px-2.5 py-0.5 text-[0.68rem] font-bold text-primary-foreground">NEW</span>
-              51st Special BCS circular is out
-              <FontAwesomeIcon icon={faArrowRight} className="text-[0.65rem] text-primary transition-transform group-hover:translate-x-0.5" />
-            </Link>
-            <h1 className="mt-6 text-[2.35rem] leading-[1.1] font-semibold tracking-[-0.03em] text-balance sm:text-[3.4rem] lg:text-[4rem]">
-              Prepare smarter for{" "}
+              {L("Prepare smarter for ", "")}
               <span className="relative inline-block text-primary">
-                BCS
+                {L("BCS", "বিসিএস")}
                 <svg viewBox="0 0 120 12" preserveAspectRatio="none" className="absolute -bottom-1.5 left-0 h-3 w-full" aria-hidden>
                   <path d="M2 8 C30 2 70 2 118 7" fill="none" stroke="var(--glow)" strokeWidth="5" strokeLinecap="round" />
                 </svg>
-              </span>{" "}
-              &amp; every govt job exam.
+              </span>
+              {L(" & every govt job exam.", " ও সব সরকারি চাকরির প্রস্তুতি এখন আরও স্মার্ট।")}
             </h1>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
-              Adaptive question drills, authentic timed model tests, spaced mistake revision, and verified exam dates — one beautifully simple app, made for your phone.
+              {L(
+                "Adaptive question drills, authentic timed model tests, spaced mistake revision, and verified exam dates — one beautifully simple app, made for your phone.",
+                "প্রশ্ন অনুশীলন, সময় ধরে আসল মানের মডেল টেস্ট, ভুলের রিভিশন এবং যাচাইকৃত পরীক্ষার তারিখ — সব এক সহজ অ্যাপে, আপনার মোবাইলের জন্য তৈরি।"
+              )}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button asChild className="btn-shine h-[3.25rem] px-7 text-base">
                 <Link to={user && !isGuest ? "/app" : "/signup"}>
-                  <FontAwesomeIcon icon={faUserPlus} /> {user && !isGuest ? "Go to dashboard" : "Create free account"}
+                  <FontAwesomeIcon icon={faUserPlus} /> {user && !isGuest ? L("Go to dashboard", "ড্যাশবোর্ডে যান") : L("Create free account", "ফ্রি অ্যাকাউন্ট খুলুন")}
                 </Link>
               </Button>
               {(!user || isGuest) && (
                 <Button onClick={guest} variant="outline" className="h-[3.25rem] px-7 text-base">
-                  <FontAwesomeIcon icon={faEye} /> Continue as guest
+                  <FontAwesomeIcon icon={faEye} /> {L("Continue as guest", "অতিথি হিসেবে দেখুন")}
                 </Button>
               )}
             </div>
@@ -176,12 +213,12 @@ export default function Landing() {
               className="group mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline"
             >
               <FontAwesomeIcon icon={faBookOpen} className="text-xs" />
-              Previous BCS questions &amp; solutions — free
+              {L("Previous BCS questions & solutions — free", "বিগত বিসিএস প্রশ্ন ও সমাধান — ফ্রি")}
               <FontAwesomeIcon icon={faArrowRight} className="text-[0.65rem] transition-transform group-hover:translate-x-0.5" />
             </Link>
             <div className="mt-8 flex items-center gap-4">
               <div className="flex -space-x-3">
-                {["men-32", "women-44", "men-75", "women-68"].map((a, i) => (
+                {["bd-1", "bd-2", "bd-3", "bd-4"].map((a, i) => (
                   <img
                     key={a}
                     src={`/avatars/${a}.jpg`}
@@ -194,15 +231,15 @@ export default function Landing() {
                 ))}
               </div>
               <div className="text-sm">
-                <p className="font-bold">100% free · বাংলা &amp; English</p>
-                <p className="text-muted-foreground">BCS · NTRCA · Primary · Bank Jobs</p>
+                <p className="font-bold">{L("100% free · বাংলা & English", "১০০% ফ্রি · বাংলা ও English")}</p>
+                <p className="text-muted-foreground">{L("BCS · NTRCA · Primary · Bank Jobs", "বিসিএস · এনটিআরসিএ · প্রাইমারি · ব্যাংক")}</p>
               </div>
             </div>
           </div>
 
           {/* Illustration composition */}
           <div className="relative mx-auto w-full max-w-[26.5rem]">
-            <Illustration name="desk" circle={false} className="aspect-square w-full" alt="Student preparing at a desk" />
+            <Illustration name="desk" priority circle={false} className="aspect-square w-full" alt="Student preparing at a desk" />
 
 
             <div className="float-slow absolute top-[4%] -right-1 flex items-center gap-2.5 rounded-2xl border border-white/80 bg-white/90 p-3 shadow-lift backdrop-blur-md sm:-right-6 dark:border-border dark:bg-card/90">
@@ -210,24 +247,29 @@ export default function Landing() {
                 <FontAwesomeIcon icon={faFire} />
               </span>
               <span>
-                <span className="block text-lg leading-none font-extrabold">12 days</span>
-                <span className="text-[0.7rem] text-muted-foreground">Study streak</span>
+                <span className="block text-lg leading-none font-extrabold">{L("12 days", "১২ দিন")}</span>
+                <span className="text-[0.7rem] text-muted-foreground">{L("Study streak", "পড়ার ধারাবাহিকতা")}</span>
               </span>
             </div>
 
-            <div className="float absolute -bottom-[7%] -left-2 hidden items-center gap-3 rounded-2xl border border-white/80 bg-white/90 p-2.5 pr-4 shadow-lift backdrop-blur-md sm:flex dark:border-border dark:bg-card/90">
-              <span className="flex w-11 flex-col items-center rounded-xl bg-destructive/10 py-1 text-destructive">
-                <span className="text-[0.55rem] font-bold uppercase">Apply</span>
-                <span className="text-base leading-none font-extrabold">25</span>
-                <span className="text-[0.55rem] font-semibold">Nov</span>
-              </span>
-              <span className="text-xs">
-                <span className="flex items-center gap-1.5 font-bold">
-                  <span className="live-dot size-1.5 rounded-full bg-success" /> Deadline alert
+            {nextDate && (
+              <Link
+                to={`/notices/${nextDate.n.slug}`}
+                className="float absolute -bottom-[7%] -left-2 hidden max-w-[20rem] items-center gap-3 rounded-2xl border border-white/80 bg-white/90 p-2.5 pr-4 shadow-lift backdrop-blur-md sm:flex dark:border-border dark:bg-card/90"
+              >
+                <span className="flex w-11 shrink-0 flex-col items-center rounded-xl bg-destructive/10 py-1 text-destructive">
+                  <span className="text-[0.55rem] font-bold uppercase">{nextDate.label === "Exam" ? L("Exam", "পরীক্ষা") : L("Apply", "আবেদন")}</span>
+                  <span className="text-base leading-none font-extrabold">{num(new Date(`${nextDate.date}T00:00`).getDate())}</span>
+                  <span className="text-[0.55rem] font-semibold">{fmtDate(`${nextDate.date}T00:00`, { month: "short" })}</span>
                 </span>
-                <span className="text-muted-foreground">Bangladesh Bank AD · 3 days left</span>
-              </span>
-            </div>
+                <span className="min-w-0 text-xs">
+                  <span className="flex items-center gap-1.5 font-bold">
+                    <span className="live-dot size-1.5 rounded-full bg-success" /> {relDays(nextDate.date)}
+                  </span>
+                  <span className="line-clamp-2 text-muted-foreground">{noticeTitle(nextDate.n)}</span>
+                </span>
+              </Link>
+            )}
           </div>
         </div>
       </section>
@@ -236,13 +278,15 @@ export default function Landing() {
       <section className="mx-auto max-w-6xl px-4">
         <div className="card stagger grid grid-cols-2 p-2 md:grid-cols-4 md:divide-x md:divide-border/70">
           {[
-            ["6,500+", "Practice questions"],
-            ["100%", "Negative marking simulated"],
-            ["5 Target", "Govt exam tracks"],
-            ["100%", "Verified notices"],
-          ].map(([v, l]) => (
-            <div key={l} className="px-3 py-3.5 text-center md:py-5">
-              <p className="text-xl font-extrabold text-primary md:text-[1.7rem]">{v}</p>
+            [QUESTION_COUNT, "+", L("Practice questions", "অনুশীলন প্রশ্ন")],
+            [100, "%", L("Negative marking simulated", "আসল নেগেটিভ মার্কিং")],
+            [5, L(" Target", "টি"), L("Govt exam tracks", "সরকারি পরীক্ষার প্রস্তুতি")],
+            [100, "%", L("Verified notices", "যাচাইকৃত নোটিশ")],
+          ].map(([v, suffix, l], i) => (
+            <div key={i} className="px-3 py-3.5 text-center md:py-5">
+              <p className="text-xl font-extrabold text-primary md:text-[1.7rem]">
+                <CountUp value={v} suffix={suffix} />
+              </p>
               <p className="text-xs text-muted-foreground">{l}</p>
             </div>
           ))}
@@ -256,12 +300,14 @@ export default function Landing() {
           <div className="relative flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-xl">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
-                <FontAwesomeIcon icon={faBookOpen} /> বিগত বিসিএস প্রশ্ন ও সমাধান
+                <FontAwesomeIcon icon={faBookOpen} /> {L("10th–48th BCS", "১০ম–৪৮তম বিসিএস")}
               </span>
-              <h2 className="mt-3 text-2xl font-bold md:text-3xl">Previous BCS questions &amp; solutions</h2>
+              <h2 className="mt-3 text-2xl font-bold md:text-3xl">{L("Previous BCS questions & solutions", "বিগত বিসিএস প্রশ্ন ও সমাধান")}</h2>
               <p className="mt-1.5 text-sm text-muted-foreground md:text-base">
-                Every BCS preliminary paper, newest first. Read each question with its answer and explanation, or sit the full paper as a timed exam with
-                −0.5 negative marking.
+                {L(
+                  "Every BCS preliminary paper, newest first. Read each question with its answer and explanation, or sit the full paper as a timed exam with −0.5 negative marking.",
+                  "সব বিসিএস প্রিলিমিনারি প্রশ্নপত্র, নতুন থেকে পুরোনো। উত্তর ও ব্যাখ্যাসহ প্রতিটি প্রশ্ন পড়ুন, অথবা −০.৫ নেগেটিভ মার্কিংসহ সময় ধরে পুরো পরীক্ষা দিন।"
+                )}
               </p>
               {readyPapers.length > 0 && (
                 <div className="mt-4 flex flex-wrap gap-2">
@@ -271,8 +317,8 @@ export default function Landing() {
                       to={`/bcs-papers/${p.number}`}
                       className="inline-flex items-center gap-1.5 rounded-full border bg-card px-3.5 py-1.5 text-sm font-semibold transition-colors hover:border-primary/40 hover:text-primary"
                     >
-                      {p.name}
-                      <span className="text-xs font-medium text-muted-foreground">{p.questions} Q</span>
+                      {L(p.name, `${num(p.number)}তম বিসিএস`)}
+                      <span className="text-xs font-medium text-muted-foreground">{L(`${p.questions} Q`, `${num(p.questions)} প্রশ্ন`)}</span>
                     </Link>
                   ))}
                 </div>
@@ -280,7 +326,7 @@ export default function Landing() {
             </div>
             <Button asChild className="btn-shine h-12 shrink-0 rounded-full px-7 text-base">
               <Link to="/bcs-papers">
-                See all BCS papers <FontAwesomeIcon icon={faArrowRight} />
+                {L("See all BCS papers", "সব বিসিএস প্রশ্ন দেখুন")} <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </Button>
           </div>
@@ -294,12 +340,12 @@ export default function Landing() {
           className="hero group flex flex-col items-start gap-4 rounded-3xl p-6 sm:flex-row sm:items-center sm:justify-between md:p-8"
         >
           <div>
-            <span className="rounded-full bg-white/20 px-3 py-1 text-xs font-semibold">New every day · Free · No sign-up</span>
-            <h2 className="mt-3 text-2xl font-bold md:text-3xl">Take today's 10-question quiz</h2>
-            <p className="mt-1 text-sm text-white/85">Real BCS, Bank, NTRCA & Primary questions. Find out your score in 5 minutes.</p>
+            <span className="rounded-full bg-white/20 px-3 py-1 text-xs font-semibold">{L("New every day · Free · No sign-up", "প্রতিদিন নতুন · ফ্রি · সাইন আপ লাগে না")}</span>
+            <h2 className="mt-3 text-2xl font-bold md:text-3xl">{L("Take today's 10-question quiz", "আজকের ১০ প্রশ্নের কুইজ দিন")}</h2>
+            <p className="mt-1 text-sm text-white/85">{L("Real BCS, Bank, NTRCA & Primary questions. Find out your score in 5 minutes.", "বিসিএস, ব্যাংক, এনটিআরসিএ ও প্রাইমারির আসল প্রশ্ন। ৫ মিনিটেই জানুন আপনার স্কোর।")}</p>
           </div>
           <span className="inline-flex h-12 shrink-0 items-center gap-2 rounded-full bg-white px-6 font-semibold text-primary transition-transform group-hover:translate-x-1">
-            Start quiz →
+            {L("Start quiz", "কুইজ শুরু করুন")} →
           </span>
         </Link>
       </section>
@@ -307,23 +353,24 @@ export default function Landing() {
       {/* Features bento */}
       <section className="mx-auto max-w-6xl px-4 pt-20 md:pt-28">
         <div className="mx-auto max-w-2xl text-center">
-          <Pill tone="primary" className="px-3 py-1">Why bd3schools</Pill>
+          <Pill tone="primary" className="px-3 py-1">{L("Why bd3schools", "কেন bd3schools")}</Pill>
           <h2 className="mt-4 text-[1.8rem] leading-tight font-semibold tracking-[-0.025em] text-balance md:text-[2.6rem]">
-            Everything from circular to viva, <span className="text-primary">in one place</span>
+            {L("Everything from circular to viva, ", "সার্কুলার থেকে ভাইভা, ")}
+            <span className="text-primary">{L("in one place", "সব এক জায়গায়")}</span>
           </h2>
-          <p className="mt-3 text-muted-foreground">Built around how BCS and govt job aspirants actually prepare.</p>
+          <p className="mt-3 text-muted-foreground">{L("Built around how BCS and govt job aspirants actually prepare.", "বিসিএস ও সরকারি চাকরিপ্রার্থীদের আসল প্রস্তুতির ধরন মাথায় রেখে তৈরি।")}</p>
         </div>
 
         <div className="stagger mt-10 grid gap-4 sm:grid-cols-2 md:mt-12 lg:grid-cols-3">
-          {features.map(({ icon, tone, title, text, points }) => (
+          {features.map(({ icon, tone, title, text, points, titleBn, textBn, pointsBn }) => (
             <div key={title} className="card lift group flex flex-col p-6">
               <IconBox tone={tone} className="size-11 transition-transform group-hover:scale-105">
                 <FontAwesomeIcon icon={icon} />
               </IconBox>
-              <h3 className="mt-4 text-lg font-bold">{title}</h3>
-              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{text}</p>
+              <h3 className="mt-4 text-lg font-bold">{L(title, titleBn)}</h3>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{L(text, textBn)}</p>
               <ul className="mt-4 space-y-2 border-t pt-4 text-sm">
-                {points.map((p) => (
+                {L(points, pointsBn).map((p) => (
                   <li key={p} className="flex items-start gap-2">
                     <FontAwesomeIcon icon={faCircleCheck} className="mt-0.5 text-[0.8rem] text-success" />
                     <span>{p}</span>
@@ -340,18 +387,18 @@ export default function Landing() {
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <Illustration name="think" circle={false} className="mx-auto aspect-square w-full max-w-[22rem]" alt="Student planning her study" />
           <div>
-            <Pill tone="primary" className="px-3 py-1">How it works</Pill>
-            <h2 className="mt-3 text-[1.75rem] leading-tight font-extrabold md:text-4xl">Three steps to a better score</h2>
+            <Pill tone="primary" className="px-3 py-1">{L("How it works", "যেভাবে কাজ করে")}</Pill>
+            <h2 className="mt-3 text-[1.75rem] leading-tight font-extrabold md:text-4xl">{L("Three steps to a better score", "ভালো স্কোরের তিন ধাপ")}</h2>
             <ol className="stagger mt-7 space-y-4">
-              {steps.map(([ic, title, text], i) => (
+              {steps.map(([ic, title, text, titleBn, textBn], i) => (
                 <li key={title} className="card lift flex gap-4 p-4">
                   <span className="relative grid size-11 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground">
                     <FontAwesomeIcon icon={ic} />
-                    <span className="absolute -top-1.5 -right-1.5 grid size-5 place-items-center rounded-full bg-glow text-[0.65rem] font-extrabold text-brand-strong">{i + 1}</span>
+                    <span className="absolute -top-1.5 -right-1.5 grid size-5 place-items-center rounded-full bg-glow text-[0.65rem] font-extrabold text-brand-strong">{num(i + 1)}</span>
                   </span>
                   <span>
-                    <span className="block font-bold">{title}</span>
-                    <span className="text-sm text-muted-foreground">{text}</span>
+                    <span className="block font-bold">{L(title, titleBn)}</span>
+                    <span className="text-sm text-muted-foreground">{L(text, textBn)}</span>
                   </span>
                 </li>
               ))}
@@ -362,7 +409,7 @@ export default function Landing() {
 
       {/* Latest notices */}
       <section className="mx-auto max-w-6xl px-4 pt-16 md:pt-24">
-        <SectionTitle title="Latest verified notices" to="/notices" />
+        <SectionTitle title={L("Latest verified notices", "সর্বশেষ যাচাইকৃত নোটিশ")} to="/notices" />
         <div className="stagger grid gap-3 md:grid-cols-3">
           {notices.slice(0, 3).map((n) => (
             <NoticeCard key={n.slug} n={n} compact />
@@ -372,7 +419,7 @@ export default function Landing() {
 
       {/* Exams */}
       <section className="mx-auto max-w-6xl px-4 pt-16 md:pt-24">
-        <SectionTitle title="Exams we cover" to="/exams" linkLabel="All exams" />
+        <SectionTitle title={L("Exams we cover", "যেসব পরীক্ষার প্রস্তুতি")} to="/exams" linkLabel={L("All exams", "সব পরীক্ষা")} />
         <div className="stagger grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {exams.map((e) => (
             <Link key={e.slug} to={`/exams/${e.slug}`} className="card lift group flex items-center gap-3.5 p-4">
@@ -380,10 +427,10 @@ export default function Landing() {
                 <Icon name={e.icon} />
               </IconBox>
               <div className="min-w-0 flex-1">
-                <p className="truncate font-bold">{e.name}</p>
-                <p className="bn truncate text-sm text-muted-foreground">{e.nameBn}</p>
+                <p className="truncate font-bold">{L(e.name, e.nameBn)}</p>
+                <p className="bn truncate text-sm text-muted-foreground">{L(e.nameBn, e.name)}</p>
               </div>
-              {e.comingSoon ? <Pill>Soon</Pill> : <Pill tone="success">Live</Pill>}
+              {e.comingSoon ? <Pill>{L("Soon", "শিগগিরই")}</Pill> : <Pill tone="success">{L("Live", "চালু")}</Pill>}
             </Link>
           ))}
         </div>
@@ -394,14 +441,19 @@ export default function Landing() {
         <div className="card grid items-center gap-6 overflow-hidden p-6 md:grid-cols-[1fr_auto] md:p-10">
           <div>
             <Pill tone="primary" className="px-3 py-1">
-              <FontAwesomeIcon icon={faBuildingColumns} /> 5 Major Government Exam Tracks
+              <FontAwesomeIcon icon={faBuildingColumns} /> {L("5 Major Government Exam Tracks", "৫টি প্রধান সরকারি পরীক্ষা")}
             </Pill>
-            <h2 className="mt-3 text-2xl font-extrabold md:text-3xl">Comprehensive Preparation for Top 5 Exams</h2>
-            <p className="mt-2 max-w-xl text-muted-foreground">BCS General, NTRCA Teacher Registration, Primary Assistant Teacher, Combined Bank Jobs and Bangladesh Bank. Full model tests, authentic question banks, and detailed explanations.</p>
+            <h2 className="mt-3 text-2xl font-extrabold md:text-3xl">{L("Comprehensive Preparation for Top 5 Exams", "সেরা ৫ পরীক্ষার পূর্ণাঙ্গ প্রস্তুতি")}</h2>
+            <p className="mt-2 max-w-xl text-muted-foreground">
+              {L(
+                "BCS General, NTRCA Teacher Registration, Primary Assistant Teacher, Combined Bank Jobs and Bangladesh Bank. Full model tests, authentic question banks, and detailed explanations.",
+                "বিসিএস সাধারণ, এনটিআরসিএ শিক্ষক নিবন্ধন, প্রাথমিক সহকারী শিক্ষক, সমন্বিত ব্যাংক ও বাংলাদেশ ব্যাংক। পূর্ণাঙ্গ মডেল টেস্ট, নির্ভরযোগ্য প্রশ্নব্যাংক ও বিস্তারিত ব্যাখ্যা।"
+              )}
+            </p>
           </div>
           <Button asChild className="h-12 bg-primary px-6 text-base text-white shadow-primary/25 hover:bg-primary/90">
             <Link to="/exams">
-              Explore All 5 Exams <FontAwesomeIcon icon={faArrowRight} />
+              {L("Explore All 5 Exams", "৫টি পরীক্ষাই দেখুন")} <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </Button>
         </div>
@@ -410,7 +462,7 @@ export default function Landing() {
       {/* From the blog — internal links help search engines find the articles */}
       {latestPosts.length > 0 && (
         <section className="mx-auto max-w-6xl px-4 pt-16 md:pt-24">
-          <SectionTitle title="From the blog" to="/blog" linkLabel="All articles" />
+          <SectionTitle title={L("From the blog", "ব্লগ থেকে")} to="/blog" linkLabel={L("All articles", "সব লেখা")} />
           <div className="stagger grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {latestPosts.map((p) => (
               <PostCard key={p.slug} post={p} L={L} />
@@ -422,17 +474,17 @@ export default function Landing() {
       {/* FAQ */}
       <section className="mx-auto grid max-w-6xl gap-8 px-4 pt-16 md:grid-cols-[1fr_1.6fr] md:pt-24">
         <div>
-          <h2 className="text-2xl font-extrabold md:text-3xl">Questions?</h2>
+          <h2 className="text-2xl font-extrabold md:text-3xl">{L("Questions?", "প্রশ্ন আছে?")}</h2>
           <p className="mt-3 flex gap-2 text-sm text-muted-foreground">
             <FontAwesomeIcon icon={faShieldHalved} className="mt-0.5 text-primary" />
-            Trust is the product. We show sources, reviewers and verification dates everywhere.
+            {L("Trust is the product. We show sources, reviewers and verification dates everywhere.", "বিশ্বাসই আমাদের মূল শক্তি। সব জায়গায় সূত্র, পর্যালোচক ও যাচাইয়ের তারিখ দেখানো হয়।")}
           </p>
         </div>
         <Accordion type="single" collapsible className="card px-5">
-          {faqs.map(([q, a], i) => (
+          {faqs.map(([q, a, qBn, aBn], i) => (
             <AccordionItem key={q} value={`f${i}`}>
-              <AccordionTrigger className="text-left text-[0.95rem] font-semibold">{q}</AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">{a}</AccordionContent>
+              <AccordionTrigger className="text-left text-[0.95rem] font-semibold">{L(q, qBn)}</AccordionTrigger>
+              <AccordionContent className="text-muted-foreground">{L(a, aBn)}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
@@ -443,16 +495,16 @@ export default function Landing() {
         <div className="hero grid items-center gap-6 rounded-[2rem] p-6 sm:p-10 md:grid-cols-[1.3fr_1fr]">
           <div>
             <Pill tone="white" className="px-3 py-1">
-              <FontAwesomeIcon icon={faBolt} /> Free for everyone
+              <FontAwesomeIcon icon={faBolt} /> {L("Free for everyone", "সবার জন্য ফ্রি")}
             </Pill>
-            <h2 className="mt-3 text-[1.75rem] leading-tight font-extrabold md:text-4xl">Your next circular is coming. Be ready.</h2>
-            <p className="mt-2 text-white/75">Join in 30 seconds with your mobile number — or look around as a guest first.</p>
+            <h2 className="mt-3 text-[1.75rem] leading-tight font-extrabold md:text-4xl">{L("Your next circular is coming. Be ready.", "পরের সার্কুলার আসছে। প্রস্তুত থাকুন।")}</h2>
+            <p className="mt-2 text-white/75">{L("Join in 30 seconds with your email — or look around as a guest first.", "ইমেইল দিয়ে ৩০ সেকেন্ডে যোগ দিন — অথবা আগে অতিথি হিসেবে ঘুরে দেখুন।")}</p>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <Button asChild className="btn-shine h-12 bg-white px-6 text-base text-brand hover:bg-white">
-                <Link to="/signup">Create free account</Link>
+                <Link to="/signup">{L("Create free account", "ফ্রি অ্যাকাউন্ট খুলুন")}</Link>
               </Button>
               <Button onClick={guest} variant="outline" className="h-12 border-white/25 bg-transparent px-6 text-base text-white hover:bg-white/10 hover:text-white">
-                Try as guest
+                {L("Try as guest", "অতিথি হিসেবে দেখুন")}
               </Button>
             </div>
           </div>

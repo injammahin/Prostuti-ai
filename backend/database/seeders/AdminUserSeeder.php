@@ -26,8 +26,16 @@ class AdminUserSeeder extends Seeder
         $user = User::query()->where('email', $email)->first();
 
         if ($user) {
+            $updates = [];
             if (! $user->is_admin) {
-                $user->forceFill(['is_admin' => true])->save();
+                $updates['is_admin'] = true;
+            }
+            $password = (string) config('app.admin.password');
+            if ($password !== '') {
+                $updates['password'] = $password;
+            }
+            if ($updates !== []) {
+                $user->forceFill($updates)->save();
             }
 
             return;

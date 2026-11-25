@@ -27,7 +27,8 @@ return [
 
     'exposed_headers' => [],
 
-    'max_age' => 0,
+    // The browser asks for permission once a day instead of before every API call.
+    'max_age' => 86400,
 
     'supports_credentials' => false,
 

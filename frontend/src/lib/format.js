@@ -1,4 +1,5 @@
 import { TODAY } from "@/lib/data"
+import { dataBn } from "@/lib/data-bn"
 
 /** The app language, kept in sync by AppProvider on every render so helpers can follow it. */
 let currentLang = "en"
@@ -6,6 +7,15 @@ export function setFormatLanguage(lang) {
   currentLang = lang
 }
 export const isBangla = () => currentLang === "bn"
+/** Inline translation for code outside components: tr("Home", "হোম"). */
+export const tr = (en, bn) => (isBangla() ? bn || en : en)
+/** Bangla for built-in English content (see data-bn.js); anything unknown stays as written. */
+export const td = (text) => tr(text, dataBn[text])
+export const examName = (e) => (e ? tr(e.name, e.nameBn) : "")
+/** Notices use the admin's Bangla text when there is one. */
+export const noticeTitle = (n) => tr(n.title, n.title_bn || dataBn[n.title])
+export const noticeSummary = (n) => tr(n.summary, n.summary_bn || dataBn[n.summary])
+export const dateLocale = () => (isBangla() ? "bn-BD" : "en-GB")
 const toBnDigits = (text) => String(text).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[d])
 export const localDigits = (value) => (isBangla() ? toBnDigits(value) : String(value))
 

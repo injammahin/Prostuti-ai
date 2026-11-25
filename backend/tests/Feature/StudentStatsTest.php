@@ -29,9 +29,9 @@ class StudentStatsTest extends TestCase
     /**
      * Answer $count questions in one session, $correct of them right.
      */
-    private function practise(User $user, int $count, int $correct): void
+    private function practise(User $user, int $count, int $correct, ?Exam $exam = null): void
     {
-        $session = PracticeSession::start($user, 'drill', null, null, $count);
+        $session = PracticeSession::start($user, 'drill', $exam, null, $count);
 
         foreach ($session->question_ids as $i => $id) {
             $question = Question::query()->find($id);
@@ -95,6 +95,27 @@ class StudentStatsTest extends TestCase
         $this->actingAs($user)->getJson(route('api.v1.me.stats'))
             ->assertJsonPath('expected_score.score', 125)
             ->assertJsonPath('expected_score.max', 200);
+    }
+
+    public function test_stats_follow_the_chosen_exam(): void
+    {
+        $user = User::factory()->create();
+        $bcs = Exam::query()->firstWhere('slug', 'bcs-general');
+        $ntrca = Exam::factory()->create(['slug' => 'ntrca']);
+        $ntrca->subjects()->attach($this->subject);
+
+        $this->practise($user, 4, 4, $bcs);
+        $this->practise($user, 6, 3, $ntrca);
+
+        $this->actingAs($user)->getJson(route('api.v1.me.stats', ['exam' => 'bcs-general']))
+            ->assertJsonPath('totals.answered', 4)
+            ->assertJsonPath('totals.accuracy', 100)
+            ->assertJsonPath('today.answered', 10);
+
+        $this->actingAs($user)->getJson(route('api.v1.me.stats', ['exam' => 'ntrca']))
+            ->assertJsonPath('totals.answered', 6)
+            ->assertJsonPath('totals.accuracy', 50)
+            ->assertJsonPath('sessions_finished', 1);
     }
 
     public function test_weak_topics_are_listed(): void

@@ -1,13 +1,13 @@
 import { lazy, Suspense, useEffect, useRef } from "react"
 import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router"
-import { BACKEND_URL, siteApi } from "@/lib/api"
+import { BACKEND_URL, blogApi, modelTestsApi, pastPapersApi, siteApi } from "@/lib/api"
+import { prefetchApi } from "@/lib/use-api"
 import { TopLoadingBar } from "@/components/Loaders"
 import { loadNotices } from "@/lib/notices-store"
 import { TooltipProvider } from "@/components/ui/tooltip"
 import { Toaster } from "@/components/ui/sonner"
 import { AppProvider, useApp } from "@/lib/app-context"
 import PublicLayout from "@/layouts/PublicLayout"
-import AppLayout from "@/layouts/AppLayout"
 import SignupPrompt from "@/components/SignupPrompt"
 
 // Pages load on demand; all of them are fetched in the background after the first paint,
@@ -18,10 +18,23 @@ const p = (f) => {
   return lazy(f)
 }
 function preloadAllPages() {
-  const run = () => pageImporters.forEach((load) => load().catch(() => {}))
-  if ("requestIdleCallback" in window) window.requestIdleCallback(run, { timeout: 3000 })
+  // Not on data-saver or very slow connections.
+  const connection = navigator.connection
+  if (connection?.saveData || /2g/.test(connection?.effectiveType ?? "")) return
+  const run = () => {
+    pageImporters.forEach((load) => load().catch(() => {}))
+    prefetchData()
+  }
+  if ("requestIdleCallback" in window) window.requestIdleCallback(run, { timeout: 2500 })
   else setTimeout(run, 1500)
 }
+/** The lists people open next, so those pages appear with their content. */
+function prefetchData() {
+  prefetchApi("past-papers", pastPapersApi.list)
+  prefetchApi("blog", blogApi.list)
+  prefetchApi("model-tests-list", modelTestsApi.list)
+}
+const AppLayout = p(() => import("@/layouts/AppLayout"))
 const Landing = p(() => import("@/pages/public/Landing"))
 const Notices = p(() => import("@/pages/public/Notices"))
 const DailyQuiz = p(() => import("@/pages/public/DailyQuiz"))
@@ -31,6 +44,7 @@ const Exams = p(() => import("@/pages/public/Exams"))
 const ExamDetail = p(() => import("@/pages/public/ExamDetail"))
 const Blog = p(() => import("@/pages/public/Blog"))
 const BlogPost = p(() => import("@/pages/public/BlogPost"))
+const Legal = p(() => import("@/pages/public/Legal"))
 const Login = p(() => import("@/pages/auth/Login"))
 const Onboarding = p(() => import("@/pages/auth/Onboarding"))
 const NotFound = p(() => import("@/pages/NotFound"))
@@ -124,6 +138,9 @@ function AppRoutes() {
           <Route path="exams/:slug" element={<ExamDetail />} />
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:slug" element={<BlogPost />} />
+          <Route path="about" element={<Legal page="about" />} />
+          <Route path="privacy" element={<Legal page="privacy" />} />
+          <Route path="terms" element={<Legal page="terms" />} />
           <Route path="doctors" element={<Navigate to="/exams" replace />} />
         </Route>
         <Route path="bcs-papers" element={<OpenBcsPapers />} />
@@ -136,9 +153,13 @@ function AppRoutes() {
           <Route index element={<Today />} />
           <Route path="practice" element={<Practice />} />
           <Route path="practice/session" element={<Session />} />
-          <Route path="test" element={<ModelTests />} />
-          <Route path="test/run" element={<TestRun />} />
-          <Route path="test/result" element={<TestResult />} />
+          <Route path="model-test" element={<ModelTests />} />
+          <Route path="model-test/run" element={<TestRun />} />
+          <Route path="model-test/result" element={<TestResult />} />
+          <Route path="test" element={<Navigate to="/app/model-test" replace />} />
+          <Route path="test/run" element={<Navigate to="/app/model-test/run" replace />} />
+          <Route path="test/result" element={<Navigate to="/app/model-test/result" replace />} />
+          <Route path="test/*" element={<Navigate to="/app/model-test" replace />} />
           <Route path="bcs-papers" element={<PastPapers />} />
           <Route path="bcs-papers/:number" element={<PaperSolutions />} />
           <Route path="written/*" element={<Navigate to="/app/practice" replace />} />

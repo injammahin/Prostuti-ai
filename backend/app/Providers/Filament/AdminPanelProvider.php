@@ -75,10 +75,18 @@ class AdminPanelProvider extends PanelProvider
                 ),
             )
             ->renderHook(
+                PanelsRenderHook::TOPBAR_LOGO_AFTER,
+                fn (): HtmlString => new HtmlString(
+                    '<button type="button" class="pa-sidebar-toggle" x-data="{}" aria-controls="fi-main-sidebar"'
+                    .' aria-label="Show or hide the menu" title="Show or hide the menu" x-bind:aria-expanded="$store.sidebar.isOpen"'
+                    .' x-on:click="$store.sidebar.isOpen ? $store.sidebar.close() : $store.sidebar.open()">'
+                    .'<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M3.5 5.5h13M3.5 10h13M3.5 14.5h13"/></svg></button>'
+                ),
+            )
+            ->renderHook(
                 PanelsRenderHook::GLOBAL_SEARCH_AFTER,
                 fn (): HtmlString => new HtmlString(
-                    '<span style="display:inline-flex;align-items:center;gap:.4rem;margin-inline-start:.75rem;padding:.25rem .65rem;border-radius:999px;font-size:.75rem;font-weight:600;background:color-mix(in oklab,var(--success-500) 12%,transparent);color:var(--success-600);">'
-                    .'<span style="width:.45rem;height:.45rem;border-radius:999px;background:var(--success-500);box-shadow:0 0 0 3px color-mix(in oklab,var(--success-500) 25%,transparent);"></span>Live</span>'
+                    '<span class="pa-live">Live</span>'
                 ),
             )
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')

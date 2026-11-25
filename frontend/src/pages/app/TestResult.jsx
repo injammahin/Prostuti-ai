@@ -15,6 +15,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { Button } from "@/components/ui/button"
 import { PageHeader, Panel, Bar, SectionTitle, Pill, accuracyTone } from "@/components/shared"
+import { exams } from "@/lib/data"
 import { modelTestsApi } from "@/lib/api"
 import { cn } from "@/lib/utils"
 
@@ -22,8 +23,10 @@ export default function TestResult() {
   const { state } = useLocation()
   const testId = state?.testId || "bcs-prelim-model-test-1"
   const testTitle = state?.testTitle || "BCS Preliminary Full Model Test"
+  const examSlug = state?.examSlug || "bcs-general"
   const negativeMark = state?.negative !== undefined ? state.negative : 0.5
   const usedSeconds = state?.used || 0
+  const attemptId = state?.attemptId
   const questions = state?.questions || []
   const answers = state?.answers || {}
 
@@ -102,11 +105,13 @@ export default function TestResult() {
 
   // Save to recent attempts history
   useEffect(() => {
+    if (!questions.length) return
     try {
       const record = {
         id: testId,
         title: testTitle,
-        exam: "BCS General",
+        exam: exams.find((e) => e.slug === examSlug)?.name || "BCS General",
+        examSlug,
         date: "Today",
         score: Math.round(score * 10) / 10,
         of: maxMarks,
@@ -126,11 +131,13 @@ export default function TestResult() {
       localStorage.setItem("bd3schools:past_tests", JSON.stringify(list))
 
       // Also notify backend API asynchronously
-      if (testId) {
-        modelTestsApi.submit(testId, answers, usedSeconds).catch(() => {})
+      const savedKey = `bd3schools:test-sent:${attemptId}`
+      if (attemptId && !sessionStorage.getItem(savedKey)) {
+        sessionStorage.setItem(savedKey, "1")
+        modelTestsApi.submit(testId, answers, usedSeconds).catch(() => sessionStorage.removeItem(savedKey))
       }
     } catch {}
-  }, [testId, testTitle, score, maxMarks, pct, answers, usedSeconds])
+  }, [attemptId, testId, testTitle, examSlug, score, maxMarks, pct, answers, usedSeconds])
 
   const timeUsedFormatted = useMemo(() => {
     const m = Math.floor(usedSeconds / 60)
@@ -141,7 +148,7 @@ export default function TestResult() {
   return (
     <div className="mx-auto max-w-3xl space-y-5 pb-12">
       <PageHeader
-        back="/app/test"
+        back="/app/model-test"
         title="Test Result"
         subtitle={`${testTitle} · Real Exam Simulation · Negative marking: -${negativeMark}`}
       />
@@ -344,13 +351,13 @@ export default function TestResult() {
       {/* Retake and Action Bar */}
       <div className="sticky bottom-4 z-10 flex items-center justify-center gap-3 pt-4">
         <Button asChild variant="outline" className="rounded-full px-6 shadow-sm bg-background">
-          <Link to="/app/test">
+          <Link to="/app/model-test">
             <FontAwesomeIcon icon={faArrowLeft} className="mr-1.5 text-xs" />
             Back to Model Tests
           </Link>
         </Button>
         <Button asChild className="rounded-full px-6 font-bold shadow-sm">
-          <Link to={`/app/test/run?test=${testId}`}>
+          <Link to={`/app/model-test/run?test=${testId}`}>
             <FontAwesomeIcon icon={faRotateRight} className="mr-1.5 text-xs" />
             Retake Test
           </Link>

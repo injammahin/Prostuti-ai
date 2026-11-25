@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Services\PastPapers;
 use Database\Factories\PracticeSessionFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
@@ -68,7 +69,7 @@ class PracticeSession extends Model
     public static function start(?User $user, string $mode, ?Exam $exam, ?Subject $subject, int $count, ?string $paper = null): self
     {
         $questionIds = match (true) {
-            in_array($mode, ['past', 'past_exam'], true) && filled($paper) => self::pickPaper($paper, $count),
+            in_array($mode, ['past', 'past_exam'], true) && filled($paper) => self::pickPaper($paper, $count, fullSet: $mode === 'past_exam'),
             $mode === 'mistakes' => self::pickMistakes($user, $count),
             $mode === 'diagnostic' => self::pickAcrossSubjects($exam, $count),
             default => self::pickFresh($user, $exam, $subject, $count, pastPapersOnly: in_array($mode, ['past', 'past_exam'], true)),
@@ -85,19 +86,23 @@ class PracticeSession extends Model
     }
 
     /**
-     * All live questions of one previous paper (e.g. "47th BCS"), in the order they were added.
+     * All live questions of one previous paper (e.g. "47th BCS"), in the order they were added. The timed exam is
+     * completed to a full set with questions from other papers, the same ones the solutions page shows.
      *
      * @return list<int>
      */
-    private static function pickPaper(string $paper, int $count): array
+    private static function pickPaper(string $paper, int $count, bool $fullSet): array
     {
-        return Question::query()
+        $own = Question::query()
             ->live()
             ->onPaper($paper)
             ->orderBy('id')
             ->limit($count)
-            ->pluck('id')
-            ->all();
+            ->pluck('id');
+
+        $fillers = $fullSet ? PastPapers::fillers((int) $paper) : collect();
+
+        return $own->concat($fillers)->take($count)->values()->all();
     }
 
     /**

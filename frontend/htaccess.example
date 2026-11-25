@@ -1,0 +1,21 @@
+# Optional lines for the EXISTING .htaccess on the live server (bd3schools.com also serves /api and /admin).
+# Add these to it. Do not replace the file, and keep its existing rules for /api, /admin and pages.
+
+# 1) Right after "RewriteEngine On": www goes to the main address
+RewriteCond %{HTTP_HOST} ^www\.bd3schools\.com$ [NC]
+RewriteRule ^ https://bd3schools.com%{REQUEST_URI} [R=301,L]
+
+# 2) At the end of the file: smaller downloads and longer caching
+AddType image/webp .webp
+AddType application/manifest+json .webmanifest
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/javascript text/javascript application/json application/xml image/svg+xml application/manifest+json
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(webp|jpg|jpeg|png|svg|ico|woff2)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>

@@ -64,13 +64,16 @@ class Post extends Model
             'cover_image' => $this->coverUrl(),
             'author' => $this->author,
             'tags' => $this->tags ?? [],
-            'meta_title' => $this->meta_title ?: $this->title,
-            'meta_description' => $this->meta_description ?: Str::limit($this->excerpt, 160),
             'published_at' => $this->published_at?->toIso8601String(),
             'updated_at' => $this->updated_at?->toIso8601String(),
             'reading_minutes' => $this->readingMinutes(),
             'is_featured' => $this->is_featured,
-            ...($withBody ? ['body' => $this->renderedBody(), 'attachments' => $this->downloadableFiles()] : []),
+            ...($withBody ? [
+                'meta_title' => $this->meta_title ?: $this->title,
+                'meta_description' => $this->meta_description ?: Str::limit($this->excerpt, 160),
+                'body' => $this->renderedBody(),
+                'attachments' => $this->downloadableFiles(),
+            ] : []),
         ];
     }
 

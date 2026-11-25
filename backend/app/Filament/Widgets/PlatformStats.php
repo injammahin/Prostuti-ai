@@ -21,7 +21,7 @@ class PlatformStats extends StatsOverviewWidget
 
     protected function getColumns(): int
     {
-        return 3;
+        return 4;
     }
 
     /**
@@ -33,10 +33,8 @@ class PlatformStats extends StatsOverviewWidget
         $yesterday = $today->subDay();
 
         $visitorsSeries = $this->countPerDay(PageView::query(), 14, distinct: 'visitor_id');
-        $viewsSeries = $this->countPerDay(PageView::query(), 14);
         $signupSeries = $this->countPerDay(User::query()->where('is_admin', false), 14);
         $answerSeries = $this->countPerDay(SessionAnswer::query(), 14);
-        $activeSeries = $this->countPerDay(SessionAnswer::query()->whereNotNull('user_id'), 14, distinct: 'user_id');
         $quizSeries = $this->countPerDay(ActivityLog::query()->where('action', 'daily_quiz.completed'), 14);
 
         $answersToday = SessionAnswer::query()->where('created_at', '>=', $today);
@@ -46,11 +44,9 @@ class PlatformStats extends StatsOverviewWidget
 
         return [
             $this->stat('Visitors today', end($visitorsSeries), $this->versus(end($visitorsSeries), $this->yesterday($visitorsSeries)), $visitorsSeries, Heroicon::OutlinedGlobeAlt, 'primary'),
-            $this->stat('Page views today', end($viewsSeries), number_format(array_sum($viewsSeries)).' in the last 14 days', $viewsSeries, Heroicon::OutlinedEye, 'info'),
-            $this->stat('Students', $students, '+'.User::query()->where('is_admin', false)->where('created_at', '>=', $today->subDays(6))->count().' joined this week', $signupSeries, Heroicon::OutlinedUserGroup, 'success'),
-            $this->stat('Active students today', end($activeSeries), $this->versus(end($activeSeries), $this->yesterday($activeSeries)), $activeSeries, Heroicon::OutlinedBolt, 'warning'),
-            $this->stat('Questions answered today', $answeredToday, $answeredToday ? round($correctToday / $answeredToday * 100).'% answered correctly' : 'No answers yet today', $answerSeries, Heroicon::OutlinedCheckBadge, 'success'),
-            $this->stat('Daily quiz plays today', end($quizSeries), number_format(array_sum($quizSeries)).' in the last 14 days', $quizSeries, Heroicon::OutlinedTrophy, 'danger'),
+            $this->stat('Students', $students, '+'.User::query()->where('is_admin', false)->where('created_at', '>=', $today->subDays(6))->count().' joined this week', $signupSeries, Heroicon::OutlinedUserGroup, 'primary'),
+            $this->stat('Questions answered today', $answeredToday, $answeredToday ? round($correctToday / $answeredToday * 100).'% answered correctly' : 'No answers yet today', $answerSeries, Heroicon::OutlinedCheckBadge, 'primary'),
+            $this->stat('Daily quiz plays today', end($quizSeries), number_format(array_sum($quizSeries)).' in the last 14 days', $quizSeries, Heroicon::OutlinedTrophy, 'primary'),
         ];
     }
 

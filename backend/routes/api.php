@@ -6,10 +6,12 @@ use App\Http\Controllers\Api\V1\AuthController;
 use App\Http\Controllers\Api\V1\CatalogController;
 use App\Http\Controllers\Api\V1\DailyQuizController;
 use App\Http\Controllers\Api\V1\MistakeController;
+use App\Http\Controllers\Api\V1\ModelTestController;
 use App\Http\Controllers\Api\V1\NoticeController;
 use App\Http\Controllers\Api\V1\PastPaperController;
 use App\Http\Controllers\Api\V1\PostController;
 use App\Http\Controllers\Api\V1\PracticeSessionController;
+use App\Http\Controllers\Api\V1\ReportController;
 use App\Http\Controllers\Api\V1\SiteSettingsController;
 use App\Http\Controllers\Api\V1\StatsController;
 use App\Http\Controllers\Api\V1\TrackingController;
@@ -44,10 +46,11 @@ Route::prefix('v1')->name('api.v1.')->group(function () {
     Route::get('posts/{slug}', [PostController::class, 'show'])->name('posts.show');
     Route::get('past-papers', [PastPaperController::class, 'index'])->name('past-papers');
     Route::get('past-papers/{number}', [PastPaperController::class, 'show'])->whereNumber('number')->name('past-papers.show');
-    Route::get('model-tests', [\App\Http\Controllers\Api\V1\ModelTestController::class, 'index'])->name('model-tests.index');
-    Route::get('model-tests/{id}', [\App\Http\Controllers\Api\V1\ModelTestController::class, 'show'])->name('model-tests.show');
-    Route::post('model-tests/{id}/submit', [\App\Http\Controllers\Api\V1\ModelTestController::class, 'submit'])->middleware('throttle:60,1')->name('model-tests.submit');
+    Route::get('model-tests', [ModelTestController::class, 'index'])->name('model-tests.index');
+    Route::get('model-tests/{id}', [ModelTestController::class, 'show'])->name('model-tests.show');
+    Route::post('model-tests/{id}/submit', [ModelTestController::class, 'submit'])->middleware('throttle:60,1')->name('model-tests.submit');
     Route::post('ai/explain', [AiTutorController::class, 'ask'])->middleware('throttle:20,1')->name('ai.explain');
+    Route::post('reports', [ReportController::class, 'store'])->middleware('throttle:10,1')->name('reports.store');
     Route::post('track', [TrackingController::class, 'pageView'])->middleware('throttle:120,1')->name('track');
 
     Route::prefix('practice/sessions')->name('practice.')->middleware('throttle:120,1')->group(function () {
@@ -60,8 +63,10 @@ Route::prefix('v1')->name('api.v1.')->group(function () {
     Route::middleware('auth:sanctum')->group(function () {
         Route::get('me', [AuthController::class, 'me'])->name('me');
         Route::patch('me', [AuthController::class, 'updateProfile'])->name('me.update');
+        Route::delete('me', [AuthController::class, 'destroy'])->middleware('throttle:5,1')->name('me.destroy');
         Route::get('me/stats', [StatsController::class, 'show'])->name('me.stats');
         Route::get('me/mistakes', [MistakeController::class, 'index'])->name('me.mistakes');
+        Route::post('daily-quiz/reshuffle', [DailyQuizController::class, 'reshuffle'])->name('daily-quiz.reshuffle');
         Route::post('auth/logout', [AuthController::class, 'logout'])->name('auth.logout');
         Route::post('admin/sso-link', [AdminSsoController::class, 'link'])->middleware('throttle:10,1')->name('admin.sso-link');
     });

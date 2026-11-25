@@ -26,7 +26,59 @@ class ListModelTests extends ListRecords
                 ->label('Auto-Generate Model Test')
                 ->icon('heroicon-o-sparkles')
                 ->color('primary')
+                ->modalHeading('Auto-Generate Dynamic Model Test')
+                ->modalDescription('Automatically select balanced questions from past exam papers and topic pools using the BPSC syllabus algorithm.')
                 ->form([
+                    Select::make('exam_slug')
+                        ->label('Target Examination')
+                        ->options([
+                            'bcs-general' => 'BCS General (200 Questions / 10 Subjects)',
+                            'bank' => 'Combined Bank Jobs (100 Questions)',
+                            'primary' => 'Primary Assistant Teacher (80 Questions)',
+                            'ntrca' => 'NTRCA Teacher Registration (100 Questions)',
+                        ])
+                        ->default('bcs-general')
+                        ->required()
+                        ->live()
+                        ->afterStateUpdated(function (?string $state, callable $set) {
+                            $exam = $state ?: 'bcs-general';
+                            $count = ModelTest::where('exam_slug', $exam)->count() + 1;
+
+                            $title = match ($exam) {
+                                'bank' => "Combined Bank Senior Officer Model Test #{$count}",
+                                'primary' => "Primary Assistant Teacher Full Model Test #{$count}",
+                                'ntrca' => "NTRCA Teacher Registration Model Test #{$count}",
+                                default => "BCS Preliminary Full Model Test #{$count}",
+                            };
+                            $titleBn = match ($exam) {
+                                'bank' => "সমন্বিত ব্যাংক সিনিয়র অফিসার মডেল টেস্ট #{$count}",
+                                'primary' => "প্রাথমিক সহকারী শিক্ষক পূর্ণাঙ্গ মডেল টেস্ট #{$count}",
+                                'ntrca' => "এনটিআরসিএ শিক্ষক নিবন্ধন মডেল টেস্ট #{$count}",
+                                default => "বিসিএস প্রিলিমিনারি পূর্ণাঙ্গ মডেল টেস্ট #{$count}",
+                            };
+                            $duration = match ($exam) {
+                                'bank', 'primary', 'ntrca' => 60,
+                                default => 120,
+                            };
+                            $marks = match ($exam) {
+                                'primary' => 80,
+                                'bank', 'ntrca' => 100,
+                                default => 200,
+                            };
+                            $passMarks = match ($exam) {
+                                'primary', 'ntrca' => 40,
+                                'bank' => 50,
+                                default => 100,
+                            };
+                            $neg = in_array($exam, ['bank', 'primary'], true) ? 0.25 : 0.50;
+
+                            $set('title', $title);
+                            $set('title_bn', $titleBn);
+                            $set('duration_minutes', $duration);
+                            $set('total_marks', $marks);
+                            $set('pass_marks', $passMarks);
+                            $set('negative_marking', $neg);
+                        }),
                     TextInput::make('title')
                         ->label('Test Title')
                         ->default("BCS Preliminary Full Model Test #{$nextNum}")
@@ -34,16 +86,6 @@ class ListModelTests extends ListRecords
                     TextInput::make('title_bn')
                         ->label('Test Title (Bengali)')
                         ->default("বিসিএস প্রিলিমিনারি পূর্ণাঙ্গ মডেল টেস্ট #{$nextNum}"),
-                    Select::make('exam_slug')
-                        ->label('Target Examination')
-                        ->options([
-                            'bcs-general' => 'BCS General (200 Questions / 10 Subjects)',
-                            'bank' => 'Combined Bank Jobs (100 Questions)',
-                            'primary' => 'Primary Assistant Teacher (80 Questions)',
-                            'ntrca' => 'NTRCA Teacher Registration (50 Questions)',
-                        ])
-                        ->default('bcs-general')
-                        ->required(),
                     TextInput::make('duration_minutes')
                         ->label('Duration (Minutes)')
                         ->numeric()
@@ -53,6 +95,11 @@ class ListModelTests extends ListRecords
                         ->label('Total Marks')
                         ->numeric()
                         ->default(200)
+                        ->required(),
+                    TextInput::make('pass_marks')
+                        ->label('Pass Marks')
+                        ->numeric()
+                        ->default(100)
                         ->required(),
                     TextInput::make('negative_marking')
                         ->label('Negative Marking per Wrong Answer')
@@ -73,21 +120,25 @@ class ListModelTests extends ListRecords
                         ->label('Publish Status')
                         ->options([
                             'published' => 'Published (Live Immediately for Users)',
+                            'scheduled' => 'Scheduled for specific dates',
                             'draft' => 'Draft (Saved for review)',
-                            'scheduled' => 'Scheduled for specific time',
                         ])
                         ->default('published')
                         ->required(),
                     DateTimePicker::make('starts_at')
-                        ->label('Schedule Start Time')
-                        ->default(now()),
+                        ->label('Start Date & Time (Schedule)')
+                        ->default(now())
+                        ->required(),
+                    DateTimePicker::make('ends_at')
+                        ->label('End Date & Time / Deadline')
+                        ->helperText('Optional - leave empty for ongoing open test'),
                 ])
                 ->action(function (array $data): void {
                     $modelTest = ModelTestGeneratorService::createAutoModelTest($data);
 
                     Notification::make()
                         ->title('Model Test Auto-Generated!')
-                        ->body("Created '{$modelTest->title}' with {$modelTest->total_questions} dynamically balanced questions from the BCS Question Bank.")
+                        ->body("Created '{$modelTest->title}' with {$modelTest->total_questions} dynamically balanced questions.")
                         ->success()
                         ->send();
                 }),

@@ -55,7 +55,7 @@ const modes = [
     title: ["Take a full test", "পূর্ণ পরীক্ষা দিন"],
     text: ["Like the real exam, with a timer", "আসল পরীক্ষার মতো, সময়সহ"],
     tone: "chart5",
-    to: "/app/test",
+    to: "/app/model-test",
   },
   {
     id: "wrong",
@@ -71,7 +71,7 @@ export default function Practice() {
   const nav = useNavigate();
   const { mainExam, isGuest, bn, L, num } = useApp();
   const examName = (e) => (e ? L(e.name, e.name_bn || e.name) : "");
-  const { data: catalog, loading } = useApi(() => catalogApi.get(), []);
+  const { data: catalog, loading } = useApi(() => catalogApi.get(), [], { key: "catalog" });
   const { data: stats } = useApi(() => statsApi.get(mainExam), [mainExam], { enabled: !isGuest });
   const exams = catalog?.exams ?? [];
   const subjects = (catalog?.subjects ?? []).map((x) => ({
@@ -334,7 +334,7 @@ export default function Practice() {
 
       {/* Practice Configuration Dialog */}
       <Dialog open={!!subject} onOpenChange={(v) => !v && setSubject(null)}>
-        <DialogContent className="max-w-[calc(100%-2rem)] gap-0 rounded-xl p-0 sm:max-w-md">
+        <DialogContent className="w-[calc(100vw-2.5rem)] max-w-[calc(100vw-2.5rem)] sm:w-full sm:max-w-md gap-0 rounded-2xl p-0">
           {subject && (
             <>
               <DialogHeader className="flex-row items-center gap-3 space-y-0 border-b p-5 text-left">

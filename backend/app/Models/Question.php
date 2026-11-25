@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Services\PastPapers;
 use Database\Factories\QuestionFactory;
 use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Builder;
@@ -149,8 +150,34 @@ class Question extends Model
     public function scopeOnPaper(Builder $query, string $source): void
     {
         $query->where('source', $source)->where(function (Builder $query) use ($source): void {
-            $query->whereNull('ref')->orWhere('ref', 'like', 'bcs'.(int) $source.'_q%');
+            $prefix = 'bcs'.(int) $source.'_q';
+
+            $query->whereNull('ref')->orWhere(fn (Builder $query) => $query
+                ->where('ref', 'like', "{$prefix}%")
+                ->whereRaw('cast(substr(ref, ?) as unsigned) <= ?', [strlen($prefix) + 1, PastPapers::size((int) $source)]));
         });
+    }
+
+    /**
+     * The same rule as scopeOnPaper(), for a question already loaded.
+     */
+    public function isOnPaper(): bool
+    {
+        if ($this->ref === null) {
+            return true;
+        }
+
+        $number = $this->numberOnPaper();
+
+        return str_starts_with($this->ref, 'bcs'.(int) $this->source.'_q') && $number !== null && $number <= PastPapers::size((int) $this->source);
+    }
+
+    /**
+     * The question's number on the printed paper, read from its ref ("bcs35_q17" → 17).
+     */
+    public function numberOnPaper(): ?int
+    {
+        return preg_match('/_q(\d+)$/', (string) $this->ref, $matches) ? (int) $matches[1] : null;
     }
 
     /**

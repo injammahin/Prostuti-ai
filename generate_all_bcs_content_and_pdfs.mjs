@@ -327,7 +327,7 @@ function buildBlogBody(num, meta, questions, slug) {
     <div style="display:flex; flex-wrap:wrap; gap:10px;">
       <a href="/app/bcs-papers" style="display:inline-block; background:#1d6ca8; color:#ffffff; padding:10px 20px; border-radius:999px; font-weight:700; text-decoration:none; font-size:0.92rem;">👉 পূর্ণাঙ্গ পরীক্ষা দিন (Timed Exam)</a>
       <a href="/app/practice" style="display:inline-block; background:rgba(255,255,255,0.15); color:#ffffff; padding:10px 18px; border-radius:999px; font-weight:600; text-decoration:none; font-size:0.92rem;">📚 বিষয়ভিত্তিক প্র্যাকটিস করুন</a>
-      <a href="/app/test" style="display:inline-block; background:rgba(255,255,255,0.15); color:#ffffff; padding:10px 18px; border-radius:999px; font-weight:600; text-decoration:none; font-size:0.92rem;">⚡ মডেল টেস্টে অংশ নিন</a>
+      <a href="/app/model-test" style="display:inline-block; background:rgba(255,255,255,0.15); color:#ffffff; padding:10px 18px; border-radius:999px; font-weight:600; text-decoration:none; font-size:0.92rem;">⚡ মডেল টেস্টে অংশ নিন</a>
     </div>
   </div>
 

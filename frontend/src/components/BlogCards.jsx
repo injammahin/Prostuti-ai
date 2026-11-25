@@ -6,9 +6,12 @@ import { cn } from "@/lib/utils"
 
 const DATE = { day: "numeric", month: "long", year: "numeric" }
 
+/** The BCS covers have a small version for cards; the article page uses the full one. */
+const smallCover = (url) => url.replace(/^\/covers\/bcs\/([^/]+)\.jpg$/, "/covers/bcs/sm/$1.webp")
+
 function Cover({ post, className }) {
   return post.cover_image ? (
-    <img src={post.cover_image} alt="" loading="lazy" className={cn("w-full object-cover", className)} />
+    <img src={smallCover(post.cover_image)} alt="" width="640" height="357" loading="lazy" decoding="async" className={cn("w-full object-cover", className)} />
   ) : (
     <div className={cn("hero grid w-full place-items-center", className)}>
       <FontAwesomeIcon icon={faNewspaper} className="text-4xl text-white/40" />
@@ -33,7 +36,7 @@ function Meta({ post, L }) {
 export function LeadPost({ post, L }) {
   return (
     <Link to={`/blog/${post.slug}`} className="card lift group grid overflow-hidden md:grid-cols-[1.15fr_1fr]">
-      <Cover post={post} className="aspect-[1.91/1] md:aspect-auto md:h-full" />
+      <Cover post={post} className="aspect-[1200/670] md:aspect-auto md:h-full" />
       <div className="flex flex-col justify-center p-5 md:p-8">
         <div className="flex items-center gap-2">
           <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold text-primary">{post.category_label}</span>
@@ -60,7 +63,7 @@ export function LeadPost({ post, L }) {
 export function PostCard({ post, L }) {
   return (
     <Link to={`/blog/${post.slug}`} className="card lift group flex flex-col overflow-hidden">
-      <Cover post={post} className="aspect-[1.91/1]" />
+      <Cover post={post} className="aspect-[1200/670]" />
       <div className="flex flex-1 flex-col p-5">
         <span className="self-start rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold text-primary">{post.category_label}</span>
         <h3 className={cn("mt-3 line-clamp-2 leading-snug font-bold transition-colors group-hover:text-primary", post.lang === "bn" && "bn")}>{post.title}</h3>

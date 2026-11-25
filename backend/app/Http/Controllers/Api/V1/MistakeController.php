@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\QuestionResource;
+use App\Models\Exam;
 use App\Models\Mistake;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -15,11 +16,13 @@ class MistakeController extends Controller
      */
     public function index(Request $request): JsonResponse
     {
+        $exam = Exam::query()->firstWhere('slug', $request->query('exam'));
+
         $mistakes = Mistake::query()
             ->open()
             ->where('user_id', $request->user()->id)
             ->with('question.subject')
-            ->whereHas('question', fn ($query) => $query->live())
+            ->whereHas('question', fn ($query) => $query->live()->forExam($exam))
             ->orderBy('next_review_at')
             ->get();
 

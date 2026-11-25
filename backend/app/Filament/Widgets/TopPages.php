@@ -8,7 +8,9 @@ use Illuminate\Support\Facades\DB;
 
 class TopPages extends Widget
 {
-    protected static ?int $sort = 9;
+    protected static ?int $sort = 10;
+
+    protected int|string|array $columnSpan = 'full';
 
     protected string $view = 'filament.widgets.top-pages';
 

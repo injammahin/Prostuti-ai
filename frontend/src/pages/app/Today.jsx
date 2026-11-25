@@ -24,7 +24,7 @@ import { notices } from "@/lib/data"
 import { useApp } from "@/lib/app-context"
 import { statsApi } from "@/lib/api"
 import { useApi } from "@/lib/use-api"
-import { daysUntil, keyDate, relDays } from "@/lib/format"
+import { daysUntil, keyDate, relDays, noticeTitle } from "@/lib/format"
 import { cn } from "@/lib/utils"
 import { useNoticesVersion } from "@/lib/notices-store"
 
@@ -117,7 +117,8 @@ export default function Today() {
   const dateStr = fmtDate(new Date(), { weekday: "long", day: "numeric", month: "long" })
   const examDate = examDateFromRoutine()
   const examDays = examDate ? daysUntil(examDate) : null
-  const myNotices = notices.filter((n) => followed.includes(n.exam)).slice(0, 4)
+  // The chosen exam's notices first, then the other exams the student follows.
+  const myNotices = [...notices.filter((n) => n.exam === mainExam), ...notices.filter((n) => n.exam !== mainExam && followed.includes(n.exam))].slice(0, 4)
 
   const todayCount = s?.today.answered ?? 0
   const goal = s?.today.goal ?? 20
@@ -172,7 +173,7 @@ export default function Today() {
                   </Button>
                 )}
                 <Button asChild variant="outline" className="h-11 border-white/25 bg-white/5 px-5 text-white hover:bg-white/10 hover:text-white">
-                  <Link to="/app/test">{L("Take a model test", "মডেল টেস্ট দিন")}</Link>
+                  <Link to="/app/model-test">{L("Take a model test", "মডেল টেস্ট দিন")}</Link>
                 </Button>
               </div>
             </div>
@@ -425,7 +426,7 @@ export default function Today() {
                 <Link key={n.slug} to={`/app/notices/${n.slug}`} className="group flex items-center gap-3 p-3 transition-colors hover:bg-muted/40">
                   <DateChip iso={k.date} label={k.label === "Apply by" ? "Apply" : k.label === "Exam" ? "Exam" : "Pub"} />
                   <div className="min-w-0 flex-1">
-                    <p className="line-clamp-2 text-sm leading-snug font-bold group-hover:text-primary">{n.title}</p>
+                    <p className="line-clamp-2 text-sm leading-snug font-bold group-hover:text-primary">{noticeTitle(n)}</p>
                     <p className="mt-0.5 text-xs text-muted-foreground">{relDays(k.date)}</p>
                   </div>
                 </Link>
@@ -443,7 +444,7 @@ export default function Today() {
             <p className="text-xs text-muted-foreground">{L("200 marks · 2 hours, like the real exam", "২০০ নম্বর · ২ ঘণ্টা, আসল পরীক্ষার মতো")}</p>
           </div>
           <Button asChild variant="outline" size="sm" className="h-9 shrink-0">
-            <Link to="/app/test">
+            <Link to="/app/model-test">
               <FontAwesomeIcon icon={faStopwatch} /> {L("Start", "শুরু")}
             </Link>
           </Button>

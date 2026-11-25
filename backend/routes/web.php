@@ -27,7 +27,7 @@ Route::get('/sitemap.xml', function () {
     $xml .= "<url><loc>{$site}/blog</loc><lastmod>{$today}</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>";
     $xml .= "<url><loc>{$site}/notices</loc><lastmod>{$today}</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>";
     $xml .= "<url><loc>{$site}/app/bcs-papers</loc><lastmod>{$today}</lastmod><changefreq>weekly</changefreq><priority>0.95</priority></url>";
-    $xml .= "<url><loc>{$site}/app/test</loc><lastmod>{$today}</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>";
+    $xml .= "<url><loc>{$site}/app/model-test</loc><lastmod>{$today}</lastmod><changefreq>weekly</changefreq><priority>0.90</priority></url>";
 
     foreach ($posts as $post) {
         $lastmod = $post->updated_at?->toDateString() ?: $today;

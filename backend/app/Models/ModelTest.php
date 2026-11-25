@@ -27,6 +27,16 @@ class ModelTest extends Model
         return $this->belongsTo(Exam::class, 'exam_id');
     }
 
+    /** The exam's slug in the catalogue; tests group exams as "bank" and "primary". */
+    public function catalogExamSlug(): string
+    {
+        return match ($this->exam_slug) {
+            'bank' => str_starts_with((string) $this->slug, 'bb-') ? 'bangladesh-bank' : 'combined-bank',
+            'primary' => 'primary-teacher',
+            default => $this->exam_slug,
+        };
+    }
+
     public function scopePublished($query)
     {
         return $query->where('status', 'published');

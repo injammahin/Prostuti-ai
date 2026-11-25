@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\DeleteAccountRequest;
 use App\Http\Requests\GoogleLoginRequest;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
@@ -17,6 +18,7 @@ use App\Models\LoginCode;
 use App\Models\User;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
@@ -197,6 +199,26 @@ class AuthController extends Controller
         ActivityLog::record('auth.logout', "{$request->user()->name} logged out", $request->user(), [], $request);
 
         return response()->json(['message' => 'Logged out.']);
+    }
+
+    /**
+     * Permanently delete the student's account with everything that belongs to it. Practice, answers and mistakes
+     * go with the user row (cascade); visit counts stay, without any link to the person.
+     */
+    public function destroy(DeleteAccountRequest $request): JsonResponse
+    {
+        $user = $request->user();
+
+        DB::transaction(function () use ($user): void {
+            ActivityLog::query()->where('user_id', $user->id)->delete();
+            LoginCode::query()->where('email', $user->email)->delete();
+            DB::table('sessions')->where('user_id', $user->id)->delete();
+            DB::table('password_reset_tokens')->where('email', $user->email)->delete();
+            $user->tokens()->delete();
+            $user->delete();
+        });
+
+        return response()->json(['message' => 'Account deleted.']);
     }
 
     /**

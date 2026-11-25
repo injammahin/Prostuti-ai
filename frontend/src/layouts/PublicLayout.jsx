@@ -9,7 +9,14 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import { Logo } from "@/components/shared"
 import { useApp } from "@/lib/app-context"
+import { FACEBOOK_URL, YOUTUBE_URL } from "@/lib/site"
 import { cn } from "@/lib/utils"
+
+// Only the pages that exist are shown (set in .env).
+const socials = [
+  ["Facebook", faFacebook, FACEBOOK_URL],
+  ["YouTube", faYoutube, YOUTUBE_URL],
+].filter(([, , url]) => url)
 
 const links = [
   ["/daily", "dailyQuiz"],
@@ -34,7 +41,7 @@ export function LangToggle({ className }) {
 }
 
 export default function PublicLayout() {
-  const { t, user, isGuest } = useApp()
+  const { t, L, num, user, isGuest } = useApp()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const { pathname } = useLocation()
@@ -81,7 +88,7 @@ export default function PublicLayout() {
             {user && !isGuest ? (
               <Button asChild className="h-10 px-5">
                 <Link to="/app">
-                  Dashboard <FontAwesomeIcon icon={faArrowRight} />
+                  {t("dashboard")} <FontAwesomeIcon icon={faArrowRight} />
                 </Link>
               </Button>
             ) : (
@@ -146,42 +153,49 @@ export default function PublicLayout() {
           <div className="md:col-span-2">
             <Logo />
             <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-              Prepare for BCS General, NTRCA, Primary Assistant Teacher, Combined Bank Jobs and Bangladesh Bank exams with adaptive practice, model tests and verified notices. Free.
+              {L(
+                "Prepare for BCS General, NTRCA, Primary Assistant Teacher, Combined Bank Jobs and Bangladesh Bank exams with adaptive practice, model tests and verified notices. Free.",
+                "বিসিএস সাধারণ, এনটিআরসিএ, প্রাথমিক সহকারী শিক্ষক, সমন্বিত ব্যাংক ও বাংলাদেশ ব্যাংক পরীক্ষার প্রস্তুতি নিন অনুশীলন, মডেল টেস্ট ও যাচাইকৃত নোটিশের মাধ্যমে। সম্পূর্ণ ফ্রি।"
+              )}
             </p>
             <div className="mt-5 flex gap-2">
-              {[faFacebook, faYoutube].map((ic, i) => (
-                <a key={i} href="#" aria-label={i ? "YouTube" : "Facebook"} className="grid size-10 place-items-center rounded-full border text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary">
+              {socials.map(([label, ic, url]) => (
+                <a key={label} href={url} target="_blank" rel="noreferrer" aria-label={label} className="grid size-10 place-items-center rounded-full border text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary">
                   <FontAwesomeIcon icon={ic} />
                 </a>
               ))}
             </div>
           </div>
           <div className="text-sm">
-            <p className="mb-3 font-semibold">Prepare</p>
+            <p className="mb-3 font-semibold">{L("Prepare", "প্রস্তুতি")}</p>
             <ul className="space-y-2.5 text-muted-foreground">
-              <li><Link to="/exams/bcs-general" className="hover:text-primary">BCS General</Link></li>
-              <li><Link to="/exams/ntrca" className="hover:text-primary">NTRCA Registration</Link></li>
-              <li><Link to="/exams/primary-teacher" className="hover:text-primary">Primary Teacher</Link></li>
-              <li><Link to="/exams/combined-bank" className="hover:text-primary">Combined Bank Jobs</Link></li>
-              <li><Link to="/exams/bangladesh-bank" className="hover:text-primary">Bangladesh Bank</Link></li>
+              <li><Link to="/exams/bcs-general" className="hover:text-primary">{L("BCS General", "বিসিএস সাধারণ")}</Link></li>
+              <li><Link to="/exams/ntrca" className="hover:text-primary">{L("NTRCA Registration", "এনটিআরসিএ শিক্ষক নিবন্ধন")}</Link></li>
+              <li><Link to="/exams/primary-teacher" className="hover:text-primary">{L("Primary Teacher", "প্রাথমিক শিক্ষক")}</Link></li>
+              <li><Link to="/exams/combined-bank" className="hover:text-primary">{L("Combined Bank Jobs", "সমন্বিত ব্যাংক")}</Link></li>
+              <li><Link to="/exams/bangladesh-bank" className="hover:text-primary">{L("Bangladesh Bank", "বাংলাদেশ ব্যাংক")}</Link></li>
             </ul>
           </div>
           <div className="text-sm">
-            <p className="mb-3 font-semibold">Stay updated</p>
+            <p className="mb-3 font-semibold">{L("Stay updated", "আপডেট থাকুন")}</p>
             <ul className="space-y-2.5 text-muted-foreground">
-              <li><Link to="/notices" className="hover:text-primary">Notice board</Link></li>
-              <li><Link to="/calendar" className="hover:text-primary">Exam calendar</Link></li>
-              <li><Link to="/bcs-papers" className="hover:text-primary">Previous BCS questions</Link></li>
-              <li><Link to="/blog" className="hover:text-primary">Blog</Link></li>
-              <li><a href="#" className="hover:text-primary">Privacy policy</a></li>
-              <li><a href="#" className="hover:text-primary">Terms</a></li>
+              <li><Link to="/notices" className="hover:text-primary">{L("Notice board", "নোটিশ বোর্ড")}</Link></li>
+              <li><Link to="/calendar" className="hover:text-primary">{L("Exam calendar", "পরীক্ষার ক্যালেন্ডার")}</Link></li>
+              <li><Link to="/bcs-papers" className="hover:text-primary">{L("Previous BCS questions", "বিগত বিসিএস প্রশ্ন")}</Link></li>
+              <li><Link to="/blog" className="hover:text-primary">{t("blog")}</Link></li>
+              <li><Link to="/about" className="hover:text-primary">{L("About bd3schools", "bd3schools সম্পর্কে")}</Link></li>
+              <li><Link to="/privacy" className="hover:text-primary">{L("Privacy policy", "গোপনীয়তা নীতি")}</Link></li>
+              <li><Link to="/terms" className="hover:text-primary">{L("Terms", "শর্তাবলি")}</Link></li>
             </ul>
           </div>
         </div>
         <div className="border-t border-border/70">
           <p className="mx-auto max-w-6xl px-4 py-5 text-xs leading-relaxed text-muted-foreground">
-            bd3schools is an independent preparation platform and is not affiliated with BPSC or any ministry. Always confirm dates on the official website
-            and apply only through the official portal. © 2026 bd3schools.
+            {L(
+              "bd3schools is an independent preparation platform and is not affiliated with BPSC or any ministry. Always confirm dates on the official website and apply only through the official portal.",
+              "bd3schools একটি স্বাধীন প্রস্তুতি প্ল্যাটফর্ম; বিপিএসসি বা কোনো মন্ত্রণালয়ের সঙ্গে যুক্ত নয়। তারিখ সবসময় অফিসিয়াল ওয়েবসাইটে যাচাই করুন এবং শুধু অফিসিয়াল পোর্টালেই আবেদন করুন।"
+            )}{" "}
+            © {num("2026")} bd3schools.
           </p>
         </div>
       </footer>

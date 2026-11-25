@@ -1,4 +1,4 @@
-import { useState, useId } from "react"
+import { useState, useEffect, useMemo, useId } from "react"
 import { Link } from "react-router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -20,8 +20,9 @@ import { Button } from "@/components/ui/button"
 import { Bar } from "@/components/shared"
 import { SubjectTile } from "@/components/SubjectIcon"
 import { useApp } from "@/lib/app-context"
-import { catalogApi, statsApi } from "@/lib/api"
+import { statsApi } from "@/lib/api"
 import { useApi } from "@/lib/use-api"
+import { exams } from "@/lib/data"
 import { cn } from "@/lib/utils"
 
 /** Custom SVG Line Chart matching the exact visual styling in user's mockup */
@@ -37,9 +38,12 @@ function ModelTestScoreChart({ tests, L, num }) {
   const paddingTop = 25
   const paddingBottom = 35
 
-  const minVal = 60
-  const midVal = 105
-  const maxVal = 150
+  const scores = tests.map((t) => Number(t.score) || 0)
+  const minScore = scores.length > 0 ? Math.min(...scores) : 60
+  const maxScore = scores.length > 0 ? Math.max(...scores) : 150
+  const minVal = Math.max(0, Math.floor((minScore - 15) / 10) * 10)
+  const maxVal = Math.min(Math.max(...tests.map((t) => t.total), 0) || 200, Math.max(minVal + 40, Math.ceil((maxScore + 15) / 10) * 10))
+  const midVal = Math.round((minVal + maxVal) / 2)
 
   const plotWidth = width - paddingLeft - paddingRight
   const plotHeight = height - paddingTop - paddingBottom
@@ -196,10 +200,10 @@ function ModelTestScoreChart({ tests, L, num }) {
             {L(`Model test ${hoveredPoint.index + 1}`, `মডেল টেস্ট ${num(hoveredPoint.index + 1)}`)}
           </div>
           <div className="text-[11px] text-muted-foreground">
-            {L(`Score: ${hoveredPoint.test.score} / 200`, `নম্বর: ${num(hoveredPoint.test.score)} / ২০০`)}
+            {L(`Score: ${hoveredPoint.test.score} / ${hoveredPoint.test.total}`, `নম্বর: ${num(hoveredPoint.test.score)} / ${num(hoveredPoint.test.total)}`)}
             {" • "}
             <span className="font-semibold text-emerald-600 dark:text-emerald-400">
-              {num(Math.round((hoveredPoint.test.score / 200) * 100))}%
+              {num(Math.round((hoveredPoint.test.score / hoveredPoint.test.total) * 100))}%
             </span>
           </div>
         </div>
@@ -223,14 +227,14 @@ function ModelTestScoreTable({ tests, L, num }) {
         </thead>
         <tbody className="divide-y divide-border/60">
           {tests.map((t, idx) => {
-            const pct = Math.round((t.score / 200) * 100)
+            const pct = Math.round((t.score / t.total) * 100)
             return (
               <tr key={t.id || idx} className="hover:bg-muted/40 transition-colors">
                 <td className="py-2.5 font-bold text-foreground">
                   {L(`Model test #${idx + 1}`, `মডেল টেস্ট #${num(idx + 1)}`)}
                 </td>
                 <td className="py-2.5 tabular-nums font-semibold">
-                  {num(t.score)} <span className="text-muted-foreground text-[10px]">/ 200</span>
+                  {num(t.score)} <span className="text-muted-foreground text-[10px]">/ {num(t.total)}</span>
                 </td>
                 <td className="py-2.5 tabular-nums">
                   <span className={cn("font-bold", pct >= 65 ? "text-emerald-600" : "text-amber-600")}>
@@ -252,14 +256,16 @@ function ModelTestScoreTable({ tests, L, num }) {
 }
 
 /** Circular Donut Progress Ring */
-function DonutSolvedRing({ solvedCount, L, num }) {
+function DonutSolvedRing({ solvedCount, accuracy = 0, L, num }) {
   const size = 118
   const stroke = 12
   const radius = (size - stroke) / 2
   const circumference = 2 * Math.PI * radius
-  // Show ~75% filled arc like mockup
-  const percent = 76
-  const strokeDashoffset = circumference - (percent / 100) * circumference
+  
+  // Dynamically calculate progress arc
+  const targetGoal = 500
+  const progressPercent = solvedCount === 0 ? 0 : Math.min(100, Math.max(12, Math.round((solvedCount / targetGoal) * 100)))
+  const strokeDashoffset = circumference - (progressPercent / 100) * circumference
 
   return (
     <div className="relative grid shrink-0 place-items-center" style={{ width: size, height: size }}>
@@ -302,36 +308,43 @@ function DonutSolvedRing({ solvedCount, L, num }) {
 }
 
 /** Activity Heatmap matching user's Practice streak screenshot */
-function PracticeStreakGrid({ daysCount, bestStreak, L, num }) {
-  // 7 rows x 25 columns = 175 days of activity grid
+function PracticeStreakGrid({ daysCount, bestStreak, activityDays = {}, L, num }) {
+  // 7 rows x 26 columns = 182 days of activity grid
   const rows = 7
   const cols = 26
 
-  // Generate deterministic heatmap data reflecting high engagement
+  const today = new Date()
+  const todayDayOfWeek = today.getDay() // 0 = Sunday, 6 = Saturday
+
   const gridCells = []
   for (let c = 0; c < cols; c++) {
     for (let r = 0; r < rows; r++) {
-      const idx = c * rows + r
-      // Simulate streak patterns and intensities
-      let level = 0
-      const randSeed = (c * 17 + r * 31 + 7) % 100
+      // Offset from today in days
+      const daysAgo = (cols - 1 - c) * 7 + (todayDayOfWeek - r)
+      const cellDate = new Date(today)
+      cellDate.setDate(today.getDate() - daysAgo)
+      const dateKey = cellDate.toISOString().slice(0, 10)
 
-      if (c >= cols - 2) {
-        // Last 2 weeks (current streak active)
-        level = (idx % 3) + 2 // Levels 2, 3, 4
-      } else if (randSeed > 68) {
-        level = 4
-      } else if (randSeed > 45) {
-        level = 3
-      } else if (randSeed > 25) {
-        level = 2
-      } else if (randSeed > 12) {
-        level = 1
-      } else {
+      const realCount = activityDays[dateKey] || 0
+      let level = 0
+
+      if (daysAgo < 0) {
+        // Future day in the current week column
         level = 0
+      } else if (realCount >= 25) {
+        level = 4
+      } else if (realCount >= 12) {
+        level = 3
+      } else if (realCount >= 4) {
+        level = 2
+      } else if (realCount >= 1) {
+        level = 1
+      } else if (daysAgo >= 0 && daysAgo < daysCount && daysCount > 0) {
+        // Active streak period
+        level = Math.min(4, Math.max(2, ((daysAgo + 1) % 3) + 2))
       }
 
-      gridCells.push({ col: c, row: r, level, dayOffset: 175 - idx })
+      gridCells.push({ col: c, row: r, level, dateKey, realCount, daysAgo })
     }
   }
 
@@ -385,8 +398,8 @@ function PracticeStreakGrid({ daysCount, bestStreak, L, num }) {
                 getTileBg(cell.level)
               )}
               title={L(
-                `Day ${cell.dayOffset}: ${cell.level > 0 ? `${cell.level * 15} questions solved` : "No practice"}`,
-                `${num(cell.dayOffset)}তম দিন: ${cell.level > 0 ? `${num(cell.level * 15)}টি প্রশ্ন সমাধান` : "অনুশীলন নেই"}`
+                `${cell.dateKey}: ${cell.realCount > 0 ? `${cell.realCount} questions solved` : cell.level > 0 ? "Practice streak active" : "No practice"}`,
+                `${cell.dateKey}: ${cell.realCount > 0 ? `${num(cell.realCount)}টি প্রশ্ন সমাধান` : cell.level > 0 ? "ধারাবাহিক অনুশীলন সক্রিয়" : "অনুশীলন নেই"}`
               )}
             />
           ))}
@@ -419,12 +432,26 @@ function SubjectRow({ s, exam }) {
 }
 
 export default function Progress() {
-  const { mainExam, L, num } = useApp()
-  const [selectedExam, setSelectedExam] = useState(mainExam || "bcs-general")
+  const { mainExam, setMainExam, L, num } = useApp()
+  const selectedExam = mainExam
+  const examInfo = exams.find((e) => e.slug === mainExam) || exams[0]
+  const fullMarks = examInfo.stages[0].marks
   const [viewMode, setViewMode] = useState("chart") // "chart" | "table"
   const [examDropdownOpen, setExamDropdownOpen] = useState(false)
+  const [localPastTests, setLocalPastTests] = useState([])
 
-  const { data: catalog } = useApi(() => catalogApi.get(), [])
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem("bd3schools:past_tests")
+      if (stored) {
+        const parsed = JSON.parse(stored)
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          setLocalPastTests(parsed)
+        }
+      }
+    } catch {}
+  }, [])
+
   const { data: s, loading, error, reload } = useApi(() => statsApi.get(selectedExam), [selectedExam])
 
   // Current formatted date
@@ -440,48 +467,62 @@ export default function Progress() {
     month: "long",
   }).format(new Date())
 
-  // Realistic progressive test score sequence (Tests 1 through 8)
-  const defaultModelTests = [
-    { id: 1, score: 105, date: "10 Nov" },
-    { id: 2, score: 108, date: "12 Nov" },
-    { id: 3, score: 104, date: "14 Nov" },
-    { id: 4, score: 118, date: "16 Nov" },
-    { id: 5, score: 124, date: "18 Nov" },
-    { id: 6, score: 129, date: "20 Nov" },
-    { id: 7, score: 135, date: "22 Nov" },
-    { id: 8, score: 146, date: "24 Nov" },
-  ]
-
-  const modelTests =
-    s?.recent_sessions && s.recent_sessions.length >= 3
-      ? s.recent_sessions.map((sess, i) => ({
-          id: sess.id || i + 1,
-          score: Math.round(((sess.percent || 60) / 100) * 200),
-          date: sess.subject || `Test ${i + 1}`,
+  // Dynamic model tests sequence from backend test_scores, or localStorage, or recent sessions
+  const modelTests = useMemo(() => {
+    if (s?.test_scores && s.test_scores.length > 0) {
+      return s.test_scores.map((ts, idx) => ({
+        id: ts.id || idx + 1,
+        score: Number(ts.score) || 0,
+        date: ts.date || `Test ${idx + 1}`,
+        total: ts.total || fullMarks,
+      }))
+    }
+    const pastTests = localPastTests.filter((pt) => (pt.examSlug || "bcs-general") === mainExam)
+    if (pastTests.length > 0) {
+      return pastTests
+        .slice()
+        .reverse()
+        .map((pt, idx) => ({
+          id: pt.id || idx + 1,
+          score: Number(pt.score) || 0,
+          date: pt.date || `Test ${idx + 1}`,
+          total: pt.of || fullMarks,
         }))
-      : defaultModelTests
+    }
+    return []
+  }, [s?.test_scores, localPastTests, mainExam, fullMarks])
 
-  const firstScore = modelTests[0]?.score || 105
-  const latestScore = modelTests[modelTests.length - 1]?.score || 146
-  const scoreImprovement = latestScore - firstScore
+  const hasTests = modelTests.length > 0
+  const firstScore = hasTests ? modelTests[0].score : 0
+  const latestScore = hasTests ? modelTests[modelTests.length - 1].score : 0
+  const scoreImprovement = hasTests ? latestScore - firstScore : 0
 
-  // Question counts
-  const totalSolved = s?.totals?.answered ? Math.max(s.totals.answered, 1780) : 1780
-  const easySolved = 820
-  const medSolved = 640
-  const hardSolved = 320
+  // Real Dynamic Question counts
+  const totalSolved = Number(s?.totals?.answered ?? 0)
+  const totalCorrect = Number(s?.totals?.correct ?? 0)
+  const overallAccuracy = s?.totals?.accuracy ?? (totalSolved > 0 ? Math.round((totalCorrect / totalSolved) * 100) : 0)
 
-  const streakDays = s?.streak?.current ? Math.max(s.streak.current, 12) : 12
-  const bestStreak = s?.streak?.best ? Math.max(s.streak.best, 19) : 19
+  const easySolved = s?.difficulty?.easy?.solved ?? 0
+  const medSolved = s?.difficulty?.medium?.solved ?? 0
+  const hardSolved = s?.difficulty?.hard?.solved ?? 0
+
+  const easyAcc = s?.difficulty?.easy?.accuracy ?? overallAccuracy
+  const medAcc = s?.difficulty?.medium?.accuracy ?? overallAccuracy
+  const hardAcc = s?.difficulty?.hard?.accuracy ?? overallAccuracy
+
+
+  // Real streak calculation
+  const streakDays = Number(s?.streak?.current ?? (totalSolved > 0 ? 1 : 0))
+  const bestStreak = Number(s?.streak?.best ?? Math.max(streakDays, totalSolved > 0 ? 1 : 0))
+  const activityDays = s?.activity_days || {}
 
   const subjects = s?.subjects ?? []
   const weak = subjects.filter((x) => x.accuracy !== null && x.accuracy < 65).sort((a, b) => a.accuracy - b.accuracy)
   const strong = subjects.filter((x) => x.accuracy !== null && x.accuracy >= 65).sort((a, b) => b.accuracy - a.accuracy)
+  const unstarted = subjects.filter((x) => x.accuracy === null)
 
-  const activeExamName =
-    catalog?.exams?.find((e) => e.slug === selectedExam)?.name || "Bangladesh Bank"
-  const activeExamNameBn =
-    catalog?.exams?.find((e) => e.slug === selectedExam)?.name_bn || "বাংলাদেশ ব্যাংক"
+  const activeExamName = examInfo.name
+  const activeExamNameBn = examInfo.nameBn
 
   return (
     <div className="space-y-6">
@@ -509,15 +550,11 @@ export default function Progress() {
 
           {examDropdownOpen && (
             <div className="absolute right-0 top-full mt-1.5 z-30 w-56 rounded-xl border bg-card p-1.5 shadow-lg">
-              {(catalog?.exams ?? [
-                { slug: "bangladesh-bank", name: "Bangladesh Bank", name_bn: "বাংলাদেশ ব্যাংক" },
-                { slug: "bcs-general", name: "BCS General", name_bn: "বিসিএস সাধারণ" },
-                { slug: "bcs-special", name: "48th Special BCS", name_bn: "৪৮তম বিশেষ বিসিএস" },
-              ]).map((e) => (
+              {exams.map((e) => (
                 <button
                   key={e.slug}
                   onClick={() => {
-                    setSelectedExam(e.slug)
+                    setMainExam(e.slug)
                     setExamDropdownOpen(false)
                   }}
                   className={cn(
@@ -531,7 +568,7 @@ export default function Progress() {
                       selectedExam === e.slug ? "bg-white" : "bg-primary"
                     )}
                   />
-                  <span className="truncate">{L(e.name, e.name_bn || e.name)}</span>
+                  <span className="truncate">{L(e.name, e.nameBn)}</span>
                 </button>
               ))}
             </div>
@@ -559,48 +596,89 @@ export default function Progress() {
                 {L("Model test score", "মডেল টেস্ট স্কোর")}
               </h2>
               <p className="mt-0.5 text-xs text-muted-foreground flex items-center gap-2 flex-wrap">
-                <span>{L("Out of 200", "২০০-এর মধ্যে")}</span>
-                <span className="inline-flex items-center gap-1 font-bold text-emerald-600 dark:text-emerald-400">
-                  <FontAwesomeIcon icon={faArrowTrendUp} />
-                  {L(`+${num(scoreImprovement)} since first test`, `প্রথম টেস্ট থেকে +${num(scoreImprovement)} বৃদ্ধি`)}
-                </span>
+                <span>{L(`Out of ${fullMarks}`, `${num(fullMarks)}-এর মধ্যে`)}</span>
+                {hasTests ? (
+                  modelTests.length > 1 ? (
+                    <span className="inline-flex items-center gap-1 font-bold text-emerald-600 dark:text-emerald-400">
+                      <FontAwesomeIcon icon={faArrowTrendUp} />
+                      {scoreImprovement >= 0
+                        ? L(`+${num(scoreImprovement)} since first test`, `প্রথম টেস্ট থেকে +${num(scoreImprovement)} বৃদ্ধি`)
+                        : L(`${num(scoreImprovement)} since first test`, `প্রথম টেস্ট থেকে ${num(scoreImprovement)}`)}
+                    </span>
+                  ) : (
+                    <span className="font-semibold text-primary">
+                      {L(`Latest: ${num(latestScore)}/${modelTests.at(-1).total}`, `সর্বশেষ স্কোর: ${num(latestScore)}/${num(modelTests.at(-1).total)}`)}
+                    </span>
+                  )
+                ) : (
+                  <span className="text-muted-foreground">
+                    {L("Start your first model test to track score growth", "স্কোর বৃদ্ধি ট্র্যাক করতে প্রথম মডেল টেস্ট দিন")}
+                  </span>
+                )}
               </p>
             </div>
 
             {/* View switcher: Chart / Table */}
-            <div className="flex items-center rounded-lg border bg-muted/30 p-0.5">
-              <button
-                onClick={() => setViewMode("chart")}
-                className={cn(
-                  "flex items-center gap-1 rounded-md px-2.5 py-1 text-[11px] font-bold transition-all",
-                  viewMode === "chart"
-                    ? "bg-card text-foreground shadow-xs"
-                    : "text-muted-foreground hover:text-foreground"
-                )}
-              >
-                <FontAwesomeIcon icon={faChartLine} className="text-[10px]" />
-                {L("Chart", "চার্ট")}
-              </button>
-              <button
-                onClick={() => setViewMode("table")}
-                className={cn(
-                  "flex items-center gap-1 rounded-md px-2.5 py-1 text-[11px] font-bold transition-all",
-                  viewMode === "table"
-                    ? "bg-card text-foreground shadow-xs"
-                    : "text-muted-foreground hover:text-foreground"
-                )}
-              >
-                <FontAwesomeIcon icon={faTable} className="text-[10px]" />
-                {L("Table", "টেবিল")}
-              </button>
-            </div>
+            {hasTests && (
+              <div className="flex items-center rounded-lg border bg-muted/30 p-0.5">
+                <button
+                  onClick={() => setViewMode("chart")}
+                  className={cn(
+                    "flex items-center gap-1 rounded-md px-2.5 py-1 text-[11px] font-bold transition-all",
+                    viewMode === "chart"
+                      ? "bg-card text-foreground shadow-xs"
+                      : "text-muted-foreground hover:text-foreground"
+                  )}
+                >
+                  <FontAwesomeIcon icon={faChartLine} className="text-[10px]" />
+                  {L("Chart", "চার্ট")}
+                </button>
+                <button
+                  onClick={() => setViewMode("table")}
+                  className={cn(
+                    "flex items-center gap-1 rounded-md px-2.5 py-1 text-[11px] font-bold transition-all",
+                    viewMode === "table"
+                      ? "bg-card text-foreground shadow-xs"
+                      : "text-muted-foreground hover:text-foreground"
+                  )}
+                >
+                  <FontAwesomeIcon icon={faTable} className="text-[10px]" />
+                  {L("Table", "টেবিল")}
+                </button>
+              </div>
+            )}
           </div>
 
           <div className="my-auto pt-2">
-            {viewMode === "chart" ? (
-              <ModelTestScoreChart tests={modelTests} L={L} num={num} />
+            {hasTests ? (
+              viewMode === "chart" ? (
+                <ModelTestScoreChart tests={modelTests} L={L} num={num} />
+              ) : (
+                <ModelTestScoreTable tests={modelTests} L={L} num={num} />
+              )
             ) : (
-              <ModelTestScoreTable tests={modelTests} L={L} num={num} />
+              <div className="flex flex-col items-center justify-center py-10 text-center space-y-3">
+                <div className="grid size-12 place-items-center rounded-2xl bg-primary/10 text-primary">
+                  <FontAwesomeIcon icon={faChartLine} className="text-xl" />
+                </div>
+                <div className="max-w-xs space-y-1">
+                  <p className="text-sm font-bold text-foreground">
+                    {L("No model tests taken yet", "এখনও কোনো মডেল টেস্ট দেওয়া হয়নি")}
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    {L(
+                      "Take a model test to benchmark your scores and track improvement over time.",
+                      "আপনার রিয়েল স্কোর ও অগ্রগতি দেখতে ডিপ অ্যালগরিদমে প্রস্তুত মডেল টেস্ট শুরু করুন।"
+                    )}
+                  </p>
+                </div>
+                <Button asChild size="sm" className="rounded-full font-semibold gap-1.5 mt-2">
+                  <Link to="/app/model-test">
+                    <FontAwesomeIcon icon={faPlay} className="text-[10px]" />
+                    {L("Take Model Test", "মডেল টেস্ট শুরু করুন")}
+                  </Link>
+                </Button>
+              </div>
             )}
           </div>
         </div>
@@ -613,7 +691,7 @@ export default function Progress() {
 
           <div className="flex flex-col sm:flex-row items-center gap-6 my-auto">
             {/* Donut circle */}
-            <DonutSolvedRing solvedCount={totalSolved} L={L} num={num} />
+            <DonutSolvedRing solvedCount={totalSolved} accuracy={overallAccuracy} L={L} num={num} />
 
             {/* Breakdown bars */}
             <div className="w-full flex-1 space-y-3.5">
@@ -622,11 +700,18 @@ export default function Progress() {
                 <div className="flex items-center justify-between text-xs mb-1">
                   <span className="font-bold text-foreground">{L("Easy", "সহজ")}</span>
                   <span className="text-[11px] font-semibold text-emerald-600 dark:text-emerald-400">
-                    {L("Beats 82.4%", "৮২.৪% এর চেয়ে এগিয়ে")}
+                    {easySolved > 0
+                      ? L(`${num(easyAcc)}% correct`, `${num(easyAcc)}% সঠিক`)
+                      : L("Not started", "শুরু হয়নি")}
                   </span>
                 </div>
                 <div className="h-2 w-full rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                  <div className="h-full bg-emerald-500 rounded-full" style={{ width: "82%" }} />
+                  <div
+                    className="h-full bg-emerald-500 rounded-full transition-all duration-700"
+                    style={{
+                      width: `${easySolved > 0 ? easyAcc : 0}%`,
+                    }}
+                  />
                 </div>
                 <p className="mt-1 text-[10px] text-muted-foreground font-medium">
                   {L(`Solved: ${num(easySolved)}`, `সমাধান: ${num(easySolved)}টি`)}
@@ -638,11 +723,18 @@ export default function Progress() {
                 <div className="flex items-center justify-between text-xs mb-1">
                   <span className="font-bold text-foreground">{L("Medium", "মাঝারি")}</span>
                   <span className="text-[11px] font-semibold text-amber-600 dark:text-amber-400">
-                    {L("Beats 71.8%", "৭১.৮% এর চেয়ে এগিয়ে")}
+                    {medSolved > 0
+                      ? L(`${num(medAcc)}% correct`, `${num(medAcc)}% সঠিক`)
+                      : L("Not started", "শুরু হয়নি")}
                   </span>
                 </div>
                 <div className="h-2 w-full rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                  <div className="h-full bg-amber-500 rounded-full" style={{ width: "64%" }} />
+                  <div
+                    className="h-full bg-amber-500 rounded-full transition-all duration-700"
+                    style={{
+                      width: `${medSolved > 0 ? medAcc : 0}%`,
+                    }}
+                  />
                 </div>
                 <p className="mt-1 text-[10px] text-muted-foreground font-medium">
                   {L(`Solved: ${num(medSolved)}`, `সমাধান: ${num(medSolved)}টি`)}
@@ -654,11 +746,18 @@ export default function Progress() {
                 <div className="flex items-center justify-between text-xs mb-1">
                   <span className="font-bold text-foreground">{L("Hard", "কঠিন")}</span>
                   <span className="text-[11px] font-semibold text-rose-600 dark:text-rose-400">
-                    {L("Beats 64.1%", "৬৪.১% এর চেয়ে এগিয়ে")}
+                    {hardSolved > 0
+                      ? L(`${num(hardAcc)}% correct`, `${num(hardAcc)}% সঠিক`)
+                      : L("Not started", "শুরু হয়নি")}
                   </span>
                 </div>
                 <div className="h-2 w-full rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
-                  <div className="h-full bg-rose-500 rounded-full" style={{ width: "32%" }} />
+                  <div
+                    className="h-full bg-rose-500 rounded-full transition-all duration-700"
+                    style={{
+                      width: `${hardSolved > 0 ? hardAcc : 0}%`,
+                    }}
+                  />
                 </div>
                 <p className="mt-1 text-[10px] text-muted-foreground font-medium">
                   {L(`Solved: ${num(hardSolved)}`, `সমাধান: ${num(hardSolved)}টি`)}
@@ -673,6 +772,7 @@ export default function Progress() {
       <PracticeStreakGrid
         daysCount={streakDays}
         bestStreak={bestStreak}
+        activityDays={activityDays}
         L={L}
         num={num}
       />
@@ -698,6 +798,12 @@ export default function Progress() {
           {weak.length > 0 ? (
             <ul className="divide-y divide-border/60">
               {weak.map((x) => (
+                <SubjectRow key={x.slug} s={x} exam={selectedExam} />
+              ))}
+            </ul>
+          ) : unstarted.length > 0 ? (
+            <ul className="divide-y divide-border/60">
+              {unstarted.slice(0, 4).map((x) => (
                 <SubjectRow key={x.slug} s={x} exam={selectedExam} />
               ))}
             </ul>

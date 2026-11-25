@@ -22,9 +22,6 @@ class StatsController extends Controller
     /** Answers needed before we estimate an exam score. */
     private const MIN_ANSWERS_FOR_ESTIMATE = 20;
 
-    /** Marks lost per wrong answer in the BCS preliminary. */
-    private const NEGATIVE_MARK = 0.5;
-
     /**
      * Everything the Home and My results pages show, calculated from the student's real answers.
      */
@@ -35,18 +32,75 @@ class StatsController extends Controller
         $timezone = config('app.student_timezone');
         $today = CarbonImmutable::now($timezone)->startOfDay();
 
-        /** @var Collection<int, object{question_id: int, is_correct: bool, created_at: CarbonImmutable, subject_id: int, topic: ?string}> $answers */
-        $answers = SessionAnswer::query()
+        /** @var Collection<int, object{question_id: int, is_correct: bool, created_at: CarbonImmutable, subject_id: int, topic: ?string, difficulty: ?string}> $answers */
+        $allAnswers = SessionAnswer::query()
+            ->join('practice_sessions', 'practice_sessions.id', '=', 'session_answers.practice_session_id')
             ->join('questions', 'questions.id', '=', 'session_answers.question_id')
             ->where('session_answers.user_id', $user->id)
-            ->get(['session_answers.question_id', 'session_answers.is_correct', 'session_answers.created_at', 'questions.subject_id', 'questions.topic'])
+            ->get(['session_answers.question_id', 'session_answers.is_correct', 'session_answers.created_at', 'questions.subject_id', 'questions.topic', 'questions.difficulty', 'practice_sessions.exam_id'])
             ->map(function ($row) use ($timezone) {
                 $row->day = CarbonImmutable::parse($row->created_at)->setTimezone($timezone)->toDateString();
 
                 return $row;
             });
 
-        $countsByDay = $answers->countBy('day');
+        // The streak and today's goal count all practice; everything else follows the chosen exam. Practice started
+        // without an exam (daily quiz, mistakes …) counts for every exam that has the question's subject.
+        $countsByDay = $allAnswers->countBy('day');
+        $subjectIds = $exam?->subjects->pluck('id')->all() ?? [];
+        $answers = $allAnswers
+            ->filter(fn ($a): bool => $a->exam_id === null ? in_array($a->subject_id, $subjectIds, true) : (int) $a->exam_id === $exam?->id)
+            ->values();
+
+        $byDiff = $answers->groupBy(fn ($a) => strtolower($a->difficulty ?: 'medium'));
+        $easy = $byDiff->get('easy', collect());
+        $med = $byDiff->get('medium', collect());
+        $hard = $byDiff->get('hard', collect());
+
+        $easyCount = $easy->count();
+        $medCount = $med->count();
+        $hardCount = $hard->count();
+
+        $easyAcc = $this->accuracy($easy) ?? 0;
+        $medAcc = $this->accuracy($med) ?? 0;
+        $hardAcc = $this->accuracy($hard) ?? 0;
+
+        $difficulty = [
+            'easy' => [
+                'solved' => $easyCount,
+                'accuracy' => $easyAcc,
+            ],
+            'medium' => [
+                'solved' => $medCount,
+                'accuracy' => $medAcc,
+            ],
+            'hard' => [
+                'solved' => $hardCount,
+                'accuracy' => $hardAcc,
+            ],
+        ];
+
+        // Also get user's test scores from practice sessions where mode = 'test'
+        $testSessions = PracticeSession::query()
+            ->where('user_id', $user->id)
+            ->where('mode', 'test')
+            ->where('exam_id', $exam?->id)
+            ->whereNotNull('finished_at')
+            ->orderBy('finished_at', 'asc')
+            ->limit(10)
+            ->get()
+            ->map(function ($ts, $idx) use ($exam) {
+                $score = max(0, $ts->correct - ($ts->wrong * $this->negativeMark($exam)));
+
+                return [
+                    'id' => $ts->id,
+                    'test_number' => $idx + 1,
+                    'score' => round($score, 1),
+                    'total' => $ts->total,
+                    'accuracy' => $ts->total > 0 ? round(($ts->correct / $ts->total) * 100, 1) : 0,
+                    'date' => CarbonImmutable::parse($ts->finished_at)->format('d M'),
+                ];
+            });
 
         return response()->json([
             'exam' => $exam?->only(['slug', 'name', 'name_bn']),
@@ -56,14 +110,17 @@ class StatsController extends Controller
             ],
             'streak' => $this->streak($countsByDay, $today),
             'totals' => $this->totals($answers, $today),
-            'week' => $this->week($countsByDay, $today),
+            'difficulty' => $difficulty,
+            'test_scores' => $testSessions,
+            'activity_days' => $countsByDay->toArray(),
+            'week' => $this->week($answers->countBy('day'), $today),
             'subjects' => $this->subjects($answers, $exam),
             'weak_topics' => $this->weakTopics($answers, $exam),
             'expected_score' => $this->expectedScore($answers, $exam),
-            'recent_sessions' => $this->recentSessions($user),
-            'unfinished' => $this->unfinishedSessions($user),
-            'mistakes_due' => Mistake::query()->due()->where('user_id', $user->id)->count(),
-            'sessions_finished' => PracticeSession::query()->where('user_id', $user->id)->whereNotNull('finished_at')->count(),
+            'recent_sessions' => $this->recentSessions($user, $exam),
+            'unfinished' => $this->unfinishedSessions($user, $exam),
+            'mistakes_due' => Mistake::query()->due()->where('user_id', $user->id)->whereHas('question', fn ($query) => $query->forExam($exam))->count(),
+            'sessions_finished' => PracticeSession::query()->where('user_id', $user->id)->where(fn ($query) => $query->whereNull('exam_id')->orWhere('exam_id', $exam?->id))->whereNotNull('finished_at')->count(),
         ]);
     }
 
@@ -220,11 +277,11 @@ class StatsController extends Controller
         $overall = $this->accuracy($answers) / 100;
         $bySubject = $answers->groupBy('subject_id');
 
-        $score = $exam->subjects->sum(function ($subject) use ($bySubject, $overall): float {
+        $score = $exam->subjects->sum(function ($subject) use ($bySubject, $overall, $exam): float {
             $subjectAnswers = $bySubject->get($subject->id);
             $rate = $subjectAnswers && $subjectAnswers->count() >= 3 ? $this->accuracy($subjectAnswers) / 100 : $overall;
 
-            return $subject->pivot->marks * ($rate - (1 - $rate) * self::NEGATIVE_MARK);
+            return $subject->pivot->marks * ($rate - (1 - $rate) * $this->negativeMark($exam));
         });
 
         return ['score' => (int) round(max(0, min($maxMarks, $score))), 'max' => $maxMarks];
@@ -233,11 +290,12 @@ class StatsController extends Controller
     /**
      * @return list<array<string, mixed>>
      */
-    private function recentSessions(User $user): array
+    private function recentSessions(User $user, ?Exam $exam): array
     {
         return PracticeSession::query()
             ->with('subject:id,name,name_bn,slug')
             ->where('user_id', $user->id)
+            ->where(fn ($query) => $query->whereNull('exam_id')->orWhere('exam_id', $exam?->id))
             ->whereNotNull('finished_at')
             ->where('total', '>', 0)
             ->latest('finished_at')
@@ -265,11 +323,12 @@ class StatsController extends Controller
      *
      * @return list<array<string, mixed>>
      */
-    private function unfinishedSessions(User $user): array
+    private function unfinishedSessions(User $user, ?Exam $exam): array
     {
         return PracticeSession::query()
             ->with('subject:id,name,name_bn,slug')
             ->where('user_id', $user->id)
+            ->where(fn ($query) => $query->whereNull('exam_id')->orWhere('exam_id', $exam?->id))
             ->whereNull('finished_at')
             ->where('created_at', '>=', now()->subDays(7))
             ->whereRaw('(correct + wrong) > 0')
@@ -290,6 +349,12 @@ class StatsController extends Controller
                 'percent' => (int) round(($session->correct + $session->wrong) / $session->total * 100),
             ])
             ->all();
+    }
+
+    /** Marks lost per wrong answer in the exam's preliminary. */
+    private function negativeMark(?Exam $exam): float
+    {
+        return $exam?->slug === 'bcs-general' ? 0.5 : 0.25;
     }
 
     /**

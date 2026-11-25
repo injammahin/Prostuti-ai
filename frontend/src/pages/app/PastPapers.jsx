@@ -140,7 +140,7 @@ export default function PastPapers() {
                             </span>
                           )}
                           <span className="rounded bg-primary/10 px-1.5 py-px text-[0.7rem] font-semibold text-primary">
-                            {L("200 marks", "২০০ নম্বর")}
+                            {L(`${num(paper.full_marks)} marks`, `${num(paper.full_marks)} নম্বর`)}
                           </span>
                         </p>
                       </div>
@@ -151,7 +151,12 @@ export default function PastPapers() {
                         icon={faFileLines}
                         className="mr-1.5 text-primary"
                       />
-                      {L("All 200 questions with answers", "উত্তরসহ সব ২০০টি প্রশ্ন")}
+                      {L(`${num(paper.questions)} questions with answers`, `উত্তরসহ ${num(paper.questions)}টি প্রশ্ন`)}
+                      {paper.added > 0 && (
+                        <span className="mt-1 block font-normal">
+                          {L(`${num(paper.own)} from this paper · ${num(paper.added)} from other BCS, with the year`, `এই প্রশ্নপত্রের ${num(paper.own)}টি · অন্য বিসিএসের ${num(paper.added)}টি (সালসহ)`)}
+                        </span>
+                      )}
                     </p>
 
                     <div className="mt-4">

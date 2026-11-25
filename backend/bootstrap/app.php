@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\FastApiResponses;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -16,6 +17,7 @@ return Application::configure(basePath: dirname(__DIR__))
         // The live site runs behind the host's proxy (LiteSpeed); trust it so each
         // visitor's real IP is used for rate limits and logs instead of the proxy's.
         $middleware->trustProxies(at: '*');
+        $middleware->api(append: FastApiResponses::class);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->shouldRenderJsonWhen(

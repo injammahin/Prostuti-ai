@@ -10,9 +10,7 @@ import {
   faCheck,
   faPalette,
   faShieldHalved,
-  faBell,
   faSliders,
-  faCamera,
   faCircleCheck,
   faGlobe,
   faFont,
@@ -28,7 +26,7 @@ import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, D
 import { PageHeader, Panel, SectionTitle, Pill, IconBox } from "@/components/shared"
 import { exams } from "@/lib/data"
 import { useApp } from "@/lib/app-context"
-import { authApi } from "@/lib/api"
+import { authApi, tokenStore } from "@/lib/api"
 import { cn } from "@/lib/utils"
 
 export default function Settings() {
@@ -36,27 +34,17 @@ export default function Settings() {
   const nav = useNavigate()
   const [del, setDel] = useState(false)
   const [confirmText, setConfirmText] = useState("")
+  const [deleting, setDeleting] = useState(false)
 
   // Form states
   const [name, setName] = useState(app.user?.name || "")
   const [phone, setPhone] = useState(app.user?.phone || "")
   const [saving, setSaving] = useState(false)
   const email = app.user?.email || ""
-  const [dob, setDob] = useState("1998-05-14")
-  const [degree, setDegree] = useState("graduate")
-  const [district, setDistrict] = useState("Dhaka")
-
-  // Notification states
-  const [notifs, setNotifs] = useState({
-    emailAlerts: true,
-    smsUrgent: false,
-    weeklyReport: true,
-    soundFx: true,
-  })
 
   const exportData = () => {
     const data = {
-      profile: { name, email, dob, degree, district },
+      profile: { name, email, phone },
       followedExams: app.followed,
       mainExam: app.mainExam,
       bookmarks: app.bookmarks,
@@ -67,7 +55,7 @@ export default function Settings() {
     a.href = URL.createObjectURL(blob)
     a.download = `bd3schools-backup-${new Date().toISOString().slice(0, 10)}.json`
     a.click()
-    toast.success("All personal preparation data successfully exported!")
+    toast.success("Your profile, followed exams and bookmarks were downloaded.")
   }
 
   const handleSaveProfile = async () => {
@@ -80,6 +68,22 @@ export default function Settings() {
       toast.error(err.message)
     } finally {
       setSaving(false)
+    }
+  }
+
+  const deleteAccount = async () => {
+    setDeleting(true)
+    try {
+      await authApi.deleteMe()
+      tokenStore.set(null)
+      // Nothing of the old account stays in this browser.
+      Object.keys(localStorage)
+        .filter((key) => key.startsWith("bd3schools:") || key.startsWith("prostuti:"))
+        .forEach((key) => localStorage.removeItem(key))
+      window.location.replace("/")
+    } catch (err) {
+      setDeleting(false)
+      toast.error(err.status === 403 ? "Admin accounts can't be deleted here." : err.message)
     }
   }
 
@@ -101,7 +105,7 @@ export default function Settings() {
               </span>
               <div>
                 <h3 className="font-bold text-base">Personal Information</h3>
-                <p className="text-xs text-muted-foreground">Used to power your eligibility verification and certificates</p>
+                <p className="text-xs text-muted-foreground">Your name and contact details</p>
               </div>
             </div>
 
@@ -111,14 +115,6 @@ export default function Settings() {
                 <div className="grid size-16 place-items-center rounded-full bg-primary font-bold text-xl text-primary-foreground">
                   {name.split(" ").map((n) => n[0]).join("").slice(0, 2).toUpperCase()}
                 </div>
-                <button
-                  type="button"
-                  onClick={() => toast("Photo upload available on verified accounts")}
-                  className="absolute bottom-0 right-0 grid size-6 place-items-center rounded-full bg-foreground text-background text-xs shadow-sm hover:scale-105 transition-transform"
-                  title="Upload picture"
-                >
-                  <FontAwesomeIcon icon={faCamera} className="text-[0.65rem]" />
-                </button>
               </div>
               <div className="min-w-0 flex-1">
                 <p className="font-semibold text-sm truncate">{name}</p>
@@ -154,45 +150,10 @@ export default function Settings() {
                 <Label htmlFor="email" className="text-xs font-semibold text-muted-foreground">Email (used to sign in)</Label>
                 <Input id="email" type="email" value={email} disabled className="h-10 cursor-not-allowed bg-muted/40 text-sm" />
               </div>
-              <div className="space-y-1.5">
-                <Label htmlFor="dob" className="text-xs font-semibold text-muted-foreground">Date of Birth</Label>
-                <Input
-                  id="dob"
-                  type="date"
-                  value={dob}
-                  onChange={(e) => setDob(e.target.value)}
-                  className="h-10 text-sm"
-                />
-              </div>
-              <div className="space-y-1.5">
-                <Label htmlFor="deg" className="text-xs font-semibold text-muted-foreground">Highest Educational Degree</Label>
-                <select
-                  id="deg"
-                  value={degree}
-                  onChange={(e) => setDegree(e.target.value)}
-                  className="h-10 w-full rounded-md border bg-card px-3 text-sm font-medium"
-                >
-                  <option value="graduate">Bachelor's / Honours (4 Years)</option>
-                  <option value="masters">Master's Degree</option>
-                  <option value="degree">Degree (Pass Course - 3 Years)</option>
-                  <option value="hsc">HSC / Higher Secondary</option>
-                  <option value="diploma">Diploma in Engineering / Technical</option>
-                </select>
-              </div>
-              <div className="space-y-1.5">
-                <Label htmlFor="dist" className="text-xs font-semibold text-muted-foreground">Home District / Division</Label>
-                <Input
-                  id="dist"
-                  value={district}
-                  onChange={(e) => setDistrict(e.target.value)}
-                  placeholder="e.g. Dhaka, Chittagong, Rajshahi"
-                  className="h-10 text-sm"
-                />
-              </div>
             </div>
 
             <div className="mt-5 flex items-center justify-between border-t pt-4">
-              <p className="text-xs text-muted-foreground">Date of birth & degree calculate your official circular eligibility.</p>
+              <span />
               <Button onClick={handleSaveProfile} disabled={saving || name.trim().length < 2} className="h-9 rounded-full px-5">
                 {saving ? "Saving…" : "Save Profile"}
               </Button>
@@ -243,7 +204,7 @@ export default function Settings() {
                       <button
                         type="button"
                         onClick={() => {
-                          app.set({ mainExam: ex.slug })
+                          app.setMainExam(ex.slug)
                           toast.success(`Set ${ex.name} as primary target exam!`)
                         }}
                         className={cn(
@@ -352,42 +313,6 @@ export default function Settings() {
             </div>
           </div>
 
-          {/* Section: Notification Channels */}
-          <div className="card p-5 md:p-6 border shadow-xs">
-            <div className="flex items-center gap-2 mb-4 border-b pb-3">
-              <span className="grid size-8 place-items-center rounded-lg bg-chart-5/10 text-chart-5">
-                <FontAwesomeIcon icon={faBell} />
-              </span>
-              <div>
-                <h3 className="font-bold text-base">Notification Preferences</h3>
-                <p className="text-xs text-muted-foreground">Configure channels for circular announcements &amp; reminders</p>
-              </div>
-            </div>
-
-            <div className="space-y-3.5">
-              {[
-                ["emailAlerts", "Email Digest & Admit Card Notifications", "Get circular updates delivered straight to your inbox"],
-                ["smsUrgent", "Urgent SMS Deadline Reminders", "SMS alerts 24 hours before circular deadlines"],
-                ["weeklyReport", "Weekly Performance & Rank Summary", "Detailed rank breakdown and national percentile every Friday"],
-                ["soundFx", "In-App Audio & Timer Effects", "Sound feedback when finishing model tests and question drills"],
-              ].map(([key, title, desc]) => (
-                <label key={key} className="flex items-center justify-between gap-4 p-2.5 rounded-xl border bg-muted/20 hover:bg-muted/40 transition-colors cursor-pointer">
-                  <div>
-                    <p className="text-sm font-semibold text-foreground">{title}</p>
-                    <p className="text-xs text-muted-foreground">{desc}</p>
-                  </div>
-                  <Switch
-                    checked={notifs[key]}
-                    onCheckedChange={(val) => {
-                      setNotifs((n) => ({ ...n, [key]: val }))
-                      toast.success("Notification preference updated.")
-                    }}
-                  />
-                </label>
-              ))}
-            </div>
-          </div>
-
           {/* Section: Privacy & Danger Zone */}
           <div className="card p-5 md:p-6 border shadow-xs">
             <div className="flex items-center gap-2 mb-4 border-b pb-3">
@@ -403,16 +328,8 @@ export default function Settings() {
             <div className="space-y-3">
               <div className="flex items-center justify-between p-3 rounded-xl border bg-card">
                 <div>
-                  <p className="text-sm font-semibold">Anonymized Performance Diagnostics</p>
-                  <p className="text-xs text-muted-foreground">Contribute anonymous practice drill statistics to calibrate national percentiles</p>
-                </div>
-                <Switch defaultChecked={false} onCheckedChange={() => toast("AI preference updated.")} />
-              </div>
-
-              <div className="flex items-center justify-between p-3 rounded-xl border bg-card">
-                <div>
                   <p className="text-sm font-semibold">Export Preparation History</p>
-                  <p className="text-xs text-muted-foreground">Download a complete JSON archive of all bookmarks, test attempts &amp; notes</p>
+                  <p className="text-xs text-muted-foreground">Download your profile, followed exams and bookmarks</p>
                 </div>
                 <Button variant="outline" size="sm" onClick={exportData} className="h-9 gap-1.5 rounded-full">
                   <FontAwesomeIcon icon={faDownload} /> Export
@@ -443,7 +360,6 @@ export default function Settings() {
               <h4 className="mt-3 font-bold text-base">{name}</h4>
               <p className="text-xs text-muted-foreground">{email}</p>
               <div className="mt-2.5 flex justify-center gap-1.5">
-                <Pill tone="primary">Pro Candidate</Pill>
                 <Pill tone="success">Active</Pill>
               </div>
             </div>
@@ -460,10 +376,6 @@ export default function Settings() {
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Bookmarks Saved</span>
                 <span className="font-semibold tabular-nums">{app.bookmarks.length} Questions</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-muted-foreground">Current Streak</span>
-                <span className="font-semibold text-amber-500 tabular-nums">12 Days</span>
               </div>
             </div>
 
@@ -482,15 +394,13 @@ export default function Settings() {
           {/* Platform Info Panel */}
           <div className="card p-4 border bg-muted/20 text-xs space-y-2 text-muted-foreground">
             <p className="font-semibold text-foreground">bd3schools Govt Job Prep Platform</p>
-            <p>Version 2.4.0 (2026 Production Build)</p>
-            <p>End-to-end question verification active. Built with high precision syllabus rubrics.</p>
           </div>
         </div>
       </div>
 
       {/* Delete Confirmation Dialog */}
       <Dialog open={del} onOpenChange={setDel}>
-        <DialogContent className="max-w-md rounded-2xl">
+        <DialogContent className="w-[calc(100vw-2.5rem)] max-w-[calc(100vw-2.5rem)] sm:w-full sm:max-w-md rounded-2xl p-5 sm:p-6">
           <DialogHeader>
             <DialogTitle className="text-destructive flex items-center gap-2">
               <FontAwesomeIcon icon={faTrash} /> Delete Account?
@@ -511,20 +421,16 @@ export default function Settings() {
             />
           </div>
           <DialogFooter className="gap-2 sm:justify-end">
-            <Button variant="outline" onClick={() => setDel(false)}>
+            <Button variant="outline" className="w-full sm:w-auto h-11 sm:h-10 rounded-full" onClick={() => setDel(false)}>
               Cancel
             </Button>
             <Button
               variant="destructive"
-              disabled={confirmText !== "DELETE"}
-              onClick={() => {
-                setDel(false)
-                app.logout()
-                nav("/")
-                toast.success("Account deleted.")
-              }}
+              className="w-full sm:w-auto h-11 sm:h-10 rounded-full font-bold"
+              disabled={confirmText !== "DELETE" || deleting}
+              onClick={deleteAccount}
             >
-              Confirm Deletion
+              {deleting ? "Deleting…" : "Confirm Deletion"}
             </Button>
           </DialogFooter>
         </DialogContent>

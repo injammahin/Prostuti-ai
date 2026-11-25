@@ -45,7 +45,7 @@ const weekStart = (d) => addDays(startOfDay(d), -((d.getDay() + 1) % 7))
 const kinds = {
   mcq: { icon: faListCheck, tone: "primary", label: ["Practice", "অনুশীলন"], to: "/app/practice" },
   revision: { icon: faRotate, tone: "warning", label: ["Fix mistakes", "ভুল সংশোধন"], to: "/app/notebook" },
-  test: { icon: faStopwatch, tone: "chart5", label: ["Model test", "মডেল টেস্ট"], to: "/app/test" },
+  test: { icon: faStopwatch, tone: "chart5", label: ["Model test", "মডেল টেস্ট"], to: "/app/model-test" },
 }
 
 /* Exam-specific daily topics: [title, number of questions, minutes] */
@@ -283,12 +283,12 @@ function PlanSetup({ initial, onDone, onCancel }) {
 }
 
 export default function Plan() {
-  const { mainExam, set: setApp, L } = useApp()
+  const { mainExam, setMainExam, L } = useApp()
   const activeExamSlug = mainExam || "bcs-general"
   const currentExamObj = exams.find((e) => e.slug === activeExamSlug) || exams[0]
 
   const [planSettings, setPlanSettings] = useState(() =>
-    ({ exam: activeExamSlug, targetDate: "2027-03-15", dailyHours: 3, studyDays: [6, 0, 1, 2, 3, 4, 5], ...load("bd3schools:plan:settings", {}) })
+    ({ targetDate: "2027-03-15", dailyHours: 3, studyDays: [6, 0, 1, 2, 3, 4, 5], ...load("bd3schools:plan:settings", {}), exam: activeExamSlug })
   )
   const [overrides, setOverrides] = useState(() => load("bd3schools:plan:done", {}))
   const [customTasks, setCustomTasks] = useState(() => load("bd3schools:plan:custom", {}))
@@ -314,23 +314,22 @@ export default function Plan() {
     const custom = customTasks[toIsoDate(date)] || []
     if (date > examDate || !planSettings.studyDays.includes(date.getDay())) return custom
     const n = Math.floor(date.getTime() / DAY)
-    const past = date < today
     const templates = examTemplates[planSettings.exam] || examTemplates[activeExamSlug] || examTemplates["bcs-general"]
 
     let generated
     if (date.getDay() === 5) {
       generated = [
-        { id: `${n}-t`, kind: "test", title: ["Weekly model test", "সাপ্তাহিক মডেল টেস্ট"], meta: ["Full exam with a timer", "সময়সহ পূর্ণ পরীক্ষা"], done: past },
-        { id: `${n}-r`, kind: "revision", title: ["Retry this week's wrong answers", "এই সপ্তাহের ভুলগুলো আবার চেষ্টা"], meta: ["About 25 minutes", "প্রায় ২৫ মিনিট"], done: past },
+        { id: `${n}-t`, kind: "test", title: ["Weekly model test", "সাপ্তাহিক মডেল টেস্ট"], meta: ["Full exam with a timer", "সময়সহ পূর্ণ পরীক্ষা"], done: false },
+        { id: `${n}-r`, kind: "revision", title: ["Retry this week's wrong answers", "এই সপ্তাহের ভুলগুলো আবার চেষ্টা"], meta: ["About 25 minutes", "প্রায় ২৫ মিনিট"], done: false },
       ]
     } else {
       const count = planSettings.dailyHours >= 4 ? 3 : planSettings.dailyHours >= 2 ? 2 : 1
       generated = Array.from({ length: count }, (_, k) => {
         const [title, q, min] = templates[(n * 2 + k) % templates.length]
-        return { id: `${n}-${k}`, kind: "mcq", title, meta: [`${q} questions · ${min} min`, `${toBn(q)}টি প্রশ্ন · ${toBn(min)} মিনিট`], done: past && (n + k) % 6 !== 0 }
+        return { id: `${n}-${k}`, kind: "mcq", title, meta: [`${q} questions · ${min} min`, `${toBn(q)}টি প্রশ্ন · ${toBn(min)} মিনিট`], done: false }
       })
       if (planSettings.dailyHours >= 3) {
-        generated.push({ id: `${n}-r`, kind: "revision", title: ["Retry your wrong answers", "ভুল উত্তরগুলো আবার চেষ্টা"], meta: ["About 15 minutes", "প্রায় ১৫ মিনিট"], done: past })
+        generated.push({ id: `${n}-r`, kind: "revision", title: ["Retry your wrong answers", "ভুল উত্তরগুলো আবার চেষ্টা"], meta: ["About 15 minutes", "প্রায় ১৫ মিনিট"], done: false })
       }
     }
     return [...custom, ...generated].filter((t) => !overrides[`del_${t.id}`])
@@ -373,7 +372,7 @@ export default function Plan() {
 
   const saveSettings = (next) => {
     setPlanSettings(next)
-    setApp({ mainExam: next.exam })
+    setMainExam(next.exam)
     setEditing(false)
     setWeek(weekStart(today))
     setSelDate(today)
@@ -576,7 +575,7 @@ export default function Plan() {
 
       {/* Add task */}
       <Dialog open={addOpen} onOpenChange={setAddOpen}>
-        <DialogContent className="max-w-[calc(100%-2rem)] rounded-xl sm:max-w-md">
+        <DialogContent className="w-[calc(100vw-2.5rem)] max-w-[calc(100vw-2.5rem)] sm:w-full sm:max-w-md rounded-2xl p-5 sm:p-6">
           <DialogHeader>
             <DialogTitle>{L("Add a task", "কাজ যোগ করুন")}</DialogTitle>
             <DialogDescription>{L("For", "তারিখ:")} {fmt(selDate, { weekday: "long", day: "numeric", month: "long" })}</DialogDescription>

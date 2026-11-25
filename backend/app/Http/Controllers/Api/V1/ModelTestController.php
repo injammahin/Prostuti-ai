@@ -3,12 +3,20 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
+use App\Models\Exam;
 use App\Models\ModelTest;
+use App\Models\PracticeSession;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class ModelTestController extends Controller
 {
+    /** Everything except the questions themselves, which are large. */
+    private const LIST_COLUMNS = [
+        'id', 'title', 'title_bn', 'slug', 'exam_slug', 'type', 'duration_minutes', 'total_marks', 'pass_marks', 'negative_marking',
+        'total_questions', 'syllabus', 'difficulty', 'starts_at', 'ends_at', 'attempts_count', 'created_at',
+    ];
+
     /**
      * List all published model tests.
      */
@@ -21,7 +29,8 @@ class ModelTestController extends Controller
             $query->where('exam_slug', $exam);
         }
 
-        $tests = $query->orderBy('created_at', 'desc')->get()->map(function (ModelTest $test): array {
+        // The questions themselves are large and only needed when a test is opened.
+        $tests = $query->orderBy('created_at', 'desc')->get(self::LIST_COLUMNS)->map(function (ModelTest $test): array {
             return [
                 'id' => $test->slug ?: (string) $test->id,
                 'db_id' => $test->id,
@@ -39,12 +48,13 @@ class ModelTestController extends Controller
                 'total_marks' => (float) $test->total_marks,
                 'pass_marks' => (float) $test->pass_marks,
                 'negative' => (float) $test->negative_marking,
-                'questions_count' => $test->total_questions ?: count($test->questions_data ?? []),
+                'questions_count' => $test->total_questions,
                 'syllabus' => $test->syllabus,
                 'difficulty' => ucfirst($test->difficulty),
                 'attempts' => number_format($test->attempts_count),
                 'attempts_count' => $test->attempts_count,
                 'starts_at' => $test->starts_at?->toIso8601String(),
+                'ends_at' => $test->ends_at?->toIso8601String(),
             ];
         });
 
@@ -80,6 +90,8 @@ class ModelTestController extends Controller
                 'syllabus' => $test->syllabus,
                 'difficulty' => $test->difficulty,
                 'attempts_count' => $test->attempts_count,
+                'starts_at' => $test->starts_at?->toIso8601String(),
+                'ends_at' => $test->ends_at?->toIso8601String(),
             ],
             'questions' => $questions,
         ]);
@@ -112,7 +124,7 @@ class ModelTestController extends Controller
             $correctAns = (int) ($q['answer'] ?? $q['answer_index'] ?? 0);
             $subName = $q['subject']['name'] ?? $q['subject_name'] ?? 'General';
 
-            if (!isset($subjectBreakdown[$subName])) {
+            if (! isset($subjectBreakdown[$subName])) {
                 $subjectBreakdown[$subName] = [
                     'subject' => $subName,
                     'total' => 0,
@@ -175,6 +187,22 @@ class ModelTestController extends Controller
             $cutoffAdvice = 'Competitive score! You are near or above the expected BPSC preliminary cutoff.';
         } elseif ($netScore >= 95) {
             $cutoffAdvice = 'Good effort. Focus on negative mark control and high-yield math & science topics.';
+        }
+
+        $student = $request->user('sanctum');
+
+        if ($student) {
+            $examId = Exam::where('slug', $test->catalogExamSlug())->value('id');
+            PracticeSession::create([
+                'user_id' => $student->id,
+                'mode' => 'test',
+                'question_ids' => [],
+                'exam_id' => $examId,
+                'total' => $totalQuestions,
+                'correct' => $correctCount,
+                'wrong' => $wrongCount,
+                'finished_at' => now(),
+            ]);
         }
 
         return response()->json([

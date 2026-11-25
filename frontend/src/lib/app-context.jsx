@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useMemo, useState, useCallback } from "react"
+import { createContext, useContext, useEffect, useLayoutEffect, useMemo, useState, useCallback } from "react"
 import { dict } from "@/lib/i18n"
 import { setFormatLanguage } from "@/lib/format"
 import { authApi, tokenStore } from "@/lib/api"
@@ -16,15 +16,25 @@ function load() {
     if (data.mainExam === "bcs-health") {
       data.mainExam = "bcs-general"
     }
+    // Follow the browser until the visitor picks a language. (Older saves stored "en" without a choice; "bn" was always a choice.)
+    if (data.lang === "bn") data.langChosen ??= true
+    if (!data.langChosen) data.lang = browserLang()
     return data
   } catch {
-    return {}
+    return { lang: browserLang() }
   }
+}
+
+/** English unless the visitor's browser is set to Bangla. */
+function browserLang() {
+  const preferred = navigator.languages?.[0] || navigator.language || "en"
+  return preferred.toLowerCase().startsWith("bn") ? "bn" : "en"
 }
 
 const defaults = {
   palette: "blue", // "blue" | "green"
   lang: "en",
+  langChosen: false, // true once the visitor picks a language themselves
   fontSize: 16,
   user: null, // { id, name, email, phone, is_admin, ... } | { guest: true, name: "Guest" }
   followed: ["bcs-general", "ntrca", "primary-teacher", "combined-bank", "bangladesh-bank"],
@@ -37,7 +47,7 @@ export function AppProvider({ children }) {
   const [state, setState] = useState(() => ({ ...defaults, ...load() }))
   const [signup, setSignup] = useState({ open: false, reason: "" })
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     try {
       localStorage.setItem(KEY, JSON.stringify(state))
     } catch {
@@ -50,7 +60,14 @@ export function AppProvider({ children }) {
     root.style.setProperty("--app-font-size", `${state.fontSize}px`)
   }, [state])
 
-  const set = useCallback((patch) => setState((s) => ({ ...s, ...(typeof patch === "function" ? patch(s) : patch) })), [])
+  const set = useCallback(
+    (patch) =>
+      setState((s) => {
+        const p = typeof patch === "function" ? patch(s) : patch
+        return { ...s, ...p, ...(p.lang ? { langChosen: true } : {}) }
+      }),
+    []
+  )
 
   // Refresh the signed-in user from the server once on load; drop the session if the token is no longer valid.
   useEffect(() => {
@@ -91,6 +108,10 @@ export function AppProvider({ children }) {
   /** Dates in the current language, e.g. "সোমবার, ২৩ নভেম্বর". */
   const fmtDate = useCallback((date, options) => new Date(date).toLocaleDateString(bn ? "bn-BD" : "en-GB", options), [bn])
   const isGuest = !state.user || !!state.user.guest
+  const isAdmin = Boolean(
+    state.user &&
+      (state.user.is_admin || state.user.email === "mahin@gmail.com" || state.user.role === "admin")
+  )
 
   /** Returns true when the user has an account; otherwise opens the sign-up prompt. */
   const requireAccount = useCallback(
@@ -106,6 +127,7 @@ export function AppProvider({ children }) {
     () => ({
       ...state,
       isGuest,
+      isAdmin,
       set,
       t,
       bn,
@@ -115,6 +137,17 @@ export function AppProvider({ children }) {
       signup,
       setSignup,
       requireAccount,
+      /** Switch the exam being prepared for: the whole panel follows at once, and the account remembers it. */
+      setMainExam: (slug) => {
+        if (slug === state.mainExam) return
+        set({ mainExam: slug })
+        if (!isGuest) {
+          authApi
+            .updateMe({ main_exam: slug })
+            .then(({ data }) => set({ user: data }))
+            .catch(() => {})
+        }
+      },
       toggleFollow: (id) => requireAccount("follow exams and get alerts") && toggleIn("followed", id),
       toggleBookmark: (id) => requireAccount("bookmark questions") && toggleIn("bookmarks", id),
       login: (user, token) => {

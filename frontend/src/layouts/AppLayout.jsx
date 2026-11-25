@@ -54,7 +54,7 @@ const groups = [
     items: [
       { to: "/app", key: "dashboard", icon: faHouse, end: true },
       { to: "/app/practice", key: "practice", icon: faListCheck },
-      { to: "/app/test", key: "tests", icon: faStopwatch },
+      { to: "/app/model-test", key: "tests", icon: faStopwatch },
       { to: "/app/bcs-papers", key: "papers", icon: faFileLines },
       { to: "/app/notebook", key: "notebook", icon: faBook, locked: true },
       { to: "/app/notices", key: "notices", icon: faBullhorn },
@@ -81,7 +81,7 @@ const groups = [
 const tabs = [
   { to: "/app", key: "today", icon: faHouse, end: true },
   { to: "/app/practice", key: "practice", icon: faListCheck },
-  { to: "/app/test", key: "tests", icon: faStopwatch },
+  { to: "/app/model-test", key: "tests", icon: faStopwatch },
   { to: "/app/notices", key: "notices", icon: faBullhorn },
 ]
 const moreItems = groups.flatMap((g) => g.items).filter((i) => !tabs.some((t) => t.to === i.to))
@@ -89,6 +89,7 @@ const moreItems = groups.flatMap((g) => g.items).filter((i) => !tabs.some((t) =>
 const titles = {
   "/app": "dashboard",
   "/app/practice": "practice",
+  "/app/model-test": "tests",
   "/app/test": "tests",
   "/app/bcs-papers": "papers",
   "/app/notices": "notices",
@@ -169,7 +170,7 @@ function SideLink({ item, t, collapsed, tooltip = true }) {
   )
 }
 function ExamSwitcher({ className }) {
-  const { mainExam, set, followed, L } = useApp()
+  const { mainExam, setMainExam, followed, L } = useApp()
   const current = exams.find((e) => e.slug === mainExam) || exams[0]
   const options = exams.filter((e) => followed.includes(e.slug) || e.tier === 1)
   return (
@@ -190,7 +191,7 @@ function ExamSwitcher({ className }) {
       <DropdownMenuContent align="start" className="w-64 rounded-xl p-1.5">
         <DropdownMenuLabel className="text-xs text-muted-foreground">{L("Which exam are you preparing for?", "কোন পরীক্ষার প্রস্তুতি নিচ্ছেন?")}</DropdownMenuLabel>
         {options.map((e) => (
-          <DropdownMenuItem key={e.slug} onClick={() => set({ mainExam: e.slug })} disabled={e.comingSoon} className="rounded-lg py-2.5">
+          <DropdownMenuItem key={e.slug} onClick={() => setMainExam(e.slug)} disabled={e.comingSoon} className="rounded-lg py-2.5">
             <span className="flex-1 font-medium">{L(e.name, e.nameBn || e.name)}</span>
             {e.comingSoon && <span className="text-xs text-muted-foreground">{L("Soon", "শীঘ্রই")}</span>}
             {e.slug === mainExam && <FontAwesomeIcon icon={faCheck} className="text-primary" />}
@@ -300,10 +301,10 @@ function NavGroups({ t, collapsed = false, tooltip = true, onNavigate }) {
   ))
 }
 export default function AppLayout() {
-  const { t, isGuest, set, sidebarCollapsed: collapsed, L, fmtDate } = useApp()
+  const { t, isGuest, set, mainExam, sidebarCollapsed: collapsed, L, fmtDate } = useApp()
   const [drawer, setDrawer] = useState(false)
   const { pathname } = useLocation()
-  const immersive = /\/app\/(practice\/session|test\/run)/.test(pathname)
+  const immersive = /\/app\/(practice\/session|(model-)?test\/run)/.test(pathname)
   const moreActive = moreItems.some((s) => pathname.startsWith(s.to))
   const title = titles[pathname] ?? titles[Object.keys(titles).filter((k) => k !== "/app" && pathname.startsWith(k))[0]] ?? "dashboard"
   const today = fmtDate(new Date(), { weekday: "long", day: "numeric", month: "long" })
@@ -418,7 +419,8 @@ export default function AppLayout() {
             </Link>
           </div>
         )}
-        <div key={pathname} className={immersive ? undefined : "rise"}>
+        {/* Changing the exam reopens the page for it — except during a test, where answers must not be lost. */}
+        <div key={immersive || pathname.endsWith("/result") ? pathname : `${pathname}:${mainExam}`} className={immersive ? undefined : "rise"}>
           <Suspense fallback={<PageLoader />}>
             <Outlet />
           </Suspense>

@@ -13,9 +13,9 @@ class TrafficChart extends ChartWidget
 {
     use CountsPerDay;
 
-    protected static ?int $sort = 2;
+    protected static ?int $sort = 3;
 
-    protected int|string|array $columnSpan = 'full';
+    protected int|string|array $columnSpan = ['md' => 2, 'xl' => 2];
 
     protected ?string $heading = 'Visitors, sign-ups & practice';
 
@@ -45,9 +45,9 @@ class TrafficChart extends ChartWidget
 
         return [
             'datasets' => [
-                $this->dataset('Visitors', $visitors, '#1b63a8'),
-                $this->dataset('Sign-ups', $signups, '#16a34a'),
-                $this->dataset('Questions answered', $answers, '#f59e0b'),
+                $this->dataset('Visitors', $visitors, '#0f2a55'),
+                $this->dataset('Sign-ups', $signups, '#94a3b8'),
+                $this->dataset('Questions answered', $answers, '#4a90d9'),
             ],
             'labels' => array_map(fn (string $date): string => CarbonImmutable::parse($date)->format('j M'), array_keys($visitors)),
         ];
@@ -63,7 +63,7 @@ class TrafficChart extends ChartWidget
             'label' => $label,
             'data' => array_values($series),
             'borderColor' => $color,
-            'backgroundColor' => $color.'1a',
+            'backgroundColor' => $color.'0d',
             'fill' => true,
             'tension' => 0.35,
             'pointRadius' => 0,

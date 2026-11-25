@@ -21,7 +21,7 @@ export default function EligibilityDialog({ open, onOpenChange, notice }) {
 
   return (
     <Dialog open={open} onOpenChange={(v) => { onOpenChange(v); if (!v) setResult(null) }}>
-      <DialogContent className="max-w-[calc(100%-2rem)] rounded-2xl sm:max-w-md">
+      <DialogContent className="w-[calc(100vw-2.5rem)] max-w-[calc(100vw-2.5rem)] sm:w-full sm:max-w-md rounded-2xl p-5 sm:p-6">
         <DialogHeader>
           <DialogTitle>Eligibility check</DialogTitle>
           <DialogDescription>A quick guide only — never a final decision. Read the circular carefully.</DialogDescription>

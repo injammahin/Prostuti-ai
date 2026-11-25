@@ -2,12 +2,14 @@ import { useState } from "react"
 import { Link, useParams } from "react-router"
 import { toast } from "sonner"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBell, faCheck, faClock, faMinus, faArrowRight, faFileLines, faHourglassHalf } from "@fortawesome/free-solid-svg-icons"
+import { faBell, faCheck, faArrowRight, faFileLines, faHourglassHalf } from "@fortawesome/free-solid-svg-icons"
 import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { PageHeader, IconBox, Pill, Panel, NoticeCard, Segmented, EmptyState } from "@/components/shared"
+import ExamFormat from "@/components/ExamFormat"
 import { Icon } from "@/components/icon"
 import { exams, notices } from "@/lib/data"
+import { td } from "@/lib/format"
 import { useApp } from "@/lib/app-context"
 import NotFound from "@/pages/NotFound"
 import { useNoticesVersion } from "@/lib/notices-store"
@@ -39,7 +41,7 @@ const pastPapersByExam = {
 export default function ExamDetail({ inApp = false }) {
   const noticesVersion = useNoticesVersion()
   const { slug } = useParams()
-  const { followed, toggleFollow, user } = useApp()
+  const { followed, toggleFollow, user, L, num } = useApp()
   const [tab, setTab] = useState("format")
   const e = exams.find((x) => x.slug === slug)
   if (!e) return <NotFound />
@@ -49,27 +51,27 @@ export default function ExamDetail({ inApp = false }) {
 
   const body = (
     <>
-      <PageHeader back={inApp ? "/app/exams" : "/exams"} title={e.name} subtitle={`${e.org} · Syllabus: ${e.syllabusVersion}`} />
+      <PageHeader back={inApp ? "/app/exams" : "/exams"} title={L(e.name, e.nameBn)} subtitle={`${td(e.org)} · ${L("Syllabus", "সিলেবাস")}: ${td(e.syllabusVersion)}`} />
       <Panel className="mb-4 flex flex-col gap-4 sm:flex-row sm:items-center">
         <IconBox tone={e.color} className="size-12 text-lg">
           <Icon name={e.icon} />
         </IconBox>
-        <p className="flex-1 text-sm leading-relaxed text-muted-foreground">{e.summary}</p>
+        <p className="flex-1 text-sm leading-relaxed text-muted-foreground">{td(e.summary)}</p>
         <div className="flex gap-2">
           <Button
             variant="outline"
             className="h-10 flex-1 rounded-full sm:flex-none"
             onClick={() => {
-              if (!user) return toast("Log in to follow exams")
+              if (!user) return toast(L("Log in to follow exams", "পরীক্ষা ফলো করতে লগ ইন করুন"))
               toggleFollow(e.slug)
             }}
           >
-            <FontAwesomeIcon icon={on ? faCheck : faBell} /> {on ? "Following" : "Follow"}
+            <FontAwesomeIcon icon={on ? faCheck : faBell} /> {on ? L("Following", "ফলো করছেন") : L("Follow", "ফলো করুন")}
           </Button>
           {!e.comingSoon && (
             <Button asChild className="h-10 flex-1 rounded-full sm:flex-none">
               <Link to={user ? "/app/practice" : "/login"}>
-                Practice <FontAwesomeIcon icon={faArrowRight} />
+                {L("Practice", "অনুশীলন")} <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </Button>
           )}
@@ -78,10 +80,10 @@ export default function ExamDetail({ inApp = false }) {
 
       <Segmented
         options={[
-          { value: "format", label: "Format & marks" },
-          { value: "syllabus", label: "Syllabus" },
-          { value: "past", label: "Past questions" },
-          { value: "notices", label: `Notices (${related.length})` },
+          { value: "format", label: L("Format & marks", "ফরম্যাট ও নম্বর") },
+          { value: "syllabus", label: L("Syllabus", "সিলেবাস") },
+          { value: "past", label: L("Past questions", "বিগত প্রশ্ন") },
+          { value: "notices", label: L(`Notices (${related.length})`, `নোটিশ (${num(related.length)})`) },
         ]}
         value={tab}
         onChange={setTab}
@@ -90,40 +92,9 @@ export default function ExamDetail({ inApp = false }) {
 
       {tab === "format" &&
         (e.stages.length ? (
-          <div className="grid gap-4 md:grid-cols-2">
-            {e.stages.map((s) => (
-              <Panel key={s.type} className="p-0 md:p-0">
-                <div className="flex items-center justify-between border-b p-4">
-                  <div>
-                    <p className="font-semibold">{s.type}</p>
-                    <div className="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-xs text-muted-foreground">
-                      <span><FontAwesomeIcon icon={faClock} /> {s.duration}</span>
-                      <span><FontAwesomeIcon icon={faMinus} /> Negative: {s.negative}</span>
-                    </div>
-                  </div>
-                  <p className="text-2xl font-bold text-primary">{s.marks}</p>
-                </div>
-                {s.subjects.length > 0 ? (
-                  <table className="w-full text-sm">
-                    <tbody>
-                      {s.subjects.map(([en, bn, m]) => (
-                        <tr key={en} className="border-b last:border-0">
-                          <td className="px-4 py-2.5">
-                            {en} <span className="bn block text-xs text-muted-foreground">{bn}</span>
-                          </td>
-                          <td className="px-4 py-2.5 text-right font-semibold tabular-nums">{m}</td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                ) : (
-                  <p className="p-4 text-sm text-muted-foreground">Pass mark: {s.pass}</p>
-                )}
-              </Panel>
-            ))}
-          </div>
+          <ExamFormat exam={e} />
         ) : (
-          <EmptyState icon={<FontAwesomeIcon icon={faHourglassHalf} />} title="Full format coming soon" text="Follow this exam and we'll alert you when preparation opens." />
+          <EmptyState icon={<FontAwesomeIcon icon={faHourglassHalf} />} title={L("Full format coming soon", "পূর্ণ ফরম্যাট শিগগিরই আসছে")} text={L("Follow this exam and we'll alert you when preparation opens.", "পরীক্ষাটি ফলো করুন, প্রস্তুতি চালু হলে জানাব।")} />
         ))}
 
       {tab === "syllabus" &&
@@ -134,15 +105,15 @@ export default function ExamDetail({ inApp = false }) {
                 <AccordionTrigger>
                   <span className="flex flex-1 items-center gap-2 text-left">
                     <span>
-                      {s.name} <span className="bn block text-xs font-normal text-muted-foreground">{s.bn}</span>
+                      {L(s.name, s.bn)} <span className="bn block text-xs font-normal text-muted-foreground">{L(s.bn, s.name)}</span>
                     </span>
-                    <Pill className="ml-auto">{s.stage}</Pill>
-                    <span className="w-10 text-right text-sm tabular-nums">{s.marks}</span>
+                    <Pill className="ml-auto">{td(s.stage)}</Pill>
+                    <span className="w-10 text-right text-sm tabular-nums">{num(s.marks)}</span>
                   </span>
                 </AccordionTrigger>
                 <AccordionContent>
                   <ul className="space-y-1.5 text-sm">
-                    {(sampleTopics[s.name] || ["Topics published per official syllabus"]).map((t) => (
+                    {(sampleTopics[s.name] || [L("Topics published per official syllabus", "অফিসিয়াল সিলেবাস অনুযায়ী টপিক")]).map((t) => (
                       <li key={t} className="bn flex items-center gap-2">
                         <span className="size-1.5 rounded-full bg-primary" /> {t}
                       </li>
@@ -153,7 +124,7 @@ export default function ExamDetail({ inApp = false }) {
             ))}
           </Accordion>
         ) : (
-          <EmptyState title="Syllabus coming soon" />
+          <EmptyState title={L("Syllabus coming soon", "সিলেবাস শিগগিরই আসছে")} />
         ))}
 
       {tab === "past" && (
@@ -167,7 +138,7 @@ export default function ExamDetail({ inApp = false }) {
               <FontAwesomeIcon icon={faFileLines} className="text-primary" />
               <span>
                 <span className="block text-sm font-semibold">{paper}</span>
-                <span className="text-xs text-muted-foreground">Preliminary MCQ</span>
+                <span className="text-xs text-muted-foreground">{td("Preliminary MCQ")}</span>
               </span>
             </Link>
           ))}
@@ -176,11 +147,11 @@ export default function ExamDetail({ inApp = false }) {
 
       {tab === "notices" && (
         <div className="space-y-3">
-          {related.length ? related.map((n) => <NoticeCard key={n.slug} n={n} base={inApp ? "/app/notices" : "/notices"} />) : <EmptyState title="No notices yet" />}
+          {related.length ? related.map((n) => <NoticeCard key={n.slug} n={n} base={inApp ? "/app/notices" : "/notices"} />) : <EmptyState title={L("No notices yet", "এখনো কোনো নোটিশ নেই")} />}
         </div>
       )}
       <p className="mt-6 text-xs text-muted-foreground">
-        Format and marks come from public reports. Always confirm against the latest official circular.
+        {L("Format and marks come from public reports. Always confirm against the latest official circular.", "ফরম্যাট ও নম্বর প্রকাশিত তথ্য থেকে নেওয়া। সর্বশেষ অফিসিয়াল বিজ্ঞপ্তির সঙ্গে মিলিয়ে নিন।")}
       </p>
     </>
   )

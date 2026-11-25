@@ -7,11 +7,11 @@ use Filament\Widgets\ChartWidget;
 
 class AttemptsBySubjectChart extends ChartWidget
 {
-    protected static ?int $sort = 3;
+    protected static ?int $sort = 5;
 
     protected ?string $heading = 'Answers by subject';
 
-    protected ?string $description = 'Green = answered correctly, red = wrong';
+    protected ?string $description = 'Blue = answered correctly, grey = wrong';
 
     protected ?string $maxHeight = '320px';
 
@@ -41,8 +41,8 @@ class AttemptsBySubjectChart extends ChartWidget
 
         return [
             'datasets' => [
-                ['label' => 'Correct', 'data' => $rows->pluck('correct')->map(fn ($v) => (int) $v)->all(), 'backgroundColor' => '#22c55e', 'borderRadius' => 6],
-                ['label' => 'Wrong', 'data' => $rows->pluck('wrong')->map(fn ($v) => (int) $v)->all(), 'backgroundColor' => '#f87171', 'borderRadius' => 6],
+                ['label' => 'Correct', 'data' => $rows->pluck('correct')->map(fn ($v) => (int) $v)->all(), 'backgroundColor' => '#1b63a8', 'borderRadius' => 6],
+                ['label' => 'Wrong', 'data' => $rows->pluck('wrong')->map(fn ($v) => (int) $v)->all(), 'backgroundColor' => '#d5dde8', 'borderRadius' => 6],
             ],
             'labels' => $rows->pluck('subject')->all(),
         ];

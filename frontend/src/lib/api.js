@@ -1,87 +1,4 @@
 // Small fetch wrapper for the Laravel API.
-import { bcs48thQuestions, BCS_48TH_META } from "./bcs-48th-questions"
-import { bcs47thQuestions, BCS_47TH_META } from "./bcs-47th-questions"
-import { bcs46thQuestions, BCS_46TH_META } from "./bcs-46th-questions"
-import { bcs45thQuestions, BCS_45TH_META } from "./bcs-45th-questions"
-import { bcs44thQuestions, BCS_44TH_META } from "./bcs-44th-questions"
-import { bcs43rdQuestions, BCS_43RD_META } from "./bcs-43rd-questions"
-import { bcs42ndQuestions, BCS_42ND_META } from "./bcs-42nd-questions"
-import { bcs41stQuestions, BCS_41ST_META } from "./bcs-41st-questions"
-import { bcs40thQuestions, BCS_40TH_META } from "./bcs-40th-questions"
-import { bcs39thQuestions, BCS_39TH_META } from "./bcs-39th-questions"
-import { bcs38thQuestions, BCS_38TH_META } from "./bcs-38th-questions"
-import { bcs37thQuestions, BCS_37TH_META } from "./bcs-37th-questions"
-import { bcs36thQuestions, BCS_36TH_META } from "./bcs-36th-questions"
-import { bcs35thQuestions, BCS_35TH_META } from "./bcs-35th-questions"
-import { bcs34thQuestions, BCS_34TH_META } from "./bcs-34th-questions"
-import { bcs33rdQuestions, BCS_33RD_META } from "./bcs-33rd-questions"
-import { bcs32ndQuestions, BCS_32ND_META } from "./bcs-32nd-questions"
-import { bcs31stQuestions, BCS_31ST_META } from "./bcs-31st-questions"
-import { bcs30thQuestions, BCS_30TH_META } from "./bcs-30th-questions"
-import { bcs29thQuestions, BCS_29TH_META } from "./bcs-29th-questions"
-import { bcs28thQuestions, BCS_28TH_META } from "./bcs-28th-questions"
-import { bcs27thQuestions, BCS_27TH_META } from "./bcs-27th-questions"
-import { bcs26thQuestions, BCS_26TH_META } from "./bcs-26th-questions"
-import { bcs25thQuestions, BCS_25TH_META } from "./bcs-25th-questions"
-import { bcs24thQuestions, BCS_24TH_META } from "./bcs-24th-questions"
-import { bcs23rdQuestions, BCS_23RD_META } from "./bcs-23rd-questions"
-import { bcs22ndQuestions, BCS_22ND_META } from "./bcs-22nd-questions"
-import { bcs21stQuestions, BCS_21ST_META } from "./bcs-21st-questions"
-import { bcs20thQuestions, BCS_20TH_META } from "./bcs-20th-questions"
-import { bcs19thQuestions, BCS_19TH_META } from "./bcs-19th-questions"
-import { bcs18thQuestions, BCS_18TH_META } from "./bcs-18th-questions"
-import { bcs17thQuestions, BCS_17TH_META } from "./bcs-17th-questions"
-import { bcs16thQuestions, BCS_16TH_META } from "./bcs-16th-questions"
-import { bcs15thQuestions, BCS_15TH_META } from "./bcs-15th-questions"
-import { bcs14thQuestions, BCS_14TH_META } from "./bcs-14th-questions"
-import { bcs13thQuestions, BCS_13TH_META } from "./bcs-13th-questions"
-import { bcs12thQuestions, BCS_12TH_META } from "./bcs-12th-questions"
-import { bcs11thQuestions, BCS_11TH_META } from "./bcs-11th-questions"
-import { bcs10thQuestions, BCS_10TH_META } from "./bcs-10th-questions"
-
-export const BCS_ALL_DATASETS = {
-  48: { meta: BCS_48TH_META, questions: bcs48thQuestions },
-  47: { meta: BCS_47TH_META, questions: bcs47thQuestions },
-  46: { meta: BCS_46TH_META, questions: bcs46thQuestions },
-  45: { meta: BCS_45TH_META, questions: bcs45thQuestions },
-  44: { meta: BCS_44TH_META, questions: bcs44thQuestions },
-  43: { meta: BCS_43RD_META, questions: bcs43rdQuestions },
-  42: { meta: BCS_42ND_META, questions: bcs42ndQuestions },
-  41: { meta: BCS_41ST_META, questions: bcs41stQuestions },
-  40: { meta: BCS_40TH_META, questions: bcs40thQuestions },
-  39: { meta: BCS_39TH_META, questions: bcs39thQuestions },
-  38: { meta: BCS_38TH_META, questions: bcs38thQuestions },
-  37: { meta: BCS_37TH_META, questions: bcs37thQuestions },
-  36: { meta: BCS_36TH_META, questions: bcs36thQuestions },
-  35: { meta: BCS_35TH_META, questions: bcs35thQuestions },
-  34: { meta: BCS_34TH_META, questions: bcs34thQuestions },
-  33: { meta: BCS_33RD_META, questions: bcs33rdQuestions },
-  32: { meta: BCS_32ND_META, questions: bcs32ndQuestions },
-  31: { meta: BCS_31ST_META, questions: bcs31stQuestions },
-  30: { meta: BCS_30TH_META, questions: bcs30thQuestions },
-  29: { meta: BCS_29TH_META, questions: bcs29thQuestions },
-  28: { meta: BCS_28TH_META, questions: bcs28thQuestions },
-  27: { meta: BCS_27TH_META, questions: bcs27thQuestions },
-  26: { meta: BCS_26TH_META, questions: bcs26thQuestions },
-  25: { meta: BCS_25TH_META, questions: bcs25thQuestions },
-  24: { meta: BCS_24TH_META, questions: bcs24thQuestions },
-  23: { meta: BCS_23RD_META, questions: bcs23rdQuestions },
-  22: { meta: BCS_22ND_META, questions: bcs22ndQuestions },
-  21: { meta: BCS_21ST_META, questions: bcs21stQuestions },
-  20: { meta: BCS_20TH_META, questions: bcs20thQuestions },
-  19: { meta: BCS_19TH_META, questions: bcs19thQuestions },
-  18: { meta: BCS_18TH_META, questions: bcs18thQuestions },
-  17: { meta: BCS_17TH_META, questions: bcs17thQuestions },
-  16: { meta: BCS_16TH_META, questions: bcs16thQuestions },
-  15: { meta: BCS_15TH_META, questions: bcs15thQuestions },
-  14: { meta: BCS_14TH_META, questions: bcs14thQuestions },
-  13: { meta: BCS_13TH_META, questions: bcs13thQuestions },
-  12: { meta: BCS_12TH_META, questions: bcs12thQuestions },
-  11: { meta: BCS_11TH_META, questions: bcs11thQuestions },
-  10: { meta: BCS_10TH_META, questions: bcs10thQuestions },
-}
-
-
 export const API_URL = (import.meta.env.VITE_API_URL || "http://localhost:8000/api/v1").replace(/\/$/, "")
 export const BACKEND_URL = API_URL.replace(/\/api\/v1$/, "")
 export const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID || ""
@@ -191,95 +108,32 @@ export const authApi = {
   me: () => api("/me"),
   updateMe: (fields) => api("/me", { method: "PATCH", body: fields }),
   logout: () => api("/auth/logout", { method: "POST" }),
+  /** Permanently deletes the account and everything in it. */
+  deleteMe: () => api("/me", { method: "DELETE", body: { confirm: "DELETE" } }),
 }
 
 /**
- * Previous BCS papers, newest first: [{ number, source, name, name_bn, special, questions, total }].
- * `questions` is how many are ready to read; `total` is how many the real paper had.
+ * Previous BCS papers, newest first. `questions` is how many are shown: the paper's own ones (`own`) plus those added
+ * from other papers (`added`) to make a full set; `total` is how many the real paper had.
  */
 export const pastPapersApi = {
   list: async () => {
-    try {
-      const res = await api("/past-papers")
-      let papers = Array.isArray(res?.papers) ? [...res.papers] : []
-      papers = papers.map((p) => {
-        const dataset = BCS_ALL_DATASETS[p.number]
-        return {
-          ...p,
-          questions: 200,
-          total: 200,
-          full_marks: 200,
-          name: dataset?.meta?.name || p.name,
-          name_bn: dataset?.meta?.name_bn || p.name_bn,
-          special: dataset?.meta?.special ?? p.special,
-        }
-      })
-
-      for (let n = 48; n >= 10; n--) {
-        if (!papers.some((p) => p.number === n)) {
-          const ds = BCS_ALL_DATASETS[n]
-          papers.push({
-            number: n,
-            source: ds?.meta?.source || `${n}th BCS`,
-            name: ds?.meta?.name || `${n}th BCS`,
-            name_bn: ds?.meta?.name_bn || `${n}তম বিসিএস`,
-            special: ds?.meta?.special || [32, 39, 42, 48].includes(n),
-            questions: 200,
-            total: 200,
-            full_marks: 200,
-          })
-        }
-      }
-      papers.sort((a, b) => b.number - a.number)
-      return { ...res, papers }
-    } catch {
-      const papers = []
-      for (let n = 48; n >= 10; n--) {
-        const ds = BCS_ALL_DATASETS[n]
-        papers.push({
-          number: n,
-          source: ds?.meta?.source || `${n}th BCS`,
-          name: ds?.meta?.name || `${n}th BCS`,
-          name_bn: ds?.meta?.name_bn || `${n}তম বিসিএস`,
-          special: ds?.meta?.special || [32, 39, 42, 48].includes(n),
-          questions: 200,
-          total: 200,
-          full_marks: 200,
-        })
-      }
-      return { papers }
-    }
+    const { papers } = await api("/past-papers")
+    return { papers: papers.map((p) => ({ ...p, own: p.questions, questions: p.shown })) }
   },
-  /** One paper with every question, its answer and explanation. */
+  /** One paper with every question, its answer and explanation, numbered 1 to 200. */
   show: async (number) => {
-    const numVal = parseInt(number, 10)
-    const entry = BCS_ALL_DATASETS[numVal]
-    if (entry && entry.questions?.length === 200) {
-      try {
-        const res = await api(`/past-papers/${number}`)
-        if (res?.questions && res.questions.length === 200) {
-          return {
-            paper: {
-              ...res.paper,
-              questions: 200,
-              total: 200,
-              full_marks: 200,
-            },
-            questions: res.questions,
-          }
-        }
-      } catch {}
-      return {
-        paper: {
-          ...entry.meta,
-          questions: 200,
-          total: 200,
-          full_marks: 200,
-        },
-        questions: entry.questions,
-      }
+    const { paper, questions, extra_questions: extra } = await api(`/past-papers/${number}`)
+    // The paper's own questions keep their printed numbers; the others take the free ones.
+    const used = new Set(questions.map((q) => q.number).filter(Boolean))
+    let next = 1
+    const free = () => {
+      while (used.has(next)) next += 1
+      used.add(next)
+      return next
     }
-    return api(`/past-papers/${number}`)
+    const all = [...questions, ...extra].map((q) => ({ ...q, number: q.number || free() })).sort((a, b) => a.number - b.number)
+    return { paper: { ...paper, own: paper.questions, questions: paper.shown }, questions: all }
   },
 }
 
@@ -318,11 +172,17 @@ export const statsApi = {
 }
 
 export const mistakesApi = {
-  list: () => api("/me/mistakes"),
+  list: (exam) => api(`/me/mistakes${exam ? `?exam=${encodeURIComponent(exam)}` : ""}`),
+}
+
+/** Mistakes reported in a question (its id) or a notice (its slug). */
+export const reportsApi = {
+  send: ({ target, targetRef, reason, note }) => api("/reports", { method: "POST", body: { target, target_ref: String(targetRef), reason, note: note || undefined } }),
 }
 
 export const dailyQuizApi = {
   get: () => api("/daily-quiz"),
+  reshuffle: () => api("/daily-quiz/reshuffle", { method: "POST" }),
 }
 
 export const siteApi = {

@@ -16,11 +16,11 @@ import { fmtDate, keyDate, relDays, daysUntil, isBangla, localDigits, tr, td, ex
 
 export const tones = {
   primary: "bg-primary/10 text-primary",
-  success: "bg-success/12 text-success",
-  warning: "bg-warning/15 text-[color-mix(in_oklab,var(--warning)_70%,black)] dark:text-warning",
-  info: "bg-info/10 text-info",
-  medical: "bg-medical/10 text-medical",
-  destructive: "bg-destructive/10 text-destructive",
+  success: "bg-success/12 text-success-ink",
+  warning: "bg-warning/15 text-warning-ink",
+  info: "bg-info/10 text-info-ink",
+  medical: "bg-medical/10 text-medical-ink",
+  destructive: "bg-destructive/10 text-destructive-ink",
   chart5: "bg-chart-5/12 text-chart-5",
   muted: "bg-muted text-muted-foreground",
   white: "bg-white/15 text-white",
@@ -61,7 +61,7 @@ export function Trend({ value, className, light }) {
     <span
       className={cn(
         "inline-flex items-center gap-1 text-xs font-semibold",
-        light ? "text-glow" : up ? "text-success" : "text-destructive",
+        light ? "text-glow" : up ? "text-success-ink" : "text-destructive-ink",
         className
       )}
     >
@@ -253,12 +253,12 @@ export function DateChip({ iso, label }) {
     <div
       className={cn(
         "flex w-[3.6rem] shrink-0 flex-col items-center justify-center rounded-xl py-2 text-center",
-        urgent ? "bg-destructive/10 text-destructive" : "bg-secondary text-secondary-foreground"
+        urgent ? "bg-destructive/10 text-destructive-ink" : "bg-secondary text-secondary-foreground"
       )}
     >
-      <span className="text-[0.6rem] font-bold tracking-wide uppercase opacity-80">{isBangla() ? CHIP_LABELS_BN[label] || label : label}</span>
+      <span className="text-[0.6rem] font-bold tracking-wide uppercase">{isBangla() ? CHIP_LABELS_BN[label] || label : label}</span>
       <span className="text-xl leading-tight font-extrabold">{localDigits(d.getDate())}</span>
-      <span className="text-[0.65rem] font-semibold opacity-80">{d.toLocaleString(isBangla() ? "bn-BD" : "en", { month: "short" })}</span>
+      <span className="text-[0.65rem] font-semibold">{d.toLocaleString(isBangla() ? "bn-BD" : "en", { month: "short" })}</span>
     </div>
   )
 }
@@ -291,12 +291,12 @@ export function NoticeCard({ n, compact = false, base = "/notices" }) {
           <span className="font-semibold text-foreground/80">{td(n.org)}</span>
           {exam && <span>{examName(exam)}</span>}
           {k.label !== "Published" && days >= 0 && (
-            <span className={cn(days <= 3 && "font-semibold text-destructive")}>
+            <span className={cn(days <= 3 && "font-semibold text-destructive-ink")}>
               {td(k.label)} {relDays(k.date).toLowerCase()}
             </span>
           )}
           {n.verifiedAt && (
-            <span className="flex items-center gap-1 font-medium text-success">
+            <span className="flex items-center gap-1 font-medium text-success-ink">
               <FontAwesomeIcon icon={faCircleCheck} /> {tr("Verified", "যাচাইকৃত")} {fmtDate(n.verifiedAt, false)}
             </span>
           )}

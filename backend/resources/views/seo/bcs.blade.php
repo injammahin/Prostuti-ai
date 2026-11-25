@@ -1,9 +1,11 @@
 @php $bn = \App\Services\Bangla::digits(...); @endphp
 <div class="bn mx-auto max-w-5xl px-4 py-6 md:py-10" lang="bn">
-    @include('seo.partials.crumbs', ['items' => ['Home' => '/', 'BCS' => '']])
+    @include('seo.partials.crumbs')
     <h1 class="text-[1.5rem] leading-snug font-bold md:text-[2.1rem]">বিসিএস প্রশ্ন ব্যাংক ও সমাধান <span class="block text-lg font-semibold text-muted-foreground md:text-xl">BCS Question Bank: 10th to {{ $latest }}th BCS Question Solution</span></h1>
+    @include('seo.partials.updated')
     <p class="mt-4 leading-relaxed">১০ম থেকে {{ \App\Services\Bangla::ordinal($latest) }} বিসিএস প্রিলিমিনারি পরীক্ষার {{ $bn(number_format($total)) }}টি প্রশ্ন সঠিক উত্তরসহ এখানে আছে; এর মধ্যে {{ $bn(number_format($explained)) }}টির সঙ্গে ব্যাখ্যাও দেওয়া আছে। যে বিসিএসের প্রশ্ন দেখতে চান, নিচের তালিকা থেকে বেছে নিন। সব বিনামূল্যে, অ্যাকাউন্ট ছাড়াই পড়া যায়।</p>
     <p class="mt-2 text-sm leading-relaxed text-muted-foreground" lang="en">Every BCS preliminary paper from the 10th to the {{ $latest }}th, with the correct answer to each question and an explanation where we have one. Free to read, with no account needed.</p>
+    @include('seo.partials.share', ['path' => '/bcs', 'title' => 'বিসিএস প্রশ্ন ব্যাংক ও সমাধান'])
 
     <h2 class="mt-9 text-xl font-bold">বিসিএস অনুযায়ী প্রশ্ন সমাধান (BCS question solution by year)</h2>
     <div class="card mt-3 overflow-x-auto">

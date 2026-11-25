@@ -3,6 +3,7 @@
 namespace Tests\Feature;
 
 use App\Models\Exam;
+use App\Models\Notice;
 use App\Models\Post;
 use App\Models\Question;
 use App\Models\Subject;
@@ -94,6 +95,23 @@ class ExamPagesTest extends TestCase
         $this->get('/bcs/41st-bcs-question-solution')->assertSee('সংশোধিত প্রশ্ন', false);
     }
 
+    public function test_the_model_test_page_exists_even_before_any_test_is_published(): void
+    {
+        $this->paper();
+
+        $this->get('/model-tests')->assertOk()->assertSee('/bcs/41st-bcs-question-solution', false)->assertDontSee('/app/model-test"', false);
+        $this->get('/sitemap-pages.xml')->assertSee('/model-tests</loc>', false);
+    }
+
+    public function test_a_notice_names_its_official_source(): void
+    {
+        Notice::factory()->create(['slug' => 'known', 'org' => 'BPSC', 'url' => 'https://files.example.com/notice.pdf', 'is_published' => true, 'published_on' => now()->subDay()]);
+        Notice::factory()->create(['slug' => 'other', 'org' => 'LGED', 'url' => 'https://lged.gov.bd/notice/5', 'is_published' => true, 'published_on' => now()->subDay()]);
+
+        $this->get('/notices/known')->assertOk()->assertSee('href="https://bpsc.gov.bd"', false)->assertSee('https://files.example.com/notice.pdf', false);
+        $this->get('/notices/other')->assertOk()->assertSee('href="https://lged.gov.bd"', false);
+    }
+
     public function test_a_hub_with_few_questions_is_kept_out_of_search_and_the_sitemap(): void
     {
         Exam::factory()->create(['slug' => 'ntrca']);
@@ -133,6 +151,39 @@ class ExamPagesTest extends TestCase
         $this->getJson('/api/v1/posts/my-guide')->assertOk();
 
         $this->assertEquals($post->updated_at->timestamp, $post->fresh()->updated_at->timestamp);
+    }
+
+    public function test_a_question_has_a_page_only_with_a_long_explanation(): void
+    {
+        $this->paper();
+        $long = Question::query()->where('ref', 'bcs41_q4')->firstOrFail();
+        $long->update(['body' => 'বাংলাদেশের রাজধানী কোনটি', 'explanation' => implode(' ', array_fill(0, 45, 'শব্দ'))]);
+        $short = Question::query()->where('ref', 'bcs41_q5')->firstOrFail();
+
+        preg_match('#<loc>https://bd3schools\.com(/questions/[^<]+)</loc>#', $this->get('/sitemap-questions.xml')->assertOk()->getContent(), $found);
+        $this->assertStringStartsWith("/questions/{$long->id}-", $found[1]);
+        $html = $this->get($found[1])->assertOk()->getContent();
+        $this->assertStringContainsString('<title>বাংলাদেশের রাজধানী কোনটি | bd3schools</title>', $html);
+        $this->assertStringContainsString('/bcs/41st-bcs-question-solution#q4', $html);
+        $this->get('/bcs/41st-bcs-question-solution')->assertSee($found[1], false);
+
+        $this->get("/questions/{$long->id}-another-text")->assertStatus(301)->assertRedirect($found[1]);
+        $this->get("/questions/{$short->id}-x")->assertNotFound();
+
+        config(['seo.questions_on_hold' => [41]]);
+        $this->artisan('cache:clear');
+        $this->get($found[1])->assertNotFound();
+    }
+
+    public function test_a_subject_page_has_notes_instead_of_the_full_explanations(): void
+    {
+        $this->paper();
+        Question::query()->where('ref', 'bcs41_q4')->firstOrFail()->update(['explanation' => 'প্রথম বাক্যটি এখানে আছে। দ্বিতীয় বাক্যটি শুধু পরীক্ষার পাতায়।']);
+
+        $this->get('/bcs/subject/bangladesh-affairs')->assertOk()
+            ->assertSee('প্রথম বাক্যটি এখানে আছে।')
+            ->assertDontSee('দ্বিতীয় বাক্যটি')
+            ->assertSee('/bcs/41st-bcs-question-solution#q4', false);
     }
 
     public function test_an_api_request_without_a_sign_in_gets_401(): void

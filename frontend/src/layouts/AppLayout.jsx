@@ -38,7 +38,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { Logo, Pill } from "@/components/shared"
 import { LangToggle } from "@/layouts/PublicLayout"
 import { useApp } from "@/lib/app-context"
@@ -301,6 +301,14 @@ function NavGroups({ t, collapsed = false, tooltip = true, onNavigate }) {
   ))
 }
 export default function AppLayout() {
+  return (
+    <TooltipProvider>
+      <AppFrame />
+    </TooltipProvider>
+  )
+}
+
+function AppFrame() {
   const { t, isGuest, set, mainExam, sidebarCollapsed: collapsed, L, fmtDate } = useApp()
   const [drawer, setDrawer] = useState(false)
   const { pathname } = useLocation()

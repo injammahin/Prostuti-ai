@@ -5,39 +5,38 @@ import { prefetchApi } from "@/lib/use-api"
 import { useNoIndex } from "@/lib/seo"
 import { TopLoadingBar } from "@/components/Loaders"
 import { loadNotices } from "@/lib/notices-store"
-import { TooltipProvider } from "@/components/ui/tooltip"
-import { Toaster } from "@/components/ui/sonner"
+import LazyToaster from "@/components/LazyToaster"
 import { AppProvider, useApp } from "@/lib/app-context"
 import PublicLayout from "@/layouts/PublicLayout"
-import SignupPrompt from "@/components/SignupPrompt"
+import LazySignupPrompt from "@/components/LazySignupPrompt"
 
-// Pages load on demand; all of them are fetched in the background after the first paint,
-// so moving between menu items never waits for a download.
-const pageImporters = []
-const p = (f) => {
-  pageImporters.push(f)
+// Pages load on demand; the ones a visitor can open next are fetched in the background after the first paint,
+// so moving between menu items never waits for a download. The app's own pages only for people heading there.
+const sitePages = []
+const appPages = []
+const pageIn = (list) => (f) => {
+  list.push(f)
   return lazy(f)
 }
-function preloadAllPages() {
+const p = pageIn(sitePages)
+const a = pageIn(appPages)
+/** Runs once the page itself is done, so it never competes with what the visitor is waiting for. */
+function whenIdle(run) {
   // Not on data-saver or very slow connections.
   const connection = navigator.connection
   if (connection?.saveData || /2g/.test(connection?.effectiveType ?? "")) return
-  const run = () => {
-    pageImporters.forEach((load) => load().catch(() => {}))
-    prefetchData()
-  }
-  // Only once the page itself is done, so it never competes with what the visitor is waiting for.
   const start = () => setTimeout(() => ("requestIdleCallback" in window ? window.requestIdleCallback(run, { timeout: 4000 }) : run()), 3000)
   if (document.readyState === "complete") start()
   else window.addEventListener("load", start, { once: true })
 }
+const preload = (list) => list.forEach((load) => load().catch(() => {}))
 /** The lists people open next, so those pages appear with their content. */
 function prefetchData() {
   prefetchApi("past-papers", pastPapersApi.list)
   prefetchApi("blog", blogApi.list)
   prefetchApi("model-tests-list", modelTestsApi.list)
 }
-const AppLayout = p(() => import("@/layouts/AppLayout"))
+const AppLayout = a(() => import("@/layouts/AppLayout"))
 const Landing = p(() => import("@/pages/public/Landing"))
 const Notices = p(() => import("@/pages/public/Notices"))
 const DailyQuiz = p(() => import("@/pages/public/DailyQuiz"))
@@ -47,28 +46,33 @@ const Exams = p(() => import("@/pages/public/Exams"))
 const ExamDetail = p(() => import("@/pages/public/ExamDetail"))
 const Blog = p(() => import("@/pages/public/Blog"))
 const BlogPost = p(() => import("@/pages/public/BlogPost"))
+const NoticeBoard = p(() => import("@/pages/public/NoticeBoard"))
+const NoticePage = p(() => import("@/pages/public/NoticePage"))
 const ServerPage = p(() => import("@/pages/public/ServerPage"))
 const Legal = p(() => import("@/pages/public/Legal"))
 const Login = p(() => import("@/pages/auth/Login"))
-const Onboarding = p(() => import("@/pages/auth/Onboarding"))
+const Onboarding = a(() => import("@/pages/auth/Onboarding"))
 const NotFound = p(() => import("@/pages/NotFound"))
 
-const Today = p(() => import("@/pages/app/Today"))
-const Practice = p(() => import("@/pages/app/Practice"))
-const Session = p(() => import("@/pages/app/Session"))
-const ModelTests = p(() => import("@/pages/app/ModelTests"))
-const TestRun = p(() => import("@/pages/app/TestRun"))
-const PastPapers = p(() => import("@/pages/app/PastPapers"))
-const PaperSolutions = p(() => import("@/pages/app/PaperSolutions"))
-const TestResult = p(() => import("@/pages/app/TestResult"))
-const Written = p(() => import("@/pages/app/Written"))
-const WrittenAnswer = p(() => import("@/pages/app/WrittenAnswer"))
-const WrittenResult = p(() => import("@/pages/app/WrittenResult"))
-const Plan = p(() => import("@/pages/app/Plan"))
-const Progress = p(() => import("@/pages/app/Progress"))
-const Notebook = p(() => import("@/pages/app/Notebook"))
-const Alerts = p(() => import("@/pages/app/Alerts"))
-const Settings = p(() => import("@/pages/app/Settings"))
+const Today = a(() => import("@/pages/app/Today"))
+const Practice = a(() => import("@/pages/app/Practice"))
+const Session = a(() => import("@/pages/app/Session"))
+const ModelTests = a(() => import("@/pages/app/ModelTests"))
+const TestRun = a(() => import("@/pages/app/TestRun"))
+const PastPapers = a(() => import("@/pages/app/PastPapers"))
+const PaperSolutions = a(() => import("@/pages/app/PaperSolutions"))
+const TestResult = a(() => import("@/pages/app/TestResult"))
+const Written = a(() => import("@/pages/app/Written"))
+const WrittenAnswer = a(() => import("@/pages/app/WrittenAnswer"))
+const WrittenResult = a(() => import("@/pages/app/WrittenResult"))
+const Plan = a(() => import("@/pages/app/Plan"))
+const Progress = a(() => import("@/pages/app/Progress"))
+const Notebook = a(() => import("@/pages/app/Notebook"))
+const Alerts = a(() => import("@/pages/app/Alerts"))
+const Settings = a(() => import("@/pages/app/Settings"))
+
+/** Small parts the visitor may open next (not needed for the first paint). */
+const siteParts = [() => import("@/components/MobileMenu"), () => import("@/components/SignupPrompt")]
 
 function Loader() {
   return (
@@ -129,6 +133,23 @@ function PageTracker() {
   return null
 }
 
+/** Fetches in the background what is likely to be opened next. */
+function Preloader() {
+  const { pathname } = useLocation()
+  const { user } = useApp()
+  const forApp = Boolean(user) || /^\/(app|login|signup|onboarding|bcs-papers)(\/|$)/.test(pathname)
+  useEffect(() => {
+    whenIdle(() => {
+      preload([...siteParts, ...sitePages])
+      prefetchData()
+    })
+  }, [])
+  useEffect(() => {
+    if (forApp) whenIdle(() => preload(appPages))
+  }, [forApp])
+  return null
+}
+
 function AppRoutes() {
   return (
     <Suspense fallback={<Loader />}>
@@ -136,8 +157,10 @@ function AppRoutes() {
         <Route element={<PublicLayout />}>
           <Route index element={<Landing />} />
           <Route path="daily" element={<DailyQuiz />} />
-          <Route path="notices" element={<Notices />} />
-          <Route path="notices/:slug" element={<NoticeDetail />} />
+          <Route path="notices" element={<NoticeBoard />} />
+          <Route path="notices/:slug" element={<NoticePage />} />
+          <Route path="contact" element={<ServerPage />} />
+          <Route path="questions/*" element={<ServerPage />} />
           <Route path="calendar" element={<Calendar />} />
           <Route path="exams" element={<Exams />} />
           <Route path="exams/:slug" element={<ExamDetail />} />
@@ -198,21 +221,19 @@ function AppRoutes() {
 }
 
 export default function App() {
-  useEffect(preloadAllPages, [])
   useEffect(() => {
     loadNotices()
   }, [])
   return (
     <AppProvider>
-      <TooltipProvider>
-        <BrowserRouter>
-          <TopLoadingBar />
-          <PageTracker />
-          <AppRoutes />
-          <SignupPrompt />
-        </BrowserRouter>
-        <Toaster />
-      </TooltipProvider>
+      <BrowserRouter>
+        <TopLoadingBar />
+        <PageTracker />
+        <Preloader />
+        <AppRoutes />
+        <LazySignupPrompt />
+      </BrowserRouter>
+      <LazyToaster />
     </AppProvider>
   )
 }

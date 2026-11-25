@@ -65,13 +65,20 @@ const about = [
     ["Job notices and exam dates with links to the official source.", "অফিসিয়াল সূত্রের লিংকসহ চাকরির নোটিশ ও পরীক্ষার তারিখ।"],
     ["Everything in Bangla and English.", "সবকিছু বাংলা ও ইংরেজিতে।"],
   ]],
+  ["How we verify answers", "আমরা যেভাবে উত্তর যাচাই করি", [
+    ["Official answer keys: where the authority publishes a key for an exam, its answer is the one we mark.", "অফিসিয়াল উত্তর: কর্তৃপক্ষ কোনো পরীক্ষার উত্তরপত্র প্রকাশ করলে আমরা সেই উত্তরই চিহ্নিত করি।"],
+    ["Cross-checked sources: BPSC does not publish a key with explanations for most papers, so answers are compared with textbooks, the constitution, government publications and standard reference books.", "একাধিক সূত্র: বেশির ভাগ প্রশ্নপত্রের ব্যাখ্যাসহ উত্তর বিপিএসসি প্রকাশ করে না, তাই উত্তর পাঠ্যবই, সংবিধান, সরকারি প্রকাশনা ও প্রামাণ্য গ্রন্থের সঙ্গে মিলিয়ে দেখা হয়।"],
+    ["Answers belong to their time: a membership number or an office holder is marked as it was when the exam was held, and the explanation gives today's figure where it has changed.", "সময় অনুযায়ী উত্তর: সদস্যসংখ্যা বা পদাধিকারীর মতো তথ্য পরীক্ষার সময়ের হিসাবে চিহ্নিত থাকে; বদলে গেলে ব্যাখ্যায় বর্তমান তথ্য দেওয়া হয়।"],
+    ["Corrections: every question has a \"Report a wrong answer\" link. We check each report and correct the page itself; its \"Last updated\" date changes. With thousands of questions some mistakes remain, so please tell us.", "সংশোধন: প্রতিটি প্রশ্নের নিচে ভুল জানানোর লিংক আছে। আমরা প্রতিটি অভিযোগ যাচাই করে সেই পাতাতেই ঠিক করি এবং হালনাগাদের তারিখ বদলায়। হাজার হাজার প্রশ্নের মধ্যে কিছু ভুল থাকতে পারে, পেলে জানান।"],
+    ["Notices are written from the official circular and link to it.", "নোটিশ অফিসিয়াল বিজ্ঞপ্তি থেকে লেখা হয় এবং তার লিংক দেওয়া থাকে।"],
+  ]],
   ["Independent", "স্বাধীন প্ল্যাটফর্ম", [
     ["bd3schools is not affiliated with BPSC, NTRCA, DPE, Bangladesh Bank or any ministry.", "bd3schools বিপিএসসি, এনটিআরসিএ, ডিপিই, বাংলাদেশ ব্যাংক বা কোনো মন্ত্রণালয়ের সঙ্গে যুক্ত নয়।"],
   ]],
 ]
 
 export const PAGES = {
-  about: { sections: about, title: ["About bd3schools", "bd3schools সম্পর্কে"], description: "bd3schools is a free online exam preparation website in Bangladesh for BCS, NTRCA, Primary Teacher and bank job exams." },
-  privacy: { sections: privacy, title: ["Privacy policy", "গোপনীয়তা নীতি"], description: "What bd3schools collects, why, and how to delete it." },
-  terms: { sections: terms, title: ["Terms of use", "ব্যবহারের শর্তাবলি"], description: "The terms for using bd3schools." },
+  about: { sections: about, title: ["About bd3schools", "bd3schools সম্পর্কে"], seo: "About Us & How We Verify Answers | আমাদের সম্পর্কে | bd3schools", description: "bd3schools is a free online exam preparation website in Bangladesh for BCS, NTRCA, Primary and bank jobs. How we verify answers." },
+  privacy: { sections: privacy, title: ["Privacy policy", "গোপনীয়তা নীতি"], seo: "Privacy Policy | গোপনীয়তা নীতি | bd3schools", description: "What bd3schools collects about you, why, and how to see or delete it. bd3schools-এর গোপনীয়তা নীতি।" },
+  terms: { sections: terms, title: ["Terms of use", "ব্যবহারের শর্তাবলি"], seo: "Terms of Use | ব্যবহারের শর্তাবলি | bd3schools", description: "The terms for using bd3schools, the free exam preparation website. bd3schools ব্যবহারের শর্তাবলি।" },
 }

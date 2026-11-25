@@ -4,8 +4,9 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ShowPageRequest;
-use App\Services\ExamPages;
 use App\Services\PageShell;
+use App\Services\PublicPages;
+use App\Services\ShareImage;
 use Illuminate\Http\JsonResponse;
 
 /**
@@ -18,16 +19,16 @@ class PageController extends Controller
         $path = $request->string('path')->toString();
 
         $page = PageShell::remember('fragment:'.md5($path), function () use ($path): ?array {
-            $page = ExamPages::resolve($path);
+            $page = PublicPages::resolve($path);
 
             return $page ? [
                 'path' => $page->path,
                 'title' => $page->title,
                 'description' => $page->description,
-                'image' => $page->image,
+                'image' => $page->image ?: ShareImage::forPath($page->path),
                 'type' => $page->type,
-                'json_ld' => ['@context' => 'https://schema.org', '@graph' => $page->jsonLd],
-                'html' => view($page->view, $page->viewData)->render(),
+                'json_ld' => ['@context' => 'https://schema.org', '@graph' => $page->graph()],
+                'html' => $page->content(),
             ] : null;
         });
 

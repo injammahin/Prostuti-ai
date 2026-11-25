@@ -1,5 +1,5 @@
 <div class="mx-auto max-w-3xl px-4 py-6 md:py-10">
-    @include('seo.partials.crumbs', ['items' => ['Home' => '/', $section['title'][0] => '']])
+    @include('seo.partials.crumbs')
     <h1 class="text-[1.35rem] leading-tight font-bold md:text-[1.7rem]">{{ $section['title'][0] }}</h1>
     <p class="mt-1 text-sm text-muted-foreground">Last updated: {{ \Illuminate\Support\Carbon::parse($updated)->format('j F Y') }}</p>
     <div class="card mt-5 space-y-7 p-5 md:p-8">

@@ -1,10 +1,14 @@
 @php $bn = \App\Services\Bangla::digits(...); @endphp
 <div class="bn mx-auto max-w-4xl px-4 py-6 md:py-10" lang="bn">
-    @include('seo.partials.crumbs', ['items' => ['Home' => '/', 'BCS' => '/bcs', "BCS {$subject->name}" => '']])
+    @include('seo.partials.crumbs')
     <h1 class="text-[1.5rem] leading-snug font-bold md:text-[2.1rem]">বিসিএস {{ $subject->name_bn }} প্রশ্ন সমাধান <span class="block text-lg font-semibold text-muted-foreground md:text-xl">BCS {{ $subject->name }} Questions with Answers</span></h1>
-    <p class="mt-2 text-sm text-muted-foreground">bd3schools · সর্বশেষ হালনাগাদ <time datetime="{{ $updated->toIso8601String() }}">{{ \App\Services\Bangla::date($updated) }}</time></p>
-    <p class="mt-4 leading-relaxed">আমাদের সংগ্রহে ১০ম থেকে সাম্প্রতিক বিসিএস পর্যন্ত {{ $subject->name_bn }} অংশের {{ $bn(number_format($total)) }}টি প্রশ্ন আছে। এই পাতায় ব্যাখ্যাসহ {{ $bn(count($questions)) }}টি প্রশ্ন দেওয়া হলো, নতুন বিসিএস থেকে পুরোনো। প্রতিটি প্রশ্নের নিচে কোন বিসিএসে এসেছিল তা লেখা আছে।</p>
-    <p class="mt-2 text-sm leading-relaxed text-muted-foreground" lang="en">{{ count($questions) }} {{ $subject->name }} questions from real BCS preliminary papers, newest first, each with its answer, explanation and the BCS it was asked in. Free.</p>
+    @include('seo.partials.updated')
+    @if ($intro)
+        <p class="mt-4 leading-relaxed">{{ $intro['bn'] }}</p>
+        <p class="mt-3 text-sm leading-relaxed text-muted-foreground" lang="en">{{ $intro['en'] }}</p>
+    @endif
+    <p class="mt-3 leading-relaxed">আমাদের সংগ্রহে এই বিষয়ের {{ $bn(number_format($total)) }}টি বিসিএস প্রশ্ন আছে। নিচে {{ $bn(count($questions)) }}টি প্রশ্ন, সঠিক উত্তর ও এক লাইনের নোট দেওয়া হলো, নতুন বিসিএস থেকে পুরোনো। পূর্ণ ব্যাখ্যা সংশ্লিষ্ট বিসিএসের পাতায় আছে।</p>
+    @include('seo.partials.share', ['path' => \App\Services\ExamPages::subjectPath($subject->slug), 'title' => "বিসিএস {$subject->name_bn} প্রশ্ন সমাধান"])
 
     <ol class="mt-6">@foreach ($questions as $question)@include('seo.partials.question', ['tag' => 'h2'])@endforeach</ol>
 

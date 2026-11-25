@@ -3,7 +3,6 @@
 namespace App\Services;
 
 use App\Models\ModelTest;
-use App\Models\Notice;
 use App\Models\Post;
 use App\Models\Question;
 use App\Models\Subject;
@@ -36,23 +35,23 @@ class ExamPages
             'name' => 'NTRCA',
             'h1' => 'এনটিআরসিএ শিক্ষক নিবন্ধন প্রশ্ন ও প্রস্তুতি',
             'h1_en' => 'NTRCA Teacher Registration Questions & Preparation',
-            'title' => 'এনটিআরসিএ শিক্ষক নিবন্ধন প্রশ্ন সমাধান | NTRCA Question & Syllabus | bd3schools',
-            'description' => 'এনটিআরসিএ শিক্ষক নিবন্ধন পরীক্ষার প্রশ্ন, উত্তর ও ব্যাখ্যা, সিলেবাস, নম্বর বণ্টন ও নোটিশ। Free NTRCA practice questions with answers and syllabus.',
+            'title' => 'এনটিআরসিএ প্রশ্ন সমাধান | NTRCA Question & Syllabus | bd3schools',
+            'description' => 'এনটিআরসিএ শিক্ষক নিবন্ধনের প্রশ্ন, উত্তর, ব্যাখ্যা, সিলেবাস ও নোটিশ। Free NTRCA questions with answers and syllabus.',
         ],
         'primary-teacher' => [
             'exams' => ['primary-teacher'],
             'name' => 'Primary teacher',
             'h1' => 'প্রাথমিক সহকারী শিক্ষক নিয়োগ প্রশ্ন ও প্রস্তুতি',
             'h1_en' => 'Primary Assistant Teacher Questions & Preparation',
-            'title' => 'প্রাথমিক শিক্ষক নিয়োগ প্রশ্ন সমাধান | Primary Teacher Question & Syllabus | bd3schools',
-            'description' => 'প্রাথমিক সহকারী শিক্ষক নিয়োগ পরীক্ষার প্রশ্ন, উত্তর ও ব্যাখ্যা, নম্বর বণ্টন ও নোটিশ। Free Primary teacher exam questions with answers and syllabus.',
+            'title' => 'প্রাথমিক শিক্ষক প্রশ্ন সমাধান | Primary Teacher Question | bd3schools',
+            'description' => 'প্রাথমিক সহকারী শিক্ষক নিয়োগের প্রশ্ন, উত্তর, ব্যাখ্যা ও নোটিশ। Free Primary teacher questions with answers and syllabus.',
         ],
         'bank-jobs' => [
             'exams' => ['combined-bank', 'bangladesh-bank'],
             'name' => 'Bank jobs',
             'h1' => 'ব্যাংক নিয়োগ পরীক্ষার প্রশ্ন ও প্রস্তুতি',
             'h1_en' => 'Bank Job Exam Questions & Preparation',
-            'title' => 'ব্যাংক নিয়োগ প্রশ্ন সমাধান | Bank Job Question & Syllabus Bangladesh | bd3schools',
+            'title' => 'ব্যাংক নিয়োগ প্রশ্ন সমাধান | Bank Job Question Solution | bd3schools',
             'description' => 'সমন্বিত ব্যাংক ও বাংলাদেশ ব্যাংক পরীক্ষার প্রশ্ন, উত্তর, ব্যাখ্যা, নম্বর বণ্টন ও নোটিশ। Free bank job questions with answers and syllabus.',
         ],
     ];
@@ -154,7 +153,7 @@ class ExamPages
         return collect([
             '/bcs' => $questions->max('updated_at'),
             ...collect(self::HUBS)->mapWithKeys(fn (array $hub, string $address): array => ["/{$address}" => self::examQuestions($hub['exams'])->max('updated_at')]),
-            '/model-tests' => ModelTest::query()->published()->get(['updated_at'])->max('updated_at'),
+            '/model-tests' => ModelTest::query()->published()->get(['updated_at'])->max('updated_at') ?? $questions->max('updated_at'),
             ...$papers,
             ...$subjects,
         ])->filter();
@@ -162,13 +161,13 @@ class ExamPages
 
     private static function bcs(): PublicPage
     {
-        $questions = self::paperQuestions(['id', 'ref', 'source', 'subject_id', 'explanation', 'updated_at']);
+        $questions = self::paperQuestions(['id', 'ref', 'source', 'subject_id', 'explanation', 'created_at', 'updated_at']);
         $byPaper = $questions->groupBy(fn (Question $question): int => (int) $question->source);
         $explained = $questions->filter(self::isExplained(...));
         $latest = (int) config('bcs_papers.latest');
         $latestBn = Bangla::ordinal($latest);
-        $title = "বিসিএস প্রশ্ন ব্যাংক ও সমাধান (১০ম–{$latestBn}) | BCS Question Bank & Solution | bd3schools";
-        $description = "১০ম থেকে {$latestBn} বিসিএস প্রিলিমিনারি প্রশ্ন সমাধান, উত্তর ও ব্যাখ্যাসহ। Free BCS previous questions with answers, subject-wise questions and syllabus.";
+        $title = "বিসিএস প্রশ্ন ব্যাংক ও সমাধান | BCS Question Bank 10th–{$latest}th | bd3schools";
+        $description = "১০ম থেকে {$latestBn} বিসিএস প্রিলিমিনারি প্রশ্ন সমাধান। Free BCS previous questions with answers, by exam and by subject, plus the syllabus.";
 
         return new PublicPage(
             path: '/bcs',
@@ -177,6 +176,7 @@ class ExamPages
             view: 'seo.bcs',
             viewData: [
                 'total' => $questions->count(),
+                'updated' => $questions->max('updated_at'),
                 'explained' => $explained->count(),
                 'latest' => $latest,
                 'papers' => collect(PastPapers::numbers())
@@ -193,7 +193,8 @@ class ExamPages
                 'tests' => self::tests()->where('exam', 'bcs-general'),
             ],
             lang: 'bn',
-            jsonLd: [PublicPage::breadcrumbs(['Home' => '/', 'BCS' => '/bcs'])],
+            jsonLd: [self::article('/bcs', "বিসিএস প্রশ্ন ব্যাংক ও সমাধান (১০ম–{$latestBn}) | BCS Question Bank", $description, null, Carbon::parse($questions->min('created_at')), $questions->max('updated_at'))],
+            crumbs: ['Home' => '/', 'BCS' => '/bcs'],
         );
     }
 
@@ -220,9 +221,10 @@ class ExamPages
         ])->sortByDesc('questions')->values();
         $post = Post::query()->published()->where('slug', 'like', "{$number}%-bcs-question-solution-pdf")->first();
         $image = $post?->toWebsite()['cover_image'];
-        $title = "{$paper['name_bn']} প্রশ্ন সমাধান PDF | {$paper['name']} Question Solution ({$with}) | bd3schools";
-        $description = "{$paper['name_bn']} প্রিলিমিনারি পরীক্ষার {$count}টি প্রশ্ন, সঠিক উত্তর ও ".($with === 'ব্যাখ্যাসহ' ? 'ব্যাখ্যা' : 'বিষয়ভিত্তিক তালিকা').'।'
-            ." Free {$paper['name']} question solution".($paper['year'] ? " ({$paper['year']})" : '').' with answers; read online or save as PDF.';
+        $pdf = self::pdf($number);
+        $title = "{$paper['name_bn']} প্রশ্ন সমাধান".($pdf ? ' PDF' : '')." | {$paper['name']} Question Solution | bd3schools";
+        $description = "{$paper['name_bn']} প্রিলিমিনারির {$count}টি প্রশ্ন, সঠিক উত্তর ".($with === 'ব্যাখ্যাসহ' ? 'ও ব্যাখ্যা' : 'ও বিষয়ভিত্তিক তালিকা').'।'
+            ." Free {$paper['name']} question solution".($paper['year'] ? " ({$paper['year']})" : '').' with answers'.($pdf ? ' and PDF.' : '.');
         $numbers = PastPapers::numbers();
 
         return new PublicPage(
@@ -243,6 +245,7 @@ class ExamPages
                 'with' => $with,
                 'subjects' => $subjects,
                 'image' => $image,
+                'pdf' => $pdf,
                 'updated' => $questions->max('updated_at'),
                 'newer' => in_array($number + 1, $numbers, true) ? self::label($number + 1) : null,
                 'older' => in_array($number - 1, $numbers, true) ? self::label($number - 1) : null,
@@ -251,11 +254,10 @@ class ExamPages
             ],
             lang: 'bn',
             type: 'article',
-            image: $image,
             jsonLd: [
-                self::article($path, "{$paper['name_bn']} প্রশ্ন সমাধান | {$paper['name']} Question Solution", $description, $image, $questions->min('created_at'), $questions->max('updated_at')),
-                PublicPage::breadcrumbs(['Home' => '/', 'BCS' => '/bcs', "{$paper['name']} question solution" => $path]),
+                self::article($path, "{$paper['name_bn']} প্রশ্ন সমাধান | {$paper['name']} Question Solution", $description, null, $questions->min('created_at'), $questions->max('updated_at')),
             ],
+            crumbs: ['Home' => '/', 'BCS' => '/bcs', $paper['name'] => $path],
             index: $questions->count() >= self::ENOUGH_QUESTIONS,
         );
     }
@@ -280,17 +282,18 @@ class ExamPages
 
         $path = "/bcs/subject/{$address}";
         $count = Bangla::digits($questions->count());
-        $description = "বিসিএসের {$subject->name_bn} অংশের {$count}টি বিগত প্রশ্ন, সঠিক উত্তর ও ব্যাখ্যা। Free BCS {$subject->name} previous questions with answers and explanations.";
+        $description = "বিসিএস {$subject->name_bn}: {$count}টি বিগত প্রশ্ন, সঠিক উত্তর ও সংক্ষিপ্ত নোট। Free BCS {$subject->name} questions with answers.";
 
         return new PublicPage(
             path: $path,
-            title: "বিসিএস {$subject->name_bn} প্রশ্ন সমাধান | BCS {$subject->name} Questions (ব্যাখ্যাসহ) | bd3schools",
+            title: self::subjectTitle($subject).' | bd3schools',
             description: $description,
             view: 'seo.bcs-subject',
             viewData: [
                 'subject' => $subject,
                 'total' => $all->count(),
-                'questions' => self::present($questions),
+                'questions' => collect(self::present($questions))->map(fn (array $question): array => [...$question, 'note' => self::note($question['explanation'])])->all(),
+                'intro' => config("bcs_subjects.{$subject->slug}"),
                 'byPaper' => $all->countBy(fn (Question $question): int => (int) $question->source)
                     ->sortKeysDesc()
                     ->map(fn (int $number, int $paper): array => [...self::label($paper), 'questions' => $number])
@@ -302,8 +305,8 @@ class ExamPages
             type: 'article',
             jsonLd: [
                 self::article($path, "বিসিএস {$subject->name_bn} প্রশ্ন সমাধান | BCS {$subject->name} Questions", $description, null, $questions->min('created_at'), $questions->max('updated_at')),
-                PublicPage::breadcrumbs(['Home' => '/', 'BCS' => '/bcs', "BCS {$subject->name}" => $path]),
             ],
+            crumbs: ['Home' => '/', 'BCS' => '/bcs', "BCS {$subject->name}" => $path],
             index: $questions->count() >= self::ENOUGH_QUESTIONS,
         );
     }
@@ -326,6 +329,8 @@ class ExamPages
             view: 'seo.hub',
             viewData: [
                 'hub' => $hub,
+                'path' => "/{$address}",
+                'updated' => $questions->max('updated_at'),
                 'total' => $questions->count(),
                 'groups' => collect(self::present($shown))->groupBy('subject.name'),
                 'exams' => self::catalogueExams($hub['exams']),
@@ -334,26 +339,35 @@ class ExamPages
                 'hubs' => collect(self::HUBS)->except($address),
             ],
             lang: 'bn',
-            jsonLd: [PublicPage::breadcrumbs(['Home' => '/', $hub['name'] => "/{$address}"])],
+            jsonLd: [self::article("/{$address}", "{$hub['h1']} | {$hub['h1_en']}", $hub['description'], null, $questions->min('created_at'), $questions->max('updated_at'))],
+            crumbs: ['Home' => '/', $hub['name'] => "/{$address}"],
             index: $shown->count() >= self::ENOUGH_QUESTIONS,
         );
     }
 
-    private static function modelTests(): ?PublicPage
+    private static function modelTests(): PublicPage
     {
         $tests = self::tests();
+        $counts = PastPapers::index()->countBy('paper');
 
-        return $tests->isEmpty() ? null : new PublicPage(
+        return new PublicPage(
             path: '/model-tests',
-            title: 'বিসিএস মডেল টেস্ট | Free BCS, NTRCA, Primary & Bank Model Test | bd3schools',
-            description: 'বিসিএস, এনটিআরসিএ, প্রাথমিক ও ব্যাংক পরীক্ষার ফ্রি মডেল টেস্ট; সময় ও নেগেটিভ মার্কিংসহ। Free online model tests with a timer and instant results.',
+            title: $tests->isEmpty()
+                ? 'বিসিএস মডেল টেস্ট | Free Online BCS Model Test | bd3schools'
+                : 'ফ্রি মডেল টেস্ট | BCS, NTRCA, Primary & Bank Model Test | bd3schools',
+            description: $tests->isEmpty()
+                ? 'বিসিএসের পুরো প্রশ্নপত্রে ফ্রি মডেল টেস্ট, সময় ও নেগেটিভ মার্কিংসহ। Free online BCS model tests with a timer and results.'
+                : 'বিসিএস, এনটিআরসিএ, প্রাথমিক ও ব্যাংকের ফ্রি মডেল টেস্ট, নেগেটিভ মার্কিংসহ। Free online model tests with a timer and results.',
             view: 'seo.model-tests',
             viewData: [
                 'tests' => $tests->groupBy('exam'),
                 'exams' => self::catalogueExams($tests->pluck('exam')->unique()->all())->keyBy('slug'),
+                'papers' => collect(PastPapers::numbers())
+                    ->filter(fn (int $number): bool => isset($counts[$number]))
+                    ->map(fn (int $number): array => self::label($number)),
             ],
             lang: 'bn',
-            jsonLd: [PublicPage::breadcrumbs(['Home' => '/', 'Model tests' => '/model-tests'])],
+            crumbs: ['Home' => '/', 'Model tests' => '/model-tests'],
         );
     }
 
@@ -392,6 +406,39 @@ class ExamPages
             ->toBase();
     }
 
+    /**
+     * The printable file of a paper, when the website build has one.
+     */
+    private static function pdf(int $number): ?string
+    {
+        $shell = PageShell::path();
+        $file = "/downloads/bcs-pdfs/{$number}th-bcs-question-solution-pdf.pdf";
+
+        return $shell && is_file(dirname($shell).$file) ? $file : null;
+    }
+
+    private static function subjectTitle(Subject $subject): string
+    {
+        $title = "বিসিএস {$subject->name_bn} প্রশ্ন সমাধান | BCS {$subject->name} Questions";
+
+        foreach (["BCS {$subject->name} | বিসিএস {$subject->name_bn} প্রশ্ন", "BCS {$subject->name} | {$subject->name_bn}"] as $shorter) {
+            $title = mb_strlen($title) <= 62 ? $title : $shorter;
+        }
+
+        return mb_strlen($title) <= 62 ? $title : "BCS {$subject->name} Questions & Answers";
+    }
+
+    /**
+     * The first sentence of an explanation, as a one-line note.
+     */
+    private static function note(?string $explanation): ?string
+    {
+        $text = str((string) $explanation)->replaceMatches('/[•◉●▪]|^\s*[-–*]\s*/mu', ' ')->squish()->toString();
+        $sentence = preg_split('/(?<=[।?!])\s|(?<=\.)\s(?=[A-Z\x{0980}-\x{09FF}])/u', $text, 2)[0] ?? '';
+
+        return $sentence === '' ? null : PublicPage::fit($sentence, 110);
+    }
+
     private static function isExplained(Question $question): bool
     {
         return mb_strlen(trim((string) $question->ownExplanation())) >= self::EXPLAINED_FROM;
@@ -401,15 +448,18 @@ class ExamPages
      * @param  Collection<int, Question>  $questions
      * @return list<array<string, mixed>>
      */
-    private static function present(Collection $questions, ?int $paper = null): array
+    public static function present(Collection $questions, ?int $paper = null): array
     {
         $repeats = PastPapers::repeats();
+        $pages = QuestionPages::index();
 
-        return $questions->map(function (Question $question, int $index) use ($paper, $repeats): array {
+        return $questions->map(function (Question $question, int $index) use ($paper, $repeats, $pages): array {
             $own = PastPapers::yearOfSource($question->source) ? (int) $question->source : null;
             $papers = $own ? ($repeats[PastPapers::textKey($question->body)] ?? []) : [];
 
             return [
+                'id' => $question->id,
+                'page' => $pages[$question->id]['path'] ?? null,
                 'number' => $paper ? $question->numberOnPaper() ?? $index + 1 : $index + 1,
                 'paper_number' => $question->numberOnPaper(),
                 'lang' => $question->lang,
@@ -493,11 +543,7 @@ class ExamPages
      */
     private static function notices(array $exams): Collection
     {
-        return Notice::query()->published()->with('exam:id,slug')
-            ->whereHas('exam', fn ($query) => $query->whereIn('slug', $exams))
-            ->orderByDesc('published_on')->orderByDesc('id')->get()
-            ->toBase()
-            ->map(fn (Notice $notice): array => $notice->toWebsite());
+        return NoticePages::all()->whereIn('exam', $exams)->values();
     }
 
     /**

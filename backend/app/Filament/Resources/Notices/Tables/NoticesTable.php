@@ -7,6 +7,10 @@ use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+use Filament\Forms\Components\DatePicker;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\TextInput;
 use Filament\Support\Icons\Heroicon;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ToggleColumn;
@@ -40,7 +44,7 @@ class NoticesTable
                     ->label('Deadline')
                     ->date('j M Y')
                     ->placeholder('—')
-                    ->color(fn (Notice $record): string => $record->apply_until && $record->apply_until->isFuture() && $record->apply_until->diffInDays() <= 3 ? 'danger' : 'gray')
+                    ->color(fn (Notice $record): string => $record->apply_until?->between(today(), today()->addDays(3)) ? 'danger' : 'gray')
                     ->sortable(),
                 TextColumn::make('exam_date')
                     ->label('Exam date')
@@ -65,6 +69,23 @@ class NoticesTable
                     ->icon(Heroicon::OutlinedArrowTopRightOnSquare)
                     ->color('gray')
                     ->url(fn (Notice $record): string => rtrim(config('app.frontend_url'), '/').'/notices/'.$record->slug, shouldOpenInNewTab: true),
+                Action::make('update')
+                    ->label('Update')
+                    ->icon(Heroicon::OutlinedArrowPath)
+                    ->color('warning')
+                    ->modalHeading(fn (Notice $record): string => "Update: {$record->title}")
+                    ->modalDescription('The same page is updated and the change is shown to students.')
+                    ->fillForm(fn (Notice $record): array => $record->only(['type', 'status', 'apply_until', 'exam_date', 'url', 'summary', 'summary_bn']))
+                    ->schema([
+                        Select::make('type')->options(Notice::TYPES)->required()->native(false),
+                        Select::make('status')->options(array_map(fn (array $names): string => $names[0], Notice::STATUSES))->placeholder('From the type and dates')->native(false),
+                        DatePicker::make('apply_until')->label('Application deadline')->native(false),
+                        DatePicker::make('exam_date')->label('Exam date')->native(false),
+                        TextInput::make('url')->label('Official link')->url()->maxLength(255),
+                        Textarea::make('summary')->label('Summary (English)')->rows(3)->required(),
+                        Textarea::make('summary_bn')->label('Summary (বাংলা)')->rows(3),
+                    ])
+                    ->action(fn (Notice $record, array $data) => $record->applyUpdate($data)),
                 EditAction::make(),
             ])
             ->toolbarActions([

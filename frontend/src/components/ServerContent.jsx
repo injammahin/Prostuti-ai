@@ -17,7 +17,6 @@ export default function ServerContent({ element, html }) {
   }, [element])
 
   const onClick = (event) => {
-    if (event.target.closest("[data-print]")) return window.print()
     const link = event.target.closest("a[href]")
     if (!link || link.target || link.hasAttribute("download") || event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
     const href = link.getAttribute("href")

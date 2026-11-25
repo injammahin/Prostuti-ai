@@ -60,7 +60,7 @@ class PageShell
      */
     public static function remember(string $key, callable $build): mixed
     {
-        $key = 'seo:'.(int) Cache::get(self::VERSION_KEY, 1).":{$key}";
+        $key = 'seo2:'.(int) Cache::get(self::VERSION_KEY, 1).":{$key}";
 
         return Cache::remember($key, now()->addMinutes((int) config('seo.cache_minutes')), $build(...));
     }
@@ -76,7 +76,9 @@ class PageShell
     public static function render(PublicPage $page): string
     {
         $html = (string) file_get_contents((string) self::path());
-        $image = PublicPage::absolute($page->image ?: '/icon-512.png');
+        $image = $page->image ?: ShareImage::forPath($page->path);
+        $hasOwnImage = $image !== null;
+        $image = PublicPage::absolute($image ?: '/icon-512.png');
 
         $html = self::replace('#<html lang="[^"]*"#', '<html lang="'.e($page->lang).'"', $html);
         $html = self::replace('#<title>.*?</title>#s', '<title>'.e($page->title).'</title>', $html);
@@ -96,14 +98,18 @@ class PageShell
             $html = self::meta($html, $attribute, $name, $value);
         }
 
-        if ($page->image) {
+        if ($hasOwnImage) {
             $html = self::replace('#\s*<meta property="og:image:(width|height)"[^>]*>#', '', $html);
         }
 
         $head = $page->index ? '    <link rel="canonical" data-server href="'.e($page->url())."\" />\n" : '';
 
-        if ($page->jsonLd) {
-            $head .= '    <script type="application/ld+json" data-page>'.self::json(['@context' => 'https://schema.org', '@graph' => $page->jsonLd])."</script>\n";
+        if ($graph = $page->graph()) {
+            $head .= '    <script type="application/ld+json" data-page>'.self::json(['@context' => 'https://schema.org', '@graph' => $graph])."</script>\n";
+        }
+
+        foreach ($page->links as $rel => $path) {
+            $head .= '    <link rel="'.e($rel).'" href="'.e(PublicPage::absolute($path))."\" />\n";
         }
 
         $html = str_replace('</head>', $head.'  </head>', $html);

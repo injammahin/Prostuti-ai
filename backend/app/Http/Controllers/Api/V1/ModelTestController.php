@@ -103,7 +103,7 @@ class ModelTestController extends Controller
     public function submit(Request $request, string $id): JsonResponse
     {
         $test = ModelTest::where('slug', $id)->orWhere('id', $id)->firstOrFail();
-        $test->increment('attempts_count');
+        ModelTest::withoutTimestamps(fn () => $test->increment('attempts_count'));
 
         $userAnswers = $request->input('answers', []);
         $usedSeconds = (int) $request->input('used_seconds', 0);

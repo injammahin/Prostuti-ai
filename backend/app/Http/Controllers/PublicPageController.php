@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Api\V1\PostController;
-use App\Models\Notice;
 use App\Models\Post;
 use App\Services\ExamPages;
+use App\Services\NoticePages;
 use App\Services\PageShell;
 use App\Services\PastPapers;
 use App\Services\PublicPage;
+use App\Services\PublicPages;
+use App\Services\QuestionPages;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -36,16 +38,16 @@ class PublicPageController extends Controller
 
             return new PublicPage(
                 path: '/',
-                title: 'bd3schools — BCS & Govt Job Exam Preparation in Bangladesh | বিসিএস প্রস্তুতি',
-                description: 'bd3schools is a free exam preparation website in Bangladesh for BCS, NTRCA, Primary and bank jobs. বিসিএস প্রশ্ন সমাধান, মডেল টেস্ট, কুইজ ও চাকরির নোটিশ।',
+                title: 'Free BCS & Govt Job Exam Preparation | বিসিএস প্রস্তুতি – bd3schools',
+                description: 'Free BCS, NTRCA, Primary & bank job exam prep in Bangladesh. বিসিএস প্রশ্ন সমাধান, মডেল টেস্ট ও চাকরির নোটিশ।',
                 view: 'seo.home',
                 viewData: [
                     'content' => $content,
-                    'notices' => $this->notices()->take(3),
+                    'notices' => $this->notices()->take(10),
                     'posts' => $this->posts()->take(3),
                     'papers' => collect(PastPapers::numbers())->take(8)->map(fn (int $number): array => ['name' => PastPapers::source($number), 'path' => ExamPages::paperPath($number)]),
                 ],
-                data: ['notices' => $this->notices()->values()],
+                data: ['notices' => $this->notices()->take(30)->values()],
             );
         });
     }
@@ -54,11 +56,11 @@ class PublicPageController extends Controller
     {
         return $this->page($request, fn (): PublicPage => new PublicPage(
             path: '/blog',
-            title: 'BCS Question Solution & Exam Preparation Blog | বিসিএস প্রশ্ন সমাধান — bd3schools',
+            title: 'BCS Preparation Blog & Guides | বিসিএস প্রস্তুতি ব্লগ | bd3schools',
             description: 'Free guides and BCS question solutions with explanations. ১০ম থেকে ৪৮তম বিসিএস প্রশ্ন সমাধান, সিলেবাস, নম্বর বণ্টন ও প্রস্তুতির কৌশল — বিনামূল্যে।',
             view: 'seo.blog',
             viewData: ['posts' => $this->posts()],
-            jsonLd: [PublicPage::breadcrumbs(['Home' => '/', 'Blog' => '/blog'])],
+            crumbs: ['Home' => '/', 'Blog' => '/blog'],
             data: ['blog' => (new PostController)->index()->getData(true)],
         ));
     }
@@ -78,7 +80,7 @@ class PublicPageController extends Controller
 
             return new PublicPage(
                 path: $path,
-                title: str_contains($article['meta_title'], 'bd3schools') ? $article['meta_title'] : "{$article['meta_title']} | bd3schools",
+                title: PublicPage::fit((string) preg_replace('/\s*[|—–-]\s*bd3schools.*$/u', '', $article['meta_title']), 62).' | bd3schools',
                 description: $article['meta_description'],
                 view: 'seo.post',
                 viewData: ['post' => $article, 'related' => $related],
@@ -87,8 +89,8 @@ class PublicPageController extends Controller
                 image: $article['cover_image'],
                 jsonLd: [
                     PublicPage::article($path, $article['title'], $article['meta_description'], $article['published_at'], $article['updated_at'], $article['cover_image'], $post->lang),
-                    PublicPage::breadcrumbs(['Home' => '/', 'Blog' => '/blog', $article['title'] => $path]),
                 ],
+                crumbs: ['Home' => '/', 'Blog' => '/blog', $article['title'] => $path],
                 data: ["blog-{$slug}" => ['data' => $article, 'related' => $related]],
             );
         });
@@ -99,68 +101,18 @@ class PublicPageController extends Controller
      */
     private function notices(): Collection
     {
-        return Notice::query()->published()->with('exam:id,slug')->orderByDesc('published_on')->orderByDesc('id')->get()
-            ->map(fn (Notice $notice): array => $notice->toWebsite())
-            // Status notes without a date come after the notices people must act on (as on the website).
-            ->sortBy(fn (array $notice): int => $notice['type'] === 'other' && ! $notice['applyUntil'] && ! $notice['examDate'] ? 1 : 0)
-            ->values();
-    }
-
-    public function noticeList(Request $request): Response|RedirectResponse
-    {
-        return $this->page($request, fn (): PublicPage => new PublicPage(
-            path: '/notices',
-            title: 'Govt Job Notices & Exam Dates | সরকারি চাকরির বিজ্ঞপ্তি ও পরীক্ষার তারিখ — bd3schools',
-            description: 'BCS, NTRCA, Primary and bank job circulars, admit cards, exam dates and results with official links. বিসিএস ও সরকারি চাকরির বিজ্ঞপ্তি, বিনামূল্যে।',
-            view: 'seo.notices',
-            viewData: ['notices' => $this->notices()],
-            jsonLd: [PublicPage::breadcrumbs(['Home' => '/', 'Notices' => '/notices'])],
-            data: ['notices' => $this->notices()],
-        ));
-    }
-
-    public function notice(Request $request, string $slug): Response|RedirectResponse
-    {
-        return $this->page($request, function () use ($slug): ?PublicPage {
-            $all = $this->notices();
-            $notice = $all->firstWhere('slug', $slug);
-
-            if (! $notice) {
-                return null;
-            }
-
-            $path = "/notices/{$slug}";
-            $title = $notice['title_bn'] ? "{$notice['title']} | {$notice['title_bn']}" : $notice['title'];
-
-            return new PublicPage(
-                path: $path,
-                title: "{$title} — bd3schools",
-                description: str($notice['summary_bn'] ?: $notice['summary'])->squish()->limit(155)->toString(),
-                view: 'seo.notice',
-                viewData: [
-                    'notice' => $notice,
-                    'related' => $all->where('exam', $notice['exam'])->where('slug', '!=', $slug)->take(3)->values(),
-                    'typeLabel' => Notice::TYPES[$notice['type']] ?? 'Notice',
-                ],
-                type: 'article',
-                jsonLd: [
-                    PublicPage::article($path, $notice['title'], $notice['summary'], $notice['published'], Notice::query()->where('slug', $slug)->value('updated_at')?->toIso8601String(), null, 'en'),
-                    PublicPage::breadcrumbs(['Home' => '/', 'Notices' => '/notices', $notice['title'] => $path]),
-                ],
-                data: ['notices' => $all],
-            );
-        });
+        return NoticePages::all()->take(NoticePages::PRELOADED);
     }
 
     public function calendar(Request $request): Response|RedirectResponse
     {
         return $this->page($request, fn (): PublicPage => new PublicPage(
             path: '/calendar',
-            title: 'Govt Exam Calendar | সরকারি চাকরির পরীক্ষার তারিখ ও আবেদনের শেষ সময় — bd3schools',
+            title: 'Govt Exam Calendar | সরকারি চাকরির পরীক্ষার তারিখ | bd3schools',
             description: 'Upcoming BCS, bank, NTRCA and Primary exam dates and application deadlines from official notices. পরীক্ষার তারিখ ও আবেদনের শেষ সময়।',
             view: 'seo.calendar',
             viewData: ['notices' => $this->notices()->filter(fn (array $n): bool => $n['applyUntil'] || $n['examDate'])->sortBy(fn (array $n): string => $n['applyUntil'] ?: $n['examDate'])],
-            jsonLd: [PublicPage::breadcrumbs(['Home' => '/', 'Exam calendar' => '/calendar'])],
+            crumbs: ['Home' => '/', 'Exam calendar' => '/calendar'],
             data: ['notices' => $this->notices()],
         ));
     }
@@ -169,11 +121,11 @@ class PublicPageController extends Controller
     {
         return $this->page($request, fn (): ?PublicPage => ($exams = PageShell::content()['exams'] ?? null) ? new PublicPage(
             path: '/exams',
-            title: 'Govt Job Exams in Bangladesh: Format & Marks | সরকারি চাকরির পরীক্ষা — bd3schools',
+            title: 'Govt Job Exam Syllabus & Marks | সরকারি চাকরির পরীক্ষা | bd3schools',
             description: 'Exam format, marks and syllabus for BCS, NTRCA, Primary, Combined Bank and Bangladesh Bank. পরীক্ষার ধরন, নম্বর বণ্টন ও সিলেবাস — বিনামূল্যে।',
             view: 'seo.exams',
             viewData: ['exams' => $exams],
-            jsonLd: [PublicPage::breadcrumbs(['Home' => '/', 'Exams' => '/exams'])],
+            crumbs: ['Home' => '/', 'Exams' => '/exams'],
         ) : null);
     }
 
@@ -184,11 +136,11 @@ class PublicPageController extends Controller
 
             return $exam ? new PublicPage(
                 path: "/exams/{$slug}",
-                title: "{$exam['name']} Syllabus & Mark Distribution | {$exam['nameBn']} সিলেবাস ও নম্বর বণ্টন — bd3schools",
-                description: str("{$exam['name']}: {$exam['summary']} {$exam['nameBn']} সিলেবাস ও নম্বর বণ্টন।")->limit(158)->toString(),
+                title: "{$exam['name']} Syllabus & Marks | সিলেবাস ও নম্বর | bd3schools",
+                description: "{$exam['nameBn']} সিলেবাস ও নম্বর বণ্টন। {$exam['name']}: {$exam['summary']}",
                 view: 'seo.exam',
                 viewData: ['exam' => $exam, 'questionsPath' => ExamPages::examPath($slug), 'notices' => $this->notices()->where('exam', $slug)->take(5)],
-                jsonLd: [PublicPage::breadcrumbs(['Home' => '/', 'Exams' => '/exams', $exam['name'] => "/exams/{$slug}"])],
+                crumbs: ['Home' => '/', 'Exams' => '/exams', $exam['name'] => "/exams/{$slug}"],
                 data: ['notices' => $this->notices()],
             ) : null;
         });
@@ -198,20 +150,28 @@ class PublicPageController extends Controller
     {
         return $this->page($request, fn (): PublicPage => new PublicPage(
             path: '/daily',
-            title: "Today's BCS Quiz: 10 Free MCQ Questions | আজকের কুইজ — bd3schools",
+            title: "Today's BCS Quiz: 10 Free MCQ Questions | আজকের কুইজ | bd3schools",
             description: 'Take a free 10-question BCS, bank, NTRCA and Primary quiz with explanations. No sign-up. আজকের ফ্রি বিসিএস কুইজ, ব্যাখ্যাসহ।',
             view: 'seo.daily',
             viewData: ['daily' => PageShell::content()['daily'] ?? []],
-            jsonLd: [PublicPage::breadcrumbs(['Home' => '/', 'Daily quiz' => '/daily'])],
+            crumbs: ['Home' => '/', 'Daily quiz' => '/daily'],
         ));
     }
 
     /**
-     * Pages made from the question bank (see ExamPages).
+     * Pages written entirely by Laravel (see PublicPages).
      */
-    public function examPage(Request $request): Response|RedirectResponse
+    public function serverPage(Request $request): Response|RedirectResponse
     {
-        return $this->page($request, fn (): ?PublicPage => ExamPages::resolve($request->getPathInfo()));
+        $address = PublicPages::address($request->getPathInfo(), $request->query());
+
+        // One address per page: "?page=1" and the like lead to it.
+        if ($request->getPathInfo() === '/notices' && $request->hasAny(['page', 'category'])
+            && PublicPages::address('/notices', $request->only(['page', 'category'])) !== '/notices?'.http_build_query(array_filter($request->only(['category', 'page'])))) {
+            return redirect($address, 301);
+        }
+
+        return $this->page($request, fn (): ?PublicPage => PublicPages::resolve($address), $address);
     }
 
     public function legal(Request $request): Response|RedirectResponse
@@ -224,11 +184,11 @@ class PublicPageController extends Controller
 
             return $section ? new PublicPage(
                 path: "/{$key}",
-                title: "{$section['title'][0]} | {$section['title'][1]}".(str_contains($section['title'][0], 'bd3schools') ? '' : ' — bd3schools'),
+                title: $section['seo'],
                 description: $section['description'],
                 view: 'seo.legal',
                 viewData: ['section' => $section, 'updated' => $legal['updated']],
-                jsonLd: [PublicPage::breadcrumbs(['Home' => '/', $section['title'][0] => "/{$key}"])],
+                crumbs: ['Home' => '/', $section['title'][0] => "/{$key}"],
             ) : null;
         });
     }
@@ -254,7 +214,7 @@ class PublicPageController extends Controller
     /**
      * @param  callable(): ?PublicPage  $build
      */
-    private function page(Request $request, callable $build): Response|RedirectResponse
+    private function page(Request $request, callable $build, ?string $address = null): Response|RedirectResponse
     {
         $path = $request->getPathInfo();
 
@@ -262,13 +222,13 @@ class PublicPageController extends Controller
             return redirect(rtrim($path, '/'), 301);
         }
 
-        if ($moved = ExamPages::moved($path)) {
+        if ($moved = ExamPages::moved($path) ?? QuestionPages::moved($path)) {
             return redirect($moved, 301);
         }
 
         abort_if(PageShell::path() === null, 404);
 
-        $html = PageShell::html($path, $build);
+        $html = PageShell::html($address ?? $path, $build);
 
         return $html === null ? $this->notFound() : $this->respond($html);
     }
@@ -277,7 +237,7 @@ class PublicPageController extends Controller
     {
         return $this->respond(PageShell::render(new PublicPage(
             path: '/404',
-            title: 'Page not found — bd3schools',
+            title: 'Page not found | bd3schools',
             description: 'This page does not exist.',
             view: 'seo.not-found',
             index: false,

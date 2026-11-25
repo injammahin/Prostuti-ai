@@ -30,7 +30,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
-import { PageHeader, HeroCard, Pill, IconBox } from "@/components/shared"
+import { EmptyState, PageHeader, HeroCard, Pill, IconBox } from "@/components/shared"
 import { useApp } from "@/lib/app-context"
 import { useApi } from "@/lib/use-api"
 import { modelTestsApi } from "@/lib/api"
@@ -67,172 +67,7 @@ export default function ModelTests() {
     } catch {}
   }, [])
 
-  const allTests = useMemo(() => {
-    if (data?.model_tests && data.model_tests.length > 0) {
-      return data.model_tests
-    }
-    // Fallback default list
-    return [
-      {
-        id: "bcs-prelim-model-test-1",
-        title: "BCS Preliminary Full Model Test #1",
-        title_bn: "বিসিএস প্রিলিমিনারি পূর্ণাঙ্গ মডেল টেস্ট #১",
-        exam: "bcs-general",
-        duration: "2 hours",
-        duration_minutes: 120,
-        marks: 200,
-        negative: 0.5,
-        questions_count: 200,
-        attempts: 0,
-        difficulty: "Challenging",
-        syllabus: [
-          { name: "Bangla Literature & Grammar", name_bn: "বাংলা ভাষা ও সাহিত্য", marks: 30 },
-          { name: "English Language & Literature", name_bn: "English Language & Literature", marks: 30 },
-          { name: "Bangladesh Affairs", name_bn: "বাংলাদেশ বিষয়াবলি", marks: 25 },
-          { name: "International Affairs", name_bn: "আন্তর্জাতিক বিষয়াবলি", marks: 25 },
-          { name: "Mathematical Reasoning", name_bn: "গাণিতিক যুক্তি", marks: 20 },
-          { name: "Mental Ability", name_bn: "মানসিক দক্ষতা", marks: 15 },
-          { name: "General Science", name_bn: "সাধারণ বিজ্ঞান", marks: 15 },
-          { name: "Computer & ICT", name_bn: "কম্পিউটার ও তথ্যপ্রযুক্তি", marks: 15 },
-          { name: "Geography & Disaster", name_bn: "ভূগোল ও পরিবেশ", marks: 10 },
-          { name: "Ethics & Good Governance", name_bn: "নৈতিকতা ও সুশাসন", marks: 15 },
-        ],
-      },
-      {
-        id: "bcs-prelim-model-test-2",
-        title: "BCS Preliminary Full Model Test #2",
-        title_bn: "বিসিএস প্রিলিমিনারি পূর্ণাঙ্গ মডেল টেস্ট #২",
-        exam: "bcs-general",
-        duration: "2 hours",
-        duration_minutes: 120,
-        marks: 200,
-        negative: 0.5,
-        questions_count: 200,
-        attempts: 0,
-        difficulty: "Standard",
-        syllabus: [
-          { name: "Bangla Literature & Grammar", marks: 30 },
-          { name: "English Language & Literature", marks: 30 },
-          { name: "Bangladesh Affairs", marks: 25 },
-          { name: "International Affairs", marks: 25 },
-          { name: "Mathematical Reasoning", marks: 20 },
-          { name: "Mental Ability", marks: 15 },
-          { name: "General Science", marks: 15 },
-          { name: "Computer & ICT", marks: 15 },
-          { name: "Geography & Disaster", marks: 10 },
-          { name: "Ethics & Good Governance", marks: 15 },
-        ],
-      },
-      {
-        id: "primary-full-model-test-1",
-        title: "Primary Assistant Teacher Full Model Test",
-        title_bn: "প্রাথমিক সহকারী শিক্ষক পূর্ণাঙ্গ মডেল টেস্ট",
-        exam: "primary",
-        duration: "1 hour",
-        duration_minutes: 60,
-        marks: 80,
-        negative: 0.25,
-        questions_count: 80,
-        attempts: 0,
-        difficulty: "Standard",
-        syllabus: [
-          { name: "Bangla", marks: 20 },
-          { name: "English", marks: 20 },
-          { name: "Mathematics", marks: 20 },
-          { name: "General Knowledge & Science", marks: 20 },
-        ],
-      },
-      {
-        id: "combined-bank-so-1",
-        title: "Combined Bank Senior Officer Model Test",
-        title_bn: "সমন্বিত ৯ ব্যাংক সিনিয়র অফিসার মডেল টেস্ট",
-        exam: "bank",
-        duration: "1 hour",
-        duration_minutes: 60,
-        marks: 100,
-        negative: 0.25,
-        questions_count: 100,
-        attempts: 0,
-        difficulty: "Challenging",
-        syllabus: [
-          { name: "Bangla", marks: 20 },
-          { name: "English", marks: 20 },
-          { name: "Quantitative Mathematics", marks: 30 },
-          { name: "General Knowledge & ICT", marks: 30 },
-        ],
-      },
-      {
-        id: "bb-ad-general-1",
-        title: "Bangladesh Bank AD (General) Model Test",
-        title_bn: "বাংলাদেশ ব্যাংক সহকারী পরিচালক (সাধারণ) মডেল টেস্ট",
-        exam: "bank",
-        duration: "1 hour",
-        duration_minutes: 60,
-        marks: 100,
-        negative: 0.25,
-        questions_count: 100,
-        attempts: 0,
-        difficulty: "Challenging",
-        syllabus: [
-          { name: "Advanced English", marks: 30 },
-          { name: "Quantitative Reasoning", marks: 30 },
-          { name: "Bangla", marks: 20 },
-          { name: "Banking & Financial Systems", marks: 20 },
-        ],
-      },
-      {
-        id: "bank-math-speed-drill",
-        title: "Combined Bank: Quantitative Math Speed Drill",
-        title_bn: "ব্যাংক নিয়োগ: দ্রুত গণিত সমাধান ড্রিল",
-        exam: "bank",
-        duration: "25 min",
-        duration_minutes: 25,
-        marks: 30,
-        negative: 0.25,
-        questions_count: 30,
-        attempts: 0,
-        difficulty: "Moderate",
-        syllabus: [
-          { name: "Arithmetic & Algebra", marks: 15 },
-          { name: "Geometry & Data Analysis", marks: 15 },
-        ],
-      },
-      {
-        id: "primary-bangla-math-quick",
-        title: "Primary Teacher: Bangla & Math Quick Test",
-        title_bn: "প্রাথমিক শিক্ষক: বাংলা ও গণিত কুইক টেস্ট",
-        exam: "primary",
-        duration: "30 min",
-        duration_minutes: 30,
-        marks: 40,
-        negative: 0.25,
-        questions_count: 40,
-        attempts: 0,
-        difficulty: "Standard",
-        syllabus: [
-          { name: "Bangla Grammar & Lit", marks: 20 },
-          { name: "Elementary Math", marks: 20 },
-        ],
-      },
-      {
-        id: "ntrca-gk-math-drill",
-        title: "NTRCA: General Knowledge & Math Drill",
-        title_bn: "এনটিআরসিএ: সাধারণ জ্ঞান ও গণিত ড্রিল",
-        exam: "ntrca",
-        duration: "35 min",
-        duration_minutes: 35,
-        marks: 50,
-        negative: 0.5,
-        questions_count: 50,
-        attempts: 0,
-        difficulty: "Standard",
-        syllabus: [
-          { name: "General Knowledge", marks: 25 },
-          { name: "General Mathematics", marks: 25 },
-        ],
-      },
-    ]
-  }, [data])
+  const allTests = useMemo(() => data?.model_tests ?? [], [data])
 
   const tests = useMemo(() => testsForExam(allTests, mainExam), [allTests, mainExam])
   const bcsFeatured = tests.find((t) => t.type === "full") || tests[0]
@@ -287,6 +122,26 @@ export default function ModelTests() {
             </div>
           </div>
         </HeroCard>
+      )}
+
+      {!loading && tests.length === 0 && (
+        <EmptyState
+          icon={<FontAwesomeIcon icon={faBookOpen} />}
+          title={error ? L("Couldn't load the model tests", "মডেল টেস্ট লোড করা যায়নি") : L("No model test for this exam yet", "এই পরীক্ষার মডেল টেস্ট এখনো নেই")}
+          text={L("Meanwhile, sit a full BCS paper as a timed exam.", "এর মধ্যে সময় ধরে বিসিএসের পুরো প্রশ্নপত্রে পরীক্ষা দিতে পারেন।")}
+          action={
+            <div className="flex flex-wrap justify-center gap-2">
+              {error && (
+                <Button variant="outline" className="rounded-full" onClick={reload}>
+                  {L("Try again", "আবার চেষ্টা করুন")}
+                </Button>
+              )}
+              <Button asChild className="rounded-full">
+                <Link to="/app/bcs-papers">{L("BCS papers", "বিসিএস প্রশ্নপত্র")}</Link>
+              </Button>
+            </div>
+          }
+        />
       )}
 
       {/* Tests Grid */}

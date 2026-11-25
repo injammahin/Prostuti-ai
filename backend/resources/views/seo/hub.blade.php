@@ -1,9 +1,12 @@
 @php $bn = \App\Services\Bangla::digits(...); @endphp
 <div class="bn mx-auto max-w-4xl px-4 py-6 md:py-10" lang="bn">
-    @include('seo.partials.crumbs', ['items' => ['Home' => '/', $hub['name'] => '']])
+    @include('seo.partials.crumbs')
     <h1 class="text-[1.5rem] leading-snug font-bold md:text-[2.1rem]">{{ $hub['h1'] }} <span class="block text-lg font-semibold text-muted-foreground md:text-xl">{{ $hub['h1_en'] }}</span></h1>
+    @include('seo.partials.updated')
     <p class="mt-4 leading-relaxed">এই পাতায় পরীক্ষার নম্বর বণ্টন, {{ $bn($groups->flatten(1)->count()) }}টি অনুশীলন প্রশ্ন (উত্তর ও ব্যাখ্যাসহ), মডেল টেস্ট ও সর্বশেষ নোটিশ এক জায়গায় পাবেন। সব বিনামূল্যে।</p>
     <p class="mt-2 text-sm leading-relaxed text-muted-foreground" lang="en">@foreach ($exams as $exam){{ $exam['name'] }}: {{ $exam['summary'] }} @endforeach Practice questions below are prepared for this exam's syllabus; where a question comes from a past exam, its name is shown.</p>
+
+    @include('seo.partials.share', ['path' => $path, 'title' => $hub['h1']])
 
     @if ($notices->isNotEmpty())
         <h2 class="mt-9 text-xl font-bold">সর্বশেষ নোটিশ (latest notices)</h2>

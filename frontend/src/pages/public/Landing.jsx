@@ -42,6 +42,7 @@ const stepIcons = [faClipboardCheck, faRoute, faChartLine]
 export default function Landing() {
   useNoticesVersion()
   const latestNotice = notices.find((n) => n.isNew && n.type !== "other")
+  const newestNotices = [...notices].sort((a, b) => (b.published ?? "").localeCompare(a.published ?? "")).slice(0, 10)
   const nextDate = notices
     .map((n) => ({ n, ...keyDate(n) }))
     .filter((x) => x.label !== "Published" && daysUntil(x.date) >= 0)
@@ -52,15 +53,15 @@ export default function Landing() {
   const { L, bn, num, fmtDate } = useApp()
   const { data: blog } = useApi(() => blogApi.list(), [], { key: "blog" })
   const latestPosts = (blog?.data ?? []).slice(0, 3)
-  const readyPapers =(paperList?.papers ?? []).filter((p) => p.questions >= 100).slice(0, 5) // only full papers make a good first impression
+  const readyPapers =(paperList?.papers ?? []).filter((p) => p.questions >= 100).slice(0, 8) // only full papers make a good first impression
   const guest = () => {
     if (!user) loginGuest()
     nav("/app")
   }
 
   useSeo({
-    title: "bd3schools — BCS & Govt Job Exam Preparation in Bangladesh | বিসিএস প্রস্তুতি",
-    description: "bd3schools is a free exam preparation website in Bangladesh for BCS, NTRCA, Primary and bank jobs. বিসিএস প্রশ্ন সমাধান, মডেল টেস্ট, কুইজ ও চাকরির নোটিশ।",
+    title: "Free BCS & Govt Job Exam Preparation | বিসিএস প্রস্তুতি – bd3schools",
+    description: "Free BCS, NTRCA, Primary & bank job exam prep in Bangladesh. বিসিএস প্রশ্ন সমাধান, মডেল টেস্ট ও চাকরির নোটিশ।",
     keywords: "14 bcs question with solution, bcs question solution, 10th to 48th bcs question solution, বিসিএস প্রশ্ন সমাধান, bcs question bank, bcs preliminary question with answer, bcs model test online, govt job exam bangladesh, bd3schools",
     image: "/icon-512.png",
   })
@@ -85,22 +86,23 @@ export default function Landing() {
             <h1
               className={cn(
                 "mt-6 font-semibold text-balance",
-                bn ? "text-[2.1rem] leading-[1.35] sm:text-[2.9rem] lg:text-[3.3rem]" : "text-[2.35rem] leading-[1.1] tracking-[-0.03em] sm:text-[3.4rem] lg:text-[4rem]"
+                bn ? "text-[2.1rem] leading-[1.35] sm:text-[2.9rem] lg:text-[3.1rem]" : "text-[2.2rem] leading-[1.12] tracking-[-0.03em] sm:text-[3.1rem] lg:text-[3.5rem]"
               )}
             >
-              {L("Prepare smarter for ", "")}
+              {L("Free ", "বাংলাদেশে ফ্রি ")}
               <span className="relative inline-block text-primary">
                 {L("BCS", "বিসিএস")}
                 <svg viewBox="0 0 120 12" preserveAspectRatio="none" className="absolute -bottom-1.5 left-0 h-3 w-full" aria-hidden>
                   <path d="M2 8 C30 2 70 2 118 7" fill="none" stroke="var(--glow)" strokeWidth="5" strokeLinecap="round" />
                 </svg>
               </span>
-              {L(" & every govt job exam.", " ও সব সরকারি চাকরির প্রস্তুতি এখন আরও স্মার্ট।")}
+              {L(" & Govt Job Exam Preparation in Bangladesh", " ও সরকারি চাকরির পরীক্ষার প্রস্তুতি")}
             </h1>
+            <p className="mt-4 max-w-lg text-lg font-semibold md:text-xl">{L("Prepare smarter for BCS & every govt job exam.", "বিসিএস ও সব সরকারি চাকরির প্রস্তুতি এখন আরও স্মার্ট।")}</p>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
               {L(
-                "Adaptive question drills, authentic timed model tests, spaced mistake revision, and verified exam dates — one beautifully simple app, made for your phone.",
-                "প্রশ্ন অনুশীলন, সময় ধরে আসল মানের মডেল টেস্ট, ভুলের রিভিশন এবং যাচাইকৃত পরীক্ষার তারিখ — সব এক সহজ অ্যাপে, আপনার মোবাইলের জন্য তৈরি।"
+                "Every BCS question solution from the 10th to the 48th, timed model tests, a daily quiz and verified exam dates in one simple app. বিসিএস প্রস্তুতি for your phone, free.",
+                "বিসিএস প্রস্তুতি এক অ্যাপে: ১০ম থেকে ৪৮তম বিসিএস প্রশ্ন সমাধান (BCS question solution), সময় ধরে মডেল টেস্ট, প্রতিদিনের কুইজ ও যাচাইকৃত পরীক্ষার তারিখ। সম্পূর্ণ ফ্রি।"
               )}
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -164,7 +166,7 @@ export default function Landing() {
                 to={`/notices/${nextDate.n.slug}`}
                 className="float absolute -bottom-[7%] -left-2 hidden max-w-[20rem] items-center gap-3 rounded-2xl border border-white/80 bg-white/90 p-2.5 pr-4 shadow-lift backdrop-blur-md sm:flex dark:border-border dark:bg-card/90"
               >
-                <span className="flex w-11 shrink-0 flex-col items-center rounded-xl bg-destructive/10 py-1 text-destructive">
+                <span className="flex w-11 shrink-0 flex-col items-center rounded-xl bg-destructive/10 py-1 text-destructive-ink">
                   <span className="text-[0.55rem] font-bold uppercase">{nextDate.label === "Exam" ? L("Exam", "পরীক্ষা") : L("Apply", "আবেদন")}</span>
                   <span className="text-base leading-none font-extrabold">{num(new Date(`${nextDate.date}T00:00`).getDate())}</span>
                   <span className="text-[0.55rem] font-semibold">{fmtDate(`${nextDate.date}T00:00`, { month: "short" })}</span>
@@ -217,15 +219,15 @@ export default function Landing() {
                 )}
               </p>
               {readyPapers.length > 0 && (
-                <div className="mt-4 flex flex-wrap gap-2">
+                <div className="mt-4 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
                   {readyPapers.map((p) => (
                     <Link
                       key={p.number}
                       to={bcsPath(p.number)}
-                      className="inline-flex items-center gap-1.5 rounded-full border bg-card px-3.5 py-1.5 text-sm font-semibold transition-colors hover:border-primary/40 hover:text-primary"
+                      className="inline-flex items-center justify-center gap-1.5 whitespace-nowrap rounded-full border bg-card px-2 sm:px-3.5 py-1.5 text-sm font-semibold transition-colors hover:border-primary/40 hover:text-primary"
                     >
                       {L(p.name, `${num(p.number)}তম বিসিএস`)}
-                      <span className="text-xs font-medium text-muted-foreground">{L(`${p.questions} Q`, `${num(p.questions)} প্রশ্ন`)}</span>
+                      <span className="text-xs font-medium text-muted-foreground max-[350px]:hidden">{L(`${p.questions} Q`, `${num(p.questions)} প্রশ্ন`)}</span>
                     </Link>
                   ))}
                 </div>
@@ -317,8 +319,8 @@ export default function Landing() {
       {/* Latest notices */}
       <section className="mx-auto max-w-6xl px-4 pt-16 md:pt-24">
         <SectionTitle title={L("Latest verified notices", "সর্বশেষ যাচাইকৃত নোটিশ")} to="/notices" />
-        <div className="stagger grid gap-3 md:grid-cols-3">
-          {notices.slice(0, 3).map((n) => (
+        <div className="stagger grid gap-3 md:grid-cols-2">
+          {newestNotices.map((n) => (
             <NoticeCard key={n.slug} n={n} compact />
           ))}
         </div>

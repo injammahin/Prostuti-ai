@@ -16,7 +16,7 @@ export default function Exams({ inApp = false }) {
   const noticesVersion = useNoticesVersion()
   const { followed, toggleFollow, user, L, num } = useApp()
   const [family, setFamily] = useState("all")
-  useSeo(inApp ? {} : { title: "Govt Job Exams in Bangladesh: Format & Marks | সরকারি চাকরির পরীক্ষা — bd3schools", description: "Exam format, marks and syllabus for BCS, NTRCA, Primary, Combined Bank and Bangladesh Bank. পরীক্ষার ধরন, নম্বর বণ্টন ও সিলেবাস — বিনামূল্যে।" })
+  useSeo(inApp ? {} : { title: "Govt Job Exam Syllabus & Marks | সরকারি চাকরির পরীক্ষা | bd3schools", description: "Exam format, marks and syllabus for BCS, NTRCA, Primary, Combined Bank and Bangladesh Bank. পরীক্ষার ধরন, নম্বর বণ্টন ও সিলেবাস — বিনামূল্যে।" })
   const list = exams.filter((e) => family === "all" || e.family === family)
   const base = inApp ? "/app/exams" : "/exams"
 

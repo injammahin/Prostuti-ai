@@ -15,14 +15,19 @@ class ReportController extends Controller
      */
     public function store(StoreReportRequest $request): JsonResponse
     {
-        $target = Report::findTarget($request->validated('target'), $request->validated('target_ref'));
+        $isMessage = $request->validated('target') === 'page';
+        $target = $isMessage ? null : Report::findTarget($request->validated('target'), $request->validated('target_ref'));
 
-        abort_if($target === null, 404);
+        abort_if($target === null && ! $isMessage, 404);
 
         Report::query()->create([
             ...$request->validated(),
             'user_id' => $request->user('sanctum')?->id,
-            'target_title' => str($target instanceof Question ? $target->body : $target->title)->limit(200)->toString(),
+            'target_title' => match (true) {
+                $target === null => 'Message from the contact page',
+                $target instanceof Question => str($target->body)->limit(200)->toString(),
+                default => str($target->title)->limit(200)->toString(),
+            },
         ]);
 
         return response()->json(['message' => 'Report saved.'], 201);

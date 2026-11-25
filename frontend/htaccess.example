@@ -27,6 +27,9 @@ RewriteRule ^ index.php [L]
 
 # PDF files stay downloadable but out of search results (the pages under /bcs are the ones to find)
 <IfModule mod_headers.c>
+  # Do not tell which PHP version runs the site
+  Header unset X-Powered-By
+  Header always unset X-Powered-By
   <FilesMatch "\.pdf$">
     Header set X-Robots-Tag "noindex"
   </FilesMatch>

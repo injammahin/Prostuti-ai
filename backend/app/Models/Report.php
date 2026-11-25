@@ -18,7 +18,7 @@ class Report extends Model
     use HasFactory;
 
     /** What can be reported, with the label shown in the admin panel. */
-    public const TARGETS = ['question' => 'Question', 'notice' => 'Notice'];
+    public const TARGETS = ['question' => 'Question', 'notice' => 'Notice', 'page' => 'Contact form'];
 
     /**
      * @return BelongsTo<User, $this>

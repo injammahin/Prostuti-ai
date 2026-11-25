@@ -103,7 +103,7 @@ export default function DailyQuiz() {
       })),
     [quiz]
   )
-  useSeo({ title: "Today's BCS Quiz: 10 Free MCQ Questions | আজকের কুইজ — bd3schools", description: "Take a free 10-question BCS, bank, NTRCA and Primary quiz with explanations. No sign-up. আজকের ফ্রি বিসিএস কুইজ, ব্যাখ্যাসহ।" })
+  useSeo({ title: "Today's BCS Quiz: 10 Free MCQ Questions | আজকের কুইজ | bd3schools", description: "Take a free 10-question BCS, bank, NTRCA and Primary quiz with explanations. No sign-up. আজকের ফ্রি বিসিএস কুইজ, ব্যাখ্যাসহ।" })
   const [stage, setStage] = useState("intro") // intro | quiz | result
   const [qs, setQs] = useState(today)
   const [i, setI] = useState(0)
@@ -372,9 +372,9 @@ ${autoStartUrl}
                     <p className={cn("font-medium", x.lang === "bn" && "bn")}>
                       {num(n + 1)}. {x.body}
                     </p>
-                    <p className={cn("mt-1 text-success", x.lang === "bn" && "bn")}>✓ {x.options[x.answer]}</p>
+                    <p className={cn("mt-1 text-success-ink", x.lang === "bn" && "bn")}>✓ {x.options[x.answer]}</p>
                     {!ok && answers[x.id] !== undefined && (
-                      <p className={cn("text-destructive line-through", x.lang === "bn" && "bn")}>{x.options[answers[x.id]]}</p>
+                      <p className={cn("text-destructive-ink line-through", x.lang === "bn" && "bn")}>{x.options[answers[x.id]]}</p>
                     )}
                   </div>
                 </li>
@@ -561,7 +561,7 @@ ${autoStartUrl}
 
         {answered && (
           <div className="rise mt-5 rounded-xl bg-muted/60 p-4">
-            <p className={cn("text-sm font-semibold", chosen === q.answer ? "text-success" : "text-destructive")}>
+            <p className={cn("text-sm font-semibold", chosen === q.answer ? "text-success-ink" : "text-destructive-ink")}>
               {chosen === q.answer ? L("Correct! 🎉", "সঠিক! 🎉") : L("Not quite.", "হয়নি।")}
             </p>
             <p className={cn("mt-1 text-sm text-muted-foreground", isBn && "bn")}>{q.explanation}</p>

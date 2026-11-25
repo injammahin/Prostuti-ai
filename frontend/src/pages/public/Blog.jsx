@@ -18,7 +18,7 @@ export default function Blog() {
   const [q, setQ] = useState("")
 
   useSeo({
-    title: "BCS Question Solution & Exam Preparation Blog | বিসিএস প্রশ্ন সমাধান — bd3schools",
+    title: "BCS Preparation Blog & Guides | বিসিএস প্রস্তুতি ব্লগ | bd3schools",
     description: L(
       "Preparation guides, syllabus breakdowns, exam strategy and study tips for BCS, Bank, NTRCA and Primary teacher exams.",
       "বিসিএস, ব্যাংক, এনটিআরসিএ ও প্রাথমিক শিক্ষক নিয়োগ পরীক্ষার প্রস্তুতি গাইড, সিলেবাস, পরীক্ষার কৌশল ও পড়াশোনার টিপস।"
@@ -94,7 +94,7 @@ export default function Blog() {
 
       {error && !loading && (
         <div className="card mt-6 flex flex-col items-start gap-3 p-5 text-sm">
-          <p className="text-destructive">{error}</p>
+          <p className="text-destructive-ink">{error}</p>
           <Button variant="outline" className="rounded-full" onClick={reload}>
             <FontAwesomeIcon icon={faRotateRight} /> {L("Try again", "আবার চেষ্টা করুন")}
           </Button>

@@ -1,6 +1,7 @@
 <section class="mx-auto max-w-6xl px-4 pt-8 pb-14 md:pt-14">
-    <h1 class="mt-6 max-w-2xl text-[2.35rem] leading-[1.1] font-semibold tracking-[-0.03em] text-balance sm:text-[3.4rem] lg:text-[4rem]">Prepare smarter for <span class="text-primary">BCS</span> &amp; every govt job exam.</h1>
-    <p class="mt-5 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">Adaptive question drills, authentic timed model tests, spaced mistake revision, and verified exam dates — one beautifully simple app, made for your phone.</p>
+    <h1 class="mt-6 max-w-2xl text-[2.2rem] leading-[1.12] font-semibold tracking-[-0.03em] text-balance sm:text-[3.1rem] lg:text-[3.5rem]">Free <span class="text-primary">BCS</span> &amp; Govt Job Exam Preparation in Bangladesh</h1>
+    <p class="mt-4 max-w-lg text-lg font-semibold md:text-xl">Prepare smarter for BCS &amp; every govt job exam.</p>
+    <p class="mt-5 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">Every BCS question solution from the 10th to the 48th, timed model tests, a daily quiz and verified exam dates in one simple app. <span class="bn" lang="bn">বিসিএস প্রস্তুতি</span> for your phone, free.</p>
     <p class="mt-8"><a href="/bcs" class="text-sm font-semibold text-primary">Previous BCS questions &amp; solutions — free</a></p>
     <div class="relative mx-auto mt-8 w-full max-w-[26.5rem]"><img src="/illustrations/study-desk.webp" srcset="/illustrations/study-desk-480.webp 480w, /illustrations/study-desk.webp 900w" sizes="(min-width: 448px) 424px, 92vw" alt="Student preparing at a desk" width="900" height="900" fetchpriority="high" class="aspect-square w-full object-contain"></div>
 </section>
@@ -36,7 +37,7 @@
 </section>
 <section class="mx-auto max-w-6xl px-4 pt-16">
     <h2 class="text-[1.05rem] font-bold">Latest verified notices</h2>
-    <ul class="mt-3 grid gap-3 md:grid-cols-3">@foreach ($notices as $notice)@include('seo.partials.notice-card')@endforeach</ul>
+    <ul class="mt-3 grid gap-3 md:grid-cols-2">@foreach ($notices as $notice)@include('seo.partials.notice-card')@endforeach</ul>
 </section>
 <section class="mx-auto max-w-6xl px-4 pt-16">
     <h2 class="text-[1.05rem] font-bold">Exams we cover</h2>

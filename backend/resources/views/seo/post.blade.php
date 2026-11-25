@@ -1,12 +1,13 @@
 <div class="mx-auto max-w-6xl px-4 py-6 md:py-10">
     <article class="mx-auto max-w-3xl" lang="{{ $post['lang'] }}">
-        @include('seo.partials.crumbs', ['items' => ['Home' => '/', 'Blog' => '/blog', $post['title'] => '']])
+        @include('seo.partials.crumbs')
         <h1 class="bn mt-3 text-[1.75rem] leading-snug font-bold text-balance md:text-[2.4rem]">{{ $post['title'] }}</h1>
         <p class="bn mt-3 text-base text-muted-foreground md:text-lg">{{ $post['excerpt'] }}</p>
         <p class="mt-3 text-xs text-muted-foreground">{{ $post['author'] }} · <time datetime="{{ $post['published_at'] }}">{{ \Illuminate\Support\Carbon::parse($post['published_at'])->format('j F Y') }}</time></p>
         @if ($post['cover_image'])
             <img src="{{ $post['cover_image'] }}" alt="{{ $post['title'] }}" width="1200" height="670" fetchpriority="high" class="mt-6 aspect-[1200/670] w-full rounded-2xl object-cover">
         @endif
+        @include('seo.partials.share', ['path' => "/blog/{$post['slug']}", 'title' => $post['title']])
         <div class="article bn mt-8">{!! $post['body'] !!}</div>
         @if ($post['attachments'])
             <h2 class="mt-8 text-lg font-bold">Downloads</h2>

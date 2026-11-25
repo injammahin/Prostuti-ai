@@ -18,6 +18,10 @@ return [
 
     'shell' => env('SPA_SHELL_PATH'),
 
+    // BCS papers whose explanations may be someone else's text: their questions get no page of their own until that is
+    // checked. An empty value releases all of them.
+    'questions_on_hold' => array_map(intval(...), array_filter(explode(',', (string) env('SEO_QUESTIONS_ON_HOLD', '43,44,45,46,47')))),
+
     // Pages are rebuilt at once when content changes in the admin panel; this is only the upper limit.
     'cache_minutes' => (int) env('SEO_CACHE_MINUTES', 60),
 

@@ -10,10 +10,10 @@
             </nav>
         </div>
     </header>
-    <main class="flex-1">@include($page->view, $page->viewData)</main>
+    <main class="flex-1">{!! $page->content() !!}</main>
     <footer class="mt-16 border-t">
         <nav class="mx-auto flex max-w-6xl flex-wrap gap-x-5 gap-y-2 px-4 py-8 text-sm text-muted-foreground" aria-label="Footer">
-            @foreach (['/bcs' => 'BCS questions & solutions', '/ntrca' => 'NTRCA', '/primary-teacher' => 'Primary Teacher', '/bank-jobs' => 'Bank jobs', '/model-tests' => 'Model tests', '/exams' => 'Exam syllabus & marks', '/notices' => 'Notice board', '/calendar' => 'Exam calendar', '/blog' => 'Blog', '/about' => 'About bd3schools', '/privacy' => 'Privacy policy', '/terms' => 'Terms'] as $href => $label)
+            @foreach (['/bcs' => 'BCS questions & solutions', '/ntrca' => 'NTRCA', '/primary-teacher' => 'Primary Teacher', '/bank-jobs' => 'Bank jobs', '/model-tests' => 'Model tests', '/exams' => 'Exam syllabus & marks', '/notices' => 'Notice board', '/calendar' => 'Exam calendar', '/blog' => 'Blog', '/about' => 'About bd3schools', '/contact' => 'Contact', '/privacy' => 'Privacy policy', '/terms' => 'Terms'] as $href => $label)
                 <a href="{{ $href }}">{{ $label }}</a>
             @endforeach
         </nav>

@@ -22,8 +22,8 @@ import { cn } from "@/lib/utils"
 import { useNoticesVersion } from "@/lib/notices-store"
 
 const kinds = {
-  applyFrom: { label: "Apply opens", dot: "bg-info", text: "text-info", soft: "bg-info/10", time: "T09:00:00" },
-  applyUntil: { label: "Deadline", dot: "bg-destructive", text: "text-destructive", soft: "bg-destructive/10", time: "T23:59:59" },
+  applyFrom: { label: "Apply opens", dot: "bg-info", text: "text-info-ink", soft: "bg-info/10", time: "T09:00:00" },
+  applyUntil: { label: "Deadline", dot: "bg-destructive", text: "text-destructive-ink", soft: "bg-destructive/10", time: "T23:59:59" },
   examDate: { label: "Exam", dot: "bg-primary", text: "text-primary", soft: "bg-primary/10", time: "T10:00:00" },
 }
 
@@ -87,7 +87,7 @@ function EventRow({ e, base, now }) {
         </p>
         <p className="mt-0.5 truncate text-sm font-semibold transition-colors group-hover:text-primary md:text-[0.95rem]">{noticeTitle(e.notice)}</p>
         {e.notice.verifiedAt && (
-          <p className="mt-0.5 flex items-center gap-1 text-xs text-success">
+          <p className="mt-0.5 flex items-center gap-1 text-xs text-success-ink">
             <FontAwesomeIcon icon={faCircleCheck} /> {tr("Verified", "যাচাইকৃত")} {fmtDate(e.notice.verifiedAt, false)}
           </p>
         )}
@@ -95,7 +95,7 @@ function EventRow({ e, base, now }) {
       <span
         className={cn(
           "hidden shrink-0 items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold tabular-nums sm:inline-flex",
-          days <= 3 ? "bg-destructive/10 text-destructive" : "bg-muted text-muted-foreground"
+          days <= 3 ? "bg-destructive/10 text-destructive-ink" : "bg-muted text-muted-foreground"
         )}
       >
         <FontAwesomeIcon icon={faHourglassHalf} className="text-[0.65rem]" /> {timeLeft(e.at - now)}
@@ -155,7 +155,7 @@ function MiniMonthView({ month, setMonth, cells, byDate, selected, setSelected, 
                 className={cn(
                   "flex flex-col items-center justify-center gap-0.5 rounded-lg text-sm transition-colors",
                   big ? "h-14 p-1" : "h-9",
-                  out && "text-muted-foreground/40",
+                  out && "text-muted-foreground",
                   isToday && "font-bold text-primary",
                   sel ? "bg-primary font-semibold text-primary-foreground" : "hover:bg-muted"
                 )}
@@ -201,7 +201,7 @@ export default function Calendar({ inApp = false }) {
   const [mine, setMine] = useState(false)
   const [month, setMonth] = useState(new Date(TODAY.getFullYear(), TODAY.getMonth(), 1))
   const [selected, setSelected] = useState(iso(TODAY))
-  useSeo(inApp ? {} : { title: "Govt Exam Calendar | সরকারি চাকরির পরীক্ষার তারিখ ও আবেদনের শেষ সময় — bd3schools", description: "Upcoming BCS, bank, NTRCA and Primary exam dates and application deadlines from official notices. পরীক্ষার তারিখ ও আবেদনের শেষ সময়।" })
+  useSeo(inApp ? {} : { title: "Govt Exam Calendar | সরকারি চাকরির পরীক্ষার তারিখ | bd3schools", description: "Upcoming BCS, bank, NTRCA and Primary exam dates and application deadlines from official notices. পরীক্ষার তারিখ ও আবেদনের শেষ সময়।" })
   const base = inApp ? "/app/notices" : "/notices"
 
   const events = useMemo(() => {
@@ -251,7 +251,7 @@ export default function Calendar({ inApp = false }) {
                 onClick={() => setView(v)}
                 className={cn("flex h-8 items-center gap-2 rounded-md px-3 text-sm font-medium transition-all", view === v ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}
               >
-                <FontAwesomeIcon icon={ic} className="text-xs" /> <span className="hidden sm:inline">{l}</span>
+                <FontAwesomeIcon icon={ic} className="text-xs" /> <span className="sr-only sm:not-sr-only">{l}</span>
               </button>
             ))}
           </div>

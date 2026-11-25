@@ -2,6 +2,7 @@ import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
 import "./index.css"
 import App from "./App.jsx"
+import { listenForPageActions } from "@/lib/page-actions"
 import { serverPage } from "@/lib/server-page"
 
 function start() {
@@ -12,9 +13,9 @@ function start() {
   )
 }
 
-/** The page came complete from the server: let it be drawn first. Touching anything starts the app at once. */
+/** The page came complete from the server: let it be drawn first. Using it starts the app at once. */
 function startAfterPaint() {
-  const events = ["pointerdown", "keydown", "touchstart"]
+  const events = ["click", "keydown"] // after a tap, not during it: the tapped link must still be there
   let started = false
   const once = () => {
     if (started) return
@@ -29,5 +30,6 @@ function startAfterPaint() {
   setTimeout(once, 3000) // a slow image must not hold the app back
 }
 
+listenForPageActions()
 if (serverPage.content) startAfterPaint()
 else start()

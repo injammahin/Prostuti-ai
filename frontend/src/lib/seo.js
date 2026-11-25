@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { serverPage } from "@/lib/server-page"
+import { pageAddress, serverPage } from "@/lib/server-page"
 
 const SITE = "bd3schools"
 
@@ -40,12 +40,12 @@ export function useSeo({ title, description, image, type = "website", keywords, 
   useEffect(() => {
     if (!title) return
     // The page the visitor opened already came with its tags.
-    if (serverPage.path === window.location.pathname && document.head.querySelector("link[data-server], script[data-page]") && !left) return
+    if (serverPage.path === pageAddress() && document.head.querySelector("link[data-server], script[data-page]") && !left) return
     left = true
     const prevTitle = document.title
     const descEl = document.head.querySelector('meta[name="description"]')
     const prevDesc = descEl?.getAttribute("content")
-    const url = window.location.origin + (window.location.pathname.replace(/\/+$/, "") || "/")
+    const url = window.location.origin + pageAddress()
     const fullTitle = title.includes(SITE) ? title : `${title} | ${SITE}`
     const fullImage = image ? (image.startsWith("http") ? image : `${window.location.origin}${image.startsWith("/") ? "" : "/"}${image}`) : `${window.location.origin}/icon-512.png`
 
@@ -66,7 +66,7 @@ export function useSeo({ title, description, image, type = "website", keywords, 
     setLink("canonical", url)
 
     // The server's structured data belongs to the page it was sent for.
-    if (serverPage.path !== window.location.pathname) document.head.querySelector("script[data-page]")?.remove()
+    if (serverPage.path !== pageAddress()) document.head.querySelector("script[data-page]")?.remove()
     const fromServer = document.head.querySelector("script[data-page]")
 
     let script

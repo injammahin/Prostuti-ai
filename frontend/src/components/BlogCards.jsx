@@ -41,7 +41,7 @@ export function LeadPost({ post, L }) {
         <div className="flex items-center gap-2">
           <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-xs font-semibold text-primary">{post.category_label}</span>
           {post.is_featured && (
-            <span className="text-xs font-semibold text-warning">
+            <span className="text-xs font-semibold text-warning-ink">
               <FontAwesomeIcon icon={faThumbtack} className="mr-1" />
               {L("Featured", "বিশেষ")}
             </span>

@@ -25,7 +25,7 @@ class PublicPagesTest extends TestCase
         File::put("{$this->folder}/seo-content.json", json_encode([
             'faqs' => [['What is bd3schools?', 'A free website.']], 'features' => [], 'steps' => [],
             'exams' => [['slug' => 'ntrca', 'name' => 'NTRCA', 'nameBn' => 'এনটিআরসিএ', 'orgShort' => 'NTRCA', 'org' => 'NTRCA', 'summary' => 'Teacher exam.', 'syllabusVersion' => '2025', 'stages' => [['type' => 'MCQ', 'marks' => 100, 'duration' => '1 hour', 'negative' => '0.25', 'pass' => '40%', 'subjects' => [['Bangla', 'বাংলা', 25]]]]]],
-            'legal' => ['updated' => '2026-11-25', 'pages' => ['about' => ['title' => ['About bd3schools', 'সম্পর্কে'], 'description' => 'About us.', 'sections' => [['Who', 'কে', [['We are independent.', 'স্বাধীন']]]]]]],
+            'legal' => ['updated' => '2026-11-25', 'pages' => ['about' => ['title' => ['About bd3schools', 'সম্পর্কে'], 'seo' => 'About Us | সম্পর্কে | bd3schools', 'description' => 'About us.', 'sections' => [['Who', 'কে', [['We are independent.', 'স্বাধীন']]]]]]],
         ]));
         config(['seo.shell' => "{$this->folder}/index.html", 'seo.site' => 'https://bd3schools.com']);
     }
@@ -73,7 +73,7 @@ class PublicPagesTest extends TestCase
         $notice = Notice::factory()->create(['title' => 'Exam on 11 December', 'title_bn' => 'পরীক্ষা ১১ ডিসেম্বর', 'summary_bn' => 'বাংলা সারাংশ', 'url' => 'https://bpsc.gov.bd/x']);
 
         $this->get("/notices/{$notice->slug}")->assertOk()
-            ->assertSee('<title>Exam on 11 December | পরীক্ষা ১১ ডিসেম্বর — bd3schools</title>', false)
+            ->assertSee('<title>Exam on 11 December | পরীক্ষা ১১ ডিসেম্বর | bd3schools</title>', false)
             ->assertSee('বাংলা সারাংশ')
             ->assertSee('https://bpsc.gov.bd/x');
         $this->get('/notices')->assertOk()->assertSee('Exam on 11 December');
@@ -83,7 +83,7 @@ class PublicPagesTest extends TestCase
     {
         $titles = [];
 
-        foreach (['/', '/blog', '/notices', '/calendar', '/exams', '/exams/ntrca', '/daily', '/about'] as $path) {
+        foreach (['/', '/blog', '/notices', '/calendar', '/exams', '/exams/ntrca', '/daily', '/about', '/contact'] as $path) {
             $html = $this->get($path)->assertOk()->getContent();
             preg_match('#<title>(.*?)</title>#', $html, $title);
             $titles[] = $title[1];

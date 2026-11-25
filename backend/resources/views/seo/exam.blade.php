@@ -1,5 +1,5 @@
 <div class="mx-auto max-w-4xl px-4 py-6 md:py-10">
-    @include('seo.partials.crumbs', ['items' => ['Home' => '/', 'Exams' => '/exams', $exam['name'] => '']])
+    @include('seo.partials.crumbs')
     <h1 class="text-[1.35rem] leading-tight font-bold md:text-[1.7rem]">{{ $exam['name'] }} <span class="bn" lang="bn">({{ $exam['nameBn'] }})</span></h1>
     <p class="mt-1 text-sm text-muted-foreground">{{ $exam['org'] }} · Syllabus: {{ $exam['syllabusVersion'] }}</p>
     <p class="mt-4 leading-relaxed">{{ $exam['summary'] }}</p>

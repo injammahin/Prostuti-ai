@@ -37,6 +37,11 @@
   --color-success: var(--success);
   --color-warning: var(--warning);
   --color-info: var(--info);
+  --color-success-ink: var(--success-ink);
+  --color-warning-ink: var(--warning-ink);
+  --color-destructive-ink: var(--destructive-ink);
+  --color-info-ink: var(--info-ink);
+  --color-medical-ink: var(--medical-ink);
   --color-medical: var(--medical);
   --color-surface: var(--surface);
   --color-border: var(--border);
@@ -83,6 +88,12 @@
   --warning: #e8a317;
   --info: #2a6fc0;
   --medical: #cf3f5a;
+  /* The same colours for small text: dark enough to read on white and on their own tint. */
+  --success-ink: #0f7747;
+  --warning-ink: #8a5f0b;
+  --destructive-ink: #c22d34;
+  --info-ink: #2566b3;
+  --medical-ink: #b83350;
   --border: #e9e7df;
   --input: #dddbd1;
   --ring: #1f6b53;
@@ -155,6 +166,11 @@
   --warning: #f4bd45;
   --info: #69a8ef;
   --medical: #f0738a;
+  --success-ink: #3fcf86;
+  --warning-ink: #f4bd45;
+  --destructive-ink: #f0646a;
+  --info-ink: #69a8ef;
+  --medical-ink: #f0738a;
   --border: rgb(255 255 255 / 0.08);
   --input: rgb(255 255 255 / 0.13);
   --ring: #3fbf8f;
@@ -242,12 +258,21 @@
   }
   .qa-right,
   .qa-answer {
-    @apply font-semibold text-success;
+    @apply font-semibold text-success-ink;
   }
   .qa-answer {
     @apply mt-2 text-sm;
   }
+  .qa-note {
+    @apply mt-1.5 text-[0.92rem] leading-relaxed text-foreground/85;
+  }
   .qa-why {
+    @apply mt-2;
+  }
+  .qa-why > summary {
+    @apply inline-block cursor-pointer rounded-full border px-3 py-1 text-sm font-semibold text-primary select-none;
+  }
+  .qa-why > p {
     @apply mt-2 text-[0.92rem] leading-relaxed break-words whitespace-pre-line text-foreground/85;
   }
   .qa-meta {
@@ -405,16 +430,30 @@ h1, h2, h3 {
   }
 }
 
-/* "Save as PDF" on the question pages: the questions only. */
+/* Printing a question page (its PDF is made this way): the questions and answers only. */
 @media print {
   header,
   footer,
   .no-print,
+  .qa-why,
+  .qa-meta,
   [aria-label="Breadcrumb"] {
     display: none !important;
   }
   .qa {
     content-visibility: visible;
     break-inside: avoid;
+    padding-block: 7px;
+  }
+  .qa-body,
+  .qa-options,
+  .qa-answer {
+    font-size: 10.5pt;
+    line-height: 1.4;
+  }
+  .qa-options,
+  .qa-answer {
+    margin-top: 2px;
+    row-gap: 0;
   }
 }

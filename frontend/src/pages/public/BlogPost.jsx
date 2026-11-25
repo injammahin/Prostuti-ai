@@ -1,8 +1,6 @@
-import { useState } from "react"
 import { Link, Navigate, useParams } from "react-router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faArrowLeft, faClock, faFilePdf, faFileArrowDown, faLink, faCheck, faBookOpen, faRotateRight, faNewspaper } from "@fortawesome/free-solid-svg-icons"
-import { faFacebook, faWhatsapp } from "@fortawesome/free-brands-svg-icons"
+import { faArrowLeft, faClock, faFilePdf, faFileArrowDown, faBookOpen, faRotateRight, faNewspaper } from "@fortawesome/free-solid-svg-icons"
 import { Button } from "@/components/ui/button"
 import { Crumbs, EmptyState } from "@/components/shared"
 import { useApi } from "@/lib/use-api"
@@ -11,6 +9,7 @@ import { movedPost } from "@/lib/bcs"
 import { useApp } from "@/lib/app-context"
 import { useSeo } from "@/lib/seo"
 import { cn } from "@/lib/utils"
+import ShareButtons from "@/components/ShareButtons"
 import { PostCard } from "@/components/BlogCards"
 
 function fileSize(bytes) {
@@ -28,7 +27,6 @@ export default function BlogPost() {
 function Article({ slug }) {
   const { L, num, fmtDate } = useApp()
   const { data, error, loading, reload } = useApi(() => blogApi.show(slug), [slug], { key: `blog-${slug}` })
-  const [copied, setCopied] = useState(false)
   const post = data?.data
   const related = data?.related ?? []
 
@@ -50,26 +48,10 @@ function Article({ slug }) {
     "image": post.cover_image ? (post.cover_image.startsWith("http") ? post.cover_image : `https://bd3schools.com${post.cover_image}`) : "https://bd3schools.com/icon-512.png",
     "datePublished": post.published_at,
     "dateModified": post.updated_at || post.published_at,
-    "author": {
-      "@type": "Organization",
-      "name": post.author || "bd3schools Team",
-      "url": "https://bd3schools.com"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "bd3schools",
-      "url": "https://bd3schools.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://bd3schools.com/logo-mark.png"
-      }
-    },
+    "author": { "@id": "https://bd3schools.com/#organization" },
+    "publisher": { "@id": "https://bd3schools.com/#organization" },
     "inLanguage": post.lang === "bn" ? "bn-BD" : "en",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": postUrl
-    },
-    "keywords": [...(post.tags || []), "14 bcs question with solution", "bcs question solution pdf", "bcs preliminary question bank", "bpsc"].join(", ")
+    "mainEntityOfPage": postUrl,
   } : null
 
   const jsonLd = post ? {
@@ -93,13 +75,6 @@ function Article({ slug }) {
         }
       : {}
   )
-
-  const pageUrl = typeof window !== "undefined" ? window.location.href : ""
-  const copyLink = () =>
-    navigator.clipboard?.writeText(pageUrl).then(() => {
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-    })
 
   if (loading) {
     return (
@@ -140,7 +115,6 @@ function Article({ slug }) {
   }
 
   const isBn = post.lang === "bn"
-  const share = encodeURIComponent(pageUrl)
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-6 md:py-10">
@@ -165,7 +139,7 @@ function Article({ slug }) {
                 </p>
               </div>
             </div>
-            <ShareButtons share={share} copied={copied} onCopy={copyLink} L={L} />
+            <ShareButtons title={post.title} path={`/blog/${post.slug}`} />
           </div>
         </header>
 
@@ -229,8 +203,7 @@ function Article({ slug }) {
         </div>
 
         <div className="mt-8 flex items-center justify-between gap-3 border-t pt-5">
-          <p className="text-sm font-semibold">{L("Found this useful? Share it", "উপকারী মনে হলে শেয়ার করুন")}</p>
-          <ShareButtons share={share} copied={copied} onCopy={copyLink} L={L} />
+          <ShareButtons title={post.title} path={`/blog/${post.slug}`} />
         </div>
       </article>
 
@@ -244,23 +217,6 @@ function Article({ slug }) {
           </div>
         </section>
       )}
-    </div>
-  )
-}
-
-function ShareButtons({ share, copied, onCopy, L }) {
-  const cls = "grid size-9 place-items-center rounded-full border text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary"
-  return (
-    <div className="flex items-center gap-1.5">
-      <a href={`https://www.facebook.com/sharer/sharer.php?u=${share}`} target="_blank" rel="noopener" className={cls} aria-label="Share on Facebook">
-        <FontAwesomeIcon icon={faFacebook} />
-      </a>
-      <a href={`https://wa.me/?text=${share}`} target="_blank" rel="noopener" className={cls} aria-label="Share on WhatsApp">
-        <FontAwesomeIcon icon={faWhatsapp} />
-      </a>
-      <button onClick={onCopy} className={cls} aria-label={L("Copy link", "লিংক কপি করুন")}>
-        <FontAwesomeIcon icon={copied ? faCheck : faLink} className={copied ? "text-success" : ""} />
-      </button>
     </div>
   )
 }

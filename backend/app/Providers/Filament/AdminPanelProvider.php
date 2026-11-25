@@ -75,6 +75,12 @@ class AdminPanelProvider extends PanelProvider
                 ),
             )
             ->renderHook(
+                PanelsRenderHook::BODY_END,
+                fn (): HtmlString => new HtmlString(
+                    '<script src="'.asset('js/share-images.js').'?v='.@filemtime(public_path('js/share-images.js')).'" defer data-navigate-once></script>'
+                ),
+            )
+            ->renderHook(
                 PanelsRenderHook::TOPBAR_LOGO_AFTER,
                 fn (): HtmlString => new HtmlString(
                     '<button type="button" class="pa-sidebar-toggle" x-data="{}" aria-controls="fi-main-sidebar"'

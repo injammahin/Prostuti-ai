@@ -7,6 +7,7 @@ use App\Models\Post;
 use App\Services\ExamPages;
 use App\Services\PageShell;
 use App\Services\PublicPage;
+use App\Services\QuestionPages;
 use Illuminate\Http\Response;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
@@ -16,7 +17,7 @@ use Illuminate\Support\Collection;
  */
 class SitemapController extends Controller
 {
-    public const SECTIONS = ['pages', 'bcs', 'notices', 'blog'];
+    public const SECTIONS = ['pages', 'bcs', 'questions', 'notices', 'blog'];
 
     public function index(): Response
     {
@@ -43,6 +44,7 @@ class SitemapController extends Controller
         return match ($section) {
             'pages' => $this->pages(),
             'bcs' => ExamPages::paths()->filter(fn (Carbon $changed, string $path): bool => $path === '/bcs' || str_starts_with($path, '/bcs/')),
+            'questions' => QuestionPages::paths(),
             'notices' => $this->notices(),
             'blog' => $this->posts(),
         };
@@ -64,6 +66,7 @@ class SitemapController extends Controller
             '/calendar' => $notices,
             '/daily' => null,
             '/exams' => null,
+            '/contact' => null,
             ...collect($content['exams'] ?? [])->mapWithKeys(fn (array $exam): array => ["/exams/{$exam['slug']}" => null]),
             ...ExamPages::paths()->reject(fn (Carbon $changed, string $path): bool => $path === '/bcs' || str_starts_with($path, '/bcs/')),
             ...collect($content['legal']['pages'] ?? [])->map(fn (): ?Carbon => $legal)->mapWithKeys(fn (?Carbon $changed, string $key): array => ["/{$key}" => $changed]),

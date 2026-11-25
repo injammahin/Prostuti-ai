@@ -48,7 +48,7 @@ export default function ExamDetail({ inApp = false }) {
   const { followed, toggleFollow, user, L, num } = useApp()
   const [tab, setTab] = useState("format")
   const e = exams.find((x) => x.slug === slug)
-  useSeo(e && !inApp ? { title: `${e.name} Syllabus & Mark Distribution | ${e.nameBn} সিলেবাস ও নম্বর বণ্টন — bd3schools`, description: `${e.name}: ${e.summary} ${e.nameBn} সিলেবাস ও নম্বর বণ্টন।`.slice(0, 160) } : {})
+  useSeo(e && !inApp ? { title: `${e.name} Syllabus & Marks | সিলেবাস ও নম্বর | bd3schools`, description: `${e.name}: ${e.summary} ${e.nameBn} সিলেবাস ও নম্বর বণ্টন।`.slice(0, 160) } : {})
   if (!e) return <NotFound />
   const on = followed.includes(e.slug)
   const related = notices.filter((n) => n.exam === e.slug)

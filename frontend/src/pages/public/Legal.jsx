@@ -7,9 +7,9 @@ import { PAGES, UPDATED } from "@/content/legal"
 /** About, privacy policy and terms of use. */
 export default function Legal({ page }) {
   const { L, fmtDate } = useApp()
-  const { sections, title, description } = PAGES[page]
+  const { sections, title, seo, description } = PAGES[page]
 
-  useSeo({ title: title[0], description })
+  useSeo({ title: seo, description })
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-6 md:py-10">

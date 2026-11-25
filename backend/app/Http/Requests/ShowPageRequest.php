@@ -18,7 +18,7 @@ class ShowPageRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'path' => ['required', 'string', 'max:120', 'regex:#^/[a-z0-9/-]+$#'],
+            'path' => ['required', 'string', 'max:200', 'regex:#^/[a-z0-9/-]+(\?[a-z0-9=&-]+)?$#'],
         ];
     }
 }

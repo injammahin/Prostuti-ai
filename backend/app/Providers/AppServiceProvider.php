@@ -65,5 +65,16 @@ class AppServiceProvider extends ServiceProvider
                 Limit::perMinute(40)->by('auth-ip:'.$request->ip()),
             ];
         });
+
+        // Emailed codes: few per address, with room for many people on one mobile network.
+        RateLimiter::for('send-code', function (Request $request): array {
+            $email = Str::lower(trim((string) $request->input('email')));
+
+            return [
+                Limit::perMinute(4)->by('code-email:'.$email),
+                Limit::perHour(12)->by('code-email-hour:'.$email),
+                Limit::perMinute(30)->by('code-ip:'.$request->ip()),
+            ];
+        });
     }
 }

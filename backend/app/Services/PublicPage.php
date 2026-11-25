@@ -12,6 +12,8 @@ class PublicPage
      * @param  array<string, mixed>  $viewData
      * @param  list<array<string, mixed>>  $jsonLd
      * @param  array<string, mixed>  $data
+     * @param  array<string, string>  $crumbs  name => path, from the home page to this one: shown and marked up the same
+     * @param  array<string, string>  $links  "prev" / "next" => path
      */
     public function __construct(
         public string $path,
@@ -25,7 +27,43 @@ class PublicPage
         public array $jsonLd = [],
         public array $data = [],
         public bool $index = true,
-    ) {}
+        public array $crumbs = [],
+        public array $links = [],
+    ) {
+        $this->description = self::fit($description, 150);
+    }
+
+    /**
+     * Shortened at a word, so nothing is cut off in search results.
+     */
+    public static function fit(string $text, int $length): string
+    {
+        $text = str($text)->squish()->toString();
+
+        if (mb_strlen($text) <= $length) {
+            return $text;
+        }
+
+        return preg_replace(['/\s+\S*$/u', '/[\s,;:–—|-]+$/u'], '', mb_substr($text, 0, $length - 1)).'…';
+    }
+
+    /**
+     * Structured data of this page.
+     *
+     * @return list<array<string, mixed>>
+     */
+    public function graph(): array
+    {
+        return $this->crumbs ? [...$this->jsonLd, self::breadcrumbs($this->crumbs)] : $this->jsonLd;
+    }
+
+    /**
+     * Its visible content.
+     */
+    public function content(): string
+    {
+        return view($this->view, [...$this->viewData, 'crumbs' => $this->crumbs])->render();
+    }
 
     public function url(): string
     {
@@ -70,7 +108,7 @@ class PublicPage
             'mainEntityOfPage' => self::absolute($path),
             'headline' => str($headline)->limit(107)->toString(),
             'description' => $description,
-            'image' => self::absolute($image ?: '/icon-512.png'),
+            'image' => self::absolute($image ?: ShareImage::forPath($path) ?: '/icon-512.png'),
             'datePublished' => $published,
             'dateModified' => $modified ?: $published,
             'inLanguage' => $lang,

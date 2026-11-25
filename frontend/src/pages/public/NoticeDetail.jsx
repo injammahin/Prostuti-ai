@@ -9,21 +9,22 @@ import {
   faCircleCheck,
   faClockRotateLeft,
   faFlag,
-  faShareNodes,
   faTriangleExclamation,
   faUserCheck,
 } from "@fortawesome/free-solid-svg-icons"
 import { toast } from "sonner"
 import { Button } from "@/components/ui/button"
 import { Crumbs, NoticeCard, NoticeTypePill, PageHeader, Panel } from "@/components/shared"
+import ShareButtons from "@/components/ShareButtons"
 import ReportDialog from "@/components/ReportDialog"
 import EligibilityDialog from "@/components/EligibilityDialog"
 import { notices, exams } from "@/lib/data"
 import { fmtDate, relDays, daysUntil, td, examName, noticeTitle, noticeSummary } from "@/lib/format"
 import { downloadIcs } from "@/lib/ics"
 import { useApp } from "@/lib/app-context"
-import { useSeo } from "@/lib/seo"
 import { cn } from "@/lib/utils"
+import { noticesApi } from "@/lib/api"
+import { useApi } from "@/lib/use-api"
 import NotFound from "@/pages/NotFound"
 import { useNoticesVersion } from "@/lib/notices-store"
 import { PageLoader } from "@/components/Loaders"
@@ -34,35 +35,34 @@ export default function NoticeDetail({ inApp = false }) {
   const { followed, toggleFollow, user, L } = useApp()
   const [report, setReport] = useState(false)
   const [elig, setElig] = useState(false)
-  const n = notices.find((x) => x.slug === slug)
-  useSeo(n ? { title: `${n.title}${n.title_bn ? ` | ${n.title_bn}` : ""} — bd3schools`, description: (n.summary_bn || n.summary).slice(0, 155), type: "article" } : {})
+  const listed = notices.find((x) => x.slug === slug)
+  // Older notices are not in the list.
+  const { data: single, loading } = useApi(() => noticesApi.show(slug), [slug], { key: `notice:${slug}`, enabled: !listed && noticesVersion > 0 })
+  const n = listed ?? single?.data
   // Before the latest notices arrive, a brand-new notice isn't in the list yet — wait instead of saying "not found".
-  if (!n && noticesVersion === 0) return <PageLoader className="mx-auto max-w-3xl px-4 py-8" />
+  if (!n && (noticesVersion === 0 || loading)) return <PageLoader className="mx-auto max-w-3xl px-4 py-8" />
   if (!n) return <NotFound />
   const exam = exams.find((e) => e.slug === n.exam)
   const following = followed.includes(n.exam)
   const base = inApp ? "/app/notices" : "/notices"
   const related = notices.filter((x) => x.exam === n.exam && x.slug !== n.slug).slice(0, 3)
 
+  const details = [
+    [L("Post", "পদের নাম"), n.post],
+    [L("Vacancies", "পদসংখ্যা"), n.vacancies],
+    [L("Eligibility", "যোগ্যতা"), n.eligibility],
+    [L("Age limit", "বয়সসীমা"), n.ageLimit],
+    [L("Application fee", "আবেদন ফি"), n.fee],
+    [L("How to apply", "আবেদনের নিয়ম"), n.howToApply?.join("\n")],
+  ].filter(([, v]) => v)
+
   const dates = [
     ["Published", n.published],
     ["Apply from", n.applyFrom],
     ["Apply until", n.applyUntil],
     ["Exam date", n.examDate],
+    ["Updated", n.updated?.slice(0, 10)],
   ].filter(([, v]) => v)
-
-  const share = async () => {
-    const url = window.location.href
-    try {
-      if (navigator.share) await navigator.share({ title: noticeTitle(n), url })
-      else {
-        await navigator.clipboard.writeText(url)
-        toast.success(L("Link copied", "লিংক কপি হয়েছে"))
-      }
-    } catch {
-      /* cancelled */
-    }
-  }
 
   const follow = () => {
     if (!user) return toast(L("Log in to follow exams and get alerts", "পরীক্ষা ফলো করতে ও অ্যালার্ট পেতে লগ ইন করুন"))
@@ -109,6 +109,20 @@ export default function NoticeDetail({ inApp = false }) {
             <p className="mt-3 text-xs text-muted-foreground">{L("Summary written by the bd3schools team. Read the full notice on the official website.", "সারসংক্ষেপ bd3schools টিমের লেখা। পূর্ণ নোটিশ অফিসিয়াল ওয়েবসাইটে পড়ুন।")}</p>
           </Panel>
 
+          {details.length > 0 && (
+            <Panel className="p-0 md:p-0">
+              <h2 className="px-4 pt-4 text-sm font-semibold text-muted-foreground md:px-5">{L("At a glance", "এক নজরে")}</h2>
+              <dl className="divide-y">
+                {details.map(([label, value]) => (
+                  <div key={label} className="flex justify-between gap-4 px-4 py-3 text-sm md:px-5">
+                    <dt className="text-muted-foreground">{label}</dt>
+                    <dd className="text-right font-semibold whitespace-pre-line">{value}</dd>
+                  </div>
+                ))}
+              </dl>
+            </Panel>
+          )}
+
           <Panel className="p-0 md:p-0">
             <h2 className="px-4 pt-4 text-sm font-semibold text-muted-foreground md:px-5">{L("Key dates", "গুরুত্বপূর্ণ তারিখ")}</h2>
             <ul className="divide-y">
@@ -129,6 +143,28 @@ export default function NoticeDetail({ inApp = false }) {
               })}
             </ul>
           </Panel>
+
+          {(n.official || n.url) && (
+            <Panel>
+              <h2 className="mb-2 text-sm font-semibold text-muted-foreground">{L("Official source", "অফিসিয়াল সূত্র")}</h2>
+              <ul className="space-y-1.5 font-semibold text-primary">
+                {n.official && (
+                  <li>
+                    <a href={n.official.url} target="_blank" rel="noopener" className="hover:underline">
+                      {L(`${n.official.name} website`, `${td(n.official.name)} ওয়েবসাইট`)}: {n.official.url.replace(/^https?:\/\/(www\.)?/, "")}
+                    </a>
+                  </li>
+                )}
+                {n.url && (
+                  <li>
+                    <a href={n.url} target="_blank" rel="noopener" className="hover:underline">
+                      {L("Read this notice at the official source", "অফিসিয়াল সূত্রে নোটিশটি পড়ুন")}
+                    </a>
+                  </li>
+                )}
+              </ul>
+            </Panel>
+          )}
 
           {n.changes.length > 0 && (
             <Panel className="border-warning/40 bg-warning/5">
@@ -163,11 +199,13 @@ export default function NoticeDetail({ inApp = false }) {
 
         {/* Actions */}
         <aside className="space-y-3 md:sticky md:top-20 md:self-start">
-          <Button asChild className="h-11 w-full rounded-full">
-            <a href={n.url} target="_blank" rel="noreferrer">
-              {L("Official source", "অফিসিয়াল সূত্র")} <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-            </a>
-          </Button>
+          {n.url && (
+            <Button asChild className="h-11 w-full rounded-full">
+              <a href={n.url} target="_blank" rel="noopener">
+                {L("Open official notice", "অফিসিয়াল নোটিশ দেখুন")} <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              </a>
+            </Button>
+          )}
           <div className="grid grid-cols-2 gap-2 md:grid-cols-1">
             <Button variant="outline" className="h-11 rounded-full" onClick={follow}>
               <FontAwesomeIcon icon={following ? faBellSlash : faBell} /> {following ? L("Following", "ফলো করছেন") : L("Follow exam", "ফলো করুন")}
@@ -175,10 +213,7 @@ export default function NoticeDetail({ inApp = false }) {
             <Button variant="outline" className="h-11 rounded-full" onClick={() => downloadIcs(n)}>
               <FontAwesomeIcon icon={faCalendarPlus} /> {L("Add to calendar", "ক্যালেন্ডারে যোগ")}
             </Button>
-            <Button variant="outline" className="h-11 rounded-full" onClick={share}>
-              <FontAwesomeIcon icon={faShareNodes} /> {L("Share", "শেয়ার")}
-            </Button>
-            <Button variant="ghost" className="h-11 rounded-full text-muted-foreground" onClick={() => setReport(true)}>
+            <Button variant="ghost" className="col-span-2 h-11 rounded-full text-muted-foreground md:col-span-1" onClick={() => setReport(true)}>
               <FontAwesomeIcon icon={faFlag} /> {L("Report error", "ভুল জানান")}
             </Button>
           </div>
@@ -188,6 +223,8 @@ export default function NoticeDetail({ inApp = false }) {
           </p>
         </aside>
       </div>
+
+      <ShareButtons title={noticeTitle(n)} path={`/notices/${n.slug}`} className="mt-6" />
 
       {related.length > 0 && (
         <section className="mt-8">

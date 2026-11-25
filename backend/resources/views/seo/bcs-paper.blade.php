@@ -3,15 +3,17 @@
     $srcset = preg_match('#^/covers/bcs/([^/]+)\.jpg$#', (string) $image, $cover) ? "/covers/bcs/sm/{$cover[1]}.webp 640w, /covers/bcs/{$cover[1]}.webp 1200w" : null;
 @endphp
 <div class="bn mx-auto max-w-4xl px-4 py-6 md:py-10" lang="bn">
-    @include('seo.partials.crumbs', ['items' => ['Home' => '/', 'BCS' => '/bcs', $paper['name'] => '']])
+    @include('seo.partials.crumbs')
     <h1 class="text-[1.5rem] leading-snug font-bold md:text-[2.1rem]">{{ $paper['name_bn'] }} প্রশ্ন সমাধান <span class="block text-lg font-semibold text-muted-foreground md:text-xl">{{ $paper['name'] }} Question Solution ({{ $with }})</span></h1>
-    <p class="mt-2 text-sm text-muted-foreground">bd3schools · সর্বশেষ হালনাগাদ <time datetime="{{ $updated->toIso8601String() }}">{{ \App\Services\Bangla::date($updated) }}</time></p>
+    @include('seo.partials.updated')
     <p class="mt-5 leading-relaxed">{{ $paper['name_bn'] }}{{ $paper['special'] ? ' (বিশেষ)' : '' }} প্রিলিমিনারি পরীক্ষা{{ $paper['date'] ? ' '.\App\Services\Bangla::date($paper['date']).' তারিখে' : '' }} অনুষ্ঠিত হয়। প্রশ্ন ছিল {{ $bn($paper['total']) }}টি, পূর্ণমান {{ $bn($paper['marks']) }}। এই পাতায় {{ $bn(count($questions)) }}টি প্রশ্ন সঠিক উত্তরসহ দেওয়া আছে@if ($explained), এর মধ্যে {{ $bn($explained) }}টির ব্যাখ্যা আছে@endif। একই প্রশ্ন অন্য বিসিএসেও এলে সেটির নাম ও সাল প্রশ্নের নিচে লেখা আছে।</p>
-    <p class="mt-2 text-sm leading-relaxed text-muted-foreground" lang="en">{{ $paper['name'] }} preliminary{{ $paper['special'] ? ' (special)' : '' }} question solution{{ $paper['year'] ? ', held in '.$paper['year'] : '' }}: {{ count($questions) }} of {{ $paper['total'] }} questions with the correct answer. Answers are prepared by bd3schools; BPSC does not publish an answer key with explanations. Free to read online or save as a PDF.</p>
+    <p class="mt-2 text-sm leading-relaxed text-muted-foreground" lang="en">{{ $paper['name'] }} preliminary{{ $paper['special'] ? ' (special)' : '' }} question solution{{ $paper['year'] ? ', held in '.$paper['year'] : '' }}: {{ count($questions) }} of {{ $paper['total'] }} questions with the correct answer. Answers are prepared by bd3schools; BPSC does not publish an answer key with explanations. Free to read online.</p>
     <p class="no-print mt-5 flex flex-wrap gap-3">
         <a href="/bcs-papers/{{ $paper['number'] }}" class="inline-flex h-11 items-center rounded-full bg-primary px-6 font-semibold text-primary-foreground">অ্যাপে অনুশীলন করুন</a>
-        <button type="button" data-print class="inline-flex h-11 items-center rounded-full border px-6 font-semibold">PDF হিসেবে সেভ করুন</button>
+        @if ($pdf)<a href="{{ $pdf }}" download class="inline-flex h-11 items-center rounded-full border px-6 font-semibold">PDF ডাউনলোড করুন</a>@endif
+        <button type="button" data-open-details="সব ব্যাখ্যা বন্ধ করুন" class="inline-flex h-11 items-center rounded-full border px-6 font-semibold">সব ব্যাখ্যা খুলুন</button>
     </p>
+    @include('seo.partials.share', ['path' => $paper['path'], 'title' => "{$paper['name_bn']} প্রশ্ন সমাধান"])
 
     <section class="card mt-7 overflow-x-auto">
         <h2 class="px-4 pt-4 text-lg font-bold">বিষয় অনুযায়ী প্রশ্ন</h2>
@@ -28,7 +30,7 @@
     @endif
 
     <h2 class="mt-9 text-xl font-bold">{{ $paper['name_bn'] }} প্রশ্ন ও উত্তর ({{ $paper['name'] }} questions and answers)</h2>
-    <ol class="mt-3">@foreach ($questions as $question)@include('seo.partials.question', ['showSubject' => true])@endforeach</ol>
+    <ol class="mt-3">@foreach ($questions as $question)@include('seo.partials.question', ['showSubject' => true, 'linkPage' => true])@endforeach</ol>
 
     <nav class="no-print mt-8 flex justify-between gap-4 font-semibold text-primary" aria-label="Other BCS papers">
         <span>@if ($older)<a href="{{ $older['path'] }}">← {{ $older['name_bn'] }} ({{ $older['name'] }})</a>@endif</span>

@@ -154,6 +154,10 @@ export const blogApi = {
   show: (slug) => api(`/posts/${encodeURIComponent(slug)}`),
 }
 
+export const noticesApi = {
+  show: (slug) => api(`/notices/${encodeURIComponent(slug)}`),
+}
+
 /** Pages made from the question bank (/bcs, /ntrca …): the same content as at their own address. */
 export const pagesApi = {
   show: (path) => api(`/pages?path=${encodeURIComponent(path)}`),

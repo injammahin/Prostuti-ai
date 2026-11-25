@@ -4,21 +4,19 @@ import { PageLoader } from "@/components/Loaders"
 import { Link, NavLink, Outlet, useLocation } from "react-router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faArrowRight } from "@fortawesome/free-solid-svg-icons"
-import { faFacebook, faYoutube } from "@fortawesome/free-brands-svg-icons"
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import { Logo } from "@/components/shared"
 import { useApp } from "@/lib/app-context"
 import ServerContent from "@/components/ServerContent"
-import { firstPageDone, firstPageWaiting, serverPage } from "@/lib/server-page"
-import { FACEBOOK_URL, YOUTUBE_URL } from "@/lib/site"
+import { useLazy } from "@/components/use-lazy"
+import { firstPageDone, firstPageWaiting, pageAddress, serverPage } from "@/lib/server-page"
+import { FACEBOOK_URL } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
-// Only the pages that exist are shown (set in .env).
 const socials = [
   ["Facebook", faFacebook, FACEBOOK_URL],
-  ["YouTube", faYoutube, YOUTUBE_URL],
-].filter(([, , url]) => url)
+]
 
 const links = [
   ["/daily", "dailyQuiz"],
@@ -28,6 +26,10 @@ const links = [
   ["/bcs", "bcsPapers"],
   ["/blog", "blog"],
 ]
+
+/** The phone menu's code comes when it is about to be opened. */
+const loadMenu = () => import("@/components/MobileMenu")
+const warmMenu = () => loadMenu().catch(() => {})
 
 export function LangToggle({ className }) {
   const { lang, set } = useApp()
@@ -53,12 +55,13 @@ function FirstPage() {
 export default function PublicLayout() {
   const { t, L, num, user, isGuest } = useApp()
   const [open, setOpen] = useState(false)
+  const MobileMenu = useLazy(loadMenu, open, () => setOpen(false))
   const [scrolled, setScrolled] = useState(false)
-  const { pathname } = useLocation()
+  const { pathname, search } = useLocation()
 
   useEffect(() => {
     window.scrollTo(0, 0)
-  }, [pathname])
+  }, [pathname, search])
   useEffect(() => {
     const on = () => setScrolled(window.scrollY > 8)
     on()
@@ -108,50 +111,17 @@ export default function PublicLayout() {
                 </Button>
               </>
             )}
-            <button className="grid size-10 place-items-center rounded-full hover:bg-muted lg:hidden" onClick={() => setOpen(true)} aria-label="Open menu">
+            <button className="grid size-10 place-items-center rounded-full hover:bg-muted lg:hidden" onPointerDown={warmMenu} onClick={() => setOpen(true)} aria-label="Open menu">
               <FontAwesomeIcon icon={faBars} />
             </button>
           </div>
         </div>
       </header>
 
-      <Sheet open={open} onOpenChange={setOpen}>
-        <SheetContent side="right" className="w-[84%] max-w-xs p-0">
-          <SheetHeader className="border-b p-5">
-            <SheetTitle asChild>
-              <div>
-                <Logo />
-              </div>
-            </SheetTitle>
-          </SheetHeader>
-          <nav className="stagger flex flex-col gap-1 p-3">
-            {[["/", "home"], ...links].map(([to, k]) => (
-              <NavLink
-                key={to}
-                to={to}
-                end
-                onClick={() => setOpen(false)}
-                className={({ isActive }) => cn("rounded-xl px-4 py-3 font-semibold hover:bg-muted", isActive && "bg-secondary text-secondary-foreground")}
-              >
-                {t(k)}
-              </NavLink>
-            ))}
-          </nav>
-          <div className="mt-auto space-y-3 border-t p-4">
-            {(!user || isGuest) && (
-              <Button asChild className="w-full" onClick={() => setOpen(false)}>
-                <Link to="/login">{t("signIn")}</Link>
-              </Button>
-            )}
-            <div className="flex items-center gap-2">
-              <LangToggle />
-            </div>
-          </div>
-        </SheetContent>
-      </Sheet>
+      {MobileMenu && <MobileMenu open={open} onOpenChange={setOpen} links={links} />}
 
       <main className="flex-1">
-        <div key={pathname} className={pathname === serverPage.path ? undefined : "rise"}>
+        <div key={pathname} className={pageAddress({ pathname, search }) === serverPage.path ? undefined : "rise"}>
           <Suspense fallback={<FirstPage />}>
             <Outlet />
           </Suspense>
@@ -194,6 +164,7 @@ export default function PublicLayout() {
               <li><Link to="/calendar" className="hover:text-primary">{L("Exam calendar", "পরীক্ষার ক্যালেন্ডার")}</Link></li>
               <li><Link to="/blog" className="hover:text-primary">{t("blog")}</Link></li>
               <li><Link to="/about" className="hover:text-primary">{L("About bd3schools", "bd3schools সম্পর্কে")}</Link></li>
+              <li><Link to="/contact" className="hover:text-primary">{L("Contact & report a mistake", "যোগাযোগ ও ভুল জানান")}</Link></li>
               <li><Link to="/privacy" className="hover:text-primary">{L("Privacy policy", "গোপনীয়তা নীতি")}</Link></li>
               <li><Link to="/terms" className="hover:text-primary">{L("Terms", "শর্তাবলি")}</Link></li>
             </ul>

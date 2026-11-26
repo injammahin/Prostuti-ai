@@ -46,7 +46,7 @@ class BlogTest extends TestCase
 
     public function test_admins_can_open_the_blog_screens_in_the_admin_panel(): void
     {
-        $admin = User::factory()->create(['is_admin' => true]);
+        $admin = User::factory()->admin()->create();
         $post = Post::factory()->create();
 
         $this->actingAs($admin)->get(PostResource::getUrl('index'))->assertOk()->assertSee($post->title);

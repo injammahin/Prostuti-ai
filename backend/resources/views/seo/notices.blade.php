@@ -10,7 +10,7 @@
     <nav class="mt-4 flex flex-wrap gap-2" aria-label="Notice sections">
         <a href="/notices" @class([$tab, 'border-primary text-primary' => ! $category])>All / সব ({{ $total }})</a>
         @foreach (\App\Models\Notice::CATEGORIES as $key => [$name, $nameBn])
-            <a href="/notices?category={{ $key }}" @class([$tab, 'border-primary text-primary' => $category === $key])>{{ $name }} / {{ $nameBn }} ({{ $counts[$key] ?? 0 }})</a>
+            <a href="/notices/category/{{ $key }}" @class([$tab, 'border-primary text-primary' => $category === $key])>{{ $name }} / {{ $nameBn }} ({{ $counts[$key] ?? 0 }})</a>
         @endforeach
     </nav>
     <ul class="mt-5 space-y-3">@foreach ($notices as $notice)@include('seo.partials.notice-card')@endforeach</ul>

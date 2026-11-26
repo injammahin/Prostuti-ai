@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useRef } from "react"
-import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router"
-import { BACKEND_URL, blogApi, modelTestsApi, pastPapersApi, siteApi } from "@/lib/api"
+import { BrowserRouter, Navigate, Route, Routes, useLocation, useNavigate } from "react-router"
+import { authApi, BACKEND_URL, blogApi, landingSource, modelTestsApi, pastPapersApi, siteApi, tokenStore } from "@/lib/api"
 import { prefetchApi } from "@/lib/use-api"
 import { useNoIndex } from "@/lib/seo"
 import { TopLoadingBar } from "@/components/Loaders"
@@ -9,6 +9,9 @@ import LazyToaster from "@/components/LazyToaster"
 import { AppProvider, useApp } from "@/lib/app-context"
 import PublicLayout from "@/layouts/PublicLayout"
 import LazySignupPrompt from "@/components/LazySignupPrompt"
+
+// Note where this visit came from (shared link tag or referring site) before any in-app navigation changes the URL.
+landingSource()
 
 // Pages load on demand; the ones a visitor can open next are fetched in the background after the first paint,
 // so moving between menu items never waits for a download. The app's own pages only for people heading there.
@@ -90,6 +93,58 @@ function MembersOnly({ children }) {
   return children
 }
 
+/**
+ * Opened by "Log in as" in the admin panel: signs only this tab in as the student.
+ * The short-lived token arrives in the #fragment and is removed from the address bar at once.
+ */
+function Impersonate() {
+  const { login } = useApp()
+  const nav = useNavigate()
+  useEffect(() => {
+    const token = new URLSearchParams(window.location.hash.slice(1)).get("token")
+    window.history.replaceState(null, "", window.location.pathname)
+    if (!token) {
+      nav("/", { replace: true })
+      return
+    }
+    tokenStore.startImpersonation(token)
+    authApi
+      .me()
+      .then(({ data }) => {
+        login(data, token)
+        nav("/app", { replace: true })
+      })
+      .catch(() => {
+        tokenStore.set(null)
+        nav("/", { replace: true })
+      })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+  return <Loader />
+}
+
+/** Shown on every page of a "Log in as" tab, so it is never mistaken for the admin's own session. */
+function ImpersonationBar() {
+  const { user } = useApp()
+  if (!tokenStore.impersonating()) return null
+  return (
+    <div className="sticky top-0 z-[60] flex items-center justify-center gap-3 bg-amber-500 px-3 py-1.5 text-center text-xs font-semibold text-black">
+      <span>Admin view: you are logged in as {user?.name || "a student"}{user?.email ? ` (${user.email})` : ""}.</span>
+      <button
+        type="button"
+        className="rounded-full bg-black/80 px-3 py-0.5 text-white hover:bg-black"
+        onClick={() => {
+          tokenStore.set(null)
+          window.close()
+          window.location.replace("/")
+        }}
+      >
+        Exit
+      </button>
+    </div>
+  )
+}
+
 /** The admin panel lives on the Laravel backend (Filament). */
 function GoToAdminPanel() {
   window.location.replace(`${BACKEND_URL}/admin`)
@@ -158,6 +213,7 @@ function AppRoutes() {
           <Route index element={<Landing />} />
           <Route path="daily" element={<DailyQuiz />} />
           <Route path="notices" element={<NoticeBoard />} />
+          <Route path="notices/category/:category" element={<NoticeBoard />} />
           <Route path="notices/:slug" element={<NoticePage />} />
           <Route path="contact" element={<ServerPage />} />
           <Route path="questions/*" element={<ServerPage />} />
@@ -180,6 +236,7 @@ function AppRoutes() {
         </Route>
         <Route path="bcs-papers" element={<OpenBcsPapers />} />
         <Route path="bcs-papers/:number" element={<OpenBcsPapers />} />
+        <Route path="impersonate" element={<Impersonate />} />
         <Route path="login" element={<Login mode="login" />} />
         <Route path="signup" element={<Login mode="signup" />} />
         <Route path="onboarding" element={<RequireAuth><Onboarding /></RequireAuth>} />
@@ -229,6 +286,7 @@ export default function App() {
       <BrowserRouter>
         <TopLoadingBar />
         <PageTracker />
+        <ImpersonationBar />
         <Preloader />
         <AppRoutes />
         <LazySignupPrompt />

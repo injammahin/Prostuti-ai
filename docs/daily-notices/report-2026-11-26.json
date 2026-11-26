@@ -1,0 +1,748 @@
+[
+    {
+        "org": "Civil Surgeon Office Sylhet",
+        "posts": 8,
+        "vacancies": 178,
+        "deadline": "2026-12-25 16:00",
+        "link": "https://cssylhet.teletalk.com.bd/cssylhet2026/",
+        "hot": true,
+        "category": "govt",
+        "slug": "civil-surgeon-office-sylhet-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "circular PDF name too long to store; source set to the portal page that links it",
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://cssylhet.teletalk.com.bd/cssylhet2026/",
+        "ref": ""
+    },
+    {
+        "org": "Taxes Zone Bogura",
+        "posts": 6,
+        "vacancies": 41,
+        "deadline": "2026-12-10 17:00",
+        "link": "https://taxbog.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "taxes-zone-bogura-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://taxbog.teletalk.com.bd/docs/20261123.pdf",
+        "ref": ""
+    },
+    {
+        "org": "BIWTC",
+        "posts": 4,
+        "vacancies": 33,
+        "deadline": "2026-12-24 17:00",
+        "link": "https://biwtc.teletalk.com.bd/",
+        "hot": false,
+        "category": "autonomous",
+        "slug": "biwtc-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://biwtc.teletalk.com.bd/docs/BIWTC_final.pdf",
+        "ref": ""
+    },
+    {
+        "org": "DC Office Sirajganj",
+        "posts": 6,
+        "vacancies": 43,
+        "deadline": "2026-12-15 17:00",
+        "link": "https://dcsirajganj.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "dc-office-sirajganj-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://dcsirajganj.teletalk.com.bd/docs/DCSirajganj_final.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Divisional Commissioner Office Barishal",
+        "posts": 4,
+        "vacancies": 11,
+        "deadline": "2026-12-24 17:00",
+        "link": "http://divcombsl.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "divisional-commissioner-office-barishal-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "http://divcombsl.teletalk.com.bd/docs/20261125.pdf",
+        "ref": ""
+    },
+    {
+        "org": "In-Service Training Center Netrokona",
+        "posts": 1,
+        "vacancies": 1,
+        "deadline": "2026-12-10 17:00",
+        "link": "https://itcnetrokona.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "in-service-training-center-netrokona-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://itcnetrokona.teletalk.com.bd/docs/20261122.pdf",
+        "ref": ""
+    },
+    {
+        "org": "DC Office Rangamati",
+        "posts": 1,
+        "vacancies": 6,
+        "deadline": "2026-12-21 16:00",
+        "link": "https://dcrangamati.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "dc-office-rangamati-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "circular PDF link (portal has a sub-page; source set to the portal)",
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://dcrangamati.teletalk.com.bd/",
+        "ref": ""
+    },
+    {
+        "org": "BEPZA",
+        "posts": 3,
+        "vacancies": 332,
+        "deadline": "2026-12-24 17:00",
+        "link": "https://bepza.teletalk.com.bd/",
+        "hot": true,
+        "category": "autonomous",
+        "slug": "bepza-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "fee",
+            "grades of some posts"
+        ],
+        "source": "https://bepza.teletalk.com.bd/bepza202611/docs/20261119.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Dhaka South City Corporation",
+        "posts": 1,
+        "vacancies": 6,
+        "deadline": "2026-12-15 16:00",
+        "link": "https://dscc.teletalk.com.bd/dscc_2024_2026/",
+        "hot": true,
+        "category": "autonomous",
+        "slug": "dhaka-south-city-corporation-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://dscc.teletalk.com.bd/dscc_2024_2026/docs/DSCC20261118.pdf",
+        "ref": "46.207.000.03.03.3074.2024-947 Dated: 18 November 2026"
+    },
+    {
+        "org": "Taxes Zone-10 Dhaka",
+        "posts": 7,
+        "vacancies": 54,
+        "deadline": "2026-12-21 16:00",
+        "link": "https://tax10.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "taxes-zone-10-dhaka-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://tax10.teletalk.com.bd/docs/TAX1020261117.pdf",
+        "ref": "208.01.0085.001.11.164.12.678 17 November 2026"
+    },
+    {
+        "org": "Taxes Zone-15 Dhaka",
+        "posts": 7,
+        "vacancies": 42,
+        "deadline": "2026-12-14 16:00",
+        "link": "https://tax15.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "taxes-zone-15-dhaka-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://tax15.teletalk.com.bd/docs/TAX1520261118.pdf",
+        "ref": "08.01.0000.515.001.11.0044.26.2980 18 November 2026"
+    },
+    {
+        "org": "Taxes Zone-14 Dhaka",
+        "posts": 6,
+        "vacancies": 49,
+        "deadline": "2026-12-13 17:00",
+        "link": "https://tax14.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "taxes-zone-14-dhaka-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://tax14.teletalk.com.bd/docs/TAX1420261115.pdf",
+        "ref": "08.01.2666.514.001.11.0001.26.205 15 November 2026"
+    },
+    {
+        "org": "Bangladesh Competition Commission",
+        "posts": 2,
+        "vacancies": 10,
+        "deadline": "2026-12-21 17:00",
+        "link": "https://ccb.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "bangladesh-competition-commission-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://ccb.teletalk.com.bd/docs/CCB20261116.pdf",
+        "ref": "26.12.0000.104.108.018.002.23(2nd)-460 16 November 2026"
+    },
+    {
+        "org": "Bangladesh Petroleum Corporation",
+        "posts": 14,
+        "vacancies": 19,
+        "deadline": "2026-12-19 17:00",
+        "link": "https://bpc.teletalk.com.bd/",
+        "hot": true,
+        "category": "autonomous",
+        "slug": "bangladesh-petroleum-corporation-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://bpc.teletalk.com.bd/bpc2026_officer/docs/20261119.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Bangladesh Armed Services Board",
+        "posts": 1,
+        "vacancies": 4,
+        "deadline": "2026-12-17 17:00",
+        "link": "https://basb.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "bangladesh-armed-services-board-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://basb.teletalk.com.bd/docs/BASB20261028.pdf",
+        "ref": ""
+    },
+    {
+        "org": "DC Office Jashore",
+        "posts": 5,
+        "vacancies": 23,
+        "deadline": "2026-12-17 17:00",
+        "link": "https://dcjashore.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "dc-office-jashore-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://dcjashore.teletalk.com.bd/docs/dcja.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Divisional Commissioner Office Khulna",
+        "posts": 2,
+        "vacancies": 8,
+        "deadline": "2026-12-17 17:00",
+        "link": "https://divcomkhul.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "divisional-commissioner-office-khulna-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://divcomkhul.teletalk.com.bd/docs/20261117.pdf",
+        "ref": ""
+    },
+    {
+        "org": "SP Office Lalmonirhat",
+        "posts": 3,
+        "vacancies": 5,
+        "deadline": "2026-12-17 17:00",
+        "link": "https://splalmonirhat.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "sp-office-lalmonirhat-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://splalmonirhat.teletalk.com.bd/docs/20261115.pdf",
+        "ref": ""
+    },
+    {
+        "org": "NACTAR",
+        "posts": 7,
+        "vacancies": 9,
+        "deadline": "2026-12-07 16:00",
+        "link": "https://nactar.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "nactar-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "circular PDF link (portal has a sub-page; source set to the portal)",
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://nactar.teletalk.com.bd/",
+        "ref": ""
+    },
+    {
+        "org": "Ministry of Defence Constabulary",
+        "posts": 1,
+        "vacancies": 2,
+        "deadline": "2026-11-30 17:00",
+        "link": "https://modcr.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "ministry-of-defence-constabulary-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://modcr.teletalk.com.bd/docs/MODCR20260709.pdf",
+        "ref": ""
+    },
+    {
+        "org": "TCB",
+        "posts": 5,
+        "vacancies": 10,
+        "deadline": "2026-12-08 16:00",
+        "link": "https://tcb.teletalk.com.bd/tcb_2026/",
+        "hot": false,
+        "category": "autonomous",
+        "slug": "tcb-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://tcb.teletalk.com.bd/tcb_2026/docs/TCB20261116.pdf",
+        "ref": "26.05.0000.005.011.90.26-440, Dated: 16-11-2026"
+    },
+    {
+        "org": "NACTAR",
+        "posts": 8,
+        "vacancies": 14,
+        "deadline": "2026-12-06 16:00",
+        "link": "https://nactar.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "nactar-job-circular-2026-2",
+        "result": "DRAFT",
+        "unclear": [
+            "circular PDF link (portal has a sub-page; source set to the portal)",
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://nactar.teletalk.com.bd/",
+        "ref": ""
+    },
+    {
+        "org": "Taxes Zone Dinajpur",
+        "posts": 6,
+        "vacancies": 27,
+        "deadline": "2026-12-06 17:00",
+        "link": "https://taxdin.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "taxes-zone-dinajpur-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://taxdin.teletalk.com.bd/docs/TAXDIN20261105.pdf",
+        "ref": "08.01.2700.542.001.26.0011.2026.1072 05 November 2026"
+    },
+    {
+        "org": "Department of Agricultural Marketing",
+        "posts": 8,
+        "vacancies": 97,
+        "deadline": "2026-12-10 16:00",
+        "link": "https://dam.teletalk.com.bd/",
+        "hot": true,
+        "category": "govt",
+        "slug": "department-of-agricultural-marketing-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://dam.teletalk.com.bd/docs/DAM20261109.pdf",
+        "ref": "12.02.0000.002.11.291.26.1026 09 November 2026"
+    },
+    {
+        "org": "Taxes Zone-18 Dhaka",
+        "posts": 7,
+        "vacancies": 65,
+        "deadline": "2026-12-06 17:00",
+        "link": "https://tax18.teletalk.com.bd/tax18_2026/",
+        "hot": false,
+        "category": "govt",
+        "slug": "taxes-zone-18-dhaka-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://tax18.teletalk.com.bd/tax18_2026/docs/TAX1820261110.pdf",
+        "ref": "08.01.0000.518.101.11.0100.26.278 10 November 2026"
+    },
+    {
+        "org": "Dhaka Metropolitan Police",
+        "posts": 5,
+        "vacancies": 20,
+        "deadline": "2026-11-30 17:00",
+        "link": "https://dmp.teletalk.com.bd/",
+        "hot": true,
+        "category": "govt",
+        "slug": "dhaka-metropolitan-police-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://dmp.teletalk.com.bd/docs/20261104.pdf",
+        "ref": ""
+    },
+    {
+        "org": "DC Office Khagrachhari",
+        "posts": 5,
+        "vacancies": 16,
+        "deadline": "2026-12-02 16:00",
+        "link": "http://dckc.teletalk.com.bd/dckc_2024_2026/",
+        "hot": false,
+        "category": "govt",
+        "slug": "dc-office-khagrachhari-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "http://dckc.teletalk.com.bd/dckc_2024_2026/docs/re_circular2026.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Ministry of Defence",
+        "posts": 3,
+        "vacancies": 10,
+        "deadline": "2026-12-03 17:00",
+        "link": "https://mod.teletalk.com.bd/mod_2026/",
+        "hot": false,
+        "category": "govt",
+        "slug": "ministry-of-defence-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://mod.teletalk.com.bd/mod_2026/docs/MOD20261108.pdf",
+        "ref": "23.00.0000.000.110.11.0067.26.1515 08 November 2026"
+    },
+    {
+        "org": "Bangladesh Parliament Secretariat",
+        "posts": 28,
+        "vacancies": 155,
+        "deadline": "2026-12-02 12:00",
+        "link": "https://bps.teletalk.com.bd/",
+        "hot": true,
+        "category": "govt",
+        "slug": "bangladesh-parliament-secretariat-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "age limit",
+            "fee",
+            "grades of some posts"
+        ],
+        "source": "https://bps.teletalk.com.bd/docs/20261110.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Dhaka South City Corporation",
+        "posts": 9,
+        "vacancies": 22,
+        "deadline": "2026-12-02 17:00",
+        "link": "https://dscc.teletalk.com.bd/",
+        "hot": true,
+        "category": "autonomous",
+        "slug": "dhaka-south-city-corporation-job-circular-2026-2",
+        "result": "DRAFT",
+        "unclear": [
+            "circular PDF link (portal has a sub-page; source set to the portal)",
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://dscc.teletalk.com.bd/",
+        "ref": ""
+    },
+    {
+        "org": "Bangladesh Post Office",
+        "posts": 36,
+        "vacancies": 169,
+        "deadline": "2026-12-10 17:00",
+        "link": "http://dgbpo.teletalk.com.bd/",
+        "hot": true,
+        "category": "govt",
+        "slug": "bangladesh-post-office-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "age limit",
+            "fee",
+            "grades of some posts"
+        ],
+        "source": "http://dgbpo.teletalk.com.bd/dgbpo2026/docs/20261108.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Taxes Zone-17 Dhaka",
+        "posts": 7,
+        "vacancies": 55,
+        "deadline": "2026-11-30 17:00",
+        "link": "https://tax17.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "taxes-zone-17-dhaka-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://tax17.teletalk.com.bd/docs/TAX172026.pdf",
+        "ref": ""
+    },
+    {
+        "org": "DC Office Chandpur",
+        "posts": 4,
+        "vacancies": 14,
+        "deadline": "2026-12-09 17:00",
+        "link": "https://dcchandpur.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "dc-office-chandpur-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://dcchandpur.teletalk.com.bd/docs/DCChandpur_final.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Agriculture Information Service",
+        "posts": 6,
+        "vacancies": 15,
+        "deadline": "2026-12-03 17:00",
+        "link": "https://ais.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "agriculture-information-service-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://ais.teletalk.com.bd/docs/20261029.pdf",
+        "ref": ""
+    },
+    {
+        "org": "DC Office Magura",
+        "posts": 7,
+        "vacancies": 13,
+        "deadline": "2026-12-07 17:00",
+        "link": "https://dcmagura.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "dc-office-magura-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://dcmagura.teletalk.com.bd/docs/Final_Nezarat_mlss.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Bangladesh Fisheries Research Institute",
+        "posts": 11,
+        "vacancies": 81,
+        "deadline": "2026-12-10 17:00",
+        "link": "https://fri.teletalk.com.bd/",
+        "hot": false,
+        "category": "autonomous",
+        "slug": "bangladesh-fisheries-research-institute-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://fri.teletalk.com.bd/docs/FRI_final.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Bangladesh Cable Shilpa",
+        "posts": 16,
+        "vacancies": 24,
+        "deadline": "2026-11-26 17:00",
+        "link": "https://bcsl.teletalk.com.bd/",
+        "hot": false,
+        "category": "autonomous",
+        "slug": null,
+        "result": "SKIPPED: closes today (26 Nov, 5:00 PM) — closed before it could be published",
+        "unclear": []
+    },
+    {
+        "org": "DC Office Bagerhat",
+        "posts": 8,
+        "vacancies": 39,
+        "deadline": "2026-12-04 17:00",
+        "link": "https://dcbagerhat.teletalk.com.bd/dcbagerhat202609/",
+        "hot": false,
+        "category": "govt",
+        "slug": "dc-office-bagerhat-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://dcbagerhat.teletalk.com.bd/dcbagerhat202609/docs/20261103.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Bangladesh Hi-Tech Park Authority",
+        "posts": 3,
+        "vacancies": 33,
+        "deadline": "2026-12-02 16:00",
+        "link": "https://bhtpa.teletalk.com.bd/bhtpa2026V1/index.php",
+        "hot": false,
+        "category": "autonomous",
+        "slug": "bangladesh-hi-tech-park-authority-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://bhtpa.teletalk.com.bd/bhtpa2026V1/docs/bhtpa2026v1.pdf",
+        "ref": ""
+    },
+    {
+        "org": "DC Office Rajbari",
+        "posts": 1,
+        "vacancies": 5,
+        "deadline": "2026-11-30 16:00",
+        "link": "https://dcrajbari.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "dc-office-rajbari-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://dcrajbari.teletalk.com.bd/docs/DCRAJBARI202511_Nezarot_final.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Dhaka South City Corporation",
+        "posts": 6,
+        "vacancies": 18,
+        "deadline": "2026-11-26 17:00",
+        "link": "https://dscc.teletalk.com.bd/dscc_2025_2026/",
+        "hot": true,
+        "category": "autonomous",
+        "slug": null,
+        "result": "SKIPPED: closes today (26 Nov, 5:00 PM) — closed before it could be published",
+        "unclear": []
+    },
+    {
+        "org": "Ashuganj Power Station Company",
+        "posts": 15,
+        "vacancies": 90,
+        "deadline": "2026-11-30 17:00",
+        "link": "https://apscl.teletalk.com.bd/apscl2026/",
+        "hot": true,
+        "category": "autonomous",
+        "slug": "ashuganj-power-station-company-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "https://apscl.teletalk.com.bd/apscl2026/docs/20261029.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Department of National Savings",
+        "posts": 8,
+        "vacancies": 95,
+        "deadline": "2026-11-26 16:00",
+        "link": "https://nsd.teletalk.com.bd/",
+        "hot": true,
+        "category": "govt",
+        "slug": null,
+        "result": "SKIPPED: closes today (26 Nov, 4:00 PM) — closed before it could be published",
+        "unclear": []
+    },
+    {
+        "org": "SP Office Sherpur",
+        "posts": 3,
+        "vacancies": 6,
+        "deadline": "2026-11-26 16:00",
+        "link": "https://spsherpur.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": null,
+        "result": "SKIPPED: closes today (26 Nov, 4:00 PM) — closed before it could be published",
+        "unclear": []
+    },
+    {
+        "org": "DC Office Noakhali",
+        "posts": 4,
+        "vacancies": 22,
+        "deadline": "2026-11-26 17:00",
+        "link": "http://dcnoakhali.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": null,
+        "result": "SKIPPED: closes today (26 Nov, 5:00 PM) — closed before it could be published",
+        "unclear": []
+    },
+    {
+        "org": "Petrobangla",
+        "posts": 35,
+        "vacancies": 656,
+        "deadline": "2026-11-30 17:00",
+        "link": "http://bogmc.teletalk.com.bd/",
+        "hot": true,
+        "category": "autonomous",
+        "slug": "petrobangla-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "age limit",
+            "fee",
+            "grades of some posts"
+        ],
+        "source": "http://bogmc.teletalk.com.bd/bogmc_2026/docs/20260929.pdf",
+        "ref": ""
+    },
+    {
+        "org": "Civil Surgeon Office Rajshahi(CSRAJSHAHI)",
+        "posts": 1,
+        "vacancies": 1,
+        "deadline": "2026-12-14 17:00",
+        "link": "http://csrajshahi.teletalk.com.bd/",
+        "hot": false,
+        "category": "govt",
+        "slug": "civil-surgeon-office-rajshahi-csrajshahi-job-circular-2026",
+        "result": "DRAFT",
+        "unclear": [
+            "circular PDF link (portal has a sub-page; source set to the portal)",
+            "start date in the feed is 24 Nov 2025 (looks wrong)",
+            "eligibility, age limit, fee and grades (scanned circular, not read)"
+        ],
+        "source": "http://csrajshahi.teletalk.com.bd/",
+        "ref": ""
+    }
+]

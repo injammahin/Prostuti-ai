@@ -8,31 +8,36 @@ namespace App\Services;
 class PublicPages
 {
     /**
-     * The address of the page's content: a notice list keeps its section and page number, anything else is dropped.
+     * The address of the page's content. A notice list is "/notices" or "/notices/category/{key}", with "?page=N"
+     * after the first page; any other query is dropped.
      *
      * @param  array<string, mixed>  $query
      */
     public static function address(string $path, array $query = []): string
     {
-        if ($path !== '/notices') {
+        if (preg_match('#^/notices/category/([a-z0-9-]+)$#', $path, $matches)) {
+            $category = $matches[1];
+        } elseif ($path === '/notices') {
+            $category = is_string($query['category'] ?? null) && $query['category'] !== '' ? $query['category'] : null;
+        } else {
             return $path;
         }
 
-        $kept = array_filter([
-            'category' => is_string($query['category'] ?? null) ? $query['category'] : null,
-            'page' => is_numeric($query['page'] ?? null) && (int) $query['page'] > 1 ? (int) $query['page'] : null,
-        ]);
+        $base = $category ? "/notices/category/{$category}" : '/notices';
+        $page = is_numeric($query['page'] ?? null) && (int) $query['page'] > 1 ? (int) $query['page'] : null;
 
-        return $kept ? $path.'?'.http_build_query($kept) : $path;
+        return $page ? "{$base}?page={$page}" : $base;
     }
 
     public static function resolve(string $address): ?PublicPage
     {
         $path = (string) strtok($address, '?');
         parse_str((string) parse_url($address, PHP_URL_QUERY), $query);
+        $page = (int) ($query['page'] ?? 1);
 
         return match (true) {
-            $path === '/notices' => NoticePages::list($query['category'] ?? null, (int) ($query['page'] ?? 1)),
+            $path === '/notices' => NoticePages::list(null, $page),
+            (bool) preg_match('#^/notices/category/([a-z0-9-]+)$#', $path, $matches) => NoticePages::list($matches[1], $page),
             str_starts_with($path, '/notices/') => NoticePages::show(substr($path, strlen('/notices/'))),
             str_starts_with($path, '/questions/') => QuestionPages::resolve($path),
             $path === '/contact' => self::contact(),

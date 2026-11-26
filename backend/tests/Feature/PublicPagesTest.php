@@ -70,7 +70,7 @@ class PublicPagesTest extends TestCase
     public function test_a_notice_has_both_languages_and_its_official_link(): void
     {
         Exam::factory()->create(['slug' => 'ntrca']);
-        $notice = Notice::factory()->create(['title' => 'Exam on 11 December', 'title_bn' => 'পরীক্ষা ১১ ডিসেম্বর', 'summary_bn' => 'বাংলা সারাংশ', 'url' => 'https://bpsc.gov.bd/x']);
+        $notice = Notice::factory()->create(['type' => 'schedule', 'title' => 'Exam on 11 December', 'title_bn' => 'পরীক্ষা ১১ ডিসেম্বর', 'summary_bn' => 'বাংলা সারাংশ', 'url' => 'https://bpsc.gov.bd/x']);
 
         $this->get("/notices/{$notice->slug}")->assertOk()
             ->assertSee('<title>Exam on 11 December | পরীক্ষা ১১ ডিসেম্বর | bd3schools</title>', false)

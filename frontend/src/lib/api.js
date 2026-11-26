@@ -4,17 +4,25 @@ export const BACKEND_URL = API_URL.replace(/\/api\/v1$/, "")
 export const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID || ""
 
 const TOKEN_KEY = "bd3schools:token"
+// "Log in as" from the admin panel: the student's token lives only in that browser tab (sessionStorage),
+// so the admin's own website sign-in in other tabs is left alone.
+const IMPERSONATION_KEY = "bd3schools:impersonation-token"
 
 export const tokenStore = {
   get: () => {
     try {
-      return localStorage.getItem(TOKEN_KEY) || localStorage.getItem("prostuti:token")
+      return sessionStorage.getItem(IMPERSONATION_KEY) || localStorage.getItem(TOKEN_KEY) || localStorage.getItem("prostuti:token")
     } catch {
       return null
     }
   },
   set: (token) => {
     try {
+      if (sessionStorage.getItem(IMPERSONATION_KEY)) {
+        if (token) sessionStorage.setItem(IMPERSONATION_KEY, token)
+        else sessionStorage.removeItem(IMPERSONATION_KEY)
+        return
+      }
       if (token) {
         localStorage.setItem(TOKEN_KEY, token)
       } else {
@@ -25,6 +33,38 @@ export const tokenStore = {
       /* storage unavailable */
     }
   },
+  /** True in a tab opened with "Log in as" from the admin panel. */
+  impersonating: () => {
+    try {
+      return Boolean(sessionStorage.getItem(IMPERSONATION_KEY))
+    } catch {
+      return false
+    }
+  },
+  startImpersonation: (token) => {
+    sessionStorage.setItem(IMPERSONATION_KEY, token)
+  },
+}
+
+/**
+ * Where this visit started (kept for the browser tab): the ?ref= / ?utm_source= tag of a shared link,
+ * or the site that sent the visitor. Lets the admin see which platform quiz takers came from.
+ */
+let memorySource = null
+export function landingSource() {
+  if (memorySource) return memorySource
+  try {
+    const saved = sessionStorage.getItem("bd3schools:source")
+    if (saved) return (memorySource = JSON.parse(saved))
+  } catch {}
+  const params = new URLSearchParams(window.location.search)
+  const tag = params.get("ref") || params.get("utm_source") || params.get("src") || undefined
+  const referrer = document.referrer || undefined
+  memorySource = { source: tag?.slice(0, 30), referrer: referrer?.slice(0, 255) }
+  try {
+    sessionStorage.setItem("bd3schools:source", JSON.stringify(memorySource))
+  } catch {}
+  return memorySource
 }
 
 /** A random id per browser so the admin can count unique visitors (no personal data). */
@@ -197,13 +237,16 @@ export const dailyQuizApi = {
 export const siteApi = {
   settings: () => api("/settings"),
   trackPageView: (path, referrer) => api("/track", { method: "POST", silent: true, body: { visitor_id: visitorId(), path, referrer: referrer || undefined } }).catch(() => {}),
-  dailyQuizCompleted: (score, total, seconds) => api("/daily-quiz/complete", { method: "POST", silent: true, body: { score, total, seconds } }).catch(() => {}),
+  dailyQuizCompleted: (score, total, seconds, slot) => {
+    const { source, referrer } = landingSource()
+    return api("/daily-quiz/complete", { method: "POST", silent: true, body: { score, total, seconds, slot, source, referrer } }).catch(() => {})
+  },
 }
 
 export const adminApi = {
-  /** Opens the admin panel already signed in (one-time link from the server). */
+  /** Opens the admin panel. It has its own login (the admin email and password from the server's .env). */
   openPanel: async ({ newTab = false } = {}) => {
-    const { url } = await api("/admin/sso-link", { method: "POST" })
+    const url = `${BACKEND_URL}/admin`
     if (newTab) window.open(url, "_blank", "noopener")
     else window.location.assign(url)
   },

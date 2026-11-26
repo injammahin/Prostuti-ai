@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\AdminSsoController;
+use App\Http\Controllers\AdminImpersonationController;
+use App\Http\Controllers\NoticePreviewController;
 use App\Http\Controllers\NoticeShareImageController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,9 +23,13 @@ Route::get('/robots.txt', function () {
     ]);
 });
 
-Route::get('/admin-sso/{user}', [AdminSsoController::class, 'enter'])
-    ->middleware(['signed', 'throttle:10,1,admin-sso'])
-    ->name('admin.sso');
+Route::get('/admin/notice-preview/{notice}', NoticePreviewController::class)
+    ->middleware('throttle:60,1,notice-preview')
+    ->name('admin.notice-preview');
+
+Route::get('/admin/login-as/{user}', AdminImpersonationController::class)
+    ->middleware(['signed', 'throttle:20,1,login-as'])
+    ->name('admin.login-as');
 
 Route::middleware('auth')->controller(NoticeShareImageController::class)->group(function () {
     Route::get('/admin/share-images', 'index')->name('share-images.index');

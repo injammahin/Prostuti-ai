@@ -35,6 +35,9 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->configureAuthRateLimits();
         $this->refreshPublicPages();
+
+        // A deploy that runs "php artisan optimize" (or optimize:clear) also empties the page cache.
+        $this->optimizes(optimize: 'seo:refresh', clear: 'seo:refresh', key: 'public-pages');
     }
 
     /**

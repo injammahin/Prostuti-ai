@@ -13,7 +13,7 @@ class AdminQuestionBankTest extends TestCase
 
     public function test_admin_question_bank_pages_load(): void
     {
-        $admin = User::factory()->create(['is_admin' => true]);
+        $admin = User::factory()->admin()->create();
         $question = Question::factory()->create();
 
         $this->actingAs($admin)->get('/admin/questions')->assertOk();

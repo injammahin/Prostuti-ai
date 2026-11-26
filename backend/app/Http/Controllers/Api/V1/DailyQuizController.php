@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\QuestionResource;
+use App\Models\DailyQuizAttempt;
 use App\Models\Question;
 use App\Models\Setting;
 use Illuminate\Http\JsonResponse;
@@ -24,7 +25,7 @@ class DailyQuizController extends Controller
         $now = now($tz);
 
         // 12-hour slot: e.g. "2026-11-25-am" (00:00 to 11:59) or "2026-11-25-pm" (12:00 to 23:59)
-        $slot = $now->format('Y-m-d').'-'.($now->hour < 12 ? 'am' : 'pm');
+        $slot = DailyQuizAttempt::slotFor($now);
         $version = (int) Cache::get('daily-quiz:manual-version', 0);
         $size = (int) (Setting::get('daily_quiz_size') ?: self::QUESTION_COUNT);
 
@@ -74,7 +75,7 @@ class DailyQuizController extends Controller
     public function reshuffle(Request $request): JsonResponse
     {
         $user = $request->user();
-        if (! $user || (! $user->is_admin && $user->email !== 'mahin@gmail.com')) {
+        if (! $user || ! $user->is_admin) {
             abort(403, 'Unauthorized. Admin access required.');
         }
 

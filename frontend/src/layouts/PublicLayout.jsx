@@ -24,6 +24,7 @@ const links = [
   ["/calendar", "calendar"],
   ["/exams", "exams"],
   ["/bcs", "bcsPapers"],
+  ["/model-tests", "tests"],
   ["/blog", "blog"],
 ]
 
@@ -80,15 +81,15 @@ export default function PublicLayout() {
       >
         <div className="relative mx-auto flex h-16 max-w-6xl items-center gap-4 px-4 md:h-[4.5rem]">
           <Logo />
-          <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 lg:flex">
+          <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-0.5 whitespace-nowrap xl:flex">
             {links.map(([to, k]) => (
               <NavLink
                 key={to}
                 to={to}
                 className={({ isActive }) =>
                   cn(
-                    "relative rounded-full px-3.5 py-2 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground",
-                    isActive && "text-primary after:absolute after:inset-x-3.5 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-primary"
+                    "relative shrink-0 rounded-full px-3 py-2 text-sm font-semibold whitespace-nowrap text-muted-foreground transition-colors hover:text-foreground 2xl:px-3.5",
+                    isActive && "text-primary after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-primary 2xl:after:inset-x-3.5"
                   )
                 }
               >
@@ -111,7 +112,7 @@ export default function PublicLayout() {
                 </Button>
               </>
             )}
-            <button className="grid size-10 place-items-center rounded-full hover:bg-muted lg:hidden" onPointerDown={warmMenu} onClick={() => setOpen(true)} aria-label="Open menu">
+            <button className="grid size-10 place-items-center rounded-full hover:bg-muted xl:hidden" onPointerDown={warmMenu} onClick={() => setOpen(true)} aria-label="Open menu">
               <FontAwesomeIcon icon={faBars} />
             </button>
           </div>

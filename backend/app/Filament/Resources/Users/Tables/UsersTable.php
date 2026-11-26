@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\Users\Tables;
 
 use App\Filament\Resources\Users\Schemas\UserForm;
+use App\Filament\Resources\Users\UserResource;
 use App\Models\User;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
@@ -11,7 +12,6 @@ use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\SelectFilter;
-use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 
 class UsersTable
@@ -41,9 +41,6 @@ class UsersTable
                     ->boolean()
                     ->getStateUsing(fn (User $record): bool => $record->google_id !== null)
                     ->toggleable(),
-                IconColumn::make('is_admin')
-                    ->label('Admin')
-                    ->boolean(),
                 TextColumn::make('last_login_at')
                     ->label('Last active')
                     ->since()
@@ -58,10 +55,9 @@ class UsersTable
                 SelectFilter::make('main_exam')
                     ->label('Preparing for')
                     ->options(UserForm::EXAMS),
-                TernaryFilter::make('is_admin')
-                    ->label('Admins'),
             ])
             ->recordActions([
+                UserResource::loginAsAction(),
                 ViewAction::make(),
                 EditAction::make(),
             ])

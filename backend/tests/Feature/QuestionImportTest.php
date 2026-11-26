@@ -63,7 +63,7 @@ TXT;
 
     public function test_admin_can_import_from_the_questions_page(): void
     {
-        $this->actingAs(User::factory()->create(['is_admin' => true]));
+        $this->actingAs(User::factory()->admin()->create());
         $subject = Subject::factory()->create();
 
         Livewire::test(ListQuestions::class)

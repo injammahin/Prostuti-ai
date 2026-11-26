@@ -30,7 +30,7 @@ class NoticesTest extends TestCase
 
     public function test_admin_can_open_the_notice_pages(): void
     {
-        $admin = User::factory()->create(['is_admin' => true]);
+        $admin = User::factory()->admin()->create();
         $notice = Notice::factory()->create();
 
         $this->actingAs($admin)->get('/admin/notices')->assertOk();

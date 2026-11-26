@@ -18,12 +18,11 @@ use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Components\Utilities\Set;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
-use Illuminate\Support\Str;
 
 class NoticeForm
 {
     /** What usually stays the same between two notices of one organisation. */
-    private const COPIED = ['exam_id', 'category', 'eligibility', 'age_limit', 'fee', 'how_to_apply'];
+    private const COPIED = ['org_bn', 'exam_id', 'category', 'eligibility', 'age_limit', 'fee', 'how_to_apply'];
 
     public static function configure(Schema $schema): Schema
     {
@@ -33,7 +32,7 @@ class NoticeForm
                 Group::make()->columnSpan(2)->schema([
                     Section::make('Notice')
                         ->icon(Heroicon::OutlinedMegaphone)
-                        ->description('Only the organisation and the English title are required. Everything else can be added later.')
+                        ->description('Only the organisation and the English title are required. New notices are saved as drafts: preview them, then publish.')
                         ->columns(2)
                         ->schema([
                             TextInput::make('org')
@@ -51,6 +50,13 @@ class NoticeForm
                                         ->icon(Heroicon::OutlinedDocumentDuplicate)
                                         ->action(fn (Get $get, Set $set, ?Notice $record) => self::copyPrevious($get, $set, $record)),
                                 ),
+                            TextInput::make('org_bn')
+                                ->label('Organisation (বাংলা)')
+                                ->placeholder('যেমন: বাংলাদেশ ব্যাংক')
+                                ->datalist(fn (): array => Notice::query()->whereNotNull('org_bn')->distinct()->orderBy('org_bn')->pluck('org_bn')->all())
+                                ->trim()
+                                ->maxLength(150)
+                                ->helperText('Used in the page title: "<this> নিয়োগ বিজ্ঞপ্তি ২০২৬".'),
                             Select::make('type')
                                 ->options(Notice::TYPES)
                                 ->default('circular')
@@ -58,33 +64,45 @@ class NoticeForm
                                 ->native(false),
                             TextInput::make('title')
                                 ->label('Title (English)')
+                                ->placeholder('e.g. Assistant Director and Officer posts')
                                 ->required()
                                 ->maxLength(255)
-                                ->columnSpanFull()
-                                ->live(onBlur: true)
-                                ->afterStateUpdated(function (?string $state, Set $set, string $operation): void {
-                                    if ($operation === 'create' && $state) {
-                                        $set('slug', self::freeSlug($state));
-                                    }
-                                }),
+                                ->columnSpanFull(),
                             TextInput::make('title_bn')
                                 ->label('Title (বাংলা)')
                                 ->columnSpanFull()
                                 ->maxLength(255),
                             TextInput::make('url')
-                                ->label('Official link')
+                                ->label('Official source URL (the circular)')
                                 ->url()
-                                ->columnSpanFull()
                                 ->maxLength(255)
                                 ->placeholder('https://bpsc.gov.bd/...'),
+                            TextInput::make('apply_url')
+                                ->label('Apply link')
+                                ->url()
+                                ->maxLength(255)
+                                ->placeholder('https://xxx.teletalk.com.bd'),
                         ]),
                     Section::make('Job details')
                         ->icon(Heroicon::OutlinedBriefcase)
                         ->description('Shown as a table on the notice page. Leave empty what the circular does not say.')
                         ->columns(2)
                         ->schema([
-                            TextInput::make('post_name')->label('Post name(s)')->maxLength(500),
-                            TextInput::make('vacancies')->placeholder('e.g. 25')->maxLength(100),
+                            Repeater::make('posts')
+                                ->label('Posts')
+                                ->columnSpanFull()
+                                ->columns(6)
+                                ->defaultItems(0)
+                                ->addActionLabel('Add a post')
+                                ->reorderable()
+                                ->compact()
+                                ->schema([
+                                    TextInput::make('name')->label('Post name')->required()->columnSpan(3),
+                                    TextInput::make('grade')->placeholder('e.g. 9th')->columnSpan(1),
+                                    TextInput::make('vacancies')->placeholder('e.g. 25')->columnSpan(2),
+                                ]),
+                            TextInput::make('vacancies')->label('Total vacancies')->placeholder('Left empty: the sum of the posts')->maxLength(100),
+                            TextInput::make('post_name')->label('Posts in one line (if not listed above)')->maxLength(500),
                             TextInput::make('age_limit')->placeholder('e.g. 21–32 years on 1 December 2026')->maxLength(255),
                             TextInput::make('fee')->label('Application fee')->placeholder('e.g. ৳200')->maxLength(255),
                             Textarea::make('eligibility')->rows(2)->columnSpanFull(),
@@ -141,8 +159,9 @@ class NoticeForm
                         ->icon(Heroicon::OutlinedGlobeAlt)
                         ->schema([
                             Toggle::make('is_published')
-                                ->label('Show on the website')
-                                ->default(true),
+                                ->label('Published (shown on the website)')
+                                ->helperText('Off = draft. Use "Preview" to check the page first.')
+                                ->default(false),
                             DatePicker::make('published_on')
                                 ->label('Publish date')
                                 ->default(now())
@@ -152,13 +171,16 @@ class NoticeForm
                             TextInput::make('slug')
                                 ->label('Web address')
                                 ->prefix('/notices/')
-                                // Checked on the server only: "Create" straight after the title fills it in that same request.
-                                ->rule('required')
-                                ->markAsRequired()
+                                ->placeholder('made automatically')
                                 ->unique(ignoreRecord: true)
                                 ->alphaDash()
                                 ->maxLength(255)
-                                ->helperText('Made from the English title. Keep it when you update a notice.'),
+                                // One circular = one page forever: the address never changes after it is created.
+                                ->disabled(fn (string $operation): bool => $operation === 'edit')
+                                ->dehydrated(fn (string $operation): bool => $operation === 'create')
+                                ->helperText(fn (string $operation): string => $operation === 'edit'
+                                    ? 'Permanent. Put admit cards, exam dates and results on this same page with "Update".'
+                                    : 'Left empty: {organisation}-job-circular-'.now()->year.' for a circular, otherwise made from the title.'),
                         ]),
                     Section::make('Where it appears')
                         ->icon(Heroicon::OutlinedTag)
@@ -203,19 +225,5 @@ class NoticeForm
         }
 
         Notification::make()->title("Copied from: {$previous->title}")->success()->send();
-    }
-
-    private static function freeSlug(string $title): string
-    {
-        $slug = Str::limit(Str::slug($title), 120, '');
-        $number = 2;
-        $free = $slug;
-
-        while (Notice::query()->where('slug', $free)->exists()) {
-            $free = "{$slug}-{$number}";
-            $number++;
-        }
-
-        return $free;
     }
 }

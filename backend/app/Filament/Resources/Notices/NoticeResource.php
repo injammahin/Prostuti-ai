@@ -9,6 +9,7 @@ use App\Filament\Resources\Notices\Schemas\NoticeForm;
 use App\Filament\Resources\Notices\Tables\NoticesTable;
 use App\Models\Notice;
 use BackedEnum;
+use Filament\Actions\Action;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Support\Icons\Heroicon;
@@ -38,6 +39,32 @@ class NoticeResource extends Resource
     public static function getNavigationBadgeTooltip(): ?string
     {
         return 'Applications still open';
+    }
+
+    /**
+     * The page exactly as visitors will see it, drafts included (opens in a new tab).
+     */
+    public static function previewAction(): Action
+    {
+        return Action::make('preview')
+            ->label('Preview')
+            ->icon(Heroicon::OutlinedEye)
+            ->color('gray')
+            ->url(fn (Notice $record): string => route('admin.notice-preview', $record), shouldOpenInNewTab: true);
+    }
+
+    /**
+     * A new draft from an existing notice (same organisation and details), opened for editing.
+     */
+    public static function duplicateAction(): Action
+    {
+        return Action::make('duplicate')
+            ->label('Duplicate')
+            ->icon(Heroicon::OutlinedDocumentDuplicate)
+            ->color('gray')
+            ->requiresConfirmation()
+            ->modalDescription('A new draft is made with the same organisation and details. Dates, status and the circular file are left empty.')
+            ->action(fn (Notice $record) => redirect(static::getUrl('edit', ['record' => $record->duplicate()])));
     }
 
     public static function form(Schema $schema): Schema

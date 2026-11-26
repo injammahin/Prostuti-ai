@@ -4,7 +4,6 @@ namespace App\Filament\Resources\Users\Schemas;
 
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 
@@ -45,15 +44,14 @@ class UserForm
                             ->default('bcs-general')
                             ->required(),
                     ]),
-                Section::make('Access')
-                    ->columns(2)
+                Section::make('Password')
+                    ->description('Passwords are stored one-way encrypted, so the current one can never be shown. Set a new one here, or leave it empty to keep the current password.')
                     ->schema([
-                        Toggle::make('is_admin')
-                            ->label('Admin (can open this panel)'),
                         TextInput::make('password')
+                            ->label('New password')
                             ->password()
                             ->revealable()
-                            ->helperText('Only needed for admins. Students sign in with an email code or Google.')
+                            ->minLength(8)
                             ->dehydrated(fn (?string $state): bool => filled($state)),
                     ]),
             ]);

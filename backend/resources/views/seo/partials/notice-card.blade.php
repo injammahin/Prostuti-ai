@@ -3,8 +3,10 @@
     $state = \App\Models\Notice::STATUSES[$notice['status'] ?? ''] ?? null;
 @endphp
 <li class="card p-4">
-    <a href="/notices/{{ $notice['slug'] }}" class="font-bold">{{ $notice['title'] }}</a>
-    @if ($notice['title_bn'])
+    <a href="/notices/{{ $notice['slug'] }}" class="font-bold">{{ $notice['heading'] ?? $notice['title'] }}</a>
+    @if ($notice['heading'] ?? null)
+        <p class="text-sm font-medium">{{ $notice['title'] }}</p>
+    @elseif ($notice['title_bn'])
         <p class="bn text-sm font-medium" lang="bn">{{ $notice['title_bn'] }}</p>
     @endif
     <p class="mt-1 line-clamp-2 text-sm text-muted-foreground">{{ $notice['summary'] }}</p>

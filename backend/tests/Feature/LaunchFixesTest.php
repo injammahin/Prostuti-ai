@@ -71,7 +71,7 @@ class LaunchFixesTest extends TestCase
 
     public function test_admins_cannot_delete_their_account_from_the_website(): void
     {
-        $admin = User::factory()->create(['is_admin' => true]);
+        $admin = User::factory()->admin()->create();
 
         $this->actingAs($admin, 'sanctum')->deleteJson(route('api.v1.me.destroy'), ['confirm' => 'DELETE'])->assertForbidden();
 
@@ -94,7 +94,7 @@ class LaunchFixesTest extends TestCase
         $this->assertSame(2, Report::query()->count());
         $this->assertDatabaseHas('reports', ['target' => 'question', 'user_id' => $user->id, 'note' => 'B is right']);
 
-        $this->actingAs(User::factory()->create(['is_admin' => true]))->get('/admin/reports')->assertOk()->assertSee($notice->title);
+        $this->actingAs(User::factory()->admin()->create())->get('/admin/reports')->assertOk()->assertSee($notice->title);
     }
 
     public function test_practice_questions_added_to_fill_an_old_paper_are_not_part_of_it(): void

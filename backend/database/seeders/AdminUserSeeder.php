@@ -48,7 +48,7 @@ class AdminUserSeeder extends Seeder
             $password = Str::password(16, symbols: false);
         }
 
-        User::query()->create([
+        User::query()->forceCreate([
             'name' => (string) config('app.admin.name'),
             'email' => $email,
             'password' => $password,

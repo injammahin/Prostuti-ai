@@ -268,12 +268,6 @@ export default function Login({ mode = "login" }) {
   const finish = (res) => {
     login(res.user, res.token)
     const first = res.user.name.split(" ")[0]
-    if (res.user.is_admin) {
-      // Admins go straight to the admin panel, already signed in there.
-      toast.success(`Welcome back, ${first}! Opening the admin panel…`)
-      adminApi.openPanel().catch(() => nav("/app", { replace: true }))
-      return
-    }
     toast.success(
       res.is_new_user ? L(`Welcome to bd3schools, ${first}! 🎉`, `bd3schools-এ স্বাগতম, ${first}! 🎉`) : L(`Welcome back, ${first}!`, `আবার স্বাগতম, ${first}!`)
     )

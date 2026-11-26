@@ -30,6 +30,7 @@ class ActivityLog extends Model
         'practice.started' => ['Started practice', 'primary'],
         'practice.finished' => ['Finished practice', 'success'],
         'daily_quiz.completed' => ['Daily quiz', 'warning'],
+        'admin.impersonated' => ['Admin logged in as', 'danger'],
     ];
 
     /**

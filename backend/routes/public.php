@@ -12,6 +12,7 @@ Route::controller(PublicPageController::class)->name('public.')->group(function 
     Route::get('blog', 'blog')->name('blog');
     Route::get('blog/{slug}', 'post')->name('post');
     Route::get('notices', 'serverPage')->name('notices');
+    Route::get('notices/category/{category}', 'serverPage')->name('notices.category');
     Route::get('notices/{slug}', 'serverPage')->name('notice');
     Route::get('contact', 'serverPage')->name('contact');
     Route::get('questions/{page}', 'serverPage')->name('question');

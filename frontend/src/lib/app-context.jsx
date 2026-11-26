@@ -49,7 +49,8 @@ export function AppProvider({ children }) {
 
   useLayoutEffect(() => {
     try {
-      localStorage.setItem(KEY, JSON.stringify(state))
+      // A "Log in as" tab must not overwrite the admin's own saved state in other tabs.
+      if (!tokenStore.impersonating()) localStorage.setItem(KEY, JSON.stringify(state))
     } catch {
       /* storage unavailable */
     }
@@ -108,10 +109,7 @@ export function AppProvider({ children }) {
   /** Dates in the current language, e.g. "সোমবার, ২৩ নভেম্বর". */
   const fmtDate = useCallback((date, options) => new Date(date).toLocaleDateString(bn ? "bn-BD" : "en-GB", options), [bn])
   const isGuest = !state.user || !!state.user.guest
-  const isAdmin = Boolean(
-    state.user &&
-      (state.user.is_admin || state.user.email === "mahin@gmail.com" || state.user.role === "admin")
-  )
+  const isAdmin = Boolean(state.user?.is_admin)
 
   /** Returns true when the user has an account; otherwise opens the sign-up prompt. */
   const requireAccount = useCallback(

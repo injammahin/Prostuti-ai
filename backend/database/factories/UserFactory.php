@@ -34,6 +34,17 @@ class UserFactory extends Factory
     }
 
     /**
+     * The one admin account: the ADMIN_EMAIL from .env.
+     */
+    public function admin(): static
+    {
+        return $this->state(fn (array $attributes) => [
+            'email' => config('app.admin.email'),
+            'is_admin' => true,
+        ]);
+    }
+
+    /**
      * Indicate that the model's email address should be unverified.
      */
     public function unverified(): static

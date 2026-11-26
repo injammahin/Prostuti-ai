@@ -43,19 +43,19 @@ class NoticeBoardTest extends TestCase
 
     public function test_the_board_has_pages_newest_first(): void
     {
-        foreach (range(1, 12) as $day) {
-            Notice::factory()->create(['title' => "Notice number {$day}.", 'published_on' => now()->subDays(20 - $day)]);
+        foreach (range(1, 25) as $day) {
+            Notice::factory()->create(['title' => "Notice number {$day}.", 'published_on' => now()->subDays(30 - $day)]);
         }
 
-        $this->get('/notices')->assertOk()->assertSee('Notice number 12.')->assertDontSee('Notice number 2.')
+        $this->get('/notices')->assertOk()->assertSee('Notice number 25.')->assertSee('Notice number 6.')->assertDontSee('Notice number 5.')
             ->assertSee('<link rel="next" href="https://bd3schools.com/notices?page=2" />', false)
             ->assertSee('<link rel="canonical" data-server href="https://bd3schools.com/notices" />', false);
-        $this->get('/notices?page=2')->assertOk()->assertSee('Notice number 2.')
+        $this->get('/notices?page=2')->assertOk()->assertSee('Notice number 5.')
             ->assertSee('<link rel="prev" href="https://bd3schools.com/notices" />', false)
             ->assertSee('<link rel="canonical" data-server href="https://bd3schools.com/notices?page=2" />', false);
         $this->get('/notices?page=1')->assertRedirect('/notices')->assertStatus(301);
         $this->get('/notices?page=3')->assertNotFound();
-        $this->get('/notices?category=nope')->assertNotFound();
+        $this->get('/notices/category/nope')->assertNotFound();
     }
 
     public function test_a_section_lists_its_own_notices(): void
@@ -64,13 +64,20 @@ class NoticeBoardTest extends TestCase
         Notice::factory()->create(['title' => 'Bank circular', 'exam_id' => $exam->id]);
         Notice::factory()->create(['title' => 'Health job', 'org' => 'Ministry of Health']);
 
-        $this->get('/notices?category=bank')->assertOk()->assertSee('Bank circular')->assertDontSee('Health job')->assertSee('noindex, follow', false);
-        $this->get('/notices?category=ministry')->assertOk()->assertSee('Health job');
+        $this->get('/notices/category/bank')->assertOk()->assertSee('Bank circular')->assertDontSee('Health job')->assertSee('noindex, follow', false);
+        $this->get('/notices/category/govt')->assertOk()->assertSee('Health job');
+        $this->get('/notices?category=bank')->assertRedirect('/notices/category/bank')->assertStatus(301);
+        $this->get('/notices?category=bank&page=1')->assertRedirect('/notices/category/bank')->assertStatus(301);
+        $this->get('/notices/category/bank?page=1')->assertRedirect('/notices/category/bank')->assertStatus(301);
+
+        foreach (array_keys(Notice::CATEGORIES) as $category) {
+            $this->get("/notices/category/{$category}")->assertOk();
+        }
     }
 
     public function test_a_notice_shows_its_details_and_dates(): void
     {
-        $notice = Notice::factory()->create(['slug' => 'officer', 'post_name' => 'Assistant Officer', 'vacancies' => '25', 'fee' => '৳200', 'how_to_apply' => "Open the portal\nPay the fee", 'apply_until' => now()->addDays(3), 'attachment' => 'notices/a.pdf']);
+        $notice = Notice::factory()->create(['slug' => 'officer', 'post_name' => 'Assistant Officer', 'vacancies' => '25', 'fee' => '৳200', 'how_to_apply' => "Open the portal\nPay the fee", 'apply_until' => now()->addDays(10), 'attachment' => 'notices/a.pdf']);
 
         $html = $this->get('/notices/officer')->assertOk()
             ->assertSee('Assistant Officer')->assertSee('<li>Pay the fee</li>', false)->assertSee('Application open')->assertSee('Published / প্রকাশ')
@@ -84,7 +91,7 @@ class NoticeBoardTest extends TestCase
 
     public function test_an_update_keeps_the_page_and_records_what_changed(): void
     {
-        $this->actingAs(User::factory()->create(['is_admin' => true]));
+        $this->actingAs(User::factory()->admin()->create());
         $notice = Notice::factory()->create(['slug' => 'exam', 'exam_date' => '2026-12-01']);
 
         Livewire::test(ListNotices::class)
@@ -100,7 +107,7 @@ class NoticeBoardTest extends TestCase
 
     public function test_a_notice_needs_only_its_organisation_and_title(): void
     {
-        $this->actingAs(User::factory()->create(['is_admin' => true]));
+        $this->actingAs(User::factory()->admin()->create());
         Notice::factory()->create(['org' => 'NTRCA', 'eligibility' => 'Graduates', 'slug' => 'new-circular']);
 
         Livewire::test(CreateNotice::class)
@@ -110,7 +117,8 @@ class NoticeBoardTest extends TestCase
             ->assertHasNoFormErrors();
 
         $notice = Notice::query()->latest('id')->first();
-        $this->assertSame('new-circular-2', $notice->slug);
+        $this->assertSame('ntrca-job-circular-'.now()->year, $notice->slug);
+        $this->assertFalse($notice->is_published);
         $this->assertSame('Graduates', $notice->eligibility);
         $this->assertStringContainsString('New circular', $notice->summary);
     }
@@ -124,7 +132,7 @@ class NoticeBoardTest extends TestCase
         $this->actingAs(User::factory()->create())->postJson(route('share-images.store', $notice), ['image' => $picture()])->assertForbidden();
         $this->getJson(route('share-images.index'))->assertForbidden();
 
-        $this->actingAs(User::factory()->create(['is_admin' => true]));
+        $this->actingAs(User::factory()->admin()->create());
         $this->getJson(route('share-images.index'))->assertOk()->assertJsonPath('data.0.id', $notice->id);
         $this->postJson(route('share-images.store', $notice), ['image' => UploadedFile::fake()->image('share.png', 300, 300)])->assertUnprocessable();
         $this->postJson(route('share-images.store', $notice), ['image' => $picture()])->assertNoContent();

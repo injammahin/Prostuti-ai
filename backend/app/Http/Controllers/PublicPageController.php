@@ -165,10 +165,15 @@ class PublicPageController extends Controller
     {
         $address = PublicPages::address($request->getPathInfo(), $request->query());
 
-        // One address per page: "?page=1" and the like lead to it.
-        if ($request->getPathInfo() === '/notices' && $request->hasAny(['page', 'category'])
-            && PublicPages::address('/notices', $request->only(['page', 'category'])) !== '/notices?'.http_build_query(array_filter($request->only(['category', 'page'])))) {
-            return redirect($address, 301);
+        // One address per page: "?category=bank" becomes /notices/category/bank, and "?page=1" and the like lead to it.
+        $path = $request->getPathInfo();
+        $isList = $path === '/notices' || str_starts_with($path, '/notices/category/');
+        if ($isList && $request->hasAny(['page', 'category'])) {
+            $asked = $path.($request->has('page') ? '?page='.$request->query('page') : '');
+
+            if ($request->has('category') || $asked !== $address) {
+                return redirect($address, 301);
+            }
         }
 
         return $this->page($request, fn (): ?PublicPage => PublicPages::resolve($address), $address);

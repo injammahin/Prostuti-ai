@@ -149,7 +149,7 @@ export default function DailyQuiz() {
     const seconds = Math.round((Date.now() - startedAt) / 1000)
     setTook(seconds)
     setStage("result")
-    siteApi.dailyQuizCompleted(score, qs.length, seconds)
+    siteApi.dailyQuizCompleted(score, qs.length, seconds, quiz?.slot)
     try {
       const best = Number(localStorage.getItem(`bd3schools:daily:${dateKey()}`) || 0)
       localStorage.setItem(`bd3schools:daily:${dateKey()}`, String(Math.max(best, score)))
@@ -162,8 +162,8 @@ export default function DailyQuiz() {
       `I scored ${score}/${qs.length} on today's bd3schools daily quiz 🎯 Can you beat me? Free, no sign-up:`,
       `আজকের bd3schools কুইজে আমি ${num(qs.length)}-এ ${num(score)} পেয়েছি 🎯 আপনি কি আমাকে হারাতে পারবেন? ফ্রি, সাইন আপ লাগে না:`
     )
-    if (where === "wa") window.open(`https://wa.me/?text=${encodeURIComponent(`${text} ${shareUrl}`)}`, "_blank")
-    if (where === "fb") window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`, "_blank")
+    if (where === "wa") window.open(`https://wa.me/?text=${encodeURIComponent(`${text} ${shareUrl}?ref=whatsapp`)}`, "_blank")
+    if (where === "fb") window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`${shareUrl}?ref=facebook`)}`, "_blank")
     if (where === "copy") {
       navigator.clipboard?.writeText(`${text} ${shareUrl}`)
       toast.success(L("Link copied — paste it in your group!", "লিংক কপি হয়েছে — গ্রুপে শেয়ার করুন!"))

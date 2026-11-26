@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources\Notices\Tables;
 
+use App\Filament\Resources\Notices\NoticeResource;
 use App\Models\Notice;
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
@@ -40,6 +41,17 @@ class NoticesTable
                         'result' => 'success',
                         default => 'info',
                     }),
+                TextColumn::make('status')
+                    ->label('Status')
+                    ->badge()
+                    ->getStateUsing(fn (Notice $record): ?string => $record->currentStatus())
+                    ->formatStateUsing(fn (?string $state): string => Notice::STATUSES[$state][0] ?? '—')
+                    ->color(fn (?string $state): string => match ($state) {
+                        'open' => 'success',
+                        'closing' => 'warning',
+                        'closed' => 'gray',
+                        default => 'info',
+                    }),
                 TextColumn::make('apply_until')
                     ->label('Deadline')
                     ->date('j M Y')
@@ -56,19 +68,22 @@ class NoticesTable
                     ->date('j M Y')
                     ->sortable(),
                 ToggleColumn::make('is_published')
-                    ->label('On website'),
+                    ->label('Published'),
             ])
             ->filters([
                 SelectFilter::make('type')->options(Notice::TYPES),
                 SelectFilter::make('exam')->relationship('exam', 'name')->preload(),
-                TernaryFilter::make('is_published')->label('On website'),
+                TernaryFilter::make('is_published')->label('Published')->trueLabel('Published')->falseLabel('Drafts'),
+                SelectFilter::make('category')->label('Section')->options(array_map(fn (array $names): string => $names[0], Notice::CATEGORIES)),
             ])
             ->recordActions([
                 Action::make('view')
                     ->label('View on site')
                     ->icon(Heroicon::OutlinedArrowTopRightOnSquare)
                     ->color('gray')
+                    ->visible(fn (Notice $record): bool => $record->is_published)
                     ->url(fn (Notice $record): string => rtrim(config('app.frontend_url'), '/').'/notices/'.$record->slug, shouldOpenInNewTab: true),
+                NoticeResource::previewAction()->hidden(fn (Notice $record): bool => $record->is_published),
                 Action::make('update')
                     ->label('Update')
                     ->icon(Heroicon::OutlinedArrowPath)
@@ -87,6 +102,7 @@ class NoticesTable
                     ])
                     ->action(fn (Notice $record, array $data) => $record->applyUpdate($data)),
                 EditAction::make(),
+                NoticeResource::duplicateAction(),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([

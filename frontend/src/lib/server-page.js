@@ -21,15 +21,18 @@ function read() {
 
 export const serverPage = read()
 
-/** The address of a page's content. A notice list is a page of its own per section and number; other queries don't matter. */
+/**
+ * The address of a page's content (the same rule as Laravel's PublicPages::address). A notice list is
+ * /notices or /notices/category/{key}, a page of its own per number; other queries don't matter.
+ */
 export function pageAddress({ pathname, search } = window.location) {
   const path = pathname.replace(/\/+$/, "") || "/"
-  if (path !== "/notices") return path
+  const isList = path === "/notices" || /^\/notices\/category\/[a-z0-9-]+$/.test(path)
+  if (!isList) return path
   const query = new URLSearchParams(search)
-  const kept = new URLSearchParams()
-  if (query.get("category")) kept.set("category", query.get("category"))
-  if (Number(query.get("page")) > 1) kept.set("page", query.get("page"))
-  return kept.size ? `${path}?${kept}` : path
+  const base = path === "/notices" && query.get("category") ? `/notices/category/${query.get("category")}` : path
+  const page = Number(query.get("page"))
+  return page > 1 ? `${base}?page=${page}` : base
 }
 
 /** The server's content (the element itself, so nothing is parsed again). Null on any other page. */

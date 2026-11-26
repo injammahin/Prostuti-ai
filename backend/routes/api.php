@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\AdminSsoController;
 use App\Http\Controllers\Api\V1\AiTutorController;
 use App\Http\Controllers\Api\V1\AuthController;
 use App\Http\Controllers\Api\V1\CatalogController;
@@ -71,6 +70,5 @@ Route::prefix('v1')->name('api.v1.')->group(function () {
         Route::get('me/mistakes', [MistakeController::class, 'index'])->name('me.mistakes');
         Route::post('daily-quiz/reshuffle', [DailyQuizController::class, 'reshuffle'])->name('daily-quiz.reshuffle');
         Route::post('auth/logout', [AuthController::class, 'logout'])->name('auth.logout');
-        Route::post('admin/sso-link', [AdminSsoController::class, 'link'])->middleware('throttle:10,1,sso-link')->name('admin.sso-link');
     });
 });

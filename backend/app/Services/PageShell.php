@@ -60,9 +60,30 @@ class PageShell
      */
     public static function remember(string $key, callable $build): mixed
     {
-        $key = 'seo2:'.(int) Cache::get(self::VERSION_KEY, 1).":{$key}";
+        // The date is part of the key: closed notices leave the lists at midnight even when nothing was saved.
+        $day = now(config('app.student_timezone') ?: 'Asia/Dhaka')->format('Ymd');
+        $key = 'seo2:'.(int) Cache::get(self::VERSION_KEY, 1).':'.self::codeVersion().":{$day}:{$key}";
 
         return Cache::remember($key, now()->addMinutes((int) config('seo.cache_minutes')), $build(...));
+    }
+
+    private static ?string $codeVersion = null;
+
+    /**
+     * Changes whenever the code that writes the pages changes (views, page services, routes), so a deploy shows at
+     * once, however the files were uploaded.
+     */
+    public static function codeVersion(): string
+    {
+        return self::$codeVersion ??= (string) collect([
+            ...glob(resource_path('views/seo/*.blade.php')) ?: [],
+            ...glob(resource_path('views/seo/partials/*.blade.php')) ?: [],
+            ...glob(app_path('Services/*.php')) ?: [],
+            app_path('Models/Notice.php'),
+            app_path('Models/Post.php'),
+            base_path('routes/public.php'),
+            config_path('seo.php'),
+        ])->map(fn (string $file): int => (int) @filemtime($file))->max();
     }
 
     /**

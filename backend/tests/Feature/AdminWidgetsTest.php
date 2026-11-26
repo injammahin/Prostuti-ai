@@ -39,7 +39,7 @@ class AdminWidgetsTest extends TestCase
     #[DataProvider('widgets')]
     public function test_dashboard_widget_renders(string $widget): void
     {
-        $this->actingAs(User::factory()->create(['is_admin' => true]));
+        $this->actingAs(User::factory()->admin()->create());
         User::factory()->create(['name' => 'Rahim Uddin']);
         Question::factory()->count(3)->create();
         Notice::factory()->create(['apply_until' => now()->addWeek()->toDateString(), 'exam_date' => now()->addMonth()->toDateString()]);
@@ -49,7 +49,7 @@ class AdminWidgetsTest extends TestCase
 
     public function test_welcome_banner_shows_quick_actions(): void
     {
-        $this->actingAs(User::factory()->create(['is_admin' => true, 'name' => 'Mahin Rahman']));
+        $this->actingAs(User::factory()->admin()->create(['name' => 'Mahin Rahman']));
 
         Livewire::test(WelcomeBanner::class)
             ->assertSee('Mahin')
@@ -57,8 +57,8 @@ class AdminWidgetsTest extends TestCase
             ->assertSee('Post a notice');
     }
 
-    public function test_admin_login_page_sends_people_to_the_website_login(): void
+    public function test_admin_panel_has_its_own_password_login(): void
     {
-        $this->get('/admin/login')->assertRedirect(rtrim(config('app.frontend_url'), '/').'/login?next=admin');
+        $this->get('/admin/login')->assertOk()->assertSee('Password');
     }
 }

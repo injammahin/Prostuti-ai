@@ -2,7 +2,7 @@
  * Makes the share pictures (public/og/*.png, 1200×630) and the PDFs of the BCS papers (public/downloads/bcs-pdfs/*.pdf)
  * from the pages themselves, with the Chrome on this computer. Run it after questions or page titles change:
  *
- *   node scripts/make-share-files.mjs og  http://localhost:8000
+ *   node scripts/make-share-files.mjs og  http://localhost:8000 [home notices …]
  *   node scripts/make-share-files.mjs pdf http://localhost:8000 [48 47 …]
  *
  * The address is a running copy of the website with the public pages (Laravel with a built frontend).
@@ -86,7 +86,8 @@ async function pictures(chrome) {
 
   await chrome.send("Emulation.setDeviceMetricsOverride", { width: 1200, height: 630, deviceScaleFactor: 1, mobile: false })
   const { frameTree } = await chrome.send("Page.getFrameTree")
-  for (const [name, title, english] of jobs) {
+  const wanted = jobs.filter(([name]) => !only.length || only.includes(name))
+  for (const [name, title, english] of wanted) {
     const size = title.length > 60 ? 52 : title.length > 40 ? 62 : 76
     const html = `<!doctype html><html lang="bn"><head><meta charset="utf-8"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500;700&family=Plus+Jakarta+Sans:wght@600;800&display=block"><style>
       *{box-sizing:border-box;margin:0}body{width:1200px;height:630px;background:#1d6ca8;color:#fff;font-family:"Hind Siliguri",sans-serif;padding:64px 72px;display:flex;flex-direction:column;position:relative;overflow:hidden}
@@ -95,12 +96,12 @@ async function pictures(chrome) {
       main{margin:auto 0;position:relative;z-index:1}h1{font-size:${size}px;line-height:1.3;font-weight:700}p{margin-top:22px;font:600 ${english.length > 60 ? 32 : 38}px/1.35 "Plus Jakarta Sans","Hind Siliguri";opacity:.92}
       small{font-size:28px;opacity:.85;position:relative;z-index:1}</style></head><body><div class="brand"><img src="${logo}">bd3schools</div><main><h1>${escape(title)}</h1>${english ? `<p>${escape(english)}</p>` : ""}</main><small>bd3schools.com · সম্পূর্ণ ফ্রি</small></body></html>`
     await chrome.send("Page.setDocumentContent", { frameId: frameTree.frame.id, html })
-    await sleep(150)
-    await chrome.run("Promise.all([document.fonts.ready,...[...document.images].map(i=>i.decode().catch(()=>{}))]).then(()=>new Promise(r=>setTimeout(r,150)))")
+    await sleep(name === wanted[0][0] ? 3000 : 150) // the fonts are downloaded for the first picture
+    await chrome.run(`Promise.all([...[...document.querySelectorAll("h1,p,.brand,small")].map(e=>{const s=getComputedStyle(e);return document.fonts.load(s.fontWeight+" "+s.fontSize+" "+s.fontFamily,e.textContent).catch(()=>{})}),document.fonts.ready,...[...document.images].map(i=>i.decode().catch(()=>{}))]).then(()=>new Promise(r=>setTimeout(r,400)))`)
     const { data } = await chrome.send("Page.captureScreenshot", { format: "png" })
     writeFileSync(path.join(PUBLIC, "og", `${name}.png`), Buffer.from(data, "base64"))
   }
-  console.log(`${jobs.length} pictures`)
+  console.log(`${wanted.length} pictures`)
 }
 
 async function pdfs(chrome) {

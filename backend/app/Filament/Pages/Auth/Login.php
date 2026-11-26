@@ -2,15 +2,55 @@
 
 namespace App\Filament\Pages\Auth;
 
+use App\Models\User;
+use DanHarrin\LivewireRateLimiting\Exceptions\TooManyRequestsException;
+use Filament\Auth\Http\Responses\Contracts\LoginResponse;
 use Filament\Auth\Pages\Login as BaseLogin;
+use Filament\Facades\Filament;
 
 /**
- * There is one login for everyone: the website's. Admins who sign in there are sent into the panel automatically.
+ * The admin panel has its own login, and it only accepts ADMIN_EMAIL + ADMIN_PASSWORD from .env.
+ * Website sessions (email code, Google) never open the panel.
  */
 class Login extends BaseLogin
 {
-    public function mount(): void
+    public function authenticate(): ?LoginResponse
     {
-        $this->redirect(rtrim((string) config('app.frontend_url'), '/').'/login?next=admin');
+        try {
+            $this->rateLimit(5);
+        } catch (TooManyRequestsException $exception) {
+            $this->getRateLimitedNotification($exception)?->send();
+
+            return null;
+        }
+
+        $data = $this->form->getState();
+        $email = strtolower(trim((string) ($data['email'] ?? '')));
+        $adminPassword = (string) config('app.admin.password');
+
+        $credentialsMatch = User::isAdminEmail($email)
+            && $adminPassword !== ''
+            && hash_equals($adminPassword, (string) ($data['password'] ?? ''));
+
+        if (! $credentialsMatch) {
+            $this->throwFailureValidationException();
+        }
+
+        $user = User::query()->whereRaw('lower(email) = ?', [$email])->first()
+            ?? User::query()->forceCreate([
+                'name' => (string) config('app.admin.name'),
+                'email' => $email,
+                'password' => $adminPassword,
+                'email_verified_at' => now(),
+            ]);
+
+        if (! $user->getRawOriginal('is_admin')) {
+            $user->forceFill(['is_admin' => true])->save();
+        }
+
+        Filament::auth()->login($user, (bool) ($data['remember'] ?? false));
+        session()->regenerate();
+
+        return app(LoginResponse::class);
     }
 }

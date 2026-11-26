@@ -237,6 +237,11 @@
     line-height: 1.7;
     letter-spacing: 0;
   }
+  /* An English page's content stays in the English font when the menus are in Bangla. */
+  .lang-en {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
 }
 
 @layer components {
@@ -367,7 +372,8 @@ h1, h2, h3 {
 }
 
 /* Bangla letters must not be squeezed together. */
-:root:lang(bn) :is(h1, h2, h3) {
+:root:lang(bn) :is(h1, h2, h3),
+.bn :is(h1, h2, h3) {
   letter-spacing: 0;
 }
 

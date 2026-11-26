@@ -22,14 +22,13 @@ export default function ServerPage({ lang = "bn", children }) {
 
   useSeo(element ? { title: serverPage.title, description: serverPage.description, type: "article" } : data ? { title: data.title, description: data.description, image: data.image, type: data.type, jsonLd: data.json_ld } : {})
 
-  // These pages are in one language whatever the menus are in.
-  useEffect(() => {
-    const before = document.documentElement.lang
-    document.documentElement.lang = lang
-    return () => {
-      document.documentElement.lang = before
-    }
-  }, [lang])
+  // These pages are in one language whatever the menus are in. Only the page's own content says so:
+  // changing <html lang> would also switch the header and footer to the Bangla font.
+  const content = (props) => (
+    <div lang={lang} className={lang === "bn" ? "bn" : "lang-en"}>
+      <ServerContent {...props} />
+    </div>
+  )
 
   const ready = !!(element || data)
   useEffect(() => {
@@ -41,14 +40,14 @@ export default function ServerPage({ lang = "bn", children }) {
   if (element)
     return (
       <>
-        <ServerContent element={element} />
+        {content({ element })}
         {children}
       </>
     )
   if (data)
     return (
       <>
-        <ServerContent html={data.html} />
+        {content({ html: data.html })}
         {children}
       </>
     )

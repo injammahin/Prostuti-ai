@@ -285,8 +285,7 @@ export function NoticeCard({ n, compact = false, base = "/notices" }) {
           )}
         </div>
         <h3 className="line-clamp-2 text-[0.95rem] leading-snug font-bold transition-colors group-hover:text-primary">{noticeTitle(n)}</h3>
-        {n.title_bn && <p className="mt-0.5 line-clamp-1 text-xs font-medium text-muted-foreground">{tr(n.title_bn, n.title)}</p>}
-        {!compact && <p className="mt-1 line-clamp-2 text-sm text-muted-foreground">{noticeSummary(n)}</p>}
+        {!compact && <p className="mt-1 line-clamp-1 text-sm text-muted-foreground">{noticeSummary(n)}</p>}
         <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
           <span className="font-semibold text-foreground/80">{td(n.org)}</span>
           {exam && <span>{examName(exam)}</span>}
